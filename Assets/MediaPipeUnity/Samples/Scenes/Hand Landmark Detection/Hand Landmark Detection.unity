@@ -412,6 +412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1064799461}
   - component: {fileID: 1064799468}
+  - component: {fileID: 1064799469}
   m_Layer: 0
   m_Name: Solution
   m_TagString: Untagged
@@ -450,6 +451,28 @@ MonoBehaviour:
   screen: {fileID: 1006057043}
   runningMode: 0
   _handLandmarkerResultAnnotationController: {fileID: 1006057044}
+  numHands: 2
+--- !u!114 &1064799469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064799459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4f0e7049b8e2642a7f94d13e1965de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandInputProvider
+  runner: {fileID: 1064799468}
+  moveDeadzone: 0.15
+  moveSmoothing: 8
+  fingerExtendThreshold: 0.03
+  pinchThreshold: 0.06
+  openThreshold: 0.18
+  fistThreshold: 0.1
+  useTwoHands: 1
+  enableRightHand: 0
 --- !u!224 &1229135957 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3259285889726014650, guid: 5713b959e3c77a58fb258133fc8e4aef, type: 3}

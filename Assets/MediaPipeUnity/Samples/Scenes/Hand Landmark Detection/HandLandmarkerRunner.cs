@@ -15,6 +15,7 @@ namespace Mediapipe.Unity.Sample.HandLandmarkDetection
   public class HandLandmarkerRunner : VisionTaskApiRunner<HandLandmarker>
   {
     [SerializeField] private HandLandmarkerResultAnnotationController _handLandmarkerResultAnnotationController;
+    [SerializeField] private int numHands = 2;
 
     private Experimental.TextureFramePool _textureFramePool;
 
@@ -53,6 +54,7 @@ namespace Mediapipe.Unity.Sample.HandLandmarkDetection
       Debug.Log($"Delegate = {config.Delegate}");
       Debug.Log($"Image Read Mode = {config.ImageReadMode}");
       Debug.Log($"Running Mode = {config.RunningMode}");
+      config.NumHands = Mathf.Max(1, numHands);
       Debug.Log($"NumHands = {config.NumHands}");
       Debug.Log($"MinHandDetectionConfidence = {config.MinHandDetectionConfidence}");
       Debug.Log($"MinHandPresenceConfidence = {config.MinHandPresenceConfidence}");
