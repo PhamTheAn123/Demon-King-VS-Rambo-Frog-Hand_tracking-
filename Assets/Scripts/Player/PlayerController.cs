@@ -44,6 +44,18 @@ public class PlayerController : MonoBehaviour
     public Transform gunRightPos;
     public Transform gunLeftPos;
 
+    [Header("Hand Tracking")]
+    [SerializeField] private bool useHandTracking = true;
+    [SerializeField] private HandInputProvider handInput;
+
+    private float inputMoveX;
+    private bool inputJumpDown;
+    private bool inputJumpHeld;
+    private bool inputJumpUp;
+    private bool inputShootDown;
+    private bool inputReloadDown;
+    private Vector3 inputAimWorld;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -53,22 +65,22 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        UpdateInputs();
         CheckEnvironment();
         HandleMovementInput();
         HandleJumpInput();
         UpdateAnimations();
 
-        if (Input.GetMouseButtonDown(0))
+        if (inputShootDown && gunController != null)
         {
             gunController.Shoot();
         }
-        if (Input.GetKeyDown(KeyCode.R))
+        if (inputReloadDown && gunController != null)
         {
             gunController.Reload();
         }
 
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (mouseWorldPos.x < transform.position.x)
+        if (inputAimWorld.x < transform.position.x)
             sprite.flipX = true;
         else
             sprite.flipX = false;
@@ -88,7 +100,7 @@ public class PlayerController : MonoBehaviour
                 gunController.transform.localScale = new Vector3(1, 1, 1);
             }
 
-            Vector2 direction = (mouseWorldPos - gunHolder.position).normalized;
+            Vector2 direction = (inputAimWorld - gunHolder.position).normalized;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
             gunHolder.rotation = Quaternion.Euler(0, 0, angle);
@@ -123,7 +135,7 @@ public class PlayerController : MonoBehaviour
 
     void HandleMovementInput()
     {
-        float targetSpeed = Input.GetAxisRaw("Horizontal") * runSpeed;
+        float targetSpeed = inputMoveX * runSpeed;
         if (Mathf.Abs(targetSpeed) > 0.01f)
             currentSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, acceleration * Time.deltaTime);
         else
@@ -154,7 +166,7 @@ public class PlayerController : MonoBehaviour
 
     void HandleJumpInput()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (inputJumpDown)
         {
             if (isGrounded)
             {
@@ -176,7 +188,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetButton("Jump") && isJumping)
+        if (inputJumpHeld && isJumping)
         {
             if (jumpTimeCounter > 0)
             {
@@ -188,8 +200,36 @@ public class PlayerController : MonoBehaviour
                 isJumping = false;
             }
         }
-        if (Input.GetButtonUp("Jump"))
+        if (inputJumpUp)
             isJumping = false;
+    }
+
+    private void UpdateInputs()
+    {
+        if (useHandTracking && handInput != null && handInput.HasHand)
+        {
+            inputMoveX = handInput.MoveX;
+            inputJumpDown = handInput.JumpDown;
+            inputJumpHeld = handInput.JumpHeld;
+            inputJumpUp = handInput.JumpUp;
+            inputShootDown = handInput.ShootDown;
+            inputReloadDown = handInput.ReloadDown;
+
+            var screenPos = new Vector3(handInput.AimScreenPos.x, handInput.AimScreenPos.y, 0f);
+            inputAimWorld = Camera.main.ScreenToWorldPoint(screenPos);
+        }
+        else
+        {
+            inputMoveX = Input.GetAxisRaw("Horizontal");
+            inputJumpDown = Input.GetButtonDown("Jump");
+            inputJumpHeld = Input.GetButton("Jump");
+            inputJumpUp = Input.GetButtonUp("Jump");
+            inputShootDown = Input.GetMouseButtonDown(0);
+            inputReloadDown = Input.GetKeyDown(KeyCode.R);
+            inputAimWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
+
+        inputAimWorld.z = 0f;
     }
 
     void UpdateAnimations()

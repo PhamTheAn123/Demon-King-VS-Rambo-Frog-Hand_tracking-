@@ -4,6 +4,7 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
+using System;
 using System.Collections;
 using Mediapipe.Tasks.Vision.HandLandmarker;
 using UnityEngine;
@@ -17,6 +18,11 @@ namespace Mediapipe.Unity.Sample.HandLandmarkDetection
 
     private Experimental.TextureFramePool _textureFramePool;
 
+    public event Action<HandLandmarkerResult> OnResult;
+
+    private readonly object _resultLock = new object();
+    private HandLandmarkerResult _latestResult;
+
     public readonly HandLandmarkDetectionConfig config = new HandLandmarkDetectionConfig();
 
     public override void Stop()
@@ -24,6 +30,22 @@ namespace Mediapipe.Unity.Sample.HandLandmarkDetection
       base.Stop();
       _textureFramePool?.Dispose();
       _textureFramePool = null;
+    }
+
+    public bool TryGetLatestResult(out HandLandmarkerResult result)
+    {
+      lock (_resultLock)
+      {
+        if (_latestResult.handLandmarks == null || _latestResult.handLandmarks.Count == 0)
+        {
+          result = default;
+          return false;
+        }
+
+        result = default;
+        _latestResult.CloneTo(ref result);
+        return true;
+      }
     }
 
     protected override IEnumerator Run()
@@ -128,20 +150,24 @@ namespace Mediapipe.Unity.Sample.HandLandmarkDetection
             if (taskApi.TryDetect(image, imageProcessingOptions, ref result))
             {
               _handLandmarkerResultAnnotationController.DrawNow(result);
+              SetLatestResult(result);
             }
             else
             {
               _handLandmarkerResultAnnotationController.DrawNow(default);
+              SetLatestResult(default);
             }
             break;
           case Tasks.Vision.Core.RunningMode.VIDEO:
             if (taskApi.TryDetectForVideo(image, GetCurrentTimestampMillisec(), imageProcessingOptions, ref result))
             {
               _handLandmarkerResultAnnotationController.DrawNow(result);
+              SetLatestResult(result);
             }
             else
             {
               _handLandmarkerResultAnnotationController.DrawNow(default);
+              SetLatestResult(default);
             }
             break;
           case Tasks.Vision.Core.RunningMode.LIVE_STREAM:
@@ -154,6 +180,17 @@ namespace Mediapipe.Unity.Sample.HandLandmarkDetection
     private void OnHandLandmarkDetectionOutput(HandLandmarkerResult result, Image image, long timestamp)
     {
       _handLandmarkerResultAnnotationController.DrawLater(result);
+      SetLatestResult(result);
+    }
+
+    private void SetLatestResult(HandLandmarkerResult result)
+    {
+      lock (_resultLock)
+      {
+        result.CloneTo(ref _latestResult);
+      }
+
+      OnResult?.Invoke(result);
     }
   }
 }
