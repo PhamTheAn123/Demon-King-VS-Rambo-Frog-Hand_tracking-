@@ -19,24 +19,14 @@ public class HandInputProvider : MonoBehaviour
     [SerializeField] private float openThreshold = 0.18f;
     [SerializeField] private float fistThreshold = 0.10f;
     [SerializeField] private bool useTwoHands = true;
-    [SerializeField] private bool enableRightHand = false;
 
     public float MoveX { get; private set; }
     public bool JumpDown { get; private set; }
     public bool JumpHeld { get; private set; }
     public bool JumpUp { get; private set; }
-    public bool ShootDown { get; private set; }
-    public bool ReloadDown { get; private set; }
-    public Vector2 AimScreenPos { get; private set; }
     public bool HasHand { get; private set; }
 
-    private bool lastPinchLeft;
-    private bool lastOpenLeft;
-    private bool lastFistLeft;
     private bool lastFourFingers;
-    private bool lastPinchRight;
-    private bool lastOpenRight;
-    private bool lastFistRight;
 
     private void Update()
     {
@@ -71,36 +61,44 @@ public class HandInputProvider : MonoBehaviour
             return;
         }
 
-        var moveSource = leftLandmarks ?? fallbackLandmarks;
-        var aimSource = rightLandmarks ?? fallbackLandmarks;
+        // Two-hands mode: choose movement source based on actual hand x positions
+        IReadOnlyList<NormalizedLandmark> moveSource = null;
 
-        UpdateMovementFromHand(moveSource);
-        UpdateLeftHandGestures(leftLandmarks ?? fallbackLandmarks);
-
-        if (enableRightHand)
+        if (result.handLandmarks != null && result.handLandmarks.Count >= 2)
         {
-            UpdateAimFromHand(aimSource);
-            UpdateRightHandGestures(rightLandmarks ?? fallbackLandmarks);
+            // determine which detected hand is on the left side of the screen
+            var h0 = result.handLandmarks[0].landmarks;
+            var h1 = result.handLandmarks[1].landmarks;
+
+            // use index fingertip x (landmark 8) as representative
+            float x0 = h0 != null && h0.Count > 8 ? h0[8].x : 0.5f;
+            float x1 = h1 != null && h1.Count > 8 ? h1[8].x : 0.5f;
+
+            if (x0 <= x1)
+            {
+                moveSource = h0;
+            }
+            else
+            {
+                moveSource = h1;
+            }
         }
         else
         {
-            UpdateAimFromMouse();
-            ResetRightHandGestures();
+            // fallback: prefer left-labeled landmarks, then first detected, then right-labeled
+            moveSource = leftLandmarks ?? fallbackLandmarks ?? rightLandmarks;
         }
+
+        UpdateMovementFromHand(moveSource);
+        UpdateLeftHandGestures(moveSource ?? (leftLandmarks ?? fallbackLandmarks));
     }
 
-    private static float Distance(NormalizedLandmark a, NormalizedLandmark b)
-    {
-        return Vector2.Distance(new Vector2(a.x, a.y), new Vector2(b.x, b.y));
-    }
 
     private void ResetFrameInputs()
     {
         JumpDown = false;
         JumpHeld = false;
         JumpUp = false;
-        ShootDown = false;
-        ReloadDown = false;
     }
 
     private void ProcessSingleHand(IReadOnlyList<NormalizedLandmark> landmarks)
@@ -113,17 +111,6 @@ public class HandInputProvider : MonoBehaviour
 
         UpdateMovementFromHand(landmarks);
         UpdateLeftHandGestures(landmarks);
-
-        if (enableRightHand)
-        {
-            UpdateAimFromHand(landmarks);
-            UpdateRightHandGestures(landmarks);
-        }
-        else
-        {
-            UpdateAimFromMouse();
-            ResetRightHandGestures();
-        }
     }
 
     private void UpdateMovementFromHand(IReadOnlyList<NormalizedLandmark> landmarks)
@@ -154,28 +141,12 @@ public class HandInputProvider : MonoBehaviour
         MoveX = Mathf.MoveTowards(MoveX, targetMoveX, moveSmoothing * Time.deltaTime);
     }
 
-    private void UpdateAimFromHand(IReadOnlyList<NormalizedLandmark> landmarks)
-    {
-        if (landmarks == null || landmarks.Count < 21)
-        {
-            return;
-        }
-
-        var indexTip = landmarks[8];
-        AimScreenPos = new Vector2(indexTip.x * Screen.width, (1f - indexTip.y) * Screen.height);
-    }
-
-    private void UpdateAimFromMouse()
-    {
-        AimScreenPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-    }
+    
 
     private void UpdateLeftHandGestures(IReadOnlyList<NormalizedLandmark> landmarks)
     {
         if (landmarks == null || landmarks.Count < 21)
         {
-            lastOpenLeft = false;
-            lastFistLeft = false;
             lastFourFingers = false;
             return;
         }
@@ -188,61 +159,7 @@ public class HandInputProvider : MonoBehaviour
         lastFourFingers = fourFingers;
     }
 
-    private void UpdateRightHandGestures(IReadOnlyList<NormalizedLandmark> landmarks)
-    {
-        if (landmarks == null || landmarks.Count < 21)
-        {
-            lastPinchRight = false;
-            lastFistRight = false;
-            return;
-        }
-
-        var pinch = IsPinch(landmarks);
-        var fist = IsFist(landmarks);
-
-        ShootDown = pinch && !lastPinchRight;
-        ReloadDown = fist && !lastFistRight;
-
-        lastPinchRight = pinch;
-        lastFistRight = fist;
-    }
-
-    private void ResetRightHandGestures()
-    {
-        ShootDown = false;
-        ReloadDown = false;
-        lastPinchRight = false;
-        lastFistRight = false;
-    }
-
-    private bool IsPinch(IReadOnlyList<NormalizedLandmark> landmarks)
-    {
-        var thumbTip = landmarks[4];
-        var indexTip = landmarks[8];
-        return Distance(thumbTip, indexTip) < pinchThreshold;
-    }
-
-    private bool IsOpen(IReadOnlyList<NormalizedLandmark> landmarks)
-    {
-        var wrist = landmarks[0];
-        var indexTip = landmarks[8];
-        var middleTip = landmarks[12];
-        var ringTip = landmarks[16];
-        var pinkyTip = landmarks[20];
-        float avgFingerDistance = (Distance(wrist, indexTip) + Distance(wrist, middleTip) + Distance(wrist, ringTip) + Distance(wrist, pinkyTip)) * 0.25f;
-        return avgFingerDistance > openThreshold;
-    }
-
-    private bool IsFist(IReadOnlyList<NormalizedLandmark> landmarks)
-    {
-        var wrist = landmarks[0];
-        var indexTip = landmarks[8];
-        var middleTip = landmarks[12];
-        var ringTip = landmarks[16];
-        var pinkyTip = landmarks[20];
-        float avgFingerDistance = (Distance(wrist, indexTip) + Distance(wrist, middleTip) + Distance(wrist, ringTip) + Distance(wrist, pinkyTip)) * 0.25f;
-        return avgFingerDistance < fistThreshold;
-    }
+    // Aim / shoot / reload related helpers removed.
 
     private int CountExtendedFingers(IReadOnlyList<NormalizedLandmark> landmarks)
     {

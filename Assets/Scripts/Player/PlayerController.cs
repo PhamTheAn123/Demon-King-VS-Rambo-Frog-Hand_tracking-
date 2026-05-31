@@ -39,10 +39,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer sprite;
-    public GunController gunController;
     [SerializeField] private ParticleSystem smokeFX;
-    public Transform gunRightPos;
-    public Transform gunLeftPos;
 
     [Header("Hand Tracking")]
     [SerializeField] private bool useHandTracking = true;
@@ -52,9 +49,6 @@ public class PlayerController : MonoBehaviour
     private bool inputJumpDown;
     private bool inputJumpHeld;
     private bool inputJumpUp;
-    private bool inputShootDown;
-    private bool inputReloadDown;
-    private Vector3 inputAimWorld;
 
     private void Awake()
     {
@@ -70,42 +64,7 @@ public class PlayerController : MonoBehaviour
         HandleMovementInput();
         HandleJumpInput();
         UpdateAnimations();
-
-        if (inputShootDown && gunController != null)
-        {
-            gunController.Shoot();
-        }
-        if (inputReloadDown && gunController != null)
-        {
-            gunController.Reload();
-        }
-
-        if (inputAimWorld.x < transform.position.x)
-            sprite.flipX = true;
-        else
-            sprite.flipX = false;
-
-        if (gunController != null)
-        {
-            Transform gunHolder = gunController.transform.parent;
-
-            if (sprite.flipX)
-            {
-                gunHolder.position = gunLeftPos.position;
-                gunController.transform.localScale = new Vector3(1, -1, 1);
-            }
-            else
-            {
-                gunHolder.position = gunRightPos.position;
-                gunController.transform.localScale = new Vector3(1, 1, 1);
-            }
-
-            Vector2 direction = (inputAimWorld - gunHolder.position).normalized;
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-            gunHolder.rotation = Quaternion.Euler(0, 0, angle);
-
-        }
+        // Shooting/reloading/aiming removed — only movement and jump remain.
     }
 
     private void GravityControl()
@@ -212,12 +171,6 @@ public class PlayerController : MonoBehaviour
             inputJumpDown = handInput.JumpDown;
             inputJumpHeld = handInput.JumpHeld;
             inputJumpUp = handInput.JumpUp;
-            inputShootDown = handInput.ShootDown;
-            inputReloadDown = handInput.ReloadDown;
-
-            var screenPos = new Vector3(handInput.AimScreenPos.x, handInput.AimScreenPos.y, 0f);
-            var camera = Camera.main;
-            inputAimWorld = camera != null ? camera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, 0f - camera.transform.position.z)) : Vector3.zero;
         }
         else
         {
@@ -225,12 +178,9 @@ public class PlayerController : MonoBehaviour
             inputJumpDown = Input.GetButtonDown("Jump");
             inputJumpHeld = Input.GetButton("Jump");
             inputJumpUp = Input.GetButtonUp("Jump");
-            inputShootDown = Input.GetMouseButtonDown(0);
-            inputReloadDown = Input.GetKeyDown(KeyCode.R);
-            inputAimWorld = MouseWorldUtils.GetMouseWorldPosition();
+            // mouse actions for shooting/reloading removed
         }
-
-        inputAimWorld.z = 0f;
+        
     }
 
     void UpdateAnimations()
