@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Mediapipe.Tasks.Components.Containers;
 using Mediapipe.Tasks.Vision.HandLandmarker;
 using Mediapipe.Unity.Sample.HandLandmarkDetection;
+using Mediapipe.Unity.Sample;
 using UnityEngine;
 
 public class HandInputProvider : MonoBehaviour
@@ -13,17 +14,15 @@ public class HandInputProvider : MonoBehaviour
     [SerializeField] private float moveDeadzone = 0.15f;
     [SerializeField] private float moveSmoothing = 8f;
     [SerializeField] private float fingerExtendThreshold = 0.03f;
-
-    [Header("Gestures")]
-    [SerializeField] private float pinchThreshold = 0.06f;
-    [SerializeField] private float openThreshold = 0.18f;
-    [SerializeField] private float fistThreshold = 0.10f;
     [SerializeField] private bool useTwoHands = true;
 
     public float MoveX { get; private set; }
     public bool JumpDown { get; private set; }
     public bool JumpHeld { get; private set; }
     public bool JumpUp { get; private set; }
+    public bool ShootDown { get; private set; }
+    public bool ShootHeld { get; private set; }
+    public Vector2 AimScreenPos { get; private set; }
     public bool HasHand { get; private set; }
 
     private bool lastFourFingers;
@@ -44,8 +43,11 @@ public class HandInputProvider : MonoBehaviour
             return;
         }
 
-        var leftLandmarks = GetHandLandmarks(result, "Left");
-        var rightLandmarks = GetHandLandmarks(result, "Right");
+        var imageSource = ImageSourceProvider.ImageSource;
+        bool swapHandedness = imageSource != null && imageSource.GetTransformationOptions().flipHorizontally;
+
+        var leftLandmarks = GetHandLandmarks(result, "Left", swapHandedness);
+        var rightLandmarks = GetHandLandmarks(result, "Right", swapHandedness);
         var fallbackLandmarks = GetFirstHandLandmarks(result);
 
         HasHand = leftLandmarks != null || rightLandmarks != null || fallbackLandmarks != null;
@@ -61,36 +63,13 @@ public class HandInputProvider : MonoBehaviour
             return;
         }
 
-        // Two-hands mode: choose movement source based on actual hand x positions
-        IReadOnlyList<NormalizedLandmark> moveSource = null;
-
-        if (result.handLandmarks != null && result.handLandmarks.Count >= 2)
-        {
-            // determine which detected hand is on the left side of the screen
-            var h0 = result.handLandmarks[0].landmarks;
-            var h1 = result.handLandmarks[1].landmarks;
-
-            // use index fingertip x (landmark 8) as representative
-            float x0 = h0 != null && h0.Count > 8 ? h0[8].x : 0.5f;
-            float x1 = h1 != null && h1.Count > 8 ? h1[8].x : 0.5f;
-
-            if (x0 <= x1)
-            {
-                moveSource = h0;
-            }
-            else
-            {
-                moveSource = h1;
-            }
-        }
-        else
-        {
-            // fallback: prefer left-labeled landmarks, then first detected, then right-labeled
-            moveSource = leftLandmarks ?? fallbackLandmarks ?? rightLandmarks;
-        }
+        // Two-hands mode: left hand moves/jumps, right hand aims and shoots.
+        IReadOnlyList<NormalizedLandmark> moveSource = leftLandmarks;
+        IReadOnlyList<NormalizedLandmark> aimSource = rightLandmarks;
 
         UpdateMovementFromHand(moveSource);
-        UpdateLeftHandGestures(moveSource ?? (leftLandmarks ?? fallbackLandmarks));
+        UpdateLeftHandGestures(moveSource);
+        UpdateRightHandAim(aimSource);
     }
 
 
@@ -99,6 +78,8 @@ public class HandInputProvider : MonoBehaviour
         JumpDown = false;
         JumpHeld = false;
         JumpUp = false;
+        ShootDown = false;
+        ShootHeld = false;
     }
 
     private void ProcessSingleHand(IReadOnlyList<NormalizedLandmark> landmarks)
@@ -111,6 +92,7 @@ public class HandInputProvider : MonoBehaviour
 
         UpdateMovementFromHand(landmarks);
         UpdateLeftHandGestures(landmarks);
+        UpdateRightHandAim(landmarks);
     }
 
     private void UpdateMovementFromHand(IReadOnlyList<NormalizedLandmark> landmarks)
@@ -159,7 +141,22 @@ public class HandInputProvider : MonoBehaviour
         lastFourFingers = fourFingers;
     }
 
-    // Aim / shoot / reload related helpers removed.
+    private void UpdateRightHandAim(IReadOnlyList<NormalizedLandmark> landmarks)
+    {
+        if (landmarks == null || landmarks.Count < 21)
+        {
+            return;
+        }
+
+        AimScreenPos = ToScreenPoint(landmarks[8]);
+        // Determine shoot held by checking if thumb is bent close to index base (simple heuristic)
+        // Use landmarks: thumb tip (4) and index MCP (5) distance
+        var thumbTip = landmarks[4];
+        var indexMcp = landmarks[5];
+        float thumbIndexDist = Vector2.Distance(new Vector2(thumbTip.x, thumbTip.y), new Vector2(indexMcp.x, indexMcp.y));
+        // If thumb is close to index base -> considered 'fist' (hold to shoot)
+        ShootHeld = thumbIndexDist < 0.06f;
+    }
 
     private int CountExtendedFingers(IReadOnlyList<NormalizedLandmark> landmarks)
     {
@@ -193,11 +190,21 @@ public class HandInputProvider : MonoBehaviour
         return (pip.y - tip.y) > fingerExtendThreshold;
     }
 
-    private static IReadOnlyList<NormalizedLandmark> GetHandLandmarks(HandLandmarkerResult result, string targetHand)
+    private static Vector2 ToScreenPoint(NormalizedLandmark landmark)
+    {
+        return new Vector2(landmark.x * Screen.width, (1f - landmark.y) * Screen.height);
+    }
+
+    private static IReadOnlyList<NormalizedLandmark> GetHandLandmarks(HandLandmarkerResult result, string targetHand, bool swapHandedness)
     {
         if (result.handedness == null || result.handLandmarks == null)
         {
             return null;
+        }
+
+        if (swapHandedness)
+        {
+            targetHand = string.Equals(targetHand, "Left", System.StringComparison.OrdinalIgnoreCase) ? "Right" : "Left";
         }
 
         for (int i = 0; i < result.handedness.Count && i < result.handLandmarks.Count; i++)

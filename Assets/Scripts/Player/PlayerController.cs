@@ -39,7 +39,10 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer sprite;
+    public GunController gunController;
     [SerializeField] private ParticleSystem smokeFX;
+    public Transform gunRightPos;
+    public Transform gunLeftPos;
 
     [Header("Hand Tracking")]
     [SerializeField] private bool useHandTracking = true;
@@ -49,6 +52,9 @@ public class PlayerController : MonoBehaviour
     private bool inputJumpDown;
     private bool inputJumpHeld;
     private bool inputJumpUp;
+    private bool inputShootDown;
+    private bool inputShootHeld;
+    private Vector3 inputAimWorld;
 
     private void Awake()
     {
@@ -64,7 +70,45 @@ public class PlayerController : MonoBehaviour
         HandleMovementInput();
         HandleJumpInput();
         UpdateAnimations();
-        // Shooting/reloading/aiming removed — only movement and jump remain.
+
+        if (gunController != null)
+        {
+            if (inputShootDown)
+            {
+                gunController.Shoot();
+            }
+
+            if (inputShootHeld)
+            {
+                if (Time.time >= gunController.nextShootTime)
+                {
+                    gunController.Shoot();
+                    gunController.nextShootTime = Time.time + gunController.shootRate;
+                }
+            }
+        }
+
+        if (gunController != null)
+        {
+            Transform gunHolder = gunController.transform.parent;
+
+            UpdateFacingDirection();
+
+            if (sprite.flipX)
+            {
+                gunHolder.position = gunLeftPos.position;
+                gunController.transform.localScale = new Vector3(1, -1, 1);
+            }
+            else
+            {
+                gunHolder.position = gunRightPos.position;
+                gunController.transform.localScale = new Vector3(1, 1, 1);
+            }
+
+            Vector2 direction = (inputAimWorld - gunHolder.position).normalized;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            gunHolder.rotation = Quaternion.Euler(0, 0, angle);
+        }
     }
 
     private void GravityControl()
@@ -107,8 +151,6 @@ public class PlayerController : MonoBehaviour
 
         if (Mathf.Abs(currentSpeed) > 0.1f)
         {
-            sprite.flipX = currentSpeed < 0;
-
             if (isGrounded && !smokeFX.isPlaying)
             {
                 smokeFX.Play();
@@ -120,6 +162,24 @@ public class PlayerController : MonoBehaviour
             {
                 smokeFX.Stop();
             }
+        }
+    }
+
+    void UpdateFacingDirection()
+    {
+        if (Mathf.Abs(currentSpeed) > 0.1f)
+        {
+            sprite.flipX = currentSpeed < 0;
+            return;
+        }
+
+        if (inputAimWorld.x < transform.position.x)
+        {
+            sprite.flipX = true;
+        }
+        else if (inputAimWorld.x > transform.position.x)
+        {
+            sprite.flipX = false;
         }
     }
 
@@ -171,6 +231,18 @@ public class PlayerController : MonoBehaviour
             inputJumpDown = handInput.JumpDown;
             inputJumpHeld = handInput.JumpHeld;
             inputJumpUp = handInput.JumpUp;
+            inputShootDown = handInput.ShootDown;
+            inputShootHeld = handInput.ShootHeld;
+
+            var camera = Camera.main;
+            if (camera != null)
+            {
+                inputAimWorld = camera.ScreenToWorldPoint(new Vector3(handInput.AimScreenPos.x, handInput.AimScreenPos.y, 0f - camera.transform.position.z));
+            }
+            else
+            {
+                inputAimWorld = Vector3.zero;
+            }
         }
         else
         {
@@ -178,9 +250,12 @@ public class PlayerController : MonoBehaviour
             inputJumpDown = Input.GetButtonDown("Jump");
             inputJumpHeld = Input.GetButton("Jump");
             inputJumpUp = Input.GetButtonUp("Jump");
-            // mouse actions for shooting/reloading removed
+            inputShootDown = Input.GetMouseButtonDown(0);
+            inputShootHeld = Input.GetMouseButton(0);
+            inputAimWorld = MouseWorldUtils.GetMouseWorldPosition();
         }
-        
+
+        inputAimWorld.z = 0f;
     }
 
     void UpdateAnimations()

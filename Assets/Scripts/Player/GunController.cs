@@ -12,7 +12,7 @@ public class GunController : MonoBehaviour
     public float bulletSpeed = 10f;
     public Transform shootPoint;
     public float shootRate = 0.5f;
-    float nextShootTime = 0f;
+    public float nextShootTime = 0f;
     public int currentClip, maxClip = 7, currentAmmo, maxAmmo = 30;
     public float reloadDelay = 1.5f; 
     public BulletUI bulletUI; 
@@ -28,17 +28,7 @@ public class GunController : MonoBehaviour
         UpdateAmmoUI();
     }
 
-    void Update()
-    {
-        Vector2 mousePosition = MouseWorldUtils.GetMouseWorldPosition();
-        direction = mousePosition - (Vector2)Gun.position;
-        FaceMouse();
-    }
-
-    void FaceMouse()
-    {
-        Gun.transform.right = direction;
-    }
+    // Gun facing is controlled by PlayerController's gun holder rotation.
 
     public void Shoot()
     {
