@@ -216,7 +216,8 @@ public class PlayerController : MonoBehaviour
             inputReloadDown = handInput.ReloadDown;
 
             var screenPos = new Vector3(handInput.AimScreenPos.x, handInput.AimScreenPos.y, 0f);
-            inputAimWorld = Camera.main.ScreenToWorldPoint(screenPos);
+            var camera = Camera.main;
+            inputAimWorld = camera != null ? camera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, 0f - camera.transform.position.z)) : Vector3.zero;
         }
         else
         {
@@ -226,7 +227,7 @@ public class PlayerController : MonoBehaviour
             inputJumpUp = Input.GetButtonUp("Jump");
             inputShootDown = Input.GetMouseButtonDown(0);
             inputReloadDown = Input.GetKeyDown(KeyCode.R);
-            inputAimWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            inputAimWorld = MouseWorldUtils.GetMouseWorldPosition();
         }
 
         inputAimWorld.z = 0f;
@@ -245,5 +246,21 @@ public class PlayerController : MonoBehaviour
     {
         if (groundCheck)
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    }
+}
+
+public static class MouseWorldUtils
+{
+    public static Vector3 GetMouseWorldPosition(float worldZ = 0f)
+    {
+        var camera = Camera.main;
+        if (camera == null)
+        {
+            return Vector3.zero;
+        }
+
+        var screenPosition = Input.mousePosition;
+        screenPosition.z = worldZ - camera.transform.position.z;
+        return camera.ScreenToWorldPoint(screenPosition);
     }
 }

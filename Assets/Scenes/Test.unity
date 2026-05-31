@@ -357,7 +357,7 @@ MonoBehaviour:
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 34
+    FieldOfView: 67
     OrthographicSize: 9.217341
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -772,8 +772,8 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 34
-  orthographic: 1
+  field of view: 67
+  orthographic: 0
   orthographic size: 9.217341
   m_Depth: -1
   m_CullingMask:
@@ -2258,7 +2258,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

@@ -4,7 +4,7 @@ public class CrosshairController : MonoBehaviour
 {
     void Update()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mousePos = MouseWorldUtils.GetMouseWorldPosition();
         mousePos.z = 0;
         transform.position = mousePos;
     }

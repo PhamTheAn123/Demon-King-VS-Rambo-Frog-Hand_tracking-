@@ -30,7 +30,7 @@ public class GunController : MonoBehaviour
 
     void Update()
     {
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mousePosition = MouseWorldUtils.GetMouseWorldPosition();
         direction = mousePosition - (Vector2)Gun.position;
         FaceMouse();
     }
