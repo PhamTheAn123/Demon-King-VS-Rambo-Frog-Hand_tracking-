@@ -10,11 +10,12 @@ TagManager:
   - Trap
   - Audio
   - Boss
+  - Global Resource
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Mouse
   - Water
   - UI
   - Ground
@@ -22,8 +23,8 @@ TagManager:
   - Player
   - Boss
   - Oneway
-  - Mouse
   - 
+  - BackGround
   - 
   - 
   - 
@@ -47,26 +48,38 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: UI
+    uniqueID: 3594433285
+    locked: 0
+  - name: 1
+    uniqueID: 1852530515
+    locked: 0
+  - name: 2
+    uniqueID: 4224528717
+    locked: 0
+  - name: 3
+    uniqueID: 2869319141
+    locked: 0
+  - name: 4
+    uniqueID: 1924793585
+    locked: 0
+  - name: oneway
+    uniqueID: 4139515375
+    locked: 0
   - name: BackGround
     uniqueID: 1912078995
     locked: 0
   - name: Ground
     uniqueID: 951020573
     locked: 0
-  - name: oneway
-    uniqueID: 4139515375
-    locked: 0
   - name: ForeGround
     uniqueID: 3568487297
-    locked: 0
-  - name: Enemy
-    uniqueID: 504004951
     locked: 0
   - name: Player
     uniqueID: 1557608135
     locked: 0
-  - name: UI
-    uniqueID: 3594433285
+  - name: Enemy
+    uniqueID: 504004951
     locked: 0
   - name: Item
     uniqueID: 4138525065
@@ -79,3 +92,4 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
+  m_MigratedRenderPipelines: []
