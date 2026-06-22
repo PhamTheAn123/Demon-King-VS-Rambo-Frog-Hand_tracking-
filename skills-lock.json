@@ -1,17 +1,131 @@
 {
   "version": 1,
   "skills": {
+    "agent-native-design": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/agent-native-design/skills/agent-native-design/SKILL.md",
+      "computedHash": "b6fac6ef8a9127a98380e3f5da17ea21b0359cac88165216205730c0815c2081"
+    },
+    "asta-skill": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/asta/skills/asta-skill/SKILL.md",
+      "computedHash": "333c37c9c08c636656ada27e8d4c90c09dcc619a75db9f952d57a7cc0e3ee32a"
+    },
+    "bangumi-frames": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/bangumi-frames/skills/bangumi-frames/SKILL.md",
+      "computedHash": "10d87fe5095ce4429a7c50eda96c24c83048f4e696aa5068b83cdb1dbd6ccfcd"
+    },
+    "creating-mermaid-diagrams": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/mermaid/skills/mermaid-skill/SKILL.md",
+      "computedHash": "1e271fadbcb9b8c39803b438f5105c30a7d3c296d873081c1ad39db93b31b5ac"
+    },
     "csharp-async": {
       "source": "github/awesome-copilot",
       "sourceType": "github",
       "skillPath": "skills/csharp-async/SKILL.md",
       "computedHash": "e889958419757528e43fb674607d13fffe331a6673cfcef2b0ab8ff9fb569bb8"
     },
+    "drawio-skill": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/drawio/skills/drawio-skill/SKILL.md",
+      "computedHash": "f5ae337ba91a59cda4773ca4b7732a327266946b3a3b62f01e8b4c5c7a7cc333"
+    },
+    "excalidraw": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/excalidraw/skills/excalidraw-skill/SKILL.md",
+      "computedHash": "0a12ba457db429f18b636a8b769502370652e08ce7c38ab662386bb50700328c"
+    },
+    "imagenCN": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/imagenCN/skills/imagenCN/SKILL.md",
+      "computedHash": "c4a51f1bd332bf4e8d468695ff0efe535e46e9c3171ac80d14b8986a22a3b5b1"
+    },
+    "journal-abbrev": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/journal-abbrev/skills/journal-abbrev/SKILL.md",
+      "computedHash": "9848e3ec52aac73318eaf8b7f549937687e6be69c923d52b4718d7b3567bc80b"
+    },
+    "obsidian-organizer": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/obsidian-organizer/skills/obsidian-organizer/SKILL.md",
+      "computedHash": "d745068e44d2415c922aab38f5c31a37e462793d05b9489e7834d1d0bab63640"
+    },
+    "paper-fetch": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/paper-fetch/skills/paper-fetch/SKILL.md",
+      "computedHash": "2d33f892a4dc05b82e8016bfeda03554377cf6ee1c37baf74e42cf550804d15f"
+    },
+    "pi-cli-runtime": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/pi/skills/pi-cli-runtime/SKILL.md",
+      "computedHash": "832d6acfd813e644934c7b8379d5cc4322be1d1ea0b551d26fe94ebde72bb1d6"
+    },
+    "pi-prompting": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/pi/skills/pi-prompting/SKILL.md",
+      "computedHash": "f9dcc9af9f4d5a9eb64b8ac5d0e7e6e6b0eff7ccecfbfdc7084186d38248e8af"
+    },
+    "pi-result-handling": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/pi/skills/pi-result-handling/SKILL.md",
+      "computedHash": "86afa6ae27ace23dce125c412f5795217c19ca6ab3dd5900ad56885f8e9d1098"
+    },
+    "plantuml-skill": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/plantuml/skills/plantuml-skill/SKILL.md",
+      "computedHash": "a61055a646debc600acf3d691c3487d87f8c8a6a5e386cd7169d0e6567a7def6"
+    },
+    "semanticscholar-skill": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/semanticscholar/skills/semanticscholar-skill/SKILL.md",
+      "computedHash": "e498eed4f85b2841436ed8aaffa5232ba64710e9513035a44e58b7d9931ec0f4"
+    },
+    "target-prioritization": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/target-prioritization/skills/target-prioritization/SKILL.md",
+      "computedHash": "1e83f672af97575e7e6fc98816ab9852d7b1e57e56d5cda01676078242a2a7f3"
+    },
+    "tldraw-skill": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/tldraw/skills/tldraw-skill/SKILL.md",
+      "computedHash": "0343201312cf9962d115c3d1069cd7e00edbe6750c10965aa32418378e543908"
+    },
+    "ttsCN": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/ttsCN/skills/ttsCN/SKILL.md",
+      "computedHash": "24b2ac9d9be55744ea75f94333b10b866be7cf983c0c9f8dbd4983a67d18e1a0"
+    },
     "unity-developer": {
       "source": "rmyndharis/antigravity-skills",
       "sourceType": "github",
       "skillPath": "skills/unity-developer/SKILL.md",
       "computedHash": "c6187682ca8edc8bdf87bc96bc4a28b7117dab7f1f2ea92275690f4e62dae921"
+    },
+    "video-podcast-maker": {
+      "source": "Agents365-ai/365-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/video-podcast-maker/skills/video-podcast-maker/SKILL.md",
+      "computedHash": "7256236a42e512df33019b62698fc0dc69faf9b81756109ac5dddf11051eb673"
     }
   }
 }
