@@ -3057,7 +3057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c51125d4395b9b43b63ba1ed09f0de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FeedbackManager
-  databaseType: 2
+  databaseType: 0
   firebaseUrl: https://swd-6c4c4-default-rtdb.firebaseio.com/
   googleFormUrl: 
   supabaseUrl: https://rxmswzfljtkkthnhozov.supabase.co
