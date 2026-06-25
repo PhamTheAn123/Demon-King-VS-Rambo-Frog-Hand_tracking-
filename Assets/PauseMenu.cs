@@ -26,8 +26,10 @@ public class PauseMenu : MonoBehaviour
     }
     public void Home()
     {
-        SceneManager.LoadScene("MainMenu");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
     }
     public void Exit()
     {

@@ -150,8 +150,10 @@ public class DeadUI : MonoBehaviour
     public void MainMenu()
     {
         Debug.Log("DeadUI: Clicked MAIN MENU button, loading MainMenu...");
-        SceneManager.LoadScene("MainMenu");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
     }
     
     public void QuitGame()
