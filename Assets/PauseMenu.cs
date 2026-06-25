@@ -39,7 +39,8 @@ public class PauseMenu : MonoBehaviour
     }
     public void Restart()
     {
-        SceneManager.LoadScene("Lever-1");
+        string currentSceneName = SceneManager.GetActiveScene().name;
         Time.timeScale = 1;
+        SceneManager.LoadScene(currentSceneName);
     }
 }

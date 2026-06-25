@@ -142,9 +142,10 @@ public class DeadUI : MonoBehaviour
     
     public void Restart()
     {
-        Debug.Log("DeadUI: Clicked RESTART button, loading Lever-1...");
-        SceneManager.LoadScene("Lever-1");
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        Debug.Log("DeadUI: Clicked RESTART button, reloading " + currentSceneName + "...");
         Time.timeScale = 1;
+        SceneManager.LoadScene(currentSceneName);
     }
     
     public void MainMenu()
