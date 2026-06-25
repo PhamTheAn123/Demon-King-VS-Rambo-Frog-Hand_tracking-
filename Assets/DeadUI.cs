@@ -10,6 +10,13 @@ public class DeadUI : MonoBehaviour
     
     void Start()
     {
+        SetupButtonListeners();
+
+        if (deathMessageText != null)
+        {
+            deathMessageText.raycastTarget = false; // Tắt raycast target để tránh chặn click chuột vào các nút bên dưới
+        }
+
         if (deadPanel != null)
         {
             deadPanel.SetActive(false);
@@ -19,43 +26,108 @@ public class DeadUI : MonoBehaviour
             Debug.LogError("DeadPanel chưa được gán trong Inspector!");
         }
     }
+
+    private void SetupButtonListeners()
+    {
+        Button[] buttons = GetComponentsInChildren<Button>(true);
+        foreach (Button btn in buttons)
+        {
+            string btnName = btn.gameObject.name.ToLower();
+            if (btnName.Contains("restart") || btnName.Contains("replay"))
+            {
+                btn.onClick.RemoveAllListeners();
+                btn.onClick.AddListener(Restart);
+                Debug.Log("DeadUI: Đã gắn sự kiện Restart/Replay cho nút: " + btn.gameObject.name);
+            }
+            else if (btnName.Contains("menu") || btnName.Contains("home"))
+            {
+                btn.onClick.RemoveAllListeners();
+                btn.onClick.AddListener(MainMenu);
+                Debug.Log("DeadUI: Đã gắn sự kiện MainMenu/Home cho nút: " + btn.gameObject.name);
+            }
+        }
+    }
     
     public void ShowDeadPanel()
     {
+        // Vô hiệu hóa PlayerController để tránh di chuyển và bắn súng khi đã chết (bất kể nguyên nhân chết là gì)
+        PlayerController player = FindObjectOfType<PlayerController>();
+        if (player != null)
+        {
+            player.enabled = false;
+        }
+
+        // CHÚ Ý: Giữ nguyên CrosshairController hoạt động để người chơi di chuyển tâm ngắm chỉ nút bấm
+
         if (deadPanel != null)
         {
+            // Bảo đảm scale của Canvas cha/gốc là (1,1,1) để tính toán Raycast click hoạt động chuẩn xác
+            Canvas parentCanvas = GetComponentInParent<Canvas>();
+            if (parentCanvas != null)
+            {
+                parentCanvas.transform.localScale = Vector3.one;
+            }
+
             deadPanel.SetActive(true);
             Time.timeScale = 0;
+            
+            // Giữ ẩn trỏ chuột hệ thống cho đẹp mắt, chỉ dùng tâm ngắm ảo để ngắm click
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.None; // Giải phóng chuột để di chuyển tự do
             
             if (deathMessageText != null)
             {
                 deathMessageText.text = "You are Dead!";
+                deathMessageText.raycastTarget = false; // Bảo đảm không chặn raycast
             }
         }
     }
     
     public void ShowDeadPanelWithMessage(string message)
     {
+        // Vô hiệu hóa PlayerController để tránh di chuyển và bắn súng khi đã chết (bất kể nguyên nhân chết là gì)
+        PlayerController player = FindObjectOfType<PlayerController>();
+        if (player != null)
+        {
+            player.enabled = false;
+        }
+
+        // CHÚ Ý: Giữ nguyên CrosshairController hoạt động để người chơi di chuyển tâm ngắm chỉ nút bấm
+
         if (deadPanel != null)
         {
+            // Bảo đảm scale của Canvas cha/gốc là (1,1,1) để tính toán Raycast click hoạt động chuẩn xác
+            Canvas parentCanvas = GetComponentInParent<Canvas>();
+            if (parentCanvas != null)
+            {
+                parentCanvas.transform.localScale = Vector3.one;
+            }
+
             deadPanel.SetActive(true);
             Time.timeScale = 0;
+            
+            // Giữ ẩn trỏ chuột hệ thống cho đẹp mắt, chỉ dùng tâm ngắm ảo để ngắm click
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.None; // Giải phóng chuột để di chuyển tự do
             
             if (deathMessageText != null)
             {
                 deathMessageText.text = message;
+                deathMessageText.raycastTarget = false; // Bảo đảm không chặn raycast
             }
         }
     }
     
     public void Restart()
     {
+        Debug.Log("DeadUI: Clicked RESTART button, loading Lever-1...");
         SceneManager.LoadScene("Lever-1");
         Time.timeScale = 1;
     }
     
     public void MainMenu()
     {
+        Debug.Log("DeadUI: Clicked MAIN MENU button, loading MainMenu...");
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1;
     }

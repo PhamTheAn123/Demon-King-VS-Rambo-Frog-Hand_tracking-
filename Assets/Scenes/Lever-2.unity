@@ -1623,11 +1623,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 227434185990176570, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.02
+      value: -8.15
       objectReference: {fileID: 0}
     - target: {fileID: 227434185990176570, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.29
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 227434185990176570, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1661,18 +1661,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2180893873214154001, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
+      propertyPath: field of view
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180893873214154001, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
+      propertyPath: far clip plane
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180893873214154001, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2180893873214154001, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
+      propertyPath: orthographic size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4736513572174475275, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1065408539}
+    - target: {fileID: 4736513572174475275, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5185349194081753074, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7068472450635745921, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8346495177276444241, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5185349194081753074, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1336577226}
   m_SourcePrefab: {fileID: 100100000, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
 --- !u!1 &1104055307
 GameObject:
@@ -1897,6 +1925,101 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec6530c937330b84a913b902d51ad986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1258792107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258792110}
+  - component: {fileID: 1258792109}
+  - component: {fileID: 1258792108}
+  m_Layer: 0
+  m_Name: Cinemachine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1258792108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258792107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b617507da6d07e749b7efdb34e1173e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineFollow
+  TrackerSettings:
+    BindingMode: 4
+    PositionDamping: {x: 1, y: 1, z: 1}
+    AngularDampingMode: 0
+    RotationDamping: {x: 1, y: 1, z: 1}
+    QuaternionDamping: 1
+  FollowOffset: {x: 0, y: 0, z: -10}
+--- !u!114 &1258792109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258792107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
+  Priority:
+    Enabled: 0
+    m_Value: 0
+  OutputChannel: 1
+  StandbyUpdate: 2
+  m_StreamingVersion: 20241001
+  m_LegacyPriority: 0
+  Target:
+    TrackingTarget: {fileID: 1065408539}
+    LookAtTarget: {fileID: 0}
+    CustomLookAtTarget: 0
+  Lens:
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    ModeOverride: 0
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 21.946, y: 16.002}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
+--- !u!4 &1258792110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258792107}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.15, y: 0.09, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1273279231
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,6 +2281,43 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e44c33d4fbb27a489ab851e45943c0b, type: 3}
+--- !u!1 &1336577225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5185349194081753074, guid: 5965cb173b1383f469c0584c8863ad05, type: 3}
+  m_PrefabInstance: {fileID: 1101681164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1336577226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336577225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineBrain
+  ShowDebugText: 0
+  ShowCameraFrustum: 1
+  IgnoreTimeScale: 0
+  WorldUpOverride: {fileID: 0}
+  ChannelMask: -1
+  UpdateMethod: 2
+  BlendUpdateMethod: 1
+  LensModeOverride:
+    Enabled: 0
+    DefaultMode: 2
+  DefaultBlend:
+    Style: 1
+    Time: 2
+    CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  CustomBlends: {fileID: 0}
 --- !u!1001 &1344146705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77100,3 +77260,4 @@ SceneRoots:
   - {fileID: 1746888227}
   - {fileID: 959319924}
   - {fileID: 2038627243}
+  - {fileID: 1258792110}

@@ -59,6 +59,13 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+        // Vô hiệu hóa PlayerController để tránh di chuyển và bắn súng khi đã chết
+        PlayerController pc = GetComponent<PlayerController>();
+        if (pc != null)
+        {
+            pc.enabled = false;
+        }
+
         DeadUI deadUI = FindObjectOfType<DeadUI>();
         if (deadUI != null)
         {

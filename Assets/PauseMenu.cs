@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
+        Cursor.visible = false; // Giữ ẩn con trỏ chuột hệ thống
+        Cursor.lockState = CursorLockMode.None; // Giải phóng chuột để di chuyển tự do
     }
     public void Home()
     {
@@ -19,6 +21,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+        Cursor.visible = false;
     }
     public void Restart()
     {
