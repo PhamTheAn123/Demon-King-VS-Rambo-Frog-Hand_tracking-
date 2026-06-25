@@ -15,6 +15,15 @@ public class CrosshairController : MonoBehaviour
             if (camera != null)
             {
                 targetPosition = camera.ScreenToWorldPoint(new Vector3(handInput.AimScreenPos.x, handInput.AimScreenPos.y, 0f - camera.transform.position.z));
+
+                // Đồng bộ hóa vị trí con trỏ chuột hệ thống với vị trí Aim của Hand Tracking 
+                // để Unity Event System có thể phát hiện chính xác vị trí hover/click trên nút UI.
+                #if ENABLE_INPUT_SYSTEM
+                if (UnityEngine.InputSystem.Mouse.current != null)
+                {
+                    UnityEngine.InputSystem.Mouse.current.WarpCursorPosition(handInput.AimScreenPos);
+                }
+                #endif
             }
             else
             {

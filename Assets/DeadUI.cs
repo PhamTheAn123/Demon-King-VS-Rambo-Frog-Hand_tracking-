@@ -12,6 +12,18 @@ public class DeadUI : MonoBehaviour
     {
         SetupButtonListeners();
 
+        // Bảo đảm scale của Canvas cha/gốc là (1,1,1) và sortingOrder là 999 để tránh bị che bởi các Canvas khác
+        Canvas canvas = GetComponent<Canvas>();
+        if (canvas == null)
+        {
+            canvas = GetComponentInParent<Canvas>();
+        }
+        if (canvas != null)
+        {
+            canvas.transform.localScale = Vector3.one;
+            canvas.sortingOrder = 999;
+        }
+
         if (deathMessageText != null)
         {
             deathMessageText.raycastTarget = false; // Tắt raycast target để tránh chặn click chuột vào các nút bên dưới
@@ -61,11 +73,16 @@ public class DeadUI : MonoBehaviour
 
         if (deadPanel != null)
         {
-            // Bảo đảm scale của Canvas cha/gốc là (1,1,1) để tính toán Raycast click hoạt động chuẩn xác
-            Canvas parentCanvas = GetComponentInParent<Canvas>();
+            // Bảo đảm scale của Canvas cha/gốc là (1,1,1) và sortingOrder là 999 để tính toán Raycast click hoạt động chuẩn xác trên cùng
+            Canvas parentCanvas = GetComponent<Canvas>();
+            if (parentCanvas == null)
+            {
+                parentCanvas = GetComponentInParent<Canvas>();
+            }
             if (parentCanvas != null)
             {
                 parentCanvas.transform.localScale = Vector3.one;
+                parentCanvas.sortingOrder = 999;
             }
 
             deadPanel.SetActive(true);
@@ -96,11 +113,16 @@ public class DeadUI : MonoBehaviour
 
         if (deadPanel != null)
         {
-            // Bảo đảm scale của Canvas cha/gốc là (1,1,1) để tính toán Raycast click hoạt động chuẩn xác
-            Canvas parentCanvas = GetComponentInParent<Canvas>();
+            // Bảo đảm scale của Canvas cha/gốc là (1,1,1) và sortingOrder là 999 để tính toán Raycast click hoạt động chuẩn xác trên cùng
+            Canvas parentCanvas = GetComponent<Canvas>();
+            if (parentCanvas == null)
+            {
+                parentCanvas = GetComponentInParent<Canvas>();
+            }
             if (parentCanvas != null)
             {
                 parentCanvas.transform.localScale = Vector3.one;
+                parentCanvas.sortingOrder = 999;
             }
 
             deadPanel.SetActive(true);
