@@ -54616,6 +54616,54 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeadUI
       objectReference: {fileID: 0}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3275119291134465615, guid: 5ab51b527c1dd144f81a4f31d312c3ad, type: 2}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170185670685700281, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333597638303102577, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841651312589863467, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 649.2911
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841651312589863467, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 120.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841651312589863467, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -18.5162
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841651312589863467, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 168.47
+      objectReference: {fileID: 0}
     - target: {fileID: 7732077096511524959, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -56101,6 +56149,10 @@ PrefabInstance:
       propertyPath: bulletUI
       value: 
       objectReference: {fileID: 509730370}
+    - target: {fileID: 8463225448072994841, guid: af11e17cd3e7c364e8478edb10644cb3, type: 3}
+      propertyPath: handInput
+      value: 
+      objectReference: {fileID: 425178486}
     - target: {fileID: 9185548875348310230, guid: af11e17cd3e7c364e8478edb10644cb3, type: 3}
       propertyPath: healthUI
       value: 
