@@ -1,0 +1,7002 @@
+﻿{
+  "version": "1.0.0",
+  "generatedAt": "2026-06-28",
+  "description": "Skill and ability configuration for all player and enemy skill trees",
+  "skills": [
+    {
+      "skillId": 1,
+      "skillName": "FireBall_Lv1",
+      "baseSkill": "FireBall",
+      "level": 1,
+      "element": "Holy",
+      "targetType": "Splash",
+      "damage": {
+        "base": 370,
+        "atLevel": 414.4,
+        "scaling": "STR",
+        "scalingFactor": 0.14
+      },
+      "cost": {
+        "mana": 32,
+        "manaAtLevel": 33.6,
+        "stamina": 11
+      },
+      "timing": {
+        "cooldown": 4.2,
+        "castTime": 0.2,
+        "duration": 2.9,
+        "channeled": false
+      },
+      "area": {
+        "range": 2,
+        "aoeRadius": 1.4,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.6,
+        "stunDuration": 1.7,
+        "dotDamage": 36,
+        "dotTick": 2.9,
+        "dotDuration": 1.7
+      },
+      "animation": {
+        "castClip": "anim_FireBall_cast",
+        "effectPrefab": "Effects/FireBall_Lv1",
+        "impactPrefab": "Effects/FireBall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 2,
+      "skillName": "FireBall_Lv2",
+      "baseSkill": "FireBall",
+      "level": 2,
+      "element": "Lightning",
+      "targetType": "Splash",
+      "damage": {
+        "base": 84,
+        "atLevel": 104.2,
+        "scaling": "STR",
+        "scalingFactor": 0.17
+      },
+      "cost": {
+        "mana": 10,
+        "manaAtLevel": 11,
+        "stamina": 17
+      },
+      "timing": {
+        "cooldown": 14.7,
+        "castTime": 2.4,
+        "duration": 5.1,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.5,
+        "aoeRadius": 2.6,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 1.6,
+        "stunDuration": 1.2,
+        "dotDamage": 24,
+        "dotTick": 2.5,
+        "dotDuration": 3.5
+      },
+      "animation": {
+        "castClip": "anim_FireBall_cast",
+        "effectPrefab": "Effects/FireBall_Lv2",
+        "impactPrefab": "Effects/FireBall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "FireBall_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 3,
+      "skillName": "FireBall_Lv3",
+      "baseSkill": "FireBall",
+      "level": 3,
+      "element": "Lightning",
+      "targetType": "Single",
+      "damage": {
+        "base": 85,
+        "atLevel": 115.6,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 82,
+        "manaAtLevel": 94.3,
+        "stamina": 20
+      },
+      "timing": {
+        "cooldown": 23.1,
+        "castTime": 2.6,
+        "duration": 3.5,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.3,
+        "aoeRadius": 2.3,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.4,
+        "stunDuration": 1.5,
+        "dotDamage": 49,
+        "dotTick": 2.6,
+        "dotDuration": 1.2
+      },
+      "animation": {
+        "castClip": "anim_FireBall_cast",
+        "effectPrefab": "Effects/FireBall_Lv3",
+        "impactPrefab": "Effects/FireBall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "FireBall_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 4,
+      "skillName": "FireBall_Lv4",
+      "baseSkill": "FireBall",
+      "level": 4,
+      "element": "Arcane",
+      "targetType": "Self",
+      "damage": {
+        "base": 44,
+        "atLevel": 65.1,
+        "scaling": "STR",
+        "scalingFactor": 0.2
+      },
+      "cost": {
+        "mana": 7,
+        "manaAtLevel": 8.4,
+        "stamina": 3
+      },
+      "timing": {
+        "cooldown": 9.7,
+        "castTime": 2.8,
+        "duration": 3.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 3,
+        "aoeRadius": 1.9,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 1.3,
+        "stunDuration": 0.3,
+        "dotDamage": 5,
+        "dotTick": 1.9,
+        "dotDuration": 4.2
+      },
+      "animation": {
+        "castClip": "anim_FireBall_cast",
+        "effectPrefab": "Effects/FireBall_Lv4",
+        "impactPrefab": "Effects/FireBall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "FireBall_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 5,
+      "skillName": "FireBall_Lv5",
+      "baseSkill": "FireBall",
+      "level": 5,
+      "element": "Earth",
+      "targetType": "Line",
+      "damage": {
+        "base": 441,
+        "atLevel": 705.6,
+        "scaling": "STR",
+        "scalingFactor": 0.1
+      },
+      "cost": {
+        "mana": 86,
+        "manaAtLevel": 107.5,
+        "stamina": 4
+      },
+      "timing": {
+        "cooldown": 7.6,
+        "castTime": 2.8,
+        "duration": 0.7,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.8,
+        "aoeRadius": 2.1,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 1.3,
+        "dotDamage": 5,
+        "dotTick": 1.8,
+        "dotDuration": 1.1
+      },
+      "animation": {
+        "castClip": "anim_FireBall_cast",
+        "effectPrefab": "Effects/FireBall_Lv5",
+        "impactPrefab": "Effects/FireBall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "FireBall_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 6,
+      "skillName": "FireBall_Lv6",
+      "baseSkill": "FireBall",
+      "level": 6,
+      "element": "Fire",
+      "targetType": "Splash",
+      "damage": {
+        "base": 286,
+        "atLevel": 491.9,
+        "scaling": "STR",
+        "scalingFactor": 0.14
+      },
+      "cost": {
+        "mana": 61,
+        "manaAtLevel": 79.3,
+        "stamina": 2
+      },
+      "timing": {
+        "cooldown": 10,
+        "castTime": 2.3,
+        "duration": 1.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 3,
+        "aoeRadius": 0.5,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 0.2,
+        "dotDamage": 0,
+        "dotTick": 0.7,
+        "dotDuration": 4.7
+      },
+      "animation": {
+        "castClip": "anim_FireBall_cast",
+        "effectPrefab": "Effects/FireBall_Lv6",
+        "impactPrefab": "Effects/FireBall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "FireBall_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 7,
+      "skillName": "FireBall_Lv7",
+      "baseSkill": "FireBall",
+      "level": 7,
+      "element": "Dark",
+      "targetType": "Self",
+      "damage": {
+        "base": 471,
+        "atLevel": 866.6,
+        "scaling": "STR",
+        "scalingFactor": 0.08
+      },
+      "cost": {
+        "mana": 62,
+        "manaAtLevel": 83.7,
+        "stamina": 13
+      },
+      "timing": {
+        "cooldown": 8.1,
+        "castTime": 1.7,
+        "duration": 6.9,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.2,
+        "aoeRadius": 1.4,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.3,
+        "stunDuration": 1.6,
+        "dotDamage": 6,
+        "dotTick": 1.5,
+        "dotDuration": 1.1
+      },
+      "animation": {
+        "castClip": "anim_FireBall_cast",
+        "effectPrefab": "Effects/FireBall_Lv7",
+        "impactPrefab": "Effects/FireBall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "FireBall_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 8,
+      "skillName": "FireBall_Lv8",
+      "baseSkill": "FireBall",
+      "level": 8,
+      "element": "Lightning",
+      "targetType": "AoE",
+      "damage": {
+        "base": 88,
+        "atLevel": 172.5,
+        "scaling": "STR",
+        "scalingFactor": 0.07
+      },
+      "cost": {
+        "mana": 73,
+        "manaAtLevel": 102.2,
+        "stamina": 17
+      },
+      "timing": {
+        "cooldown": 28.3,
+        "castTime": 2.5,
+        "duration": 4.4,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.5,
+        "aoeRadius": 1.4,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 1.5,
+        "stunDuration": 0.9,
+        "dotDamage": 13,
+        "dotTick": 0.9,
+        "dotDuration": 3.3
+      },
+      "animation": {
+        "castClip": "anim_FireBall_cast",
+        "effectPrefab": "Effects/FireBall_Lv8",
+        "impactPrefab": "Effects/FireBall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "FireBall_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 9,
+      "skillName": "FireBall_Lv9",
+      "baseSkill": "FireBall",
+      "level": 9,
+      "element": "Ice",
+      "targetType": "AoE",
+      "damage": {
+        "base": 376,
+        "atLevel": 782.1,
+        "scaling": "STR",
+        "scalingFactor": 0.1
+      },
+      "cost": {
+        "mana": 8,
+        "manaAtLevel": 11.6,
+        "stamina": 13
+      },
+      "timing": {
+        "cooldown": 25.4,
+        "castTime": 1,
+        "duration": 7.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.4,
+        "aoeRadius": 2.1,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0.3,
+        "stunDuration": 1.8,
+        "dotDamage": 0,
+        "dotTick": 1.1,
+        "dotDuration": 1.8
+      },
+      "animation": {
+        "castClip": "anim_FireBall_cast",
+        "effectPrefab": "Effects/FireBall_Lv9",
+        "impactPrefab": "Effects/FireBall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "FireBall_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 10,
+      "skillName": "FireBall_Lv10",
+      "baseSkill": "FireBall",
+      "level": 10,
+      "element": "Ice",
+      "targetType": "Line",
+      "damage": {
+        "base": 181,
+        "atLevel": 398.2,
+        "scaling": "STR",
+        "scalingFactor": 0.17
+      },
+      "cost": {
+        "mana": 16,
+        "manaAtLevel": 24,
+        "stamina": 0
+      },
+      "timing": {
+        "cooldown": 16.2,
+        "castTime": 2.3,
+        "duration": 6.1,
+        "channeled": true
+      },
+      "area": {
+        "range": 2,
+        "aoeRadius": 2.5,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.3,
+        "stunDuration": 1.6,
+        "dotDamage": 38,
+        "dotTick": 1.9,
+        "dotDuration": 4.8
+      },
+      "animation": {
+        "castClip": "anim_FireBall_cast",
+        "effectPrefab": "Effects/FireBall_Lv10",
+        "impactPrefab": "Effects/FireBall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "FireBall_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 11,
+      "skillName": "IceShard_Lv1",
+      "baseSkill": "IceShard",
+      "level": 1,
+      "element": "Arcane",
+      "targetType": "Splash",
+      "damage": {
+        "base": 164,
+        "atLevel": 183.7,
+        "scaling": "STR",
+        "scalingFactor": 0.23
+      },
+      "cost": {
+        "mana": 86,
+        "manaAtLevel": 90.3,
+        "stamina": 7
+      },
+      "timing": {
+        "cooldown": 6.7,
+        "castTime": 1,
+        "duration": 4.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.6,
+        "aoeRadius": 2.6,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 2.1,
+        "dotDamage": 13,
+        "dotTick": 1,
+        "dotDuration": 2.6
+      },
+      "animation": {
+        "castClip": "anim_IceShard_cast",
+        "effectPrefab": "Effects/IceShard_Lv1",
+        "impactPrefab": "Effects/IceShard_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 12,
+      "skillName": "IceShard_Lv2",
+      "baseSkill": "IceShard",
+      "level": 2,
+      "element": "Fire",
+      "targetType": "Self",
+      "damage": {
+        "base": 111,
+        "atLevel": 137.6,
+        "scaling": "STR",
+        "scalingFactor": 0.08
+      },
+      "cost": {
+        "mana": 77,
+        "manaAtLevel": 84.7,
+        "stamina": 12
+      },
+      "timing": {
+        "cooldown": 14.1,
+        "castTime": 0.5,
+        "duration": 7.2,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.6,
+        "aoeRadius": 0.5,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 0,
+        "dotDamage": 34,
+        "dotTick": 2.4,
+        "dotDuration": 1.7
+      },
+      "animation": {
+        "castClip": "anim_IceShard_cast",
+        "effectPrefab": "Effects/IceShard_Lv2",
+        "impactPrefab": "Effects/IceShard_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "IceShard_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 13,
+      "skillName": "IceShard_Lv3",
+      "baseSkill": "IceShard",
+      "level": 3,
+      "element": "Dark",
+      "targetType": "Line",
+      "damage": {
+        "base": 257,
+        "atLevel": 349.5,
+        "scaling": "STR",
+        "scalingFactor": 0.07
+      },
+      "cost": {
+        "mana": 30,
+        "manaAtLevel": 34.5,
+        "stamina": 9
+      },
+      "timing": {
+        "cooldown": 17.7,
+        "castTime": 2.9,
+        "duration": 1.9,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.4,
+        "aoeRadius": 1.2,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 2,
+        "dotDamage": 12,
+        "dotTick": 2,
+        "dotDuration": 1.6
+      },
+      "animation": {
+        "castClip": "anim_IceShard_cast",
+        "effectPrefab": "Effects/IceShard_Lv3",
+        "impactPrefab": "Effects/IceShard_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "IceShard_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 14,
+      "skillName": "IceShard_Lv4",
+      "baseSkill": "IceShard",
+      "level": 4,
+      "element": "Wind",
+      "targetType": "Line",
+      "damage": {
+        "base": 123,
+        "atLevel": 182,
+        "scaling": "STR",
+        "scalingFactor": 0.21
+      },
+      "cost": {
+        "mana": 92,
+        "manaAtLevel": 110.4,
+        "stamina": 20
+      },
+      "timing": {
+        "cooldown": 23.6,
+        "castTime": 0.9,
+        "duration": 3.3,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.6,
+        "aoeRadius": 2.3,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 0.9,
+        "dotDamage": 9,
+        "dotTick": 2.3,
+        "dotDuration": 3.9
+      },
+      "animation": {
+        "castClip": "anim_IceShard_cast",
+        "effectPrefab": "Effects/IceShard_Lv4",
+        "impactPrefab": "Effects/IceShard_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "IceShard_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 15,
+      "skillName": "IceShard_Lv5",
+      "baseSkill": "IceShard",
+      "level": 5,
+      "element": "Ice",
+      "targetType": "Single",
+      "damage": {
+        "base": 113,
+        "atLevel": 180.8,
+        "scaling": "STR",
+        "scalingFactor": 0.08
+      },
+      "cost": {
+        "mana": 28,
+        "manaAtLevel": 35,
+        "stamina": 21
+      },
+      "timing": {
+        "cooldown": 5,
+        "castTime": 1.3,
+        "duration": 1.7,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.6,
+        "aoeRadius": 1.1,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 0.5,
+        "stunDuration": 2.1,
+        "dotDamage": 26,
+        "dotTick": 2.1,
+        "dotDuration": 1.3
+      },
+      "animation": {
+        "castClip": "anim_IceShard_cast",
+        "effectPrefab": "Effects/IceShard_Lv5",
+        "impactPrefab": "Effects/IceShard_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "IceShard_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 16,
+      "skillName": "IceShard_Lv6",
+      "baseSkill": "IceShard",
+      "level": 6,
+      "element": "Arcane",
+      "targetType": "AoE",
+      "damage": {
+        "base": 65,
+        "atLevel": 111.8,
+        "scaling": "STR",
+        "scalingFactor": 0.1
+      },
+      "cost": {
+        "mana": 66,
+        "manaAtLevel": 85.8,
+        "stamina": 24
+      },
+      "timing": {
+        "cooldown": 15.1,
+        "castTime": 1.9,
+        "duration": 6,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.4,
+        "aoeRadius": 1.8,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 0.4,
+        "dotDamage": 3,
+        "dotTick": 0.6,
+        "dotDuration": 1.8
+      },
+      "animation": {
+        "castClip": "anim_IceShard_cast",
+        "effectPrefab": "Effects/IceShard_Lv6",
+        "impactPrefab": "Effects/IceShard_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "IceShard_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 17,
+      "skillName": "IceShard_Lv7",
+      "baseSkill": "IceShard",
+      "level": 7,
+      "element": "Water",
+      "targetType": "Self",
+      "damage": {
+        "base": 329,
+        "atLevel": 605.4,
+        "scaling": "STR",
+        "scalingFactor": 0.21
+      },
+      "cost": {
+        "mana": 24,
+        "manaAtLevel": 32.4,
+        "stamina": 4
+      },
+      "timing": {
+        "cooldown": 27.9,
+        "castTime": 2.4,
+        "duration": 1.9,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.7,
+        "aoeRadius": 1.7,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 2.3,
+        "dotDamage": 22,
+        "dotTick": 2.3,
+        "dotDuration": 4.3
+      },
+      "animation": {
+        "castClip": "anim_IceShard_cast",
+        "effectPrefab": "Effects/IceShard_Lv7",
+        "impactPrefab": "Effects/IceShard_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "IceShard_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 18,
+      "skillName": "IceShard_Lv8",
+      "baseSkill": "IceShard",
+      "level": 8,
+      "element": "Lightning",
+      "targetType": "Self",
+      "damage": {
+        "base": 270,
+        "atLevel": 529.2,
+        "scaling": "STR",
+        "scalingFactor": 0.12
+      },
+      "cost": {
+        "mana": 40,
+        "manaAtLevel": 56,
+        "stamina": 20
+      },
+      "timing": {
+        "cooldown": 27.9,
+        "castTime": 1.4,
+        "duration": 3.5,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.4,
+        "aoeRadius": 2.2,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0.2,
+        "stunDuration": 2.2,
+        "dotDamage": 11,
+        "dotTick": 1.4,
+        "dotDuration": 5
+      },
+      "animation": {
+        "castClip": "anim_IceShard_cast",
+        "effectPrefab": "Effects/IceShard_Lv8",
+        "impactPrefab": "Effects/IceShard_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "IceShard_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 19,
+      "skillName": "IceShard_Lv9",
+      "baseSkill": "IceShard",
+      "level": 9,
+      "element": "Wind",
+      "targetType": "Self",
+      "damage": {
+        "base": 108,
+        "atLevel": 224.6,
+        "scaling": "STR",
+        "scalingFactor": 0.18
+      },
+      "cost": {
+        "mana": 36,
+        "manaAtLevel": 52.2,
+        "stamina": 17
+      },
+      "timing": {
+        "cooldown": 7.1,
+        "castTime": 1.7,
+        "duration": 3,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.5,
+        "aoeRadius": 1.4,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 1.4,
+        "stunDuration": 1.7,
+        "dotDamage": 27,
+        "dotTick": 0.6,
+        "dotDuration": 4.7
+      },
+      "animation": {
+        "castClip": "anim_IceShard_cast",
+        "effectPrefab": "Effects/IceShard_Lv9",
+        "impactPrefab": "Effects/IceShard_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "IceShard_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 20,
+      "skillName": "IceShard_Lv10",
+      "baseSkill": "IceShard",
+      "level": 10,
+      "element": "Arcane",
+      "targetType": "Line",
+      "damage": {
+        "base": 374,
+        "atLevel": 822.8,
+        "scaling": "STR",
+        "scalingFactor": 0.16
+      },
+      "cost": {
+        "mana": 65,
+        "manaAtLevel": 97.5,
+        "stamina": 15
+      },
+      "timing": {
+        "cooldown": 14.1,
+        "castTime": 1.3,
+        "duration": 4.9,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.4,
+        "aoeRadius": 2.3,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 1.2,
+        "dotDamage": 44,
+        "dotTick": 2.9,
+        "dotDuration": 2.8
+      },
+      "animation": {
+        "castClip": "anim_IceShard_cast",
+        "effectPrefab": "Effects/IceShard_Lv10",
+        "impactPrefab": "Effects/IceShard_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "IceShard_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 21,
+      "skillName": "ThunderBolt_Lv1",
+      "baseSkill": "ThunderBolt",
+      "level": 1,
+      "element": "Ice",
+      "targetType": "Chain",
+      "damage": {
+        "base": 479,
+        "atLevel": 536.5,
+        "scaling": "STR",
+        "scalingFactor": 0.13
+      },
+      "cost": {
+        "mana": 22,
+        "manaAtLevel": 23.1,
+        "stamina": 16
+      },
+      "timing": {
+        "cooldown": 4.5,
+        "castTime": 0.3,
+        "duration": 5.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.9,
+        "aoeRadius": 0.8,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 1.5,
+        "stunDuration": 2.1,
+        "dotDamage": 27,
+        "dotTick": 0.6,
+        "dotDuration": 2
+      },
+      "animation": {
+        "castClip": "anim_ThunderBolt_cast",
+        "effectPrefab": "Effects/ThunderBolt_Lv1",
+        "impactPrefab": "Effects/ThunderBolt_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 22,
+      "skillName": "ThunderBolt_Lv2",
+      "baseSkill": "ThunderBolt",
+      "level": 2,
+      "element": "Ice",
+      "targetType": "Single",
+      "damage": {
+        "base": 73,
+        "atLevel": 90.5,
+        "scaling": "STR",
+        "scalingFactor": 0.09
+      },
+      "cost": {
+        "mana": 53,
+        "manaAtLevel": 58.3,
+        "stamina": 18
+      },
+      "timing": {
+        "cooldown": 20.8,
+        "castTime": 1.7,
+        "duration": 7.4,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.1,
+        "aoeRadius": 2,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 1.7,
+        "dotDamage": 28,
+        "dotTick": 2.6,
+        "dotDuration": 1.3
+      },
+      "animation": {
+        "castClip": "anim_ThunderBolt_cast",
+        "effectPrefab": "Effects/ThunderBolt_Lv2",
+        "impactPrefab": "Effects/ThunderBolt_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "ThunderBolt_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 23,
+      "skillName": "ThunderBolt_Lv3",
+      "baseSkill": "ThunderBolt",
+      "level": 3,
+      "element": "Ice",
+      "targetType": "Splash",
+      "damage": {
+        "base": 380,
+        "atLevel": 516.8,
+        "scaling": "STR",
+        "scalingFactor": 0.14
+      },
+      "cost": {
+        "mana": 39,
+        "manaAtLevel": 44.8,
+        "stamina": 19
+      },
+      "timing": {
+        "cooldown": 15.4,
+        "castTime": 1.4,
+        "duration": 7.2,
+        "channeled": true
+      },
+      "area": {
+        "range": 4,
+        "aoeRadius": 1.9,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0,
+        "stunDuration": 1.2,
+        "dotDamage": 6,
+        "dotTick": 2.7,
+        "dotDuration": 4.1
+      },
+      "animation": {
+        "castClip": "anim_ThunderBolt_cast",
+        "effectPrefab": "Effects/ThunderBolt_Lv3",
+        "impactPrefab": "Effects/ThunderBolt_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "ThunderBolt_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 24,
+      "skillName": "ThunderBolt_Lv4",
+      "baseSkill": "ThunderBolt",
+      "level": 4,
+      "element": "Earth",
+      "targetType": "Line",
+      "damage": {
+        "base": 125,
+        "atLevel": 185,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 49,
+        "manaAtLevel": 58.8,
+        "stamina": 10
+      },
+      "timing": {
+        "cooldown": 10.2,
+        "castTime": 2.6,
+        "duration": 7.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.4,
+        "aoeRadius": 0.7,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 0.1,
+        "dotDamage": 44,
+        "dotTick": 1.5,
+        "dotDuration": 5.5
+      },
+      "animation": {
+        "castClip": "anim_ThunderBolt_cast",
+        "effectPrefab": "Effects/ThunderBolt_Lv4",
+        "impactPrefab": "Effects/ThunderBolt_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "ThunderBolt_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 25,
+      "skillName": "ThunderBolt_Lv5",
+      "baseSkill": "ThunderBolt",
+      "level": 5,
+      "element": "Holy",
+      "targetType": "Line",
+      "damage": {
+        "base": 175,
+        "atLevel": 280,
+        "scaling": "STR",
+        "scalingFactor": 0.05
+      },
+      "cost": {
+        "mana": 24,
+        "manaAtLevel": 30,
+        "stamina": 6
+      },
+      "timing": {
+        "cooldown": 24.7,
+        "castTime": 2.6,
+        "duration": 7.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.5,
+        "aoeRadius": 1.1,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 2.1,
+        "dotDamage": 40,
+        "dotTick": 2.6,
+        "dotDuration": 3.4
+      },
+      "animation": {
+        "castClip": "anim_ThunderBolt_cast",
+        "effectPrefab": "Effects/ThunderBolt_Lv5",
+        "impactPrefab": "Effects/ThunderBolt_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "ThunderBolt_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 26,
+      "skillName": "ThunderBolt_Lv6",
+      "baseSkill": "ThunderBolt",
+      "level": 6,
+      "element": "Poison",
+      "targetType": "Self",
+      "damage": {
+        "base": 272,
+        "atLevel": 467.8,
+        "scaling": "STR",
+        "scalingFactor": 0.05
+      },
+      "cost": {
+        "mana": 72,
+        "manaAtLevel": 93.6,
+        "stamina": 19
+      },
+      "timing": {
+        "cooldown": 24.6,
+        "castTime": 1.2,
+        "duration": 1.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.9,
+        "aoeRadius": 1,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.3,
+        "stunDuration": 1.4,
+        "dotDamage": 39,
+        "dotTick": 2.6,
+        "dotDuration": 4
+      },
+      "animation": {
+        "castClip": "anim_ThunderBolt_cast",
+        "effectPrefab": "Effects/ThunderBolt_Lv6",
+        "impactPrefab": "Effects/ThunderBolt_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "ThunderBolt_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 27,
+      "skillName": "ThunderBolt_Lv7",
+      "baseSkill": "ThunderBolt",
+      "level": 7,
+      "element": "Ice",
+      "targetType": "AoE",
+      "damage": {
+        "base": 429,
+        "atLevel": 789.4,
+        "scaling": "STR",
+        "scalingFactor": 0.07
+      },
+      "cost": {
+        "mana": 88,
+        "manaAtLevel": 118.8,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 24.2,
+        "castTime": 2.7,
+        "duration": 2.2,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.1,
+        "aoeRadius": 2.6,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.5,
+        "stunDuration": 2.9,
+        "dotDamage": 45,
+        "dotTick": 2.5,
+        "dotDuration": 1
+      },
+      "animation": {
+        "castClip": "anim_ThunderBolt_cast",
+        "effectPrefab": "Effects/ThunderBolt_Lv7",
+        "impactPrefab": "Effects/ThunderBolt_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "ThunderBolt_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 28,
+      "skillName": "ThunderBolt_Lv8",
+      "baseSkill": "ThunderBolt",
+      "level": 8,
+      "element": "Arcane",
+      "targetType": "Self",
+      "damage": {
+        "base": 385,
+        "atLevel": 754.6,
+        "scaling": "STR",
+        "scalingFactor": 0.19
+      },
+      "cost": {
+        "mana": 77,
+        "manaAtLevel": 107.8,
+        "stamina": 28
+      },
+      "timing": {
+        "cooldown": 13.2,
+        "castTime": 2.4,
+        "duration": 5.4,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.6,
+        "aoeRadius": 2.3,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 1.7,
+        "dotDamage": 12,
+        "dotTick": 2.6,
+        "dotDuration": 1.9
+      },
+      "animation": {
+        "castClip": "anim_ThunderBolt_cast",
+        "effectPrefab": "Effects/ThunderBolt_Lv8",
+        "impactPrefab": "Effects/ThunderBolt_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "ThunderBolt_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 29,
+      "skillName": "ThunderBolt_Lv9",
+      "baseSkill": "ThunderBolt",
+      "level": 9,
+      "element": "Water",
+      "targetType": "Splash",
+      "damage": {
+        "base": 360,
+        "atLevel": 748.8,
+        "scaling": "STR",
+        "scalingFactor": 0.19
+      },
+      "cost": {
+        "mana": 76,
+        "manaAtLevel": 110.2,
+        "stamina": 7
+      },
+      "timing": {
+        "cooldown": 12.5,
+        "castTime": 0.1,
+        "duration": 4.2,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.7,
+        "aoeRadius": 2.2,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 1.9,
+        "dotDamage": 12,
+        "dotTick": 0.8,
+        "dotDuration": 2.7
+      },
+      "animation": {
+        "castClip": "anim_ThunderBolt_cast",
+        "effectPrefab": "Effects/ThunderBolt_Lv9",
+        "impactPrefab": "Effects/ThunderBolt_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "ThunderBolt_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 30,
+      "skillName": "ThunderBolt_Lv10",
+      "baseSkill": "ThunderBolt",
+      "level": 10,
+      "element": "Arcane",
+      "targetType": "Line",
+      "damage": {
+        "base": 121,
+        "atLevel": 266.2,
+        "scaling": "STR",
+        "scalingFactor": 0.1
+      },
+      "cost": {
+        "mana": 93,
+        "manaAtLevel": 139.5,
+        "stamina": 19
+      },
+      "timing": {
+        "cooldown": 22.8,
+        "castTime": 1.1,
+        "duration": 2.6,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.6,
+        "aoeRadius": 2.7,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 1.9,
+        "dotDamage": 31,
+        "dotTick": 2,
+        "dotDuration": 5.3
+      },
+      "animation": {
+        "castClip": "anim_ThunderBolt_cast",
+        "effectPrefab": "Effects/ThunderBolt_Lv10",
+        "impactPrefab": "Effects/ThunderBolt_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "ThunderBolt_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 31,
+      "skillName": "PoisonCloud_Lv1",
+      "baseSkill": "PoisonCloud",
+      "level": 1,
+      "element": "Dark",
+      "targetType": "AoE",
+      "damage": {
+        "base": 394,
+        "atLevel": 441.3,
+        "scaling": "STR",
+        "scalingFactor": 0.19
+      },
+      "cost": {
+        "mana": 48,
+        "manaAtLevel": 50.4,
+        "stamina": 11
+      },
+      "timing": {
+        "cooldown": 1.2,
+        "castTime": 1.7,
+        "duration": 5.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.6,
+        "aoeRadius": 1.7,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 1.7,
+        "dotDamage": 19,
+        "dotTick": 2.7,
+        "dotDuration": 3.8
+      },
+      "animation": {
+        "castClip": "anim_PoisonCloud_cast",
+        "effectPrefab": "Effects/PoisonCloud_Lv1",
+        "impactPrefab": "Effects/PoisonCloud_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 32,
+      "skillName": "PoisonCloud_Lv2",
+      "baseSkill": "PoisonCloud",
+      "level": 2,
+      "element": "Earth",
+      "targetType": "Splash",
+      "damage": {
+        "base": 356,
+        "atLevel": 441.4,
+        "scaling": "STR",
+        "scalingFactor": 0.2
+      },
+      "cost": {
+        "mana": 29,
+        "manaAtLevel": 31.9,
+        "stamina": 6
+      },
+      "timing": {
+        "cooldown": 18.2,
+        "castTime": 1.5,
+        "duration": 5.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.5,
+        "aoeRadius": 2.7,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 1.3,
+        "dotDamage": 20,
+        "dotTick": 1.6,
+        "dotDuration": 1.8
+      },
+      "animation": {
+        "castClip": "anim_PoisonCloud_cast",
+        "effectPrefab": "Effects/PoisonCloud_Lv2",
+        "impactPrefab": "Effects/PoisonCloud_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "PoisonCloud_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 33,
+      "skillName": "PoisonCloud_Lv3",
+      "baseSkill": "PoisonCloud",
+      "level": 3,
+      "element": "Fire",
+      "targetType": "Line",
+      "damage": {
+        "base": 235,
+        "atLevel": 319.6,
+        "scaling": "STR",
+        "scalingFactor": 0.08
+      },
+      "cost": {
+        "mana": 81,
+        "manaAtLevel": 93.1,
+        "stamina": 2
+      },
+      "timing": {
+        "cooldown": 6.4,
+        "castTime": 1.9,
+        "duration": 5,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.6,
+        "aoeRadius": 1.6,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 2.3,
+        "dotDamage": 21,
+        "dotTick": 2.8,
+        "dotDuration": 5.4
+      },
+      "animation": {
+        "castClip": "anim_PoisonCloud_cast",
+        "effectPrefab": "Effects/PoisonCloud_Lv3",
+        "impactPrefab": "Effects/PoisonCloud_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "PoisonCloud_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 34,
+      "skillName": "PoisonCloud_Lv4",
+      "baseSkill": "PoisonCloud",
+      "level": 4,
+      "element": "Earth",
+      "targetType": "Single",
+      "damage": {
+        "base": 149,
+        "atLevel": 220.5,
+        "scaling": "STR",
+        "scalingFactor": 0.14
+      },
+      "cost": {
+        "mana": 59,
+        "manaAtLevel": 70.8,
+        "stamina": 19
+      },
+      "timing": {
+        "cooldown": 5.4,
+        "castTime": 0.4,
+        "duration": 7.3,
+        "channeled": true
+      },
+      "area": {
+        "range": 3,
+        "aoeRadius": 1.6,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 1.5,
+        "dotDamage": 40,
+        "dotTick": 1.6,
+        "dotDuration": 5
+      },
+      "animation": {
+        "castClip": "anim_PoisonCloud_cast",
+        "effectPrefab": "Effects/PoisonCloud_Lv4",
+        "impactPrefab": "Effects/PoisonCloud_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "PoisonCloud_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 35,
+      "skillName": "PoisonCloud_Lv5",
+      "baseSkill": "PoisonCloud",
+      "level": 5,
+      "element": "Holy",
+      "targetType": "Chain",
+      "damage": {
+        "base": 94,
+        "atLevel": 150.4,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 76,
+        "manaAtLevel": 95,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 23.9,
+        "castTime": 1.8,
+        "duration": 3.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.3,
+        "aoeRadius": 2.9,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 0.8,
+        "dotDamage": 7,
+        "dotTick": 2.2,
+        "dotDuration": 2.7
+      },
+      "animation": {
+        "castClip": "anim_PoisonCloud_cast",
+        "effectPrefab": "Effects/PoisonCloud_Lv5",
+        "impactPrefab": "Effects/PoisonCloud_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "PoisonCloud_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 36,
+      "skillName": "PoisonCloud_Lv6",
+      "baseSkill": "PoisonCloud",
+      "level": 6,
+      "element": "Wind",
+      "targetType": "AoE",
+      "damage": {
+        "base": 50,
+        "atLevel": 86,
+        "scaling": "STR",
+        "scalingFactor": 0.16
+      },
+      "cost": {
+        "mana": 47,
+        "manaAtLevel": 61.1,
+        "stamina": 24
+      },
+      "timing": {
+        "cooldown": 28,
+        "castTime": 0.8,
+        "duration": 1.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.3,
+        "aoeRadius": 0.7,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 1.5,
+        "dotDamage": 6,
+        "dotTick": 0.5,
+        "dotDuration": 3.5
+      },
+      "animation": {
+        "castClip": "anim_PoisonCloud_cast",
+        "effectPrefab": "Effects/PoisonCloud_Lv6",
+        "impactPrefab": "Effects/PoisonCloud_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "PoisonCloud_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 37,
+      "skillName": "PoisonCloud_Lv7",
+      "baseSkill": "PoisonCloud",
+      "level": 7,
+      "element": "Water",
+      "targetType": "Chain",
+      "damage": {
+        "base": 217,
+        "atLevel": 399.3,
+        "scaling": "STR",
+        "scalingFactor": 0.21
+      },
+      "cost": {
+        "mana": 49,
+        "manaAtLevel": 66.2,
+        "stamina": 11
+      },
+      "timing": {
+        "cooldown": 2.3,
+        "castTime": 0.4,
+        "duration": 2.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.7,
+        "aoeRadius": 2.5,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 1.6,
+        "stunDuration": 0.5,
+        "dotDamage": 36,
+        "dotTick": 1.5,
+        "dotDuration": 5.1
+      },
+      "animation": {
+        "castClip": "anim_PoisonCloud_cast",
+        "effectPrefab": "Effects/PoisonCloud_Lv7",
+        "impactPrefab": "Effects/PoisonCloud_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "PoisonCloud_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 38,
+      "skillName": "PoisonCloud_Lv8",
+      "baseSkill": "PoisonCloud",
+      "level": 8,
+      "element": "Dark",
+      "targetType": "Splash",
+      "damage": {
+        "base": 407,
+        "atLevel": 797.7,
+        "scaling": "STR",
+        "scalingFactor": 0.16
+      },
+      "cost": {
+        "mana": 15,
+        "manaAtLevel": 21,
+        "stamina": 7
+      },
+      "timing": {
+        "cooldown": 16.7,
+        "castTime": 1.4,
+        "duration": 7.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.7,
+        "aoeRadius": 2.3,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 2.6,
+        "dotDamage": 21,
+        "dotTick": 2.9,
+        "dotDuration": 4.5
+      },
+      "animation": {
+        "castClip": "anim_PoisonCloud_cast",
+        "effectPrefab": "Effects/PoisonCloud_Lv8",
+        "impactPrefab": "Effects/PoisonCloud_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "PoisonCloud_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 39,
+      "skillName": "PoisonCloud_Lv9",
+      "baseSkill": "PoisonCloud",
+      "level": 9,
+      "element": "Water",
+      "targetType": "Single",
+      "damage": {
+        "base": 77,
+        "atLevel": 160.2,
+        "scaling": "STR",
+        "scalingFactor": 0.08
+      },
+      "cost": {
+        "mana": 31,
+        "manaAtLevel": 44.9,
+        "stamina": 20
+      },
+      "timing": {
+        "cooldown": 6.2,
+        "castTime": 2,
+        "duration": 1.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.1,
+        "aoeRadius": 0.7,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 2.8,
+        "dotDamage": 39,
+        "dotTick": 1.4,
+        "dotDuration": 2.6
+      },
+      "animation": {
+        "castClip": "anim_PoisonCloud_cast",
+        "effectPrefab": "Effects/PoisonCloud_Lv9",
+        "impactPrefab": "Effects/PoisonCloud_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "PoisonCloud_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 40,
+      "skillName": "PoisonCloud_Lv10",
+      "baseSkill": "PoisonCloud",
+      "level": 10,
+      "element": "Fire",
+      "targetType": "Self",
+      "damage": {
+        "base": 247,
+        "atLevel": 543.4,
+        "scaling": "STR",
+        "scalingFactor": 0.08
+      },
+      "cost": {
+        "mana": 38,
+        "manaAtLevel": 57,
+        "stamina": 8
+      },
+      "timing": {
+        "cooldown": 9.6,
+        "castTime": 2,
+        "duration": 5.1,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.9,
+        "aoeRadius": 0.4,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 2.8,
+        "dotDamage": 45,
+        "dotTick": 1.7,
+        "dotDuration": 2.8
+      },
+      "animation": {
+        "castClip": "anim_PoisonCloud_cast",
+        "effectPrefab": "Effects/PoisonCloud_Lv10",
+        "impactPrefab": "Effects/PoisonCloud_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "PoisonCloud_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 41,
+      "skillName": "HealAura_Lv1",
+      "baseSkill": "HealAura",
+      "level": 1,
+      "element": "Dark",
+      "targetType": "Self",
+      "damage": {
+        "base": 319,
+        "atLevel": 357.3,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 80,
+        "manaAtLevel": 84,
+        "stamina": 17
+      },
+      "timing": {
+        "cooldown": 9.6,
+        "castTime": 2.6,
+        "duration": 7.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.5,
+        "aoeRadius": 1,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 2.6,
+        "dotDamage": 8,
+        "dotTick": 2.8,
+        "dotDuration": 1
+      },
+      "animation": {
+        "castClip": "anim_HealAura_cast",
+        "effectPrefab": "Effects/HealAura_Lv1",
+        "impactPrefab": "Effects/HealAura_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 42,
+      "skillName": "HealAura_Lv2",
+      "baseSkill": "HealAura",
+      "level": 2,
+      "element": "Earth",
+      "targetType": "Line",
+      "damage": {
+        "base": 176,
+        "atLevel": 218.2,
+        "scaling": "STR",
+        "scalingFactor": 0.19
+      },
+      "cost": {
+        "mana": 30,
+        "manaAtLevel": 33,
+        "stamina": 8
+      },
+      "timing": {
+        "cooldown": 20.6,
+        "castTime": 1.7,
+        "duration": 3.3,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.4,
+        "aoeRadius": 0.7,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 1.1,
+        "dotDamage": 28,
+        "dotTick": 1.3,
+        "dotDuration": 4.4
+      },
+      "animation": {
+        "castClip": "anim_HealAura_cast",
+        "effectPrefab": "Effects/HealAura_Lv2",
+        "impactPrefab": "Effects/HealAura_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "HealAura_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 43,
+      "skillName": "HealAura_Lv3",
+      "baseSkill": "HealAura",
+      "level": 3,
+      "element": "Earth",
+      "targetType": "Single",
+      "damage": {
+        "base": 477,
+        "atLevel": 648.7,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 64,
+        "manaAtLevel": 73.6,
+        "stamina": 24
+      },
+      "timing": {
+        "cooldown": 8.7,
+        "castTime": 1.1,
+        "duration": 5,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.8,
+        "aoeRadius": 1.9,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.5,
+        "stunDuration": 1.5,
+        "dotDamage": 35,
+        "dotTick": 1.1,
+        "dotDuration": 3.6
+      },
+      "animation": {
+        "castClip": "anim_HealAura_cast",
+        "effectPrefab": "Effects/HealAura_Lv3",
+        "impactPrefab": "Effects/HealAura_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "HealAura_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 44,
+      "skillName": "HealAura_Lv4",
+      "baseSkill": "HealAura",
+      "level": 4,
+      "element": "Ice",
+      "targetType": "Single",
+      "damage": {
+        "base": 318,
+        "atLevel": 470.6,
+        "scaling": "STR",
+        "scalingFactor": 0.07
+      },
+      "cost": {
+        "mana": 16,
+        "manaAtLevel": 19.2,
+        "stamina": 18
+      },
+      "timing": {
+        "cooldown": 11.8,
+        "castTime": 1.3,
+        "duration": 2.2,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.3,
+        "aoeRadius": 1.7,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 1.4,
+        "dotDamage": 25,
+        "dotTick": 2.7,
+        "dotDuration": 5.1
+      },
+      "animation": {
+        "castClip": "anim_HealAura_cast",
+        "effectPrefab": "Effects/HealAura_Lv4",
+        "impactPrefab": "Effects/HealAura_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "HealAura_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 45,
+      "skillName": "HealAura_Lv5",
+      "baseSkill": "HealAura",
+      "level": 5,
+      "element": "Dark",
+      "targetType": "Self",
+      "damage": {
+        "base": 313,
+        "atLevel": 500.8,
+        "scaling": "STR",
+        "scalingFactor": 0.06
+      },
+      "cost": {
+        "mana": 42,
+        "manaAtLevel": 52.5,
+        "stamina": 9
+      },
+      "timing": {
+        "cooldown": 16.1,
+        "castTime": 2.7,
+        "duration": 5.4,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.5,
+        "aoeRadius": 1.7,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 1.2,
+        "dotDamage": 48,
+        "dotTick": 1.7,
+        "dotDuration": 3
+      },
+      "animation": {
+        "castClip": "anim_HealAura_cast",
+        "effectPrefab": "Effects/HealAura_Lv5",
+        "impactPrefab": "Effects/HealAura_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "HealAura_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 46,
+      "skillName": "HealAura_Lv6",
+      "baseSkill": "HealAura",
+      "level": 6,
+      "element": "Dark",
+      "targetType": "Single",
+      "damage": {
+        "base": 83,
+        "atLevel": 142.8,
+        "scaling": "STR",
+        "scalingFactor": 0.17
+      },
+      "cost": {
+        "mana": 79,
+        "manaAtLevel": 102.7,
+        "stamina": 19
+      },
+      "timing": {
+        "cooldown": 25.1,
+        "castTime": 1,
+        "duration": 1.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.7,
+        "aoeRadius": 1.9,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 1.2,
+        "stunDuration": 1.3,
+        "dotDamage": 19,
+        "dotTick": 2.9,
+        "dotDuration": 1.7
+      },
+      "animation": {
+        "castClip": "anim_HealAura_cast",
+        "effectPrefab": "Effects/HealAura_Lv6",
+        "impactPrefab": "Effects/HealAura_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "HealAura_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 47,
+      "skillName": "HealAura_Lv7",
+      "baseSkill": "HealAura",
+      "level": 7,
+      "element": "Lightning",
+      "targetType": "Single",
+      "damage": {
+        "base": 330,
+        "atLevel": 607.2,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 38,
+        "manaAtLevel": 51.3,
+        "stamina": 19
+      },
+      "timing": {
+        "cooldown": 20.9,
+        "castTime": 1.9,
+        "duration": 2.5,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.2,
+        "aoeRadius": 1.4,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 0.2,
+        "stunDuration": 2.5,
+        "dotDamage": 2,
+        "dotTick": 0.5,
+        "dotDuration": 3.4
+      },
+      "animation": {
+        "castClip": "anim_HealAura_cast",
+        "effectPrefab": "Effects/HealAura_Lv7",
+        "impactPrefab": "Effects/HealAura_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "HealAura_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 48,
+      "skillName": "HealAura_Lv8",
+      "baseSkill": "HealAura",
+      "level": 8,
+      "element": "Wind",
+      "targetType": "Self",
+      "damage": {
+        "base": 97,
+        "atLevel": 190.1,
+        "scaling": "STR",
+        "scalingFactor": 0.2
+      },
+      "cost": {
+        "mana": 7,
+        "manaAtLevel": 9.8,
+        "stamina": 6
+      },
+      "timing": {
+        "cooldown": 10.6,
+        "castTime": 0.4,
+        "duration": 1.6,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.2,
+        "aoeRadius": 0.8,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.3,
+        "stunDuration": 2.6,
+        "dotDamage": 27,
+        "dotTick": 1.8,
+        "dotDuration": 3.4
+      },
+      "animation": {
+        "castClip": "anim_HealAura_cast",
+        "effectPrefab": "Effects/HealAura_Lv8",
+        "impactPrefab": "Effects/HealAura_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "HealAura_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 49,
+      "skillName": "HealAura_Lv9",
+      "baseSkill": "HealAura",
+      "level": 9,
+      "element": "Ice",
+      "targetType": "Chain",
+      "damage": {
+        "base": 443,
+        "atLevel": 921.4,
+        "scaling": "STR",
+        "scalingFactor": 0.16
+      },
+      "cost": {
+        "mana": 69,
+        "manaAtLevel": 100,
+        "stamina": 1
+      },
+      "timing": {
+        "cooldown": 13.8,
+        "castTime": 1.8,
+        "duration": 7.4,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.2,
+        "aoeRadius": 2.3,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 2.5,
+        "dotDamage": 42,
+        "dotTick": 2.2,
+        "dotDuration": 4.2
+      },
+      "animation": {
+        "castClip": "anim_HealAura_cast",
+        "effectPrefab": "Effects/HealAura_Lv9",
+        "impactPrefab": "Effects/HealAura_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "HealAura_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 50,
+      "skillName": "HealAura_Lv10",
+      "baseSkill": "HealAura",
+      "level": 10,
+      "element": "Fire",
+      "targetType": "Single",
+      "damage": {
+        "base": 416,
+        "atLevel": 915.2,
+        "scaling": "STR",
+        "scalingFactor": 0.16
+      },
+      "cost": {
+        "mana": 63,
+        "manaAtLevel": 94.5,
+        "stamina": 13
+      },
+      "timing": {
+        "cooldown": 2.9,
+        "castTime": 1.4,
+        "duration": 2,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.5,
+        "aoeRadius": 2,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0,
+        "stunDuration": 1.8,
+        "dotDamage": 30,
+        "dotTick": 2.7,
+        "dotDuration": 2.2
+      },
+      "animation": {
+        "castClip": "anim_HealAura_cast",
+        "effectPrefab": "Effects/HealAura_Lv10",
+        "impactPrefab": "Effects/HealAura_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "HealAura_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 51,
+      "skillName": "ShadowStep_Lv1",
+      "baseSkill": "ShadowStep",
+      "level": 1,
+      "element": "Earth",
+      "targetType": "Splash",
+      "damage": {
+        "base": 486,
+        "atLevel": 544.3,
+        "scaling": "STR",
+        "scalingFactor": 0.19
+      },
+      "cost": {
+        "mana": 42,
+        "manaAtLevel": 44.1,
+        "stamina": 21
+      },
+      "timing": {
+        "cooldown": 25.5,
+        "castTime": 1.2,
+        "duration": 5.4,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.2,
+        "aoeRadius": 1.6,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 0.7,
+        "stunDuration": 2.1,
+        "dotDamage": 11,
+        "dotTick": 0.9,
+        "dotDuration": 2.7
+      },
+      "animation": {
+        "castClip": "anim_ShadowStep_cast",
+        "effectPrefab": "Effects/ShadowStep_Lv1",
+        "impactPrefab": "Effects/ShadowStep_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 52,
+      "skillName": "ShadowStep_Lv2",
+      "baseSkill": "ShadowStep",
+      "level": 2,
+      "element": "Fire",
+      "targetType": "AoE",
+      "damage": {
+        "base": 24,
+        "atLevel": 29.8,
+        "scaling": "STR",
+        "scalingFactor": 0.06
+      },
+      "cost": {
+        "mana": 32,
+        "manaAtLevel": 35.2,
+        "stamina": 16
+      },
+      "timing": {
+        "cooldown": 13.6,
+        "castTime": 1.6,
+        "duration": 1.3,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.8,
+        "aoeRadius": 0.4,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 2,
+        "dotDamage": 20,
+        "dotTick": 1.3,
+        "dotDuration": 1.2
+      },
+      "animation": {
+        "castClip": "anim_ShadowStep_cast",
+        "effectPrefab": "Effects/ShadowStep_Lv2",
+        "impactPrefab": "Effects/ShadowStep_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "ShadowStep_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 53,
+      "skillName": "ShadowStep_Lv3",
+      "baseSkill": "ShadowStep",
+      "level": 3,
+      "element": "Dark",
+      "targetType": "Line",
+      "damage": {
+        "base": 28,
+        "atLevel": 38.1,
+        "scaling": "STR",
+        "scalingFactor": 0.21
+      },
+      "cost": {
+        "mana": 22,
+        "manaAtLevel": 25.3,
+        "stamina": 14
+      },
+      "timing": {
+        "cooldown": 16.1,
+        "castTime": 1.4,
+        "duration": 6.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.7,
+        "aoeRadius": 2.3,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 1.8,
+        "dotDamage": 31,
+        "dotTick": 1.1,
+        "dotDuration": 4
+      },
+      "animation": {
+        "castClip": "anim_ShadowStep_cast",
+        "effectPrefab": "Effects/ShadowStep_Lv3",
+        "impactPrefab": "Effects/ShadowStep_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "ShadowStep_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 54,
+      "skillName": "ShadowStep_Lv4",
+      "baseSkill": "ShadowStep",
+      "level": 4,
+      "element": "Ice",
+      "targetType": "Line",
+      "damage": {
+        "base": 443,
+        "atLevel": 655.6,
+        "scaling": "STR",
+        "scalingFactor": 0.06
+      },
+      "cost": {
+        "mana": 99,
+        "manaAtLevel": 118.8,
+        "stamina": 28
+      },
+      "timing": {
+        "cooldown": 9.8,
+        "castTime": 1.4,
+        "duration": 7.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.5,
+        "aoeRadius": 0.5,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 0.5,
+        "dotDamage": 27,
+        "dotTick": 0.5,
+        "dotDuration": 1
+      },
+      "animation": {
+        "castClip": "anim_ShadowStep_cast",
+        "effectPrefab": "Effects/ShadowStep_Lv4",
+        "impactPrefab": "Effects/ShadowStep_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "ShadowStep_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 55,
+      "skillName": "ShadowStep_Lv5",
+      "baseSkill": "ShadowStep",
+      "level": 5,
+      "element": "Arcane",
+      "targetType": "Chain",
+      "damage": {
+        "base": 286,
+        "atLevel": 457.6,
+        "scaling": "STR",
+        "scalingFactor": 0.07
+      },
+      "cost": {
+        "mana": 86,
+        "manaAtLevel": 107.5,
+        "stamina": 15
+      },
+      "timing": {
+        "cooldown": 28.4,
+        "castTime": 0.8,
+        "duration": 6.3,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.1,
+        "aoeRadius": 2.1,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.4,
+        "stunDuration": 0.2,
+        "dotDamage": 10,
+        "dotTick": 2.4,
+        "dotDuration": 1
+      },
+      "animation": {
+        "castClip": "anim_ShadowStep_cast",
+        "effectPrefab": "Effects/ShadowStep_Lv5",
+        "impactPrefab": "Effects/ShadowStep_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "ShadowStep_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 56,
+      "skillName": "ShadowStep_Lv6",
+      "baseSkill": "ShadowStep",
+      "level": 6,
+      "element": "Lightning",
+      "targetType": "Line",
+      "damage": {
+        "base": 147,
+        "atLevel": 252.8,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 63,
+        "manaAtLevel": 81.9,
+        "stamina": 21
+      },
+      "timing": {
+        "cooldown": 23.2,
+        "castTime": 2.6,
+        "duration": 1.5,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.5,
+        "aoeRadius": 2.7,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 0.4,
+        "stunDuration": 0.2,
+        "dotDamage": 39,
+        "dotTick": 2.2,
+        "dotDuration": 5.3
+      },
+      "animation": {
+        "castClip": "anim_ShadowStep_cast",
+        "effectPrefab": "Effects/ShadowStep_Lv6",
+        "impactPrefab": "Effects/ShadowStep_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "ShadowStep_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 57,
+      "skillName": "ShadowStep_Lv7",
+      "baseSkill": "ShadowStep",
+      "level": 7,
+      "element": "Ice",
+      "targetType": "Single",
+      "damage": {
+        "base": 47,
+        "atLevel": 86.5,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 41,
+        "manaAtLevel": 55.4,
+        "stamina": 23
+      },
+      "timing": {
+        "cooldown": 11.3,
+        "castTime": 2.3,
+        "duration": 7.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 4,
+        "aoeRadius": 1.7,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 1.3,
+        "stunDuration": 0.7,
+        "dotDamage": 21,
+        "dotTick": 2.5,
+        "dotDuration": 1.4
+      },
+      "animation": {
+        "castClip": "anim_ShadowStep_cast",
+        "effectPrefab": "Effects/ShadowStep_Lv7",
+        "impactPrefab": "Effects/ShadowStep_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "ShadowStep_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 58,
+      "skillName": "ShadowStep_Lv8",
+      "baseSkill": "ShadowStep",
+      "level": 8,
+      "element": "Earth",
+      "targetType": "Line",
+      "damage": {
+        "base": 388,
+        "atLevel": 760.5,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 19,
+        "manaAtLevel": 26.6,
+        "stamina": 9
+      },
+      "timing": {
+        "cooldown": 18.4,
+        "castTime": 2.4,
+        "duration": 6.2,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.9,
+        "aoeRadius": 2.8,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.2,
+        "stunDuration": 1.6,
+        "dotDamage": 34,
+        "dotTick": 2.5,
+        "dotDuration": 4.6
+      },
+      "animation": {
+        "castClip": "anim_ShadowStep_cast",
+        "effectPrefab": "Effects/ShadowStep_Lv8",
+        "impactPrefab": "Effects/ShadowStep_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "ShadowStep_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 59,
+      "skillName": "ShadowStep_Lv9",
+      "baseSkill": "ShadowStep",
+      "level": 9,
+      "element": "Ice",
+      "targetType": "Single",
+      "damage": {
+        "base": 430,
+        "atLevel": 894.4,
+        "scaling": "STR",
+        "scalingFactor": 0.09
+      },
+      "cost": {
+        "mana": 7,
+        "manaAtLevel": 10.2,
+        "stamina": 9
+      },
+      "timing": {
+        "cooldown": 3,
+        "castTime": 1.7,
+        "duration": 7.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.2,
+        "aoeRadius": 0.6,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 0.6,
+        "dotDamage": 45,
+        "dotTick": 1,
+        "dotDuration": 2
+      },
+      "animation": {
+        "castClip": "anim_ShadowStep_cast",
+        "effectPrefab": "Effects/ShadowStep_Lv9",
+        "impactPrefab": "Effects/ShadowStep_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "ShadowStep_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 60,
+      "skillName": "ShadowStep_Lv10",
+      "baseSkill": "ShadowStep",
+      "level": 10,
+      "element": "Holy",
+      "targetType": "Self",
+      "damage": {
+        "base": 90,
+        "atLevel": 198,
+        "scaling": "STR",
+        "scalingFactor": 0.21
+      },
+      "cost": {
+        "mana": 82,
+        "manaAtLevel": 123,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 4.3,
+        "castTime": 0.2,
+        "duration": 6,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.8,
+        "aoeRadius": 1.8,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.6,
+        "stunDuration": 0.8,
+        "dotDamage": 45,
+        "dotTick": 2.5,
+        "dotDuration": 2.3
+      },
+      "animation": {
+        "castClip": "anim_ShadowStep_cast",
+        "effectPrefab": "Effects/ShadowStep_Lv10",
+        "impactPrefab": "Effects/ShadowStep_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "ShadowStep_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 61,
+      "skillName": "BerserkerRage_Lv1",
+      "baseSkill": "BerserkerRage",
+      "level": 1,
+      "element": "Ice",
+      "targetType": "Self",
+      "damage": {
+        "base": 329,
+        "atLevel": 368.5,
+        "scaling": "STR",
+        "scalingFactor": 0.2
+      },
+      "cost": {
+        "mana": 24,
+        "manaAtLevel": 25.2,
+        "stamina": 12
+      },
+      "timing": {
+        "cooldown": 29.6,
+        "castTime": 2.5,
+        "duration": 1.5,
+        "channeled": false
+      },
+      "area": {
+        "range": 1,
+        "aoeRadius": 0.8,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 1.2,
+        "dotDamage": 36,
+        "dotTick": 1.1,
+        "dotDuration": 2.6
+      },
+      "animation": {
+        "castClip": "anim_BerserkerRage_cast",
+        "effectPrefab": "Effects/BerserkerRage_Lv1",
+        "impactPrefab": "Effects/BerserkerRage_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 62,
+      "skillName": "BerserkerRage_Lv2",
+      "baseSkill": "BerserkerRage",
+      "level": 2,
+      "element": "Arcane",
+      "targetType": "Splash",
+      "damage": {
+        "base": 291,
+        "atLevel": 360.8,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 24,
+        "manaAtLevel": 26.4,
+        "stamina": 16
+      },
+      "timing": {
+        "cooldown": 17,
+        "castTime": 0.6,
+        "duration": 5.2,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.2,
+        "aoeRadius": 1.7,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 0.2,
+        "stunDuration": 0.5,
+        "dotDamage": 15,
+        "dotTick": 0.6,
+        "dotDuration": 2.4
+      },
+      "animation": {
+        "castClip": "anim_BerserkerRage_cast",
+        "effectPrefab": "Effects/BerserkerRage_Lv2",
+        "impactPrefab": "Effects/BerserkerRage_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "BerserkerRage_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 63,
+      "skillName": "BerserkerRage_Lv3",
+      "baseSkill": "BerserkerRage",
+      "level": 3,
+      "element": "Dark",
+      "targetType": "Splash",
+      "damage": {
+        "base": 426,
+        "atLevel": 579.4,
+        "scaling": "STR",
+        "scalingFactor": 0.19
+      },
+      "cost": {
+        "mana": 72,
+        "manaAtLevel": 82.8,
+        "stamina": 23
+      },
+      "timing": {
+        "cooldown": 2.5,
+        "castTime": 2.3,
+        "duration": 2.1,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.4,
+        "aoeRadius": 1.4,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.4,
+        "stunDuration": 1.5,
+        "dotDamage": 15,
+        "dotTick": 2.1,
+        "dotDuration": 2.7
+      },
+      "animation": {
+        "castClip": "anim_BerserkerRage_cast",
+        "effectPrefab": "Effects/BerserkerRage_Lv3",
+        "impactPrefab": "Effects/BerserkerRage_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "BerserkerRage_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 64,
+      "skillName": "BerserkerRage_Lv4",
+      "baseSkill": "BerserkerRage",
+      "level": 4,
+      "element": "Dark",
+      "targetType": "Single",
+      "damage": {
+        "base": 333,
+        "atLevel": 492.8,
+        "scaling": "STR",
+        "scalingFactor": 0.14
+      },
+      "cost": {
+        "mana": 11,
+        "manaAtLevel": 13.2,
+        "stamina": 11
+      },
+      "timing": {
+        "cooldown": 6,
+        "castTime": 0.5,
+        "duration": 1.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.9,
+        "aoeRadius": 2.3,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 1.2,
+        "stunDuration": 0.1,
+        "dotDamage": 48,
+        "dotTick": 2.8,
+        "dotDuration": 4.8
+      },
+      "animation": {
+        "castClip": "anim_BerserkerRage_cast",
+        "effectPrefab": "Effects/BerserkerRage_Lv4",
+        "impactPrefab": "Effects/BerserkerRage_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "BerserkerRage_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 65,
+      "skillName": "BerserkerRage_Lv5",
+      "baseSkill": "BerserkerRage",
+      "level": 5,
+      "element": "Poison",
+      "targetType": "AoE",
+      "damage": {
+        "base": 160,
+        "atLevel": 256,
+        "scaling": "STR",
+        "scalingFactor": 0.09
+      },
+      "cost": {
+        "mana": 22,
+        "manaAtLevel": 27.5,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 11.4,
+        "castTime": 0.9,
+        "duration": 4.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.7,
+        "aoeRadius": 1.9,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 1,
+        "dotDamage": 33,
+        "dotTick": 1.8,
+        "dotDuration": 1.2
+      },
+      "animation": {
+        "castClip": "anim_BerserkerRage_cast",
+        "effectPrefab": "Effects/BerserkerRage_Lv5",
+        "impactPrefab": "Effects/BerserkerRage_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "BerserkerRage_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 66,
+      "skillName": "BerserkerRage_Lv6",
+      "baseSkill": "BerserkerRage",
+      "level": 6,
+      "element": "Earth",
+      "targetType": "Self",
+      "damage": {
+        "base": 240,
+        "atLevel": 412.8,
+        "scaling": "STR",
+        "scalingFactor": 0.05
+      },
+      "cost": {
+        "mana": 36,
+        "manaAtLevel": 46.8,
+        "stamina": 2
+      },
+      "timing": {
+        "cooldown": 14.9,
+        "castTime": 1.4,
+        "duration": 4.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.3,
+        "aoeRadius": 1.2,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.6,
+        "stunDuration": 2.8,
+        "dotDamage": 36,
+        "dotTick": 2.5,
+        "dotDuration": 5.9
+      },
+      "animation": {
+        "castClip": "anim_BerserkerRage_cast",
+        "effectPrefab": "Effects/BerserkerRage_Lv6",
+        "impactPrefab": "Effects/BerserkerRage_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "BerserkerRage_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 67,
+      "skillName": "BerserkerRage_Lv7",
+      "baseSkill": "BerserkerRage",
+      "level": 7,
+      "element": "Earth",
+      "targetType": "Single",
+      "damage": {
+        "base": 195,
+        "atLevel": 358.8,
+        "scaling": "STR",
+        "scalingFactor": 0.1
+      },
+      "cost": {
+        "mana": 14,
+        "manaAtLevel": 18.9,
+        "stamina": 5
+      },
+      "timing": {
+        "cooldown": 9.5,
+        "castTime": 0.3,
+        "duration": 4.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.1,
+        "aoeRadius": 2.1,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.4,
+        "stunDuration": 2.5,
+        "dotDamage": 6,
+        "dotTick": 1.4,
+        "dotDuration": 1.1
+      },
+      "animation": {
+        "castClip": "anim_BerserkerRage_cast",
+        "effectPrefab": "Effects/BerserkerRage_Lv7",
+        "impactPrefab": "Effects/BerserkerRage_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "BerserkerRage_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 68,
+      "skillName": "BerserkerRage_Lv8",
+      "baseSkill": "BerserkerRage",
+      "level": 8,
+      "element": "Ice",
+      "targetType": "Self",
+      "damage": {
+        "base": 114,
+        "atLevel": 223.4,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 20,
+        "manaAtLevel": 28,
+        "stamina": 13
+      },
+      "timing": {
+        "cooldown": 21.2,
+        "castTime": 0.7,
+        "duration": 2.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.3,
+        "aoeRadius": 1.2,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 2.4,
+        "dotDamage": 1,
+        "dotTick": 2.6,
+        "dotDuration": 3.5
+      },
+      "animation": {
+        "castClip": "anim_BerserkerRage_cast",
+        "effectPrefab": "Effects/BerserkerRage_Lv8",
+        "impactPrefab": "Effects/BerserkerRage_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "BerserkerRage_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 69,
+      "skillName": "BerserkerRage_Lv9",
+      "baseSkill": "BerserkerRage",
+      "level": 9,
+      "element": "Lightning",
+      "targetType": "Chain",
+      "damage": {
+        "base": 364,
+        "atLevel": 757.1,
+        "scaling": "STR",
+        "scalingFactor": 0.24
+      },
+      "cost": {
+        "mana": 98,
+        "manaAtLevel": 142.1,
+        "stamina": 25
+      },
+      "timing": {
+        "cooldown": 29.9,
+        "castTime": 0.1,
+        "duration": 5,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.4,
+        "aoeRadius": 1.1,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 1.4,
+        "stunDuration": 0.8,
+        "dotDamage": 24,
+        "dotTick": 1.2,
+        "dotDuration": 1.3
+      },
+      "animation": {
+        "castClip": "anim_BerserkerRage_cast",
+        "effectPrefab": "Effects/BerserkerRage_Lv9",
+        "impactPrefab": "Effects/BerserkerRage_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "BerserkerRage_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 70,
+      "skillName": "BerserkerRage_Lv10",
+      "baseSkill": "BerserkerRage",
+      "level": 10,
+      "element": "Earth",
+      "targetType": "Single",
+      "damage": {
+        "base": 72,
+        "atLevel": 158.4,
+        "scaling": "STR",
+        "scalingFactor": 0.08
+      },
+      "cost": {
+        "mana": 86,
+        "manaAtLevel": 129,
+        "stamina": 16
+      },
+      "timing": {
+        "cooldown": 13.1,
+        "castTime": 1.9,
+        "duration": 4,
+        "channeled": true
+      },
+      "area": {
+        "range": 1,
+        "aoeRadius": 2.9,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 1.2,
+        "dotDamage": 42,
+        "dotTick": 2.8,
+        "dotDuration": 3.6
+      },
+      "animation": {
+        "castClip": "anim_BerserkerRage_cast",
+        "effectPrefab": "Effects/BerserkerRage_Lv10",
+        "impactPrefab": "Effects/BerserkerRage_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "BerserkerRage_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 71,
+      "skillName": "ShieldBash_Lv1",
+      "baseSkill": "ShieldBash",
+      "level": 1,
+      "element": "Poison",
+      "targetType": "Chain",
+      "damage": {
+        "base": 32,
+        "atLevel": 35.8,
+        "scaling": "STR",
+        "scalingFactor": 0.12
+      },
+      "cost": {
+        "mana": 58,
+        "manaAtLevel": 60.9,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 18.6,
+        "castTime": 1.8,
+        "duration": 6.3,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.4,
+        "aoeRadius": 2.7,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 2.5,
+        "dotDamage": 7,
+        "dotTick": 1.5,
+        "dotDuration": 2.9
+      },
+      "animation": {
+        "castClip": "anim_ShieldBash_cast",
+        "effectPrefab": "Effects/ShieldBash_Lv1",
+        "impactPrefab": "Effects/ShieldBash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 72,
+      "skillName": "ShieldBash_Lv2",
+      "baseSkill": "ShieldBash",
+      "level": 2,
+      "element": "Poison",
+      "targetType": "Chain",
+      "damage": {
+        "base": 148,
+        "atLevel": 183.5,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 65,
+        "manaAtLevel": 71.5,
+        "stamina": 28
+      },
+      "timing": {
+        "cooldown": 13.3,
+        "castTime": 0.9,
+        "duration": 5.2,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.5,
+        "aoeRadius": 2.9,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 1.2,
+        "stunDuration": 2.2,
+        "dotDamage": 29,
+        "dotTick": 1.3,
+        "dotDuration": 4.5
+      },
+      "animation": {
+        "castClip": "anim_ShieldBash_cast",
+        "effectPrefab": "Effects/ShieldBash_Lv2",
+        "impactPrefab": "Effects/ShieldBash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "ShieldBash_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 73,
+      "skillName": "ShieldBash_Lv3",
+      "baseSkill": "ShieldBash",
+      "level": 3,
+      "element": "Lightning",
+      "targetType": "AoE",
+      "damage": {
+        "base": 77,
+        "atLevel": 104.7,
+        "scaling": "STR",
+        "scalingFactor": 0.16
+      },
+      "cost": {
+        "mana": 92,
+        "manaAtLevel": 105.8,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 25.5,
+        "castTime": 2.8,
+        "duration": 2.7,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.9,
+        "aoeRadius": 2.4,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.6,
+        "stunDuration": 1.3,
+        "dotDamage": 6,
+        "dotTick": 2,
+        "dotDuration": 1.1
+      },
+      "animation": {
+        "castClip": "anim_ShieldBash_cast",
+        "effectPrefab": "Effects/ShieldBash_Lv3",
+        "impactPrefab": "Effects/ShieldBash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "ShieldBash_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 74,
+      "skillName": "ShieldBash_Lv4",
+      "baseSkill": "ShieldBash",
+      "level": 4,
+      "element": "Fire",
+      "targetType": "Single",
+      "damage": {
+        "base": 240,
+        "atLevel": 355.2,
+        "scaling": "STR",
+        "scalingFactor": 0.12
+      },
+      "cost": {
+        "mana": 14,
+        "manaAtLevel": 16.8,
+        "stamina": 16
+      },
+      "timing": {
+        "cooldown": 12.5,
+        "castTime": 0.3,
+        "duration": 6.4,
+        "channeled": false
+      },
+      "area": {
+        "range": 1,
+        "aoeRadius": 1.9,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 0.6,
+        "dotDamage": 17,
+        "dotTick": 2.1,
+        "dotDuration": 5.6
+      },
+      "animation": {
+        "castClip": "anim_ShieldBash_cast",
+        "effectPrefab": "Effects/ShieldBash_Lv4",
+        "impactPrefab": "Effects/ShieldBash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "ShieldBash_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 75,
+      "skillName": "ShieldBash_Lv5",
+      "baseSkill": "ShieldBash",
+      "level": 5,
+      "element": "Lightning",
+      "targetType": "Chain",
+      "damage": {
+        "base": 358,
+        "atLevel": 572.8,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 80,
+        "manaAtLevel": 100,
+        "stamina": 1
+      },
+      "timing": {
+        "cooldown": 11.2,
+        "castTime": 1.3,
+        "duration": 3.7,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.4,
+        "aoeRadius": 2.4,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 1.6,
+        "dotDamage": 33,
+        "dotTick": 2.3,
+        "dotDuration": 5.2
+      },
+      "animation": {
+        "castClip": "anim_ShieldBash_cast",
+        "effectPrefab": "Effects/ShieldBash_Lv5",
+        "impactPrefab": "Effects/ShieldBash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "ShieldBash_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 76,
+      "skillName": "ShieldBash_Lv6",
+      "baseSkill": "ShieldBash",
+      "level": 6,
+      "element": "Water",
+      "targetType": "Splash",
+      "damage": {
+        "base": 429,
+        "atLevel": 737.9,
+        "scaling": "STR",
+        "scalingFactor": 0.1
+      },
+      "cost": {
+        "mana": 15,
+        "manaAtLevel": 19.5,
+        "stamina": 17
+      },
+      "timing": {
+        "cooldown": 23.2,
+        "castTime": 1,
+        "duration": 0.9,
+        "channeled": true
+      },
+      "area": {
+        "range": 3,
+        "aoeRadius": 2,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0.2,
+        "stunDuration": 1.1,
+        "dotDamage": 26,
+        "dotTick": 0.6,
+        "dotDuration": 1.6
+      },
+      "animation": {
+        "castClip": "anim_ShieldBash_cast",
+        "effectPrefab": "Effects/ShieldBash_Lv6",
+        "impactPrefab": "Effects/ShieldBash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "ShieldBash_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 77,
+      "skillName": "ShieldBash_Lv7",
+      "baseSkill": "ShieldBash",
+      "level": 7,
+      "element": "Ice",
+      "targetType": "Single",
+      "damage": {
+        "base": 190,
+        "atLevel": 349.6,
+        "scaling": "STR",
+        "scalingFactor": 0.24
+      },
+      "cost": {
+        "mana": 58,
+        "manaAtLevel": 78.3,
+        "stamina": 19
+      },
+      "timing": {
+        "cooldown": 10.7,
+        "castTime": 1.3,
+        "duration": 2,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.7,
+        "aoeRadius": 0.5,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0.6,
+        "stunDuration": 2.2,
+        "dotDamage": 22,
+        "dotTick": 0.6,
+        "dotDuration": 3
+      },
+      "animation": {
+        "castClip": "anim_ShieldBash_cast",
+        "effectPrefab": "Effects/ShieldBash_Lv7",
+        "impactPrefab": "Effects/ShieldBash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "ShieldBash_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 78,
+      "skillName": "ShieldBash_Lv8",
+      "baseSkill": "ShieldBash",
+      "level": 8,
+      "element": "Fire",
+      "targetType": "Self",
+      "damage": {
+        "base": 331,
+        "atLevel": 648.8,
+        "scaling": "STR",
+        "scalingFactor": 0.21
+      },
+      "cost": {
+        "mana": 68,
+        "manaAtLevel": 95.2,
+        "stamina": 27
+      },
+      "timing": {
+        "cooldown": 8.8,
+        "castTime": 1.1,
+        "duration": 6.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.9,
+        "aoeRadius": 2.2,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 1.4,
+        "dotDamage": 11,
+        "dotTick": 1.5,
+        "dotDuration": 4.4
+      },
+      "animation": {
+        "castClip": "anim_ShieldBash_cast",
+        "effectPrefab": "Effects/ShieldBash_Lv8",
+        "impactPrefab": "Effects/ShieldBash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "ShieldBash_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 79,
+      "skillName": "ShieldBash_Lv9",
+      "baseSkill": "ShieldBash",
+      "level": 9,
+      "element": "Dark",
+      "targetType": "Chain",
+      "damage": {
+        "base": 174,
+        "atLevel": 361.9,
+        "scaling": "STR",
+        "scalingFactor": 0.05
+      },
+      "cost": {
+        "mana": 31,
+        "manaAtLevel": 44.9,
+        "stamina": 20
+      },
+      "timing": {
+        "cooldown": 8.6,
+        "castTime": 2.9,
+        "duration": 4.9,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.4,
+        "aoeRadius": 2.4,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0.7,
+        "stunDuration": 1.2,
+        "dotDamage": 0,
+        "dotTick": 0.6,
+        "dotDuration": 3.6
+      },
+      "animation": {
+        "castClip": "anim_ShieldBash_cast",
+        "effectPrefab": "Effects/ShieldBash_Lv9",
+        "impactPrefab": "Effects/ShieldBash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "ShieldBash_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 80,
+      "skillName": "ShieldBash_Lv10",
+      "baseSkill": "ShieldBash",
+      "level": 10,
+      "element": "Holy",
+      "targetType": "Single",
+      "damage": {
+        "base": 463,
+        "atLevel": 1018.6,
+        "scaling": "STR",
+        "scalingFactor": 0.18
+      },
+      "cost": {
+        "mana": 13,
+        "manaAtLevel": 19.5,
+        "stamina": 16
+      },
+      "timing": {
+        "cooldown": 14.6,
+        "castTime": 0.5,
+        "duration": 7.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.7,
+        "aoeRadius": 2.7,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 1.2,
+        "dotDamage": 46,
+        "dotTick": 1.6,
+        "dotDuration": 1.6
+      },
+      "animation": {
+        "castClip": "anim_ShieldBash_cast",
+        "effectPrefab": "Effects/ShieldBash_Lv10",
+        "impactPrefab": "Effects/ShieldBash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "ShieldBash_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 81,
+      "skillName": "ArrowRain_Lv1",
+      "baseSkill": "ArrowRain",
+      "level": 1,
+      "element": "Dark",
+      "targetType": "Single",
+      "damage": {
+        "base": 26,
+        "atLevel": 29.1,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 26,
+        "manaAtLevel": 27.3,
+        "stamina": 12
+      },
+      "timing": {
+        "cooldown": 7.7,
+        "castTime": 0.4,
+        "duration": 6.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.3,
+        "aoeRadius": 0.9,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 0.4,
+        "stunDuration": 1.3,
+        "dotDamage": 24,
+        "dotTick": 2.4,
+        "dotDuration": 3
+      },
+      "animation": {
+        "castClip": "anim_ArrowRain_cast",
+        "effectPrefab": "Effects/ArrowRain_Lv1",
+        "impactPrefab": "Effects/ArrowRain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 82,
+      "skillName": "ArrowRain_Lv2",
+      "baseSkill": "ArrowRain",
+      "level": 2,
+      "element": "Wind",
+      "targetType": "Splash",
+      "damage": {
+        "base": 339,
+        "atLevel": 420.4,
+        "scaling": "STR",
+        "scalingFactor": 0.17
+      },
+      "cost": {
+        "mana": 21,
+        "manaAtLevel": 23.1,
+        "stamina": 4
+      },
+      "timing": {
+        "cooldown": 19.9,
+        "castTime": 0.8,
+        "duration": 6.5,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.6,
+        "aoeRadius": 2.8,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.3,
+        "stunDuration": 0.4,
+        "dotDamage": 20,
+        "dotTick": 1.1,
+        "dotDuration": 1.9
+      },
+      "animation": {
+        "castClip": "anim_ArrowRain_cast",
+        "effectPrefab": "Effects/ArrowRain_Lv2",
+        "impactPrefab": "Effects/ArrowRain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "ArrowRain_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 83,
+      "skillName": "ArrowRain_Lv3",
+      "baseSkill": "ArrowRain",
+      "level": 3,
+      "element": "Earth",
+      "targetType": "Self",
+      "damage": {
+        "base": 22,
+        "atLevel": 29.9,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 13,
+        "manaAtLevel": 15,
+        "stamina": 1
+      },
+      "timing": {
+        "cooldown": 18.8,
+        "castTime": 0.2,
+        "duration": 7.9,
+        "channeled": true
+      },
+      "area": {
+        "range": 2,
+        "aoeRadius": 0.3,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 0.7,
+        "dotDamage": 29,
+        "dotTick": 2.2,
+        "dotDuration": 5.3
+      },
+      "animation": {
+        "castClip": "anim_ArrowRain_cast",
+        "effectPrefab": "Effects/ArrowRain_Lv3",
+        "impactPrefab": "Effects/ArrowRain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "ArrowRain_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 84,
+      "skillName": "ArrowRain_Lv4",
+      "baseSkill": "ArrowRain",
+      "level": 4,
+      "element": "Dark",
+      "targetType": "Single",
+      "damage": {
+        "base": 140,
+        "atLevel": 207.2,
+        "scaling": "STR",
+        "scalingFactor": 0.2
+      },
+      "cost": {
+        "mana": 52,
+        "manaAtLevel": 62.4,
+        "stamina": 6
+      },
+      "timing": {
+        "cooldown": 8.6,
+        "castTime": 1.7,
+        "duration": 1.6,
+        "channeled": true
+      },
+      "area": {
+        "range": 3,
+        "aoeRadius": 2.3,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 0.3,
+        "dotDamage": 7,
+        "dotTick": 2.9,
+        "dotDuration": 1.9
+      },
+      "animation": {
+        "castClip": "anim_ArrowRain_cast",
+        "effectPrefab": "Effects/ArrowRain_Lv4",
+        "impactPrefab": "Effects/ArrowRain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "ArrowRain_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 85,
+      "skillName": "ArrowRain_Lv5",
+      "baseSkill": "ArrowRain",
+      "level": 5,
+      "element": "Lightning",
+      "targetType": "Self",
+      "damage": {
+        "base": 410,
+        "atLevel": 656,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 63,
+        "manaAtLevel": 78.8,
+        "stamina": 28
+      },
+      "timing": {
+        "cooldown": 6.4,
+        "castTime": 1.8,
+        "duration": 7,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.9,
+        "aoeRadius": 1.3,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 0.4,
+        "dotDamage": 36,
+        "dotTick": 1.5,
+        "dotDuration": 2.6
+      },
+      "animation": {
+        "castClip": "anim_ArrowRain_cast",
+        "effectPrefab": "Effects/ArrowRain_Lv5",
+        "impactPrefab": "Effects/ArrowRain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "ArrowRain_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 86,
+      "skillName": "ArrowRain_Lv6",
+      "baseSkill": "ArrowRain",
+      "level": 6,
+      "element": "Water",
+      "targetType": "Self",
+      "damage": {
+        "base": 189,
+        "atLevel": 325.1,
+        "scaling": "STR",
+        "scalingFactor": 0.23
+      },
+      "cost": {
+        "mana": 44,
+        "manaAtLevel": 57.2,
+        "stamina": 24
+      },
+      "timing": {
+        "cooldown": 2.9,
+        "castTime": 0.2,
+        "duration": 7.7,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.6,
+        "aoeRadius": 1.4,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 1.5,
+        "stunDuration": 0,
+        "dotDamage": 29,
+        "dotTick": 1.5,
+        "dotDuration": 3.7
+      },
+      "animation": {
+        "castClip": "anim_ArrowRain_cast",
+        "effectPrefab": "Effects/ArrowRain_Lv6",
+        "impactPrefab": "Effects/ArrowRain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "ArrowRain_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 87,
+      "skillName": "ArrowRain_Lv7",
+      "baseSkill": "ArrowRain",
+      "level": 7,
+      "element": "Lightning",
+      "targetType": "AoE",
+      "damage": {
+        "base": 364,
+        "atLevel": 669.8,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 65,
+        "manaAtLevel": 87.8,
+        "stamina": 7
+      },
+      "timing": {
+        "cooldown": 13.3,
+        "castTime": 1.6,
+        "duration": 2.3,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.6,
+        "aoeRadius": 2.2,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 2.5,
+        "dotDamage": 21,
+        "dotTick": 1.8,
+        "dotDuration": 1.4
+      },
+      "animation": {
+        "castClip": "anim_ArrowRain_cast",
+        "effectPrefab": "Effects/ArrowRain_Lv7",
+        "impactPrefab": "Effects/ArrowRain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "ArrowRain_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 88,
+      "skillName": "ArrowRain_Lv8",
+      "baseSkill": "ArrowRain",
+      "level": 8,
+      "element": "Holy",
+      "targetType": "Splash",
+      "damage": {
+        "base": 336,
+        "atLevel": 658.6,
+        "scaling": "STR",
+        "scalingFactor": 0.07
+      },
+      "cost": {
+        "mana": 18,
+        "manaAtLevel": 25.2,
+        "stamina": 13
+      },
+      "timing": {
+        "cooldown": 22,
+        "castTime": 0.3,
+        "duration": 5.3,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.4,
+        "aoeRadius": 0.7,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 2.4,
+        "dotDamage": 23,
+        "dotTick": 2.6,
+        "dotDuration": 5.5
+      },
+      "animation": {
+        "castClip": "anim_ArrowRain_cast",
+        "effectPrefab": "Effects/ArrowRain_Lv8",
+        "impactPrefab": "Effects/ArrowRain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "ArrowRain_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 89,
+      "skillName": "ArrowRain_Lv9",
+      "baseSkill": "ArrowRain",
+      "level": 9,
+      "element": "Dark",
+      "targetType": "AoE",
+      "damage": {
+        "base": 492,
+        "atLevel": 1023.4,
+        "scaling": "STR",
+        "scalingFactor": 0.06
+      },
+      "cost": {
+        "mana": 49,
+        "manaAtLevel": 71,
+        "stamina": 25
+      },
+      "timing": {
+        "cooldown": 23.9,
+        "castTime": 1.9,
+        "duration": 6.5,
+        "channeled": true
+      },
+      "area": {
+        "range": 3,
+        "aoeRadius": 2.9,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 1.4,
+        "stunDuration": 2.1,
+        "dotDamage": 16,
+        "dotTick": 1.8,
+        "dotDuration": 5.4
+      },
+      "animation": {
+        "castClip": "anim_ArrowRain_cast",
+        "effectPrefab": "Effects/ArrowRain_Lv9",
+        "impactPrefab": "Effects/ArrowRain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "ArrowRain_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 90,
+      "skillName": "ArrowRain_Lv10",
+      "baseSkill": "ArrowRain",
+      "level": 10,
+      "element": "Wind",
+      "targetType": "Self",
+      "damage": {
+        "base": 96,
+        "atLevel": 211.2,
+        "scaling": "STR",
+        "scalingFactor": 0.13
+      },
+      "cost": {
+        "mana": 74,
+        "manaAtLevel": 111,
+        "stamina": 29
+      },
+      "timing": {
+        "cooldown": 12.1,
+        "castTime": 1.6,
+        "duration": 4,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.1,
+        "aoeRadius": 2.5,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0.3,
+        "stunDuration": 2.3,
+        "dotDamage": 27,
+        "dotTick": 2.3,
+        "dotDuration": 3.3
+      },
+      "animation": {
+        "castClip": "anim_ArrowRain_cast",
+        "effectPrefab": "Effects/ArrowRain_Lv10",
+        "impactPrefab": "Effects/ArrowRain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "ArrowRain_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 91,
+      "skillName": "ChainLightning_Lv1",
+      "baseSkill": "ChainLightning",
+      "level": 1,
+      "element": "Fire",
+      "targetType": "AoE",
+      "damage": {
+        "base": 76,
+        "atLevel": 85.1,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 75,
+        "manaAtLevel": 78.8,
+        "stamina": 8
+      },
+      "timing": {
+        "cooldown": 7.1,
+        "castTime": 1.6,
+        "duration": 3.9,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.2,
+        "aoeRadius": 2.2,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.2,
+        "stunDuration": 0.7,
+        "dotDamage": 16,
+        "dotTick": 1.3,
+        "dotDuration": 3
+      },
+      "animation": {
+        "castClip": "anim_ChainLightning_cast",
+        "effectPrefab": "Effects/ChainLightning_Lv1",
+        "impactPrefab": "Effects/ChainLightning_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 92,
+      "skillName": "ChainLightning_Lv2",
+      "baseSkill": "ChainLightning",
+      "level": 2,
+      "element": "Lightning",
+      "targetType": "Splash",
+      "damage": {
+        "base": 82,
+        "atLevel": 101.7,
+        "scaling": "STR",
+        "scalingFactor": 0.08
+      },
+      "cost": {
+        "mana": 66,
+        "manaAtLevel": 72.6,
+        "stamina": 21
+      },
+      "timing": {
+        "cooldown": 5.5,
+        "castTime": 2.5,
+        "duration": 7.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.8,
+        "aoeRadius": 0.4,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 0.5,
+        "dotDamage": 1,
+        "dotTick": 2.9,
+        "dotDuration": 3.4
+      },
+      "animation": {
+        "castClip": "anim_ChainLightning_cast",
+        "effectPrefab": "Effects/ChainLightning_Lv2",
+        "impactPrefab": "Effects/ChainLightning_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "ChainLightning_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 93,
+      "skillName": "ChainLightning_Lv3",
+      "baseSkill": "ChainLightning",
+      "level": 3,
+      "element": "Water",
+      "targetType": "Single",
+      "damage": {
+        "base": 425,
+        "atLevel": 578,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 78,
+        "manaAtLevel": 89.7,
+        "stamina": 6
+      },
+      "timing": {
+        "cooldown": 10.9,
+        "castTime": 1.7,
+        "duration": 5.9,
+        "channeled": true
+      },
+      "area": {
+        "range": 0.8,
+        "aoeRadius": 0.4,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0,
+        "stunDuration": 1.2,
+        "dotDamage": 48,
+        "dotTick": 2.7,
+        "dotDuration": 1.5
+      },
+      "animation": {
+        "castClip": "anim_ChainLightning_cast",
+        "effectPrefab": "Effects/ChainLightning_Lv3",
+        "impactPrefab": "Effects/ChainLightning_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "ChainLightning_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 94,
+      "skillName": "ChainLightning_Lv4",
+      "baseSkill": "ChainLightning",
+      "level": 4,
+      "element": "Holy",
+      "targetType": "Line",
+      "damage": {
+        "base": 264,
+        "atLevel": 390.7,
+        "scaling": "STR",
+        "scalingFactor": 0.2
+      },
+      "cost": {
+        "mana": 90,
+        "manaAtLevel": 108,
+        "stamina": 27
+      },
+      "timing": {
+        "cooldown": 19.3,
+        "castTime": 2.9,
+        "duration": 1.9,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.1,
+        "aoeRadius": 1.9,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 1.5,
+        "stunDuration": 2,
+        "dotDamage": 10,
+        "dotTick": 1.1,
+        "dotDuration": 1.9
+      },
+      "animation": {
+        "castClip": "anim_ChainLightning_cast",
+        "effectPrefab": "Effects/ChainLightning_Lv4",
+        "impactPrefab": "Effects/ChainLightning_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "ChainLightning_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 95,
+      "skillName": "ChainLightning_Lv5",
+      "baseSkill": "ChainLightning",
+      "level": 5,
+      "element": "Ice",
+      "targetType": "Self",
+      "damage": {
+        "base": 223,
+        "atLevel": 356.8,
+        "scaling": "STR",
+        "scalingFactor": 0.21
+      },
+      "cost": {
+        "mana": 39,
+        "manaAtLevel": 48.8,
+        "stamina": 8
+      },
+      "timing": {
+        "cooldown": 22.6,
+        "castTime": 2.6,
+        "duration": 7.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.2,
+        "aoeRadius": 2,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 0.2,
+        "stunDuration": 1,
+        "dotDamage": 7,
+        "dotTick": 1.6,
+        "dotDuration": 1.8
+      },
+      "animation": {
+        "castClip": "anim_ChainLightning_cast",
+        "effectPrefab": "Effects/ChainLightning_Lv5",
+        "impactPrefab": "Effects/ChainLightning_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "ChainLightning_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 96,
+      "skillName": "ChainLightning_Lv6",
+      "baseSkill": "ChainLightning",
+      "level": 6,
+      "element": "Arcane",
+      "targetType": "Splash",
+      "damage": {
+        "base": 131,
+        "atLevel": 225.3,
+        "scaling": "STR",
+        "scalingFactor": 0.05
+      },
+      "cost": {
+        "mana": 53,
+        "manaAtLevel": 68.9,
+        "stamina": 14
+      },
+      "timing": {
+        "cooldown": 1.7,
+        "castTime": 2,
+        "duration": 2.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.3,
+        "aoeRadius": 2,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 1.5,
+        "dotDamage": 26,
+        "dotTick": 2.9,
+        "dotDuration": 1.8
+      },
+      "animation": {
+        "castClip": "anim_ChainLightning_cast",
+        "effectPrefab": "Effects/ChainLightning_Lv6",
+        "impactPrefab": "Effects/ChainLightning_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "ChainLightning_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 97,
+      "skillName": "ChainLightning_Lv7",
+      "baseSkill": "ChainLightning",
+      "level": 7,
+      "element": "Poison",
+      "targetType": "AoE",
+      "damage": {
+        "base": 255,
+        "atLevel": 469.2,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 6,
+        "manaAtLevel": 8.1,
+        "stamina": 14
+      },
+      "timing": {
+        "cooldown": 2.1,
+        "castTime": 1.6,
+        "duration": 5.4,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.5,
+        "aoeRadius": 0.9,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 0,
+        "dotDamage": 8,
+        "dotTick": 0.9,
+        "dotDuration": 4.2
+      },
+      "animation": {
+        "castClip": "anim_ChainLightning_cast",
+        "effectPrefab": "Effects/ChainLightning_Lv7",
+        "impactPrefab": "Effects/ChainLightning_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "ChainLightning_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 98,
+      "skillName": "ChainLightning_Lv8",
+      "baseSkill": "ChainLightning",
+      "level": 8,
+      "element": "Arcane",
+      "targetType": "Chain",
+      "damage": {
+        "base": 433,
+        "atLevel": 848.7,
+        "scaling": "STR",
+        "scalingFactor": 0.07
+      },
+      "cost": {
+        "mana": 19,
+        "manaAtLevel": 26.6,
+        "stamina": 23
+      },
+      "timing": {
+        "cooldown": 14.8,
+        "castTime": 2.8,
+        "duration": 0.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.5,
+        "aoeRadius": 1.1,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.2,
+        "stunDuration": 0.9,
+        "dotDamage": 16,
+        "dotTick": 1.4,
+        "dotDuration": 4.3
+      },
+      "animation": {
+        "castClip": "anim_ChainLightning_cast",
+        "effectPrefab": "Effects/ChainLightning_Lv8",
+        "impactPrefab": "Effects/ChainLightning_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "ChainLightning_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 99,
+      "skillName": "ChainLightning_Lv9",
+      "baseSkill": "ChainLightning",
+      "level": 9,
+      "element": "Water",
+      "targetType": "Self",
+      "damage": {
+        "base": 271,
+        "atLevel": 563.7,
+        "scaling": "STR",
+        "scalingFactor": 0.19
+      },
+      "cost": {
+        "mana": 24,
+        "manaAtLevel": 34.8,
+        "stamina": 29
+      },
+      "timing": {
+        "cooldown": 29,
+        "castTime": 0.3,
+        "duration": 7.1,
+        "channeled": false
+      },
+      "area": {
+        "range": 3,
+        "aoeRadius": 2.5,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 1.2,
+        "stunDuration": 0.3,
+        "dotDamage": 11,
+        "dotTick": 1.6,
+        "dotDuration": 4
+      },
+      "animation": {
+        "castClip": "anim_ChainLightning_cast",
+        "effectPrefab": "Effects/ChainLightning_Lv9",
+        "impactPrefab": "Effects/ChainLightning_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "ChainLightning_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 100,
+      "skillName": "ChainLightning_Lv10",
+      "baseSkill": "ChainLightning",
+      "level": 10,
+      "element": "Water",
+      "targetType": "Splash",
+      "damage": {
+        "base": 289,
+        "atLevel": 635.8,
+        "scaling": "STR",
+        "scalingFactor": 0.17
+      },
+      "cost": {
+        "mana": 21,
+        "manaAtLevel": 31.5,
+        "stamina": 5
+      },
+      "timing": {
+        "cooldown": 3.5,
+        "castTime": 2.6,
+        "duration": 3.4,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.1,
+        "aoeRadius": 2.4,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.5,
+        "stunDuration": 1,
+        "dotDamage": 44,
+        "dotTick": 1.7,
+        "dotDuration": 2.4
+      },
+      "animation": {
+        "castClip": "anim_ChainLightning_cast",
+        "effectPrefab": "Effects/ChainLightning_Lv10",
+        "impactPrefab": "Effects/ChainLightning_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "ChainLightning_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 101,
+      "skillName": "Earthquake_Lv1",
+      "baseSkill": "Earthquake",
+      "level": 1,
+      "element": "Ice",
+      "targetType": "Single",
+      "damage": {
+        "base": 44,
+        "atLevel": 49.3,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 16,
+        "manaAtLevel": 16.8,
+        "stamina": 23
+      },
+      "timing": {
+        "cooldown": 1.1,
+        "castTime": 1.3,
+        "duration": 6.7,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.1,
+        "aoeRadius": 2.2,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 1,
+        "dotDamage": 40,
+        "dotTick": 0.7,
+        "dotDuration": 2.5
+      },
+      "animation": {
+        "castClip": "anim_Earthquake_cast",
+        "effectPrefab": "Effects/Earthquake_Lv1",
+        "impactPrefab": "Effects/Earthquake_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 102,
+      "skillName": "Earthquake_Lv2",
+      "baseSkill": "Earthquake",
+      "level": 2,
+      "element": "Dark",
+      "targetType": "Self",
+      "damage": {
+        "base": 256,
+        "atLevel": 317.4,
+        "scaling": "STR",
+        "scalingFactor": 0.07
+      },
+      "cost": {
+        "mana": 68,
+        "manaAtLevel": 74.8,
+        "stamina": 7
+      },
+      "timing": {
+        "cooldown": 10.8,
+        "castTime": 1.2,
+        "duration": 5.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.9,
+        "aoeRadius": 1.8,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 0.4,
+        "stunDuration": 0.7,
+        "dotDamage": 6,
+        "dotTick": 0.7,
+        "dotDuration": 1.5
+      },
+      "animation": {
+        "castClip": "anim_Earthquake_cast",
+        "effectPrefab": "Effects/Earthquake_Lv2",
+        "impactPrefab": "Effects/Earthquake_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "Earthquake_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 103,
+      "skillName": "Earthquake_Lv3",
+      "baseSkill": "Earthquake",
+      "level": 3,
+      "element": "Ice",
+      "targetType": "Splash",
+      "damage": {
+        "base": 134,
+        "atLevel": 182.2,
+        "scaling": "STR",
+        "scalingFactor": 0.13
+      },
+      "cost": {
+        "mana": 17,
+        "manaAtLevel": 19.5,
+        "stamina": 22
+      },
+      "timing": {
+        "cooldown": 13.4,
+        "castTime": 2.6,
+        "duration": 7.1,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.4,
+        "aoeRadius": 0.9,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.5,
+        "stunDuration": 2.3,
+        "dotDamage": 40,
+        "dotTick": 1.7,
+        "dotDuration": 1.8
+      },
+      "animation": {
+        "castClip": "anim_Earthquake_cast",
+        "effectPrefab": "Effects/Earthquake_Lv3",
+        "impactPrefab": "Effects/Earthquake_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "Earthquake_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 104,
+      "skillName": "Earthquake_Lv4",
+      "baseSkill": "Earthquake",
+      "level": 4,
+      "element": "Dark",
+      "targetType": "Line",
+      "damage": {
+        "base": 196,
+        "atLevel": 290.1,
+        "scaling": "STR",
+        "scalingFactor": 0.14
+      },
+      "cost": {
+        "mana": 75,
+        "manaAtLevel": 90,
+        "stamina": 10
+      },
+      "timing": {
+        "cooldown": 27,
+        "castTime": 0.1,
+        "duration": 7.3,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.3,
+        "aoeRadius": 2.7,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 2.7,
+        "dotDamage": 2,
+        "dotTick": 0.7,
+        "dotDuration": 4.1
+      },
+      "animation": {
+        "castClip": "anim_Earthquake_cast",
+        "effectPrefab": "Effects/Earthquake_Lv4",
+        "impactPrefab": "Effects/Earthquake_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "Earthquake_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 105,
+      "skillName": "Earthquake_Lv5",
+      "baseSkill": "Earthquake",
+      "level": 5,
+      "element": "Lightning",
+      "targetType": "AoE",
+      "damage": {
+        "base": 59,
+        "atLevel": 94.4,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 32,
+        "manaAtLevel": 40,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 19.1,
+        "castTime": 2.5,
+        "duration": 5,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.4,
+        "aoeRadius": 2.2,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 0.3,
+        "stunDuration": 0.2,
+        "dotDamage": 49,
+        "dotTick": 1,
+        "dotDuration": 3.3
+      },
+      "animation": {
+        "castClip": "anim_Earthquake_cast",
+        "effectPrefab": "Effects/Earthquake_Lv5",
+        "impactPrefab": "Effects/Earthquake_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "Earthquake_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 106,
+      "skillName": "Earthquake_Lv6",
+      "baseSkill": "Earthquake",
+      "level": 6,
+      "element": "Dark",
+      "targetType": "Chain",
+      "damage": {
+        "base": 147,
+        "atLevel": 252.8,
+        "scaling": "STR",
+        "scalingFactor": 0.18
+      },
+      "cost": {
+        "mana": 45,
+        "manaAtLevel": 58.5,
+        "stamina": 4
+      },
+      "timing": {
+        "cooldown": 26,
+        "castTime": 1.6,
+        "duration": 5.1,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.6,
+        "aoeRadius": 1.1,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.3,
+        "stunDuration": 0.6,
+        "dotDamage": 39,
+        "dotTick": 2.7,
+        "dotDuration": 4.7
+      },
+      "animation": {
+        "castClip": "anim_Earthquake_cast",
+        "effectPrefab": "Effects/Earthquake_Lv6",
+        "impactPrefab": "Effects/Earthquake_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "Earthquake_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 107,
+      "skillName": "Earthquake_Lv7",
+      "baseSkill": "Earthquake",
+      "level": 7,
+      "element": "Arcane",
+      "targetType": "Line",
+      "damage": {
+        "base": 435,
+        "atLevel": 800.4,
+        "scaling": "STR",
+        "scalingFactor": 0.1
+      },
+      "cost": {
+        "mana": 99,
+        "manaAtLevel": 133.6,
+        "stamina": 21
+      },
+      "timing": {
+        "cooldown": 21.6,
+        "castTime": 2,
+        "duration": 1.4,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.1,
+        "aoeRadius": 2.5,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 0.9,
+        "dotDamage": 21,
+        "dotTick": 0.7,
+        "dotDuration": 2.9
+      },
+      "animation": {
+        "castClip": "anim_Earthquake_cast",
+        "effectPrefab": "Effects/Earthquake_Lv7",
+        "impactPrefab": "Effects/Earthquake_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "Earthquake_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 108,
+      "skillName": "Earthquake_Lv8",
+      "baseSkill": "Earthquake",
+      "level": 8,
+      "element": "Lightning",
+      "targetType": "Chain",
+      "damage": {
+        "base": 454,
+        "atLevel": 889.8,
+        "scaling": "STR",
+        "scalingFactor": 0.14
+      },
+      "cost": {
+        "mana": 92,
+        "manaAtLevel": 128.8,
+        "stamina": 23
+      },
+      "timing": {
+        "cooldown": 4,
+        "castTime": 1.9,
+        "duration": 0.5,
+        "channeled": true
+      },
+      "area": {
+        "range": 4,
+        "aoeRadius": 1,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 2.3,
+        "dotDamage": 4,
+        "dotTick": 0.7,
+        "dotDuration": 4.9
+      },
+      "animation": {
+        "castClip": "anim_Earthquake_cast",
+        "effectPrefab": "Effects/Earthquake_Lv8",
+        "impactPrefab": "Effects/Earthquake_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "Earthquake_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 109,
+      "skillName": "Earthquake_Lv9",
+      "baseSkill": "Earthquake",
+      "level": 9,
+      "element": "Fire",
+      "targetType": "AoE",
+      "damage": {
+        "base": 354,
+        "atLevel": 736.3,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 94,
+        "manaAtLevel": 136.3,
+        "stamina": 4
+      },
+      "timing": {
+        "cooldown": 19,
+        "castTime": 0.7,
+        "duration": 7.2,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.4,
+        "aoeRadius": 1.2,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.6,
+        "stunDuration": 2.6,
+        "dotDamage": 44,
+        "dotTick": 2.9,
+        "dotDuration": 3.7
+      },
+      "animation": {
+        "castClip": "anim_Earthquake_cast",
+        "effectPrefab": "Effects/Earthquake_Lv9",
+        "impactPrefab": "Effects/Earthquake_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "Earthquake_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 110,
+      "skillName": "Earthquake_Lv10",
+      "baseSkill": "Earthquake",
+      "level": 10,
+      "element": "Arcane",
+      "targetType": "Splash",
+      "damage": {
+        "base": 342,
+        "atLevel": 752.4,
+        "scaling": "STR",
+        "scalingFactor": 0.08
+      },
+      "cost": {
+        "mana": 83,
+        "manaAtLevel": 124.5,
+        "stamina": 8
+      },
+      "timing": {
+        "cooldown": 4.3,
+        "castTime": 2.1,
+        "duration": 3.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.4,
+        "aoeRadius": 2.2,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 2.9,
+        "dotDamage": 38,
+        "dotTick": 1.4,
+        "dotDuration": 5.1
+      },
+      "animation": {
+        "castClip": "anim_Earthquake_cast",
+        "effectPrefab": "Effects/Earthquake_Lv10",
+        "impactPrefab": "Effects/Earthquake_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "Earthquake_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 111,
+      "skillName": "BlizzardStorm_Lv1",
+      "baseSkill": "BlizzardStorm",
+      "level": 1,
+      "element": "Dark",
+      "targetType": "Splash",
+      "damage": {
+        "base": 259,
+        "atLevel": 290.1,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 57,
+        "manaAtLevel": 59.8,
+        "stamina": 24
+      },
+      "timing": {
+        "cooldown": 10.4,
+        "castTime": 0.3,
+        "duration": 0.6,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.5,
+        "aoeRadius": 1.9,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 0.3,
+        "stunDuration": 2.1,
+        "dotDamage": 40,
+        "dotTick": 2.4,
+        "dotDuration": 2.6
+      },
+      "animation": {
+        "castClip": "anim_BlizzardStorm_cast",
+        "effectPrefab": "Effects/BlizzardStorm_Lv1",
+        "impactPrefab": "Effects/BlizzardStorm_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 112,
+      "skillName": "BlizzardStorm_Lv2",
+      "baseSkill": "BlizzardStorm",
+      "level": 2,
+      "element": "Lightning",
+      "targetType": "Single",
+      "damage": {
+        "base": 278,
+        "atLevel": 344.7,
+        "scaling": "STR",
+        "scalingFactor": 0.13
+      },
+      "cost": {
+        "mana": 17,
+        "manaAtLevel": 18.7,
+        "stamina": 11
+      },
+      "timing": {
+        "cooldown": 10.1,
+        "castTime": 0.7,
+        "duration": 4,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.2,
+        "aoeRadius": 1.7,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 2.1,
+        "dotDamage": 8,
+        "dotTick": 1.4,
+        "dotDuration": 4.3
+      },
+      "animation": {
+        "castClip": "anim_BlizzardStorm_cast",
+        "effectPrefab": "Effects/BlizzardStorm_Lv2",
+        "impactPrefab": "Effects/BlizzardStorm_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "BlizzardStorm_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 113,
+      "skillName": "BlizzardStorm_Lv3",
+      "baseSkill": "BlizzardStorm",
+      "level": 3,
+      "element": "Earth",
+      "targetType": "Splash",
+      "damage": {
+        "base": 393,
+        "atLevel": 534.5,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 8,
+        "manaAtLevel": 9.2,
+        "stamina": 29
+      },
+      "timing": {
+        "cooldown": 26.8,
+        "castTime": 0.5,
+        "duration": 5.1,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.1,
+        "aoeRadius": 1.8,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 1.1,
+        "dotDamage": 35,
+        "dotTick": 0.6,
+        "dotDuration": 4.1
+      },
+      "animation": {
+        "castClip": "anim_BlizzardStorm_cast",
+        "effectPrefab": "Effects/BlizzardStorm_Lv3",
+        "impactPrefab": "Effects/BlizzardStorm_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "BlizzardStorm_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 114,
+      "skillName": "BlizzardStorm_Lv4",
+      "baseSkill": "BlizzardStorm",
+      "level": 4,
+      "element": "Ice",
+      "targetType": "Self",
+      "damage": {
+        "base": 331,
+        "atLevel": 489.9,
+        "scaling": "STR",
+        "scalingFactor": 0.09
+      },
+      "cost": {
+        "mana": 81,
+        "manaAtLevel": 97.2,
+        "stamina": 15
+      },
+      "timing": {
+        "cooldown": 4.7,
+        "castTime": 0.2,
+        "duration": 5.9,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.7,
+        "aoeRadius": 0.9,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 0.1,
+        "dotDamage": 5,
+        "dotTick": 2.7,
+        "dotDuration": 1.5
+      },
+      "animation": {
+        "castClip": "anim_BlizzardStorm_cast",
+        "effectPrefab": "Effects/BlizzardStorm_Lv4",
+        "impactPrefab": "Effects/BlizzardStorm_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "BlizzardStorm_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 115,
+      "skillName": "BlizzardStorm_Lv5",
+      "baseSkill": "BlizzardStorm",
+      "level": 5,
+      "element": "Wind",
+      "targetType": "Line",
+      "damage": {
+        "base": 255,
+        "atLevel": 408,
+        "scaling": "STR",
+        "scalingFactor": 0.13
+      },
+      "cost": {
+        "mana": 17,
+        "manaAtLevel": 21.2,
+        "stamina": 2
+      },
+      "timing": {
+        "cooldown": 13,
+        "castTime": 0.5,
+        "duration": 2.7,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.4,
+        "aoeRadius": 2.5,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 1.3,
+        "dotDamage": 12,
+        "dotTick": 1.7,
+        "dotDuration": 4.2
+      },
+      "animation": {
+        "castClip": "anim_BlizzardStorm_cast",
+        "effectPrefab": "Effects/BlizzardStorm_Lv5",
+        "impactPrefab": "Effects/BlizzardStorm_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "BlizzardStorm_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 116,
+      "skillName": "BlizzardStorm_Lv6",
+      "baseSkill": "BlizzardStorm",
+      "level": 6,
+      "element": "Ice",
+      "targetType": "Line",
+      "damage": {
+        "base": 100,
+        "atLevel": 172,
+        "scaling": "STR",
+        "scalingFactor": 0.2
+      },
+      "cost": {
+        "mana": 55,
+        "manaAtLevel": 71.5,
+        "stamina": 25
+      },
+      "timing": {
+        "cooldown": 17.7,
+        "castTime": 1.2,
+        "duration": 2.1,
+        "channeled": true
+      },
+      "area": {
+        "range": 4,
+        "aoeRadius": 2,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0.5,
+        "stunDuration": 0.9,
+        "dotDamage": 14,
+        "dotTick": 2.3,
+        "dotDuration": 2.9
+      },
+      "animation": {
+        "castClip": "anim_BlizzardStorm_cast",
+        "effectPrefab": "Effects/BlizzardStorm_Lv6",
+        "impactPrefab": "Effects/BlizzardStorm_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "BlizzardStorm_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 117,
+      "skillName": "BlizzardStorm_Lv7",
+      "baseSkill": "BlizzardStorm",
+      "level": 7,
+      "element": "Water",
+      "targetType": "Chain",
+      "damage": {
+        "base": 345,
+        "atLevel": 634.8,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 17,
+        "manaAtLevel": 23,
+        "stamina": 19
+      },
+      "timing": {
+        "cooldown": 11.3,
+        "castTime": 1.8,
+        "duration": 4.6,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.3,
+        "aoeRadius": 2,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 2.3,
+        "dotDamage": 33,
+        "dotTick": 2,
+        "dotDuration": 5.8
+      },
+      "animation": {
+        "castClip": "anim_BlizzardStorm_cast",
+        "effectPrefab": "Effects/BlizzardStorm_Lv7",
+        "impactPrefab": "Effects/BlizzardStorm_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "BlizzardStorm_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 118,
+      "skillName": "BlizzardStorm_Lv8",
+      "baseSkill": "BlizzardStorm",
+      "level": 8,
+      "element": "Fire",
+      "targetType": "Single",
+      "damage": {
+        "base": 201,
+        "atLevel": 394,
+        "scaling": "STR",
+        "scalingFactor": 0.09
+      },
+      "cost": {
+        "mana": 45,
+        "manaAtLevel": 63,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 20.6,
+        "castTime": 1.8,
+        "duration": 3.2,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.4,
+        "aoeRadius": 2.7,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.3,
+        "stunDuration": 2.8,
+        "dotDamage": 4,
+        "dotTick": 0.8,
+        "dotDuration": 3.7
+      },
+      "animation": {
+        "castClip": "anim_BlizzardStorm_cast",
+        "effectPrefab": "Effects/BlizzardStorm_Lv8",
+        "impactPrefab": "Effects/BlizzardStorm_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "BlizzardStorm_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 119,
+      "skillName": "BlizzardStorm_Lv9",
+      "baseSkill": "BlizzardStorm",
+      "level": 9,
+      "element": "Holy",
+      "targetType": "Splash",
+      "damage": {
+        "base": 69,
+        "atLevel": 143.5,
+        "scaling": "STR",
+        "scalingFactor": 0.23
+      },
+      "cost": {
+        "mana": 76,
+        "manaAtLevel": 110.2,
+        "stamina": 20
+      },
+      "timing": {
+        "cooldown": 21.4,
+        "castTime": 2.5,
+        "duration": 5.5,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.7,
+        "aoeRadius": 2.1,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 1.4,
+        "dotDamage": 23,
+        "dotTick": 2.3,
+        "dotDuration": 4
+      },
+      "animation": {
+        "castClip": "anim_BlizzardStorm_cast",
+        "effectPrefab": "Effects/BlizzardStorm_Lv9",
+        "impactPrefab": "Effects/BlizzardStorm_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "BlizzardStorm_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 120,
+      "skillName": "BlizzardStorm_Lv10",
+      "baseSkill": "BlizzardStorm",
+      "level": 10,
+      "element": "Lightning",
+      "targetType": "Splash",
+      "damage": {
+        "base": 72,
+        "atLevel": 158.4,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 77,
+        "manaAtLevel": 115.5,
+        "stamina": 27
+      },
+      "timing": {
+        "cooldown": 13.7,
+        "castTime": 0.3,
+        "duration": 2.7,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.7,
+        "aoeRadius": 1.9,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 1.1,
+        "dotDamage": 23,
+        "dotTick": 1.2,
+        "dotDuration": 3.3
+      },
+      "animation": {
+        "castClip": "anim_BlizzardStorm_cast",
+        "effectPrefab": "Effects/BlizzardStorm_Lv10",
+        "impactPrefab": "Effects/BlizzardStorm_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "BlizzardStorm_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 121,
+      "skillName": "VampiricDrain_Lv1",
+      "baseSkill": "VampiricDrain",
+      "level": 1,
+      "element": "Ice",
+      "targetType": "Line",
+      "damage": {
+        "base": 146,
+        "atLevel": 163.5,
+        "scaling": "STR",
+        "scalingFactor": 0.12
+      },
+      "cost": {
+        "mana": 59,
+        "manaAtLevel": 62,
+        "stamina": 5
+      },
+      "timing": {
+        "cooldown": 23.5,
+        "castTime": 2.2,
+        "duration": 3.1,
+        "channeled": false
+      },
+      "area": {
+        "range": 4,
+        "aoeRadius": 2.2,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 0.2,
+        "stunDuration": 0.2,
+        "dotDamage": 30,
+        "dotTick": 2.2,
+        "dotDuration": 5.6
+      },
+      "animation": {
+        "castClip": "anim_VampiricDrain_cast",
+        "effectPrefab": "Effects/VampiricDrain_Lv1",
+        "impactPrefab": "Effects/VampiricDrain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 122,
+      "skillName": "VampiricDrain_Lv2",
+      "baseSkill": "VampiricDrain",
+      "level": 2,
+      "element": "Fire",
+      "targetType": "AoE",
+      "damage": {
+        "base": 45,
+        "atLevel": 55.8,
+        "scaling": "STR",
+        "scalingFactor": 0.06
+      },
+      "cost": {
+        "mana": 35,
+        "manaAtLevel": 38.5,
+        "stamina": 4
+      },
+      "timing": {
+        "cooldown": 24.9,
+        "castTime": 0.2,
+        "duration": 3.6,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.3,
+        "aoeRadius": 1.3,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.3,
+        "stunDuration": 1.6,
+        "dotDamage": 25,
+        "dotTick": 2.2,
+        "dotDuration": 5.5
+      },
+      "animation": {
+        "castClip": "anim_VampiricDrain_cast",
+        "effectPrefab": "Effects/VampiricDrain_Lv2",
+        "impactPrefab": "Effects/VampiricDrain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "VampiricDrain_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 123,
+      "skillName": "VampiricDrain_Lv3",
+      "baseSkill": "VampiricDrain",
+      "level": 3,
+      "element": "Ice",
+      "targetType": "Chain",
+      "damage": {
+        "base": 142,
+        "atLevel": 193.1,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 6,
+        "manaAtLevel": 6.9,
+        "stamina": 4
+      },
+      "timing": {
+        "cooldown": 7.7,
+        "castTime": 2.1,
+        "duration": 5.2,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.9,
+        "aoeRadius": 1.6,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 0.4,
+        "dotDamage": 32,
+        "dotTick": 1.3,
+        "dotDuration": 2.6
+      },
+      "animation": {
+        "castClip": "anim_VampiricDrain_cast",
+        "effectPrefab": "Effects/VampiricDrain_Lv3",
+        "impactPrefab": "Effects/VampiricDrain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "VampiricDrain_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 124,
+      "skillName": "VampiricDrain_Lv4",
+      "baseSkill": "VampiricDrain",
+      "level": 4,
+      "element": "Poison",
+      "targetType": "AoE",
+      "damage": {
+        "base": 460,
+        "atLevel": 680.8,
+        "scaling": "STR",
+        "scalingFactor": 0.24
+      },
+      "cost": {
+        "mana": 93,
+        "manaAtLevel": 111.6,
+        "stamina": 23
+      },
+      "timing": {
+        "cooldown": 27.3,
+        "castTime": 1.1,
+        "duration": 4.6,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.7,
+        "aoeRadius": 1.3,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 2.1,
+        "dotDamage": 20,
+        "dotTick": 1.3,
+        "dotDuration": 2.7
+      },
+      "animation": {
+        "castClip": "anim_VampiricDrain_cast",
+        "effectPrefab": "Effects/VampiricDrain_Lv4",
+        "impactPrefab": "Effects/VampiricDrain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "VampiricDrain_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 125,
+      "skillName": "VampiricDrain_Lv5",
+      "baseSkill": "VampiricDrain",
+      "level": 5,
+      "element": "Ice",
+      "targetType": "Self",
+      "damage": {
+        "base": 301,
+        "atLevel": 481.6,
+        "scaling": "STR",
+        "scalingFactor": 0.19
+      },
+      "cost": {
+        "mana": 99,
+        "manaAtLevel": 123.8,
+        "stamina": 16
+      },
+      "timing": {
+        "cooldown": 9.3,
+        "castTime": 1.4,
+        "duration": 6.4,
+        "channeled": true
+      },
+      "area": {
+        "range": 2,
+        "aoeRadius": 1.4,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 0.5,
+        "dotDamage": 17,
+        "dotTick": 1.3,
+        "dotDuration": 3.1
+      },
+      "animation": {
+        "castClip": "anim_VampiricDrain_cast",
+        "effectPrefab": "Effects/VampiricDrain_Lv5",
+        "impactPrefab": "Effects/VampiricDrain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "VampiricDrain_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 126,
+      "skillName": "VampiricDrain_Lv6",
+      "baseSkill": "VampiricDrain",
+      "level": 6,
+      "element": "Fire",
+      "targetType": "Line",
+      "damage": {
+        "base": 439,
+        "atLevel": 755.1,
+        "scaling": "STR",
+        "scalingFactor": 0.23
+      },
+      "cost": {
+        "mana": 52,
+        "manaAtLevel": 67.6,
+        "stamina": 2
+      },
+      "timing": {
+        "cooldown": 12.6,
+        "castTime": 0.5,
+        "duration": 2,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.5,
+        "aoeRadius": 1.6,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.3,
+        "stunDuration": 2.7,
+        "dotDamage": 20,
+        "dotTick": 2.8,
+        "dotDuration": 2.6
+      },
+      "animation": {
+        "castClip": "anim_VampiricDrain_cast",
+        "effectPrefab": "Effects/VampiricDrain_Lv6",
+        "impactPrefab": "Effects/VampiricDrain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "VampiricDrain_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 127,
+      "skillName": "VampiricDrain_Lv7",
+      "baseSkill": "VampiricDrain",
+      "level": 7,
+      "element": "Holy",
+      "targetType": "Splash",
+      "damage": {
+        "base": 429,
+        "atLevel": 789.4,
+        "scaling": "STR",
+        "scalingFactor": 0.12
+      },
+      "cost": {
+        "mana": 15,
+        "manaAtLevel": 20.2,
+        "stamina": 12
+      },
+      "timing": {
+        "cooldown": 22.5,
+        "castTime": 2,
+        "duration": 0.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.7,
+        "aoeRadius": 0.6,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 0.7,
+        "dotDamage": 37,
+        "dotTick": 1.6,
+        "dotDuration": 3.6
+      },
+      "animation": {
+        "castClip": "anim_VampiricDrain_cast",
+        "effectPrefab": "Effects/VampiricDrain_Lv7",
+        "impactPrefab": "Effects/VampiricDrain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "VampiricDrain_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 128,
+      "skillName": "VampiricDrain_Lv8",
+      "baseSkill": "VampiricDrain",
+      "level": 8,
+      "element": "Water",
+      "targetType": "Splash",
+      "damage": {
+        "base": 314,
+        "atLevel": 615.4,
+        "scaling": "STR",
+        "scalingFactor": 0.06
+      },
+      "cost": {
+        "mana": 46,
+        "manaAtLevel": 64.4,
+        "stamina": 17
+      },
+      "timing": {
+        "cooldown": 10.1,
+        "castTime": 1.4,
+        "duration": 2.1,
+        "channeled": true
+      },
+      "area": {
+        "range": 4,
+        "aoeRadius": 0.5,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 0.3,
+        "stunDuration": 0.8,
+        "dotDamage": 27,
+        "dotTick": 2,
+        "dotDuration": 3.2
+      },
+      "animation": {
+        "castClip": "anim_VampiricDrain_cast",
+        "effectPrefab": "Effects/VampiricDrain_Lv8",
+        "impactPrefab": "Effects/VampiricDrain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "VampiricDrain_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 129,
+      "skillName": "VampiricDrain_Lv9",
+      "baseSkill": "VampiricDrain",
+      "level": 9,
+      "element": "Ice",
+      "targetType": "Line",
+      "damage": {
+        "base": 44,
+        "atLevel": 91.5,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 87,
+        "manaAtLevel": 126.2,
+        "stamina": 17
+      },
+      "timing": {
+        "cooldown": 5.8,
+        "castTime": 2.3,
+        "duration": 5.5,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.9,
+        "aoeRadius": 0.9,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0.7,
+        "stunDuration": 0.2,
+        "dotDamage": 27,
+        "dotTick": 0.9,
+        "dotDuration": 4.1
+      },
+      "animation": {
+        "castClip": "anim_VampiricDrain_cast",
+        "effectPrefab": "Effects/VampiricDrain_Lv9",
+        "impactPrefab": "Effects/VampiricDrain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "VampiricDrain_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 130,
+      "skillName": "VampiricDrain_Lv10",
+      "baseSkill": "VampiricDrain",
+      "level": 10,
+      "element": "Lightning",
+      "targetType": "Line",
+      "damage": {
+        "base": 277,
+        "atLevel": 609.4,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 24,
+        "manaAtLevel": 36,
+        "stamina": 25
+      },
+      "timing": {
+        "cooldown": 16.4,
+        "castTime": 0.6,
+        "duration": 5.1,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.6,
+        "aoeRadius": 2.7,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 0,
+        "stunDuration": 0.9,
+        "dotDamage": 0,
+        "dotTick": 2.5,
+        "dotDuration": 3.3
+      },
+      "animation": {
+        "castClip": "anim_VampiricDrain_cast",
+        "effectPrefab": "Effects/VampiricDrain_Lv10",
+        "impactPrefab": "Effects/VampiricDrain_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "VampiricDrain_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 131,
+      "skillName": "HolyLight_Lv1",
+      "baseSkill": "HolyLight",
+      "level": 1,
+      "element": "Poison",
+      "targetType": "Single",
+      "damage": {
+        "base": 198,
+        "atLevel": 221.8,
+        "scaling": "STR",
+        "scalingFactor": 0.09
+      },
+      "cost": {
+        "mana": 31,
+        "manaAtLevel": 32.6,
+        "stamina": 9
+      },
+      "timing": {
+        "cooldown": 11.1,
+        "castTime": 0.3,
+        "duration": 2,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.6,
+        "aoeRadius": 2.9,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0,
+        "stunDuration": 0.9,
+        "dotDamage": 25,
+        "dotTick": 1.6,
+        "dotDuration": 2.2
+      },
+      "animation": {
+        "castClip": "anim_HolyLight_cast",
+        "effectPrefab": "Effects/HolyLight_Lv1",
+        "impactPrefab": "Effects/HolyLight_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 132,
+      "skillName": "HolyLight_Lv2",
+      "baseSkill": "HolyLight",
+      "level": 2,
+      "element": "Ice",
+      "targetType": "Chain",
+      "damage": {
+        "base": 283,
+        "atLevel": 350.9,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 86,
+        "manaAtLevel": 94.6,
+        "stamina": 24
+      },
+      "timing": {
+        "cooldown": 29.8,
+        "castTime": 2.3,
+        "duration": 6,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.5,
+        "aoeRadius": 0.8,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 2.3,
+        "dotDamage": 42,
+        "dotTick": 2.6,
+        "dotDuration": 2.6
+      },
+      "animation": {
+        "castClip": "anim_HolyLight_cast",
+        "effectPrefab": "Effects/HolyLight_Lv2",
+        "impactPrefab": "Effects/HolyLight_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "HolyLight_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 133,
+      "skillName": "HolyLight_Lv3",
+      "baseSkill": "HolyLight",
+      "level": 3,
+      "element": "Wind",
+      "targetType": "Splash",
+      "damage": {
+        "base": 237,
+        "atLevel": 322.3,
+        "scaling": "STR",
+        "scalingFactor": 0.16
+      },
+      "cost": {
+        "mana": 9,
+        "manaAtLevel": 10.4,
+        "stamina": 0
+      },
+      "timing": {
+        "cooldown": 16.8,
+        "castTime": 1.7,
+        "duration": 2.3,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.7,
+        "aoeRadius": 2.3,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 2.9,
+        "dotDamage": 21,
+        "dotTick": 1.1,
+        "dotDuration": 4.9
+      },
+      "animation": {
+        "castClip": "anim_HolyLight_cast",
+        "effectPrefab": "Effects/HolyLight_Lv3",
+        "impactPrefab": "Effects/HolyLight_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "HolyLight_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 134,
+      "skillName": "HolyLight_Lv4",
+      "baseSkill": "HolyLight",
+      "level": 4,
+      "element": "Earth",
+      "targetType": "AoE",
+      "damage": {
+        "base": 303,
+        "atLevel": 448.4,
+        "scaling": "STR",
+        "scalingFactor": 0.21
+      },
+      "cost": {
+        "mana": 16,
+        "manaAtLevel": 19.2,
+        "stamina": 29
+      },
+      "timing": {
+        "cooldown": 1.8,
+        "castTime": 2.4,
+        "duration": 6.4,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.8,
+        "aoeRadius": 0.9,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 0.2,
+        "dotDamage": 30,
+        "dotTick": 0.6,
+        "dotDuration": 2
+      },
+      "animation": {
+        "castClip": "anim_HolyLight_cast",
+        "effectPrefab": "Effects/HolyLight_Lv4",
+        "impactPrefab": "Effects/HolyLight_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "HolyLight_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 135,
+      "skillName": "HolyLight_Lv5",
+      "baseSkill": "HolyLight",
+      "level": 5,
+      "element": "Lightning",
+      "targetType": "Chain",
+      "damage": {
+        "base": 42,
+        "atLevel": 67.2,
+        "scaling": "STR",
+        "scalingFactor": 0.06
+      },
+      "cost": {
+        "mana": 77,
+        "manaAtLevel": 96.2,
+        "stamina": 27
+      },
+      "timing": {
+        "cooldown": 26.9,
+        "castTime": 0.4,
+        "duration": 5.9,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.2,
+        "aoeRadius": 2.4,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 2.8,
+        "dotDamage": 29,
+        "dotTick": 0.9,
+        "dotDuration": 5.5
+      },
+      "animation": {
+        "castClip": "anim_HolyLight_cast",
+        "effectPrefab": "Effects/HolyLight_Lv5",
+        "impactPrefab": "Effects/HolyLight_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "HolyLight_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 136,
+      "skillName": "HolyLight_Lv6",
+      "baseSkill": "HolyLight",
+      "level": 6,
+      "element": "Fire",
+      "targetType": "Single",
+      "damage": {
+        "base": 497,
+        "atLevel": 854.8,
+        "scaling": "STR",
+        "scalingFactor": 0.24
+      },
+      "cost": {
+        "mana": 37,
+        "manaAtLevel": 48.1,
+        "stamina": 23
+      },
+      "timing": {
+        "cooldown": 6.7,
+        "castTime": 1.3,
+        "duration": 0.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.2,
+        "aoeRadius": 1,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 2.8,
+        "dotDamage": 22,
+        "dotTick": 1.3,
+        "dotDuration": 3.4
+      },
+      "animation": {
+        "castClip": "anim_HolyLight_cast",
+        "effectPrefab": "Effects/HolyLight_Lv6",
+        "impactPrefab": "Effects/HolyLight_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "HolyLight_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 137,
+      "skillName": "HolyLight_Lv7",
+      "baseSkill": "HolyLight",
+      "level": 7,
+      "element": "Water",
+      "targetType": "Line",
+      "damage": {
+        "base": 458,
+        "atLevel": 842.7,
+        "scaling": "STR",
+        "scalingFactor": 0.17
+      },
+      "cost": {
+        "mana": 20,
+        "manaAtLevel": 27,
+        "stamina": 13
+      },
+      "timing": {
+        "cooldown": 5.3,
+        "castTime": 1.9,
+        "duration": 4.3,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.3,
+        "aoeRadius": 1.6,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 1.7,
+        "dotDamage": 31,
+        "dotTick": 1.2,
+        "dotDuration": 2.1
+      },
+      "animation": {
+        "castClip": "anim_HolyLight_cast",
+        "effectPrefab": "Effects/HolyLight_Lv7",
+        "impactPrefab": "Effects/HolyLight_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "HolyLight_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 138,
+      "skillName": "HolyLight_Lv8",
+      "baseSkill": "HolyLight",
+      "level": 8,
+      "element": "Arcane",
+      "targetType": "Splash",
+      "damage": {
+        "base": 136,
+        "atLevel": 266.6,
+        "scaling": "STR",
+        "scalingFactor": 0.14
+      },
+      "cost": {
+        "mana": 47,
+        "manaAtLevel": 65.8,
+        "stamina": 29
+      },
+      "timing": {
+        "cooldown": 25.7,
+        "castTime": 0.9,
+        "duration": 2,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.1,
+        "aoeRadius": 0.5,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.3,
+        "stunDuration": 2.3,
+        "dotDamage": 49,
+        "dotTick": 2.6,
+        "dotDuration": 3.2
+      },
+      "animation": {
+        "castClip": "anim_HolyLight_cast",
+        "effectPrefab": "Effects/HolyLight_Lv8",
+        "impactPrefab": "Effects/HolyLight_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "HolyLight_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 139,
+      "skillName": "HolyLight_Lv9",
+      "baseSkill": "HolyLight",
+      "level": 9,
+      "element": "Water",
+      "targetType": "Line",
+      "damage": {
+        "base": 286,
+        "atLevel": 594.9,
+        "scaling": "STR",
+        "scalingFactor": 0.12
+      },
+      "cost": {
+        "mana": 9,
+        "manaAtLevel": 13,
+        "stamina": 14
+      },
+      "timing": {
+        "cooldown": 21.8,
+        "castTime": 0.8,
+        "duration": 1.6,
+        "channeled": true
+      },
+      "area": {
+        "range": 1,
+        "aoeRadius": 0.7,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.6,
+        "stunDuration": 1,
+        "dotDamage": 46,
+        "dotTick": 0.5,
+        "dotDuration": 3.8
+      },
+      "animation": {
+        "castClip": "anim_HolyLight_cast",
+        "effectPrefab": "Effects/HolyLight_Lv9",
+        "impactPrefab": "Effects/HolyLight_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "HolyLight_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 140,
+      "skillName": "HolyLight_Lv10",
+      "baseSkill": "HolyLight",
+      "level": 10,
+      "element": "Fire",
+      "targetType": "Self",
+      "damage": {
+        "base": 463,
+        "atLevel": 1018.6,
+        "scaling": "STR",
+        "scalingFactor": 0.2
+      },
+      "cost": {
+        "mana": 53,
+        "manaAtLevel": 79.5,
+        "stamina": 25
+      },
+      "timing": {
+        "cooldown": 19.4,
+        "castTime": 2.6,
+        "duration": 5.5,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.9,
+        "aoeRadius": 1.1,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 1.5,
+        "dotDamage": 32,
+        "dotTick": 1.7,
+        "dotDuration": 2.4
+      },
+      "animation": {
+        "castClip": "anim_HolyLight_cast",
+        "effectPrefab": "Effects/HolyLight_Lv10",
+        "impactPrefab": "Effects/HolyLight_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "HolyLight_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 141,
+      "skillName": "DarkMatter_Lv1",
+      "baseSkill": "DarkMatter",
+      "level": 1,
+      "element": "Holy",
+      "targetType": "Self",
+      "damage": {
+        "base": 42,
+        "atLevel": 47,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 81,
+        "manaAtLevel": 85,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 22.9,
+        "castTime": 0.3,
+        "duration": 1.3,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.2,
+        "aoeRadius": 0.7,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0,
+        "stunDuration": 0.6,
+        "dotDamage": 2,
+        "dotTick": 2.5,
+        "dotDuration": 1.1
+      },
+      "animation": {
+        "castClip": "anim_DarkMatter_cast",
+        "effectPrefab": "Effects/DarkMatter_Lv1",
+        "impactPrefab": "Effects/DarkMatter_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 142,
+      "skillName": "DarkMatter_Lv2",
+      "baseSkill": "DarkMatter",
+      "level": 2,
+      "element": "Ice",
+      "targetType": "Splash",
+      "damage": {
+        "base": 196,
+        "atLevel": 243,
+        "scaling": "STR",
+        "scalingFactor": 0.17
+      },
+      "cost": {
+        "mana": 50,
+        "manaAtLevel": 55,
+        "stamina": 25
+      },
+      "timing": {
+        "cooldown": 4,
+        "castTime": 0.6,
+        "duration": 6.9,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.1,
+        "aoeRadius": 2.8,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 0.1,
+        "dotDamage": 24,
+        "dotTick": 2,
+        "dotDuration": 5
+      },
+      "animation": {
+        "castClip": "anim_DarkMatter_cast",
+        "effectPrefab": "Effects/DarkMatter_Lv2",
+        "impactPrefab": "Effects/DarkMatter_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "DarkMatter_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 143,
+      "skillName": "DarkMatter_Lv3",
+      "baseSkill": "DarkMatter",
+      "level": 3,
+      "element": "Wind",
+      "targetType": "Line",
+      "damage": {
+        "base": 276,
+        "atLevel": 375.4,
+        "scaling": "STR",
+        "scalingFactor": 0.12
+      },
+      "cost": {
+        "mana": 39,
+        "manaAtLevel": 44.8,
+        "stamina": 6
+      },
+      "timing": {
+        "cooldown": 17.7,
+        "castTime": 2.5,
+        "duration": 7.9,
+        "channeled": true
+      },
+      "area": {
+        "range": 0.5,
+        "aoeRadius": 1.7,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0,
+        "stunDuration": 1,
+        "dotDamage": 35,
+        "dotTick": 1,
+        "dotDuration": 3.4
+      },
+      "animation": {
+        "castClip": "anim_DarkMatter_cast",
+        "effectPrefab": "Effects/DarkMatter_Lv3",
+        "impactPrefab": "Effects/DarkMatter_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "DarkMatter_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 144,
+      "skillName": "DarkMatter_Lv4",
+      "baseSkill": "DarkMatter",
+      "level": 4,
+      "element": "Holy",
+      "targetType": "Self",
+      "damage": {
+        "base": 371,
+        "atLevel": 549.1,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 64,
+        "manaAtLevel": 76.8,
+        "stamina": 6
+      },
+      "timing": {
+        "cooldown": 12.6,
+        "castTime": 2.5,
+        "duration": 6.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.9,
+        "aoeRadius": 2.6,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 1.2,
+        "dotDamage": 14,
+        "dotTick": 0.9,
+        "dotDuration": 4.3
+      },
+      "animation": {
+        "castClip": "anim_DarkMatter_cast",
+        "effectPrefab": "Effects/DarkMatter_Lv4",
+        "impactPrefab": "Effects/DarkMatter_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "DarkMatter_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 145,
+      "skillName": "DarkMatter_Lv5",
+      "baseSkill": "DarkMatter",
+      "level": 5,
+      "element": "Water",
+      "targetType": "AoE",
+      "damage": {
+        "base": 107,
+        "atLevel": 171.2,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 39,
+        "manaAtLevel": 48.8,
+        "stamina": 14
+      },
+      "timing": {
+        "cooldown": 26.9,
+        "castTime": 0.9,
+        "duration": 0.9,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.1,
+        "aoeRadius": 0.4,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 0.5,
+        "dotDamage": 39,
+        "dotTick": 1.2,
+        "dotDuration": 5.7
+      },
+      "animation": {
+        "castClip": "anim_DarkMatter_cast",
+        "effectPrefab": "Effects/DarkMatter_Lv5",
+        "impactPrefab": "Effects/DarkMatter_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "DarkMatter_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 146,
+      "skillName": "DarkMatter_Lv6",
+      "baseSkill": "DarkMatter",
+      "level": 6,
+      "element": "Poison",
+      "targetType": "Single",
+      "damage": {
+        "base": 269,
+        "atLevel": 462.7,
+        "scaling": "STR",
+        "scalingFactor": 0.21
+      },
+      "cost": {
+        "mana": 6,
+        "manaAtLevel": 7.8,
+        "stamina": 12
+      },
+      "timing": {
+        "cooldown": 20.8,
+        "castTime": 2.9,
+        "duration": 1.9,
+        "channeled": false
+      },
+      "area": {
+        "range": 1,
+        "aoeRadius": 2.8,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 0.7,
+        "dotDamage": 37,
+        "dotTick": 2,
+        "dotDuration": 4.1
+      },
+      "animation": {
+        "castClip": "anim_DarkMatter_cast",
+        "effectPrefab": "Effects/DarkMatter_Lv6",
+        "impactPrefab": "Effects/DarkMatter_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "DarkMatter_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 147,
+      "skillName": "DarkMatter_Lv7",
+      "baseSkill": "DarkMatter",
+      "level": 7,
+      "element": "Arcane",
+      "targetType": "Splash",
+      "damage": {
+        "base": 112,
+        "atLevel": 206.1,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 9,
+        "manaAtLevel": 12.2,
+        "stamina": 7
+      },
+      "timing": {
+        "cooldown": 26.5,
+        "castTime": 1.4,
+        "duration": 6.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.2,
+        "aoeRadius": 0.3,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 1.5,
+        "dotDamage": 9,
+        "dotTick": 2.6,
+        "dotDuration": 2.9
+      },
+      "animation": {
+        "castClip": "anim_DarkMatter_cast",
+        "effectPrefab": "Effects/DarkMatter_Lv7",
+        "impactPrefab": "Effects/DarkMatter_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "DarkMatter_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 148,
+      "skillName": "DarkMatter_Lv8",
+      "baseSkill": "DarkMatter",
+      "level": 8,
+      "element": "Ice",
+      "targetType": "Single",
+      "damage": {
+        "base": 295,
+        "atLevel": 578.2,
+        "scaling": "STR",
+        "scalingFactor": 0.05
+      },
+      "cost": {
+        "mana": 63,
+        "manaAtLevel": 88.2,
+        "stamina": 17
+      },
+      "timing": {
+        "cooldown": 22.9,
+        "castTime": 1.9,
+        "duration": 6.3,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.3,
+        "aoeRadius": 2,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.6,
+        "stunDuration": 2.4,
+        "dotDamage": 22,
+        "dotTick": 1.1,
+        "dotDuration": 3.8
+      },
+      "animation": {
+        "castClip": "anim_DarkMatter_cast",
+        "effectPrefab": "Effects/DarkMatter_Lv8",
+        "impactPrefab": "Effects/DarkMatter_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "DarkMatter_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 149,
+      "skillName": "DarkMatter_Lv9",
+      "baseSkill": "DarkMatter",
+      "level": 9,
+      "element": "Earth",
+      "targetType": "Self",
+      "damage": {
+        "base": 251,
+        "atLevel": 522.1,
+        "scaling": "STR",
+        "scalingFactor": 0.24
+      },
+      "cost": {
+        "mana": 51,
+        "manaAtLevel": 74,
+        "stamina": 21
+      },
+      "timing": {
+        "cooldown": 1.5,
+        "castTime": 2.4,
+        "duration": 2.1,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.3,
+        "aoeRadius": 2.6,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 0.2,
+        "dotDamage": 20,
+        "dotTick": 1.4,
+        "dotDuration": 1.7
+      },
+      "animation": {
+        "castClip": "anim_DarkMatter_cast",
+        "effectPrefab": "Effects/DarkMatter_Lv9",
+  ]
+}
