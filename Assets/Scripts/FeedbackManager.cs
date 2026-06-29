@@ -26,10 +26,10 @@ public class FeedbackManager : MonoBehaviour
     public string googleFormUrl = "";
 
     [Header("Supabase Configuration")]
-    [Tooltip("Supabase Project URL.")]
-    public string supabaseUrl = "https://rxmswzfljtkkthnhozov.supabase.co";
-    [Tooltip("Supabase Anon / Publishable Key")]
-    public string supabaseAnonKey = "sb_publishable_HwcBNY-TXnUC1Os5EXSrXQ_PGa50e_u";
+    [Tooltip("Supabase Project URL (Auto-loaded from StreamingAssets/supabase_config.json at runtime).")]
+    public string supabaseUrl = "LOADED_FROM_CONFIG";
+    [Tooltip("Supabase Anon / Publishable Key (Auto-loaded from StreamingAssets/supabase_config.json at runtime).")]
+    public string supabaseAnonKey = "LOADED_FROM_CONFIG";
 
     [Header("Google Form Entry IDs (Only if using Google Form)")]
     [Tooltip("Google Form Entry ID for Player Name (e.g. entry.123456789)")]
@@ -131,9 +131,63 @@ public class FeedbackManager : MonoBehaviour
     }
 
 
-    void Start()
+    [Serializable]
+    private class SupabaseConfig
+    {
+        public string supabaseUrl;
+        public string supabaseAnonKey;
+    }
+
+    private IEnumerator LoadSupabaseConfig()
+    {
+        string path = System.IO.Path.Combine(Application.streamingAssetsPath, "supabase_config.json");
+        string jsonText = "";
+
+        if (path.Contains("://") || path.Contains(":///"))
+        {
+            using (UnityWebRequest webRequest = UnityWebRequest.Get(path))
+            {
+                yield return webRequest.SendWebRequest();
+                if (webRequest.result == UnityWebRequest.Result.Success)
+                {
+                    jsonText = webRequest.downloadHandler.text;
+                }
+            }
+        }
+        else
+        {
+            if (System.IO.File.Exists(path))
+            {
+                jsonText = System.IO.File.ReadAllText(path);
+            }
+        }
+
+        if (!string.IsNullOrEmpty(jsonText))
+        {
+            try
+            {
+                SupabaseConfig config = JsonUtility.FromJson<SupabaseConfig>(jsonText);
+                if (config != null)
+                {
+                    supabaseUrl = config.supabaseUrl;
+                    supabaseAnonKey = config.supabaseAnonKey;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("Error parsing supabase_config.json: " + ex.Message);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Supabase configuration file not found at: " + path);
+        }
+    }
+
+    IEnumerator Start()
     {
         FindOrCreateCanvas();
+        yield return StartCoroutine(LoadSupabaseConfig());
         CheckAndRegisterInstall();
     }
 
