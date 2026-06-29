@@ -8628,6 +8628,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeadUI
       objectReference: {fileID: 0}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_margin.x
+      value: -244.72568
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_margin.y
+      value: 4.518177
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_margin.z
+      value: 587.2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3275119291134465615, guid: 5ab51b527c1dd144f81a4f31d312c3ad, type: 2}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332003702606495656, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170185670685700281, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333597638303102577, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7732077096511524959, guid: 5f36d6900d9f38c4baecfa3c223c0712, type: 3}
       propertyPath: m_Pivot.x
       value: 0
