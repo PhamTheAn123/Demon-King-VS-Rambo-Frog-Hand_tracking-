@@ -4,6 +4,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class FeedbackManager : MonoBehaviour
@@ -84,12 +85,13 @@ public class FeedbackManager : MonoBehaviour
     public TextMeshProUGUI totalInstallsText;
     public TMP_InputField nameInputField;
     public TMP_InputField feedbackInputField;
-    public Slider ratingSlider;
+    public Slider ratingSlider; // kept for backward compat, hidden in favour of buttons
     public TextMeshProUGUI statusText;
     public TextMeshProUGUI contentText;
 
     private int activeTab = 0; // 0: Update Log, 1: Asset Directory, 2: Feedback
     private int totalInstalls = 1;
+    private int currentRating = 5; // star rating 1-5, synced from StarRatingController
 
     // Data Transfer Objects
     [Serializable]
@@ -191,6 +193,72 @@ public class FeedbackManager : MonoBehaviour
         CheckAndRegisterInstall();
     }
 
+    void Update()
+    {
+        // Handle TMP link clicks on contentText (Asset Directory folder paths, tab index 1)
+        if (contentText != null && activeTab == 1 && Input.GetMouseButtonDown(0))
+        {
+            // For ScreenSpaceOverlay canvas, camera must be null
+            Camera cam = (contentText.canvas != null && contentText.canvas.renderMode == RenderMode.ScreenSpaceCamera)
+                ? contentText.canvas.worldCamera
+                : null;
+
+            int linkIndex = TMP_TextUtilities.FindIntersectingLink(contentText, Input.mousePosition, cam);
+            if (linkIndex != -1)
+            {
+                TMP_LinkInfo linkInfo = contentText.textInfo.linkInfo[linkIndex];
+                string linkId = linkInfo.GetLinkID();
+                OpenAssetPath(linkId);
+            }
+        }
+    }
+
+    private void OpenAssetPath(string assetPath)
+    {
+        Debug.Log("[FeedbackManager] Link clicked: " + assetPath);
+        try
+        {
+            #if UNITY_EDITOR
+            // Ping/select the asset in the Unity Project window
+            UnityEngine.Object obj = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(assetPath);
+            if (obj != null)
+            {
+                UnityEditor.Selection.activeObject = obj;
+                UnityEditor.EditorGUIUtility.PingObject(obj);
+                Debug.Log("Pinged asset: " + assetPath);
+            }
+            else
+            {
+                // Fallback: open folder in File Explorer
+                string fullPath = System.IO.Path.GetFullPath(
+                    System.IO.Path.Combine(Application.dataPath, "..", assetPath.Replace('/', System.IO.Path.DirectorySeparatorChar))
+                );
+                if (System.IO.Directory.Exists(fullPath) || System.IO.File.Exists(fullPath))
+                {
+                    System.Diagnostics.Process.Start("explorer.exe", fullPath);
+                }
+            }
+            #else
+            // In Standalone build, open folder in Windows Explorer
+            string fullPath = System.IO.Path.GetFullPath(
+                System.IO.Path.Combine(Application.dataPath, "..", assetPath.Replace('/', System.IO.Path.DirectorySeparatorChar))
+            );
+            if (System.IO.Directory.Exists(fullPath))
+            {
+                System.Diagnostics.Process.Start("explorer.exe", fullPath);
+            }
+            else if (System.IO.File.Exists(fullPath))
+            {
+                System.Diagnostics.Process.Start("explorer.exe", "/select," + fullPath);
+            }
+            #endif
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("[FeedbackManager] Failed to open asset path: " + e.Message);
+        }
+    }
+
     private void FindOrCreateCanvas()
     {
         targetCanvas = FindFirstObjectByType<Canvas>();
@@ -275,8 +343,34 @@ public class FeedbackManager : MonoBehaviour
                 if (viewer != null) viewer.gameObject.SetActive(false);
                 if (form != null) form.gameObject.SetActive(true);
                 if (statusText != null) statusText.text = "";
+
+                // Hide legacy slider and auto-generated button row
+                if (form != null)
+                {
+                    Transform oldSlider = form.Find("Rating_Slider");
+                    if (oldSlider != null) oldSlider.gameObject.SetActive(false);
+
+                    Transform oldButtonRow = form.Find("Rating_ButtonRow");
+                    if (oldButtonRow != null) oldButtonRow.gameObject.SetActive(false);
+
+                    // Update label text
+                    Transform oldLabel = form.Find("Label_Rating (1 - 5 \u2B50)");
+                    if (oldLabel == null) oldLabel = form.Find("Label_Rating");
+                    if (oldLabel != null)
+                    {
+                        var lTmp = oldLabel.GetComponent<TextMeshProUGUI>();
+                        if (lTmp != null) lTmp.text = "Rating:";
+                        oldLabel.name = "Label_Rating";
+                    }
+                }
             }
         }
+    }
+
+    /// <summary>Called by StarRatingController when a star is clicked.</summary>
+    public void SetStarRating(int stars)
+    {
+        currentRating = Mathf.Clamp(stars, 1, 5);
     }
 
     public void SubmitFeedback()
@@ -285,7 +379,7 @@ public class FeedbackManager : MonoBehaviour
 
         string pName = nameInputField.text.Trim();
         string pText = feedbackInputField.text.Trim();
-        int ratingVal = Mathf.RoundToInt(ratingSlider.value);
+        int ratingVal = currentRating;
 
         if (string.IsNullOrEmpty(pName))
         {
@@ -332,7 +426,7 @@ public class FeedbackManager : MonoBehaviour
 
                 if (request.result == UnityWebRequest.Result.Success)
                 {
-                    statusText.text = "<color=#24D285>Success: Thank you for your feedback! 💖</color>";
+                    statusText.text = "<color=#24D285>Success: Thank you for your feedback!</color>";
                     nameInputField.text = "";
                     feedbackInputField.text = "";
                     StartCoroutine(FetchTotalStats());
@@ -371,7 +465,7 @@ public class FeedbackManager : MonoBehaviour
 
                 if (request.result == UnityWebRequest.Result.Success)
                 {
-                    statusText.text = "<color=#24D285>Success: Thank you for your feedback! 💖</color>";
+                    statusText.text = "<color=#24D285>Success: Thank you for your feedback!</color>";
                     nameInputField.text = "";
                     feedbackInputField.text = "";
                     StartCoroutine(FetchTotalStats());
@@ -610,13 +704,13 @@ public class FeedbackManager : MonoBehaviour
     private string GetFormattedAssetDirectory()
     {
         StringBuilder sb = new StringBuilder();
-        sb.AppendLine("<b>📂 Assets Location & Credits Directory</b>");
+        sb.AppendLine("<b>[Assets] Location & Credits Directory</b>");
         sb.AppendLine();
         int counter = 1;
         foreach (var asset in assetDirectory)
         {
             sb.AppendLine($"<b>{counter}. {asset.assetName}</b>");
-            sb.AppendLine($"• <i>Location:</i> <color=#A3E2C9>{asset.folderLocation}</color>");
+            sb.AppendLine($"• <i>Location:</i> <link=\"{asset.folderLocation}\"><color=#A3E2C9><u>{asset.folderLocation}</u></color></link>");
             sb.AppendLine($"• <i>Description:</i> {asset.description}");
             sb.AppendLine();
             counter++;
