@@ -53,51 +53,40 @@ Hệ thống được tổ chức thành **6 gói nội bộ (Internal Packages)
     *   `HealthItem.cs`: Vật phẩm hồi máu (tim) khi người chơi chạm phải.
 
 ### 1.6. Gói `Environment & Core` (Môi trường & Hệ thống chung)
-*   **Mô tả:** Quản lý âm thanh, camera, chuyển màn chơi, các bẫy môi trường và các màn hình giao diện chính (Menu, Tạm dừng, Thua, Thắng).
-*   **Các lớp bên trong:**
-    *   `Deadzone.cs` & `FallTrap.cs`: Các bẫy rơi vực sâu và bẫy gai gây sát thương/chết người.
-    *   `NextLV.cs`: Cổng dịch chuyển chuyển tiếp sang màn chơi mới.
-    *   `ForwardOnlyCamera.cs`: Camera chỉ di chuyển tiến lên theo người chơi.
-    *   `LeftBoundary.cs`: Biên giới hạn bên trái ngăn không cho người chơi đi lùi lại.
-    *   `BackgroundController.cs`: Hiệu ứng Parallax cho nền 2D di chuyển theo camera.
-    *   `AudioManager.cs`: Quản lý nhạc nền và âm thanh hiệu ứng (súng, va chạm).
-    *   `MainMenu.cs`, `PauseMenu.cs`, `DeadUI.cs`, `WinerUI.cs`: Quản lý các trạng thái màn hình giao diện UI của trò chơi.
+*   **Mô tả:** Quản lý âm thanh, camera, chuyển màn chơi, các bẫy mô## 2. Mối Quan Hệ Phụ Thuộc Giữa Các Gói (Chuẩn UML)
 
-### 1.7. Gói `MediaPipeUnity` (Thư viện ngoài - External)
-*   **Mô tả:** Thư viện chạy nền Mediapipe tích hợp vào Unity để phát hiện bàn tay qua webcam.
+> [!IMPORTANT]
+> **Quy tắc thiết kế UML Package Diagram:** 
+> Package Diagram là sơ đồ cấu trúc tĩnh của mã nguồn. Nó chỉ thể hiện mối quan hệ tham chiếu code (Compile-time dependency) thay vì luồng tương tác lúc game chạy. 
+> Do đó, ta chỉ sử dụng các stereotype chuẩn UML như **`<<use>>`** (sử dụng code từ package khác) và **`<<import>>`** (nhập thư viện), tuyệt đối **không** dùng các nhãn hành vi game như `<<damage>>`, `<<chase>>`, `<<replenish>>`.
 
----
+Mối quan hệ phụ thuộc tĩnh giữa các Package được định nghĩa chuẩn hóa như sau:
 
-## 2. Mối Quan Hệ Phụ Thuộc (Dependencies)
-
-Mối quan hệ phụ thuộc giữa các Package được định nghĩa như sau:
-
-1.  **`Hand Tracking & Input`** phụ thuộc (`<<import>>`) vào **`MediaPipeUnity`**: Đọc dữ liệu từ webcam qua Mediapipe để chuyển hóa thành các Landmark tay.
-2.  **`Player & Weapons`** phụ thuộc (`<<use>>`) vào **`Hand Tracking & Input`**: Lấy thông tin điều khiển cử chỉ từ `HandInputProvider` để áp dụng cho `PlayerController` và `CrosshairController`.
-3.  **`Player & Weapons`** phụ thuộc (`<<use>>`) vào **`Environment & Core`**: Kích hoạt `DeadUI` khi hết máu, phát âm thanh qua `AudioManager`.
-4.  **`Boss (Demon King)`** phụ thuộc (`<<target / damage>>`) vào **`Player & Weapons`**: Tìm vị trí người chơi để đuổi theo bắn đạn, trực tiếp gọi hàm `TakeDamage` trên `PlayerHealth`.
-5.  **`Boss (Demon King)`** phụ thuộc (`<<use>>`) vào **`Environment & Core`**: Sử dụng `AudioManager` và kích hoạt `WinerUI` khi Boss bị tiêu diệt.
-6.  **`Enemy`** phụ thuộc (`<<chase / damage>>`) vào **`Player & Weapons`**: Tuần tra phát hiện và đuổi theo người chơi, gây sát thương lên `PlayerHealth`. Đạn từ `EnemyBulletScript` cũng gây sát thương lên người chơi.
-7.  **`Items`** phụ thuộc (`<<replenish>>`) vào **`Player & Weapons`**: Khi kích hoạt trigger nhặt đồ sẽ gọi hàm `AddAmmo` của `GunController` hoặc `Heal` của `PlayerHealth`.
-8.  **`Environment & Core`** phụ thuộc (`<<interact>>`) vào **`Player & Weapons`**: Kiểm tra va chạm của người chơi với bẫy (`FallTrap`, `Deadzone`), giới hạn biên (`LeftBoundary`), hoặc cổng chuyển màn (`NextLV`) để hiển thị màn hình thua cuộc (`DeadUI`) hoặc chuyển cảnh.
-9.  **`Environment & Core`** phụ thuộc (`<<monitor>>`) vào **`Boss (Demon King)`**: Lớp `WinerUI` liên tục kiểm tra lượng máu của Boss từ `BossHealth` để hiển thị bảng chiến thắng khi Boss chết.
+1. **`Hand Tracking & Input`** phụ thuộc (`<<import>>`) vào **`MediaPipeUnity`**: Import các namespace và Landmark runner để xử lý webcam.
+2. **`Player & Weapons`** phụ thuộc (`<<use>>`) vào **`Hand Tracking & Input`**: Lấy thông tin điều khiển cử chỉ tay từ lớp `HandInputProvider`.
+3. **`Player & Weapons`** phụ thuộc (`<<use>>`) vào **`Environment & Core`**: Sử dụng `AudioManager` và kích hoạt màn hình `DeadUI`.
+4. **`Boss (Demon King)`** phụ thuộc (`<<use>>`) vào **`Player & Weapons`**: Tham chiếu tới `PlayerHealth` để trừ máu người chơi và `PlayerController` để tìm vị trí mục tiêu.
+5. **`Boss (Demon King)`** phụ thuộc (`<<use>>`) vào **`Environment & Core`**: Gọi âm thanh qua `AudioManager` và kích hoạt màn hình `WinerUI`.
+6. **`Enemy`** phụ thuộc (`<<use>>`) vào **`Player & Weapons`**: Các lớp `GroundEnemy` và `FlyEnemy` cần tham chiếu đến `PlayerHealth` để gây sát thương và `PlayerController` để truy đuổi.
+7. **`Enemy`** phụ thuộc (`<<use>>`) vào **`Environment & Core`**: Sử dụng `AudioManager` khi chết hoặc tấn công.
+8. **`Items`** phụ thuộc (`<<use>>`) vào **`Player & Weapons`**: Gọi trực tiếp các hàm cập nhật chỉ số như `AddAmmo` của `GunController` hoặc `Heal` của `PlayerHealth`.
+9. **`Environment & Core`** phụ thuộc (`<<use>>`) vào **`Player & Weapons`**: Các bẫy (`FallTrap`, `Deadzone`) cần kiểm tra va chạm với component của người chơi.
+10. **`Environment & Core`** phụ thuộc (`<<use>>`) vào **`Boss (Demon King)`**: Giao diện `WinerUI` cần đọc lượng máu còn lại từ `BossHealth`.
 
 ---
 
-## 3. Mã Sơ Đồ Để Dán Vào Công Cụ Vẽ (Đã Tối Ưu Đơn Giản)
+## 3. Bản Sơ Đồ Cho Cấu Trúc Hiện Tại (Actual Architecture)
 
-> [!NOTE]
-> Để sơ đồ gói (Package Diagram) chuẩn UML và trực quan hơn, mã vẽ dưới đây chỉ tập trung vào mối quan hệ phụ thuộc giữa các **gói lớn (Packages)** thay vì liệt kê từng file script riêng lẻ bên trong. Điều này giúp sơ đồ gọn gàng, giảm thiểu phụ thuộc chồng chéo trực quan và phản ánh đúng bản chất kiến trúc hệ thống.
+Mã sơ đồ phản ánh cấu trúc thư mục hiện tại của project (đã chuẩn hóa nhãn quan hệ về `<<use>>` và `<<import>>` đúng ngữ nghĩa UML).
 
-### 3.1. Mã Sơ Đồ Mermaid (Dán vào Gemini, Notion, GitHub hoặc Draw.io)
-
+### 3.1. Mã Mermaid (Actual)
 ```mermaid
 flowchart TB
-    %% Định nghĩa các lớp màu sắc (Styling)
+    %% Styling
     classDef external fill:#f3f4f6,stroke:#9ca3af,stroke-width:2px,stroke-dasharray: 5 5;
     classDef internal fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
 
-    %% Định nghĩa các Gói (Packages) dưới dạng các nút độc lập
+    %% Định nghĩa các Package
     pkg_mediapipe["«external package»<br/>MediaPipeUnity"]
     pkg_input["«package»<br/>Hand Tracking & Input"]
     pkg_player["«package»<br/>Player & Weapons"]
@@ -106,30 +95,28 @@ flowchart TB
     pkg_items["«package»<br/>Items"]
     pkg_env["«package»<br/>Environment & Core"]
 
-    %% Áp dụng Styling
     class pkg_mediapipe external;
     class pkg_input,pkg_player,pkg_boss,pkg_enemy,pkg_items,pkg_env internal;
 
-    %% Định nghĩa mối quan hệ phụ thuộc (Dependencies)
+    %% Mối quan hệ
     pkg_input -.->|«import»| pkg_mediapipe
     pkg_player -.->|«use»| pkg_input
     
-    %% Các phụ thuộc hai chiều/vòng lặp trong code thực tế
+    %% Phụ thuộc vòng giữa Player và Environment
     pkg_player -.->|«use»| pkg_env
-    pkg_env -.->|«interact»| pkg_player
+    pkg_env -.->|«use»| pkg_player
     
-    pkg_boss -.->|«target/damage»| pkg_player
+    %% Phụ thuộc vòng giữa Boss và Environment
     pkg_boss -.->|«use»| pkg_env
-    pkg_env -.->|«monitor»| pkg_boss
+    pkg_env -.->|«use»| pkg_boss
     
-    pkg_enemy -.->|«chase/damage»| pkg_player
+    pkg_enemy -.->|«use»| pkg_player
     pkg_enemy -.->|«use»| pkg_env
     
-    pkg_items -.->|«replenish»| pkg_player
+    pkg_items -.->|«use»| pkg_player
 ```
 
-### 3.2. Mã Sơ Đồ PlantUML (Phù hợp để vẽ nâng cao)
-
+### 3.2. Mã PlantUML (Actual)
 ```plantuml
 @startuml
 skinparam packageStyle rect
@@ -146,7 +133,6 @@ skinparam package {
     BorderWidth<<Internal>> 2
 }
 
-' Định nghĩa các Gói
 package "MediaPipeUnity" as MediaPipe <<External>>
 package "Hand Tracking & Input" as Input <<Internal>>
 package "Player & Weapons" as Player <<Internal>>
@@ -155,44 +141,131 @@ package "Enemy" as Enemy <<Internal>>
 package "Items" as Items <<Internal>>
 package "Environment & Core" as Env <<Internal>>
 
-' Các mối quan hệ phụ thuộc
 Input ..> MediaPipe : <<import>>
 Player ..> Input : <<use>>
 
 Player ..> Env : <<use>>
-Env ..> Player : <<interact>>
+Env ..> Player : <<use>>
 
-Boss ..> Player : <<target / damage>>
+Boss ..> Player : <<use>>
 Boss ..> Env : <<use>>
-Env ..> Boss : <<monitor>>
+Env ..> Boss : <<use>>
 
-Enemy ..> Player : <<chase / damage>>
+Enemy ..> Player : <<use>>
 Enemy ..> Env : <<use>>
 
-Items ..> Player : <<replenish>>
+Items ..> Player : <<use>>
+@endum
+```
+
+---
+
+## 4. Kiến Trúc Tối Ưu Đề Xuất (Optimized Target Architecture)
+
+> [!WARNING]
+> Nếu bạn cần nộp biểu đồ để **chấm điểm học tập hoặc thuyết trình kiến trúc code chuẩn**, cấu trúc hiện tại sẽ bị đánh giá thấp do mắc phải 2 lỗi thiết kế nghiêm trọng:
+> 1. **Phụ thuộc vòng (Circular Dependencies):** Trực quan hóa bằng các mũi tên chỉ hai chiều qua lại giữa `Player/Boss` và `Environment`.
+> 2. **Sai lệch mức độ phân chia (Granularity):** Gói `Boss (Demon King)` quá nhỏ để làm một package riêng biệt. Nó thực chất là một loại Kẻ địch đặc biệt, nên được gộp vào package `Enemy`.
+
+Dưới đây là phương án **Kiến trúc Tối ưu hóa (Target Architecture)** để giải quyết triệt để các vấn đề trên.
+
+### Giải pháp tối ưu:
+1. **Gộp Boss vào Enemy:** Đưa tất cả các script liên quan đến `Boss (Demon King)` vào trong package `Enemy`.
+2. **Tách biệt Core và Gameplay Environment:**
+   - Tạo package **`Shared Core`**: Chỉ chứa các tài nguyên gốc như `AudioManager`, `SceneManager` hoặc các Event System / Interface dùng chung. Package này hoàn toàn độc lập và **không tham chiếu ngược** tới bất kỳ package gameplay nào.
+   - Tạo package **`Gameplay Environment`**: Chứa bẫy gai, vực sâu (`FallTrap`, `Deadzone`) và các màn chơi.
+3. **Áp dụng Cơ chế Event-Driven (Hướng sự kiện) để xóa bỏ phụ thuộc vòng:**
+   - Thay vì `PlayerHealth` trực tiếp gọi `DeadUI` (nằm trong Environment/Core), `PlayerHealth` sẽ phát đi sự kiện `OnPlayerDied`. 
+   - `DeadUI` sẽ lắng nghe sự kiện `OnPlayerDied` để tự hiển thị lên. Mũi tên phụ thuộc chỉ đi từ `Gameplay Environment` trỏ đến `Shared Core` và `Player`, không có chiều ngược lại.
+
+### 4.1. Mã Sơ Đồ Mermaid Tối Ưu (Đề xuất nộp bài)
+```mermaid
+flowchart TB
+    %% Styling
+    classDef external fill:#f3f4f6,stroke:#9ca3af,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef internal fill:#eff6ff,stroke:#2563eb,stroke-width:2px;
+    classDef core fill:#ecfdf5,stroke:#10b981,stroke-width:2px;
+
+    %% Định nghĩa các Package
+    pkg_mediapipe["«external package»<br/>MediaPipeUnity"]
+    pkg_input["«package»<br/>Hand Tracking & Input"]
+    pkg_player["«package»<br/>Player & Weapons"]
+    pkg_enemy["«package»<br/>Enemy & Boss"]
+    pkg_items["«package»<br/>Items"]
+    pkg_gameplay["«package»<br/>Gameplay Environment"]
+    pkg_core["«package»<br/>Shared Core"]
+
+    class pkg_mediapipe external;
+    class pkg_input,pkg_player,pkg_enemy,pkg_items,pkg_gameplay internal;
+    class pkg_core core;
+
+    %% Luồng phụ thuộc một chiều (DAG - Không chu trình)
+    pkg_input -.->|«import»| pkg_mediapipe
+    
+    pkg_player -.->|«use»| pkg_input
+    pkg_player -.->|«use»| pkg_core
+    
+    pkg_enemy -.->|«use»| pkg_player
+    pkg_enemy -.->|«use»| pkg_core
+    
+    pkg_items -.->|«use»| pkg_player
+    pkg_items -.->|«use»| pkg_core
+    
+    pkg_gameplay -.->|«use»| pkg_player
+    pkg_gameplay -.->|«use»| pkg_core
+```
+
+### 4.2. Mã Sơ Đồ PlantUML Tối Ưu (Đề xuất nộp bài)
+```plantuml
+@startuml
+skinparam packageStyle rect
+skinparam shadowing false
+skinparam DefaultFontName "Arial"
+
+skinparam package {
+    BackgroundColor<<External>> #F3F4F6
+    BorderColor<<External>> #9CA3AF
+    BorderStyle<<External>> dashed
+    
+    BackgroundColor<<Internal>> #EFF6FF
+    BorderColor<<Internal>> #2563EB
+    BorderWidth<<Internal>> 2
+    
+    BackgroundColor<<Core>> #ECFDF5
+    BorderColor<<Core>> #10B981
+    BorderWidth<<Core>> 2
+}
+
+package "MediaPipeUnity" as MediaPipe <<External>>
+package "Hand Tracking & Input" as Input <<Internal>>
+package "Player & Weapons" as Player <<Internal>>
+package "Enemy & Boss" as Enemy <<Internal>>
+package "Items" as Items <<Internal>>
+package "Gameplay Environment" as Gameplay <<Internal>>
+package "Shared Core" as Core <<Core>>
+
+Input ..> MediaPipe : <<import>>
+
+Player ..> Input : <<use>>
+Player ..> Core : <<use>>
+
+Enemy ..> Player : <<use>>
+Enemy ..> Core : <<use>>
+
+Items ..> Player : <<use>>
+Items ..> Core : <<use>>
+
+Gameplay ..> Player : <<use>>
+Gameplay ..> Core : <<use>>
 
 @endum
 ```
 
 ---
 
-## 4. Phân Tích Quan Hệ Phụ Thuộc Vòng (Circular Dependencies) trong Dự Án
-
-Trong dự án thực tế hiện tại, chúng ta có một số mối quan hệ **phụ thuộc vòng (Circular Dependencies)** giữa các Package:
-1. **Player & Weapons <---> Environment & Core**: Player cần gọi hệ thống UI (`DeadUI`) và âm thanh (`AudioManager`) trong Environment. Ngược lại, Environment (`FallTrap`, `Deadzone`, `LeftBoundary`) lại cần tham chiếu trực tiếp đến Player để xử lý va chạm và hồi sinh.
-2. **Boss (Demon King) <---> Environment & Core**: Boss cần sử dụng `AudioManager` và kích hoạt `WinerUI`. Ngược lại, `WinerUI` trong Environment lại cần tham chiếu trực tiếp đến `BossHealth` để theo dõi máu của Boss.
-
-> [!TIP]
-> **Giải pháp tối ưu hóa kiến trúc (nếu muốn làm sạch code):**
-> Để loại bỏ các phụ thuộc vòng này, bạn có thể áp dụng mô hình **Event-driven (Hướng sự kiện)**:
-> - Sử dụng **C# Events / Action** hoặc **ScriptableObject Events** để phát các sự kiện (ví dụ: `OnPlayerDie`, `OnBossDie`).
-> - Package `Environment & Core` sẽ lắng nghe các sự kiện này để hiển thị UI tương ứng, thay vì các package trực tiếp gọi hoặc tham chiếu xuyên suốt lẫn nhau.
-
----
-
 ## 5. Hướng dẫn dán vào Gemini / Draw.io để tạo sơ đồ
 
-Bạn có thể sao chép mã Mermaid ở **Mục 3.1** hoặc mã PlantUML ở **Mục 3.2** dán vào các công cụ tự động tạo sơ đồ. Nếu dán vào Gemini, bạn có thể dùng câu lệnh sau:
+Bạn có thể sao chép mã Mermaid (ở **Mục 3.1** hoặc **Mục 4.1**) hoặc mã PlantUML (ở **Mục 3.2** hoặc **Mục 4.2**) dán vào các công cụ tự động tạo sơ đồ. Nếu dán vào Gemini, bạn có thể dùng câu lệnh sau:
 
 > **Câu lệnh gợi ý (Prompt):**
 > "Hãy dựa trên cấu trúc các package và mối quan hệ phụ thuộc được mô tả ở trên để vẽ/tạo ra sơ đồ Package Diagram (Sơ đồ gói) UML hoàn chỉnh cho dự án game này. Hãy đảm bảo các mũi tên phụ thuộc chỉ đúng hướng và phân biệt rõ các gói thư viện ngoài (MediaPipeUnity) và các gói nội bộ của game."
