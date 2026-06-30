@@ -6998,5 +6998,2409 @@
       "animation": {
         "castClip": "anim_DarkMatter_cast",
         "effectPrefab": "Effects/DarkMatter_Lv9",
+        "impactPrefab": "Effects/DarkMatter_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "DarkMatter_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 150,
+      "skillName": "DarkMatter_Lv10",
+      "baseSkill": "DarkMatter",
+      "level": 10,
+      "element": "Dark",
+      "targetType": "AoE",
+      "damage": {
+        "base": 358,
+        "atLevel": 787.6,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 39,
+        "manaAtLevel": 58.5,
+        "stamina": 1
+      },
+      "timing": {
+        "cooldown": 7.7,
+        "castTime": 0.8,
+        "duration": 6.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.7,
+        "aoeRadius": 0.3,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.2,
+        "stunDuration": 1.3,
+        "dotDamage": 34,
+        "dotTick": 2.1,
+        "dotDuration": 1.5
+      },
+      "animation": {
+        "castClip": "anim_DarkMatter_cast",
+        "effectPrefab": "Effects/DarkMatter_Lv10",
+        "impactPrefab": "Effects/DarkMatter_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "DarkMatter_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 151,
+      "skillName": "WindSlash_Lv1",
+      "baseSkill": "WindSlash",
+      "level": 1,
+      "element": "Water",
+      "targetType": "Chain",
+      "damage": {
+        "base": 131,
+        "atLevel": 146.7,
+        "scaling": "STR",
+        "scalingFactor": 0.05
+      },
+      "cost": {
+        "mana": 80,
+        "manaAtLevel": 84,
+        "stamina": 21
+      },
+      "timing": {
+        "cooldown": 18.5,
+        "castTime": 1.6,
+        "duration": 6.1,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.8,
+        "aoeRadius": 1.1,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.5,
+        "stunDuration": 2.7,
+        "dotDamage": 17,
+        "dotTick": 2.6,
+        "dotDuration": 1.9
+      },
+      "animation": {
+        "castClip": "anim_WindSlash_cast",
+        "effectPrefab": "Effects/WindSlash_Lv1",
+        "impactPrefab": "Effects/WindSlash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 152,
+      "skillName": "WindSlash_Lv2",
+      "baseSkill": "WindSlash",
+      "level": 2,
+      "element": "Dark",
+      "targetType": "Single",
+      "damage": {
+        "base": 225,
+        "atLevel": 279,
+        "scaling": "STR",
+        "scalingFactor": 0.2
+      },
+      "cost": {
+        "mana": 29,
+        "manaAtLevel": 31.9,
+        "stamina": 5
+      },
+      "timing": {
+        "cooldown": 6.3,
+        "castTime": 1.5,
+        "duration": 4.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 3,
+        "aoeRadius": 2.6,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 0.4,
+        "stunDuration": 0.1,
+        "dotDamage": 47,
+        "dotTick": 1.6,
+        "dotDuration": 4.9
+      },
+      "animation": {
+        "castClip": "anim_WindSlash_cast",
+        "effectPrefab": "Effects/WindSlash_Lv2",
+        "impactPrefab": "Effects/WindSlash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "WindSlash_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 153,
+      "skillName": "WindSlash_Lv3",
+      "baseSkill": "WindSlash",
+      "level": 3,
+      "element": "Ice",
+      "targetType": "Splash",
+      "damage": {
+        "base": 424,
+        "atLevel": 576.6,
+        "scaling": "STR",
+        "scalingFactor": 0.19
+      },
+      "cost": {
+        "mana": 9,
+        "manaAtLevel": 10.4,
+        "stamina": 21
+      },
+      "timing": {
+        "cooldown": 15.7,
+        "castTime": 2.6,
+        "duration": 1.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.6,
+        "aoeRadius": 2.7,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 1.2,
+        "stunDuration": 2.2,
+        "dotDamage": 29,
+        "dotTick": 0.6,
+        "dotDuration": 2.2
+      },
+      "animation": {
+        "castClip": "anim_WindSlash_cast",
+        "effectPrefab": "Effects/WindSlash_Lv3",
+        "impactPrefab": "Effects/WindSlash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "WindSlash_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 154,
+      "skillName": "WindSlash_Lv4",
+      "baseSkill": "WindSlash",
+      "level": 4,
+      "element": "Fire",
+      "targetType": "Splash",
+      "damage": {
+        "base": 121,
+        "atLevel": 179.1,
+        "scaling": "STR",
+        "scalingFactor": 0.17
+      },
+      "cost": {
+        "mana": 50,
+        "manaAtLevel": 60,
+        "stamina": 12
+      },
+      "timing": {
+        "cooldown": 21.2,
+        "castTime": 0.2,
+        "duration": 4.6,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.3,
+        "aoeRadius": 2.7,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 0.2,
+        "dotDamage": 30,
+        "dotTick": 2.4,
+        "dotDuration": 4.5
+      },
+      "animation": {
+        "castClip": "anim_WindSlash_cast",
+        "effectPrefab": "Effects/WindSlash_Lv4",
+        "impactPrefab": "Effects/WindSlash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "WindSlash_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 155,
+      "skillName": "WindSlash_Lv5",
+      "baseSkill": "WindSlash",
+      "level": 5,
+      "element": "Lightning",
+      "targetType": "Splash",
+      "damage": {
+        "base": 475,
+        "atLevel": 760,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 33,
+        "manaAtLevel": 41.2,
+        "stamina": 15
+      },
+      "timing": {
+        "cooldown": 20.1,
+        "castTime": 2.8,
+        "duration": 7.3,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.9,
+        "aoeRadius": 2.9,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 2,
+        "dotDamage": 28,
+        "dotTick": 2.6,
+        "dotDuration": 2.7
+      },
+      "animation": {
+        "castClip": "anim_WindSlash_cast",
+        "effectPrefab": "Effects/WindSlash_Lv5",
+        "impactPrefab": "Effects/WindSlash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "WindSlash_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 156,
+      "skillName": "WindSlash_Lv6",
+      "baseSkill": "WindSlash",
+      "level": 6,
+      "element": "Dark",
+      "targetType": "Chain",
+      "damage": {
+        "base": 388,
+        "atLevel": 667.4,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 55,
+        "manaAtLevel": 71.5,
+        "stamina": 15
+      },
+      "timing": {
+        "cooldown": 27.3,
+        "castTime": 0.4,
+        "duration": 7.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 4,
+        "aoeRadius": 1,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 0.7,
+        "dotDamage": 28,
+        "dotTick": 2.2,
+        "dotDuration": 1.6
+      },
+      "animation": {
+        "castClip": "anim_WindSlash_cast",
+        "effectPrefab": "Effects/WindSlash_Lv6",
+        "impactPrefab": "Effects/WindSlash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "WindSlash_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 157,
+      "skillName": "WindSlash_Lv7",
+      "baseSkill": "WindSlash",
+      "level": 7,
+      "element": "Ice",
+      "targetType": "AoE",
+      "damage": {
+        "base": 467,
+        "atLevel": 859.3,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 95,
+        "manaAtLevel": 128.2,
+        "stamina": 1
+      },
+      "timing": {
+        "cooldown": 15.1,
+        "castTime": 2.2,
+        "duration": 2.9,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.3,
+        "aoeRadius": 1.2,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 0.3,
+        "stunDuration": 0.1,
+        "dotDamage": 11,
+        "dotTick": 2,
+        "dotDuration": 4.2
+      },
+      "animation": {
+        "castClip": "anim_WindSlash_cast",
+        "effectPrefab": "Effects/WindSlash_Lv7",
+        "impactPrefab": "Effects/WindSlash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "WindSlash_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 158,
+      "skillName": "WindSlash_Lv8",
+      "baseSkill": "WindSlash",
+      "level": 8,
+      "element": "Earth",
+      "targetType": "Splash",
+      "damage": {
+        "base": 471,
+        "atLevel": 923.2,
+        "scaling": "STR",
+        "scalingFactor": 0.24
+      },
+      "cost": {
+        "mana": 34,
+        "manaAtLevel": 47.6,
+        "stamina": 20
+      },
+      "timing": {
+        "cooldown": 18.8,
+        "castTime": 0.2,
+        "duration": 2.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 4,
+        "aoeRadius": 1.2,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 1.1,
+        "dotDamage": 1,
+        "dotTick": 2.3,
+        "dotDuration": 3.9
+      },
+      "animation": {
+        "castClip": "anim_WindSlash_cast",
+        "effectPrefab": "Effects/WindSlash_Lv8",
+        "impactPrefab": "Effects/WindSlash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "WindSlash_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 159,
+      "skillName": "WindSlash_Lv9",
+      "baseSkill": "WindSlash",
+      "level": 9,
+      "element": "Dark",
+      "targetType": "Chain",
+      "damage": {
+        "base": 256,
+        "atLevel": 532.5,
+        "scaling": "STR",
+        "scalingFactor": 0.24
+      },
+      "cost": {
+        "mana": 85,
+        "manaAtLevel": 123.2,
+        "stamina": 8
+      },
+      "timing": {
+        "cooldown": 5.3,
+        "castTime": 1.4,
+        "duration": 1.1,
+        "channeled": false
+      },
+      "area": {
+        "range": 3,
+        "aoeRadius": 2.7,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0.6,
+        "stunDuration": 2.8,
+        "dotDamage": 18,
+        "dotTick": 2.3,
+        "dotDuration": 1.2
+      },
+      "animation": {
+        "castClip": "anim_WindSlash_cast",
+        "effectPrefab": "Effects/WindSlash_Lv9",
+        "impactPrefab": "Effects/WindSlash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "WindSlash_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 160,
+      "skillName": "WindSlash_Lv10",
+      "baseSkill": "WindSlash",
+      "level": 10,
+      "element": "Holy",
+      "targetType": "Self",
+      "damage": {
+        "base": 378,
+        "atLevel": 831.6,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 71,
+        "manaAtLevel": 106.5,
+        "stamina": 16
+      },
+      "timing": {
+        "cooldown": 14.9,
+        "castTime": 2.3,
+        "duration": 3,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.1,
+        "aoeRadius": 0.7,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 0.3,
+        "dotDamage": 18,
+        "dotTick": 2.9,
+        "dotDuration": 4.2
+      },
+      "animation": {
+        "castClip": "anim_WindSlash_cast",
+        "effectPrefab": "Effects/WindSlash_Lv10",
+        "impactPrefab": "Effects/WindSlash_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "WindSlash_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 161,
+      "skillName": "StoneArmor_Lv1",
+      "baseSkill": "StoneArmor",
+      "level": 1,
+      "element": "Fire",
+      "targetType": "Self",
+      "damage": {
+        "base": 66,
+        "atLevel": 73.9,
+        "scaling": "STR",
+        "scalingFactor": 0.17
+      },
+      "cost": {
+        "mana": 29,
+        "manaAtLevel": 30.4,
+        "stamina": 22
+      },
+      "timing": {
+        "cooldown": 13.7,
+        "castTime": 0.3,
+        "duration": 2.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.2,
+        "aoeRadius": 2.4,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 1.6,
+        "stunDuration": 1.1,
+        "dotDamage": 8,
+        "dotTick": 1.5,
+        "dotDuration": 5.7
+      },
+      "animation": {
+        "castClip": "anim_StoneArmor_cast",
+        "effectPrefab": "Effects/StoneArmor_Lv1",
+        "impactPrefab": "Effects/StoneArmor_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 162,
+      "skillName": "StoneArmor_Lv2",
+      "baseSkill": "StoneArmor",
+      "level": 2,
+      "element": "Lightning",
+      "targetType": "AoE",
+      "damage": {
+        "base": 281,
+        "atLevel": 348.4,
+        "scaling": "STR",
+        "scalingFactor": 0.09
+      },
+      "cost": {
+        "mana": 99,
+        "manaAtLevel": 108.9,
+        "stamina": 0
+      },
+      "timing": {
+        "cooldown": 29.6,
+        "castTime": 1.3,
+        "duration": 5.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.5,
+        "aoeRadius": 2.5,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 0.5,
+        "stunDuration": 0,
+        "dotDamage": 26,
+        "dotTick": 1.6,
+        "dotDuration": 1.3
+      },
+      "animation": {
+        "castClip": "anim_StoneArmor_cast",
+        "effectPrefab": "Effects/StoneArmor_Lv2",
+        "impactPrefab": "Effects/StoneArmor_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "StoneArmor_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 163,
+      "skillName": "StoneArmor_Lv3",
+      "baseSkill": "StoneArmor",
+      "level": 3,
+      "element": "Holy",
+      "targetType": "Single",
+      "damage": {
+        "base": 419,
+        "atLevel": 569.8,
+        "scaling": "STR",
+        "scalingFactor": 0.06
+      },
+      "cost": {
+        "mana": 35,
+        "manaAtLevel": 40.2,
+        "stamina": 25
+      },
+      "timing": {
+        "cooldown": 1.7,
+        "castTime": 0.1,
+        "duration": 4.5,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.5,
+        "aoeRadius": 1.7,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 1.1,
+        "dotDamage": 25,
+        "dotTick": 0.7,
+        "dotDuration": 3.2
+      },
+      "animation": {
+        "castClip": "anim_StoneArmor_cast",
+        "effectPrefab": "Effects/StoneArmor_Lv3",
+        "impactPrefab": "Effects/StoneArmor_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "StoneArmor_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 164,
+      "skillName": "StoneArmor_Lv4",
+      "baseSkill": "StoneArmor",
+      "level": 4,
+      "element": "Wind",
+      "targetType": "Single",
+      "damage": {
+        "base": 291,
+        "atLevel": 430.7,
+        "scaling": "STR",
+        "scalingFactor": 0.07
+      },
+      "cost": {
+        "mana": 6,
+        "manaAtLevel": 7.2,
+        "stamina": 27
+      },
+      "timing": {
+        "cooldown": 2.3,
+        "castTime": 1.5,
+        "duration": 4.3,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.6,
+        "aoeRadius": 2.4,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 2.7,
+        "dotDamage": 35,
+        "dotTick": 2.3,
+        "dotDuration": 5.6
+      },
+      "animation": {
+        "castClip": "anim_StoneArmor_cast",
+        "effectPrefab": "Effects/StoneArmor_Lv4",
+        "impactPrefab": "Effects/StoneArmor_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "StoneArmor_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 165,
+      "skillName": "StoneArmor_Lv5",
+      "baseSkill": "StoneArmor",
+      "level": 5,
+      "element": "Poison",
+      "targetType": "Line",
+      "damage": {
+        "base": 200,
+        "atLevel": 320,
+        "scaling": "STR",
+        "scalingFactor": 0.19
+      },
+      "cost": {
+        "mana": 43,
+        "manaAtLevel": 53.8,
+        "stamina": 3
+      },
+      "timing": {
+        "cooldown": 18.6,
+        "castTime": 1.4,
+        "duration": 1.2,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.1,
+        "aoeRadius": 1.2,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.5,
+        "stunDuration": 1.5,
+        "dotDamage": 19,
+        "dotTick": 2.7,
+        "dotDuration": 1.3
+      },
+      "animation": {
+        "castClip": "anim_StoneArmor_cast",
+        "effectPrefab": "Effects/StoneArmor_Lv5",
+        "impactPrefab": "Effects/StoneArmor_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "StoneArmor_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 166,
+      "skillName": "StoneArmor_Lv6",
+      "baseSkill": "StoneArmor",
+      "level": 6,
+      "element": "Poison",
+      "targetType": "AoE",
+      "damage": {
+        "base": 425,
+        "atLevel": 731,
+        "scaling": "STR",
+        "scalingFactor": 0.09
+      },
+      "cost": {
+        "mana": 55,
+        "manaAtLevel": 71.5,
+        "stamina": 2
+      },
+      "timing": {
+        "cooldown": 24.2,
+        "castTime": 1.3,
+        "duration": 2,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.9,
+        "aoeRadius": 0.3,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 1.2,
+        "stunDuration": 2.1,
+        "dotDamage": 5,
+        "dotTick": 2.4,
+        "dotDuration": 3.8
+      },
+      "animation": {
+        "castClip": "anim_StoneArmor_cast",
+        "effectPrefab": "Effects/StoneArmor_Lv6",
+        "impactPrefab": "Effects/StoneArmor_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "StoneArmor_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 167,
+      "skillName": "StoneArmor_Lv7",
+      "baseSkill": "StoneArmor",
+      "level": 7,
+      "element": "Earth",
+      "targetType": "Self",
+      "damage": {
+        "base": 366,
+        "atLevel": 673.4,
+        "scaling": "STR",
+        "scalingFactor": 0.16
+      },
+      "cost": {
+        "mana": 21,
+        "manaAtLevel": 28.4,
+        "stamina": 14
+      },
+      "timing": {
+        "cooldown": 21.7,
+        "castTime": 0.3,
+        "duration": 7.4,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.8,
+        "aoeRadius": 0.5,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 0.9,
+        "dotDamage": 41,
+        "dotTick": 2.2,
+        "dotDuration": 3.8
+      },
+      "animation": {
+        "castClip": "anim_StoneArmor_cast",
+        "effectPrefab": "Effects/StoneArmor_Lv7",
+        "impactPrefab": "Effects/StoneArmor_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "StoneArmor_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 168,
+      "skillName": "StoneArmor_Lv8",
+      "baseSkill": "StoneArmor",
+      "level": 8,
+      "element": "Water",
+      "targetType": "Line",
+      "damage": {
+        "base": 207,
+        "atLevel": 405.7,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 63,
+        "manaAtLevel": 88.2,
+        "stamina": 8
+      },
+      "timing": {
+        "cooldown": 16.2,
+        "castTime": 2.1,
+        "duration": 2.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.4,
+        "aoeRadius": 0.5,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.5,
+        "stunDuration": 1.2,
+        "dotDamage": 5,
+        "dotTick": 2.5,
+        "dotDuration": 1.9
+      },
+      "animation": {
+        "castClip": "anim_StoneArmor_cast",
+        "effectPrefab": "Effects/StoneArmor_Lv8",
+        "impactPrefab": "Effects/StoneArmor_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "StoneArmor_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 169,
+      "skillName": "StoneArmor_Lv9",
+      "baseSkill": "StoneArmor",
+      "level": 9,
+      "element": "Holy",
+      "targetType": "AoE",
+      "damage": {
+        "base": 135,
+        "atLevel": 280.8,
+        "scaling": "STR",
+        "scalingFactor": 0.12
+      },
+      "cost": {
+        "mana": 58,
+        "manaAtLevel": 84.1,
+        "stamina": 23
+      },
+      "timing": {
+        "cooldown": 12.1,
+        "castTime": 2.5,
+        "duration": 5,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.1,
+        "aoeRadius": 2.1,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 0.2,
+        "dotDamage": 2,
+        "dotTick": 2,
+        "dotDuration": 5.2
+      },
+      "animation": {
+        "castClip": "anim_StoneArmor_cast",
+        "effectPrefab": "Effects/StoneArmor_Lv9",
+        "impactPrefab": "Effects/StoneArmor_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "StoneArmor_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 170,
+      "skillName": "StoneArmor_Lv10",
+      "baseSkill": "StoneArmor",
+      "level": 10,
+      "element": "Earth",
+      "targetType": "AoE",
+      "damage": {
+        "base": 449,
+        "atLevel": 987.8,
+        "scaling": "STR",
+        "scalingFactor": 0.18
+      },
+      "cost": {
+        "mana": 78,
+        "manaAtLevel": 117,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 24,
+        "castTime": 1.1,
+        "duration": 5.3,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.8,
+        "aoeRadius": 2.2,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 1.4,
+        "dotDamage": 10,
+        "dotTick": 2.1,
+        "dotDuration": 1.7
+      },
+      "animation": {
+        "castClip": "anim_StoneArmor_cast",
+        "effectPrefab": "Effects/StoneArmor_Lv10",
+        "impactPrefab": "Effects/StoneArmor_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "StoneArmor_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 171,
+      "skillName": "FlameWall_Lv1",
+      "baseSkill": "FlameWall",
+      "level": 1,
+      "element": "Lightning",
+      "targetType": "Self",
+      "damage": {
+        "base": 219,
+        "atLevel": 245.3,
+        "scaling": "STR",
+        "scalingFactor": 0.13
+      },
+      "cost": {
+        "mana": 66,
+        "manaAtLevel": 69.3,
+        "stamina": 6
+      },
+      "timing": {
+        "cooldown": 22,
+        "castTime": 1.9,
+        "duration": 4,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.2,
+        "aoeRadius": 2.8,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 0,
+        "dotDamage": 25,
+        "dotTick": 1.8,
+        "dotDuration": 1
+      },
+      "animation": {
+        "castClip": "anim_FlameWall_cast",
+        "effectPrefab": "Effects/FlameWall_Lv1",
+        "impactPrefab": "Effects/FlameWall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 172,
+      "skillName": "FlameWall_Lv2",
+      "baseSkill": "FlameWall",
+      "level": 2,
+      "element": "Holy",
+      "targetType": "Splash",
+      "damage": {
+        "base": 115,
+        "atLevel": 142.6,
+        "scaling": "STR",
+        "scalingFactor": 0.1
+      },
+      "cost": {
+        "mana": 28,
+        "manaAtLevel": 30.8,
+        "stamina": 24
+      },
+      "timing": {
+        "cooldown": 28.8,
+        "castTime": 2.8,
+        "duration": 6.4,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.9,
+        "aoeRadius": 1,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 0.8,
+        "stunDuration": 0.1,
+        "dotDamage": 42,
+        "dotTick": 2.1,
+        "dotDuration": 2.4
+      },
+      "animation": {
+        "castClip": "anim_FlameWall_cast",
+        "effectPrefab": "Effects/FlameWall_Lv2",
+        "impactPrefab": "Effects/FlameWall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "FlameWall_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 173,
+      "skillName": "FlameWall_Lv3",
+      "baseSkill": "FlameWall",
+      "level": 3,
+      "element": "Poison",
+      "targetType": "Splash",
+      "damage": {
+        "base": 261,
+        "atLevel": 355,
+        "scaling": "STR",
+        "scalingFactor": 0.15
+      },
+      "cost": {
+        "mana": 82,
+        "manaAtLevel": 94.3,
+        "stamina": 16
+      },
+      "timing": {
+        "cooldown": 25,
+        "castTime": 1.8,
+        "duration": 3.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.6,
+        "aoeRadius": 2.9,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 1,
+        "dotDamage": 47,
+        "dotTick": 0.8,
+        "dotDuration": 4.8
+      },
+      "animation": {
+        "castClip": "anim_FlameWall_cast",
+        "effectPrefab": "Effects/FlameWall_Lv3",
+        "impactPrefab": "Effects/FlameWall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "FlameWall_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 174,
+      "skillName": "FlameWall_Lv4",
+      "baseSkill": "FlameWall",
+      "level": 4,
+      "element": "Water",
+      "targetType": "Single",
+      "damage": {
+        "base": 340,
+        "atLevel": 503.2,
+        "scaling": "STR",
+        "scalingFactor": 0.13
+      },
+      "cost": {
+        "mana": 27,
+        "manaAtLevel": 32.4,
+        "stamina": 28
+      },
+      "timing": {
+        "cooldown": 4.6,
+        "castTime": 2.1,
+        "duration": 1.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 2.8,
+        "aoeRadius": 2.5,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 1,
+        "dotDamage": 24,
+        "dotTick": 2.9,
+        "dotDuration": 5.4
+      },
+      "animation": {
+        "castClip": "anim_FlameWall_cast",
+        "effectPrefab": "Effects/FlameWall_Lv4",
+        "impactPrefab": "Effects/FlameWall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "FlameWall_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 175,
+      "skillName": "FlameWall_Lv5",
+      "baseSkill": "FlameWall",
+      "level": 5,
+      "element": "Ice",
+      "targetType": "Self",
+      "damage": {
+        "base": 21,
+        "atLevel": 33.6,
+        "scaling": "STR",
+        "scalingFactor": 0.2
+      },
+      "cost": {
+        "mana": 53,
+        "manaAtLevel": 66.2,
+        "stamina": 16
+      },
+      "timing": {
+        "cooldown": 25.6,
+        "castTime": 1.4,
+        "duration": 7.1,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.9,
+        "aoeRadius": 1.7,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 0.2,
+        "stunDuration": 2.7,
+        "dotDamage": 28,
+        "dotTick": 0.9,
+        "dotDuration": 5.8
+      },
+      "animation": {
+        "castClip": "anim_FlameWall_cast",
+        "effectPrefab": "Effects/FlameWall_Lv5",
+        "impactPrefab": "Effects/FlameWall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "FlameWall_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 176,
+      "skillName": "FlameWall_Lv6",
+      "baseSkill": "FlameWall",
+      "level": 6,
+      "element": "Holy",
+      "targetType": "Splash",
+      "damage": {
+        "base": 481,
+        "atLevel": 827.3,
+        "scaling": "STR",
+        "scalingFactor": 0.12
+      },
+      "cost": {
+        "mana": 75,
+        "manaAtLevel": 97.5,
+        "stamina": 21
+      },
+      "timing": {
+        "cooldown": 18.7,
+        "castTime": 1.8,
+        "duration": 5.3,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.7,
+        "aoeRadius": 2,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 0.7,
+        "stunDuration": 2,
+        "dotDamage": 6,
+        "dotTick": 2.4,
+        "dotDuration": 5
+      },
+      "animation": {
+        "castClip": "anim_FlameWall_cast",
+        "effectPrefab": "Effects/FlameWall_Lv6",
+        "impactPrefab": "Effects/FlameWall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "FlameWall_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 177,
+      "skillName": "FlameWall_Lv7",
+      "baseSkill": "FlameWall",
+      "level": 7,
+      "element": "Lightning",
+      "targetType": "Line",
+      "damage": {
+        "base": 467,
+        "atLevel": 859.3,
+        "scaling": "STR",
+        "scalingFactor": 0.21
+      },
+      "cost": {
+        "mana": 74,
+        "manaAtLevel": 99.9,
+        "stamina": 13
+      },
+      "timing": {
+        "cooldown": 22.4,
+        "castTime": 0.8,
+        "duration": 3.1,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.5,
+        "aoeRadius": 2.2,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 2.7,
+        "dotDamage": 6,
+        "dotTick": 2.2,
+        "dotDuration": 1.4
+      },
+      "animation": {
+        "castClip": "anim_FlameWall_cast",
+        "effectPrefab": "Effects/FlameWall_Lv7",
+        "impactPrefab": "Effects/FlameWall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "FlameWall_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 178,
+      "skillName": "FlameWall_Lv8",
+      "baseSkill": "FlameWall",
+      "level": 8,
+      "element": "Earth",
+      "targetType": "Single",
+      "damage": {
+        "base": 430,
+        "atLevel": 842.8,
+        "scaling": "STR",
+        "scalingFactor": 0.09
+      },
+      "cost": {
+        "mana": 56,
+        "manaAtLevel": 78.4,
+        "stamina": 28
+      },
+      "timing": {
+        "cooldown": 2.7,
+        "castTime": 1.5,
+        "duration": 3.2,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.9,
+        "aoeRadius": 2.8,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.5,
+        "stunDuration": 2.6,
+        "dotDamage": 9,
+        "dotTick": 0.5,
+        "dotDuration": 3.1
+      },
+      "animation": {
+        "castClip": "anim_FlameWall_cast",
+        "effectPrefab": "Effects/FlameWall_Lv8",
+        "impactPrefab": "Effects/FlameWall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "FlameWall_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 179,
+      "skillName": "FlameWall_Lv9",
+      "baseSkill": "FlameWall",
+      "level": 9,
+      "element": "Poison",
+      "targetType": "Line",
+      "damage": {
+        "base": 173,
+        "atLevel": 359.8,
+        "scaling": "STR",
+        "scalingFactor": 0.19
+      },
+      "cost": {
+        "mana": 71,
+        "manaAtLevel": 103,
+        "stamina": 3
+      },
+      "timing": {
+        "cooldown": 16.8,
+        "castTime": 0.8,
+        "duration": 7,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.3,
+        "aoeRadius": 2.7,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0.7,
+        "stunDuration": 2.7,
+        "dotDamage": 42,
+        "dotTick": 1.8,
+        "dotDuration": 4
+      },
+      "animation": {
+        "castClip": "anim_FlameWall_cast",
+        "effectPrefab": "Effects/FlameWall_Lv9",
+        "impactPrefab": "Effects/FlameWall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "FlameWall_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 180,
+      "skillName": "FlameWall_Lv10",
+      "baseSkill": "FlameWall",
+      "level": 10,
+      "element": "Arcane",
+      "targetType": "AoE",
+      "damage": {
+        "base": 485,
+        "atLevel": 1067,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 17,
+        "manaAtLevel": 25.5,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 4.2,
+        "castTime": 2.2,
+        "duration": 3.7,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.7,
+        "aoeRadius": 2,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 0.2,
+        "stunDuration": 1.4,
+        "dotDamage": 33,
+        "dotTick": 2.2,
+        "dotDuration": 3.9
+      },
+      "animation": {
+        "castClip": "anim_FlameWall_cast",
+        "effectPrefab": "Effects/FlameWall_Lv10",
+        "impactPrefab": "Effects/FlameWall_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "FlameWall_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 181,
+      "skillName": "FrostNova_Lv1",
+      "baseSkill": "FrostNova",
+      "level": 1,
+      "element": "Dark",
+      "targetType": "AoE",
+      "damage": {
+        "base": 451,
+        "atLevel": 505.1,
+        "scaling": "STR",
+        "scalingFactor": 0.08
+      },
+      "cost": {
+        "mana": 61,
+        "manaAtLevel": 64,
+        "stamina": 10
+      },
+      "timing": {
+        "cooldown": 23.5,
+        "castTime": 2.2,
+        "duration": 2.7,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.5,
+        "aoeRadius": 2.6,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 0.5,
+        "dotDamage": 12,
+        "dotTick": 1,
+        "dotDuration": 5.1
+      },
+      "animation": {
+        "castClip": "anim_FrostNova_cast",
+        "effectPrefab": "Effects/FrostNova_Lv1",
+        "impactPrefab": "Effects/FrostNova_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 182,
+      "skillName": "FrostNova_Lv2",
+      "baseSkill": "FrostNova",
+      "level": 2,
+      "element": "Lightning",
+      "targetType": "Self",
+      "damage": {
+        "base": 314,
+        "atLevel": 389.4,
+        "scaling": "STR",
+        "scalingFactor": 0.05
+      },
+      "cost": {
+        "mana": 66,
+        "manaAtLevel": 72.6,
+        "stamina": 7
+      },
+      "timing": {
+        "cooldown": 18.4,
+        "castTime": 1.5,
+        "duration": 3.2,
+        "channeled": true
+      },
+      "area": {
+        "range": 1.6,
+        "aoeRadius": 2.6,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 0.6,
+        "stunDuration": 0.7,
+        "dotDamage": 44,
+        "dotTick": 2.6,
+        "dotDuration": 1.8
+      },
+      "animation": {
+        "castClip": "anim_FrostNova_cast",
+        "effectPrefab": "Effects/FrostNova_Lv2",
+        "impactPrefab": "Effects/FrostNova_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "FrostNova_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 183,
+      "skillName": "FrostNova_Lv3",
+      "baseSkill": "FrostNova",
+      "level": 3,
+      "element": "Earth",
+      "targetType": "Single",
+      "damage": {
+        "base": 298,
+        "atLevel": 405.3,
+        "scaling": "STR",
+        "scalingFactor": 0.12
+      },
+      "cost": {
+        "mana": 73,
+        "manaAtLevel": 83.9,
+        "stamina": 8
+      },
+      "timing": {
+        "cooldown": 12,
+        "castTime": 2.8,
+        "duration": 4.5,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.5,
+        "aoeRadius": 2.7,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 0.9,
+        "stunDuration": 2.9,
+        "dotDamage": 0,
+        "dotTick": 0.6,
+        "dotDuration": 4.1
+      },
+      "animation": {
+        "castClip": "anim_FrostNova_cast",
+        "effectPrefab": "Effects/FrostNova_Lv3",
+        "impactPrefab": "Effects/FrostNova_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "FrostNova_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 184,
+      "skillName": "FrostNova_Lv4",
+      "baseSkill": "FrostNova",
+      "level": 4,
+      "element": "Dark",
+      "targetType": "Chain",
+      "damage": {
+        "base": 138,
+        "atLevel": 204.2,
+        "scaling": "STR",
+        "scalingFactor": 0.16
+      },
+      "cost": {
+        "mana": 64,
+        "manaAtLevel": 76.8,
+        "stamina": 5
+      },
+      "timing": {
+        "cooldown": 19.8,
+        "castTime": 0.5,
+        "duration": 4,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.5,
+        "aoeRadius": 1.6,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 0.7,
+        "dotDamage": 12,
+        "dotTick": 1.3,
+        "dotDuration": 3.6
+      },
+      "animation": {
+        "castClip": "anim_FrostNova_cast",
+        "effectPrefab": "Effects/FrostNova_Lv4",
+        "impactPrefab": "Effects/FrostNova_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "FrostNova_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 185,
+      "skillName": "FrostNova_Lv5",
+      "baseSkill": "FrostNova",
+      "level": 5,
+      "element": "Ice",
+      "targetType": "Chain",
+      "damage": {
+        "base": 281,
+        "atLevel": 449.6,
+        "scaling": "STR",
+        "scalingFactor": 0.18
+      },
+      "cost": {
+        "mana": 60,
+        "manaAtLevel": 75,
+        "stamina": 15
+      },
+      "timing": {
+        "cooldown": 23.4,
+        "castTime": 0.1,
+        "duration": 6.2,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.3,
+        "aoeRadius": 1.9,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.6,
+        "stunDuration": 2.8,
+        "dotDamage": 32,
+        "dotTick": 0.6,
+        "dotDuration": 2.7
+      },
+      "animation": {
+        "castClip": "anim_FrostNova_cast",
+        "effectPrefab": "Effects/FrostNova_Lv5",
+        "impactPrefab": "Effects/FrostNova_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "FrostNova_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 186,
+      "skillName": "FrostNova_Lv6",
+      "baseSkill": "FrostNova",
+      "level": 6,
+      "element": "Wind",
+      "targetType": "Chain",
+      "damage": {
+        "base": 295,
+        "atLevel": 507.4,
+        "scaling": "STR",
+        "scalingFactor": 0.2
+      },
+      "cost": {
+        "mana": 83,
+        "manaAtLevel": 107.9,
+        "stamina": 2
+      },
+      "timing": {
+        "cooldown": 2.6,
+        "castTime": 2.8,
+        "duration": 3.3,
+        "channeled": false
+      },
+      "area": {
+        "range": 0.5,
+        "aoeRadius": 1.2,
+        "maxTargets": 9
+      },
+      "effects": {
+        "knockback": 1.1,
+        "stunDuration": 1.4,
+        "dotDamage": 43,
+        "dotTick": 0.6,
+        "dotDuration": 5.6
+      },
+      "animation": {
+        "castClip": "anim_FrostNova_cast",
+        "effectPrefab": "Effects/FrostNova_Lv6",
+        "impactPrefab": "Effects/FrostNova_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "FrostNova_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 187,
+      "skillName": "FrostNova_Lv7",
+      "baseSkill": "FrostNova",
+      "level": 7,
+      "element": "Dark",
+      "targetType": "Self",
+      "damage": {
+        "base": 51,
+        "atLevel": 93.8,
+        "scaling": "STR",
+        "scalingFactor": 0.09
+      },
+      "cost": {
+        "mana": 82,
+        "manaAtLevel": 110.7,
+        "stamina": 28
+      },
+      "timing": {
+        "cooldown": 22.2,
+        "castTime": 1.5,
+        "duration": 2.5,
+        "channeled": true
+      },
+      "area": {
+        "range": 1,
+        "aoeRadius": 0.5,
+        "maxTargets": 4
+      },
+      "effects": {
+        "knockback": 1.8,
+        "stunDuration": 2,
+        "dotDamage": 40,
+        "dotTick": 0.9,
+        "dotDuration": 1.6
+      },
+      "animation": {
+        "castClip": "anim_FrostNova_cast",
+        "effectPrefab": "Effects/FrostNova_Lv7",
+        "impactPrefab": "Effects/FrostNova_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "FrostNova_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 188,
+      "skillName": "FrostNova_Lv8",
+      "baseSkill": "FrostNova",
+      "level": 8,
+      "element": "Fire",
+      "targetType": "AoE",
+      "damage": {
+        "base": 79,
+        "atLevel": 154.8,
+        "scaling": "STR",
+        "scalingFactor": 0.22
+      },
+      "cost": {
+        "mana": 78,
+        "manaAtLevel": 109.2,
+        "stamina": 26
+      },
+      "timing": {
+        "cooldown": 8.8,
+        "castTime": 1.4,
+        "duration": 5.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.3,
+        "aoeRadius": 2.8,
+        "maxTargets": 3
+      },
+      "effects": {
+        "knockback": 0.3,
+        "stunDuration": 0,
+        "dotDamage": 46,
+        "dotTick": 0.9,
+        "dotDuration": 3
+      },
+      "animation": {
+        "castClip": "anim_FrostNova_cast",
+        "effectPrefab": "Effects/FrostNova_Lv8",
+        "impactPrefab": "Effects/FrostNova_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "FrostNova_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 189,
+      "skillName": "FrostNova_Lv9",
+      "baseSkill": "FrostNova",
+      "level": 9,
+      "element": "Dark",
+      "targetType": "Single",
+      "damage": {
+        "base": 282,
+        "atLevel": 586.6,
+        "scaling": "STR",
+        "scalingFactor": 0.06
+      },
+      "cost": {
+        "mana": 34,
+        "manaAtLevel": 49.3,
+        "stamina": 6
+      },
+      "timing": {
+        "cooldown": 2.8,
+        "castTime": 1.8,
+        "duration": 3.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.7,
+        "aoeRadius": 0.9,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 1.6,
+        "dotDamage": 15,
+        "dotTick": 1.8,
+        "dotDuration": 5.8
+      },
+      "animation": {
+        "castClip": "anim_FrostNova_cast",
+        "effectPrefab": "Effects/FrostNova_Lv9",
+        "impactPrefab": "Effects/FrostNova_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "FrostNova_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 190,
+      "skillName": "FrostNova_Lv10",
+      "baseSkill": "FrostNova",
+      "level": 10,
+      "element": "Lightning",
+      "targetType": "Single",
+      "damage": {
+        "base": 214,
+        "atLevel": 470.8,
+        "scaling": "STR",
+        "scalingFactor": 0.1
+      },
+      "cost": {
+        "mana": 77,
+        "manaAtLevel": 115.5,
+        "stamina": 18
+      },
+      "timing": {
+        "cooldown": 6.8,
+        "castTime": 2.6,
+        "duration": 1.2,
+        "channeled": true
+      },
+      "area": {
+        "range": 0.8,
+        "aoeRadius": 1.2,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1,
+        "stunDuration": 0.2,
+        "dotDamage": 40,
+        "dotTick": 0.5,
+        "dotDuration": 2.7
+      },
+      "animation": {
+        "castClip": "anim_FrostNova_cast",
+        "effectPrefab": "Effects/FrostNova_Lv10",
+        "impactPrefab": "Effects/FrostNova_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "FrostNova_Lv9"
+      }
+    }
+    ,
+    {
+      "skillId": 191,
+      "skillName": "SoulRip_Lv1",
+      "baseSkill": "SoulRip",
+      "level": 1,
+      "element": "Lightning",
+      "targetType": "Line",
+      "damage": {
+        "base": 385,
+        "atLevel": 431.2,
+        "scaling": "STR",
+        "scalingFactor": 0.11
+      },
+      "cost": {
+        "mana": 9,
+        "manaAtLevel": 9.5,
+        "stamina": 2
+      },
+      "timing": {
+        "cooldown": 26.4,
+        "castTime": 0.7,
+        "duration": 3.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 0.8,
+        "aoeRadius": 1.8,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0.3,
+        "stunDuration": 2.5,
+        "dotDamage": 7,
+        "dotTick": 1.4,
+        "dotDuration": 5.4
+      },
+      "animation": {
+        "castClip": "anim_SoulRip_cast",
+        "effectPrefab": "Effects/SoulRip_Lv1",
+        "impactPrefab": "Effects/SoulRip_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 1,
+        "prerequisiteSkill": ""
+      }
+    }
+    ,
+    {
+      "skillId": 192,
+      "skillName": "SoulRip_Lv2",
+      "baseSkill": "SoulRip",
+      "level": 2,
+      "element": "Wind",
+      "targetType": "Self",
+      "damage": {
+        "base": 230,
+        "atLevel": 285.2,
+        "scaling": "STR",
+        "scalingFactor": 0.05
+      },
+      "cost": {
+        "mana": 89,
+        "manaAtLevel": 97.9,
+        "stamina": 19
+      },
+      "timing": {
+        "cooldown": 6,
+        "castTime": 2.5,
+        "duration": 1.8,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.2,
+        "aoeRadius": 1.7,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 1.7,
+        "stunDuration": 2.5,
+        "dotDamage": 37,
+        "dotTick": 1.5,
+        "dotDuration": 2.4
+      },
+      "animation": {
+        "castClip": "anim_SoulRip_cast",
+        "effectPrefab": "Effects/SoulRip_Lv2",
+        "impactPrefab": "Effects/SoulRip_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 4,
+        "prerequisiteSkill": "SoulRip_Lv1"
+      }
+    }
+    ,
+    {
+      "skillId": 193,
+      "skillName": "SoulRip_Lv3",
+      "baseSkill": "SoulRip",
+      "level": 3,
+      "element": "Ice",
+      "targetType": "Splash",
+      "damage": {
+        "base": 480,
+        "atLevel": 652.8,
+        "scaling": "STR",
+        "scalingFactor": 0.07
+      },
+      "cost": {
+        "mana": 66,
+        "manaAtLevel": 75.9,
+        "stamina": 11
+      },
+      "timing": {
+        "cooldown": 2.7,
+        "castTime": 1.9,
+        "duration": 6.2,
+        "channeled": false
+      },
+      "area": {
+        "range": 3.5,
+        "aoeRadius": 2.6,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 0.1,
+        "stunDuration": 0.8,
+        "dotDamage": 29,
+        "dotTick": 1.8,
+        "dotDuration": 3.3
+      },
+      "animation": {
+        "castClip": "anim_SoulRip_cast",
+        "effectPrefab": "Effects/SoulRip_Lv3",
+        "impactPrefab": "Effects/SoulRip_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 7,
+        "prerequisiteSkill": "SoulRip_Lv2"
+      }
+    }
+    ,
+    {
+      "skillId": 194,
+      "skillName": "SoulRip_Lv4",
+      "baseSkill": "SoulRip",
+      "level": 4,
+      "element": "Earth",
+      "targetType": "Self",
+      "damage": {
+        "base": 366,
+        "atLevel": 541.7,
+        "scaling": "STR",
+        "scalingFactor": 0.07
+      },
+      "cost": {
+        "mana": 60,
+        "manaAtLevel": 72,
+        "stamina": 3
+      },
+      "timing": {
+        "cooldown": 7.7,
+        "castTime": 0.6,
+        "duration": 0.5,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.7,
+        "aoeRadius": 0.4,
+        "maxTargets": 8
+      },
+      "effects": {
+        "knockback": 0.7,
+        "stunDuration": 1.8,
+        "dotDamage": 23,
+        "dotTick": 0.8,
+        "dotDuration": 1.3
+      },
+      "animation": {
+        "castClip": "anim_SoulRip_cast",
+        "effectPrefab": "Effects/SoulRip_Lv4",
+        "impactPrefab": "Effects/SoulRip_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 10,
+        "prerequisiteSkill": "SoulRip_Lv3"
+      }
+    }
+    ,
+    {
+      "skillId": 195,
+      "skillName": "SoulRip_Lv5",
+      "baseSkill": "SoulRip",
+      "level": 5,
+      "element": "Dark",
+      "targetType": "Splash",
+      "damage": {
+        "base": 240,
+        "atLevel": 384,
+        "scaling": "STR",
+        "scalingFactor": 0.1
+      },
+      "cost": {
+        "mana": 5,
+        "manaAtLevel": 6.2,
+        "stamina": 3
+      },
+      "timing": {
+        "cooldown": 13,
+        "castTime": 1.9,
+        "duration": 3.7,
+        "channeled": true
+      },
+      "area": {
+        "range": 3.4,
+        "aoeRadius": 2.2,
+        "maxTargets": 6
+      },
+      "effects": {
+        "knockback": 1.9,
+        "stunDuration": 0.5,
+        "dotDamage": 35,
+        "dotTick": 1.4,
+        "dotDuration": 1.6
+      },
+      "animation": {
+        "castClip": "anim_SoulRip_cast",
+        "effectPrefab": "Effects/SoulRip_Lv5",
+        "impactPrefab": "Effects/SoulRip_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 13,
+        "prerequisiteSkill": "SoulRip_Lv4"
+      }
+    }
+    ,
+    {
+      "skillId": 196,
+      "skillName": "SoulRip_Lv6",
+      "baseSkill": "SoulRip",
+      "level": 6,
+      "element": "Ice",
+      "targetType": "Splash",
+      "damage": {
+        "base": 111,
+        "atLevel": 190.9,
+        "scaling": "STR",
+        "scalingFactor": 0.23
+      },
+      "cost": {
+        "mana": 32,
+        "manaAtLevel": 41.6,
+        "stamina": 23
+      },
+      "timing": {
+        "cooldown": 8.6,
+        "castTime": 2.8,
+        "duration": 2,
+        "channeled": false
+      },
+      "area": {
+        "range": 2.5,
+        "aoeRadius": 2.3,
+        "maxTargets": 7
+      },
+      "effects": {
+        "knockback": 0.7,
+        "stunDuration": 2.4,
+        "dotDamage": 49,
+        "dotTick": 1,
+        "dotDuration": 5.7
+      },
+      "animation": {
+        "castClip": "anim_SoulRip_cast",
+        "effectPrefab": "Effects/SoulRip_Lv6",
+        "impactPrefab": "Effects/SoulRip_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 16,
+        "prerequisiteSkill": "SoulRip_Lv5"
+      }
+    }
+    ,
+    {
+      "skillId": 197,
+      "skillName": "SoulRip_Lv7",
+      "baseSkill": "SoulRip",
+      "level": 7,
+      "element": "Holy",
+      "targetType": "AoE",
+      "damage": {
+        "base": 78,
+        "atLevel": 143.5,
+        "scaling": "STR",
+        "scalingFactor": 0.17
+      },
+      "cost": {
+        "mana": 10,
+        "manaAtLevel": 13.5,
+        "stamina": 10
+      },
+      "timing": {
+        "cooldown": 28.5,
+        "castTime": 0.2,
+        "duration": 5.8,
+        "channeled": true
+      },
+      "area": {
+        "range": 4.2,
+        "aoeRadius": 0.3,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.5,
+        "stunDuration": 1.7,
+        "dotDamage": 48,
+        "dotTick": 1.4,
+        "dotDuration": 1.4
+      },
+      "animation": {
+        "castClip": "anim_SoulRip_cast",
+        "effectPrefab": "Effects/SoulRip_Lv7",
+        "impactPrefab": "Effects/SoulRip_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 19,
+        "prerequisiteSkill": "SoulRip_Lv6"
+      }
+    }
+    ,
+    {
+      "skillId": 198,
+      "skillName": "SoulRip_Lv8",
+      "baseSkill": "SoulRip",
+      "level": 8,
+      "element": "Poison",
+      "targetType": "Single",
+      "damage": {
+        "base": 272,
+        "atLevel": 533.1,
+        "scaling": "STR",
+        "scalingFactor": 0.12
+      },
+      "cost": {
+        "mana": 68,
+        "manaAtLevel": 95.2,
+        "stamina": 17
+      },
+      "timing": {
+        "cooldown": 6.5,
+        "castTime": 1.6,
+        "duration": 7.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 4.7,
+        "aoeRadius": 0.9,
+        "maxTargets": 1
+      },
+      "effects": {
+        "knockback": 1.2,
+        "stunDuration": 2.5,
+        "dotDamage": 45,
+        "dotTick": 2.9,
+        "dotDuration": 3.9
+      },
+      "animation": {
+        "castClip": "anim_SoulRip_cast",
+        "effectPrefab": "Effects/SoulRip_Lv8",
+        "impactPrefab": "Effects/SoulRip_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 22,
+        "prerequisiteSkill": "SoulRip_Lv7"
+      }
+    }
+    ,
+    {
+      "skillId": 199,
+      "skillName": "SoulRip_Lv9",
+      "baseSkill": "SoulRip",
+      "level": 9,
+      "element": "Fire",
+      "targetType": "AoE",
+      "damage": {
+        "base": 378,
+        "atLevel": 786.2,
+        "scaling": "STR",
+        "scalingFactor": 0.09
+      },
+      "cost": {
+        "mana": 36,
+        "manaAtLevel": 52.2,
+        "stamina": 20
+      },
+      "timing": {
+        "cooldown": 22.3,
+        "castTime": 2.6,
+        "duration": 3.6,
+        "channeled": false
+      },
+      "area": {
+        "range": 1.7,
+        "aoeRadius": 1.6,
+        "maxTargets": 5
+      },
+      "effects": {
+        "knockback": 0.4,
+        "stunDuration": 0.7,
+        "dotDamage": 16,
+        "dotTick": 2.9,
+        "dotDuration": 4.2
+      },
+      "animation": {
+        "castClip": "anim_SoulRip_cast",
+        "effectPrefab": "Effects/SoulRip_Lv9",
+        "impactPrefab": "Effects/SoulRip_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 25,
+        "prerequisiteSkill": "SoulRip_Lv8"
+      }
+    }
+    ,
+    {
+      "skillId": 200,
+      "skillName": "SoulRip_Lv10",
+      "baseSkill": "SoulRip",
+      "level": 10,
+      "element": "Water",
+      "targetType": "AoE",
+      "damage": {
+        "base": 32,
+        "atLevel": 70.4,
+        "scaling": "STR",
+        "scalingFactor": 0.13
+      },
+      "cost": {
+        "mana": 90,
+        "manaAtLevel": 135,
+        "stamina": 28
+      },
+      "timing": {
+        "cooldown": 3,
+        "castTime": 1.7,
+        "duration": 2.4,
+        "channeled": true
+      },
+      "area": {
+        "range": 0.7,
+        "aoeRadius": 1.2,
+        "maxTargets": 2
+      },
+      "effects": {
+        "knockback": 1.3,
+        "stunDuration": 1.8,
+        "dotDamage": 14,
+        "dotTick": 0.9,
+        "dotDuration": 3.3
+      },
+      "animation": {
+        "castClip": "anim_SoulRip_cast",
+        "effectPrefab": "Effects/SoulRip_Lv10",
+        "impactPrefab": "Effects/SoulRip_impact"
+      },
+      "unlockRequirement": {
+        "playerLevel": 28,
+        "prerequisiteSkill": "SoulRip_Lv9"
+      }
+    }
   ]
 }
