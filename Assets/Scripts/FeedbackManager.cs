@@ -24,7 +24,10 @@ public class FeedbackManager : MonoBehaviour
     public string firebaseUrl = "https://swd-6c4c4-default-rtdb.firebaseio.com/";
 
     [Tooltip("Google Form POST URL. Example: https://docs.google.com/forms/d/e/1FAIpQLSf.../formResponse")]
-    public string googleFormUrl = "";
+    public string googleFormUrl = "https://docs.google.com/forms/d/1OX2LV8CJ76GPV_cgY68rUU0i-yddJ-rnlNRN1zImR6s/formResponse";
+
+    [Tooltip("Google Sheet Sharing URL (Must be set to 'Anyone with the link can view').")]
+    public string googleSheetUrl = "";
 
     [Header("Supabase Configuration")]
     [Tooltip("Supabase Project URL (Auto-loaded from StreamingAssets/supabase_config.json at runtime).")]
@@ -34,11 +37,11 @@ public class FeedbackManager : MonoBehaviour
 
     [Header("Google Form Entry IDs (Only if using Google Form)")]
     [Tooltip("Google Form Entry ID for Player Name (e.g. entry.123456789)")]
-    public string nameEntryId = "entry.1000001";
+    public string nameEntryId = "entry.1283144979";
     [Tooltip("Google Form Entry ID for Rating (e.g. entry.2000002)")]
-    public string ratingEntryId = "entry.1000002";
+    public string ratingEntryId = "entry.543443759";
     [Tooltip("Google Form Entry ID for Feedback Message (e.g. entry.3000003)")]
-    public string feedbackEntryId = "entry.1000003";
+    public string feedbackEntryId = "entry.2042246276";
     [Tooltip("Google Form Entry ID for Device/Install Event (e.g. entry.4000004)")]
     public string installEventEntryId = "entry.1000004";
 
@@ -643,6 +646,47 @@ public class FeedbackManager : MonoBehaviour
                         if (totalInstallsText != null)
                         {
                             totalInstallsText.text = "Downloads: " + totalInstalls;
+                        }
+                    }
+                }
+            }
+        }
+        else if (databaseType == DatabaseType.GoogleFormPOST && !string.IsNullOrEmpty(googleSheetUrl))
+        {
+            string url = googleSheetUrl.Trim();
+            if (url.Contains("/d/"))
+            {
+                int startIndex = url.IndexOf("/d/") + 3;
+                int endIndex = url.IndexOf("/", startIndex);
+                if (endIndex != -1)
+                {
+                    string sheetId = url.Substring(startIndex, endIndex - startIndex);
+                    string csvUrl = "https://docs.google.com/spreadsheets/d/" + sheetId + "/export?format=csv";
+
+                    using (UnityWebRequest request = UnityWebRequest.Get(csvUrl))
+                    {
+                        yield return request.SendWebRequest();
+
+                        if (request.result == UnityWebRequest.Result.Success)
+                        {
+                            string csvText = request.downloadHandler.text;
+                            if (!string.IsNullOrEmpty(csvText))
+                            {
+                                int count = 0;
+                                string[] lines = csvText.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                                foreach (string line in lines)
+                                {
+                                    if (line.Contains("INSTALL_EVENT"))
+                                    {
+                                        count++;
+                                    }
+                                }
+                                totalInstalls = Mathf.Max(1, count);
+                                if (totalInstallsText != null)
+                                {
+                                    totalInstallsText.text = "Downloads: " + totalInstalls;
+                                }
+                            }
                         }
                     }
                 }
