@@ -7498,5 +7498,5061 @@
     ,
     {
       "dialogueId": "dlg_Witch_1",
+      "speaker": "Witch",
+      "context": "Combat",
+      "priority": 7,
+      "triggerCondition": "condition_Witch_1",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 1. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_1_0",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2.1
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 1. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_1_1",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 4
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 1. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_1_2",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 1. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_1_3",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 3.3
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 1. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_1_4",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 5,
+          "text": "Witch dialogue line 5 of conversation 1. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Witch_1_5",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 1.5
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 1",
+          "nextDialogueId": "dlg_Witch_2",
+          "consequence": "consequence_Witch_1_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 1",
+          "nextDialogueId": "dlg_Witch_2",
+          "consequence": "consequence_Witch_1_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_2",
+      "speaker": "Witch",
+      "context": "Quest",
+      "priority": 1,
+      "triggerCondition": "condition_Witch_2",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 2. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Witch_2_0",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 4.2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 2. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Witch_2_1",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 4.1
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 2. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Witch_2_2",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 2. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_2_3",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 2. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_2_4",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 5,
+          "text": "Witch dialogue line 5 of conversation 2. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_2_5",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 1.6
+        },
+        {
+          "lineIndex": 6,
+          "text": "Witch dialogue line 6 of conversation 2. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_2_6",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 4
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_3",
+      "speaker": "Witch",
+      "context": "Cutscene",
+      "priority": 6,
+      "triggerCondition": "condition_Witch_3",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 3. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_3_0",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 1.6
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 3. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_3_1",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 3. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_3_2",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 3. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_3_3",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 2.1
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 3. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Witch_3_4",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 5,
+          "text": "Witch dialogue line 5 of conversation 3. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_3_5",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_4",
+      "speaker": "Witch",
+      "context": "Ambient",
+      "priority": 8,
+      "triggerCondition": "condition_Witch_4",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 4. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_4_0",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.8
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 4. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_4_1",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 1.7
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 4. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_4_2",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 4. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_4_3",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 4. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Witch_4_4",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 2.4
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 4",
+          "nextDialogueId": "dlg_Witch_5",
+          "consequence": "consequence_Witch_4_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 4",
+          "nextDialogueId": "dlg_Witch_5",
+          "consequence": "consequence_Witch_4_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_5",
+      "speaker": "Witch",
+      "context": "Shop",
+      "priority": 5,
+      "triggerCondition": "condition_Witch_5",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 5. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_5_0",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 2.8
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 5. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_5_1",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 4.2
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 5. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_5_2",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 4.3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 5. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Witch_5_3",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 3.7
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 5. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Witch_5_4",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.1
+        },
+        {
+          "lineIndex": 5,
+          "text": "Witch dialogue line 5 of conversation 5. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Witch_5_5",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 4
+        },
+        {
+          "lineIndex": 6,
+          "text": "Witch dialogue line 6 of conversation 5. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Witch_5_6",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 1.5
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_6",
+      "speaker": "Witch",
+      "context": "Quest",
+      "priority": 9,
+      "triggerCondition": "condition_Witch_6",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 6. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_6_0",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 1.7
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 6. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_6_1",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 1.9
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 6. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_6_2",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 6. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Witch_6_3",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4.6
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 6. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_6_4",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 4.2
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_7",
+      "speaker": "Witch",
+      "context": "Shop",
+      "priority": 7,
+      "triggerCondition": "condition_Witch_7",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 7. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Witch_7_0",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 7. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_7_1",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 7. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_7_2",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 2.2
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 7",
+          "nextDialogueId": "dlg_Witch_8",
+          "consequence": "consequence_Witch_7_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_8",
+      "speaker": "Witch",
+      "context": "Shop",
+      "priority": 2,
+      "triggerCondition": "condition_Witch_8",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 8. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_8_0",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.9
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 8. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_8_1",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 3.9
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 8. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_8_2",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 8. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_8_3",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 8. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_8_4",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 3.8
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_9",
+      "speaker": "Witch",
+      "context": "Shop",
+      "priority": 8,
+      "triggerCondition": "condition_Witch_9",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 9. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_9_0",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 4.3
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 9. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_9_1",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3.1
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 9. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_9_2",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 9. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_9_3",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 4
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 9",
+          "nextDialogueId": "dlg_Witch_10",
+          "consequence": "consequence_Witch_9_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_10",
+      "speaker": "Witch",
+      "context": "Quest",
+      "priority": 6,
+      "triggerCondition": "condition_Witch_10",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 10. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_10_0",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 4.8
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 10. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Witch_10_1",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 10. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_10_2",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 4.9
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 10. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_10_3",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 1.7
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 10. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_10_4",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 4.4
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 10",
+          "nextDialogueId": "dlg_Witch_11",
+          "consequence": "consequence_Witch_10_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 10",
+          "nextDialogueId": "dlg_Witch_11",
+          "consequence": "consequence_Witch_10_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_11",
+      "speaker": "Witch",
+      "context": "Quest",
+      "priority": 8,
+      "triggerCondition": "condition_Witch_11",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 11. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_11_0",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 11. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_11_1",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 11. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_11_2",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 3.8
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 11. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_11_3",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 1.9
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 11. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_11_4",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 3.1
+        },
+        {
+          "lineIndex": 5,
+          "text": "Witch dialogue line 5 of conversation 11. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_11_5",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 6,
+          "text": "Witch dialogue line 6 of conversation 11. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Witch_11_6",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 1.8
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 11",
+          "nextDialogueId": "dlg_Witch_12",
+          "consequence": "consequence_Witch_11_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 11",
+          "nextDialogueId": "dlg_Witch_12",
+          "consequence": "consequence_Witch_11_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_12",
+      "speaker": "Witch",
+      "context": "Ambient",
+      "priority": 3,
+      "triggerCondition": "condition_Witch_12",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 12. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_12_0",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.3
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 12. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_12_1",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 3.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 12. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_12_2",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 4.4
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 12. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_12_3",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3.5
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 12",
+          "nextDialogueId": "dlg_Witch_13",
+          "consequence": "consequence_Witch_12_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_13",
+      "speaker": "Witch",
+      "context": "Quest",
+      "priority": 4,
+      "triggerCondition": "condition_Witch_13",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 13. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_13_0",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 2.8
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 13. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_13_1",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 4
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 13. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_13_2",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4.1
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_14",
+      "speaker": "Witch",
+      "context": "Shop",
+      "priority": 1,
+      "triggerCondition": "condition_Witch_14",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 14. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_14_0",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 3.3
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 14. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Witch_14_1",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 4
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 14. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_14_2",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 14. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_14_3",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 4.7
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 14. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_14_4",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 2.8
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 14",
+          "nextDialogueId": "dlg_Witch_15",
+          "consequence": "consequence_Witch_14_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 14",
+          "nextDialogueId": "dlg_Witch_15",
+          "consequence": "consequence_Witch_14_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_15",
+      "speaker": "Witch",
+      "context": "Ambient",
+      "priority": 6,
+      "triggerCondition": "condition_Witch_15",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 15. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_15_0",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 1.5
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 15. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_15_1",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 15. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_15_2",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 15. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_15_3",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 15. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_15_4",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 5,
+          "text": "Witch dialogue line 5 of conversation 15. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_15_5",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 6,
+          "text": "Witch dialogue line 6 of conversation 15. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_15_6",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 2.2
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_16",
+      "speaker": "Witch",
+      "context": "Cutscene",
+      "priority": 7,
+      "triggerCondition": "condition_Witch_16",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 16. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_16_0",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 2.6
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 16. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_16_1",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 3.3
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 16. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Witch_16_2",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 4
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 16. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_16_3",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.6
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 16. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_16_4",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3.9
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_17",
+      "speaker": "Witch",
+      "context": "Ambient",
+      "priority": 1,
+      "triggerCondition": "condition_Witch_17",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 17. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_17_0",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 17. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_17_1",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 17. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_17_2",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 4.9
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 17",
+          "nextDialogueId": "dlg_Witch_18",
+          "consequence": "consequence_Witch_17_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_18",
+      "speaker": "Witch",
+      "context": "Shop",
+      "priority": 8,
+      "triggerCondition": "condition_Witch_18",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 18. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_18_0",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 3.1
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 18. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Witch_18_1",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 18. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_18_2",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 1.8
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 18. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Witch_18_3",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 1.9
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 18. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Witch_18_4",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 5,
+          "text": "Witch dialogue line 5 of conversation 18. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Witch_18_5",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 2.9
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 18",
+          "nextDialogueId": "dlg_Witch_19",
+          "consequence": "consequence_Witch_18_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 18",
+          "nextDialogueId": "dlg_Witch_19",
+          "consequence": "consequence_Witch_18_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Witch_19",
+      "speaker": "Witch",
+      "context": "Cutscene",
+      "priority": 9,
+      "triggerCondition": "condition_Witch_19",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Witch dialogue line 0 of conversation 19. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Witch_19_0",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 1,
+          "text": "Witch dialogue line 1 of conversation 19. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Witch_19_1",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.2
+        },
+        {
+          "lineIndex": 2,
+          "text": "Witch dialogue line 2 of conversation 19. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Witch_19_2",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2.1
+        },
+        {
+          "lineIndex": 3,
+          "text": "Witch dialogue line 3 of conversation 19. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Witch_19_3",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 4,
+          "text": "Witch dialogue line 4 of conversation 19. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Witch_19_4",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 5,
+          "text": "Witch dialogue line 5 of conversation 19. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Witch_19_5",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 2.3
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 19",
+          "nextDialogueId": "dlg_Witch_19",
+          "consequence": "consequence_Witch_19_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 19",
+          "nextDialogueId": "dlg_Witch_19",
+          "consequence": "consequence_Witch_19_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_0",
+      "speaker": "Elder",
+      "context": "Ambient",
+      "priority": 4,
+      "triggerCondition": "condition_Elder_0",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 0. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Elder_0_0",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 1.8
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 0. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_0_1",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 1.7
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 0. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_0_2",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 1.5
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_1",
+      "speaker": "Elder",
+      "context": "Shop",
+      "priority": 2,
+      "triggerCondition": "condition_Elder_1",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 1. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_1_0",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 1. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Elder_1_1",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 4.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 1. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_1_2",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 4.6
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 1. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_1_3",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3.1
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 1. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_1_4",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4.9
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_2",
+      "speaker": "Elder",
+      "context": "Combat",
+      "priority": 4,
+      "triggerCondition": "condition_Elder_2",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 2. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_2_0",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 2. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_2_1",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 2. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_2_2",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 1.9
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 2. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_2_3",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.9
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 2. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_2_4",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 4.3
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 2",
+          "nextDialogueId": "dlg_Elder_3",
+          "consequence": "consequence_Elder_2_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 2",
+          "nextDialogueId": "dlg_Elder_3",
+          "consequence": "consequence_Elder_2_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_3",
+      "speaker": "Elder",
+      "context": "Quest",
+      "priority": 9,
+      "triggerCondition": "condition_Elder_3",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 3. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_3_0",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 4.7
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 3. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_3_1",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 2.1
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 3. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Elder_3_2",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2.1
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 3. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Elder_3_3",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 3. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_3_4",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 1.8
+        },
+        {
+          "lineIndex": 5,
+          "text": "Elder dialogue line 5 of conversation 3. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_3_5",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 4.9
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_4",
+      "speaker": "Elder",
+      "context": "Cutscene",
+      "priority": 3,
+      "triggerCondition": "condition_Elder_4",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 4. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_4_0",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 3.7
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 4. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_4_1",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 1.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 4. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Elder_4_2",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 4. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_4_3",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.1
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 4. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_4_4",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 4.5
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 4",
+          "nextDialogueId": "dlg_Elder_5",
+          "consequence": "consequence_Elder_4_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_5",
+      "speaker": "Elder",
+      "context": "Combat",
+      "priority": 2,
+      "triggerCondition": "condition_Elder_5",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 5. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_5_0",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 5. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_5_1",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 1.7
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 5. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Elder_5_2",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 5. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Elder_5_3",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 3.8
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 5. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Elder_5_4",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 1.6
+        },
+        {
+          "lineIndex": 5,
+          "text": "Elder dialogue line 5 of conversation 5. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_5_5",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 2.2
+        },
+        {
+          "lineIndex": 6,
+          "text": "Elder dialogue line 6 of conversation 5. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_5_6",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 3.9
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 5",
+          "nextDialogueId": "dlg_Elder_6",
+          "consequence": "consequence_Elder_5_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_6",
+      "speaker": "Elder",
+      "context": "Ambient",
+      "priority": 6,
+      "triggerCondition": "condition_Elder_6",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 6. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_6_0",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 6. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_6_1",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 3.8
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 6. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_6_2",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 4.4
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 6. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_6_3",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4.4
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 6. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_6_4",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 2.8
+        },
+        {
+          "lineIndex": 5,
+          "text": "Elder dialogue line 5 of conversation 6. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_6_5",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 4.3
+        },
+        {
+          "lineIndex": 6,
+          "text": "Elder dialogue line 6 of conversation 6. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_6_6",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 3.9
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 6",
+          "nextDialogueId": "dlg_Elder_7",
+          "consequence": "consequence_Elder_6_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_7",
+      "speaker": "Elder",
+      "context": "Shop",
+      "priority": 8,
+      "triggerCondition": "condition_Elder_7",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 7. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_7_0",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 7. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_7_1",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 4.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 7. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_7_2",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3.3
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 7",
+          "nextDialogueId": "dlg_Elder_8",
+          "consequence": "consequence_Elder_7_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 7",
+          "nextDialogueId": "dlg_Elder_8",
+          "consequence": "consequence_Elder_7_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_8",
+      "speaker": "Elder",
+      "context": "Quest",
+      "priority": 2,
+      "triggerCondition": "condition_Elder_8",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 8. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_8_0",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 1.9
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 8. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Elder_8_1",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 8. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Elder_8_2",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 8. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_8_3",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 3.4
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_9",
+      "speaker": "Elder",
+      "context": "Shop",
+      "priority": 4,
+      "triggerCondition": "condition_Elder_9",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 9. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_9_0",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2.6
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 9. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_9_1",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 1.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 9. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_9_2",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 1.6
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 9. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_9_3",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 9. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Elder_9_4",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2.8
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 9",
+          "nextDialogueId": "dlg_Elder_10",
+          "consequence": "consequence_Elder_9_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 9",
+          "nextDialogueId": "dlg_Elder_10",
+          "consequence": "consequence_Elder_9_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_10",
+      "speaker": "Elder",
+      "context": "Cutscene",
+      "priority": 6,
+      "triggerCondition": "condition_Elder_10",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 10. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_10_0",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 10. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_10_1",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 4.7
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 10. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Elder_10_2",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 4.8
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 10. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Elder_10_3",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 10. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_10_4",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 3.5
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 10",
+          "nextDialogueId": "dlg_Elder_11",
+          "consequence": "consequence_Elder_10_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 10",
+          "nextDialogueId": "dlg_Elder_11",
+          "consequence": "consequence_Elder_10_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_11",
+      "speaker": "Elder",
+      "context": "Quest",
+      "priority": 8,
+      "triggerCondition": "condition_Elder_11",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 11. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_11_0",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 11. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_11_1",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 11. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_11_2",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 11. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_11_3",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 11. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Elder_11_4",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 3.8
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 11",
+          "nextDialogueId": "dlg_Elder_12",
+          "consequence": "consequence_Elder_11_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_12",
+      "speaker": "Elder",
+      "context": "Quest",
+      "priority": 8,
+      "triggerCondition": "condition_Elder_12",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 12. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_12_0",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 2.1
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 12. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_12_1",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 12. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Elder_12_2",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 3.5
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 12. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_12_3",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 3.9
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 12. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Elder_12_4",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 3.8
+        },
+        {
+          "lineIndex": 5,
+          "text": "Elder dialogue line 5 of conversation 12. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_12_5",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.4
+        },
+        {
+          "lineIndex": 6,
+          "text": "Elder dialogue line 6 of conversation 12. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Elder_12_6",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 2.2
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 12",
+          "nextDialogueId": "dlg_Elder_13",
+          "consequence": "consequence_Elder_12_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 12",
+          "nextDialogueId": "dlg_Elder_13",
+          "consequence": "consequence_Elder_12_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_13",
+      "speaker": "Elder",
+      "context": "Ambient",
+      "priority": 6,
+      "triggerCondition": "condition_Elder_13",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 13. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_13_0",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 13. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_13_1",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 4.1
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 13. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_13_2",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 13. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Elder_13_3",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 13. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_13_4",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 1.8
+        },
+        {
+          "lineIndex": 5,
+          "text": "Elder dialogue line 5 of conversation 13. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_13_5",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3.4
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 13",
+          "nextDialogueId": "dlg_Elder_14",
+          "consequence": "consequence_Elder_13_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 13",
+          "nextDialogueId": "dlg_Elder_14",
+          "consequence": "consequence_Elder_13_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_14",
+      "speaker": "Elder",
+      "context": "Ambient",
+      "priority": 4,
+      "triggerCondition": "condition_Elder_14",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 14. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_14_0",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 14. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Elder_14_1",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 1.7
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 14. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_14_2",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 14. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_14_3",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 2.2
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_15",
+      "speaker": "Elder",
+      "context": "Combat",
+      "priority": 8,
+      "triggerCondition": "condition_Elder_15",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 15. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_15_0",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 2.2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 15. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_15_1",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 1.8
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 15. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_15_2",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 15. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_15_3",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 4,
+          "text": "Elder dialogue line 4 of conversation 15. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_15_4",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 3.7
+        },
+        {
+          "lineIndex": 5,
+          "text": "Elder dialogue line 5 of conversation 15. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_15_5",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 2.8
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 15",
+          "nextDialogueId": "dlg_Elder_16",
+          "consequence": "consequence_Elder_15_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_16",
+      "speaker": "Elder",
+      "context": "Shop",
+      "priority": 1,
+      "triggerCondition": "condition_Elder_16",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 16. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_16_0",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 2.6
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 16. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Elder_16_1",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 3.8
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 16. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_16_2",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 3.3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 16. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Elder_16_3",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 4.5
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_17",
+      "speaker": "Elder",
+      "context": "Shop",
+      "priority": 1,
+      "triggerCondition": "condition_Elder_17",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 17. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_17_0",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 4.4
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 17. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_17_1",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 1.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 17. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Elder_17_2",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 3.3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 17. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Elder_17_3",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3.3
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 17",
+          "nextDialogueId": "dlg_Elder_18",
+          "consequence": "consequence_Elder_17_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_18",
+      "speaker": "Elder",
+      "context": "Quest",
+      "priority": 2,
+      "triggerCondition": "condition_Elder_18",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 18. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_18_0",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 18. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Elder_18_1",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 18. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_18_2",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 4.7
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Elder_19",
+      "speaker": "Elder",
+      "context": "Shop",
+      "priority": 9,
+      "triggerCondition": "condition_Elder_19",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Elder dialogue line 0 of conversation 19. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_19_0",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 1,
+          "text": "Elder dialogue line 1 of conversation 19. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Elder_19_1",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 3.3
+        },
+        {
+          "lineIndex": 2,
+          "text": "Elder dialogue line 2 of conversation 19. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Elder_19_2",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 4
+        },
+        {
+          "lineIndex": 3,
+          "text": "Elder dialogue line 3 of conversation 19. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Elder_19_3",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 2.4
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 19",
+          "nextDialogueId": "dlg_Elder_19",
+          "consequence": "consequence_Elder_19_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_0",
+      "speaker": "Princess",
+      "context": "Ambient",
+      "priority": 4,
+      "triggerCondition": "condition_Princess_0",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 0. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_0_0",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 1.8
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 0. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_0_1",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 0. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_0_2",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 0. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_0_3",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 4,
+          "text": "Princess dialogue line 4 of conversation 0. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_0_4",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 3.3
+        },
+        {
+          "lineIndex": 5,
+          "text": "Princess dialogue line 5 of conversation 0. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_0_5",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 3.9
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_1",
+      "speaker": "Princess",
+      "context": "Combat",
+      "priority": 2,
+      "triggerCondition": "condition_Princess_1",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 1. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_1_0",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 1. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_1_1",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 4.3
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 1. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_1_2",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3.8
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 1",
+          "nextDialogueId": "dlg_Princess_2",
+          "consequence": "consequence_Princess_1_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_2",
+      "speaker": "Princess",
+      "context": "Combat",
+      "priority": 3,
+      "triggerCondition": "condition_Princess_2",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 2. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_2_0",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 2. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_2_1",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 4.8
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 2. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_2_2",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 3.5
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 2. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_2_3",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 4,
+          "text": "Princess dialogue line 4 of conversation 2. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_2_4",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 5,
+          "text": "Princess dialogue line 5 of conversation 2. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_2_5",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 3.1
+        },
+        {
+          "lineIndex": 6,
+          "text": "Princess dialogue line 6 of conversation 2. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Princess_2_6",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 2.2
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 2",
+          "nextDialogueId": "dlg_Princess_3",
+          "consequence": "consequence_Princess_2_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_3",
+      "speaker": "Princess",
+      "context": "Shop",
+      "priority": 6,
+      "triggerCondition": "condition_Princess_3",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 3. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_3_0",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 4.7
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 3. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_3_1",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.9
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 3. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_3_2",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 1.7
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 3. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Princess_3_3",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 4.1
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_4",
+      "speaker": "Princess",
+      "context": "Ambient",
+      "priority": 9,
+      "triggerCondition": "condition_Princess_4",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 4. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_4_0",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 4.7
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 4. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_4_1",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 1.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 4. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_4_2",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 2.6
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 4",
+          "nextDialogueId": "dlg_Princess_5",
+          "consequence": "consequence_Princess_4_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_5",
+      "speaker": "Princess",
+      "context": "Quest",
+      "priority": 2,
+      "triggerCondition": "condition_Princess_5",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 5. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_5_0",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 1.7
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 5. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_5_1",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 4.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 5. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_5_2",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 1.6
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 5. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_5_3",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 4,
+          "text": "Princess dialogue line 4 of conversation 5. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_5_4",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 1.6
+        },
+        {
+          "lineIndex": 5,
+          "text": "Princess dialogue line 5 of conversation 5. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_5_5",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 4.8
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 5",
+          "nextDialogueId": "dlg_Princess_6",
+          "consequence": "consequence_Princess_5_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_6",
+      "speaker": "Princess",
+      "context": "Cutscene",
+      "priority": 4,
+      "triggerCondition": "condition_Princess_6",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 6. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Princess_6_0",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3.1
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 6. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Princess_6_1",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 1.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 6. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Princess_6_2",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 3.9
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 6. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_6_3",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 3.3
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_7",
+      "speaker": "Princess",
+      "context": "Ambient",
+      "priority": 2,
+      "triggerCondition": "condition_Princess_7",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 7. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_7_0",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 7. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_7_1",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 3.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 7. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_7_2",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 7. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Princess_7_3",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 4,
+          "text": "Princess dialogue line 4 of conversation 7. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_7_4",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2.6
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_8",
+      "speaker": "Princess",
+      "context": "Shop",
+      "priority": 7,
+      "triggerCondition": "condition_Princess_8",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 8. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_8_0",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 8. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Princess_8_1",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 4.9
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 8. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_8_2",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 4.9
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 8. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_8_3",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 1.7
+        },
+        {
+          "lineIndex": 4,
+          "text": "Princess dialogue line 4 of conversation 8. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_8_4",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 5,
+          "text": "Princess dialogue line 5 of conversation 8. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Princess_8_5",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 2.6
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_9",
+      "speaker": "Princess",
+      "context": "Cutscene",
+      "priority": 1,
+      "triggerCondition": "condition_Princess_9",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 9. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_9_0",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 2.5
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 9. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_9_1",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 9. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_9_2",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4.4
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 9",
+          "nextDialogueId": "dlg_Princess_10",
+          "consequence": "consequence_Princess_9_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_10",
+      "speaker": "Princess",
+      "context": "Combat",
+      "priority": 5,
+      "triggerCondition": "condition_Princess_10",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 10. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_10_0",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 4.3
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 10. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_10_1",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 1.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 10. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_10_2",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 3.5
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 10. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_10_3",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 2.1
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_11",
+      "speaker": "Princess",
+      "context": "Ambient",
+      "priority": 7,
+      "triggerCondition": "condition_Princess_11",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 11. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_11_0",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 11. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_11_1",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 1.7
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 11. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_11_2",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4.6
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 11. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_11_3",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.8
+        },
+        {
+          "lineIndex": 4,
+          "text": "Princess dialogue line 4 of conversation 11. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_11_4",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 2.6
+        },
+        {
+          "lineIndex": 5,
+          "text": "Princess dialogue line 5 of conversation 11. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_11_5",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 6,
+          "text": "Princess dialogue line 6 of conversation 11. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_11_6",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 3.8
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 11",
+          "nextDialogueId": "dlg_Princess_12",
+          "consequence": "consequence_Princess_11_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_12",
+      "speaker": "Princess",
+      "context": "Ambient",
+      "priority": 8,
+      "triggerCondition": "condition_Princess_12",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 12. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_12_0",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 3.3
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 12. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_12_1",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 4.9
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 12. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_12_2",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 3.7
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 12. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_12_3",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 1.7
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 12",
+          "nextDialogueId": "dlg_Princess_13",
+          "consequence": "consequence_Princess_12_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_13",
+      "speaker": "Princess",
+      "context": "Combat",
+      "priority": 4,
+      "triggerCondition": "condition_Princess_13",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 13. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_13_0",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 2.1
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 13. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_13_1",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 13. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Princess_13_2",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 13. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_13_3",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 2.2
+        },
+        {
+          "lineIndex": 4,
+          "text": "Princess dialogue line 4 of conversation 13. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_13_4",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 4.1
+        },
+        {
+          "lineIndex": 5,
+          "text": "Princess dialogue line 5 of conversation 13. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Princess_13_5",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.1
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_14",
+      "speaker": "Princess",
+      "context": "Shop",
+      "priority": 7,
+      "triggerCondition": "condition_Princess_14",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 14. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_14_0",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 14. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_14_1",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 14. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_14_2",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 14. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_14_3",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 3.4
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 14",
+          "nextDialogueId": "dlg_Princess_15",
+          "consequence": "consequence_Princess_14_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 14",
+          "nextDialogueId": "dlg_Princess_15",
+          "consequence": "consequence_Princess_14_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_15",
+      "speaker": "Princess",
+      "context": "Combat",
+      "priority": 5,
+      "triggerCondition": "condition_Princess_15",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 15. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_15_0",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4.3
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 15. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Princess_15_1",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 15. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_15_2",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.6
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_16",
+      "speaker": "Princess",
+      "context": "Quest",
+      "priority": 2,
+      "triggerCondition": "condition_Princess_16",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 16. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_16_0",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 16. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_16_1",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 1.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 16. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_16_2",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 16. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_16_3",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 1.9
+        },
+        {
+          "lineIndex": 4,
+          "text": "Princess dialogue line 4 of conversation 16. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_16_4",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 2.5
+        },
+        {
+          "lineIndex": 5,
+          "text": "Princess dialogue line 5 of conversation 16. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_16_5",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 2.8
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_17",
+      "speaker": "Princess",
+      "context": "Cutscene",
+      "priority": 1,
+      "triggerCondition": "condition_Princess_17",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 17. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_17_0",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 4.1
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 17. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Princess_17_1",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 3.9
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 17. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Princess_17_2",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 17. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_17_3",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 4,
+          "text": "Princess dialogue line 4 of conversation 17. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_17_4",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 3.7
+        },
+        {
+          "lineIndex": 5,
+          "text": "Princess dialogue line 5 of conversation 17. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_17_5",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 3.8
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 17",
+          "nextDialogueId": "dlg_Princess_18",
+          "consequence": "consequence_Princess_17_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_18",
+      "speaker": "Princess",
+      "context": "Cutscene",
+      "priority": 7,
+      "triggerCondition": "condition_Princess_18",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 18. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_18_0",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 4.5
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 18. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Princess_18_1",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 2.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 18. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Princess_18_2",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 3.9
+        },
+        {
+          "lineIndex": 3,
+          "text": "Princess dialogue line 3 of conversation 18. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_18_3",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 4,
+          "text": "Princess dialogue line 4 of conversation 18. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Princess_18_4",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2.2
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Princess_19",
+      "speaker": "Princess",
+      "context": "Ambient",
+      "priority": 6,
+      "triggerCondition": "condition_Princess_19",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Princess dialogue line 0 of conversation 19. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Princess_19_0",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 1,
+          "text": "Princess dialogue line 1 of conversation 19. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_19_1",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 2.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Princess dialogue line 2 of conversation 19. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Princess_19_2",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 4.5
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 19",
+          "nextDialogueId": "dlg_Princess_19",
+          "consequence": "consequence_Princess_19_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_0",
+      "speaker": "Sage",
+      "context": "Ambient",
+      "priority": 4,
+      "triggerCondition": "condition_Sage_0",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 0. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_0_0",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.6
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 0. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_0_1",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 2.2
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 0. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_0_2",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2.5
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 0. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_0_3",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 0. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_0_4",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 0. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_0_5",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.1
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 0",
+          "nextDialogueId": "dlg_Sage_1",
+          "consequence": "consequence_Sage_0_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_1",
+      "speaker": "Sage",
+      "context": "Combat",
+      "priority": 3,
+      "triggerCondition": "condition_Sage_1",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 1. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_1_0",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 1. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_1_1",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 1. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_1_2",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 1. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_1_3",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 1.5
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 1. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_1_4",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2.6
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_2",
+      "speaker": "Sage",
+      "context": "Combat",
+      "priority": 8,
+      "triggerCondition": "condition_Sage_2",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 2. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_2_0",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2.2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 2. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_2_1",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 4.3
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 2. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Sage_2_2",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 2. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_2_3",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 4.8
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 2. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_2_4",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 2. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_2_5",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 4.2
+        },
+        {
+          "lineIndex": 6,
+          "text": "Sage dialogue line 6 of conversation 2. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_2_6",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 4.9
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 2",
+          "nextDialogueId": "dlg_Sage_3",
+          "consequence": "consequence_Sage_2_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 2",
+          "nextDialogueId": "dlg_Sage_3",
+          "consequence": "consequence_Sage_2_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_3",
+      "speaker": "Sage",
+      "context": "Ambient",
+      "priority": 8,
+      "triggerCondition": "condition_Sage_3",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 3. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_3_0",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 3. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_3_1",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 2.2
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 3. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_3_2",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 3.1
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 3. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_3_3",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2.6
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 3",
+          "nextDialogueId": "dlg_Sage_4",
+          "consequence": "consequence_Sage_3_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_4",
+      "speaker": "Sage",
+      "context": "Shop",
+      "priority": 5,
+      "triggerCondition": "condition_Sage_4",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 4. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_4_0",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 3.1
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 4. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Sage_4_1",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 1.5
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 4. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_4_2",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.9
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 4. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Sage_4_3",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 4. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Sage_4_4",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 3.7
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 4. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_4_5",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 3.2
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 4",
+          "nextDialogueId": "dlg_Sage_5",
+          "consequence": "consequence_Sage_4_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 4",
+          "nextDialogueId": "dlg_Sage_5",
+          "consequence": "consequence_Sage_4_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_5",
+      "speaker": "Sage",
+      "context": "Combat",
+      "priority": 1,
+      "triggerCondition": "condition_Sage_5",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 5. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_5_0",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 4.2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 5. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_5_1",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 5. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_5_2",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 3.1
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 5. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Sage_5_3",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 5. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_5_4",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 5. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Sage_5_5",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_6",
+      "speaker": "Sage",
+      "context": "Quest",
+      "priority": 4,
+      "triggerCondition": "condition_Sage_6",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 6. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_6_0",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.3
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 6. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_6_1",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 6. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_6_2",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 6. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_6_3",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 6. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_6_4",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 6. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_6_5",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 3.7
+        },
+        {
+          "lineIndex": 6,
+          "text": "Sage dialogue line 6 of conversation 6. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_6_6",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 3
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 6",
+          "nextDialogueId": "dlg_Sage_7",
+          "consequence": "consequence_Sage_6_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 6",
+          "nextDialogueId": "dlg_Sage_7",
+          "consequence": "consequence_Sage_6_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_7",
+      "speaker": "Sage",
+      "context": "Quest",
+      "priority": 7,
+      "triggerCondition": "condition_Sage_7",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 7. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_7_0",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 3.8
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 7. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_7_1",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.4
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 7. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_7_2",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 4.3
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_8",
+      "speaker": "Sage",
+      "context": "Quest",
+      "priority": 2,
+      "triggerCondition": "condition_Sage_8",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 8. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_8_0",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 8. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_8_1",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3.1
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 8. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_8_2",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 8. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_8_3",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 8",
+          "nextDialogueId": "dlg_Sage_9",
+          "consequence": "consequence_Sage_8_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_9",
+      "speaker": "Sage",
+      "context": "Combat",
+      "priority": 5,
+      "triggerCondition": "condition_Sage_9",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 9. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_9_0",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 3.9
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 9. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_9_1",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 4.1
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 9. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Sage_9_2",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 9. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_9_3",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 3.8
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 9. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_9_4",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 3.8
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 9. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_9_5",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 4.2
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 9",
+          "nextDialogueId": "dlg_Sage_10",
+          "consequence": "consequence_Sage_9_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_10",
+      "speaker": "Sage",
+      "context": "Ambient",
+      "priority": 4,
+      "triggerCondition": "condition_Sage_10",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 10. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Sage_10_0",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 10. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_10_1",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 10. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_10_2",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 2.5
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_11",
+      "speaker": "Sage",
+      "context": "Ambient",
+      "priority": 2,
+      "triggerCondition": "condition_Sage_11",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 11. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_11_0",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 11. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Sage_11_1",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 1.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 11. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_11_2",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 11. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Sage_11_3",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 11. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_11_4",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 11. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_11_5",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 6,
+          "text": "Sage dialogue line 6 of conversation 11. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_11_6",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        }
+      ],
+      "choices": [
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_12",
+      "speaker": "Sage",
+      "context": "Combat",
+      "priority": 1,
+      "triggerCondition": "condition_Sage_12",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 12. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_12_0",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 12. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_12_1",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 12. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_12_2",
+          "portraitFrame": 0,
+          "waitForInput": true,
+          "autoDuration": 1.9
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 12",
+          "nextDialogueId": "dlg_Sage_13",
+          "consequence": "consequence_Sage_12_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 12",
+          "nextDialogueId": "dlg_Sage_13",
+          "consequence": "consequence_Sage_12_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_13",
+      "speaker": "Sage",
+      "context": "Shop",
+      "priority": 3,
+      "triggerCondition": "condition_Sage_13",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 13. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Sage_13_0",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 3.3
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 13. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_13_1",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 3
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 13. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_13_2",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 3.2
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 13. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_13_3",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 4.8
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 13. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Sage_13_4",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 13. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Sage_13_5",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 4.6
+        },
+        {
+          "lineIndex": 6,
+          "text": "Sage dialogue line 6 of conversation 13. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_13_6",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 4.8
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 13",
+          "nextDialogueId": "dlg_Sage_14",
+          "consequence": "consequence_Sage_13_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 13",
+          "nextDialogueId": "dlg_Sage_14",
+          "consequence": "consequence_Sage_13_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_14",
+      "speaker": "Sage",
+      "context": "Quest",
+      "priority": 6,
+      "triggerCondition": "condition_Sage_14",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 14. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_14_0",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 3.3
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 14. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Sage_14_1",
+          "portraitFrame": 3,
+          "waitForInput": false,
+          "autoDuration": 3.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 14. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_14_2",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 2.3
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 14. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_14_3",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3.3
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 14. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_14_4",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 2.8
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 14. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_14_5",
+          "portraitFrame": 4,
+          "waitForInput": true,
+          "autoDuration": 2.7
+        },
+        {
+          "lineIndex": 6,
+          "text": "Sage dialogue line 6 of conversation 14. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Sage_14_6",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 2.1
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 14",
+          "nextDialogueId": "dlg_Sage_15",
+          "consequence": "consequence_Sage_14_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 14",
+          "nextDialogueId": "dlg_Sage_15",
+          "consequence": "consequence_Sage_14_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_15",
+      "speaker": "Sage",
+      "context": "Ambient",
+      "priority": 1,
+      "triggerCondition": "condition_Sage_15",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 15. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_15_0",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 15. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_15_1",
+          "portraitFrame": 7,
+          "waitForInput": false,
+          "autoDuration": 3.8
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 15. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_15_2",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 1.9
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 15. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_15_3",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 2.1
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 15. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Sage_15_4",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 1.8
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 15. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Sage_15_5",
+          "portraitFrame": 1,
+          "waitForInput": false,
+          "autoDuration": 4.9
+        },
+        {
+          "lineIndex": 6,
+          "text": "Sage dialogue line 6 of conversation 15. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_15_6",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.2
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 15",
+          "nextDialogueId": "dlg_Sage_16",
+          "consequence": "consequence_Sage_15_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_16",
+      "speaker": "Sage",
+      "context": "Ambient",
+      "priority": 6,
+      "triggerCondition": "condition_Sage_16",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 16. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_16_0",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 16. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Sage_16_1",
+          "portraitFrame": 5,
+          "waitForInput": false,
+          "autoDuration": 4.6
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 16. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_16_2",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 16",
+          "nextDialogueId": "dlg_Sage_17",
+          "consequence": "consequence_Sage_16_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 16",
+          "nextDialogueId": "dlg_Sage_17",
+          "consequence": "consequence_Sage_16_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_17",
+      "speaker": "Sage",
+      "context": "Ambient",
+      "priority": 6,
+      "triggerCondition": "condition_Sage_17",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 17. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_17_0",
+          "portraitFrame": 4,
+          "waitForInput": false,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 17. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_17_1",
+          "portraitFrame": 2,
+          "waitForInput": false,
+          "autoDuration": 4.4
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 17. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_17_2",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 4.7
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 17",
+          "nextDialogueId": "dlg_Sage_18",
+          "consequence": "consequence_Sage_17_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 17",
+          "nextDialogueId": "dlg_Sage_18",
+          "consequence": "consequence_Sage_17_1"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_18",
+      "speaker": "Sage",
+      "context": "Shop",
+      "priority": 9,
+      "triggerCondition": "condition_Sage_18",
+      "oneShot": false,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 18. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_18_0",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 18. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_18_1",
+          "portraitFrame": 1,
+          "waitForInput": true,
+          "autoDuration": 2.1
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 18. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_18_2",
+          "portraitFrame": 0,
+          "waitForInput": false,
+          "autoDuration": 2.2
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 18. The situation grows tense.",
+          "emotion": "Surprised",
+          "voiceClip": "vo_Sage_18_3",
+          "portraitFrame": 7,
+          "waitForInput": true,
+          "autoDuration": 2.4
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 18. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_18_4",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 3.5
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 18. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Sage_18_5",
+          "portraitFrame": 3,
+          "waitForInput": true,
+          "autoDuration": 2
+        },
+        {
+          "lineIndex": 6,
+          "text": "Sage dialogue line 6 of conversation 18. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_18_6",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 2.7
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 18",
+          "nextDialogueId": "dlg_Sage_19",
+          "consequence": "consequence_Sage_18_0"
+        }
+      ]
+    }
+    ,
+    {
+      "dialogueId": "dlg_Sage_19",
+      "speaker": "Sage",
+      "context": "Shop",
+      "priority": 3,
+      "triggerCondition": "condition_Sage_19",
+      "oneShot": true,
+      "lines": [
+        {
+          "lineIndex": 0,
+          "text": "Sage dialogue line 0 of conversation 19. The situation grows tense.",
+          "emotion": "Fearful",
+          "voiceClip": "vo_Sage_19_0",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 1.8
+        },
+        {
+          "lineIndex": 1,
+          "text": "Sage dialogue line 1 of conversation 19. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_19_1",
+          "portraitFrame": 2,
+          "waitForInput": true,
+          "autoDuration": 4.1
+        },
+        {
+          "lineIndex": 2,
+          "text": "Sage dialogue line 2 of conversation 19. The situation grows tense.",
+          "emotion": "Angry",
+          "voiceClip": "vo_Sage_19_2",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2.9
+        },
+        {
+          "lineIndex": 3,
+          "text": "Sage dialogue line 3 of conversation 19. The situation grows tense.",
+          "emotion": "Neutral",
+          "voiceClip": "vo_Sage_19_3",
+          "portraitFrame": 6,
+          "waitForInput": false,
+          "autoDuration": 3.4
+        },
+        {
+          "lineIndex": 4,
+          "text": "Sage dialogue line 4 of conversation 19. The situation grows tense.",
+          "emotion": "Happy",
+          "voiceClip": "vo_Sage_19_4",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 4.6
+        },
+        {
+          "lineIndex": 5,
+          "text": "Sage dialogue line 5 of conversation 19. The situation grows tense.",
+          "emotion": "Sad",
+          "voiceClip": "vo_Sage_19_5",
+          "portraitFrame": 6,
+          "waitForInput": true,
+          "autoDuration": 2.1
+        },
+        {
+          "lineIndex": 6,
+          "text": "Sage dialogue line 6 of conversation 19. The situation grows tense.",
+          "emotion": "Confident",
+          "voiceClip": "vo_Sage_19_6",
+          "portraitFrame": 5,
+          "waitForInput": true,
+          "autoDuration": 4.4
+        }
+      ],
+      "choices": [
+        {
+          "choiceIndex": 0,
+          "text": "Choice option 0 for dialogue 19",
+          "nextDialogueId": "dlg_Sage_19",
+          "consequence": "consequence_Sage_19_0"
+        },
+        {
+          "choiceIndex": 1,
+          "text": "Choice option 1 for dialogue 19",
+          "nextDialogueId": "dlg_Sage_19",
+          "consequence": "consequence_Sage_19_1"
+        }
+      ]
+    }
   ]
 }
