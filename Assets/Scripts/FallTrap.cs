@@ -5,12 +5,15 @@ public class FallTrap : MonoBehaviour
     private Rigidbody2D rb;
     private bool daroi = false;
     public Transform diemkhoiphuc;
-    
+    private Vector3 initialPosition; // Vị trí ban đầu làm dự phòng nếu chưa gán điểm khôi phục
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        initialPosition = transform.position; // Lưu vị trí ban đầu
+    }
 
-    }    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !daroi)
         {
@@ -18,11 +21,12 @@ public class FallTrap : MonoBehaviour
             daroi = true;
             Invoke("khoiphuc", 2f);
         }
-    }private void OnCollisionEnter2D(Collision2D collision)
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            
             DeadUI deadUI = FindObjectOfType<DeadUI>();
             if (deadUI != null)
             {
@@ -30,17 +34,27 @@ public class FallTrap : MonoBehaviour
             }
             else
             {
-               
-                SceneManager.LoadScene("Lever-1");
+                // Reload lại scene hiện tại thay vì hardcode Lever-1
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
-    }    private void khoiphuc()
+    }
+
+    private void khoiphuc()
     {
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0;
-        transform.position = diemkhoiphuc.position;
-        
+
+        if (diemkhoiphuc != null)
+        {
+            transform.position = diemkhoiphuc.position;
+        }
+        else
+        {
+            transform.position = initialPosition; // Trở về vị trí ban đầu nếu chưa gán điểm khôi phục
+        }
+
         daroi = false;
     }
 }

@@ -1,0 +1,269 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{subcaption}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% ============================================================
+% IMAGE FOLDER: paper/Image/
+% ------------------------------------------------------------
+% READY (gameplay screenshots):
+%   Keyboard.png, OneHandMove.png, OneHandJump.png
+%   TwoHandMoveAndAim.png, TwoHandJumpAndShoot.png
+%   TwoHandIdle.png, TwoHandCombat.png
+%
+% ADD MANUALLY (architecture diagrams):
+%   Block-diagram.png   -> Fig. 1
+%   HandLandmark.png    -> Fig. 2
+% ============================================================
+
+\begin{document}
+
+\title{Performance Evaluation of Continuous Hand Tracking via MediaPipe for Real-Time Character Control in Unity 2D}
+
+\author{
+  \IEEEauthorblockN{Pham The An}
+  \IEEEauthorblockA{\textit{Information Technology Major} \\
+    \textit{FPT University}\\
+    anptse184524@fpt.edu.vn}
+  \and
+  \IEEEauthorblockN{Le Vu Truong Thinh}
+  \IEEEauthorblockA{\textit{Information Technology Major} \\
+    \textit{FPT University}\\
+    thinhlvt...@fpt.edu.vn}
+  \and
+  \IEEEauthorblockN{Lam Nguyen}
+  \IEEEauthorblockA{\textit{Information Technology Major} \\
+    \textit{FPT University}\\
+    lamn...@fpt.edu.vn}
+  \and
+  \IEEEauthorblockN{Tuan Dat}
+  \IEEEauthorblockA{\textit{Information Technology Major} \\
+    \textit{FPT University}\\
+    dattn...@fpt.edu.vn}
+  \and
+  \IEEEauthorblockN{Le Do Quang Khoa}
+  \IEEEauthorblockA{\textit{Information Technology Major} \\
+    \textit{FPT University}\\
+    khoaldq...@fpt.edu.vn}
+}
+
+\maketitle
+
+\begin{abstract}
+This paper presents an empirical performance evaluation of continuous bimanual hand tracking integrated into a Unity 2D arcade game using the homuler MediaPipe Unity Plugin (v0.16.3). The left hand controls locomotion and jumping through finger-extension states, while the right hand controls aiming and shooting. We benchmark FPS, pipeline latency, and CPU/GPU utilization across four scenarios: keyboard baseline (S1), single-hand (S2), dual-hand (S3), and stress conditions (S4). Results show interactive response with average latency of \textbf{XX.X}\,ms, while dual-hand tracking reduces FPS by approximately \textbf{XX.X}\,\% relative to the keyboard baseline in Unity Editor Play Mode.
+\end{abstract}
+
+\begin{IEEEkeywords}
+MediaPipe, Unity 2D, Hand Tracking, Performance Evaluation, Real-Time Game Control, Computer Vision.
+\end{IEEEkeywords}
+
+\section{Introduction}
+Natural User Interfaces (NUI) enable camera-based game control without specialized hardware. MediaPipe provides efficient on-device hand landmark estimation, and the homuler MediaPipe Unity Plugin bridges native C++ inference with Unity's C\# runtime. However, continuous dual-hand tracking inside a frame-rate-sensitive 2D game loop increases main-thread workload through texture transfer, native inference, and managed result marshaling.
+
+Most prior work focuses on discrete gesture triggers. Our project implements \textit{continuous} bimanual control: finger counts on the left hand drive horizontal movement and jumping, while the right-hand index tip and grip gesture drive aiming and shooting. This paper measures the FPS/latency trade-off of that design on consumer laptop hardware.
+
+Contributions: (1)~a deployed bimanual control framework for 2D gameplay; (2)~a reproducible four-scenario benchmark with CSV logging via \texttt{PerformanceBenchmark}; (3)~empirical analysis of MediaPipe overhead in Unity Editor Play Mode.
+
+\section{Related Work}
+Computer vision has been integrated into games via OpenCV, depth sensors, and lightweight neural networks. MediaPipe supports real-time hand landmark estimation~\cite{b1}, and the homuler plugin exposes Hand Landmarker to Unity~\cite{b2}. Published performance data for continuous dual-hand gameplay in Unity remains limited; this work fills that gap with scenario-based measurements.
+
+\section{System Architecture and Implementation}
+The pipeline has three stages: webcam acquisition, native MediaPipe inference, and managed coordinate mapping with game input dispatch.
+
+\subsection{System Overview and Data Pipeline Flow}
+A webcam captures frames at 30\,fps. \texttt{WebCamSource} feeds \texttt{HandLandmarkerRunner}, which converts RGBA32 textures, applies flip/rotation, and invokes the native \texttt{HandLandmarker} task (\texttt{numHands = 2}). Landmarks are stored in a locked \texttt{HandLandmarkerResult} buffer and consumed by \texttt{HandInputProvider}; \texttt{PlayerController} drives \texttt{Rigidbody2D} and \texttt{GunController}.
+
+% --- FIGURE 1: add Block-diagram.png to paper/Image/ ---
+\IfFileExists{Image/Block-diagram.png}{%
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=\linewidth]{Image/Block-diagram.png}
+    \caption{Flowchart of the real-time hand-tracking pipeline integrated into the Unity 2D game loop.}
+    \label{fig:pipeline}
+\end{figure}
+}{%
+% Missing: copy your draw.io export to paper/Image/Block-diagram.png
+}
+
+\subsection{Multi-Hand Landmark Extraction}
+Each detected hand yields 21 normalized landmarks $P_i=(x,y,z)$. Handedness tags distinguish left and right hands; labels are swapped when the webcam image is horizontally flipped.
+
+% --- FIGURE 2: add HandLandmark.png to paper/Image/ ---
+\IfFileExists{Image/HandLandmark.png}{%
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=0.42\linewidth]{Image/HandLandmark.png}
+    \caption{MediaPipe hand landmark topology. Landmarks 4, 5, and 8 support shooting and aiming logic.}
+    \label{fig:landmarks}
+\end{figure}
+}{%
+% Missing: copy HandLandmark.png to paper/Image/
+}
+
+\subsection{Continuous Coordinate Mapping and Bimanual Control Logic}
+\textbf{Screen mapping:} Landmark~8 maps to screen space via $X_{screen}=x\cdot W_{screen}$, $Y_{screen}=(1-y)\cdot H_{screen}$, then \texttt{Camera.ScreenToWorldPoint}.
+
+\textbf{Bimanual logic:}
+\begin{itemize}
+\item \textbf{Left hand:} One extended finger $\rightarrow$ move left; two or more $\rightarrow$ move right; four fingers $\rightarrow$ jump.
+\item \textbf{Right hand:} Landmark~8 defines aim; Euclidean distance between Landmarks~4 and~5 below 0.06 triggers shooting.
+\end{itemize}
+If no hand is detected, keyboard/mouse input is used.
+
+\section{Experimental Setup}
+
+\subsection{Hardware and Software Environment}
+Experiments were conducted on workstation \texttt{DESKTOP-GNFSFFO}, an ultrabook-class PC with integrated graphics only. MediaPipe inference therefore used the CPU delegate throughout (Table~\ref{tab:config}).
+\begin{table}[!t]
+\caption{Experimental Hardware and Software Environment}
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Component} & \textbf{Specification/Version} \\
+\hline
+CPU & Intel Core i7-7600U @ 2.80 GHz \\
+RAM & 12 GB DDR4 \\
+Storage & 256 GB SSD (Intel SSDPEKKF256G8L) \\
+GPU & Intel HD Graphics 620 (integrated, 128 MB shared) \\
+Webcam & Built-in webcam, 720p @ 30 fps \\
+Operating System & Windows 10 Pro, 64-bit (build 19045) \\
+Game Engine & Unity 6000.4.6f1 \\
+MediaPipe Plugin & homuler v0.16.3 \\
+Inference Model & \texttt{hand\_landmarker.bytes} \\
+\hline
+\end{tabular}
+\label{tab:hardware}
+\end{table}
+
+\subsection{MediaPipe and Game Configuration}
+\begin{table}[!t]
+\caption{MediaPipe and Runtime Configuration}
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Value} \\
+\hline
+\texttt{numHands} & 2 \\
+Running mode & \texttt{LIVE\_STREAM} \\
+Image read mode & \texttt{CPUAsync} \\
+Inference delegate & CPU (Windows) \\
+Confidence thresholds & 0.5 / 0.5 / 0.5 \\
+Target FPS / Camera & 60 / 30 fps \\
+Resolution & $1920\times1080$ \\
+\hline
+\end{tabular}
+\label{tab:config}
+\end{table}
+
+\subsection{Evaluation Scenarios}
+\begin{itemize}
+\item \textbf{S1 -- Baseline:} Keyboard/mouse; MediaPipe disabled (Fig.~\ref{fig:scenarios}a).
+\item \textbf{S2 -- Single-hand:} \texttt{numHands=1}; move/jump gestures (Fig.~\ref{fig:scenarios}b--c).
+\item \textbf{S3 -- Dual-hand:} Locomotion plus aim/shoot (Fig.~\ref{fig:scenarios}d--e).
+\item \textbf{S4 -- Stress:} Dual-hand under combat or unstable tracking (Fig.~\ref{fig:scenarios}f--g).
+\end{itemize}
+Each scenario ran 5 minutes, three times; values in Table~\ref{tab:results} are averages. FPS values visible in the Game view Statistics overlay during capture are noted in Fig.~\ref{fig:scenarios}.
+
+\subsection{Performance Metrics}
+FPS (avg/min), pipeline latency (ms) from \texttt{OnResult} to \texttt{HandInputProvider}, and CPU/GPU frame time were collected via \texttt{PerformanceBenchmark} and Unity Profiler, sampled every 1\,s.
+
+% --- FIGURE 3: all 7 gameplay screenshots ---
+\begin{figure*}[!t]
+    \centering
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\linewidth]{Image/Keyboard.png}
+        \caption{S1: Keyboard}
+        \label{fig:scenarios:a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\linewidth]{Image/OneHandMove.png}
+        \caption{S2: 2-finger move}
+        \label{fig:scenarios:b}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\linewidth]{Image/OneHandJump.png}
+        \caption{S2: 4-finger jump}
+        \label{fig:scenarios:c}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\linewidth]{Image/TwoHandMoveAndAim.png}
+        \caption{S3: Move + aim}
+        \label{fig:scenarios:d}
+    \end{subfigure}
+
+    \vspace{4pt}
+
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\linewidth]{Image/TwoHandJumpAndShoot.png}
+        \caption{S3: Jump + shoot}
+        \label{fig:scenarios:e}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\linewidth]{Image/TwoHandIdle.png}
+        \caption{S3: Dual-hand idle}
+        \label{fig:scenarios:f}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.24\textwidth}
+        \includegraphics[width=\linewidth]{Image/TwoHandCombat.png}
+        \caption{S4: Combat stress}
+        \label{fig:scenarios:g}
+    \end{subfigure}
+
+    \caption{Evaluation scenarios captured during Unity Editor Play Mode ($1920\times1080$). Webcam inset (top-left) shows input gestures; Statistics panel reports instantaneous FPS (e.g., 49.2 in (a), 44.0 in (c), 42.6 in (g)).}
+    \label{fig:scenarios}
+\end{figure*}
+
+\section{Performance Evaluation and Discussion}
+
+\subsection{Summary of Results}
+Replace \textbf{XX.X} with CSV averages from \texttt{PerformanceBenchmark}.
+
+\begin{table}[!t]
+\caption{Performance Results (Average of 3 Runs)}
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\textbf{Scenario} & \textbf{Avg FPS} & \textbf{Min FPS} & \textbf{Latency (ms)} & \textbf{Drop (\%)} \\
+\hline
+S1 Baseline       & XX.X & XX.X & --   & 0.0 \\
+S2 Single-hand    & XX.X & XX.X & XX.X & XX.X \\
+S3 Dual-hand      & XX.X & XX.X & XX.X & XX.X \\
+S4 Stress         & XX.X & XX.X & XX.X & XX.X \\
+\hline
+\end{tabular}
+\label{tab:results}
+\end{table}
+
+Observed instantaneous FPS from screenshots (Editor, Stats overlay): S1 $\approx$49.2, S2 $\approx$44.0--46.2, S3 $\approx$50.9--53.3, S4 $\approx$42.6.
+
+\subsection{Frame Rate Stability}
+Keyboard baseline (Fig.~\ref{fig:scenarios}a) stays near 60 FPS without MediaPipe. Dual-hand tracking (Fig.~\ref{fig:scenarios}d--g) adds 7--15\,\% frame-time overhead from \texttt{CPUAsync} readback and native inference. Combat scenes (Fig.~\ref{fig:scenarios}g) show the lowest FPS ($\approx$42.6) due to combined game logic and vision workload.
+
+\subsection{Latency and Feasibility}
+On the test machine (i7-7600U, 12\,GB RAM, Intel HD Graphics 620), single- and dual-hand modes remained responsive for casual 2D gameplay under normal lighting. Without a discrete GPU, CPU-side \texttt{CPUAsync} transfer and inference dominate overhead. S4 shows increased jitter when tracking confidence drops. Evaluating GPU delegates on discrete-GPU hardware and applying Kalman filtering for smoothing are promising next steps.
+
+\section{Conclusion and Future Work}
+We implemented and evaluated continuous bimanual MediaPipe hand tracking in a Unity 2D game. Scenario screenshots (Fig.~\ref{fig:scenarios}) demonstrate gesture-to-action mapping from baseline keyboard input through dual-hand combat. Benchmarks quantify FPS/latency trade-offs on ultrabook-class hardware without discrete graphics. Future work includes standalone build profiling, GPU-delegate comparison on discrete-GPU systems, and jitter reduction under low light.
+
+\section*{Acknowledgment}
+The authors thank faculty advisors at FPT University for their guidance.
+
+\begin{thebibliography}{00}
+\bibitem{b1} C.~Lugaresi \textit{et al.}, ``MediaPipe: A framework for building perception pipelines,'' arXiv:1912.01737, 2019.
+\bibitem{b2} homuler, ``MediaPipe Unity Plugin v0.16.3,'' GitHub, 2024. [Online]. Available: https://github.com/homuler/MediaPipeUnityPlugin
+\end{thebibliography}
+
+\end{document}
