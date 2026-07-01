@@ -7,6 +7,11 @@ public class FallTrap : MonoBehaviour
     public Transform diemkhoiphuc;
     private Vector3 initialPosition; // Vị trí ban đầu làm dự phòng nếu chưa gán điểm khôi phục
 
+    [Header("Fly Up Settings")]
+    public bool flyUp = false;      // Tích chọn nếu muốn bẫy gai bay từ dưới đất lên
+    public float flySpeed = 10f;    // Tốc độ bay lên của bẫy gai
+    public float resetTime = 2f;    // Thời gian giữ bẫy trước khi khôi phục vị trí ban đầu
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -17,9 +22,17 @@ public class FallTrap : MonoBehaviour
     {
         if (collision.CompareTag("Player") && !daroi)
         {
-            rb.bodyType = RigidbodyType2D.Dynamic;
             daroi = true;
-            Invoke("khoiphuc", 2f);
+            if (flyUp)
+            {
+                rb.bodyType = RigidbodyType2D.Kinematic;
+                rb.linearVelocity = Vector2.up * flySpeed;
+            }
+            else
+            {
+                rb.bodyType = RigidbodyType2D.Dynamic;
+            }
+            Invoke("khoiphuc", resetTime);
         }
     }
 
