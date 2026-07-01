@@ -21,13 +21,13 @@ public class Deadzone : MonoBehaviour
             DeadUI deadUI = FindObjectOfType<DeadUI>();
             if (deadUI != null)
             {
-                deadUI.ShowDeadPanelWithMessage("Bạn đã rơi xuống hố!");
+                deadUI.ShowDeadPanelWithMessage("You have fallen into a hole!");
             }
             else
             {
                 
                 SceneManager.LoadScene("Lever-1");
-                Debug.Log("Người chơi rơi xuống hố. Đang tải lại Lever 1.");
+                Debug.Log("Player has fallen into a hole. Reloading Lever 1.");
             }
         }
     }

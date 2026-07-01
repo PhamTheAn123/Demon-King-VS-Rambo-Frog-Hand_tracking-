@@ -172,9 +172,12 @@ public class GroundEnemy : MonoBehaviour
 
     public void SelectTarget()
     {
+        if (isDead) return; // enemy đã chết, không cần chọn target nữa
+        if (leftLimit == null || rightLimit == null) return; // tránh lỗi nếu limit bị destroy
+    
         float distanceToLeft = Vector3.Distance(transform.position, leftLimit.position);
         float distanceToRight = Vector3.Distance(transform.position, rightLimit.position);
-
+    
         if (distanceToLeft > distanceToRight)
         {
             target = leftLimit;
@@ -185,7 +188,6 @@ public class GroundEnemy : MonoBehaviour
         }
         Flip();
     }
-
     public void TakeDamage(int damage)
     {
         if (isDead) return; 
