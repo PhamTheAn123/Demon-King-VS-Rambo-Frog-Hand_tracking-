@@ -11,6 +11,7 @@ public class BossController : MonoBehaviour
     public ChaseAttack chaseAttack;
     public ShootFireballsAttack shootFireballs;
     public BossHealth bossHealth;
+    public CinemachineBossRoomTrigger bossRoomCameraTrigger;
 
     [Header("Attack Toggles")]
     public bool dashAttackOn = false;
@@ -675,6 +676,16 @@ public class BossController : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
+        }
+
+        // Deactivate Boss Camera to return to Player follow camera
+        if (bossRoomCameraTrigger == null)
+        {
+            bossRoomCameraTrigger = FindObjectOfType<CinemachineBossRoomTrigger>();
+        }
+        if (bossRoomCameraTrigger != null)
+        {
+            bossRoomCameraTrigger.DisableBossCamera();
         }
 
         enabled = false;
