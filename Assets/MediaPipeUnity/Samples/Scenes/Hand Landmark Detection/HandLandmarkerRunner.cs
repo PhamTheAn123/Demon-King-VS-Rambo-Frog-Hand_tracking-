@@ -33,17 +33,15 @@ namespace Mediapipe.Unity.Sample.HandLandmarkDetection
       _textureFramePool = null;
     }
 
-    public bool TryGetLatestResult(out HandLandmarkerResult result)
+    public bool TryGetLatestResult(ref HandLandmarkerResult result)
     {
       lock (_resultLock)
       {
         if (_latestResult.handLandmarks == null || _latestResult.handLandmarks.Count == 0)
         {
-          result = default;
           return false;
         }
 
-        result = default;
         _latestResult.CloneTo(ref result);
         return true;
       }
@@ -146,35 +144,43 @@ namespace Mediapipe.Unity.Sample.HandLandmarkDetection
             break;
         }
 
-        switch (taskApi.runningMode)
+        // NOTE: image wraps unmanaged (C++) MediaPipe memory — MUST Dispose every frame to prevent native memory leak.
+        try
         {
-          case Tasks.Vision.Core.RunningMode.IMAGE:
-            if (taskApi.TryDetect(image, imageProcessingOptions, ref result))
-            {
-              _handLandmarkerResultAnnotationController.DrawNow(result);
-              SetLatestResult(result);
-            }
-            else
-            {
-              _handLandmarkerResultAnnotationController.DrawNow(default);
-              SetLatestResult(default);
-            }
-            break;
-          case Tasks.Vision.Core.RunningMode.VIDEO:
-            if (taskApi.TryDetectForVideo(image, GetCurrentTimestampMillisec(), imageProcessingOptions, ref result))
-            {
-              _handLandmarkerResultAnnotationController.DrawNow(result);
-              SetLatestResult(result);
-            }
-            else
-            {
-              _handLandmarkerResultAnnotationController.DrawNow(default);
-              SetLatestResult(default);
-            }
-            break;
-          case Tasks.Vision.Core.RunningMode.LIVE_STREAM:
-            taskApi.DetectAsync(image, GetCurrentTimestampMillisec(), imageProcessingOptions);
-            break;
+          switch (taskApi.runningMode)
+          {
+            case Tasks.Vision.Core.RunningMode.IMAGE:
+              if (taskApi.TryDetect(image, imageProcessingOptions, ref result))
+              {
+                _handLandmarkerResultAnnotationController.DrawNow(result);
+                SetLatestResult(result);
+              }
+              else
+              {
+                _handLandmarkerResultAnnotationController.DrawNow(default);
+                SetLatestResult(default);
+              }
+              break;
+            case Tasks.Vision.Core.RunningMode.VIDEO:
+              if (taskApi.TryDetectForVideo(image, GetCurrentTimestampMillisec(), imageProcessingOptions, ref result))
+              {
+                _handLandmarkerResultAnnotationController.DrawNow(result);
+                SetLatestResult(result);
+              }
+              else
+              {
+                _handLandmarkerResultAnnotationController.DrawNow(default);
+                SetLatestResult(default);
+              }
+              break;
+            case Tasks.Vision.Core.RunningMode.LIVE_STREAM:
+              taskApi.DetectAsync(image, GetCurrentTimestampMillisec(), imageProcessingOptions);
+              break;
+          }
+        }
+        finally
+        {
+          image.Dispose();
         }
       }
     }
