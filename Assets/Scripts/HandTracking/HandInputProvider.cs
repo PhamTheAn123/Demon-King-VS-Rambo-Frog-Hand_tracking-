@@ -156,13 +156,9 @@ public class HandInputProvider : MonoBehaviour
         }
 
         AimScreenPos = ToScreenPoint(landmarks[8]);
-        // Determine shoot held by checking if thumb is bent close to index base (simple heuristic)
-        // Use landmarks: thumb tip (4) and index MCP (5) distance
-        var thumbTip = landmarks[4];
-        var indexMcp = landmarks[5];
-        float thumbIndexDist = Vector2.Distance(new Vector2(thumbTip.x, thumbTip.y), new Vector2(indexMcp.x, indexMcp.y));
-        // If thumb is close to index base -> considered 'fist' (hold to shoot)
-        ShootHeld = thumbIndexDist < 0.06f;
+        // Shoot when exactly 1 finger is extended (index finger pointing)
+        int extendedFingers = CountExtendedFingers(landmarks);
+        ShootHeld = extendedFingers == 1;
     }
 
     private int CountExtendedFingers(IReadOnlyList<NormalizedLandmark> landmarks)
