@@ -14,6 +14,8 @@ public class ShootFireballsAttack : MonoBehaviour
     public float attackCooldown = 2f;
     private float lastAttackTime;
 
+    private bool allowEventFireball = false;
+
     private void Start()
     {
         bossController = GetComponent<BossController>();
@@ -54,6 +56,25 @@ public class ShootFireballsAttack : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = direction * fireballSpeed;
+        }
+    }
+
+    public void ShootFireballFromEvent()
+    {
+        if (!allowEventFireball) return;
+        ShootFireball();
+    }
+
+    public void SetEventFireEnabled(bool enabled)
+    {
+        allowEventFireball = enabled;
+    }
+
+    public void StopShooting()
+    {
+        if (anim != null)
+        {
+            anim.SetBool("isShooting", false);
         }
     }
 }

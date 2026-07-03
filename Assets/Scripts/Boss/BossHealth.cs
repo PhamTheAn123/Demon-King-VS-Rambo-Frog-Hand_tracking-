@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class BossHealth : MonoBehaviour
 {
@@ -14,6 +15,11 @@ public class BossHealth : MonoBehaviour
     private Color ogColor;
     private bool isDead = false;
     public Slider healthBar;
+    private bool isInvulnerable = false;
+
+    public event Action<float> OnHealthPercentChanged;
+    public event Action OnDied;
+    public bool IsDead => isDead;
 
     void Start()
     {
@@ -26,6 +32,8 @@ public class BossHealth : MonoBehaviour
             anim = GetComponentInChildren<Animator>();
         }
         rb = GetComponent<Rigidbody2D>();
+        if (healthBar != null) healthBar.maxValue = maxHealth;
+        OnHealthPercentChanged?.Invoke(GetHealthPercent());
     }
 
     void Update()
@@ -36,6 +44,7 @@ public class BossHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         if (isDead) return;
+        if (isInvulnerable) return;
 
         currentHealth -= damage;
         StartCoroutine(Flash());
@@ -43,11 +52,13 @@ public class BossHealth : MonoBehaviour
         {
             Die();
         }
+        OnHealthPercentChanged?.Invoke(GetHealthPercent());
     }
     private void Die()
     {
         if (isDead) return;
         isDead = true;
+        OnDied?.Invoke();
         if (anim != null)
         {
             anim.SetTrigger("die");
@@ -59,7 +70,13 @@ public class BossHealth : MonoBehaviour
     }
     public void DieAnimation()
     {
-        Destroy(gameObject, 0.5f);
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+
+        if (rb != null)
+        {
+            rb.simulated = false;
+        }
     }
     private IEnumerator Flash()
     {
@@ -74,5 +91,20 @@ public class BossHealth : MonoBehaviour
             yield return new WaitForSeconds(0.15f);
             spriteRenderer.color = ogColor;
         }
+    }
+
+    public void SetInvulnerable(bool inv)
+    {
+        isInvulnerable = inv;
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = inv ? Color.gray : ogColor;
+        }
+    }
+
+    public float GetHealthPercent()
+    {
+        if (maxHealth <= 0) return 0f;
+        return (float)currentHealth / (float)maxHealth * 100f;
     }
 }

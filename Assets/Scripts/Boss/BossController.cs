@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class BossController : MonoBehaviour
@@ -10,31 +11,44 @@ public class BossController : MonoBehaviour
     public ChaseAttack chaseAttack;
     public ShootFireballsAttack shootFireballs;
     public BossHealth bossHealth;
+    public CinemachineBossRoomTrigger bossRoomCameraTrigger;
 
     [Header("Attack Toggles")]
     public bool dashAttackOn = false;
     public bool chaseAttackOn = false;
     public bool shootFireballsOn = false;
-    public bool RandomAttackLoop = false;
+    public bool autoEnableAttacksIfNone = true;
+    public bool useScriptedPhase1 = true;
 
     [Header("Attack Ranges & Durations")]
-    public float randomAttackActiveRange = 8f;
     public float dashFireComboRange = 10f;
-    public float chaseAttackDuration = 5f;
+    public float chaseAttackDuration = 3f;
     public float idleDuration = 1f;
     public float fireballAttackDuration = 3f;
     public int maxFireballShots = 3;
+    public float postChaseMeleeDuration = 1.5f;
+    public float waitAfterFireballsAtA = 1f;
+    public float waitAfterFireballsAtB = 2f;
 
     [Header("Movement")]
     public bool moveToA = false;
     public bool moveToB = false;
     public Transform targetA;
     public Transform targetB;
+    public Transform targetC;
     public float moveSpeed = 3f;
+    public float sizeMultiplier = 1.5f;
+    public float speedMultiplier = 1.15f; // 15% increase
 
     [Header("Layers")]
     public LayerMask obstacleLayerMask = ~0;
     public LayerMask playerLayer = 1;
+
+    [Header("Gizmos")]
+    public bool showDashRange = true;
+    public bool showFireBreathRange = true;
+    public bool showChaseRange = true;
+    public bool showPlayerLine = true;
 
     private enum BossState1
     {
@@ -48,11 +62,20 @@ public class BossController : MonoBehaviour
     private Vector3 originalScale;
     private int fireballShotsCount = 0;
     private float fireballAttackTimer = 0f;
+    public float fireballShotInterval = 0.6f;
+    public float phase2HealthPercent = 50f;
+
+    private Rigidbody2D rb;
+    private bool inPhase2 = false;
+    private bool isExecutingSequence = false;
+    private Coroutine sequenceCoroutine;
+    private bool phase2DrinkCompleted = false;
 
     private void Start()
     {
         stateTimer = idleDuration;
         originalScale = transform.localScale;
+        rb = GetComponent<Rigidbody2D>();
         if (anim == null) anim = GetComponent<Animator>() ?? GetComponentInChildren<Animator>();
         if (player == null)
         {
@@ -60,47 +83,51 @@ public class BossController : MonoBehaviour
             if (playerObj != null) player = playerObj.transform;
         }
         if (raycastOrigin == null) raycastOrigin = transform;
-        if (dashAttackOn && dashAttack == null) dashAttack = GetComponent<DashAttack>() ?? gameObject.AddComponent<DashAttack>();
-        if (chaseAttackOn && chaseAttack == null) chaseAttack = GetComponent<ChaseAttack>() ?? gameObject.AddComponent<ChaseAttack>();
-        if (dashAttackOn && dashAttack != null)
+        if (autoEnableAttacksIfNone && !dashAttackOn && !chaseAttackOn && !shootFireballsOn)
         {
-            dashAttack.anim = anim;
-            dashAttack.player = player;
-            dashAttack.fireBreathRange = 4f;
-            dashAttack.raycastOrigin = raycastOrigin;
-            dashAttack.obstacleLayerMask = obstacleLayerMask;
-            dashAttack.playerLayer = playerLayer;
-            dashAttack.OnComboComplete += OnDashFireComboComplete;
+            dashAttackOn = true;
+            chaseAttackOn = true;
+            shootFireballsOn = true;
         }
-        if (chaseAttackOn && chaseAttack != null)
+
+        InitializeAttackComponents();
+        if (bossHealth != null)
         {
-            chaseAttack.anim = anim;
-            chaseAttack.player = player;
-            chaseAttack.raycastOrigin = raycastOrigin;
-            chaseAttack.OnChaseAttackComplete += OnChaseAttackComplete;
-        }
-        if (shootFireballsOn && shootFireballs != null)
-        {
-            shootFireballs.anim = anim;
-            shootFireballs.player = player;
-            if (shootFireballs.firePoint == null) shootFireballs.firePoint = raycastOrigin != null ? raycastOrigin : transform;
+            bossHealth.OnHealthPercentChanged += OnHealthPercentChanged;
+            bossHealth.OnDied += OnBossDied;
         }
     }
 
     private void Update()
     {
         if (player != null && currentState != BossState1.DashFireCombo) FacePlayer();
-        if (player != null)
+
+        // Phase2: override all other behavior
+        if (inPhase2)
         {
-            float dist = GetDistanceToPlayer();
-            RandomAttackLoop = dist <= randomAttackActiveRange;
+            if (chaseAttackOn && chaseAttack != null && !chaseAttack.IsPerformingChaseAttack)
+            {
+                TriggerChaseAttack();
+            }
+            return;
         }
+
         bool isDashAttacking = dashAttackOn && dashAttack != null && dashAttack.IsPerformingCombo;
         bool isChaseAttacking = chaseAttackOn && chaseAttack != null && chaseAttack.IsPerformingChaseAttack;
         if (isDashAttacking || isChaseAttacking) return;
         stateTimer -= Time.deltaTime;
         bool isMovingToTarget = (moveToA && targetA != null) || (moveToB && targetB != null);
         if (anim != null) anim.SetBool("isChasing", isMovingToTarget);
+
+        // If player enters dash range start scripted sequence
+        if (!isExecutingSequence && dashAttackOn && dashAttack != null && player != null)
+        {
+            float distToPlayer = GetDistanceToPlayer();
+            if (distToPlayer <= dashFireComboRange)
+            {
+                sequenceCoroutine = StartCoroutine(Phase1DashSequence());
+            }
+        }
 
         switch (currentState)
         {
@@ -115,9 +142,9 @@ public class BossController : MonoBehaviour
                     MoveAndJumpToPlatform(targetB.position, 8f, 1.5f);
                     FaceMoveDirection(targetB.position);
                 }
-                if (stateTimer <= 0f)
+                if (!useScriptedPhase1 && stateTimer <= 0f)
                 {
-                    ChooseRandomAttack();
+                    ChooseAttackByPriority();
                 }
                 break;
             case BossState1.DashFireCombo:
@@ -179,15 +206,19 @@ public class BossController : MonoBehaviour
     {
         if (player == null) return;
         Vector3 directionToPlayer = (player.position - transform.position).normalized;
-        if (directionToPlayer.x > 0) transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
-        else if (directionToPlayer.x < 0) transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
+        Vector3 scale = transform.localScale;
+        if (directionToPlayer.x > 0) scale.x = Mathf.Abs(scale.x);
+        else if (directionToPlayer.x < 0) scale.x = -Mathf.Abs(scale.x);
+        transform.localScale = scale;
     }
 
     public void FaceMoveDirection(Vector3 targetPosition)
     {
         Vector3 direction = (targetPosition - transform.position).normalized;
-        if (direction.x > 0) transform.localScale = new Vector3(Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
-        else if (direction.x < 0) transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), originalScale.y, originalScale.z);
+        Vector3 scale = transform.localScale;
+        if (direction.x > 0) scale.x = Mathf.Abs(scale.x);
+        else if (direction.x < 0) scale.x = -Mathf.Abs(scale.x);
+        transform.localScale = scale;
     }
 
     void ChooseAttackByDistance()
@@ -228,26 +259,29 @@ public class BossController : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         if (raycastOrigin == null) return;
-        // Vẽ vùng random attack
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(raycastOrigin.position, randomAttackActiveRange);
-
         // Vẽ vùng dashFireComboRange
-        if (dashAttackOn)
+        if (showDashRange)
         {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(raycastOrigin.position, dashFireComboRange);
         }
 
+        // Vẽ vùng fire breath (dash combo)
+        if (showFireBreathRange && dashAttack != null)
+        {
+            Gizmos.color = new Color(1f, 0.5f, 0f, 1f);
+            Gizmos.DrawWireSphere(raycastOrigin.position, dashAttack.fireBreathRange);
+        }
+
         // Vẽ vùng chaseAttack
-        if (chaseAttackOn && chaseAttack != null)
+        if (showChaseRange && chaseAttack != null)
         {
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(raycastOrigin.position, chaseAttack.meleeAttackRange);
         }
 
         // Vẽ đường thẳng tới player
-        if (player != null)
+        if (showPlayerLine && player != null)
         {
             Gizmos.color = Color.white;
             Gizmos.DrawLine(raycastOrigin.position, player.position);
@@ -257,44 +291,32 @@ public class BossController : MonoBehaviour
         }
     }
 
-    // Chọn đòn tấn công ngẫu nhiên cho BossState1
-    private void ChooseRandomAttack()
+    // Chọn đòn tấn công theo thứ tự cố định cho BossState1
+    private void ChooseAttackByPriority()
     {
         if (player == null) return;
-        // Nếu bật RandomAttackLoop thì random trạng thái attack
-        if (RandomAttackLoop)
+        if (shootFireballsOn && shootFireballs != null)
         {
-            dashAttackOn = UnityEngine.Random.value > 0.5f;
-            chaseAttackOn = UnityEngine.Random.value > 0.5f;
-            shootFireballsOn = UnityEngine.Random.value > 0.5f;
-        }
-        int attackCount = 0;
-        System.Collections.Generic.List<BossState1> possibleAttacks = new System.Collections.Generic.List<BossState1>();
-        if (shootFireballsOn && shootFireballs != null) { possibleAttacks.Add(BossState1.ShootFireballs); attackCount++; }
-        if (dashAttackOn && dashAttack != null && dashAttack.CanPerformDashAttack()) { possibleAttacks.Add(BossState1.DashFireCombo); attackCount++; }
-        if (chaseAttackOn && chaseAttack != null) { possibleAttacks.Add(BossState1.ChaseAttack); attackCount++; }
-        if (possibleAttacks.Count == 0)
-        {
-            stateTimer = idleDuration;
+            TriggerShootFireballs();
+            currentState = BossState1.ShootFireballs;
             return;
         }
-        int randomIndex = UnityEngine.Random.Range(0, possibleAttacks.Count);
-        BossState1 chosenAttack = possibleAttacks[randomIndex];
-        switch (chosenAttack)
+
+        if (dashAttackOn && dashAttack != null && dashAttack.CanPerformDashAttack())
         {
-            case BossState1.ShootFireballs:
-                TriggerShootFireballs();
-                currentState = BossState1.ShootFireballs;
-                break;
-            case BossState1.DashFireCombo:
-                TriggerDashFireCombo();
-                currentState = BossState1.DashFireCombo;
-                break;
-            case BossState1.ChaseAttack:
-                TriggerChaseAttack();
-                currentState = BossState1.ChaseAttack;
-                break;
+            TriggerDashFireCombo();
+            currentState = BossState1.DashFireCombo;
+            return;
         }
+
+        if (chaseAttackOn && chaseAttack != null)
+        {
+            TriggerChaseAttack();
+            currentState = BossState1.ChaseAttack;
+            return;
+        }
+
+        stateTimer = idleDuration;
     }
 
     public void TriggerShootFireballs()
@@ -302,10 +324,13 @@ public class BossController : MonoBehaviour
         if (!shootFireballsOn || shootFireballs == null) return;
         fireballShotsCount = 0;
         fireballAttackTimer = 0f;
+        currentState = BossState1.ShootFireballs;
     }
     public void TriggerChaseAttack()
     {
-        if (!chaseAttackOn || chaseAttack == null) return;
+        if (!chaseAttackOn) return;
+        if (chaseAttack == null) EnsureChaseAttackInitialized();
+        if (chaseAttack == null) return;
         currentState = BossState1.ChaseAttack;
         chaseAttack.StartChaseAttack(player);
     }
@@ -328,6 +353,296 @@ public class BossController : MonoBehaviour
         currentState = BossState1.DashFireCombo;
         dashAttack.StartDashFireCombo(player);
     }
+    
+    private void OnHealthPercentChanged(float percent)
+    {
+        if (!inPhase2 && percent <= phase2HealthPercent)
+        {
+            if (chaseAttack != null && chaseAttack.IsPerformingChaseAttack)
+            {
+                chaseAttack.StopChaseAttack();
+            }
+
+            if (dashAttack != null && dashAttack.IsPerformingCombo)
+            {
+                dashAttack.StopCombo();
+            }
+
+            StopFireballLoop();
+            StartCoroutine(EnterPhase2());
+        }
+    }
+
+    private IEnumerator EnterPhase2()
+    {
+        inPhase2 = true;
+        isExecutingSequence = false;
+        phase2DrinkCompleted = false;
+        if (sequenceCoroutine != null) StopCoroutine(sequenceCoroutine);
+        StopFireballLoop();
+        if (dashAttack != null && dashAttack.IsPerformingCombo)
+        {
+            dashAttack.StopCombo();
+        }
+        if (chaseAttack != null)
+        {
+            chaseAttack.StopChaseAttack();
+            chaseAttack.enabled = false;
+        }
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+        // Become invulnerable while drinking
+        if (bossHealth != null) bossHealth.SetInvulnerable(true);
+        // Teleport to C
+        if (targetC != null)
+        {
+            transform.position = targetC.position;
+        }
+        if (anim != null)
+        {
+            anim.Play("idle", 0, 0f);
+            anim.SetBool("isChasing", false);
+            anim.SetBool("isAttacking", false);
+            anim.SetBool("isShooting", false);
+        }
+
+        yield return new WaitForSeconds(2f);
+
+        if (anim != null)
+        {
+            anim.ResetTrigger("drink");
+            anim.Play("drink_potion", 0, 0f);
+        }
+        float elapsed = 0f;
+        const float fallbackDuration = 3f;
+        while (!phase2DrinkCompleted && elapsed < fallbackDuration)
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        if (!phase2DrinkCompleted)
+        {
+            CompletePhase2Drink();
+        }
+        yield break;
+    }
+
+    private void EnsureChaseAttackInitialized()
+    {
+        if (chaseAttack == null)
+        {
+            chaseAttack = GetComponent<ChaseAttack>() ?? gameObject.AddComponent<ChaseAttack>();
+        }
+
+        if (chaseAttack == null) return;
+
+        if (!chaseAttack.enabled)
+        {
+            chaseAttack.enabled = true;
+        }
+
+        chaseAttack.anim = anim;
+        chaseAttack.player = player;
+        chaseAttack.raycastOrigin = raycastOrigin;
+        chaseAttack.OnChaseAttackComplete -= OnChaseAttackComplete;
+        chaseAttack.OnChaseAttackComplete += OnChaseAttackComplete;
+    }
+
+    private void InitializeAttackComponents()
+    {
+        if (dashAttackOn)
+        {
+            if (dashAttack == null)
+            {
+                dashAttack = GetComponent<DashAttack>() ?? gameObject.AddComponent<DashAttack>();
+            }
+
+            if (dashAttack != null)
+            {
+                dashAttack.anim = anim;
+                dashAttack.player = player;
+                dashAttack.fireBreathRange = 4f;
+                dashAttack.raycastOrigin = raycastOrigin;
+                dashAttack.obstacleLayerMask = obstacleLayerMask;
+                dashAttack.playerLayer = playerLayer;
+                dashAttack.OnComboComplete -= OnDashFireComboComplete;
+                dashAttack.OnComboComplete += OnDashFireComboComplete;
+            }
+        }
+
+        if (chaseAttackOn)
+        {
+            EnsureChaseAttackInitialized();
+        }
+
+        if (shootFireballsOn)
+        {
+            if (shootFireballs == null)
+            {
+                shootFireballs = GetComponent<ShootFireballsAttack>() ?? gameObject.AddComponent<ShootFireballsAttack>();
+            }
+
+            if (shootFireballs != null)
+            {
+                shootFireballs.anim = anim;
+                shootFireballs.player = player;
+                if (shootFireballs.firePoint == null)
+                {
+                    shootFireballs.firePoint = raycastOrigin != null ? raycastOrigin : transform;
+                }
+            }
+        }
+    }
+
+    public void CompletePhase2Drink()
+    {
+        if (phase2DrinkCompleted) return;
+
+        phase2DrinkCompleted = true;
+
+        if (bossHealth != null) bossHealth.SetInvulnerable(false);
+
+        // Buff size and speed once the drink animation finishes.
+        transform.localScale = new Vector3(originalScale.x * sizeMultiplier, originalScale.y * sizeMultiplier, originalScale.z);
+        moveSpeed *= speedMultiplier;
+
+        // Phase 2 uses chase only.
+        dashAttackOn = false;
+        shootFireballsOn = false;
+        chaseAttackOn = true;
+        EnsureChaseAttackInitialized();
+
+        currentState = BossState1.Idle;
+        stateTimer = idleDuration;
+
+        if (anim != null)
+        {
+            anim.Play("idle", 0, 0f);
+            anim.SetBool("isChasing", true);
+            anim.SetBool("isAttacking", false);
+        }
+
+        if (chaseAttack != null && player != null)
+        {
+            chaseAttack.StartChaseAttack(player);
+            currentState = BossState1.ChaseAttack;
+        }
+    }
+
+    private IEnumerator Phase1DashSequence()
+    {
+        isExecutingSequence = true;
+        StopFireballLoop();
+        // Trigger dash+fire
+        TriggerDashFireCombo();
+        // wait until dash combo finishes
+        yield return new WaitUntil(() => dashAttack == null || !dashAttack.IsPerformingCombo);
+
+        // Teleport to A then B and shoot fireballs at each point
+        if (shootFireballsOn && shootFireballs != null)
+        {
+            if (targetA != null || targetB != null)
+            {
+                yield return StartCoroutine(ShootFireballsFromTargets());
+            }
+            else
+            {
+                yield return StartCoroutine(ShootFireballsBurst());
+            }
+        }
+
+        // Start chase attack for chaseAttackDuration
+        if (chaseAttackOn && chaseAttack != null)
+        {
+            StopFireballLoop();
+            TriggerChaseAttack();
+            yield return new WaitForSeconds(chaseAttackDuration);
+            if (chaseAttack != null) chaseAttack.StopChaseAttack();
+        }
+
+        // After chase: decide next action based on distance
+        float dist = (player != null) ? GetDistanceToPlayer() : float.MaxValue;
+        if (player != null && dist > dashFireComboRange && dashAttackOn && dashAttack != null && dashAttack.CanPerformDashAttack())
+        {
+            // Player far: dash + fire
+            TriggerDashFireCombo();
+        }
+        else if (player != null && chaseAttackOn && chaseAttack != null)
+        {
+            float meleeRange = chaseAttack.meleeAttackRange;
+            if (dist <= meleeRange)
+            {
+                // Player close: short melee chase
+                StopFireballLoop();
+                TriggerChaseAttack();
+                yield return new WaitForSeconds(postChaseMeleeDuration);
+                if (chaseAttack != null) chaseAttack.StopChaseAttack();
+            }
+            else if (shootFireballsOn && shootFireballs != null)
+            {
+                // Player near: teleport to A then B and shoot
+                yield return StartCoroutine(ShootFireballsFromTargets());
+            }
+        }
+
+        isExecutingSequence = false;
+        yield break;
+    }
+
+    private void TeleportToTarget(Transform target)
+    {
+        if (target == null) return;
+        transform.position = target.position;
+        FaceMoveDirection(target.position);
+    }
+
+    private IEnumerator ShootFireballsFromTargets()
+    {
+        if (!shootFireballsOn || shootFireballs == null) yield break;
+
+        if (targetA != null)
+        {
+            TeleportToTarget(targetA);
+            yield return StartCoroutine(ShootFireballsBurst());
+            if (waitAfterFireballsAtA > 0f)
+            {
+                yield return new WaitForSeconds(waitAfterFireballsAtA);
+            }
+        }
+
+        if (targetB != null)
+        {
+            TeleportToTarget(targetB);
+            yield return StartCoroutine(ShootFireballsBurst());
+            if (waitAfterFireballsAtB > 0f)
+            {
+                yield return new WaitForSeconds(waitAfterFireballsAtB);
+            }
+        }
+    }
+
+    private IEnumerator ShootFireballsBurst()
+    {
+        if (!shootFireballsOn || shootFireballs == null) yield break;
+        shootFireballs.SetEventFireEnabled(true);
+        for (int i = 0; i < maxFireballShots; i++)
+        {
+            shootFireballs.ShootFireball();
+            yield return new WaitForSeconds(fireballShotInterval);
+        }
+
+        shootFireballs.StopShooting();
+        shootFireballs.SetEventFireEnabled(false);
+    }
+
+    private void StopFireballLoop()
+    {
+        if (shootFireballs == null) return;
+        shootFireballs.SetEventFireEnabled(false);
+        shootFireballs.StopShooting();
+    }
     private void OnDashFireComboComplete()
     {
         currentState = BossState1.Idle;
@@ -337,6 +652,43 @@ public class BossController : MonoBehaviour
     {
         if (dashAttackOn && dashAttack != null) dashAttack.OnComboComplete -= OnDashFireComboComplete;
         if (chaseAttackOn && chaseAttack != null) chaseAttack.OnChaseAttackComplete -= OnChaseAttackComplete;
+        if (bossHealth != null)
+        {
+            bossHealth.OnHealthPercentChanged -= OnHealthPercentChanged;
+            bossHealth.OnDied -= OnBossDied;
+        }
+    }
+
+    private void OnBossDied()
+    {
+        StopFireballLoop();
+        if (dashAttack != null && dashAttack.IsPerformingCombo)
+        {
+            dashAttack.StopCombo();
+        }
+
+        if (chaseAttack != null)
+        {
+            chaseAttack.StopChaseAttack();
+            chaseAttack.enabled = false;
+        }
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        // Deactivate Boss Camera to return to Player follow camera
+        if (bossRoomCameraTrigger == null)
+        {
+            bossRoomCameraTrigger = FindObjectOfType<CinemachineBossRoomTrigger>();
+        }
+        if (bossRoomCameraTrigger != null)
+        {
+            bossRoomCameraTrigger.DisableBossCamera();
+        }
+
+        enabled = false;
     }
 
     public void MoveAndJumpToPlatform(Vector3 targetPosition, float jumpForce, float moveDistance)
@@ -348,7 +700,15 @@ public class BossController : MonoBehaviour
         if (horizontalDistance > moveDistance)
         {
             Vector3 moveTarget = transform.position + new Vector3(Mathf.Sign(targetPosition.x - transform.position.x) * moveDistance, 0, 0);
-            transform.position = Vector3.MoveTowards(transform.position, moveTarget, moveSpeed * Time.deltaTime);
+            if (rb != null)
+            {
+                Vector3 newPos = Vector3.MoveTowards(transform.position, moveTarget, moveSpeed * Time.deltaTime);
+                rb.MovePosition(newPos);
+            }
+            else
+            {
+                transform.position = Vector3.MoveTowards(transform.position, moveTarget, moveSpeed * Time.deltaTime);
+            }
         }
         // Nếu đã gần vị trí nhảy hoặc đang ở dưới platform, thực hiện nhảy thẳng tới vị trí
         else if (rb != null && Mathf.Abs(rb.linearVelocity.y) < 0.01f)

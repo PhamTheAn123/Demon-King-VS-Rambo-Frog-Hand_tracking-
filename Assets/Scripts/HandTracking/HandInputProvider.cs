@@ -26,6 +26,13 @@ public class HandInputProvider : MonoBehaviour
     public bool HasHand { get; private set; }
 
     private bool lastFourFingers;
+    private HandLandmarkerResult _cachedResult;
+
+    private void Start()
+    {
+        // Allocate space for up to 2 hands to prevent GC allocation on CloneTo
+        _cachedResult = HandLandmarkerResult.Alloc(2);
+    }
 
     private void Update()
     {
@@ -37,7 +44,7 @@ public class HandInputProvider : MonoBehaviour
             return;
         }
 
-        if (!runner.TryGetLatestResult(out HandLandmarkerResult result) || result.handLandmarks == null || result.handLandmarks.Count == 0)
+        if (!runner.TryGetLatestResult(ref _cachedResult) || _cachedResult.handLandmarks == null || _cachedResult.handLandmarks.Count == 0)
         {
             HasHand = false;
             return;
@@ -46,9 +53,9 @@ public class HandInputProvider : MonoBehaviour
         var imageSource = ImageSourceProvider.ImageSource;
         bool swapHandedness = imageSource != null && imageSource.GetTransformationOptions().flipHorizontally;
 
-        var leftLandmarks = GetHandLandmarks(result, "Left", swapHandedness);
-        var rightLandmarks = GetHandLandmarks(result, "Right", swapHandedness);
-        var fallbackLandmarks = GetFirstHandLandmarks(result);
+        var leftLandmarks = GetHandLandmarks(_cachedResult, "Left", swapHandedness);
+        var rightLandmarks = GetHandLandmarks(_cachedResult, "Right", swapHandedness);
+        var fallbackLandmarks = GetFirstHandLandmarks(_cachedResult);
 
         HasHand = leftLandmarks != null || rightLandmarks != null || fallbackLandmarks != null;
 

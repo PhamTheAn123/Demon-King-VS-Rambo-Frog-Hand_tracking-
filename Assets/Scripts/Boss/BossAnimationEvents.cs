@@ -19,7 +19,7 @@ public class BossAnimationEvents : MonoBehaviour
     }
 
     // Animation Event: Được gọi khi melee attack animation kết thúc (cho ChaseAttack)
-    private void EndMeleeAttack()
+    public void EndMeleeAttack()
     {
         if (chaseAttack != null)
         {
@@ -30,22 +30,38 @@ public class BossAnimationEvents : MonoBehaviour
 
 
     // Animation Event: Được gọi khi prepare dash animation hoàn thành và sẵn sàng bắt đầu dash
-    private void StartDash()
+    public void StartDash()
     {
         // Chỉ cần để trống vì DashAttack sẽ tự xử lý dash movement
         // Animation event này có thể được sử dụng để trigger effects hoặc sounds
         Debug.Log("Animation Event: Dash bắt đầu!");
     }
 
+    // Animation Event: Được gọi khi boss bắt đầu uống thuốc
+    public void StartDrinkPotion()
+    {
+        Debug.Log("Animation Event: Boss bắt đầu uống thuốc!");
+    }
+
+    // Animation Event: Được gọi khi boss uống thuốc xong
+    public void EndDrinkPotion()
+    {
+        if (bossController != null)
+        {
+            bossController.CompletePhase2Drink();
+            Debug.Log("Animation Event: Boss uống thuốc xong!");
+        }
+    }
+
     // Animation Event: Được gọi khi fire breath animation hoàn thành
-    private void EndFireBreath()
+    public void EndFireBreath()
     {
         // Gây sát thương lên player khi animation fire breath kết thúc
         DealDamageToPlayer();
         Debug.Log("Animation Event: Fire breath kết thúc!");
     }
     // Hàm gây sát thương lên player
-    private void DealDamageToPlayer()
+    public void DealDamageToPlayer()
     {
         if (dashAttack != null && dashAttack.player != null)
         {
@@ -58,12 +74,12 @@ public class BossAnimationEvents : MonoBehaviour
         }
     }
 
-    private void ShootFireball()
+    public void ShootFireball()
     {
         ShootFireballsAttack shootFireballs = GetComponentInParent<ShootFireballsAttack>();
         if (shootFireballs != null)
         {
-            shootFireballs.ShootFireball();
+            shootFireballs.ShootFireballFromEvent();
             Debug.Log("Animation Event: Boss bắn fireball!");
         }
         else
@@ -72,8 +88,22 @@ public class BossAnimationEvents : MonoBehaviour
         }
     }
 
+    // Animation Event: Được gọi khi animation bắn fireball kết thúc
+    public void EndShootFireball()
+    {
+        if (shootFireballsAttack != null)
+        {
+            shootFireballsAttack.StopShooting();
+            Debug.Log("Animation Event: Boss dừng bắn fireball!");
+        }
+        else
+        {
+            Debug.LogWarning("ShootFireballsAttack component không tìm thấy!");
+        }
+    }
+
     // Animation Event: Được gọi khi animation chết kết thúc
-    private void EndDieAnimation()
+    public void EndDieAnimation()
     {
         if (bossHealth != null)
         {

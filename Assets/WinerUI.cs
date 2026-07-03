@@ -1,10 +1,11 @@
 using UnityEngine;
-using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WinerUI : MonoBehaviour
 {
     [SerializeField] private GameObject winnerPanel;
-    [SerializeField] private TextMeshProUGUI winMessageText;
+    [SerializeField] private Button backToMainMenuButton;
     private BossHealth bossHealth;
     
     void Start()
@@ -23,6 +24,11 @@ public class WinerUI : MonoBehaviour
         {
             Debug.LogWarning("BossHealth component not found in scene!");
         }
+
+        if (backToMainMenuButton != null)
+        {
+            backToMainMenuButton.onClick.AddListener(BackToMainMenu);
+        }
     }
 
     void Update()
@@ -38,10 +44,24 @@ public class WinerUI : MonoBehaviour
         if (winnerPanel != null)
         {
             winnerPanel.SetActive(true);
-            if (winMessageText != null)
+            Time.timeScale = 0;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.None;
+
+            PlayerController player = FindObjectOfType<PlayerController>();
+            if (player != null)
             {
-                winMessageText.text = "YOU WIN!";
+                player.enabled = false;
             }
         }
     }
+
+    public void BackToMainMenu()
+    {
+        Time.timeScale = 1;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene("MainMenu");
+    }
 }
+
