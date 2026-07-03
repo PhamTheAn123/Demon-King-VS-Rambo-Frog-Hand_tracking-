@@ -5,6 +5,8 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenu;
 
+    public bool IsPausePanelActive => pauseMenu != null && pauseMenu.activeSelf;
+
     public void PauseGame()
     {
         // Set sorting order of the canvas to 999 to be on top of all other Canvases
@@ -21,7 +23,7 @@ public class PauseMenu : MonoBehaviour
 
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
-        Cursor.visible = false; // Giữ ẩn con trỏ chuột hệ thống
+        Cursor.visible = true; // Giữ ẩn con trỏ chuột hệ thống
         Cursor.lockState = CursorLockMode.None; // Giải phóng chuột để di chuyển tự do
     }
     public void Home()

@@ -71,6 +71,23 @@ public class PlayerController : MonoBehaviour
         HandleJumpInput();
         UpdateAnimations();
 
+        // Handle Pause Toggle
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseMenu pm = FindObjectOfType<PauseMenu>(true);
+            if (pm != null)
+            {
+                if (pm.IsPausePanelActive)
+                {
+                    pm.Exit();
+                }
+                else
+                {
+                    pm.PauseGame();
+                }
+            }
+        }
+
         if (gunController != null)
         {
             if (inputShootDown)
