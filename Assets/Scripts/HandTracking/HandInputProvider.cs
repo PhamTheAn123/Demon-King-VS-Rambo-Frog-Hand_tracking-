@@ -26,6 +26,13 @@ public class HandInputProvider : MonoBehaviour
     public bool HasHand { get; private set; }
 
     private bool lastFourFingers;
+    private HandLandmarkerResult _cachedResult;
+
+    private void Start()
+    {
+        // Allocate space for up to 2 hands to prevent GC allocation on CloneTo
+        _cachedResult = HandLandmarkerResult.Alloc(2);
+    }
 
     private void Update()
     {
@@ -37,7 +44,7 @@ public class HandInputProvider : MonoBehaviour
             return;
         }
 
-        if (!runner.TryGetLatestResult(out HandLandmarkerResult result) || result.handLandmarks == null || result.handLandmarks.Count == 0)
+        if (!runner.TryGetLatestResult(ref _cachedResult) || _cachedResult.handLandmarks == null || _cachedResult.handLandmarks.Count == 0)
         {
             HasHand = false;
             return;
@@ -46,9 +53,9 @@ public class HandInputProvider : MonoBehaviour
         var imageSource = ImageSourceProvider.ImageSource;
         bool swapHandedness = imageSource != null && imageSource.GetTransformationOptions().flipHorizontally;
 
-        var leftLandmarks = GetHandLandmarks(result, "Left", swapHandedness);
-        var rightLandmarks = GetHandLandmarks(result, "Right", swapHandedness);
-        var fallbackLandmarks = GetFirstHandLandmarks(result);
+        var leftLandmarks = GetHandLandmarks(_cachedResult, "Left", swapHandedness);
+        var rightLandmarks = GetHandLandmarks(_cachedResult, "Right", swapHandedness);
+        var fallbackLandmarks = GetFirstHandLandmarks(_cachedResult);
 
         HasHand = leftLandmarks != null || rightLandmarks != null || fallbackLandmarks != null;
 
@@ -149,13 +156,9 @@ public class HandInputProvider : MonoBehaviour
         }
 
         AimScreenPos = ToScreenPoint(landmarks[8]);
-        // Determine shoot held by checking if thumb is bent close to index base (simple heuristic)
-        // Use landmarks: thumb tip (4) and index MCP (5) distance
-        var thumbTip = landmarks[4];
-        var indexMcp = landmarks[5];
-        float thumbIndexDist = Vector2.Distance(new Vector2(thumbTip.x, thumbTip.y), new Vector2(indexMcp.x, indexMcp.y));
-        // If thumb is close to index base -> considered 'fist' (hold to shoot)
-        ShootHeld = thumbIndexDist < 0.06f;
+        // Shoot when exactly 1 finger is extended (index finger pointing)
+        int extendedFingers = CountExtendedFingers(landmarks);
+        ShootHeld = extendedFingers == 1;
     }
 
     private int CountExtendedFingers(IReadOnlyList<NormalizedLandmark> landmarks)

@@ -1,0 +1,1335 @@
+﻿{
+  "version": "1.0.0",
+  "author": "Unkwonss",
+  "generatedAt": "2026-07-05",
+  "description": "Boss fight phase configuration with attack patterns and transitions",
+  "bosses": [
+    {
+      "bossId": 1,
+      "bossName": "DemonKing",
+      "totalHp": 39760,
+      "defense": 122,
+      "speed": 4,
+      "numPhases": 2,
+      "bgmTrack": "bgm_boss_DemonKing",
+      "phases": [
+        {
+          "phaseIndex": 1,
+          "hpThreshold": 100,
+          "speedMultiplier": 1,
+          "damageMultiplier": 1,
+          "transitionCutscene": "cut_DemonKing_phase1",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Beam",
+              "damage": 1962,
+              "cooldown": 6,
+              "windUp": 1,
+              "weight": 3,
+              "animClip": "anim_DemonKing_atk_Beam_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Projectile",
+              "damage": 701,
+              "cooldown": 4.1,
+              "windUp": 1.9,
+              "weight": 2,
+              "animClip": "anim_DemonKing_atk_Projectile_1"
+            },
+            {
+              "attackId": 2,
+              "type": "AoE",
+              "damage": 1170,
+              "cooldown": 2.4,
+              "windUp": 0.4,
+              "weight": 9,
+              "animClip": "anim_DemonKing_atk_AoE_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Ranged",
+              "damage": 1258,
+              "cooldown": 2,
+              "windUp": 0.9,
+              "weight": 8,
+              "animClip": "anim_DemonKing_atk_Ranged_3"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 2,
+          "hpThreshold": 50,
+          "speedMultiplier": 1.25,
+          "damageMultiplier": 1.3,
+          "transitionCutscene": "cut_DemonKing_phase2",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Beam",
+              "damage": 496,
+              "cooldown": 6.6,
+              "windUp": 1.5,
+              "weight": 4,
+              "animClip": "anim_DemonKing_atk_Beam_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Ranged",
+              "damage": 1153,
+              "cooldown": 4.3,
+              "windUp": 0.6,
+              "weight": 2,
+              "animClip": "anim_DemonKing_atk_Ranged_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Melee",
+              "damage": 981,
+              "cooldown": 2.6,
+              "windUp": 0.7,
+              "weight": 9,
+              "animClip": "anim_DemonKing_atk_Melee_2"
+            },
+            {
+              "attackId": 3,
+              "type": "AoE",
+              "damage": 881,
+              "cooldown": 2.2,
+              "windUp": 0.9,
+              "weight": 8,
+              "animClip": "anim_DemonKing_atk_AoE_3"
+            }
+          ]
+        }
+      ],
+      "deathEvent": "evt_DemonKing_death",
+      "rewards": { "gold": 4479, "xp": 6404 }
+    }
+    ,
+    {
+      "bossId": 2,
+      "bossName": "RamboFrog",
+      "totalHp": 30068,
+      "defense": 191,
+      "speed": 2.2,
+      "numPhases": 3,
+      "bgmTrack": "bgm_boss_RamboFrog",
+      "phases": [
+        {
+          "phaseIndex": 1,
+          "hpThreshold": 100,
+          "speedMultiplier": 1,
+          "damageMultiplier": 1,
+          "transitionCutscene": "cut_RamboFrog_phase1",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Melee",
+              "damage": 903,
+              "cooldown": 4.3,
+              "windUp": 1.5,
+              "weight": 6,
+              "animClip": "anim_RamboFrog_atk_Melee_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Ranged",
+              "damage": 1348,
+              "cooldown": 4.3,
+              "windUp": 1,
+              "weight": 6,
+              "animClip": "anim_RamboFrog_atk_Ranged_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Charge",
+              "damage": 879,
+              "cooldown": 3.5,
+              "windUp": 1.6,
+              "weight": 1,
+              "animClip": "anim_RamboFrog_atk_Charge_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Melee",
+              "damage": 1039,
+              "cooldown": 7.2,
+              "windUp": 0.7,
+              "weight": 8,
+              "animClip": "anim_RamboFrog_atk_Melee_3"
+            },
+            {
+              "attackId": 4,
+              "type": "Beam",
+              "damage": 1372,
+              "cooldown": 7.9,
+              "windUp": 0.8,
+              "weight": 7,
+              "animClip": "anim_RamboFrog_atk_Beam_4"
+            },
+            {
+              "attackId": 5,
+              "type": "Summon",
+              "damage": 1300,
+              "cooldown": 4.4,
+              "windUp": 1.4,
+              "weight": 6,
+              "animClip": "anim_RamboFrog_atk_Summon_5"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 2,
+          "hpThreshold": 67,
+          "speedMultiplier": 1.25,
+          "damageMultiplier": 1.3,
+          "transitionCutscene": "cut_RamboFrog_phase2",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Ranged",
+              "damage": 1005,
+              "cooldown": 4.2,
+              "windUp": 1.2,
+              "weight": 2,
+              "animClip": "anim_RamboFrog_atk_Ranged_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Summon",
+              "damage": 194,
+              "cooldown": 2.7,
+              "windUp": 1.4,
+              "weight": 2,
+              "animClip": "anim_RamboFrog_atk_Summon_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Summon",
+              "damage": 926,
+              "cooldown": 3.8,
+              "windUp": 1.8,
+              "weight": 4,
+              "animClip": "anim_RamboFrog_atk_Summon_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Ranged",
+              "damage": 754,
+              "cooldown": 6.4,
+              "windUp": 1.7,
+              "weight": 3,
+              "animClip": "anim_RamboFrog_atk_Ranged_3"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 3,
+          "hpThreshold": 33,
+          "speedMultiplier": 1.5,
+          "damageMultiplier": 1.6,
+          "transitionCutscene": "cut_RamboFrog_phase3",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Ranged",
+              "damage": 1831,
+              "cooldown": 1.8,
+              "windUp": 1.8,
+              "weight": 1,
+              "animClip": "anim_RamboFrog_atk_Ranged_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Ranged",
+              "damage": 301,
+              "cooldown": 1.6,
+              "windUp": 1.5,
+              "weight": 5,
+              "animClip": "anim_RamboFrog_atk_Ranged_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Melee",
+              "damage": 630,
+              "cooldown": 2.2,
+              "windUp": 0.4,
+              "weight": 5,
+              "animClip": "anim_RamboFrog_atk_Melee_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Projectile",
+              "damage": 1172,
+              "cooldown": 6.9,
+              "windUp": 0.7,
+              "weight": 1,
+              "animClip": "anim_RamboFrog_atk_Projectile_3"
+            },
+            {
+              "attackId": 4,
+              "type": "Melee",
+              "damage": 1226,
+              "cooldown": 2.6,
+              "windUp": 0.3,
+              "weight": 8,
+              "animClip": "anim_RamboFrog_atk_Melee_4"
+            }
+          ]
+        }
+      ],
+      "deathEvent": "evt_RamboFrog_death",
+      "rewards": { "gold": 2550, "xp": 7124 }
+    }
+    ,
+    {
+      "bossId": 3,
+      "bossName": "DragonLord",
+      "totalHp": 5647,
+      "defense": 89,
+      "speed": 3.6,
+      "numPhases": 2,
+      "bgmTrack": "bgm_boss_DragonLord",
+      "phases": [
+        {
+          "phaseIndex": 1,
+          "hpThreshold": 100,
+          "speedMultiplier": 1,
+          "damageMultiplier": 1,
+          "transitionCutscene": "cut_DragonLord_phase1",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "AoE",
+              "damage": 1934,
+              "cooldown": 4.7,
+              "windUp": 1,
+              "weight": 5,
+              "animClip": "anim_DragonLord_atk_AoE_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Projectile",
+              "damage": 1565,
+              "cooldown": 6.6,
+              "windUp": 0.5,
+              "weight": 6,
+              "animClip": "anim_DragonLord_atk_Projectile_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Ranged",
+              "damage": 724,
+              "cooldown": 7.1,
+              "windUp": 1.8,
+              "weight": 9,
+              "animClip": "anim_DragonLord_atk_Ranged_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Ranged",
+              "damage": 338,
+              "cooldown": 7.7,
+              "windUp": 0.4,
+              "weight": 6,
+              "animClip": "anim_DragonLord_atk_Ranged_3"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 2,
+          "hpThreshold": 50,
+          "speedMultiplier": 1.25,
+          "damageMultiplier": 1.3,
+          "transitionCutscene": "cut_DragonLord_phase2",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "AoE",
+              "damage": 1727,
+              "cooldown": 5.1,
+              "windUp": 0.5,
+              "weight": 8,
+              "animClip": "anim_DragonLord_atk_AoE_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Melee",
+              "damage": 596,
+              "cooldown": 6.8,
+              "windUp": 1.9,
+              "weight": 2,
+              "animClip": "anim_DragonLord_atk_Melee_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Beam",
+              "damage": 705,
+              "cooldown": 6.7,
+              "windUp": 0.9,
+              "weight": 1,
+              "animClip": "anim_DragonLord_atk_Beam_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Ranged",
+              "damage": 1212,
+              "cooldown": 3.2,
+              "windUp": 1.9,
+              "weight": 5,
+              "animClip": "anim_DragonLord_atk_Ranged_3"
+            },
+            {
+              "attackId": 4,
+              "type": "Melee",
+              "damage": 1600,
+              "cooldown": 4.7,
+              "windUp": 0.3,
+              "weight": 3,
+              "animClip": "anim_DragonLord_atk_Melee_4"
+            }
+          ]
+        }
+      ],
+      "deathEvent": "evt_DragonLord_death",
+      "rewards": { "gold": 4815, "xp": 2972 }
+    }
+    ,
+    {
+      "bossId": 4,
+      "bossName": "NecroLich",
+      "totalHp": 42978,
+      "defense": 240,
+      "speed": 4.1,
+      "numPhases": 2,
+      "bgmTrack": "bgm_boss_NecroLich",
+      "phases": [
+        {
+          "phaseIndex": 1,
+          "hpThreshold": 100,
+          "speedMultiplier": 1,
+          "damageMultiplier": 1,
+          "transitionCutscene": "cut_NecroLich_phase1",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Melee",
+              "damage": 1698,
+              "cooldown": 3,
+              "windUp": 0.7,
+              "weight": 3,
+              "animClip": "anim_NecroLich_atk_Melee_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Charge",
+              "damage": 1296,
+              "cooldown": 5.8,
+              "windUp": 0.9,
+              "weight": 9,
+              "animClip": "anim_NecroLich_atk_Charge_1"
+            },
+            {
+              "attackId": 2,
+              "type": "AoE",
+              "damage": 1703,
+              "cooldown": 6.3,
+              "windUp": 0.7,
+              "weight": 4,
+              "animClip": "anim_NecroLich_atk_AoE_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Melee",
+              "damage": 302,
+              "cooldown": 3.8,
+              "windUp": 1.5,
+              "weight": 1,
+              "animClip": "anim_NecroLich_atk_Melee_3"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 2,
+          "hpThreshold": 50,
+          "speedMultiplier": 1.25,
+          "damageMultiplier": 1.3,
+          "transitionCutscene": "cut_NecroLich_phase2",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Projectile",
+              "damage": 180,
+              "cooldown": 2.4,
+              "windUp": 0.6,
+              "weight": 5,
+              "animClip": "anim_NecroLich_atk_Projectile_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Summon",
+              "damage": 847,
+              "cooldown": 2.6,
+              "windUp": 1.9,
+              "weight": 9,
+              "animClip": "anim_NecroLich_atk_Summon_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Melee",
+              "damage": 904,
+              "cooldown": 5.9,
+              "windUp": 1.1,
+              "weight": 4,
+              "animClip": "anim_NecroLich_atk_Melee_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Charge",
+              "damage": 1587,
+              "cooldown": 3.4,
+              "windUp": 1.5,
+              "weight": 6,
+              "animClip": "anim_NecroLich_atk_Charge_3"
+            },
+            {
+              "attackId": 4,
+              "type": "Ranged",
+              "damage": 753,
+              "cooldown": 1.9,
+              "windUp": 1.2,
+              "weight": 8,
+              "animClip": "anim_NecroLich_atk_Ranged_4"
+            },
+            {
+              "attackId": 5,
+              "type": "Charge",
+              "damage": 425,
+              "cooldown": 1.7,
+              "windUp": 0.6,
+              "weight": 2,
+              "animClip": "anim_NecroLich_atk_Charge_5"
+            }
+          ]
+        }
+      ],
+      "deathEvent": "evt_NecroLich_death",
+      "rewards": { "gold": 646, "xp": 3851 }
+    }
+    ,
+    {
+      "bossId": 5,
+      "bossName": "StormGiant",
+      "totalHp": 40724,
+      "defense": 194,
+      "speed": 3.9,
+      "numPhases": 3,
+      "bgmTrack": "bgm_boss_StormGiant",
+      "phases": [
+        {
+          "phaseIndex": 1,
+          "hpThreshold": 100,
+          "speedMultiplier": 1,
+          "damageMultiplier": 1,
+          "transitionCutscene": "cut_StormGiant_phase1",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Charge",
+              "damage": 1407,
+              "cooldown": 4.8,
+              "windUp": 0.6,
+              "weight": 8,
+              "animClip": "anim_StormGiant_atk_Charge_0"
+            },
+            {
+              "attackId": 1,
+              "type": "AoE",
+              "damage": 1013,
+              "cooldown": 3.9,
+              "windUp": 1.1,
+              "weight": 8,
+              "animClip": "anim_StormGiant_atk_AoE_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Ranged",
+              "damage": 167,
+              "cooldown": 2.3,
+              "windUp": 1,
+              "weight": 3,
+              "animClip": "anim_StormGiant_atk_Ranged_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Charge",
+              "damage": 1380,
+              "cooldown": 2.6,
+              "windUp": 1.1,
+              "weight": 5,
+              "animClip": "anim_StormGiant_atk_Charge_3"
+            },
+            {
+              "attackId": 4,
+              "type": "Projectile",
+              "damage": 1946,
+              "cooldown": 4.4,
+              "windUp": 1.5,
+              "weight": 7,
+              "animClip": "anim_StormGiant_atk_Projectile_4"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 2,
+          "hpThreshold": 67,
+          "speedMultiplier": 1.25,
+          "damageMultiplier": 1.3,
+          "transitionCutscene": "cut_StormGiant_phase2",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Projectile",
+              "damage": 1878,
+              "cooldown": 1.8,
+              "windUp": 0.6,
+              "weight": 2,
+              "animClip": "anim_StormGiant_atk_Projectile_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Melee",
+              "damage": 1109,
+              "cooldown": 3.7,
+              "windUp": 1.3,
+              "weight": 9,
+              "animClip": "anim_StormGiant_atk_Melee_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Charge",
+              "damage": 440,
+              "cooldown": 7.3,
+              "windUp": 1,
+              "weight": 1,
+              "animClip": "anim_StormGiant_atk_Charge_2"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 3,
+          "hpThreshold": 33,
+          "speedMultiplier": 1.5,
+          "damageMultiplier": 1.6,
+          "transitionCutscene": "cut_StormGiant_phase3",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "AoE",
+              "damage": 1173,
+              "cooldown": 6.4,
+              "windUp": 1.8,
+              "weight": 1,
+              "animClip": "anim_StormGiant_atk_AoE_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Charge",
+              "damage": 1898,
+              "cooldown": 2.8,
+              "windUp": 1.3,
+              "weight": 5,
+              "animClip": "anim_StormGiant_atk_Charge_1"
+            },
+            {
+              "attackId": 2,
+              "type": "AoE",
+              "damage": 1742,
+              "cooldown": 4.9,
+              "windUp": 1.9,
+              "weight": 8,
+              "animClip": "anim_StormGiant_atk_AoE_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Summon",
+              "damage": 865,
+              "cooldown": 5,
+              "windUp": 1.1,
+              "weight": 6,
+              "animClip": "anim_StormGiant_atk_Summon_3"
+            },
+            {
+              "attackId": 4,
+              "type": "Beam",
+              "damage": 1251,
+              "cooldown": 2.3,
+              "windUp": 0.3,
+              "weight": 2,
+              "animClip": "anim_StormGiant_atk_Beam_4"
+            },
+            {
+              "attackId": 5,
+              "type": "Beam",
+              "damage": 958,
+              "cooldown": 5.1,
+              "windUp": 1.9,
+              "weight": 9,
+              "animClip": "anim_StormGiant_atk_Beam_5"
+            }
+          ]
+        }
+      ],
+      "deathEvent": "evt_StormGiant_death",
+      "rewards": { "gold": 933, "xp": 2671 }
+    }
+    ,
+    {
+      "bossId": 6,
+      "bossName": "VoidWalker",
+      "totalHp": 8401,
+      "defense": 109,
+      "speed": 4.8,
+      "numPhases": 3,
+      "bgmTrack": "bgm_boss_VoidWalker",
+      "phases": [
+        {
+          "phaseIndex": 1,
+          "hpThreshold": 100,
+          "speedMultiplier": 1,
+          "damageMultiplier": 1,
+          "transitionCutscene": "cut_VoidWalker_phase1",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Charge",
+              "damage": 1901,
+              "cooldown": 7.1,
+              "windUp": 0.4,
+              "weight": 8,
+              "animClip": "anim_VoidWalker_atk_Charge_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Projectile",
+              "damage": 1128,
+              "cooldown": 7.2,
+              "windUp": 0.3,
+              "weight": 7,
+              "animClip": "anim_VoidWalker_atk_Projectile_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Summon",
+              "damage": 102,
+              "cooldown": 7.8,
+              "windUp": 1.4,
+              "weight": 8,
+              "animClip": "anim_VoidWalker_atk_Summon_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Ranged",
+              "damage": 1041,
+              "cooldown": 6.2,
+              "windUp": 1.4,
+              "weight": 6,
+              "animClip": "anim_VoidWalker_atk_Ranged_3"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 2,
+          "hpThreshold": 67,
+          "speedMultiplier": 1.25,
+          "damageMultiplier": 1.3,
+          "transitionCutscene": "cut_VoidWalker_phase2",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Summon",
+              "damage": 1394,
+              "cooldown": 6.7,
+              "windUp": 0.9,
+              "weight": 7,
+              "animClip": "anim_VoidWalker_atk_Summon_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Melee",
+              "damage": 1370,
+              "cooldown": 7,
+              "windUp": 1.8,
+              "weight": 7,
+              "animClip": "anim_VoidWalker_atk_Melee_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Charge",
+              "damage": 671,
+              "cooldown": 1.6,
+              "windUp": 1.2,
+              "weight": 9,
+              "animClip": "anim_VoidWalker_atk_Charge_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Melee",
+              "damage": 1777,
+              "cooldown": 2,
+              "windUp": 1,
+              "weight": 6,
+              "animClip": "anim_VoidWalker_atk_Melee_3"
+            },
+            {
+              "attackId": 4,
+              "type": "Charge",
+              "damage": 588,
+              "cooldown": 6.8,
+              "windUp": 1.9,
+              "weight": 3,
+              "animClip": "anim_VoidWalker_atk_Charge_4"
+            },
+            {
+              "attackId": 5,
+              "type": "Ranged",
+              "damage": 134,
+              "cooldown": 3,
+              "windUp": 0.5,
+              "weight": 4,
+              "animClip": "anim_VoidWalker_atk_Ranged_5"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 3,
+          "hpThreshold": 33,
+          "speedMultiplier": 1.5,
+          "damageMultiplier": 1.6,
+          "transitionCutscene": "cut_VoidWalker_phase3",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "AoE",
+              "damage": 1193,
+              "cooldown": 4.7,
+              "windUp": 1.3,
+              "weight": 2,
+              "animClip": "anim_VoidWalker_atk_AoE_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Projectile",
+              "damage": 469,
+              "cooldown": 7.1,
+              "windUp": 1.1,
+              "weight": 9,
+              "animClip": "anim_VoidWalker_atk_Projectile_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Projectile",
+              "damage": 426,
+              "cooldown": 7.7,
+              "windUp": 1.4,
+              "weight": 6,
+              "animClip": "anim_VoidWalker_atk_Projectile_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Projectile",
+              "damage": 1649,
+              "cooldown": 7.8,
+              "windUp": 0.5,
+              "weight": 7,
+              "animClip": "anim_VoidWalker_atk_Projectile_3"
+            },
+            {
+              "attackId": 4,
+              "type": "Melee",
+              "damage": 749,
+              "cooldown": 6.1,
+              "windUp": 1,
+              "weight": 5,
+              "animClip": "anim_VoidWalker_atk_Melee_4"
+            }
+          ]
+        }
+      ],
+      "deathEvent": "evt_VoidWalker_death",
+      "rewards": { "gold": 1597, "xp": 3170 }
+    }
+    ,
+    {
+      "bossId": 7,
+      "bossName": "ChaosHydra",
+      "totalHp": 44294,
+      "defense": 168,
+      "speed": 4,
+      "numPhases": 3,
+      "bgmTrack": "bgm_boss_ChaosHydra",
+      "phases": [
+        {
+          "phaseIndex": 1,
+          "hpThreshold": 100,
+          "speedMultiplier": 1,
+          "damageMultiplier": 1,
+          "transitionCutscene": "cut_ChaosHydra_phase1",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Summon",
+              "damage": 745,
+              "cooldown": 5.5,
+              "windUp": 0.5,
+              "weight": 4,
+              "animClip": "anim_ChaosHydra_atk_Summon_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Summon",
+              "damage": 1312,
+              "cooldown": 4.3,
+              "windUp": 1.2,
+              "weight": 7,
+              "animClip": "anim_ChaosHydra_atk_Summon_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Ranged",
+              "damage": 488,
+              "cooldown": 7,
+              "windUp": 1,
+              "weight": 5,
+              "animClip": "anim_ChaosHydra_atk_Ranged_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Charge",
+              "damage": 732,
+              "cooldown": 5.3,
+              "windUp": 0.5,
+              "weight": 4,
+              "animClip": "anim_ChaosHydra_atk_Charge_3"
+            },
+            {
+              "attackId": 4,
+              "type": "Ranged",
+              "damage": 890,
+              "cooldown": 4.2,
+              "windUp": 1.1,
+              "weight": 5,
+              "animClip": "anim_ChaosHydra_atk_Ranged_4"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 2,
+          "hpThreshold": 67,
+          "speedMultiplier": 1.25,
+          "damageMultiplier": 1.3,
+          "transitionCutscene": "cut_ChaosHydra_phase2",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Projectile",
+              "damage": 1774,
+              "cooldown": 1.7,
+              "windUp": 0.8,
+              "weight": 7,
+              "animClip": "anim_ChaosHydra_atk_Projectile_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Projectile",
+              "damage": 1809,
+              "cooldown": 4.8,
+              "windUp": 1.7,
+              "weight": 2,
+              "animClip": "anim_ChaosHydra_atk_Projectile_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Projectile",
+              "damage": 1474,
+              "cooldown": 5.2,
+              "windUp": 0.6,
+              "weight": 3,
+              "animClip": "anim_ChaosHydra_atk_Projectile_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Charge",
+              "damage": 1870,
+              "cooldown": 2.8,
+              "windUp": 1,
+              "weight": 6,
+              "animClip": "anim_ChaosHydra_atk_Charge_3"
+            },
+            {
+              "attackId": 4,
+              "type": "Ranged",
+              "damage": 1947,
+              "cooldown": 3.2,
+              "windUp": 0.8,
+              "weight": 1,
+              "animClip": "anim_ChaosHydra_atk_Ranged_4"
+            },
+            {
+              "attackId": 5,
+              "type": "AoE",
+              "damage": 146,
+              "cooldown": 3.7,
+              "windUp": 0.4,
+              "weight": 7,
+              "animClip": "anim_ChaosHydra_atk_AoE_5"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 3,
+          "hpThreshold": 33,
+          "speedMultiplier": 1.5,
+          "damageMultiplier": 1.6,
+          "transitionCutscene": "cut_ChaosHydra_phase3",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Ranged",
+              "damage": 1144,
+              "cooldown": 6.6,
+              "windUp": 0.3,
+              "weight": 7,
+              "animClip": "anim_ChaosHydra_atk_Ranged_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Beam",
+              "damage": 961,
+              "cooldown": 5.2,
+              "windUp": 1.9,
+              "weight": 4,
+              "animClip": "anim_ChaosHydra_atk_Beam_1"
+            },
+            {
+              "attackId": 2,
+              "type": "AoE",
+              "damage": 506,
+              "cooldown": 3.4,
+              "windUp": 1.1,
+              "weight": 6,
+              "animClip": "anim_ChaosHydra_atk_AoE_2"
+            }
+          ]
+        }
+      ],
+      "deathEvent": "evt_ChaosHydra_death",
+      "rewards": { "gold": 4516, "xp": 1967 }
+    }
+    ,
+    {
+      "bossId": 8,
+      "bossName": "FlameTitan",
+      "totalHp": 12501,
+      "defense": 165,
+      "speed": 2.8,
+      "numPhases": 2,
+      "bgmTrack": "bgm_boss_FlameTitan",
+      "phases": [
+        {
+          "phaseIndex": 1,
+          "hpThreshold": 100,
+          "speedMultiplier": 1,
+          "damageMultiplier": 1,
+          "transitionCutscene": "cut_FlameTitan_phase1",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "AoE",
+              "damage": 329,
+              "cooldown": 5.2,
+              "windUp": 0.3,
+              "weight": 6,
+              "animClip": "anim_FlameTitan_atk_AoE_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Beam",
+              "damage": 1954,
+              "cooldown": 6.1,
+              "windUp": 1,
+              "weight": 7,
+              "animClip": "anim_FlameTitan_atk_Beam_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Melee",
+              "damage": 1208,
+              "cooldown": 5,
+              "windUp": 1,
+              "weight": 4,
+              "animClip": "anim_FlameTitan_atk_Melee_2"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 2,
+          "hpThreshold": 50,
+          "speedMultiplier": 1.25,
+          "damageMultiplier": 1.3,
+          "transitionCutscene": "cut_FlameTitan_phase2",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "AoE",
+              "damage": 647,
+              "cooldown": 6.3,
+              "windUp": 1,
+              "weight": 8,
+              "animClip": "anim_FlameTitan_atk_AoE_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Charge",
+              "damage": 162,
+              "cooldown": 6.6,
+              "windUp": 0.6,
+              "weight": 1,
+              "animClip": "anim_FlameTitan_atk_Charge_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Charge",
+              "damage": 556,
+              "cooldown": 6.7,
+              "windUp": 1.4,
+              "weight": 3,
+              "animClip": "anim_FlameTitan_atk_Charge_2"
+            }
+          ]
+        }
+      ],
+      "deathEvent": "evt_FlameTitan_death",
+      "rewards": { "gold": 4204, "xp": 7153 }
+    }
+    ,
+    {
+      "bossId": 9,
+      "bossName": "IceWitch",
+      "totalHp": 19902,
+      "defense": 142,
+      "speed": 4.1,
+      "numPhases": 2,
+      "bgmTrack": "bgm_boss_IceWitch",
+      "phases": [
+        {
+          "phaseIndex": 1,
+          "hpThreshold": 100,
+          "speedMultiplier": 1,
+          "damageMultiplier": 1,
+          "transitionCutscene": "cut_IceWitch_phase1",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Melee",
+              "damage": 1575,
+              "cooldown": 7.3,
+              "windUp": 1.8,
+              "weight": 3,
+              "animClip": "anim_IceWitch_atk_Melee_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Ranged",
+              "damage": 1714,
+              "cooldown": 2.3,
+              "windUp": 1.7,
+              "weight": 1,
+              "animClip": "anim_IceWitch_atk_Ranged_1"
+            },
+            {
+              "attackId": 2,
+              "type": "AoE",
+              "damage": 1518,
+              "cooldown": 7.5,
+              "windUp": 1.3,
+              "weight": 1,
+              "animClip": "anim_IceWitch_atk_AoE_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Ranged",
+              "damage": 723,
+              "cooldown": 1.8,
+              "windUp": 1.6,
+              "weight": 5,
+              "animClip": "anim_IceWitch_atk_Ranged_3"
+            },
+            {
+              "attackId": 4,
+              "type": "Melee",
+              "damage": 604,
+              "cooldown": 2.5,
+              "windUp": 0.3,
+              "weight": 3,
+              "animClip": "anim_IceWitch_atk_Melee_4"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 2,
+          "hpThreshold": 50,
+          "speedMultiplier": 1.25,
+          "damageMultiplier": 1.3,
+          "transitionCutscene": "cut_IceWitch_phase2",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Charge",
+              "damage": 953,
+              "cooldown": 4.9,
+              "windUp": 0.5,
+              "weight": 6,
+              "animClip": "anim_IceWitch_atk_Charge_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Ranged",
+              "damage": 1540,
+              "cooldown": 7.1,
+              "windUp": 1.8,
+              "weight": 1,
+              "animClip": "anim_IceWitch_atk_Ranged_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Summon",
+              "damage": 501,
+              "cooldown": 3,
+              "windUp": 1.9,
+              "weight": 3,
+              "animClip": "anim_IceWitch_atk_Summon_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Ranged",
+              "damage": 311,
+              "cooldown": 4.7,
+              "windUp": 1.4,
+              "weight": 3,
+              "animClip": "anim_IceWitch_atk_Ranged_3"
+            }
+          ]
+        }
+      ],
+      "deathEvent": "evt_IceWitch_death",
+      "rewards": { "gold": 2692, "xp": 7624 }
+    }
+    ,
+    {
+      "bossId": 10,
+      "bossName": "ShadowBeast",
+      "totalHp": 8803,
+      "defense": 50,
+      "speed": 2.6,
+      "numPhases": 2,
+      "bgmTrack": "bgm_boss_ShadowBeast",
+      "phases": [
+        {
+          "phaseIndex": 1,
+          "hpThreshold": 100,
+          "speedMultiplier": 1,
+          "damageMultiplier": 1,
+          "transitionCutscene": "cut_ShadowBeast_phase1",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Ranged",
+              "damage": 218,
+              "cooldown": 7.6,
+              "windUp": 1.9,
+              "weight": 8,
+              "animClip": "anim_ShadowBeast_atk_Ranged_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Charge",
+              "damage": 1847,
+              "cooldown": 4.4,
+              "windUp": 1.9,
+              "weight": 6,
+              "animClip": "anim_ShadowBeast_atk_Charge_1"
+            },
+            {
+              "attackId": 2,
+              "type": "Charge",
+              "damage": 1926,
+              "cooldown": 2.1,
+              "windUp": 0.3,
+              "weight": 9,
+              "animClip": "anim_ShadowBeast_atk_Charge_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Charge",
+              "damage": 1718,
+              "cooldown": 4,
+              "windUp": 0.8,
+              "weight": 8,
+              "animClip": "anim_ShadowBeast_atk_Charge_3"
+            }
+          ]
+        },
+        {
+          "phaseIndex": 2,
+          "hpThreshold": 50,
+          "speedMultiplier": 1.25,
+          "damageMultiplier": 1.3,
+          "transitionCutscene": "cut_ShadowBeast_phase2",
+          "attackPattern": [
+            {
+              "attackId": 0,
+              "type": "Ranged",
+              "damage": 1925,
+              "cooldown": 7.8,
+              "windUp": 0.4,
+              "weight": 5,
+              "animClip": "anim_ShadowBeast_atk_Ranged_0"
+            },
+            {
+              "attackId": 1,
+              "type": "Summon",
+              "damage": 364,
+              "cooldown": 2.9,
+              "windUp": 0.8,
+              "weight": 8,
+              "animClip": "anim_ShadowBeast_atk_Summon_1"
+            },
+            {
+              "attackId": 2,
+              "type": "AoE",
+              "damage": 1502,
+              "cooldown": 3.2,
+              "windUp": 1.2,
+              "weight": 8,
+              "animClip": "anim_ShadowBeast_atk_AoE_2"
+            },
+            {
+              "attackId": 3,
+              "type": "Projectile",
+              "damage": 1212,
+              "cooldown": 3.2,
+              "windUp": 0.6,
+              "weight": 8,
+              "animClip": "anim_ShadowBeast_atk_Projectile_3"
+            }
+          ]
+        }
+      ],
+      "deathEvent": "evt_ShadowBeast_death",
+      "rewards": { "gold": 601, "xp": 5480 }
+    }
+  ]
+}

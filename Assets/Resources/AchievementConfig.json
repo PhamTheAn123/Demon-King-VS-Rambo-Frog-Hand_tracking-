@@ -1,0 +1,3462 @@
+﻿{
+  "version": "1.0.0",
+  "generatedAt": "2026-07-08",
+  "description": "Achievement and trophy system configuration",
+  "achievements": [
+    {
+      "achievementId": 1,
+      "name": "KillCount_0",
+      "type": "KillCount",
+      "tier": "Bronze",
+      "points": 25,
+      "hidden": true,
+      "targetValue": 549,
+      "description": "Complete the KillCount challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_KillCount_0",
+      "reward": {
+        "title": "KillCount Master Lv0",
+        "gold": 69,
+        "xp": 941,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 14,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_KillCount_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 2,
+      "name": "KillCount_1",
+      "type": "KillCount",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 31,
+      "description": "Complete the KillCount challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_KillCount_1",
+      "reward": {
+        "title": "KillCount Master Lv1",
+        "gold": 384,
+        "xp": 252,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 8,
+        "prerequisiteId": 1,
+        "trackingKey": "stat_KillCount_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 3,
+      "name": "KillCount_2",
+      "type": "KillCount",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 648,
+      "description": "Complete the KillCount challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_KillCount_2",
+      "reward": {
+        "title": "KillCount Master Lv2",
+        "gold": 111,
+        "xp": 445,
+        "itemId": 259
+      },
+      "conditions": {
+        "minLevel": 5,
+        "prerequisiteId": 2,
+        "trackingKey": "stat_KillCount_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 4,
+      "name": "KillCount_3",
+      "type": "KillCount",
+      "tier": "Platinum",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 862,
+      "description": "Complete the KillCount challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_KillCount_3",
+      "reward": {
+        "title": "KillCount Master Lv3",
+        "gold": 167,
+        "xp": 340,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 11,
+        "prerequisiteId": 3,
+        "trackingKey": "stat_KillCount_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 5,
+      "name": "KillCount_4",
+      "type": "KillCount",
+      "tier": "Platinum",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 964,
+      "description": "Complete the KillCount challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_KillCount_4",
+      "reward": {
+        "title": "KillCount Master Lv4",
+        "gold": 425,
+        "xp": 24,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 1,
+        "prerequisiteId": 4,
+        "trackingKey": "stat_KillCount_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 6,
+      "name": "KillCount_5",
+      "type": "KillCount",
+      "tier": "Gold",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 841,
+      "description": "Complete the KillCount challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_KillCount_5",
+      "reward": {
+        "title": "KillCount Master Lv5",
+        "gold": 300,
+        "xp": 890,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 5,
+        "trackingKey": "stat_KillCount_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 7,
+      "name": "KillCount_6",
+      "type": "KillCount",
+      "tier": "Gold",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 173,
+      "description": "Complete the KillCount challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_KillCount_6",
+      "reward": {
+        "title": "KillCount Master Lv6",
+        "gold": 129,
+        "xp": 912,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 7,
+        "prerequisiteId": 6,
+        "trackingKey": "stat_KillCount_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 8,
+      "name": "KillCount_7",
+      "type": "KillCount",
+      "tier": "Gold",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 907,
+      "description": "Complete the KillCount challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_KillCount_7",
+      "reward": {
+        "title": "KillCount Master Lv7",
+        "gold": 438,
+        "xp": 750,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 7,
+        "trackingKey": "stat_KillCount_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 9,
+      "name": "KillCount_8",
+      "type": "KillCount",
+      "tier": "Silver",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 884,
+      "description": "Complete the KillCount challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_KillCount_8",
+      "reward": {
+        "title": "KillCount Master Lv8",
+        "gold": 238,
+        "xp": 737,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 8,
+        "trackingKey": "stat_KillCount_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 10,
+      "name": "KillCount_9",
+      "type": "KillCount",
+      "tier": "Platinum",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 898,
+      "description": "Complete the KillCount challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_KillCount_9",
+      "reward": {
+        "title": "KillCount Master Lv9",
+        "gold": 162,
+        "xp": 539,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 13,
+        "prerequisiteId": 9,
+        "trackingKey": "stat_KillCount_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 11,
+      "name": "KillCount_10",
+      "type": "KillCount",
+      "tier": "Platinum",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 516,
+      "description": "Complete the KillCount challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_KillCount_10",
+      "reward": {
+        "title": "KillCount Master Lv10",
+        "gold": 485,
+        "xp": 802,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 10,
+        "trackingKey": "stat_KillCount_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 12,
+      "name": "KillCount_11",
+      "type": "KillCount",
+      "tier": "Silver",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 724,
+      "description": "Complete the KillCount challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_KillCount_11",
+      "reward": {
+        "title": "KillCount Master Lv11",
+        "gold": 314,
+        "xp": 203,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 18,
+        "prerequisiteId": 11,
+        "trackingKey": "stat_KillCount_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 13,
+      "name": "BossKill_0",
+      "type": "BossKill",
+      "tier": "Platinum",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 352,
+      "description": "Complete the BossKill challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_BossKill_0",
+      "reward": {
+        "title": "BossKill Master Lv0",
+        "gold": 89,
+        "xp": 304,
+        "itemId": 362
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_BossKill_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 14,
+      "name": "BossKill_1",
+      "type": "BossKill",
+      "tier": "Bronze",
+      "points": 100,
+      "hidden": true,
+      "targetValue": 188,
+      "description": "Complete the BossKill challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_BossKill_1",
+      "reward": {
+        "title": "BossKill Master Lv1",
+        "gold": 474,
+        "xp": 582,
+        "itemId": 67
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 13,
+        "trackingKey": "stat_BossKill_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 15,
+      "name": "BossKill_2",
+      "type": "BossKill",
+      "tier": "Platinum",
+      "points": 10,
+      "hidden": true,
+      "targetValue": 360,
+      "description": "Complete the BossKill challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_BossKill_2",
+      "reward": {
+        "title": "BossKill Master Lv2",
+        "gold": 451,
+        "xp": 58,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 2,
+        "prerequisiteId": 14,
+        "trackingKey": "stat_BossKill_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 16,
+      "name": "BossKill_3",
+      "type": "BossKill",
+      "tier": "Platinum",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 487,
+      "description": "Complete the BossKill challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_BossKill_3",
+      "reward": {
+        "title": "BossKill Master Lv3",
+        "gold": 314,
+        "xp": 53,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 18,
+        "prerequisiteId": 15,
+        "trackingKey": "stat_BossKill_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 17,
+      "name": "BossKill_4",
+      "type": "BossKill",
+      "tier": "Platinum",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 126,
+      "description": "Complete the BossKill challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_BossKill_4",
+      "reward": {
+        "title": "BossKill Master Lv4",
+        "gold": 307,
+        "xp": 442,
+        "itemId": 216
+      },
+      "conditions": {
+        "minLevel": 5,
+        "prerequisiteId": 16,
+        "trackingKey": "stat_BossKill_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 18,
+      "name": "BossKill_5",
+      "type": "BossKill",
+      "tier": "Silver",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 144,
+      "description": "Complete the BossKill challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_BossKill_5",
+      "reward": {
+        "title": "BossKill Master Lv5",
+        "gold": 127,
+        "xp": 920,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 17,
+        "trackingKey": "stat_BossKill_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 19,
+      "name": "BossKill_6",
+      "type": "BossKill",
+      "tier": "Silver",
+      "points": 10,
+      "hidden": true,
+      "targetValue": 481,
+      "description": "Complete the BossKill challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_BossKill_6",
+      "reward": {
+        "title": "BossKill Master Lv6",
+        "gold": 118,
+        "xp": 289,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 18,
+        "trackingKey": "stat_BossKill_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 20,
+      "name": "BossKill_7",
+      "type": "BossKill",
+      "tier": "Bronze",
+      "points": 100,
+      "hidden": true,
+      "targetValue": 163,
+      "description": "Complete the BossKill challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_BossKill_7",
+      "reward": {
+        "title": "BossKill Master Lv7",
+        "gold": 483,
+        "xp": 419,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 18,
+        "prerequisiteId": 19,
+        "trackingKey": "stat_BossKill_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 21,
+      "name": "BossKill_8",
+      "type": "BossKill",
+      "tier": "Silver",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 670,
+      "description": "Complete the BossKill challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_BossKill_8",
+      "reward": {
+        "title": "BossKill Master Lv8",
+        "gold": 424,
+        "xp": 522,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 13,
+        "prerequisiteId": 20,
+        "trackingKey": "stat_BossKill_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 22,
+      "name": "BossKill_9",
+      "type": "BossKill",
+      "tier": "Bronze",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 336,
+      "description": "Complete the BossKill challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_BossKill_9",
+      "reward": {
+        "title": "BossKill Master Lv9",
+        "gold": 395,
+        "xp": 225,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 8,
+        "prerequisiteId": 21,
+        "trackingKey": "stat_BossKill_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 23,
+      "name": "BossKill_10",
+      "type": "BossKill",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 738,
+      "description": "Complete the BossKill challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_BossKill_10",
+      "reward": {
+        "title": "BossKill Master Lv10",
+        "gold": 438,
+        "xp": 413,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 22,
+        "trackingKey": "stat_BossKill_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 24,
+      "name": "BossKill_11",
+      "type": "BossKill",
+      "tier": "Platinum",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 233,
+      "description": "Complete the BossKill challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_BossKill_11",
+      "reward": {
+        "title": "BossKill Master Lv11",
+        "gold": 156,
+        "xp": 742,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 23,
+        "trackingKey": "stat_BossKill_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 25,
+      "name": "ItemCollect_0",
+      "type": "ItemCollect",
+      "tier": "Bronze",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 803,
+      "description": "Complete the ItemCollect challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_ItemCollect_0",
+      "reward": {
+        "title": "ItemCollect Master Lv0",
+        "gold": 140,
+        "xp": 342,
+        "itemId": 176
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_ItemCollect_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 26,
+      "name": "ItemCollect_1",
+      "type": "ItemCollect",
+      "tier": "Gold",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 477,
+      "description": "Complete the ItemCollect challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_ItemCollect_1",
+      "reward": {
+        "title": "ItemCollect Master Lv1",
+        "gold": 26,
+        "xp": 997,
+        "itemId": 219
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 25,
+        "trackingKey": "stat_ItemCollect_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 27,
+      "name": "ItemCollect_2",
+      "type": "ItemCollect",
+      "tier": "Platinum",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 722,
+      "description": "Complete the ItemCollect challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_ItemCollect_2",
+      "reward": {
+        "title": "ItemCollect Master Lv2",
+        "gold": 101,
+        "xp": 692,
+        "itemId": 313
+      },
+      "conditions": {
+        "minLevel": 18,
+        "prerequisiteId": 26,
+        "trackingKey": "stat_ItemCollect_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 28,
+      "name": "ItemCollect_3",
+      "type": "ItemCollect",
+      "tier": "Platinum",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 531,
+      "description": "Complete the ItemCollect challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_ItemCollect_3",
+      "reward": {
+        "title": "ItemCollect Master Lv3",
+        "gold": 331,
+        "xp": 878,
+        "itemId": 6
+      },
+      "conditions": {
+        "minLevel": 14,
+        "prerequisiteId": 27,
+        "trackingKey": "stat_ItemCollect_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 29,
+      "name": "ItemCollect_4",
+      "type": "ItemCollect",
+      "tier": "Gold",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 107,
+      "description": "Complete the ItemCollect challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_ItemCollect_4",
+      "reward": {
+        "title": "ItemCollect Master Lv4",
+        "gold": 260,
+        "xp": 273,
+        "itemId": 83
+      },
+      "conditions": {
+        "minLevel": 7,
+        "prerequisiteId": 28,
+        "trackingKey": "stat_ItemCollect_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 30,
+      "name": "ItemCollect_5",
+      "type": "ItemCollect",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 984,
+      "description": "Complete the ItemCollect challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_ItemCollect_5",
+      "reward": {
+        "title": "ItemCollect Master Lv5",
+        "gold": 8,
+        "xp": 981,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 29,
+        "trackingKey": "stat_ItemCollect_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 31,
+      "name": "ItemCollect_6",
+      "type": "ItemCollect",
+      "tier": "Gold",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 691,
+      "description": "Complete the ItemCollect challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_ItemCollect_6",
+      "reward": {
+        "title": "ItemCollect Master Lv6",
+        "gold": 465,
+        "xp": 596,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 11,
+        "prerequisiteId": 30,
+        "trackingKey": "stat_ItemCollect_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 32,
+      "name": "ItemCollect_7",
+      "type": "ItemCollect",
+      "tier": "Platinum",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 487,
+      "description": "Complete the ItemCollect challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_ItemCollect_7",
+      "reward": {
+        "title": "ItemCollect Master Lv7",
+        "gold": 346,
+        "xp": 417,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 31,
+        "trackingKey": "stat_ItemCollect_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 33,
+      "name": "ItemCollect_8",
+      "type": "ItemCollect",
+      "tier": "Silver",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 908,
+      "description": "Complete the ItemCollect challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_ItemCollect_8",
+      "reward": {
+        "title": "ItemCollect Master Lv8",
+        "gold": 197,
+        "xp": 354,
+        "itemId": 360
+      },
+      "conditions": {
+        "minLevel": 3,
+        "prerequisiteId": 32,
+        "trackingKey": "stat_ItemCollect_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 34,
+      "name": "ItemCollect_9",
+      "type": "ItemCollect",
+      "tier": "Platinum",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 116,
+      "description": "Complete the ItemCollect challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_ItemCollect_9",
+      "reward": {
+        "title": "ItemCollect Master Lv9",
+        "gold": 384,
+        "xp": 649,
+        "itemId": 100
+      },
+      "conditions": {
+        "minLevel": 1,
+        "prerequisiteId": 33,
+        "trackingKey": "stat_ItemCollect_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 35,
+      "name": "ItemCollect_10",
+      "type": "ItemCollect",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 769,
+      "description": "Complete the ItemCollect challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_ItemCollect_10",
+      "reward": {
+        "title": "ItemCollect Master Lv10",
+        "gold": 352,
+        "xp": 815,
+        "itemId": 51
+      },
+      "conditions": {
+        "minLevel": 14,
+        "prerequisiteId": 34,
+        "trackingKey": "stat_ItemCollect_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 36,
+      "name": "ItemCollect_11",
+      "type": "ItemCollect",
+      "tier": "Silver",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 423,
+      "description": "Complete the ItemCollect challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_ItemCollect_11",
+      "reward": {
+        "title": "ItemCollect Master Lv11",
+        "gold": 482,
+        "xp": 642,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 35,
+        "trackingKey": "stat_ItemCollect_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 37,
+      "name": "LevelComplete_0",
+      "type": "LevelComplete",
+      "tier": "Platinum",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 293,
+      "description": "Complete the LevelComplete challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_LevelComplete_0",
+      "reward": {
+        "title": "LevelComplete Master Lv0",
+        "gold": 429,
+        "xp": 320,
+        "itemId": 306
+      },
+      "conditions": {
+        "minLevel": 16,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_LevelComplete_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 38,
+      "name": "LevelComplete_1",
+      "type": "LevelComplete",
+      "tier": "Platinum",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 749,
+      "description": "Complete the LevelComplete challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_LevelComplete_1",
+      "reward": {
+        "title": "LevelComplete Master Lv1",
+        "gold": 331,
+        "xp": 880,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 12,
+        "prerequisiteId": 37,
+        "trackingKey": "stat_LevelComplete_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 39,
+      "name": "LevelComplete_2",
+      "type": "LevelComplete",
+      "tier": "Platinum",
+      "points": 50,
+      "hidden": true,
+      "targetValue": 551,
+      "description": "Complete the LevelComplete challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_LevelComplete_2",
+      "reward": {
+        "title": "LevelComplete Master Lv2",
+        "gold": 89,
+        "xp": 807,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 5,
+        "prerequisiteId": 38,
+        "trackingKey": "stat_LevelComplete_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 40,
+      "name": "LevelComplete_3",
+      "type": "LevelComplete",
+      "tier": "Platinum",
+      "points": 25,
+      "hidden": true,
+      "targetValue": 394,
+      "description": "Complete the LevelComplete challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_LevelComplete_3",
+      "reward": {
+        "title": "LevelComplete Master Lv3",
+        "gold": 78,
+        "xp": 646,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 2,
+        "prerequisiteId": 39,
+        "trackingKey": "stat_LevelComplete_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 41,
+      "name": "LevelComplete_4",
+      "type": "LevelComplete",
+      "tier": "Bronze",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 962,
+      "description": "Complete the LevelComplete challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_LevelComplete_4",
+      "reward": {
+        "title": "LevelComplete Master Lv4",
+        "gold": 345,
+        "xp": 357,
+        "itemId": 309
+      },
+      "conditions": {
+        "minLevel": 11,
+        "prerequisiteId": 40,
+        "trackingKey": "stat_LevelComplete_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 42,
+      "name": "LevelComplete_5",
+      "type": "LevelComplete",
+      "tier": "Bronze",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 133,
+      "description": "Complete the LevelComplete challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_LevelComplete_5",
+      "reward": {
+        "title": "LevelComplete Master Lv5",
+        "gold": 277,
+        "xp": 118,
+        "itemId": 202
+      },
+      "conditions": {
+        "minLevel": 1,
+        "prerequisiteId": 41,
+        "trackingKey": "stat_LevelComplete_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 43,
+      "name": "LevelComplete_6",
+      "type": "LevelComplete",
+      "tier": "Platinum",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 679,
+      "description": "Complete the LevelComplete challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_LevelComplete_6",
+      "reward": {
+        "title": "LevelComplete Master Lv6",
+        "gold": 110,
+        "xp": 290,
+        "itemId": 171
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 42,
+        "trackingKey": "stat_LevelComplete_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 44,
+      "name": "LevelComplete_7",
+      "type": "LevelComplete",
+      "tier": "Platinum",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 764,
+      "description": "Complete the LevelComplete challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_LevelComplete_7",
+      "reward": {
+        "title": "LevelComplete Master Lv7",
+        "gold": 200,
+        "xp": 48,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 2,
+        "prerequisiteId": 43,
+        "trackingKey": "stat_LevelComplete_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 45,
+      "name": "LevelComplete_8",
+      "type": "LevelComplete",
+      "tier": "Silver",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 431,
+      "description": "Complete the LevelComplete challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_LevelComplete_8",
+      "reward": {
+        "title": "LevelComplete Master Lv8",
+        "gold": 19,
+        "xp": 657,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 1,
+        "prerequisiteId": 44,
+        "trackingKey": "stat_LevelComplete_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 46,
+      "name": "LevelComplete_9",
+      "type": "LevelComplete",
+      "tier": "Silver",
+      "points": 250,
+      "hidden": true,
+      "targetValue": 918,
+      "description": "Complete the LevelComplete challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_LevelComplete_9",
+      "reward": {
+        "title": "LevelComplete Master Lv9",
+        "gold": 158,
+        "xp": 744,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 13,
+        "prerequisiteId": 45,
+        "trackingKey": "stat_LevelComplete_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 47,
+      "name": "LevelComplete_10",
+      "type": "LevelComplete",
+      "tier": "Bronze",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 550,
+      "description": "Complete the LevelComplete challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_LevelComplete_10",
+      "reward": {
+        "title": "LevelComplete Master Lv10",
+        "gold": 453,
+        "xp": 703,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 46,
+        "trackingKey": "stat_LevelComplete_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 48,
+      "name": "LevelComplete_11",
+      "type": "LevelComplete",
+      "tier": "Gold",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 829,
+      "description": "Complete the LevelComplete challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_LevelComplete_11",
+      "reward": {
+        "title": "LevelComplete Master Lv11",
+        "gold": 219,
+        "xp": 687,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 8,
+        "prerequisiteId": 47,
+        "trackingKey": "stat_LevelComplete_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 49,
+      "name": "Exploration_0",
+      "type": "Exploration",
+      "tier": "Silver",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 645,
+      "description": "Complete the Exploration challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_Exploration_0",
+      "reward": {
+        "title": "Exploration Master Lv0",
+        "gold": 362,
+        "xp": 235,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 11,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_Exploration_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 50,
+      "name": "Exploration_1",
+      "type": "Exploration",
+      "tier": "Silver",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 104,
+      "description": "Complete the Exploration challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_Exploration_1",
+      "reward": {
+        "title": "Exploration Master Lv1",
+        "gold": 236,
+        "xp": 420,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 49,
+        "trackingKey": "stat_Exploration_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 51,
+      "name": "Exploration_2",
+      "type": "Exploration",
+      "tier": "Silver",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 913,
+      "description": "Complete the Exploration challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_Exploration_2",
+      "reward": {
+        "title": "Exploration Master Lv2",
+        "gold": 22,
+        "xp": 342,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 3,
+        "prerequisiteId": 50,
+        "trackingKey": "stat_Exploration_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 52,
+      "name": "Exploration_3",
+      "type": "Exploration",
+      "tier": "Silver",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 808,
+      "description": "Complete the Exploration challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_Exploration_3",
+      "reward": {
+        "title": "Exploration Master Lv3",
+        "gold": 444,
+        "xp": 325,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 18,
+        "prerequisiteId": 51,
+        "trackingKey": "stat_Exploration_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 53,
+      "name": "Exploration_4",
+      "type": "Exploration",
+      "tier": "Silver",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 660,
+      "description": "Complete the Exploration challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_Exploration_4",
+      "reward": {
+        "title": "Exploration Master Lv4",
+        "gold": 440,
+        "xp": 653,
+        "itemId": 165
+      },
+      "conditions": {
+        "minLevel": 15,
+        "prerequisiteId": 52,
+        "trackingKey": "stat_Exploration_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 54,
+      "name": "Exploration_5",
+      "type": "Exploration",
+      "tier": "Bronze",
+      "points": 25,
+      "hidden": true,
+      "targetValue": 106,
+      "description": "Complete the Exploration challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_Exploration_5",
+      "reward": {
+        "title": "Exploration Master Lv5",
+        "gold": 374,
+        "xp": 796,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 7,
+        "prerequisiteId": 53,
+        "trackingKey": "stat_Exploration_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 55,
+      "name": "Exploration_6",
+      "type": "Exploration",
+      "tier": "Silver",
+      "points": 25,
+      "hidden": true,
+      "targetValue": 169,
+      "description": "Complete the Exploration challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_Exploration_6",
+      "reward": {
+        "title": "Exploration Master Lv6",
+        "gold": 3,
+        "xp": 967,
+        "itemId": 278
+      },
+      "conditions": {
+        "minLevel": 16,
+        "prerequisiteId": 54,
+        "trackingKey": "stat_Exploration_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 56,
+      "name": "Exploration_7",
+      "type": "Exploration",
+      "tier": "Silver",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 554,
+      "description": "Complete the Exploration challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_Exploration_7",
+      "reward": {
+        "title": "Exploration Master Lv7",
+        "gold": 205,
+        "xp": 266,
+        "itemId": 102
+      },
+      "conditions": {
+        "minLevel": 8,
+        "prerequisiteId": 55,
+        "trackingKey": "stat_Exploration_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 57,
+      "name": "Exploration_8",
+      "type": "Exploration",
+      "tier": "Bronze",
+      "points": 50,
+      "hidden": true,
+      "targetValue": 928,
+      "description": "Complete the Exploration challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_Exploration_8",
+      "reward": {
+        "title": "Exploration Master Lv8",
+        "gold": 92,
+        "xp": 214,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 56,
+        "trackingKey": "stat_Exploration_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 58,
+      "name": "Exploration_9",
+      "type": "Exploration",
+      "tier": "Gold",
+      "points": 100,
+      "hidden": true,
+      "targetValue": 553,
+      "description": "Complete the Exploration challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_Exploration_9",
+      "reward": {
+        "title": "Exploration Master Lv9",
+        "gold": 137,
+        "xp": 159,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 57,
+        "trackingKey": "stat_Exploration_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 59,
+      "name": "Exploration_10",
+      "type": "Exploration",
+      "tier": "Bronze",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 520,
+      "description": "Complete the Exploration challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_Exploration_10",
+      "reward": {
+        "title": "Exploration Master Lv10",
+        "gold": 402,
+        "xp": 835,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 18,
+        "prerequisiteId": 58,
+        "trackingKey": "stat_Exploration_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 60,
+      "name": "Exploration_11",
+      "type": "Exploration",
+      "tier": "Gold",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 773,
+      "description": "Complete the Exploration challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_Exploration_11",
+      "reward": {
+        "title": "Exploration Master Lv11",
+        "gold": 463,
+        "xp": 233,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 8,
+        "prerequisiteId": 59,
+        "trackingKey": "stat_Exploration_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 61,
+      "name": "TimeChallenge_0",
+      "type": "TimeChallenge",
+      "tier": "Gold",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 234,
+      "description": "Complete the TimeChallenge challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_TimeChallenge_0",
+      "reward": {
+        "title": "TimeChallenge Master Lv0",
+        "gold": 230,
+        "xp": 643,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_TimeChallenge_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 62,
+      "name": "TimeChallenge_1",
+      "type": "TimeChallenge",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 709,
+      "description": "Complete the TimeChallenge challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_TimeChallenge_1",
+      "reward": {
+        "title": "TimeChallenge Master Lv1",
+        "gold": 477,
+        "xp": 750,
+        "itemId": 1
+      },
+      "conditions": {
+        "minLevel": 1,
+        "prerequisiteId": 61,
+        "trackingKey": "stat_TimeChallenge_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 63,
+      "name": "TimeChallenge_2",
+      "type": "TimeChallenge",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 13,
+      "description": "Complete the TimeChallenge challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_TimeChallenge_2",
+      "reward": {
+        "title": "TimeChallenge Master Lv2",
+        "gold": 84,
+        "xp": 96,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 62,
+        "trackingKey": "stat_TimeChallenge_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 64,
+      "name": "TimeChallenge_3",
+      "type": "TimeChallenge",
+      "tier": "Gold",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 602,
+      "description": "Complete the TimeChallenge challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_TimeChallenge_3",
+      "reward": {
+        "title": "TimeChallenge Master Lv3",
+        "gold": 34,
+        "xp": 215,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 63,
+        "trackingKey": "stat_TimeChallenge_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 65,
+      "name": "TimeChallenge_4",
+      "type": "TimeChallenge",
+      "tier": "Silver",
+      "points": 25,
+      "hidden": true,
+      "targetValue": 815,
+      "description": "Complete the TimeChallenge challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_TimeChallenge_4",
+      "reward": {
+        "title": "TimeChallenge Master Lv4",
+        "gold": 457,
+        "xp": 64,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 1,
+        "prerequisiteId": 64,
+        "trackingKey": "stat_TimeChallenge_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 66,
+      "name": "TimeChallenge_5",
+      "type": "TimeChallenge",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 439,
+      "description": "Complete the TimeChallenge challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_TimeChallenge_5",
+      "reward": {
+        "title": "TimeChallenge Master Lv5",
+        "gold": 92,
+        "xp": 129,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 14,
+        "prerequisiteId": 65,
+        "trackingKey": "stat_TimeChallenge_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 67,
+      "name": "TimeChallenge_6",
+      "type": "TimeChallenge",
+      "tier": "Silver",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 400,
+      "description": "Complete the TimeChallenge challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_TimeChallenge_6",
+      "reward": {
+        "title": "TimeChallenge Master Lv6",
+        "gold": 60,
+        "xp": 522,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 66,
+        "trackingKey": "stat_TimeChallenge_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 68,
+      "name": "TimeChallenge_7",
+      "type": "TimeChallenge",
+      "tier": "Gold",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 388,
+      "description": "Complete the TimeChallenge challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_TimeChallenge_7",
+      "reward": {
+        "title": "TimeChallenge Master Lv7",
+        "gold": 380,
+        "xp": 762,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 3,
+        "prerequisiteId": 67,
+        "trackingKey": "stat_TimeChallenge_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 69,
+      "name": "TimeChallenge_8",
+      "type": "TimeChallenge",
+      "tier": "Silver",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 906,
+      "description": "Complete the TimeChallenge challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_TimeChallenge_8",
+      "reward": {
+        "title": "TimeChallenge Master Lv8",
+        "gold": 172,
+        "xp": 392,
+        "itemId": 282
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 68,
+        "trackingKey": "stat_TimeChallenge_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 70,
+      "name": "TimeChallenge_9",
+      "type": "TimeChallenge",
+      "tier": "Silver",
+      "points": 10,
+      "hidden": true,
+      "targetValue": 171,
+      "description": "Complete the TimeChallenge challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_TimeChallenge_9",
+      "reward": {
+        "title": "TimeChallenge Master Lv9",
+        "gold": 78,
+        "xp": 160,
+        "itemId": 152
+      },
+      "conditions": {
+        "minLevel": 16,
+        "prerequisiteId": 69,
+        "trackingKey": "stat_TimeChallenge_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 71,
+      "name": "TimeChallenge_10",
+      "type": "TimeChallenge",
+      "tier": "Bronze",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 197,
+      "description": "Complete the TimeChallenge challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_TimeChallenge_10",
+      "reward": {
+        "title": "TimeChallenge Master Lv10",
+        "gold": 54,
+        "xp": 510,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 70,
+        "trackingKey": "stat_TimeChallenge_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 72,
+      "name": "TimeChallenge_11",
+      "type": "TimeChallenge",
+      "tier": "Platinum",
+      "points": 50,
+      "hidden": true,
+      "targetValue": 243,
+      "description": "Complete the TimeChallenge challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_TimeChallenge_11",
+      "reward": {
+        "title": "TimeChallenge Master Lv11",
+        "gold": 228,
+        "xp": 264,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 71,
+        "trackingKey": "stat_TimeChallenge_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 73,
+      "name": "NoDeathRun_0",
+      "type": "NoDeathRun",
+      "tier": "Gold",
+      "points": 250,
+      "hidden": true,
+      "targetValue": 196,
+      "description": "Complete the NoDeathRun challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_NoDeathRun_0",
+      "reward": {
+        "title": "NoDeathRun Master Lv0",
+        "gold": 104,
+        "xp": 739,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 13,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_NoDeathRun_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 74,
+      "name": "NoDeathRun_1",
+      "type": "NoDeathRun",
+      "tier": "Platinum",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 353,
+      "description": "Complete the NoDeathRun challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_NoDeathRun_1",
+      "reward": {
+        "title": "NoDeathRun Master Lv1",
+        "gold": 171,
+        "xp": 926,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 73,
+        "trackingKey": "stat_NoDeathRun_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 75,
+      "name": "NoDeathRun_2",
+      "type": "NoDeathRun",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 213,
+      "description": "Complete the NoDeathRun challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_NoDeathRun_2",
+      "reward": {
+        "title": "NoDeathRun Master Lv2",
+        "gold": 63,
+        "xp": 197,
+        "itemId": 4
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 74,
+        "trackingKey": "stat_NoDeathRun_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 76,
+      "name": "NoDeathRun_3",
+      "type": "NoDeathRun",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": true,
+      "targetValue": 350,
+      "description": "Complete the NoDeathRun challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_NoDeathRun_3",
+      "reward": {
+        "title": "NoDeathRun Master Lv3",
+        "gold": 405,
+        "xp": 204,
+        "itemId": 371
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 75,
+        "trackingKey": "stat_NoDeathRun_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 77,
+      "name": "NoDeathRun_4",
+      "type": "NoDeathRun",
+      "tier": "Silver",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 886,
+      "description": "Complete the NoDeathRun challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_NoDeathRun_4",
+      "reward": {
+        "title": "NoDeathRun Master Lv4",
+        "gold": 249,
+        "xp": 936,
+        "itemId": 97
+      },
+      "conditions": {
+        "minLevel": 14,
+        "prerequisiteId": 76,
+        "trackingKey": "stat_NoDeathRun_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 78,
+      "name": "NoDeathRun_5",
+      "type": "NoDeathRun",
+      "tier": "Platinum",
+      "points": 10,
+      "hidden": true,
+      "targetValue": 191,
+      "description": "Complete the NoDeathRun challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_NoDeathRun_5",
+      "reward": {
+        "title": "NoDeathRun Master Lv5",
+        "gold": 191,
+        "xp": 162,
+        "itemId": 373
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 77,
+        "trackingKey": "stat_NoDeathRun_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 79,
+      "name": "NoDeathRun_6",
+      "type": "NoDeathRun",
+      "tier": "Silver",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 532,
+      "description": "Complete the NoDeathRun challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_NoDeathRun_6",
+      "reward": {
+        "title": "NoDeathRun Master Lv6",
+        "gold": 419,
+        "xp": 850,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 2,
+        "prerequisiteId": 78,
+        "trackingKey": "stat_NoDeathRun_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 80,
+      "name": "NoDeathRun_7",
+      "type": "NoDeathRun",
+      "tier": "Gold",
+      "points": 250,
+      "hidden": true,
+      "targetValue": 446,
+      "description": "Complete the NoDeathRun challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_NoDeathRun_7",
+      "reward": {
+        "title": "NoDeathRun Master Lv7",
+        "gold": 162,
+        "xp": 890,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 18,
+        "prerequisiteId": 79,
+        "trackingKey": "stat_NoDeathRun_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 81,
+      "name": "NoDeathRun_8",
+      "type": "NoDeathRun",
+      "tier": "Bronze",
+      "points": 10,
+      "hidden": true,
+      "targetValue": 348,
+      "description": "Complete the NoDeathRun challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_NoDeathRun_8",
+      "reward": {
+        "title": "NoDeathRun Master Lv8",
+        "gold": 50,
+        "xp": 663,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 18,
+        "prerequisiteId": 80,
+        "trackingKey": "stat_NoDeathRun_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 82,
+      "name": "NoDeathRun_9",
+      "type": "NoDeathRun",
+      "tier": "Platinum",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 103,
+      "description": "Complete the NoDeathRun challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_NoDeathRun_9",
+      "reward": {
+        "title": "NoDeathRun Master Lv9",
+        "gold": 309,
+        "xp": 18,
+        "itemId": 252
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 81,
+        "trackingKey": "stat_NoDeathRun_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 83,
+      "name": "NoDeathRun_10",
+      "type": "NoDeathRun",
+      "tier": "Gold",
+      "points": 25,
+      "hidden": true,
+      "targetValue": 914,
+      "description": "Complete the NoDeathRun challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_NoDeathRun_10",
+      "reward": {
+        "title": "NoDeathRun Master Lv10",
+        "gold": 64,
+        "xp": 336,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 14,
+        "prerequisiteId": 82,
+        "trackingKey": "stat_NoDeathRun_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 84,
+      "name": "NoDeathRun_11",
+      "type": "NoDeathRun",
+      "tier": "Gold",
+      "points": 50,
+      "hidden": true,
+      "targetValue": 493,
+      "description": "Complete the NoDeathRun challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_NoDeathRun_11",
+      "reward": {
+        "title": "NoDeathRun Master Lv11",
+        "gold": 478,
+        "xp": 494,
+        "itemId": 361
+      },
+      "conditions": {
+        "minLevel": 4,
+        "prerequisiteId": 83,
+        "trackingKey": "stat_NoDeathRun_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 85,
+      "name": "SkillMastery_0",
+      "type": "SkillMastery",
+      "tier": "Gold",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 530,
+      "description": "Complete the SkillMastery challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SkillMastery_0",
+      "reward": {
+        "title": "SkillMastery Master Lv0",
+        "gold": 281,
+        "xp": 241,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 13,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_SkillMastery_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 86,
+      "name": "SkillMastery_1",
+      "type": "SkillMastery",
+      "tier": "Gold",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 254,
+      "description": "Complete the SkillMastery challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SkillMastery_1",
+      "reward": {
+        "title": "SkillMastery Master Lv1",
+        "gold": 336,
+        "xp": 43,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 4,
+        "prerequisiteId": 85,
+        "trackingKey": "stat_SkillMastery_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 87,
+      "name": "SkillMastery_2",
+      "type": "SkillMastery",
+      "tier": "Gold",
+      "points": 50,
+      "hidden": true,
+      "targetValue": 957,
+      "description": "Complete the SkillMastery challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SkillMastery_2",
+      "reward": {
+        "title": "SkillMastery Master Lv2",
+        "gold": 333,
+        "xp": 691,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 7,
+        "prerequisiteId": 86,
+        "trackingKey": "stat_SkillMastery_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 88,
+      "name": "SkillMastery_3",
+      "type": "SkillMastery",
+      "tier": "Silver",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 571,
+      "description": "Complete the SkillMastery challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_SkillMastery_3",
+      "reward": {
+        "title": "SkillMastery Master Lv3",
+        "gold": 74,
+        "xp": 613,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 18,
+        "prerequisiteId": 87,
+        "trackingKey": "stat_SkillMastery_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 89,
+      "name": "SkillMastery_4",
+      "type": "SkillMastery",
+      "tier": "Platinum",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 150,
+      "description": "Complete the SkillMastery challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_SkillMastery_4",
+      "reward": {
+        "title": "SkillMastery Master Lv4",
+        "gold": 33,
+        "xp": 195,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 18,
+        "prerequisiteId": 88,
+        "trackingKey": "stat_SkillMastery_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 90,
+      "name": "SkillMastery_5",
+      "type": "SkillMastery",
+      "tier": "Bronze",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 113,
+      "description": "Complete the SkillMastery challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_SkillMastery_5",
+      "reward": {
+        "title": "SkillMastery Master Lv5",
+        "gold": 386,
+        "xp": 475,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 89,
+        "trackingKey": "stat_SkillMastery_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 91,
+      "name": "SkillMastery_6",
+      "type": "SkillMastery",
+      "tier": "Bronze",
+      "points": 50,
+      "hidden": true,
+      "targetValue": 570,
+      "description": "Complete the SkillMastery challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_SkillMastery_6",
+      "reward": {
+        "title": "SkillMastery Master Lv6",
+        "gold": 233,
+        "xp": 677,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 15,
+        "prerequisiteId": 90,
+        "trackingKey": "stat_SkillMastery_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 92,
+      "name": "SkillMastery_7",
+      "type": "SkillMastery",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 458,
+      "description": "Complete the SkillMastery challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_SkillMastery_7",
+      "reward": {
+        "title": "SkillMastery Master Lv7",
+        "gold": 149,
+        "xp": 400,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 4,
+        "prerequisiteId": 91,
+        "trackingKey": "stat_SkillMastery_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 93,
+      "name": "SkillMastery_8",
+      "type": "SkillMastery",
+      "tier": "Gold",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 291,
+      "description": "Complete the SkillMastery challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SkillMastery_8",
+      "reward": {
+        "title": "SkillMastery Master Lv8",
+        "gold": 21,
+        "xp": 134,
+        "itemId": 286
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 92,
+        "trackingKey": "stat_SkillMastery_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 94,
+      "name": "SkillMastery_9",
+      "type": "SkillMastery",
+      "tier": "Silver",
+      "points": 50,
+      "hidden": true,
+      "targetValue": 114,
+      "description": "Complete the SkillMastery challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_SkillMastery_9",
+      "reward": {
+        "title": "SkillMastery Master Lv9",
+        "gold": 225,
+        "xp": 997,
+        "itemId": 282
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 93,
+        "trackingKey": "stat_SkillMastery_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 95,
+      "name": "SkillMastery_10",
+      "type": "SkillMastery",
+      "tier": "Silver",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 979,
+      "description": "Complete the SkillMastery challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_SkillMastery_10",
+      "reward": {
+        "title": "SkillMastery Master Lv10",
+        "gold": 385,
+        "xp": 286,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 3,
+        "prerequisiteId": 94,
+        "trackingKey": "stat_SkillMastery_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 96,
+      "name": "SkillMastery_11",
+      "type": "SkillMastery",
+      "tier": "Gold",
+      "points": 50,
+      "hidden": true,
+      "targetValue": 795,
+      "description": "Complete the SkillMastery challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SkillMastery_11",
+      "reward": {
+        "title": "SkillMastery Master Lv11",
+        "gold": 199,
+        "xp": 658,
+        "itemId": 148
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 95,
+        "trackingKey": "stat_SkillMastery_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 97,
+      "name": "QuestChain_0",
+      "type": "QuestChain",
+      "tier": "Bronze",
+      "points": 100,
+      "hidden": true,
+      "targetValue": 755,
+      "description": "Complete the QuestChain challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_QuestChain_0",
+      "reward": {
+        "title": "QuestChain Master Lv0",
+        "gold": 128,
+        "xp": 375,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 1,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_QuestChain_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 98,
+      "name": "QuestChain_1",
+      "type": "QuestChain",
+      "tier": "Bronze",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 696,
+      "description": "Complete the QuestChain challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_QuestChain_1",
+      "reward": {
+        "title": "QuestChain Master Lv1",
+        "gold": 10,
+        "xp": 227,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 97,
+        "trackingKey": "stat_QuestChain_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 99,
+      "name": "QuestChain_2",
+      "type": "QuestChain",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": true,
+      "targetValue": 781,
+      "description": "Complete the QuestChain challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_QuestChain_2",
+      "reward": {
+        "title": "QuestChain Master Lv2",
+        "gold": 94,
+        "xp": 330,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 13,
+        "prerequisiteId": 98,
+        "trackingKey": "stat_QuestChain_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 100,
+      "name": "QuestChain_3",
+      "type": "QuestChain",
+      "tier": "Bronze",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 850,
+      "description": "Complete the QuestChain challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_QuestChain_3",
+      "reward": {
+        "title": "QuestChain Master Lv3",
+        "gold": 188,
+        "xp": 939,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 7,
+        "prerequisiteId": 99,
+        "trackingKey": "stat_QuestChain_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 101,
+      "name": "QuestChain_4",
+      "type": "QuestChain",
+      "tier": "Gold",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 221,
+      "description": "Complete the QuestChain challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_QuestChain_4",
+      "reward": {
+        "title": "QuestChain Master Lv4",
+        "gold": 29,
+        "xp": 290,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 14,
+        "prerequisiteId": 100,
+        "trackingKey": "stat_QuestChain_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 102,
+      "name": "QuestChain_5",
+      "type": "QuestChain",
+      "tier": "Bronze",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 4,
+      "description": "Complete the QuestChain challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_QuestChain_5",
+      "reward": {
+        "title": "QuestChain Master Lv5",
+        "gold": 104,
+        "xp": 674,
+        "itemId": 346
+      },
+      "conditions": {
+        "minLevel": 1,
+        "prerequisiteId": 101,
+        "trackingKey": "stat_QuestChain_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 103,
+      "name": "QuestChain_6",
+      "type": "QuestChain",
+      "tier": "Platinum",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 442,
+      "description": "Complete the QuestChain challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_QuestChain_6",
+      "reward": {
+        "title": "QuestChain Master Lv6",
+        "gold": 325,
+        "xp": 540,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 13,
+        "prerequisiteId": 102,
+        "trackingKey": "stat_QuestChain_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 104,
+      "name": "QuestChain_7",
+      "type": "QuestChain",
+      "tier": "Bronze",
+      "points": 100,
+      "hidden": true,
+      "targetValue": 764,
+      "description": "Complete the QuestChain challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_QuestChain_7",
+      "reward": {
+        "title": "QuestChain Master Lv7",
+        "gold": 138,
+        "xp": 650,
+        "itemId": 308
+      },
+      "conditions": {
+        "minLevel": 13,
+        "prerequisiteId": 103,
+        "trackingKey": "stat_QuestChain_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 105,
+      "name": "QuestChain_8",
+      "type": "QuestChain",
+      "tier": "Bronze",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 390,
+      "description": "Complete the QuestChain challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_QuestChain_8",
+      "reward": {
+        "title": "QuestChain Master Lv8",
+        "gold": 41,
+        "xp": 836,
+        "itemId": 114
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 104,
+        "trackingKey": "stat_QuestChain_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 106,
+      "name": "QuestChain_9",
+      "type": "QuestChain",
+      "tier": "Gold",
+      "points": 250,
+      "hidden": true,
+      "targetValue": 338,
+      "description": "Complete the QuestChain challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_QuestChain_9",
+      "reward": {
+        "title": "QuestChain Master Lv9",
+        "gold": 235,
+        "xp": 128,
+        "itemId": 86
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 105,
+        "trackingKey": "stat_QuestChain_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 107,
+      "name": "QuestChain_10",
+      "type": "QuestChain",
+      "tier": "Silver",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 826,
+      "description": "Complete the QuestChain challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_QuestChain_10",
+      "reward": {
+        "title": "QuestChain Master Lv10",
+        "gold": 375,
+        "xp": 277,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 7,
+        "prerequisiteId": 106,
+        "trackingKey": "stat_QuestChain_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 108,
+      "name": "QuestChain_11",
+      "type": "QuestChain",
+      "tier": "Platinum",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 53,
+      "description": "Complete the QuestChain challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_QuestChain_11",
+      "reward": {
+        "title": "QuestChain Master Lv11",
+        "gold": 421,
+        "xp": 692,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 107,
+        "trackingKey": "stat_QuestChain_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 109,
+      "name": "HiddenSecret_0",
+      "type": "HiddenSecret",
+      "tier": "Gold",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 227,
+      "description": "Complete the HiddenSecret challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_HiddenSecret_0",
+      "reward": {
+        "title": "HiddenSecret Master Lv0",
+        "gold": 273,
+        "xp": 454,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_HiddenSecret_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 110,
+      "name": "HiddenSecret_1",
+      "type": "HiddenSecret",
+      "tier": "Silver",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 217,
+      "description": "Complete the HiddenSecret challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_HiddenSecret_1",
+      "reward": {
+        "title": "HiddenSecret Master Lv1",
+        "gold": 10,
+        "xp": 166,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 1,
+        "prerequisiteId": 109,
+        "trackingKey": "stat_HiddenSecret_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 111,
+      "name": "HiddenSecret_2",
+      "type": "HiddenSecret",
+      "tier": "Platinum",
+      "points": 50,
+      "hidden": true,
+      "targetValue": 667,
+      "description": "Complete the HiddenSecret challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_HiddenSecret_2",
+      "reward": {
+        "title": "HiddenSecret Master Lv2",
+        "gold": 3,
+        "xp": 445,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 13,
+        "prerequisiteId": 110,
+        "trackingKey": "stat_HiddenSecret_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 112,
+      "name": "HiddenSecret_3",
+      "type": "HiddenSecret",
+      "tier": "Silver",
+      "points": 10,
+      "hidden": true,
+      "targetValue": 995,
+      "description": "Complete the HiddenSecret challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_HiddenSecret_3",
+      "reward": {
+        "title": "HiddenSecret Master Lv3",
+        "gold": 151,
+        "xp": 691,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 111,
+        "trackingKey": "stat_HiddenSecret_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 113,
+      "name": "HiddenSecret_4",
+      "type": "HiddenSecret",
+      "tier": "Gold",
+      "points": 250,
+      "hidden": true,
+      "targetValue": 603,
+      "description": "Complete the HiddenSecret challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_HiddenSecret_4",
+      "reward": {
+        "title": "HiddenSecret Master Lv4",
+        "gold": 50,
+        "xp": 7,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 16,
+        "prerequisiteId": 112,
+        "trackingKey": "stat_HiddenSecret_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 114,
+      "name": "HiddenSecret_5",
+      "type": "HiddenSecret",
+      "tier": "Gold",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 772,
+      "description": "Complete the HiddenSecret challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_HiddenSecret_5",
+      "reward": {
+        "title": "HiddenSecret Master Lv5",
+        "gold": 139,
+        "xp": 809,
+        "itemId": 217
+      },
+      "conditions": {
+        "minLevel": 16,
+        "prerequisiteId": 113,
+        "trackingKey": "stat_HiddenSecret_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 115,
+      "name": "HiddenSecret_6",
+      "type": "HiddenSecret",
+      "tier": "Gold",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 515,
+      "description": "Complete the HiddenSecret challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_HiddenSecret_6",
+      "reward": {
+        "title": "HiddenSecret Master Lv6",
+        "gold": 290,
+        "xp": 939,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 114,
+        "trackingKey": "stat_HiddenSecret_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 116,
+      "name": "HiddenSecret_7",
+      "type": "HiddenSecret",
+      "tier": "Platinum",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 491,
+      "description": "Complete the HiddenSecret challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_HiddenSecret_7",
+      "reward": {
+        "title": "HiddenSecret Master Lv7",
+        "gold": 314,
+        "xp": 342,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 16,
+        "prerequisiteId": 115,
+        "trackingKey": "stat_HiddenSecret_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 117,
+      "name": "HiddenSecret_8",
+      "type": "HiddenSecret",
+      "tier": "Silver",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 243,
+      "description": "Complete the HiddenSecret challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_HiddenSecret_8",
+      "reward": {
+        "title": "HiddenSecret Master Lv8",
+        "gold": 153,
+        "xp": 345,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 2,
+        "prerequisiteId": 116,
+        "trackingKey": "stat_HiddenSecret_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 118,
+      "name": "HiddenSecret_9",
+      "type": "HiddenSecret",
+      "tier": "Gold",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 965,
+      "description": "Complete the HiddenSecret challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_HiddenSecret_9",
+      "reward": {
+        "title": "HiddenSecret Master Lv9",
+        "gold": 22,
+        "xp": 10,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 2,
+        "prerequisiteId": 117,
+        "trackingKey": "stat_HiddenSecret_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 119,
+      "name": "HiddenSecret_10",
+      "type": "HiddenSecret",
+      "tier": "Bronze",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 910,
+      "description": "Complete the HiddenSecret challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_HiddenSecret_10",
+      "reward": {
+        "title": "HiddenSecret Master Lv10",
+        "gold": 73,
+        "xp": 82,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 17,
+        "prerequisiteId": 118,
+        "trackingKey": "stat_HiddenSecret_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 120,
+      "name": "HiddenSecret_11",
+      "type": "HiddenSecret",
+      "tier": "Bronze",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 874,
+      "description": "Complete the HiddenSecret challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_HiddenSecret_11",
+      "reward": {
+        "title": "HiddenSecret Master Lv11",
+        "gold": 198,
+        "xp": 612,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 15,
+        "prerequisiteId": 119,
+        "trackingKey": "stat_HiddenSecret_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 121,
+      "name": "SpeedRun_0",
+      "type": "SpeedRun",
+      "tier": "Gold",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 611,
+      "description": "Complete the SpeedRun challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SpeedRun_0",
+      "reward": {
+        "title": "SpeedRun Master Lv0",
+        "gold": 122,
+        "xp": 776,
+        "itemId": 287
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_SpeedRun_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 122,
+      "name": "SpeedRun_1",
+      "type": "SpeedRun",
+      "tier": "Bronze",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 293,
+      "description": "Complete the SpeedRun challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_SpeedRun_1",
+      "reward": {
+        "title": "SpeedRun Master Lv1",
+        "gold": 78,
+        "xp": 739,
+        "itemId": 276
+      },
+      "conditions": {
+        "minLevel": 8,
+        "prerequisiteId": 121,
+        "trackingKey": "stat_SpeedRun_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 123,
+      "name": "SpeedRun_2",
+      "type": "SpeedRun",
+      "tier": "Silver",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 83,
+      "description": "Complete the SpeedRun challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_SpeedRun_2",
+      "reward": {
+        "title": "SpeedRun Master Lv2",
+        "gold": 302,
+        "xp": 956,
+        "itemId": 14
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 122,
+        "trackingKey": "stat_SpeedRun_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 124,
+      "name": "SpeedRun_3",
+      "type": "SpeedRun",
+      "tier": "Gold",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 161,
+      "description": "Complete the SpeedRun challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SpeedRun_3",
+      "reward": {
+        "title": "SpeedRun Master Lv3",
+        "gold": 60,
+        "xp": 72,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 11,
+        "prerequisiteId": 123,
+        "trackingKey": "stat_SpeedRun_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 125,
+      "name": "SpeedRun_4",
+      "type": "SpeedRun",
+      "tier": "Gold",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 585,
+      "description": "Complete the SpeedRun challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SpeedRun_4",
+      "reward": {
+        "title": "SpeedRun Master Lv4",
+        "gold": 194,
+        "xp": 991,
+        "itemId": 69
+      },
+      "conditions": {
+        "minLevel": 18,
+        "prerequisiteId": 124,
+        "trackingKey": "stat_SpeedRun_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 126,
+      "name": "SpeedRun_5",
+      "type": "SpeedRun",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": true,
+      "targetValue": 292,
+      "description": "Complete the SpeedRun challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_SpeedRun_5",
+      "reward": {
+        "title": "SpeedRun Master Lv5",
+        "gold": 467,
+        "xp": 54,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 13,
+        "prerequisiteId": 125,
+        "trackingKey": "stat_SpeedRun_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 127,
+      "name": "SpeedRun_6",
+      "type": "SpeedRun",
+      "tier": "Silver",
+      "points": 25,
+      "hidden": false,
+      "targetValue": 512,
+      "description": "Complete the SpeedRun challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_SpeedRun_6",
+      "reward": {
+        "title": "SpeedRun Master Lv6",
+        "gold": 188,
+        "xp": 56,
+        "itemId": 183
+      },
+      "conditions": {
+        "minLevel": 6,
+        "prerequisiteId": 126,
+        "trackingKey": "stat_SpeedRun_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 128,
+      "name": "SpeedRun_7",
+      "type": "SpeedRun",
+      "tier": "Gold",
+      "points": 250,
+      "hidden": true,
+      "targetValue": 246,
+      "description": "Complete the SpeedRun challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SpeedRun_7",
+      "reward": {
+        "title": "SpeedRun Master Lv7",
+        "gold": 257,
+        "xp": 845,
+        "itemId": 266
+      },
+      "conditions": {
+        "minLevel": 13,
+        "prerequisiteId": 127,
+        "trackingKey": "stat_SpeedRun_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 129,
+      "name": "SpeedRun_8",
+      "type": "SpeedRun",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": false,
+      "targetValue": 934,
+      "description": "Complete the SpeedRun challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_SpeedRun_8",
+      "reward": {
+        "title": "SpeedRun Master Lv8",
+        "gold": 212,
+        "xp": 784,
+        "itemId": 222
+      },
+      "conditions": {
+        "minLevel": 8,
+        "prerequisiteId": 128,
+        "trackingKey": "stat_SpeedRun_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 130,
+      "name": "SpeedRun_9",
+      "type": "SpeedRun",
+      "tier": "Platinum",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 532,
+      "description": "Complete the SpeedRun challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Platinum_SpeedRun_9",
+      "reward": {
+        "title": "SpeedRun Master Lv9",
+        "gold": 46,
+        "xp": 740,
+        "itemId": 27
+      },
+      "conditions": {
+        "minLevel": 11,
+        "prerequisiteId": 129,
+        "trackingKey": "stat_SpeedRun_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 131,
+      "name": "SpeedRun_10",
+      "type": "SpeedRun",
+      "tier": "Gold",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 598,
+      "description": "Complete the SpeedRun challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SpeedRun_10",
+      "reward": {
+        "title": "SpeedRun Master Lv10",
+        "gold": 203,
+        "xp": 700,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 3,
+        "prerequisiteId": 130,
+        "trackingKey": "stat_SpeedRun_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 132,
+      "name": "SpeedRun_11",
+      "type": "SpeedRun",
+      "tier": "Silver",
+      "points": 100,
+      "hidden": true,
+      "targetValue": 198,
+      "description": "Complete the SpeedRun challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_SpeedRun_11",
+      "reward": {
+        "title": "SpeedRun Master Lv11",
+        "gold": 325,
+        "xp": 821,
+        "itemId": 243
+      },
+      "conditions": {
+        "minLevel": 16,
+        "prerequisiteId": 131,
+        "trackingKey": "stat_SpeedRun_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 133,
+      "name": "SurvivalStreak_0",
+      "type": "SurvivalStreak",
+      "tier": "Gold",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 265,
+      "description": "Complete the SurvivalStreak challenge number 0 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SurvivalStreak_0",
+      "reward": {
+        "title": "SurvivalStreak Master Lv0",
+        "gold": 104,
+        "xp": 381,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 14,
+        "prerequisiteId": 0,
+        "trackingKey": "stat_SurvivalStreak_0",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 134,
+      "name": "SurvivalStreak_1",
+      "type": "SurvivalStreak",
+      "tier": "Silver",
+      "points": 50,
+      "hidden": true,
+      "targetValue": 23,
+      "description": "Complete the SurvivalStreak challenge number 1 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_SurvivalStreak_1",
+      "reward": {
+        "title": "SurvivalStreak Master Lv1",
+        "gold": 132,
+        "xp": 50,
+        "itemId": 131
+      },
+      "conditions": {
+        "minLevel": 10,
+        "prerequisiteId": 133,
+        "trackingKey": "stat_SurvivalStreak_1",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 135,
+      "name": "SurvivalStreak_2",
+      "type": "SurvivalStreak",
+      "tier": "Bronze",
+      "points": 250,
+      "hidden": true,
+      "targetValue": 14,
+      "description": "Complete the SurvivalStreak challenge number 2 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_SurvivalStreak_2",
+      "reward": {
+        "title": "SurvivalStreak Master Lv2",
+        "gold": 425,
+        "xp": 182,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 5,
+        "prerequisiteId": 134,
+        "trackingKey": "stat_SurvivalStreak_2",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 136,
+      "name": "SurvivalStreak_3",
+      "type": "SurvivalStreak",
+      "tier": "Gold",
+      "points": 25,
+      "hidden": true,
+      "targetValue": 485,
+      "description": "Complete the SurvivalStreak challenge number 3 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SurvivalStreak_3",
+      "reward": {
+        "title": "SurvivalStreak Master Lv3",
+        "gold": 271,
+        "xp": 357,
+        "itemId": 285
+      },
+      "conditions": {
+        "minLevel": 9,
+        "prerequisiteId": 135,
+        "trackingKey": "stat_SurvivalStreak_3",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 137,
+      "name": "SurvivalStreak_4",
+      "type": "SurvivalStreak",
+      "tier": "Bronze",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 280,
+      "description": "Complete the SurvivalStreak challenge number 4 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_SurvivalStreak_4",
+      "reward": {
+        "title": "SurvivalStreak Master Lv4",
+        "gold": 74,
+        "xp": 238,
+        "itemId": 300
+      },
+      "conditions": {
+        "minLevel": 2,
+        "prerequisiteId": 136,
+        "trackingKey": "stat_SurvivalStreak_4",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 138,
+      "name": "SurvivalStreak_5",
+      "type": "SurvivalStreak",
+      "tier": "Bronze",
+      "points": 100,
+      "hidden": true,
+      "targetValue": 46,
+      "description": "Complete the SurvivalStreak challenge number 5 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Bronze_SurvivalStreak_5",
+      "reward": {
+        "title": "SurvivalStreak Master Lv5",
+        "gold": 107,
+        "xp": 518,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 7,
+        "prerequisiteId": 137,
+        "trackingKey": "stat_SurvivalStreak_5",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 139,
+      "name": "SurvivalStreak_6",
+      "type": "SurvivalStreak",
+      "tier": "Silver",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 222,
+      "description": "Complete the SurvivalStreak challenge number 6 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_SurvivalStreak_6",
+      "reward": {
+        "title": "SurvivalStreak Master Lv6",
+        "gold": 163,
+        "xp": 653,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 12,
+        "prerequisiteId": 138,
+        "trackingKey": "stat_SurvivalStreak_6",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 140,
+      "name": "SurvivalStreak_7",
+      "type": "SurvivalStreak",
+      "tier": "Gold",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 139,
+      "description": "Complete the SurvivalStreak challenge number 7 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SurvivalStreak_7",
+      "reward": {
+        "title": "SurvivalStreak Master Lv7",
+        "gold": 440,
+        "xp": 615,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 139,
+        "trackingKey": "stat_SurvivalStreak_7",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 141,
+      "name": "SurvivalStreak_8",
+      "type": "SurvivalStreak",
+      "tier": "Silver",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 962,
+      "description": "Complete the SurvivalStreak challenge number 8 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Silver_SurvivalStreak_8",
+      "reward": {
+        "title": "SurvivalStreak Master Lv8",
+        "gold": 118,
+        "xp": 608,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 2,
+        "prerequisiteId": 140,
+        "trackingKey": "stat_SurvivalStreak_8",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 142,
+      "name": "SurvivalStreak_9",
+      "type": "SurvivalStreak",
+      "tier": "Gold",
+      "points": 10,
+      "hidden": false,
+      "targetValue": 182,
+      "description": "Complete the SurvivalStreak challenge number 9 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SurvivalStreak_9",
+      "reward": {
+        "title": "SurvivalStreak Master Lv9",
+        "gold": 146,
+        "xp": 550,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 2,
+        "prerequisiteId": 141,
+        "trackingKey": "stat_SurvivalStreak_9",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 143,
+      "name": "SurvivalStreak_10",
+      "type": "SurvivalStreak",
+      "tier": "Gold",
+      "points": 100,
+      "hidden": false,
+      "targetValue": 831,
+      "description": "Complete the SurvivalStreak challenge number 10 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SurvivalStreak_10",
+      "reward": {
+        "title": "SurvivalStreak Master Lv10",
+        "gold": 225,
+        "xp": 820,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 19,
+        "prerequisiteId": 142,
+        "trackingKey": "stat_SurvivalStreak_10",
+        "comparison": "GreaterEqual"
+      }
+    }
+    ,
+    {
+      "achievementId": 144,
+      "name": "SurvivalStreak_11",
+      "type": "SurvivalStreak",
+      "tier": "Gold",
+      "points": 50,
+      "hidden": false,
+      "targetValue": 230,
+      "description": "Complete the SurvivalStreak challenge number 11 to earn this achievement.",
+      "iconPath": "Icons/Achievements/Gold_SurvivalStreak_11",
+      "reward": {
+        "title": "SurvivalStreak Master Lv11",
+        "gold": 360,
+        "xp": 543,
+        "itemId": 0
+      },
+      "conditions": {
+        "minLevel": 8,
+        "prerequisiteId": 143,
+        "trackingKey": "stat_SurvivalStreak_11",
+        "comparison": "GreaterEqual"
+      }
+    }
+  ]
+}
