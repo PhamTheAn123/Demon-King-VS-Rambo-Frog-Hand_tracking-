@@ -1,0 +1,7802 @@
+﻿{
+  "version": "1.0.0",
+  "generatedAt": "2026-07-12",
+  "description": "Enemy configuration data for all enemy archetypes in Demon King VS Rambo Frog",
+  "enemies": [
+    {
+      "id": 1,
+      "type": "Goblin",
+      "variantIndex": 0,
+      "name": "Goblin_v0",
+      "stats": {
+        "hp": 561,
+        "maxHp": 561,
+        "damage": 143,
+        "speed": 3.5,
+        "attackRange": 3.6,
+        "detectionRange": 12.6,
+        "defense": 7,
+        "critChance": 0.24,
+        "critMultiplier": 1.9,
+        "armorPenetration": 1
+      },
+      "behavior": {
+        "patrolSpeed": 1.75,
+        "chaseSpeed": 3.5,
+        "attackCooldown": 1.8,
+        "aggroRadius": 9,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 56
+      },
+      "rewards": {
+        "gold": 40,
+        "xp": 302,
+        "dropRate": 0.38,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 2,
+      "type": "Goblin",
+      "variantIndex": 1,
+      "name": "Goblin_v1",
+      "stats": {
+        "hp": 113,
+        "maxHp": 113,
+        "damage": 95,
+        "speed": 7.8,
+        "attackRange": 2.9,
+        "detectionRange": 10.15,
+        "defense": 33,
+        "critChance": 0.06,
+        "critMultiplier": 2.2,
+        "armorPenetration": 9
+      },
+      "behavior": {
+        "patrolSpeed": 3.9,
+        "chaseSpeed": 7.8,
+        "attackCooldown": 1.6,
+        "aggroRadius": 7.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 41
+      },
+      "rewards": {
+        "gold": 78,
+        "xp": 402,
+        "dropRate": 0.37,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 3,
+      "type": "Goblin",
+      "variantIndex": 2,
+      "name": "Goblin_v2",
+      "stats": {
+        "hp": 266,
+        "maxHp": 266,
+        "damage": 52,
+        "speed": 2.4,
+        "attackRange": 3.4,
+        "detectionRange": 11.9,
+        "defense": 21,
+        "critChance": 0.16,
+        "critMultiplier": 1.6,
+        "armorPenetration": 4
+      },
+      "behavior": {
+        "patrolSpeed": 1.2,
+        "chaseSpeed": 2.4,
+        "attackCooldown": 2.1,
+        "aggroRadius": 8.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 75
+      },
+      "rewards": {
+        "gold": 135,
+        "xp": 225,
+        "dropRate": 0.15,
+        "bonusDropChance": 0.13
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 4,
+      "type": "Goblin",
+      "variantIndex": 3,
+      "name": "Goblin_v3",
+      "stats": {
+        "hp": 647,
+        "maxHp": 647,
+        "damage": 12,
+        "speed": 1.6,
+        "attackRange": 3.4,
+        "detectionRange": 11.9,
+        "defense": 42,
+        "critChance": 0.19,
+        "critMultiplier": 1.5,
+        "armorPenetration": 7
+      },
+      "behavior": {
+        "patrolSpeed": 0.8,
+        "chaseSpeed": 1.6,
+        "attackCooldown": 2.7,
+        "aggroRadius": 8.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 27
+      },
+      "rewards": {
+        "gold": 114,
+        "xp": 452,
+        "dropRate": 0.18,
+        "bonusDropChance": 0.04
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 5,
+      "type": "Goblin",
+      "variantIndex": 4,
+      "name": "Goblin_v4",
+      "stats": {
+        "hp": 229,
+        "maxHp": 229,
+        "damage": 31,
+        "speed": 3.6,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 31,
+        "critChance": 0.28,
+        "critMultiplier": 1.8,
+        "armorPenetration": 8
+      },
+      "behavior": {
+        "patrolSpeed": 1.8,
+        "chaseSpeed": 3.6,
+        "attackCooldown": 2.7,
+        "aggroRadius": 6.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 29
+      },
+      "rewards": {
+        "gold": 15,
+        "xp": 470,
+        "dropRate": 0.23,
+        "bonusDropChance": 0.11
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 6,
+      "type": "Goblin",
+      "variantIndex": 5,
+      "name": "Goblin_v5",
+      "stats": {
+        "hp": 667,
+        "maxHp": 667,
+        "damage": 85,
+        "speed": 1.9,
+        "attackRange": 2.9,
+        "detectionRange": 10.15,
+        "defense": 0,
+        "critChance": 0.2,
+        "critMultiplier": 2.3,
+        "armorPenetration": 13
+      },
+      "behavior": {
+        "patrolSpeed": 0.95,
+        "chaseSpeed": 1.9,
+        "attackCooldown": 2.9,
+        "aggroRadius": 7.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 62
+      },
+      "rewards": {
+        "gold": 64,
+        "xp": 447,
+        "dropRate": 0.33,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 7,
+      "type": "Goblin",
+      "variantIndex": 6,
+      "name": "Goblin_v6",
+      "stats": {
+        "hp": 760,
+        "maxHp": 760,
+        "damage": 113,
+        "speed": 4.2,
+        "attackRange": 1.6,
+        "detectionRange": 5.6,
+        "defense": 32,
+        "critChance": 0.13,
+        "critMultiplier": 1.6,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 2.1,
+        "chaseSpeed": 4.2,
+        "attackCooldown": 2.5,
+        "aggroRadius": 4,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 113
+      },
+      "rewards": {
+        "gold": 100,
+        "xp": 60,
+        "dropRate": 0.24,
+        "bonusDropChance": 0.05
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 8,
+      "type": "Goblin",
+      "variantIndex": 7,
+      "name": "Goblin_v7",
+      "stats": {
+        "hp": 229,
+        "maxHp": 229,
+        "damage": 96,
+        "speed": 3.1,
+        "attackRange": 1.3,
+        "detectionRange": 4.55,
+        "defense": 35,
+        "critChance": 0.18,
+        "critMultiplier": 2.9,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 1.55,
+        "chaseSpeed": 3.1,
+        "attackCooldown": 2.1,
+        "aggroRadius": 3.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 87
+      },
+      "rewards": {
+        "gold": 37,
+        "xp": 30,
+        "dropRate": 0.16,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 9,
+      "type": "Goblin",
+      "variantIndex": 8,
+      "name": "Goblin_v8",
+      "stats": {
+        "hp": 766,
+        "maxHp": 766,
+        "damage": 88,
+        "speed": 6.3,
+        "attackRange": 2.7,
+        "detectionRange": 9.45,
+        "defense": 31,
+        "critChance": 0.21,
+        "critMultiplier": 3,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 3.15,
+        "chaseSpeed": 6.3,
+        "attackCooldown": 1,
+        "aggroRadius": 6.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 35
+      },
+      "rewards": {
+        "gold": 65,
+        "xp": 250,
+        "dropRate": 0.18,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 10,
+      "type": "Goblin",
+      "variantIndex": 9,
+      "name": "Goblin_v9",
+      "stats": {
+        "hp": 181,
+        "maxHp": 181,
+        "damage": 36,
+        "speed": 7.3,
+        "attackRange": 1,
+        "detectionRange": 3.5,
+        "defense": 36,
+        "critChance": 0.01,
+        "critMultiplier": 2,
+        "armorPenetration": 2
+      },
+      "behavior": {
+        "patrolSpeed": 3.65,
+        "chaseSpeed": 7.3,
+        "attackCooldown": 1.1,
+        "aggroRadius": 2.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 33
+      },
+      "rewards": {
+        "gold": 118,
+        "xp": 460,
+        "dropRate": 0.58,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 11,
+      "type": "Goblin",
+      "variantIndex": 10,
+      "name": "Goblin_v10",
+      "stats": {
+        "hp": 208,
+        "maxHp": 208,
+        "damage": 28,
+        "speed": 6.7,
+        "attackRange": 3.1,
+        "detectionRange": 10.85,
+        "defense": 38,
+        "critChance": 0.2,
+        "critMultiplier": 3,
+        "armorPenetration": 10
+      },
+      "behavior": {
+        "patrolSpeed": 3.35,
+        "chaseSpeed": 6.7,
+        "attackCooldown": 2.8,
+        "aggroRadius": 7.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 45
+      },
+      "rewards": {
+        "gold": 144,
+        "xp": 321,
+        "dropRate": 0.27,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 12,
+      "type": "Goblin",
+      "variantIndex": 11,
+      "name": "Goblin_v11",
+      "stats": {
+        "hp": 274,
+        "maxHp": 274,
+        "damage": 30,
+        "speed": 5.1,
+        "attackRange": 3.3,
+        "detectionRange": 11.55,
+        "defense": 35,
+        "critChance": 0.27,
+        "critMultiplier": 1.5,
+        "armorPenetration": 2
+      },
+      "behavior": {
+        "patrolSpeed": 2.55,
+        "chaseSpeed": 5.1,
+        "attackCooldown": 0.9,
+        "aggroRadius": 8.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 93
+      },
+      "rewards": {
+        "gold": 63,
+        "xp": 61,
+        "dropRate": 0.27,
+        "bonusDropChance": 0.13
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 13,
+      "type": "Goblin",
+      "variantIndex": 12,
+      "name": "Goblin_v12",
+      "stats": {
+        "hp": 338,
+        "maxHp": 338,
+        "damage": 62,
+        "speed": 1.6,
+        "attackRange": 3.3,
+        "detectionRange": 11.55,
+        "defense": 27,
+        "critChance": 0.07,
+        "critMultiplier": 3.3,
+        "armorPenetration": 9
+      },
+      "behavior": {
+        "patrolSpeed": 0.8,
+        "chaseSpeed": 1.6,
+        "attackCooldown": 1.1,
+        "aggroRadius": 8.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 23
+      },
+      "rewards": {
+        "gold": 118,
+        "xp": 269,
+        "dropRate": 0.32,
+        "bonusDropChance": 0.12
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 14,
+      "type": "Goblin",
+      "variantIndex": 13,
+      "name": "Goblin_v13",
+      "stats": {
+        "hp": 291,
+        "maxHp": 291,
+        "damage": 99,
+        "speed": 6.9,
+        "attackRange": 3.3,
+        "detectionRange": 11.55,
+        "defense": 12,
+        "critChance": 0.29,
+        "critMultiplier": 1.6,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 3.45,
+        "chaseSpeed": 6.9,
+        "attackCooldown": 1.7,
+        "aggroRadius": 8.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 68
+      },
+      "rewards": {
+        "gold": 174,
+        "xp": 50,
+        "dropRate": 0.06,
+        "bonusDropChance": 0.12
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 15,
+      "type": "Goblin",
+      "variantIndex": 14,
+      "name": "Goblin_v14",
+      "stats": {
+        "hp": 464,
+        "maxHp": 464,
+        "damage": 144,
+        "speed": 3.5,
+        "attackRange": 2.4,
+        "detectionRange": 8.4,
+        "defense": 49,
+        "critChance": 0.16,
+        "critMultiplier": 1.8,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 1.75,
+        "chaseSpeed": 3.5,
+        "attackCooldown": 2.8,
+        "aggroRadius": 6,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 31
+      },
+      "rewards": {
+        "gold": 84,
+        "xp": 179,
+        "dropRate": 0.56,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 16,
+      "type": "Goblin",
+      "variantIndex": 15,
+      "name": "Goblin_v15",
+      "stats": {
+        "hp": 549,
+        "maxHp": 549,
+        "damage": 30,
+        "speed": 3.8,
+        "attackRange": 1.2,
+        "detectionRange": 4.2,
+        "defense": 13,
+        "critChance": 0.25,
+        "critMultiplier": 3.3,
+        "armorPenetration": 4
+      },
+      "behavior": {
+        "patrolSpeed": 1.9,
+        "chaseSpeed": 3.8,
+        "attackCooldown": 1.2,
+        "aggroRadius": 3,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 107
+      },
+      "rewards": {
+        "gold": 46,
+        "xp": 285,
+        "dropRate": 0.16,
+        "bonusDropChance": 0.11
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 17,
+      "type": "Goblin",
+      "variantIndex": 16,
+      "name": "Goblin_v16",
+      "stats": {
+        "hp": 201,
+        "maxHp": 201,
+        "damage": 39,
+        "speed": 2.5,
+        "attackRange": 3.6,
+        "detectionRange": 12.6,
+        "defense": 40,
+        "critChance": 0.16,
+        "critMultiplier": 1.7,
+        "armorPenetration": 16
+      },
+      "behavior": {
+        "patrolSpeed": 1.25,
+        "chaseSpeed": 2.5,
+        "attackCooldown": 0.9,
+        "aggroRadius": 9,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 93
+      },
+      "rewards": {
+        "gold": 182,
+        "xp": 70,
+        "dropRate": 0.49,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 18,
+      "type": "Goblin",
+      "variantIndex": 17,
+      "name": "Goblin_v17",
+      "stats": {
+        "hp": 405,
+        "maxHp": 405,
+        "damage": 89,
+        "speed": 5.6,
+        "attackRange": 0.9,
+        "detectionRange": 3.15,
+        "defense": 35,
+        "critChance": 0.12,
+        "critMultiplier": 3.4,
+        "armorPenetration": 7
+      },
+      "behavior": {
+        "patrolSpeed": 2.8,
+        "chaseSpeed": 5.6,
+        "attackCooldown": 1.2,
+        "aggroRadius": 2.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 101
+      },
+      "rewards": {
+        "gold": 111,
+        "xp": 65,
+        "dropRate": 0.48,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 19,
+      "type": "Goblin",
+      "variantIndex": 18,
+      "name": "Goblin_v18",
+      "stats": {
+        "hp": 584,
+        "maxHp": 584,
+        "damage": 123,
+        "speed": 3.5,
+        "attackRange": 2.2,
+        "detectionRange": 7.7,
+        "defense": 46,
+        "critChance": 0.15,
+        "critMultiplier": 3.3,
+        "armorPenetration": 17
+      },
+      "behavior": {
+        "patrolSpeed": 1.75,
+        "chaseSpeed": 3.5,
+        "attackCooldown": 1.4,
+        "aggroRadius": 5.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 97
+      },
+      "rewards": {
+        "gold": 10,
+        "xp": 12,
+        "dropRate": 0.32,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 20,
+      "type": "Goblin",
+      "variantIndex": 19,
+      "name": "Goblin_v19",
+      "stats": {
+        "hp": 687,
+        "maxHp": 687,
+        "damage": 91,
+        "speed": 2.7,
+        "attackRange": 0.8,
+        "detectionRange": 2.8,
+        "defense": 22,
+        "critChance": 0.29,
+        "critMultiplier": 2.1,
+        "armorPenetration": 7
+      },
+      "behavior": {
+        "patrolSpeed": 1.35,
+        "chaseSpeed": 2.7,
+        "attackCooldown": 2.9,
+        "aggroRadius": 2,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 112
+      },
+      "rewards": {
+        "gold": 159,
+        "xp": 151,
+        "dropRate": 0.37,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 21,
+      "type": "Goblin",
+      "variantIndex": 20,
+      "name": "Goblin_v20",
+      "stats": {
+        "hp": 544,
+        "maxHp": 544,
+        "damage": 37,
+        "speed": 4.2,
+        "attackRange": 1.7,
+        "detectionRange": 5.95,
+        "defense": 46,
+        "critChance": 0.04,
+        "critMultiplier": 3.4,
+        "armorPenetration": 14
+      },
+      "behavior": {
+        "patrolSpeed": 2.1,
+        "chaseSpeed": 4.2,
+        "attackCooldown": 2.1,
+        "aggroRadius": 4.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 11
+      },
+      "rewards": {
+        "gold": 33,
+        "xp": 89,
+        "dropRate": 0.51,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 22,
+      "type": "Goblin",
+      "variantIndex": 21,
+      "name": "Goblin_v21",
+      "stats": {
+        "hp": 287,
+        "maxHp": 287,
+        "damage": 107,
+        "speed": 6.9,
+        "attackRange": 1.5,
+        "detectionRange": 5.25,
+        "defense": 44,
+        "critChance": 0.08,
+        "critMultiplier": 3.1,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 3.45,
+        "chaseSpeed": 6.9,
+        "attackCooldown": 1.6,
+        "aggroRadius": 3.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 95
+      },
+      "rewards": {
+        "gold": 120,
+        "xp": 176,
+        "dropRate": 0.09,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 23,
+      "type": "Goblin",
+      "variantIndex": 22,
+      "name": "Goblin_v22",
+      "stats": {
+        "hp": 462,
+        "maxHp": 462,
+        "damage": 35,
+        "speed": 1.7,
+        "attackRange": 3.3,
+        "detectionRange": 11.55,
+        "defense": 31,
+        "critChance": 0.23,
+        "critMultiplier": 3.4,
+        "armorPenetration": 3
+      },
+      "behavior": {
+        "patrolSpeed": 0.85,
+        "chaseSpeed": 1.7,
+        "attackCooldown": 2,
+        "aggroRadius": 8.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 119
+      },
+      "rewards": {
+        "gold": 172,
+        "xp": 117,
+        "dropRate": 0.28,
+        "bonusDropChance": 0.08
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 24,
+      "type": "Goblin",
+      "variantIndex": 23,
+      "name": "Goblin_v23",
+      "stats": {
+        "hp": 344,
+        "maxHp": 344,
+        "damage": 84,
+        "speed": 7.2,
+        "attackRange": 1.4,
+        "detectionRange": 4.9,
+        "defense": 36,
+        "critChance": 0.14,
+        "critMultiplier": 1.6,
+        "armorPenetration": 14
+      },
+      "behavior": {
+        "patrolSpeed": 3.6,
+        "chaseSpeed": 7.2,
+        "attackCooldown": 1.6,
+        "aggroRadius": 3.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 11
+      },
+      "rewards": {
+        "gold": 176,
+        "xp": 215,
+        "dropRate": 0.29,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 25,
+      "type": "Goblin",
+      "variantIndex": 24,
+      "name": "Goblin_v24",
+      "stats": {
+        "hp": 239,
+        "maxHp": 239,
+        "damage": 86,
+        "speed": 2.4,
+        "attackRange": 3.9,
+        "detectionRange": 13.65,
+        "defense": 37,
+        "critChance": 0.09,
+        "critMultiplier": 2.1,
+        "armorPenetration": 9
+      },
+      "behavior": {
+        "patrolSpeed": 1.2,
+        "chaseSpeed": 2.4,
+        "attackCooldown": 1.1,
+        "aggroRadius": 9.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 3,
+        "respawnTime": 108
+      },
+      "rewards": {
+        "gold": 146,
+        "xp": 193,
+        "dropRate": 0.51,
+        "bonusDropChance": 0.04
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 26,
+      "type": "Goblin",
+      "variantIndex": 25,
+      "name": "Goblin_v25",
+      "stats": {
+        "hp": 257,
+        "maxHp": 257,
+        "damage": 108,
+        "speed": 1.5,
+        "attackRange": 1.9,
+        "detectionRange": 6.65,
+        "defense": 11,
+        "critChance": 0.14,
+        "critMultiplier": 1.9,
+        "armorPenetration": 18
+      },
+      "behavior": {
+        "patrolSpeed": 0.75,
+        "chaseSpeed": 1.5,
+        "attackCooldown": 1.1,
+        "aggroRadius": 4.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 68
+      },
+      "rewards": {
+        "gold": 94,
+        "xp": 139,
+        "dropRate": 0.55,
+        "bonusDropChance": 0.02
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 27,
+      "type": "Goblin",
+      "variantIndex": 26,
+      "name": "Goblin_v26",
+      "stats": {
+        "hp": 435,
+        "maxHp": 435,
+        "damage": 53,
+        "speed": 4.5,
+        "attackRange": 3.4,
+        "detectionRange": 11.9,
+        "defense": 29,
+        "critChance": 0.09,
+        "critMultiplier": 2.7,
+        "armorPenetration": 1
+      },
+      "behavior": {
+        "patrolSpeed": 2.25,
+        "chaseSpeed": 4.5,
+        "attackCooldown": 1.6,
+        "aggroRadius": 8.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 26
+      },
+      "rewards": {
+        "gold": 167,
+        "xp": 118,
+        "dropRate": 0.2,
+        "bonusDropChance": 0.04
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 28,
+      "type": "Goblin",
+      "variantIndex": 27,
+      "name": "Goblin_v27",
+      "stats": {
+        "hp": 546,
+        "maxHp": 546,
+        "damage": 132,
+        "speed": 2.5,
+        "attackRange": 3.5,
+        "detectionRange": 12.25,
+        "defense": 29,
+        "critChance": 0.25,
+        "critMultiplier": 1.7,
+        "armorPenetration": 13
+      },
+      "behavior": {
+        "patrolSpeed": 1.25,
+        "chaseSpeed": 2.5,
+        "attackCooldown": 2.8,
+        "aggroRadius": 8.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 58
+      },
+      "rewards": {
+        "gold": 17,
+        "xp": 154,
+        "dropRate": 0.09,
+        "bonusDropChance": 0.13
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 29,
+      "type": "Goblin",
+      "variantIndex": 28,
+      "name": "Goblin_v28",
+      "stats": {
+        "hp": 141,
+        "maxHp": 141,
+        "damage": 72,
+        "speed": 5.6,
+        "attackRange": 2.1,
+        "detectionRange": 7.35,
+        "defense": 7,
+        "critChance": 0.07,
+        "critMultiplier": 2.4,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 2.8,
+        "chaseSpeed": 5.6,
+        "attackCooldown": 2.5,
+        "aggroRadius": 5.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 119
+      },
+      "rewards": {
+        "gold": 134,
+        "xp": 380,
+        "dropRate": 0.15,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 30,
+      "type": "Goblin",
+      "variantIndex": 29,
+      "name": "Goblin_v29",
+      "stats": {
+        "hp": 577,
+        "maxHp": 577,
+        "damage": 87,
+        "speed": 6,
+        "attackRange": 3.2,
+        "detectionRange": 11.2,
+        "defense": 45,
+        "critChance": 0.09,
+        "critMultiplier": 3.2,
+        "armorPenetration": 19
+      },
+      "behavior": {
+        "patrolSpeed": 3,
+        "chaseSpeed": 6,
+        "attackCooldown": 2,
+        "aggroRadius": 8,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 59
+      },
+      "rewards": {
+        "gold": 50,
+        "xp": 430,
+        "dropRate": 0.36,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 31,
+      "type": "Goblin",
+      "variantIndex": 30,
+      "name": "Goblin_v30",
+      "stats": {
+        "hp": 329,
+        "maxHp": 329,
+        "damage": 146,
+        "speed": 3.6,
+        "attackRange": 3.5,
+        "detectionRange": 12.25,
+        "defense": 10,
+        "critChance": 0.17,
+        "critMultiplier": 2.7,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 1.8,
+        "chaseSpeed": 3.6,
+        "attackCooldown": 2.6,
+        "aggroRadius": 8.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 11
+      },
+      "rewards": {
+        "gold": 160,
+        "xp": 10,
+        "dropRate": 0.42,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 32,
+      "type": "Goblin",
+      "variantIndex": 31,
+      "name": "Goblin_v31",
+      "stats": {
+        "hp": 524,
+        "maxHp": 524,
+        "damage": 61,
+        "speed": 1.7,
+        "attackRange": 3.2,
+        "detectionRange": 11.2,
+        "defense": 11,
+        "critChance": 0.09,
+        "critMultiplier": 2.1,
+        "armorPenetration": 9
+      },
+      "behavior": {
+        "patrolSpeed": 0.85,
+        "chaseSpeed": 1.7,
+        "attackCooldown": 1,
+        "aggroRadius": 8,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 103
+      },
+      "rewards": {
+        "gold": 124,
+        "xp": 193,
+        "dropRate": 0.41,
+        "bonusDropChance": 0.08
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 33,
+      "type": "Goblin",
+      "variantIndex": 32,
+      "name": "Goblin_v32",
+      "stats": {
+        "hp": 261,
+        "maxHp": 261,
+        "damage": 131,
+        "speed": 6.6,
+        "attackRange": 2.7,
+        "detectionRange": 9.45,
+        "defense": 33,
+        "critChance": 0.2,
+        "critMultiplier": 2.6,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 3.3,
+        "chaseSpeed": 6.6,
+        "attackCooldown": 1.2,
+        "aggroRadius": 6.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 60
+      },
+      "rewards": {
+        "gold": 37,
+        "xp": 233,
+        "dropRate": 0.33,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 34,
+      "type": "Goblin",
+      "variantIndex": 33,
+      "name": "Goblin_v33",
+      "stats": {
+        "hp": 628,
+        "maxHp": 628,
+        "damage": 68,
+        "speed": 7.8,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 34,
+        "critChance": 0.13,
+        "critMultiplier": 2,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 3.9,
+        "chaseSpeed": 7.8,
+        "attackCooldown": 2.2,
+        "aggroRadius": 6.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 40
+      },
+      "rewards": {
+        "gold": 110,
+        "xp": 382,
+        "dropRate": 0.52,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 35,
+      "type": "Goblin",
+      "variantIndex": 34,
+      "name": "Goblin_v34",
+      "stats": {
+        "hp": 219,
+        "maxHp": 219,
+        "damage": 64,
+        "speed": 5.2,
+        "attackRange": 2,
+        "detectionRange": 7,
+        "defense": 1,
+        "critChance": 0.18,
+        "critMultiplier": 1.5,
+        "armorPenetration": 14
+      },
+      "behavior": {
+        "patrolSpeed": 2.6,
+        "chaseSpeed": 5.2,
+        "attackCooldown": 0.8,
+        "aggroRadius": 5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 117
+      },
+      "rewards": {
+        "gold": 54,
+        "xp": 116,
+        "dropRate": 0.33,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 36,
+      "type": "Goblin",
+      "variantIndex": 35,
+      "name": "Goblin_v35",
+      "stats": {
+        "hp": 153,
+        "maxHp": 153,
+        "damage": 147,
+        "speed": 5.3,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 13,
+        "critChance": 0.19,
+        "critMultiplier": 2.7,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 2.65,
+        "chaseSpeed": 5.3,
+        "attackCooldown": 1.1,
+        "aggroRadius": 6.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 25
+      },
+      "rewards": {
+        "gold": 188,
+        "xp": 98,
+        "dropRate": 0.22,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 37,
+      "type": "Goblin",
+      "variantIndex": 36,
+      "name": "Goblin_v36",
+      "stats": {
+        "hp": 304,
+        "maxHp": 304,
+        "damage": 37,
+        "speed": 5.4,
+        "attackRange": 2,
+        "detectionRange": 7,
+        "defense": 25,
+        "critChance": 0.24,
+        "critMultiplier": 1.6,
+        "armorPenetration": 0
+      },
+      "behavior": {
+        "patrolSpeed": 2.7,
+        "chaseSpeed": 5.4,
+        "attackCooldown": 1.3,
+        "aggroRadius": 5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 43
+      },
+      "rewards": {
+        "gold": 197,
+        "xp": 301,
+        "dropRate": 0.35,
+        "bonusDropChance": 0.11
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 38,
+      "type": "Goblin",
+      "variantIndex": 37,
+      "name": "Goblin_v37",
+      "stats": {
+        "hp": 231,
+        "maxHp": 231,
+        "damage": 27,
+        "speed": 5.9,
+        "attackRange": 2.9,
+        "detectionRange": 10.15,
+        "defense": 14,
+        "critChance": 0.29,
+        "critMultiplier": 2.4,
+        "armorPenetration": 12
+      },
+      "behavior": {
+        "patrolSpeed": 2.95,
+        "chaseSpeed": 5.9,
+        "attackCooldown": 1.7,
+        "aggroRadius": 7.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 25
+      },
+      "rewards": {
+        "gold": 23,
+        "xp": 193,
+        "dropRate": 0.59,
+        "bonusDropChance": 0.11
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 39,
+      "type": "Goblin",
+      "variantIndex": 38,
+      "name": "Goblin_v38",
+      "stats": {
+        "hp": 695,
+        "maxHp": 695,
+        "damage": 81,
+        "speed": 3.4,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 4,
+        "critChance": 0.27,
+        "critMultiplier": 2,
+        "armorPenetration": 9
+      },
+      "behavior": {
+        "patrolSpeed": 1.7,
+        "chaseSpeed": 3.4,
+        "attackCooldown": 1.7,
+        "aggroRadius": 6.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 71
+      },
+      "rewards": {
+        "gold": 74,
+        "xp": 354,
+        "dropRate": 0.19,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 40,
+      "type": "Goblin",
+      "variantIndex": 39,
+      "name": "Goblin_v39",
+      "stats": {
+        "hp": 210,
+        "maxHp": 210,
+        "damage": 57,
+        "speed": 3.1,
+        "attackRange": 1.9,
+        "detectionRange": 6.65,
+        "defense": 39,
+        "critChance": 0.1,
+        "critMultiplier": 1.8,
+        "armorPenetration": 3
+      },
+      "behavior": {
+        "patrolSpeed": 1.55,
+        "chaseSpeed": 3.1,
+        "attackCooldown": 2.1,
+        "aggroRadius": 4.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 3,
+        "respawnTime": 15
+      },
+      "rewards": {
+        "gold": 173,
+        "xp": 459,
+        "dropRate": 0.23,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 41,
+      "type": "Goblin",
+      "variantIndex": 40,
+      "name": "Goblin_v40",
+      "stats": {
+        "hp": 111,
+        "maxHp": 111,
+        "damage": 124,
+        "speed": 4.3,
+        "attackRange": 1.1,
+        "detectionRange": 3.85,
+        "defense": 28,
+        "critChance": 0.04,
+        "critMultiplier": 3,
+        "armorPenetration": 1
+      },
+      "behavior": {
+        "patrolSpeed": 2.15,
+        "chaseSpeed": 4.3,
+        "attackCooldown": 1.9,
+        "aggroRadius": 2.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 25
+      },
+      "rewards": {
+        "gold": 11,
+        "xp": 281,
+        "dropRate": 0.39,
+        "bonusDropChance": 0.13
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 42,
+      "type": "Goblin",
+      "variantIndex": 41,
+      "name": "Goblin_v41",
+      "stats": {
+        "hp": 571,
+        "maxHp": 571,
+        "damage": 50,
+        "speed": 2.2,
+        "attackRange": 3,
+        "detectionRange": 10.5,
+        "defense": 1,
+        "critChance": 0.14,
+        "critMultiplier": 3.4,
+        "armorPenetration": 16
+      },
+      "behavior": {
+        "patrolSpeed": 1.1,
+        "chaseSpeed": 2.2,
+        "attackCooldown": 0.8,
+        "aggroRadius": 7.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 118
+      },
+      "rewards": {
+        "gold": 39,
+        "xp": 443,
+        "dropRate": 0.1,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 43,
+      "type": "Goblin",
+      "variantIndex": 42,
+      "name": "Goblin_v42",
+      "stats": {
+        "hp": 531,
+        "maxHp": 531,
+        "damage": 88,
+        "speed": 4.1,
+        "attackRange": 1.7,
+        "detectionRange": 5.95,
+        "defense": 18,
+        "critChance": 0.26,
+        "critMultiplier": 3.4,
+        "armorPenetration": 19
+      },
+      "behavior": {
+        "patrolSpeed": 2.05,
+        "chaseSpeed": 4.1,
+        "attackCooldown": 1.3,
+        "aggroRadius": 4.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 118
+      },
+      "rewards": {
+        "gold": 15,
+        "xp": 251,
+        "dropRate": 0.2,
+        "bonusDropChance": 0.04
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 44,
+      "type": "Goblin",
+      "variantIndex": 43,
+      "name": "Goblin_v43",
+      "stats": {
+        "hp": 633,
+        "maxHp": 633,
+        "damage": 85,
+        "speed": 3.5,
+        "attackRange": 2.9,
+        "detectionRange": 10.15,
+        "defense": 3,
+        "critChance": 0.06,
+        "critMultiplier": 2.5,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 1.75,
+        "chaseSpeed": 3.5,
+        "attackCooldown": 1.2,
+        "aggroRadius": 7.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 48
+      },
+      "rewards": {
+        "gold": 158,
+        "xp": 110,
+        "dropRate": 0.38,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 45,
+      "type": "Goblin",
+      "variantIndex": 44,
+      "name": "Goblin_v44",
+      "stats": {
+        "hp": 50,
+        "maxHp": 50,
+        "damage": 147,
+        "speed": 5.4,
+        "attackRange": 1.3,
+        "detectionRange": 4.55,
+        "defense": 31,
+        "critChance": 0.14,
+        "critMultiplier": 1.6,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 2.7,
+        "chaseSpeed": 5.4,
+        "attackCooldown": 1.3,
+        "aggroRadius": 3.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 92
+      },
+      "rewards": {
+        "gold": 122,
+        "xp": 338,
+        "dropRate": 0.5,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 46,
+      "type": "Goblin",
+      "variantIndex": 45,
+      "name": "Goblin_v45",
+      "stats": {
+        "hp": 173,
+        "maxHp": 173,
+        "damage": 19,
+        "speed": 7.4,
+        "attackRange": 2,
+        "detectionRange": 7,
+        "defense": 6,
+        "critChance": 0.11,
+        "critMultiplier": 3.2,
+        "armorPenetration": 10
+      },
+      "behavior": {
+        "patrolSpeed": 3.7,
+        "chaseSpeed": 7.4,
+        "attackCooldown": 0.9,
+        "aggroRadius": 5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 30
+      },
+      "rewards": {
+        "gold": 187,
+        "xp": 376,
+        "dropRate": 0.13,
+        "bonusDropChance": 0.12
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 47,
+      "type": "Goblin",
+      "variantIndex": 46,
+      "name": "Goblin_v46",
+      "stats": {
+        "hp": 495,
+        "maxHp": 495,
+        "damage": 15,
+        "speed": 2.2,
+        "attackRange": 2.3,
+        "detectionRange": 8.05,
+        "defense": 2,
+        "critChance": 0.2,
+        "critMultiplier": 2.6,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 1.1,
+        "chaseSpeed": 2.2,
+        "attackCooldown": 2.9,
+        "aggroRadius": 5.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 44
+      },
+      "rewards": {
+        "gold": 175,
+        "xp": 466,
+        "dropRate": 0.59,
+        "bonusDropChance": 0.13
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 48,
+      "type": "Goblin",
+      "variantIndex": 47,
+      "name": "Goblin_v47",
+      "stats": {
+        "hp": 605,
+        "maxHp": 605,
+        "damage": 113,
+        "speed": 5.8,
+        "attackRange": 1.2,
+        "detectionRange": 4.2,
+        "defense": 25,
+        "critChance": 0.18,
+        "critMultiplier": 1.8,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 2.9,
+        "chaseSpeed": 5.8,
+        "attackCooldown": 2.5,
+        "aggroRadius": 3,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 13
+      },
+      "rewards": {
+        "gold": 20,
+        "xp": 99,
+        "dropRate": 0.06,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 49,
+      "type": "Goblin",
+      "variantIndex": 48,
+      "name": "Goblin_v48",
+      "stats": {
+        "hp": 306,
+        "maxHp": 306,
+        "damage": 48,
+        "speed": 7.8,
+        "attackRange": 3.4,
+        "detectionRange": 11.9,
+        "defense": 13,
+        "critChance": 0.07,
+        "critMultiplier": 2.1,
+        "armorPenetration": 2
+      },
+      "behavior": {
+        "patrolSpeed": 3.9,
+        "chaseSpeed": 7.8,
+        "attackCooldown": 2.8,
+        "aggroRadius": 8.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 116
+      },
+      "rewards": {
+        "gold": 174,
+        "xp": 347,
+        "dropRate": 0.07,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 50,
+      "type": "Goblin",
+      "variantIndex": 49,
+      "name": "Goblin_v49",
+      "stats": {
+        "hp": 689,
+        "maxHp": 689,
+        "damage": 133,
+        "speed": 5,
+        "attackRange": 2.2,
+        "detectionRange": 7.7,
+        "defense": 28,
+        "critChance": 0.21,
+        "critMultiplier": 3.2,
+        "armorPenetration": 4
+      },
+      "behavior": {
+        "patrolSpeed": 2.5,
+        "chaseSpeed": 5,
+        "attackCooldown": 1.5,
+        "aggroRadius": 5.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 77
+      },
+      "rewards": {
+        "gold": 119,
+        "xp": 466,
+        "dropRate": 0.45,
+        "bonusDropChance": 0.04
+      },
+      "animation": {
+        "idleClip": "anim_Goblin_idle",
+        "walkClip": "anim_Goblin_walk",
+        "runClip": "anim_Goblin_run",
+        "attackClip": "anim_Goblin_attack",
+        "deathClip": "anim_Goblin_death",
+        "hurtClip": "anim_Goblin_hurt",
+        "spawnClip": "anim_Goblin_spawn"
+      }
+    }
+    ,
+    {
+      "id": 51,
+      "type": "Orc",
+      "variantIndex": 0,
+      "name": "Orc_v0",
+      "stats": {
+        "hp": 146,
+        "maxHp": 146,
+        "damage": 92,
+        "speed": 7.6,
+        "attackRange": 2.6,
+        "detectionRange": 9.1,
+        "defense": 1,
+        "critChance": 0.17,
+        "critMultiplier": 2.7,
+        "armorPenetration": 12
+      },
+      "behavior": {
+        "patrolSpeed": 3.8,
+        "chaseSpeed": 7.6,
+        "attackCooldown": 1.9,
+        "aggroRadius": 6.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 40
+      },
+      "rewards": {
+        "gold": 165,
+        "xp": 105,
+        "dropRate": 0.07,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 52,
+      "type": "Orc",
+      "variantIndex": 1,
+      "name": "Orc_v1",
+      "stats": {
+        "hp": 394,
+        "maxHp": 394,
+        "damage": 67,
+        "speed": 6,
+        "attackRange": 2.2,
+        "detectionRange": 7.7,
+        "defense": 37,
+        "critChance": 0.04,
+        "critMultiplier": 2.7,
+        "armorPenetration": 5
+      },
+      "behavior": {
+        "patrolSpeed": 3,
+        "chaseSpeed": 6,
+        "attackCooldown": 1.5,
+        "aggroRadius": 5.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 11
+      },
+      "rewards": {
+        "gold": 61,
+        "xp": 354,
+        "dropRate": 0.51,
+        "bonusDropChance": 0.02
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 53,
+      "type": "Orc",
+      "variantIndex": 2,
+      "name": "Orc_v2",
+      "stats": {
+        "hp": 93,
+        "maxHp": 93,
+        "damage": 43,
+        "speed": 2.7,
+        "attackRange": 2,
+        "detectionRange": 7,
+        "defense": 11,
+        "critChance": 0.22,
+        "critMultiplier": 1.6,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 1.35,
+        "chaseSpeed": 2.7,
+        "attackCooldown": 2.7,
+        "aggroRadius": 5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 52
+      },
+      "rewards": {
+        "gold": 199,
+        "xp": 134,
+        "dropRate": 0.58,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 54,
+      "type": "Orc",
+      "variantIndex": 3,
+      "name": "Orc_v3",
+      "stats": {
+        "hp": 347,
+        "maxHp": 347,
+        "damage": 99,
+        "speed": 2.5,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 25,
+        "critChance": 0.29,
+        "critMultiplier": 1.8,
+        "armorPenetration": 4
+      },
+      "behavior": {
+        "patrolSpeed": 1.25,
+        "chaseSpeed": 2.5,
+        "attackCooldown": 1.2,
+        "aggroRadius": 6.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 26
+      },
+      "rewards": {
+        "gold": 143,
+        "xp": 420,
+        "dropRate": 0.42,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 55,
+      "type": "Orc",
+      "variantIndex": 4,
+      "name": "Orc_v4",
+      "stats": {
+        "hp": 415,
+        "maxHp": 415,
+        "damage": 36,
+        "speed": 3.2,
+        "attackRange": 1,
+        "detectionRange": 3.5,
+        "defense": 10,
+        "critChance": 0.22,
+        "critMultiplier": 3.3,
+        "armorPenetration": 17
+      },
+      "behavior": {
+        "patrolSpeed": 1.6,
+        "chaseSpeed": 3.2,
+        "attackCooldown": 1.8,
+        "aggroRadius": 2.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 36
+      },
+      "rewards": {
+        "gold": 156,
+        "xp": 360,
+        "dropRate": 0.19,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 56,
+      "type": "Orc",
+      "variantIndex": 5,
+      "name": "Orc_v5",
+      "stats": {
+        "hp": 348,
+        "maxHp": 348,
+        "damage": 96,
+        "speed": 6.4,
+        "attackRange": 2.4,
+        "detectionRange": 8.4,
+        "defense": 46,
+        "critChance": 0.03,
+        "critMultiplier": 1.7,
+        "armorPenetration": 8
+      },
+      "behavior": {
+        "patrolSpeed": 3.2,
+        "chaseSpeed": 6.4,
+        "attackCooldown": 0.8,
+        "aggroRadius": 6,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 89
+      },
+      "rewards": {
+        "gold": 27,
+        "xp": 157,
+        "dropRate": 0.48,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 57,
+      "type": "Orc",
+      "variantIndex": 6,
+      "name": "Orc_v6",
+      "stats": {
+        "hp": 279,
+        "maxHp": 279,
+        "damage": 117,
+        "speed": 4.7,
+        "attackRange": 3.9,
+        "detectionRange": 13.65,
+        "defense": 49,
+        "critChance": 0.08,
+        "critMultiplier": 2.9,
+        "armorPenetration": 10
+      },
+      "behavior": {
+        "patrolSpeed": 2.35,
+        "chaseSpeed": 4.7,
+        "attackCooldown": 1.6,
+        "aggroRadius": 9.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 55
+      },
+      "rewards": {
+        "gold": 109,
+        "xp": 152,
+        "dropRate": 0.26,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 58,
+      "type": "Orc",
+      "variantIndex": 7,
+      "name": "Orc_v7",
+      "stats": {
+        "hp": 345,
+        "maxHp": 345,
+        "damage": 117,
+        "speed": 3.8,
+        "attackRange": 3.2,
+        "detectionRange": 11.2,
+        "defense": 5,
+        "critChance": 0.06,
+        "critMultiplier": 2.5,
+        "armorPenetration": 19
+      },
+      "behavior": {
+        "patrolSpeed": 1.9,
+        "chaseSpeed": 3.8,
+        "attackCooldown": 1.2,
+        "aggroRadius": 8,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 89
+      },
+      "rewards": {
+        "gold": 17,
+        "xp": 154,
+        "dropRate": 0.48,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 59,
+      "type": "Orc",
+      "variantIndex": 8,
+      "name": "Orc_v8",
+      "stats": {
+        "hp": 237,
+        "maxHp": 237,
+        "damage": 149,
+        "speed": 4,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 31,
+        "critChance": 0.19,
+        "critMultiplier": 1.7,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 2,
+        "chaseSpeed": 4,
+        "attackCooldown": 2.3,
+        "aggroRadius": 6.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 79
+      },
+      "rewards": {
+        "gold": 78,
+        "xp": 492,
+        "dropRate": 0.44,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 60,
+      "type": "Orc",
+      "variantIndex": 9,
+      "name": "Orc_v9",
+      "stats": {
+        "hp": 649,
+        "maxHp": 649,
+        "damage": 19,
+        "speed": 2.3,
+        "attackRange": 1,
+        "detectionRange": 3.5,
+        "defense": 20,
+        "critChance": 0.13,
+        "critMultiplier": 2.3,
+        "armorPenetration": 4
+      },
+      "behavior": {
+        "patrolSpeed": 1.15,
+        "chaseSpeed": 2.3,
+        "attackCooldown": 1.4,
+        "aggroRadius": 2.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 34
+      },
+      "rewards": {
+        "gold": 71,
+        "xp": 482,
+        "dropRate": 0.08,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 61,
+      "type": "Orc",
+      "variantIndex": 10,
+      "name": "Orc_v10",
+      "stats": {
+        "hp": 79,
+        "maxHp": 79,
+        "damage": 35,
+        "speed": 3.8,
+        "attackRange": 0.9,
+        "detectionRange": 3.15,
+        "defense": 42,
+        "critChance": 0.09,
+        "critMultiplier": 1.6,
+        "armorPenetration": 19
+      },
+      "behavior": {
+        "patrolSpeed": 1.9,
+        "chaseSpeed": 3.8,
+        "attackCooldown": 2.7,
+        "aggroRadius": 2.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 82
+      },
+      "rewards": {
+        "gold": 10,
+        "xp": 124,
+        "dropRate": 0.57,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 62,
+      "type": "Orc",
+      "variantIndex": 11,
+      "name": "Orc_v11",
+      "stats": {
+        "hp": 262,
+        "maxHp": 262,
+        "damage": 147,
+        "speed": 4.7,
+        "attackRange": 1.4,
+        "detectionRange": 4.9,
+        "defense": 8,
+        "critChance": 0.12,
+        "critMultiplier": 3.1,
+        "armorPenetration": 0
+      },
+      "behavior": {
+        "patrolSpeed": 2.35,
+        "chaseSpeed": 4.7,
+        "attackCooldown": 1.3,
+        "aggroRadius": 3.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 112
+      },
+      "rewards": {
+        "gold": 23,
+        "xp": 476,
+        "dropRate": 0.58,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 63,
+      "type": "Orc",
+      "variantIndex": 12,
+      "name": "Orc_v12",
+      "stats": {
+        "hp": 480,
+        "maxHp": 480,
+        "damage": 65,
+        "speed": 7,
+        "attackRange": 1.3,
+        "detectionRange": 4.55,
+        "defense": 12,
+        "critChance": 0.17,
+        "critMultiplier": 1.7,
+        "armorPenetration": 9
+      },
+      "behavior": {
+        "patrolSpeed": 3.5,
+        "chaseSpeed": 7,
+        "attackCooldown": 1.1,
+        "aggroRadius": 3.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 74
+      },
+      "rewards": {
+        "gold": 64,
+        "xp": 308,
+        "dropRate": 0.2,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 64,
+      "type": "Orc",
+      "variantIndex": 13,
+      "name": "Orc_v13",
+      "stats": {
+        "hp": 74,
+        "maxHp": 74,
+        "damage": 116,
+        "speed": 7.2,
+        "attackRange": 3.1,
+        "detectionRange": 10.85,
+        "defense": 4,
+        "critChance": 0.23,
+        "critMultiplier": 2.4,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 3.6,
+        "chaseSpeed": 7.2,
+        "attackCooldown": 1.9,
+        "aggroRadius": 7.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 94
+      },
+      "rewards": {
+        "gold": 160,
+        "xp": 242,
+        "dropRate": 0.25,
+        "bonusDropChance": 0.13
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 65,
+      "type": "Orc",
+      "variantIndex": 14,
+      "name": "Orc_v14",
+      "stats": {
+        "hp": 534,
+        "maxHp": 534,
+        "damage": 66,
+        "speed": 4,
+        "attackRange": 3,
+        "detectionRange": 10.5,
+        "defense": 30,
+        "critChance": 0.11,
+        "critMultiplier": 1.7,
+        "armorPenetration": 16
+      },
+      "behavior": {
+        "patrolSpeed": 2,
+        "chaseSpeed": 4,
+        "attackCooldown": 2.7,
+        "aggroRadius": 7.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 22
+      },
+      "rewards": {
+        "gold": 98,
+        "xp": 301,
+        "dropRate": 0.42,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 66,
+      "type": "Orc",
+      "variantIndex": 15,
+      "name": "Orc_v15",
+      "stats": {
+        "hp": 598,
+        "maxHp": 598,
+        "damage": 51,
+        "speed": 4.3,
+        "attackRange": 1.9,
+        "detectionRange": 6.65,
+        "defense": 21,
+        "critChance": 0.13,
+        "critMultiplier": 1.8,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 2.15,
+        "chaseSpeed": 4.3,
+        "attackCooldown": 2.9,
+        "aggroRadius": 4.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 10
+      },
+      "rewards": {
+        "gold": 142,
+        "xp": 305,
+        "dropRate": 0.38,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 67,
+      "type": "Orc",
+      "variantIndex": 16,
+      "name": "Orc_v16",
+      "stats": {
+        "hp": 713,
+        "maxHp": 713,
+        "damage": 76,
+        "speed": 5.2,
+        "attackRange": 1,
+        "detectionRange": 3.5,
+        "defense": 5,
+        "critChance": 0.21,
+        "critMultiplier": 2.6,
+        "armorPenetration": 19
+      },
+      "behavior": {
+        "patrolSpeed": 2.6,
+        "chaseSpeed": 5.2,
+        "attackCooldown": 2.3,
+        "aggroRadius": 2.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 70
+      },
+      "rewards": {
+        "gold": 152,
+        "xp": 26,
+        "dropRate": 0.27,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 68,
+      "type": "Orc",
+      "variantIndex": 17,
+      "name": "Orc_v17",
+      "stats": {
+        "hp": 472,
+        "maxHp": 472,
+        "damage": 12,
+        "speed": 7.5,
+        "attackRange": 1,
+        "detectionRange": 3.5,
+        "defense": 18,
+        "critChance": 0.26,
+        "critMultiplier": 2.7,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 3.75,
+        "chaseSpeed": 7.5,
+        "attackCooldown": 2,
+        "aggroRadius": 2.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 98
+      },
+      "rewards": {
+        "gold": 65,
+        "xp": 68,
+        "dropRate": 0.5,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 69,
+      "type": "Orc",
+      "variantIndex": 18,
+      "name": "Orc_v18",
+      "stats": {
+        "hp": 89,
+        "maxHp": 89,
+        "damage": 18,
+        "speed": 6.2,
+        "attackRange": 1.5,
+        "detectionRange": 5.25,
+        "defense": 34,
+        "critChance": 0.12,
+        "critMultiplier": 2.3,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 3.1,
+        "chaseSpeed": 6.2,
+        "attackCooldown": 1,
+        "aggroRadius": 3.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 62
+      },
+      "rewards": {
+        "gold": 65,
+        "xp": 274,
+        "dropRate": 0.32,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 70,
+      "type": "Orc",
+      "variantIndex": 19,
+      "name": "Orc_v19",
+      "stats": {
+        "hp": 522,
+        "maxHp": 522,
+        "damage": 82,
+        "speed": 1.6,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 22,
+        "critChance": 0.02,
+        "critMultiplier": 1.9,
+        "armorPenetration": 7
+      },
+      "behavior": {
+        "patrolSpeed": 0.8,
+        "chaseSpeed": 1.6,
+        "attackCooldown": 1.2,
+        "aggroRadius": 6.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 101
+      },
+      "rewards": {
+        "gold": 52,
+        "xp": 72,
+        "dropRate": 0.33,
+        "bonusDropChance": 0.08
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 71,
+      "type": "Orc",
+      "variantIndex": 20,
+      "name": "Orc_v20",
+      "stats": {
+        "hp": 711,
+        "maxHp": 711,
+        "damage": 31,
+        "speed": 4.3,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 5,
+        "critChance": 0.04,
+        "critMultiplier": 1.8,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 2.15,
+        "chaseSpeed": 4.3,
+        "attackCooldown": 1.8,
+        "aggroRadius": 6.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 102
+      },
+      "rewards": {
+        "gold": 182,
+        "xp": 19,
+        "dropRate": 0.19,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 72,
+      "type": "Orc",
+      "variantIndex": 21,
+      "name": "Orc_v21",
+      "stats": {
+        "hp": 429,
+        "maxHp": 429,
+        "damage": 110,
+        "speed": 6.7,
+        "attackRange": 2.6,
+        "detectionRange": 9.1,
+        "defense": 8,
+        "critChance": 0.08,
+        "critMultiplier": 3.3,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 3.35,
+        "chaseSpeed": 6.7,
+        "attackCooldown": 1.4,
+        "aggroRadius": 6.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 92
+      },
+      "rewards": {
+        "gold": 175,
+        "xp": 483,
+        "dropRate": 0.21,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 73,
+      "type": "Orc",
+      "variantIndex": 22,
+      "name": "Orc_v22",
+      "stats": {
+        "hp": 454,
+        "maxHp": 454,
+        "damage": 136,
+        "speed": 5.3,
+        "attackRange": 3.1,
+        "detectionRange": 10.85,
+        "defense": 34,
+        "critChance": 0.19,
+        "critMultiplier": 2.6,
+        "armorPenetration": 16
+      },
+      "behavior": {
+        "patrolSpeed": 2.65,
+        "chaseSpeed": 5.3,
+        "attackCooldown": 2.5,
+        "aggroRadius": 7.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 63
+      },
+      "rewards": {
+        "gold": 51,
+        "xp": 169,
+        "dropRate": 0.18,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 74,
+      "type": "Orc",
+      "variantIndex": 23,
+      "name": "Orc_v23",
+      "stats": {
+        "hp": 209,
+        "maxHp": 209,
+        "damage": 33,
+        "speed": 4.8,
+        "attackRange": 3.4,
+        "detectionRange": 11.9,
+        "defense": 45,
+        "critChance": 0.04,
+        "critMultiplier": 2.4,
+        "armorPenetration": 10
+      },
+      "behavior": {
+        "patrolSpeed": 2.4,
+        "chaseSpeed": 4.8,
+        "attackCooldown": 1.8,
+        "aggroRadius": 8.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 118
+      },
+      "rewards": {
+        "gold": 99,
+        "xp": 463,
+        "dropRate": 0.23,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 75,
+      "type": "Orc",
+      "variantIndex": 24,
+      "name": "Orc_v24",
+      "stats": {
+        "hp": 492,
+        "maxHp": 492,
+        "damage": 145,
+        "speed": 5.2,
+        "attackRange": 1.6,
+        "detectionRange": 5.6,
+        "defense": 31,
+        "critChance": 0.28,
+        "critMultiplier": 2.7,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 2.6,
+        "chaseSpeed": 5.2,
+        "attackCooldown": 2.1,
+        "aggroRadius": 4,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 3,
+        "respawnTime": 81
+      },
+      "rewards": {
+        "gold": 122,
+        "xp": 328,
+        "dropRate": 0.1,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 76,
+      "type": "Orc",
+      "variantIndex": 25,
+      "name": "Orc_v25",
+      "stats": {
+        "hp": 366,
+        "maxHp": 366,
+        "damage": 18,
+        "speed": 2.8,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 30,
+        "critChance": 0.24,
+        "critMultiplier": 3,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 1.4,
+        "chaseSpeed": 2.8,
+        "attackCooldown": 2.6,
+        "aggroRadius": 6.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 30
+      },
+      "rewards": {
+        "gold": 143,
+        "xp": 100,
+        "dropRate": 0.05,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 77,
+      "type": "Orc",
+      "variantIndex": 26,
+      "name": "Orc_v26",
+      "stats": {
+        "hp": 312,
+        "maxHp": 312,
+        "damage": 17,
+        "speed": 2.9,
+        "attackRange": 2,
+        "detectionRange": 7,
+        "defense": 13,
+        "critChance": 0,
+        "critMultiplier": 2,
+        "armorPenetration": 7
+      },
+      "behavior": {
+        "patrolSpeed": 1.45,
+        "chaseSpeed": 2.9,
+        "attackCooldown": 1.8,
+        "aggroRadius": 5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 117
+      },
+      "rewards": {
+        "gold": 45,
+        "xp": 381,
+        "dropRate": 0.52,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 78,
+      "type": "Orc",
+      "variantIndex": 27,
+      "name": "Orc_v27",
+      "stats": {
+        "hp": 554,
+        "maxHp": 554,
+        "damage": 34,
+        "speed": 2.8,
+        "attackRange": 2.4,
+        "detectionRange": 8.4,
+        "defense": 16,
+        "critChance": 0.19,
+        "critMultiplier": 2.9,
+        "armorPenetration": 17
+      },
+      "behavior": {
+        "patrolSpeed": 1.4,
+        "chaseSpeed": 2.8,
+        "attackCooldown": 1.6,
+        "aggroRadius": 6,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 84
+      },
+      "rewards": {
+        "gold": 167,
+        "xp": 189,
+        "dropRate": 0.39,
+        "bonusDropChance": 0.04
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 79,
+      "type": "Orc",
+      "variantIndex": 28,
+      "name": "Orc_v28",
+      "stats": {
+        "hp": 359,
+        "maxHp": 359,
+        "damage": 25,
+        "speed": 2.4,
+        "attackRange": 2.9,
+        "detectionRange": 10.15,
+        "defense": 13,
+        "critChance": 0.01,
+        "critMultiplier": 2.8,
+        "armorPenetration": 4
+      },
+      "behavior": {
+        "patrolSpeed": 1.2,
+        "chaseSpeed": 2.4,
+        "attackCooldown": 2.6,
+        "aggroRadius": 7.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 14
+      },
+      "rewards": {
+        "gold": 25,
+        "xp": 79,
+        "dropRate": 0.26,
+        "bonusDropChance": 0.05
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 80,
+      "type": "Orc",
+      "variantIndex": 29,
+      "name": "Orc_v29",
+      "stats": {
+        "hp": 558,
+        "maxHp": 558,
+        "damage": 67,
+        "speed": 7.9,
+        "attackRange": 1,
+        "detectionRange": 3.5,
+        "defense": 46,
+        "critChance": 0.01,
+        "critMultiplier": 2.4,
+        "armorPenetration": 3
+      },
+      "behavior": {
+        "patrolSpeed": 3.95,
+        "chaseSpeed": 7.9,
+        "attackCooldown": 1.5,
+        "aggroRadius": 2.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 40
+      },
+      "rewards": {
+        "gold": 177,
+        "xp": 17,
+        "dropRate": 0.57,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 81,
+      "type": "Orc",
+      "variantIndex": 30,
+      "name": "Orc_v30",
+      "stats": {
+        "hp": 287,
+        "maxHp": 287,
+        "damage": 57,
+        "speed": 1.7,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 30,
+        "critChance": 0.05,
+        "critMultiplier": 2.6,
+        "armorPenetration": 19
+      },
+      "behavior": {
+        "patrolSpeed": 0.85,
+        "chaseSpeed": 1.7,
+        "attackCooldown": 1.2,
+        "aggroRadius": 6.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 10
+      },
+      "rewards": {
+        "gold": 158,
+        "xp": 466,
+        "dropRate": 0.35,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 82,
+      "type": "Orc",
+      "variantIndex": 31,
+      "name": "Orc_v31",
+      "stats": {
+        "hp": 471,
+        "maxHp": 471,
+        "damage": 54,
+        "speed": 7.1,
+        "attackRange": 1.2,
+        "detectionRange": 4.2,
+        "defense": 11,
+        "critChance": 0.29,
+        "critMultiplier": 2,
+        "armorPenetration": 1
+      },
+      "behavior": {
+        "patrolSpeed": 3.55,
+        "chaseSpeed": 7.1,
+        "attackCooldown": 1.4,
+        "aggroRadius": 3,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 92
+      },
+      "rewards": {
+        "gold": 90,
+        "xp": 325,
+        "dropRate": 0.22,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 83,
+      "type": "Orc",
+      "variantIndex": 32,
+      "name": "Orc_v32",
+      "stats": {
+        "hp": 675,
+        "maxHp": 675,
+        "damage": 20,
+        "speed": 4.9,
+        "attackRange": 1.8,
+        "detectionRange": 6.3,
+        "defense": 27,
+        "critChance": 0.25,
+        "critMultiplier": 1.9,
+        "armorPenetration": 14
+      },
+      "behavior": {
+        "patrolSpeed": 2.45,
+        "chaseSpeed": 4.9,
+        "attackCooldown": 1.8,
+        "aggroRadius": 4.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 101
+      },
+      "rewards": {
+        "gold": 26,
+        "xp": 393,
+        "dropRate": 0.28,
+        "bonusDropChance": 0.02
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 84,
+      "type": "Orc",
+      "variantIndex": 33,
+      "name": "Orc_v33",
+      "stats": {
+        "hp": 335,
+        "maxHp": 335,
+        "damage": 124,
+        "speed": 7.8,
+        "attackRange": 1.6,
+        "detectionRange": 5.6,
+        "defense": 30,
+        "critChance": 0.25,
+        "critMultiplier": 2.1,
+        "armorPenetration": 18
+      },
+      "behavior": {
+        "patrolSpeed": 3.9,
+        "chaseSpeed": 7.8,
+        "attackCooldown": 0.9,
+        "aggroRadius": 4,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 79
+      },
+      "rewards": {
+        "gold": 80,
+        "xp": 402,
+        "dropRate": 0.31,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 85,
+      "type": "Orc",
+      "variantIndex": 34,
+      "name": "Orc_v34",
+      "stats": {
+        "hp": 366,
+        "maxHp": 366,
+        "damage": 20,
+        "speed": 4.9,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 28,
+        "critChance": 0.11,
+        "critMultiplier": 1.9,
+        "armorPenetration": 18
+      },
+      "behavior": {
+        "patrolSpeed": 2.45,
+        "chaseSpeed": 4.9,
+        "attackCooldown": 1.7,
+        "aggroRadius": 6.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 79
+      },
+      "rewards": {
+        "gold": 97,
+        "xp": 329,
+        "dropRate": 0.35,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 86,
+      "type": "Orc",
+      "variantIndex": 35,
+      "name": "Orc_v35",
+      "stats": {
+        "hp": 553,
+        "maxHp": 553,
+        "damage": 39,
+        "speed": 7.3,
+        "attackRange": 2.8,
+        "detectionRange": 9.8,
+        "defense": 18,
+        "critChance": 0.28,
+        "critMultiplier": 2.2,
+        "armorPenetration": 18
+      },
+      "behavior": {
+        "patrolSpeed": 3.65,
+        "chaseSpeed": 7.3,
+        "attackCooldown": 2.5,
+        "aggroRadius": 7,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 3,
+        "respawnTime": 19
+      },
+      "rewards": {
+        "gold": 66,
+        "xp": 408,
+        "dropRate": 0.26,
+        "bonusDropChance": 0.02
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 87,
+      "type": "Orc",
+      "variantIndex": 36,
+      "name": "Orc_v36",
+      "stats": {
+        "hp": 460,
+        "maxHp": 460,
+        "damage": 48,
+        "speed": 1.7,
+        "attackRange": 1.7,
+        "detectionRange": 5.95,
+        "defense": 39,
+        "critChance": 0.23,
+        "critMultiplier": 2.4,
+        "armorPenetration": 5
+      },
+      "behavior": {
+        "patrolSpeed": 0.85,
+        "chaseSpeed": 1.7,
+        "attackCooldown": 2.6,
+        "aggroRadius": 4.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 118
+      },
+      "rewards": {
+        "gold": 114,
+        "xp": 206,
+        "dropRate": 0.23,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 88,
+      "type": "Orc",
+      "variantIndex": 37,
+      "name": "Orc_v37",
+      "stats": {
+        "hp": 757,
+        "maxHp": 757,
+        "damage": 91,
+        "speed": 2.9,
+        "attackRange": 0.8,
+        "detectionRange": 2.8,
+        "defense": 33,
+        "critChance": 0.28,
+        "critMultiplier": 2.2,
+        "armorPenetration": 1
+      },
+      "behavior": {
+        "patrolSpeed": 1.45,
+        "chaseSpeed": 2.9,
+        "attackCooldown": 1.9,
+        "aggroRadius": 2,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 27
+      },
+      "rewards": {
+        "gold": 193,
+        "xp": 32,
+        "dropRate": 0.24,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 89,
+      "type": "Orc",
+      "variantIndex": 38,
+      "name": "Orc_v38",
+      "stats": {
+        "hp": 503,
+        "maxHp": 503,
+        "damage": 140,
+        "speed": 5.1,
+        "attackRange": 1.7,
+        "detectionRange": 5.95,
+        "defense": 43,
+        "critChance": 0.16,
+        "critMultiplier": 3.3,
+        "armorPenetration": 0
+      },
+      "behavior": {
+        "patrolSpeed": 2.55,
+        "chaseSpeed": 5.1,
+        "attackCooldown": 1.8,
+        "aggroRadius": 4.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 3,
+        "respawnTime": 67
+      },
+      "rewards": {
+        "gold": 193,
+        "xp": 193,
+        "dropRate": 0.58,
+        "bonusDropChance": 0.11
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 90,
+      "type": "Orc",
+      "variantIndex": 39,
+      "name": "Orc_v39",
+      "stats": {
+        "hp": 228,
+        "maxHp": 228,
+        "damage": 17,
+        "speed": 5.6,
+        "attackRange": 1.9,
+        "detectionRange": 6.65,
+        "defense": 49,
+        "critChance": 0.11,
+        "critMultiplier": 2.3,
+        "armorPenetration": 0
+      },
+      "behavior": {
+        "patrolSpeed": 2.8,
+        "chaseSpeed": 5.6,
+        "attackCooldown": 0.9,
+        "aggroRadius": 4.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 51
+      },
+      "rewards": {
+        "gold": 94,
+        "xp": 141,
+        "dropRate": 0.41,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 91,
+      "type": "Orc",
+      "variantIndex": 40,
+      "name": "Orc_v40",
+      "stats": {
+        "hp": 249,
+        "maxHp": 249,
+        "damage": 114,
+        "speed": 5.8,
+        "attackRange": 3.9,
+        "detectionRange": 13.65,
+        "defense": 13,
+        "critChance": 0.29,
+        "critMultiplier": 1.5,
+        "armorPenetration": 13
+      },
+      "behavior": {
+        "patrolSpeed": 2.9,
+        "chaseSpeed": 5.8,
+        "attackCooldown": 1.3,
+        "aggroRadius": 9.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 49
+      },
+      "rewards": {
+        "gold": 73,
+        "xp": 27,
+        "dropRate": 0.26,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 92,
+      "type": "Orc",
+      "variantIndex": 41,
+      "name": "Orc_v41",
+      "stats": {
+        "hp": 271,
+        "maxHp": 271,
+        "damage": 105,
+        "speed": 1.8,
+        "attackRange": 3.4,
+        "detectionRange": 11.9,
+        "defense": 28,
+        "critChance": 0.23,
+        "critMultiplier": 2.1,
+        "armorPenetration": 4
+      },
+      "behavior": {
+        "patrolSpeed": 0.9,
+        "chaseSpeed": 1.8,
+        "attackCooldown": 2.7,
+        "aggroRadius": 8.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 85
+      },
+      "rewards": {
+        "gold": 40,
+        "xp": 55,
+        "dropRate": 0.45,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 93,
+      "type": "Orc",
+      "variantIndex": 42,
+      "name": "Orc_v42",
+      "stats": {
+        "hp": 662,
+        "maxHp": 662,
+        "damage": 89,
+        "speed": 5.5,
+        "attackRange": 3.8,
+        "detectionRange": 13.3,
+        "defense": 24,
+        "critChance": 0.04,
+        "critMultiplier": 3.4,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 2.75,
+        "chaseSpeed": 5.5,
+        "attackCooldown": 0.9,
+        "aggroRadius": 9.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 57
+      },
+      "rewards": {
+        "gold": 137,
+        "xp": 205,
+        "dropRate": 0.4,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 94,
+      "type": "Orc",
+      "variantIndex": 43,
+      "name": "Orc_v43",
+      "stats": {
+        "hp": 141,
+        "maxHp": 141,
+        "damage": 71,
+        "speed": 6.3,
+        "attackRange": 1.3,
+        "detectionRange": 4.55,
+        "defense": 31,
+        "critChance": 0.16,
+        "critMultiplier": 2.6,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 3.15,
+        "chaseSpeed": 6.3,
+        "attackCooldown": 1.7,
+        "aggroRadius": 3.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 27
+      },
+      "rewards": {
+        "gold": 87,
+        "xp": 191,
+        "dropRate": 0.15,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 95,
+      "type": "Orc",
+      "variantIndex": 44,
+      "name": "Orc_v44",
+      "stats": {
+        "hp": 235,
+        "maxHp": 235,
+        "damage": 143,
+        "speed": 4,
+        "attackRange": 1.2,
+        "detectionRange": 4.2,
+        "defense": 38,
+        "critChance": 0.03,
+        "critMultiplier": 1.8,
+        "armorPenetration": 19
+      },
+      "behavior": {
+        "patrolSpeed": 2,
+        "chaseSpeed": 4,
+        "attackCooldown": 1.8,
+        "aggroRadius": 3,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 81
+      },
+      "rewards": {
+        "gold": 51,
+        "xp": 473,
+        "dropRate": 0.29,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 96,
+      "type": "Orc",
+      "variantIndex": 45,
+      "name": "Orc_v45",
+      "stats": {
+        "hp": 263,
+        "maxHp": 263,
+        "damage": 25,
+        "speed": 6.7,
+        "attackRange": 1.4,
+        "detectionRange": 4.9,
+        "defense": 24,
+        "critChance": 0.14,
+        "critMultiplier": 1.9,
+        "armorPenetration": 8
+      },
+      "behavior": {
+        "patrolSpeed": 3.35,
+        "chaseSpeed": 6.7,
+        "attackCooldown": 2,
+        "aggroRadius": 3.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 20
+      },
+      "rewards": {
+        "gold": 40,
+        "xp": 419,
+        "dropRate": 0.14,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 97,
+      "type": "Orc",
+      "variantIndex": 46,
+      "name": "Orc_v46",
+      "stats": {
+        "hp": 610,
+        "maxHp": 610,
+        "damage": 43,
+        "speed": 6.1,
+        "attackRange": 1.5,
+        "detectionRange": 5.25,
+        "defense": 2,
+        "critChance": 0.18,
+        "critMultiplier": 1.7,
+        "armorPenetration": 17
+      },
+      "behavior": {
+        "patrolSpeed": 3.05,
+        "chaseSpeed": 6.1,
+        "attackCooldown": 2.9,
+        "aggroRadius": 3.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 118
+      },
+      "rewards": {
+        "gold": 76,
+        "xp": 312,
+        "dropRate": 0.3,
+        "bonusDropChance": 0.02
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 98,
+      "type": "Orc",
+      "variantIndex": 47,
+      "name": "Orc_v47",
+      "stats": {
+        "hp": 690,
+        "maxHp": 690,
+        "damage": 17,
+        "speed": 6,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 20,
+        "critChance": 0.26,
+        "critMultiplier": 2,
+        "armorPenetration": 19
+      },
+      "behavior": {
+        "patrolSpeed": 3,
+        "chaseSpeed": 6,
+        "attackCooldown": 2,
+        "aggroRadius": 6.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 111
+      },
+      "rewards": {
+        "gold": 162,
+        "xp": 310,
+        "dropRate": 0.59,
+        "bonusDropChance": 0.08
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 99,
+      "type": "Orc",
+      "variantIndex": 48,
+      "name": "Orc_v48",
+      "stats": {
+        "hp": 523,
+        "maxHp": 523,
+        "damage": 58,
+        "speed": 7.4,
+        "attackRange": 3.4,
+        "detectionRange": 11.9,
+        "defense": 48,
+        "critChance": 0.2,
+        "critMultiplier": 2.3,
+        "armorPenetration": 12
+      },
+      "behavior": {
+        "patrolSpeed": 3.7,
+        "chaseSpeed": 7.4,
+        "attackCooldown": 1.5,
+        "aggroRadius": 8.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 70
+      },
+      "rewards": {
+        "gold": 140,
+        "xp": 445,
+        "dropRate": 0.12,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 100,
+      "type": "Orc",
+      "variantIndex": 49,
+      "name": "Orc_v49",
+      "stats": {
+        "hp": 620,
+        "maxHp": 620,
+        "damage": 88,
+        "speed": 3.9,
+        "attackRange": 1.1,
+        "detectionRange": 3.85,
+        "defense": 11,
+        "critChance": 0.19,
+        "critMultiplier": 1.6,
+        "armorPenetration": 7
+      },
+      "behavior": {
+        "patrolSpeed": 1.95,
+        "chaseSpeed": 3.9,
+        "attackCooldown": 2.7,
+        "aggroRadius": 2.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 31
+      },
+      "rewards": {
+        "gold": 182,
+        "xp": 372,
+        "dropRate": 0.29,
+        "bonusDropChance": 0.04
+      },
+      "animation": {
+        "idleClip": "anim_Orc_idle",
+        "walkClip": "anim_Orc_walk",
+        "runClip": "anim_Orc_run",
+        "attackClip": "anim_Orc_attack",
+        "deathClip": "anim_Orc_death",
+        "hurtClip": "anim_Orc_hurt",
+        "spawnClip": "anim_Orc_spawn"
+      }
+    }
+    ,
+    {
+      "id": 101,
+      "type": "Skeleton",
+      "variantIndex": 0,
+      "name": "Skeleton_v0",
+      "stats": {
+        "hp": 638,
+        "maxHp": 638,
+        "damage": 34,
+        "speed": 3.6,
+        "attackRange": 3.4,
+        "detectionRange": 11.9,
+        "defense": 24,
+        "critChance": 0.08,
+        "critMultiplier": 2.1,
+        "armorPenetration": 8
+      },
+      "behavior": {
+        "patrolSpeed": 1.8,
+        "chaseSpeed": 3.6,
+        "attackCooldown": 1.8,
+        "aggroRadius": 8.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 42
+      },
+      "rewards": {
+        "gold": 136,
+        "xp": 17,
+        "dropRate": 0.2,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 102,
+      "type": "Skeleton",
+      "variantIndex": 1,
+      "name": "Skeleton_v1",
+      "stats": {
+        "hp": 193,
+        "maxHp": 193,
+        "damage": 66,
+        "speed": 2.2,
+        "attackRange": 1.4,
+        "detectionRange": 4.9,
+        "defense": 37,
+        "critChance": 0.13,
+        "critMultiplier": 2.8,
+        "armorPenetration": 8
+      },
+      "behavior": {
+        "patrolSpeed": 1.1,
+        "chaseSpeed": 2.2,
+        "attackCooldown": 1.3,
+        "aggroRadius": 3.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 119
+      },
+      "rewards": {
+        "gold": 145,
+        "xp": 54,
+        "dropRate": 0.35,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 103,
+      "type": "Skeleton",
+      "variantIndex": 2,
+      "name": "Skeleton_v2",
+      "stats": {
+        "hp": 634,
+        "maxHp": 634,
+        "damage": 64,
+        "speed": 7.5,
+        "attackRange": 1.3,
+        "detectionRange": 4.55,
+        "defense": 22,
+        "critChance": 0.12,
+        "critMultiplier": 1.5,
+        "armorPenetration": 1
+      },
+      "behavior": {
+        "patrolSpeed": 3.75,
+        "chaseSpeed": 7.5,
+        "attackCooldown": 2.5,
+        "aggroRadius": 3.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 84
+      },
+      "rewards": {
+        "gold": 127,
+        "xp": 224,
+        "dropRate": 0.41,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 104,
+      "type": "Skeleton",
+      "variantIndex": 3,
+      "name": "Skeleton_v3",
+      "stats": {
+        "hp": 652,
+        "maxHp": 652,
+        "damage": 49,
+        "speed": 6.1,
+        "attackRange": 1.1,
+        "detectionRange": 3.85,
+        "defense": 31,
+        "critChance": 0.23,
+        "critMultiplier": 1.5,
+        "armorPenetration": 17
+      },
+      "behavior": {
+        "patrolSpeed": 3.05,
+        "chaseSpeed": 6.1,
+        "attackCooldown": 2,
+        "aggroRadius": 2.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 23
+      },
+      "rewards": {
+        "gold": 178,
+        "xp": 242,
+        "dropRate": 0.55,
+        "bonusDropChance": 0.05
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 105,
+      "type": "Skeleton",
+      "variantIndex": 4,
+      "name": "Skeleton_v4",
+      "stats": {
+        "hp": 423,
+        "maxHp": 423,
+        "damage": 99,
+        "speed": 6.3,
+        "attackRange": 1.6,
+        "detectionRange": 5.6,
+        "defense": 39,
+        "critChance": 0.05,
+        "critMultiplier": 1.5,
+        "armorPenetration": 0
+      },
+      "behavior": {
+        "patrolSpeed": 3.15,
+        "chaseSpeed": 6.3,
+        "attackCooldown": 1.3,
+        "aggroRadius": 4,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 39
+      },
+      "rewards": {
+        "gold": 8,
+        "xp": 350,
+        "dropRate": 0.12,
+        "bonusDropChance": 0.08
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 106,
+      "type": "Skeleton",
+      "variantIndex": 5,
+      "name": "Skeleton_v5",
+      "stats": {
+        "hp": 627,
+        "maxHp": 627,
+        "damage": 105,
+        "speed": 5.5,
+        "attackRange": 0.9,
+        "detectionRange": 3.15,
+        "defense": 5,
+        "critChance": 0.12,
+        "critMultiplier": 2.9,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 2.75,
+        "chaseSpeed": 5.5,
+        "attackCooldown": 2.8,
+        "aggroRadius": 2.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 61
+      },
+      "rewards": {
+        "gold": 128,
+        "xp": 450,
+        "dropRate": 0.57,
+        "bonusDropChance": 0.12
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 107,
+      "type": "Skeleton",
+      "variantIndex": 6,
+      "name": "Skeleton_v6",
+      "stats": {
+        "hp": 775,
+        "maxHp": 775,
+        "damage": 135,
+        "speed": 5.6,
+        "attackRange": 0.8,
+        "detectionRange": 2.8,
+        "defense": 37,
+        "critChance": 0.19,
+        "critMultiplier": 2.3,
+        "armorPenetration": 14
+      },
+      "behavior": {
+        "patrolSpeed": 2.8,
+        "chaseSpeed": 5.6,
+        "attackCooldown": 2.1,
+        "aggroRadius": 2,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 24
+      },
+      "rewards": {
+        "gold": 111,
+        "xp": 471,
+        "dropRate": 0.15,
+        "bonusDropChance": 0.04
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 108,
+      "type": "Skeleton",
+      "variantIndex": 7,
+      "name": "Skeleton_v7",
+      "stats": {
+        "hp": 630,
+        "maxHp": 630,
+        "damage": 101,
+        "speed": 2.9,
+        "attackRange": 1.4,
+        "detectionRange": 4.9,
+        "defense": 5,
+        "critChance": 0.17,
+        "critMultiplier": 2.5,
+        "armorPenetration": 9
+      },
+      "behavior": {
+        "patrolSpeed": 1.45,
+        "chaseSpeed": 2.9,
+        "attackCooldown": 1.6,
+        "aggroRadius": 3.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 75
+      },
+      "rewards": {
+        "gold": 162,
+        "xp": 55,
+        "dropRate": 0.07,
+        "bonusDropChance": 0.05
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 109,
+      "type": "Skeleton",
+      "variantIndex": 8,
+      "name": "Skeleton_v8",
+      "stats": {
+        "hp": 132,
+        "maxHp": 132,
+        "damage": 98,
+        "speed": 5.5,
+        "attackRange": 2.9,
+        "detectionRange": 10.15,
+        "defense": 31,
+        "critChance": 0.11,
+        "critMultiplier": 2.8,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 2.75,
+        "chaseSpeed": 5.5,
+        "attackCooldown": 1.7,
+        "aggroRadius": 7.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 78
+      },
+      "rewards": {
+        "gold": 52,
+        "xp": 387,
+        "dropRate": 0.1,
+        "bonusDropChance": 0.05
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 110,
+      "type": "Skeleton",
+      "variantIndex": 9,
+      "name": "Skeleton_v9",
+      "stats": {
+        "hp": 747,
+        "maxHp": 747,
+        "damage": 16,
+        "speed": 4,
+        "attackRange": 1.5,
+        "detectionRange": 5.25,
+        "defense": 35,
+        "critChance": 0.02,
+        "critMultiplier": 1.7,
+        "armorPenetration": 2
+      },
+      "behavior": {
+        "patrolSpeed": 2,
+        "chaseSpeed": 4,
+        "attackCooldown": 1.9,
+        "aggroRadius": 3.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 70
+      },
+      "rewards": {
+        "gold": 123,
+        "xp": 328,
+        "dropRate": 0.16,
+        "bonusDropChance": 0.08
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 111,
+      "type": "Skeleton",
+      "variantIndex": 10,
+      "name": "Skeleton_v10",
+      "stats": {
+        "hp": 392,
+        "maxHp": 392,
+        "damage": 33,
+        "speed": 6.9,
+        "attackRange": 2.6,
+        "detectionRange": 9.1,
+        "defense": 48,
+        "critChance": 0.27,
+        "critMultiplier": 2,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 3.45,
+        "chaseSpeed": 6.9,
+        "attackCooldown": 2,
+        "aggroRadius": 6.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 64
+      },
+      "rewards": {
+        "gold": 148,
+        "xp": 90,
+        "dropRate": 0.24,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 112,
+      "type": "Skeleton",
+      "variantIndex": 11,
+      "name": "Skeleton_v11",
+      "stats": {
+        "hp": 358,
+        "maxHp": 358,
+        "damage": 33,
+        "speed": 6.8,
+        "attackRange": 1.6,
+        "detectionRange": 5.6,
+        "defense": 42,
+        "critChance": 0.05,
+        "critMultiplier": 2.6,
+        "armorPenetration": 10
+      },
+      "behavior": {
+        "patrolSpeed": 3.4,
+        "chaseSpeed": 6.8,
+        "attackCooldown": 1.9,
+        "aggroRadius": 4,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 56
+      },
+      "rewards": {
+        "gold": 49,
+        "xp": 148,
+        "dropRate": 0.4,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 113,
+      "type": "Skeleton",
+      "variantIndex": 12,
+      "name": "Skeleton_v12",
+      "stats": {
+        "hp": 259,
+        "maxHp": 259,
+        "damage": 126,
+        "speed": 1.6,
+        "attackRange": 1.7,
+        "detectionRange": 5.95,
+        "defense": 33,
+        "critChance": 0.22,
+        "critMultiplier": 3.4,
+        "armorPenetration": 12
+      },
+      "behavior": {
+        "patrolSpeed": 0.8,
+        "chaseSpeed": 1.6,
+        "attackCooldown": 2.3,
+        "aggroRadius": 4.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 95
+      },
+      "rewards": {
+        "gold": 158,
+        "xp": 107,
+        "dropRate": 0.45,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 114,
+      "type": "Skeleton",
+      "variantIndex": 13,
+      "name": "Skeleton_v13",
+      "stats": {
+        "hp": 716,
+        "maxHp": 716,
+        "damage": 31,
+        "speed": 7.6,
+        "attackRange": 2.5,
+        "detectionRange": 8.75,
+        "defense": 45,
+        "critChance": 0.18,
+        "critMultiplier": 2.9,
+        "armorPenetration": 16
+      },
+      "behavior": {
+        "patrolSpeed": 3.8,
+        "chaseSpeed": 7.6,
+        "attackCooldown": 2.8,
+        "aggroRadius": 6.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 92
+      },
+      "rewards": {
+        "gold": 72,
+        "xp": 137,
+        "dropRate": 0.51,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 115,
+      "type": "Skeleton",
+      "variantIndex": 14,
+      "name": "Skeleton_v14",
+      "stats": {
+        "hp": 752,
+        "maxHp": 752,
+        "damage": 98,
+        "speed": 3,
+        "attackRange": 1.7,
+        "detectionRange": 5.95,
+        "defense": 42,
+        "critChance": 0.19,
+        "critMultiplier": 2.6,
+        "armorPenetration": 16
+      },
+      "behavior": {
+        "patrolSpeed": 1.5,
+        "chaseSpeed": 3,
+        "attackCooldown": 2.3,
+        "aggroRadius": 4.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 114
+      },
+      "rewards": {
+        "gold": 63,
+        "xp": 176,
+        "dropRate": 0.35,
+        "bonusDropChance": 0.08
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 116,
+      "type": "Skeleton",
+      "variantIndex": 15,
+      "name": "Skeleton_v15",
+      "stats": {
+        "hp": 368,
+        "maxHp": 368,
+        "damage": 139,
+        "speed": 4.1,
+        "attackRange": 1.1,
+        "detectionRange": 3.85,
+        "defense": 34,
+        "critChance": 0.12,
+        "critMultiplier": 3,
+        "armorPenetration": 3
+      },
+      "behavior": {
+        "patrolSpeed": 2.05,
+        "chaseSpeed": 4.1,
+        "attackCooldown": 0.9,
+        "aggroRadius": 2.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 89
+      },
+      "rewards": {
+        "gold": 142,
+        "xp": 461,
+        "dropRate": 0.53,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 117,
+      "type": "Skeleton",
+      "variantIndex": 16,
+      "name": "Skeleton_v16",
+      "stats": {
+        "hp": 458,
+        "maxHp": 458,
+        "damage": 111,
+        "speed": 5.3,
+        "attackRange": 3.1,
+        "detectionRange": 10.85,
+        "defense": 5,
+        "critChance": 0.17,
+        "critMultiplier": 1.9,
+        "armorPenetration": 5
+      },
+      "behavior": {
+        "patrolSpeed": 2.65,
+        "chaseSpeed": 5.3,
+        "attackCooldown": 1.4,
+        "aggroRadius": 7.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 58
+      },
+      "rewards": {
+        "gold": 173,
+        "xp": 188,
+        "dropRate": 0.55,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 118,
+      "type": "Skeleton",
+      "variantIndex": 17,
+      "name": "Skeleton_v17",
+      "stats": {
+        "hp": 229,
+        "maxHp": 229,
+        "damage": 98,
+        "speed": 7.5,
+        "attackRange": 3.1,
+        "detectionRange": 10.85,
+        "defense": 3,
+        "critChance": 0.25,
+        "critMultiplier": 3.1,
+        "armorPenetration": 2
+      },
+      "behavior": {
+        "patrolSpeed": 3.75,
+        "chaseSpeed": 7.5,
+        "attackCooldown": 1.4,
+        "aggroRadius": 7.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 85
+      },
+      "rewards": {
+        "gold": 99,
+        "xp": 329,
+        "dropRate": 0.34,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 119,
+      "type": "Skeleton",
+      "variantIndex": 18,
+      "name": "Skeleton_v18",
+      "stats": {
+        "hp": 77,
+        "maxHp": 77,
+        "damage": 107,
+        "speed": 6.4,
+        "attackRange": 1.2,
+        "detectionRange": 4.2,
+        "defense": 7,
+        "critChance": 0.18,
+        "critMultiplier": 3.4,
+        "armorPenetration": 9
+      },
+      "behavior": {
+        "patrolSpeed": 3.2,
+        "chaseSpeed": 6.4,
+        "attackCooldown": 1,
+        "aggroRadius": 3,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 96
+      },
+      "rewards": {
+        "gold": 27,
+        "xp": 472,
+        "dropRate": 0.23,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 120,
+      "type": "Skeleton",
+      "variantIndex": 19,
+      "name": "Skeleton_v19",
+      "stats": {
+        "hp": 460,
+        "maxHp": 460,
+        "damage": 96,
+        "speed": 7.1,
+        "attackRange": 1.6,
+        "detectionRange": 5.6,
+        "defense": 34,
+        "critChance": 0.13,
+        "critMultiplier": 1.8,
+        "armorPenetration": 10
+      },
+      "behavior": {
+        "patrolSpeed": 3.55,
+        "chaseSpeed": 7.1,
+        "attackCooldown": 1.8,
+        "aggroRadius": 4,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 24
+      },
+      "rewards": {
+        "gold": 190,
+        "xp": 235,
+        "dropRate": 0.32,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 121,
+      "type": "Skeleton",
+      "variantIndex": 20,
+      "name": "Skeleton_v20",
+      "stats": {
+        "hp": 137,
+        "maxHp": 137,
+        "damage": 109,
+        "speed": 6.6,
+        "attackRange": 2,
+        "detectionRange": 7,
+        "defense": 15,
+        "critChance": 0.15,
+        "critMultiplier": 1.6,
+        "armorPenetration": 3
+      },
+      "behavior": {
+        "patrolSpeed": 3.3,
+        "chaseSpeed": 6.6,
+        "attackCooldown": 0.9,
+        "aggroRadius": 5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 20
+      },
+      "rewards": {
+        "gold": 5,
+        "xp": 274,
+        "dropRate": 0.34,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 122,
+      "type": "Skeleton",
+      "variantIndex": 21,
+      "name": "Skeleton_v21",
+      "stats": {
+        "hp": 455,
+        "maxHp": 455,
+        "damage": 34,
+        "speed": 5.9,
+        "attackRange": 1.9,
+        "detectionRange": 6.65,
+        "defense": 45,
+        "critChance": 0.06,
+        "critMultiplier": 3,
+        "armorPenetration": 4
+      },
+      "behavior": {
+        "patrolSpeed": 2.95,
+        "chaseSpeed": 5.9,
+        "attackCooldown": 1.7,
+        "aggroRadius": 4.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 51
+      },
+      "rewards": {
+        "gold": 167,
+        "xp": 317,
+        "dropRate": 0.39,
+        "bonusDropChance": 0.12
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 123,
+      "type": "Skeleton",
+      "variantIndex": 22,
+      "name": "Skeleton_v22",
+      "stats": {
+        "hp": 248,
+        "maxHp": 248,
+        "damage": 148,
+        "speed": 3.7,
+        "attackRange": 1,
+        "detectionRange": 3.5,
+        "defense": 18,
+        "critChance": 0.15,
+        "critMultiplier": 2.4,
+        "armorPenetration": 0
+      },
+      "behavior": {
+        "patrolSpeed": 1.85,
+        "chaseSpeed": 3.7,
+        "attackCooldown": 1.8,
+        "aggroRadius": 2.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 17
+      },
+      "rewards": {
+        "gold": 9,
+        "xp": 283,
+        "dropRate": 0.16,
+        "bonusDropChance": 0.05
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 124,
+      "type": "Skeleton",
+      "variantIndex": 23,
+      "name": "Skeleton_v23",
+      "stats": {
+        "hp": 712,
+        "maxHp": 712,
+        "damage": 70,
+        "speed": 3.1,
+        "attackRange": 1.2,
+        "detectionRange": 4.2,
+        "defense": 34,
+        "critChance": 0.23,
+        "critMultiplier": 2,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 1.55,
+        "chaseSpeed": 3.1,
+        "attackCooldown": 2.2,
+        "aggroRadius": 3,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 68
+      },
+      "rewards": {
+        "gold": 44,
+        "xp": 344,
+        "dropRate": 0.42,
+        "bonusDropChance": 0.04
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 125,
+      "type": "Skeleton",
+      "variantIndex": 24,
+      "name": "Skeleton_v24",
+      "stats": {
+        "hp": 57,
+        "maxHp": 57,
+        "damage": 11,
+        "speed": 4,
+        "attackRange": 3.9,
+        "detectionRange": 13.65,
+        "defense": 33,
+        "critChance": 0.01,
+        "critMultiplier": 3.1,
+        "armorPenetration": 14
+      },
+      "behavior": {
+        "patrolSpeed": 2,
+        "chaseSpeed": 4,
+        "attackCooldown": 1.8,
+        "aggroRadius": 9.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 20
+      },
+      "rewards": {
+        "gold": 186,
+        "xp": 326,
+        "dropRate": 0.32,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 126,
+      "type": "Skeleton",
+      "variantIndex": 25,
+      "name": "Skeleton_v25",
+      "stats": {
+        "hp": 469,
+        "maxHp": 469,
+        "damage": 142,
+        "speed": 4.9,
+        "attackRange": 2.9,
+        "detectionRange": 10.15,
+        "defense": 3,
+        "critChance": 0.13,
+        "critMultiplier": 1.9,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 2.45,
+        "chaseSpeed": 4.9,
+        "attackCooldown": 2.4,
+        "aggroRadius": 7.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 40
+      },
+      "rewards": {
+        "gold": 185,
+        "xp": 230,
+        "dropRate": 0.2,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 127,
+      "type": "Skeleton",
+      "variantIndex": 26,
+      "name": "Skeleton_v26",
+      "stats": {
+        "hp": 645,
+        "maxHp": 645,
+        "damage": 53,
+        "speed": 1.7,
+        "attackRange": 1.7,
+        "detectionRange": 5.95,
+        "defense": 1,
+        "critChance": 0.09,
+        "critMultiplier": 2.5,
+        "armorPenetration": 14
+      },
+      "behavior": {
+        "patrolSpeed": 0.85,
+        "chaseSpeed": 1.7,
+        "attackCooldown": 2.3,
+        "aggroRadius": 4.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 14
+      },
+      "rewards": {
+        "gold": 39,
+        "xp": 462,
+        "dropRate": 0.59,
+        "bonusDropChance": 0.04
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 128,
+      "type": "Skeleton",
+      "variantIndex": 27,
+      "name": "Skeleton_v27",
+      "stats": {
+        "hp": 549,
+        "maxHp": 549,
+        "damage": 76,
+        "speed": 3.2,
+        "attackRange": 1.8,
+        "detectionRange": 6.3,
+        "defense": 24,
+        "critChance": 0.08,
+        "critMultiplier": 2.6,
+        "armorPenetration": 12
+      },
+      "behavior": {
+        "patrolSpeed": 1.6,
+        "chaseSpeed": 3.2,
+        "attackCooldown": 2.5,
+        "aggroRadius": 4.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 74
+      },
+      "rewards": {
+        "gold": 104,
+        "xp": 310,
+        "dropRate": 0.34,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 129,
+      "type": "Skeleton",
+      "variantIndex": 28,
+      "name": "Skeleton_v28",
+      "stats": {
+        "hp": 132,
+        "maxHp": 132,
+        "damage": 141,
+        "speed": 3.8,
+        "attackRange": 3.1,
+        "detectionRange": 10.85,
+        "defense": 28,
+        "critChance": 0.09,
+        "critMultiplier": 3,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 1.9,
+        "chaseSpeed": 3.8,
+        "attackCooldown": 2.1,
+        "aggroRadius": 7.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 92
+      },
+      "rewards": {
+        "gold": 136,
+        "xp": 96,
+        "dropRate": 0.06,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 130,
+      "type": "Skeleton",
+      "variantIndex": 29,
+      "name": "Skeleton_v29",
+      "stats": {
+        "hp": 548,
+        "maxHp": 548,
+        "damage": 46,
+        "speed": 1.7,
+        "attackRange": 2,
+        "detectionRange": 7,
+        "defense": 44,
+        "critChance": 0.12,
+        "critMultiplier": 3.4,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 0.85,
+        "chaseSpeed": 1.7,
+        "attackCooldown": 1.9,
+        "aggroRadius": 5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 22
+      },
+      "rewards": {
+        "gold": 192,
+        "xp": 271,
+        "dropRate": 0.07,
+        "bonusDropChance": 0.08
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 131,
+      "type": "Skeleton",
+      "variantIndex": 30,
+      "name": "Skeleton_v30",
+      "stats": {
+        "hp": 732,
+        "maxHp": 732,
+        "damage": 72,
+        "speed": 3.8,
+        "attackRange": 3.9,
+        "detectionRange": 13.65,
+        "defense": 35,
+        "critChance": 0.07,
+        "critMultiplier": 1.6,
+        "armorPenetration": 1
+      },
+      "behavior": {
+        "patrolSpeed": 1.9,
+        "chaseSpeed": 3.8,
+        "attackCooldown": 0.9,
+        "aggroRadius": 9.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 98
+      },
+      "rewards": {
+        "gold": 32,
+        "xp": 180,
+        "dropRate": 0.13,
+        "bonusDropChance": 0.13
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 132,
+      "type": "Skeleton",
+      "variantIndex": 31,
+      "name": "Skeleton_v31",
+      "stats": {
+        "hp": 727,
+        "maxHp": 727,
+        "damage": 34,
+        "speed": 4.9,
+        "attackRange": 3.1,
+        "detectionRange": 10.85,
+        "defense": 35,
+        "critChance": 0.17,
+        "critMultiplier": 1.6,
+        "armorPenetration": 13
+      },
+      "behavior": {
+        "patrolSpeed": 2.45,
+        "chaseSpeed": 4.9,
+        "attackCooldown": 1,
+        "aggroRadius": 7.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 80
+      },
+      "rewards": {
+        "gold": 187,
+        "xp": 428,
+        "dropRate": 0.29,
+        "bonusDropChance": 0.11
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 133,
+      "type": "Skeleton",
+      "variantIndex": 32,
+      "name": "Skeleton_v32",
+      "stats": {
+        "hp": 437,
+        "maxHp": 437,
+        "damage": 93,
+        "speed": 3,
+        "attackRange": 3.4,
+        "detectionRange": 11.9,
+        "defense": 12,
+        "critChance": 0.08,
+        "critMultiplier": 1.8,
+        "armorPenetration": 2
+      },
+      "behavior": {
+        "patrolSpeed": 1.5,
+        "chaseSpeed": 3,
+        "attackCooldown": 1.5,
+        "aggroRadius": 8.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 25
+      },
+      "rewards": {
+        "gold": 51,
+        "xp": 156,
+        "dropRate": 0.1,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 134,
+      "type": "Skeleton",
+      "variantIndex": 33,
+      "name": "Skeleton_v33",
+      "stats": {
+        "hp": 155,
+        "maxHp": 155,
+        "damage": 92,
+        "speed": 4.4,
+        "attackRange": 0.8,
+        "detectionRange": 2.8,
+        "defense": 46,
+        "critChance": 0.01,
+        "critMultiplier": 1.8,
+        "armorPenetration": 3
+      },
+      "behavior": {
+        "patrolSpeed": 2.2,
+        "chaseSpeed": 4.4,
+        "attackCooldown": 1.7,
+        "aggroRadius": 2,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 64
+      },
+      "rewards": {
+        "gold": 29,
+        "xp": 390,
+        "dropRate": 0.47,
+        "bonusDropChance": 0.08
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 135,
+      "type": "Skeleton",
+      "variantIndex": 34,
+      "name": "Skeleton_v34",
+      "stats": {
+        "hp": 404,
+        "maxHp": 404,
+        "damage": 53,
+        "speed": 4.6,
+        "attackRange": 2.7,
+        "detectionRange": 9.45,
+        "defense": 8,
+        "critChance": 0.18,
+        "critMultiplier": 1.9,
+        "armorPenetration": 1
+      },
+      "behavior": {
+        "patrolSpeed": 2.3,
+        "chaseSpeed": 4.6,
+        "attackCooldown": 2.7,
+        "aggroRadius": 6.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 20
+      },
+      "rewards": {
+        "gold": 75,
+        "xp": 342,
+        "dropRate": 0.36,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 136,
+      "type": "Skeleton",
+      "variantIndex": 35,
+      "name": "Skeleton_v35",
+      "stats": {
+        "hp": 543,
+        "maxHp": 543,
+        "damage": 109,
+        "speed": 3.4,
+        "attackRange": 3,
+        "detectionRange": 10.5,
+        "defense": 16,
+        "critChance": 0.1,
+        "critMultiplier": 3.1,
+        "armorPenetration": 5
+      },
+      "behavior": {
+        "patrolSpeed": 1.7,
+        "chaseSpeed": 3.4,
+        "attackCooldown": 2.3,
+        "aggroRadius": 7.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 49
+      },
+      "rewards": {
+        "gold": 141,
+        "xp": 453,
+        "dropRate": 0.57,
+        "bonusDropChance": 0.02
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 137,
+      "type": "Skeleton",
+      "variantIndex": 36,
+      "name": "Skeleton_v36",
+      "stats": {
+        "hp": 326,
+        "maxHp": 326,
+        "damage": 30,
+        "speed": 3.6,
+        "attackRange": 1,
+        "detectionRange": 3.5,
+        "defense": 6,
+        "critChance": 0.26,
+        "critMultiplier": 2.8,
+        "armorPenetration": 7
+      },
+      "behavior": {
+        "patrolSpeed": 1.8,
+        "chaseSpeed": 3.6,
+        "attackCooldown": 1.3,
+        "aggroRadius": 2.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 117
+      },
+      "rewards": {
+        "gold": 130,
+        "xp": 341,
+        "dropRate": 0.14,
+        "bonusDropChance": 0.11
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 138,
+      "type": "Skeleton",
+      "variantIndex": 37,
+      "name": "Skeleton_v37",
+      "stats": {
+        "hp": 154,
+        "maxHp": 154,
+        "damage": 110,
+        "speed": 2.2,
+        "attackRange": 3.7,
+        "detectionRange": 12.95,
+        "defense": 29,
+        "critChance": 0.11,
+        "critMultiplier": 2.5,
+        "armorPenetration": 14
+      },
+      "behavior": {
+        "patrolSpeed": 1.1,
+        "chaseSpeed": 2.2,
+        "attackCooldown": 1.6,
+        "aggroRadius": 9.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 65
+      },
+      "rewards": {
+        "gold": 43,
+        "xp": 231,
+        "dropRate": 0.23,
+        "bonusDropChance": 0.02
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 139,
+      "type": "Skeleton",
+      "variantIndex": 38,
+      "name": "Skeleton_v38",
+      "stats": {
+        "hp": 587,
+        "maxHp": 587,
+        "damage": 57,
+        "speed": 4.1,
+        "attackRange": 3.8,
+        "detectionRange": 13.3,
+        "defense": 7,
+        "critChance": 0.25,
+        "critMultiplier": 3,
+        "armorPenetration": 10
+      },
+      "behavior": {
+        "patrolSpeed": 2.05,
+        "chaseSpeed": 4.1,
+        "attackCooldown": 1.9,
+        "aggroRadius": 9.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 3,
+        "respawnTime": 62
+      },
+      "rewards": {
+        "gold": 41,
+        "xp": 368,
+        "dropRate": 0.16,
+        "bonusDropChance": 0.13
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 140,
+      "type": "Skeleton",
+      "variantIndex": 39,
+      "name": "Skeleton_v39",
+      "stats": {
+        "hp": 410,
+        "maxHp": 410,
+        "damage": 147,
+        "speed": 4.2,
+        "attackRange": 3.8,
+        "detectionRange": 13.3,
+        "defense": 31,
+        "critChance": 0.17,
+        "critMultiplier": 3.3,
+        "armorPenetration": 10
+      },
+      "behavior": {
+        "patrolSpeed": 2.1,
+        "chaseSpeed": 4.2,
+        "attackCooldown": 1.7,
+        "aggroRadius": 9.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 71
+      },
+      "rewards": {
+        "gold": 39,
+        "xp": 93,
+        "dropRate": 0.54,
+        "bonusDropChance": 0.12
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 141,
+      "type": "Skeleton",
+      "variantIndex": 40,
+      "name": "Skeleton_v40",
+      "stats": {
+        "hp": 796,
+        "maxHp": 796,
+        "damage": 79,
+        "speed": 4.2,
+        "attackRange": 2.8,
+        "detectionRange": 9.8,
+        "defense": 31,
+        "critChance": 0.16,
+        "critMultiplier": 2.3,
+        "armorPenetration": 18
+      },
+      "behavior": {
+        "patrolSpeed": 2.1,
+        "chaseSpeed": 4.2,
+        "attackCooldown": 1,
+        "aggroRadius": 7,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 43
+      },
+      "rewards": {
+        "gold": 136,
+        "xp": 471,
+        "dropRate": 0.5,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 142,
+      "type": "Skeleton",
+      "variantIndex": 41,
+      "name": "Skeleton_v41",
+      "stats": {
+        "hp": 52,
+        "maxHp": 52,
+        "damage": 34,
+        "speed": 2,
+        "attackRange": 3,
+        "detectionRange": 10.5,
+        "defense": 9,
+        "critChance": 0.28,
+        "critMultiplier": 2.3,
+        "armorPenetration": 10
+      },
+      "behavior": {
+        "patrolSpeed": 1,
+        "chaseSpeed": 2,
+        "attackCooldown": 1.5,
+        "aggroRadius": 7.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 118
+      },
+      "rewards": {
+        "gold": 22,
+        "xp": 121,
+        "dropRate": 0.21,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 143,
+      "type": "Skeleton",
+      "variantIndex": 42,
+      "name": "Skeleton_v42",
+      "stats": {
+        "hp": 107,
+        "maxHp": 107,
+        "damage": 22,
+        "speed": 2.7,
+        "attackRange": 2.3,
+        "detectionRange": 8.05,
+        "defense": 34,
+        "critChance": 0.06,
+        "critMultiplier": 1.6,
+        "armorPenetration": 2
+      },
+      "behavior": {
+        "patrolSpeed": 1.35,
+        "chaseSpeed": 2.7,
+        "attackCooldown": 1.7,
+        "aggroRadius": 5.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 105
+      },
+      "rewards": {
+        "gold": 101,
+        "xp": 487,
+        "dropRate": 0.45,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 144,
+      "type": "Skeleton",
+      "variantIndex": 43,
+      "name": "Skeleton_v43",
+      "stats": {
+        "hp": 315,
+        "maxHp": 315,
+        "damage": 138,
+        "speed": 3.2,
+        "attackRange": 1.4,
+        "detectionRange": 4.9,
+        "defense": 11,
+        "critChance": 0.06,
+        "critMultiplier": 2.2,
+        "armorPenetration": 14
+      },
+      "behavior": {
+        "patrolSpeed": 1.6,
+        "chaseSpeed": 3.2,
+        "attackCooldown": 1.3,
+        "aggroRadius": 3.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 108
+      },
+      "rewards": {
+        "gold": 92,
+        "xp": 424,
+        "dropRate": 0.19,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 145,
+      "type": "Skeleton",
+      "variantIndex": 44,
+      "name": "Skeleton_v44",
+      "stats": {
+        "hp": 595,
+        "maxHp": 595,
+        "damage": 30,
+        "speed": 1.5,
+        "attackRange": 3,
+        "detectionRange": 10.5,
+        "defense": 11,
+        "critChance": 0.1,
+        "critMultiplier": 3.4,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 0.75,
+        "chaseSpeed": 1.5,
+        "attackCooldown": 1.4,
+        "aggroRadius": 7.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 26
+      },
+      "rewards": {
+        "gold": 188,
+        "xp": 172,
+        "dropRate": 0.55,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 146,
+      "type": "Skeleton",
+      "variantIndex": 45,
+      "name": "Skeleton_v45",
+      "stats": {
+        "hp": 411,
+        "maxHp": 411,
+        "damage": 112,
+        "speed": 6.8,
+        "attackRange": 1.4,
+        "detectionRange": 4.9,
+        "defense": 28,
+        "critChance": 0.14,
+        "critMultiplier": 2.2,
+        "armorPenetration": 10
+      },
+      "behavior": {
+        "patrolSpeed": 3.4,
+        "chaseSpeed": 6.8,
+        "attackCooldown": 2.9,
+        "aggroRadius": 3.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 52
+      },
+      "rewards": {
+        "gold": 137,
+        "xp": 14,
+        "dropRate": 0.46,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 147,
+      "type": "Skeleton",
+      "variantIndex": 46,
+      "name": "Skeleton_v46",
+      "stats": {
+        "hp": 231,
+        "maxHp": 231,
+        "damage": 146,
+        "speed": 2.8,
+        "attackRange": 1.2,
+        "detectionRange": 4.2,
+        "defense": 38,
+        "critChance": 0.01,
+        "critMultiplier": 2,
+        "armorPenetration": 0
+      },
+      "behavior": {
+        "patrolSpeed": 1.4,
+        "chaseSpeed": 2.8,
+        "attackCooldown": 0.8,
+        "aggroRadius": 3,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 115
+      },
+      "rewards": {
+        "gold": 61,
+        "xp": 141,
+        "dropRate": 0.25,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 148,
+      "type": "Skeleton",
+      "variantIndex": 47,
+      "name": "Skeleton_v47",
+      "stats": {
+        "hp": 618,
+        "maxHp": 618,
+        "damage": 21,
+        "speed": 3.5,
+        "attackRange": 1.3,
+        "detectionRange": 4.55,
+        "defense": 14,
+        "critChance": 0.25,
+        "critMultiplier": 2.1,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 1.75,
+        "chaseSpeed": 3.5,
+        "attackCooldown": 0.9,
+        "aggroRadius": 3.25,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 71
+      },
+      "rewards": {
+        "gold": 184,
+        "xp": 420,
+        "dropRate": 0.07,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 149,
+      "type": "Skeleton",
+      "variantIndex": 48,
+      "name": "Skeleton_v48",
+      "stats": {
+        "hp": 350,
+        "maxHp": 350,
+        "damage": 54,
+        "speed": 3.4,
+        "attackRange": 3.4,
+        "detectionRange": 11.9,
+        "defense": 19,
+        "critChance": 0.08,
+        "critMultiplier": 1.6,
+        "armorPenetration": 3
+      },
+      "behavior": {
+        "patrolSpeed": 1.7,
+        "chaseSpeed": 3.4,
+        "attackCooldown": 1.1,
+        "aggroRadius": 8.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 24
+      },
+      "rewards": {
+        "gold": 144,
+        "xp": 305,
+        "dropRate": 0.27,
+        "bonusDropChance": 0.13
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 150,
+      "type": "Skeleton",
+      "variantIndex": 49,
+      "name": "Skeleton_v49",
+      "stats": {
+        "hp": 359,
+        "maxHp": 359,
+        "damage": 30,
+        "speed": 7,
+        "attackRange": 3.2,
+        "detectionRange": 11.2,
+        "defense": 1,
+        "critChance": 0.11,
+        "critMultiplier": 1.5,
+        "armorPenetration": 9
+      },
+      "behavior": {
+        "patrolSpeed": 3.5,
+        "chaseSpeed": 7,
+        "attackCooldown": 2.9,
+        "aggroRadius": 8,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 59
+      },
+      "rewards": {
+        "gold": 45,
+        "xp": 250,
+        "dropRate": 0.25,
+        "bonusDropChance": 0.13
+      },
+      "animation": {
+        "idleClip": "anim_Skeleton_idle",
+        "walkClip": "anim_Skeleton_walk",
+        "runClip": "anim_Skeleton_run",
+        "attackClip": "anim_Skeleton_attack",
+        "deathClip": "anim_Skeleton_death",
+        "hurtClip": "anim_Skeleton_hurt",
+        "spawnClip": "anim_Skeleton_spawn"
+      }
+    }
+    ,
+    {
+      "id": 151,
+      "type": "Zombie",
+      "variantIndex": 0,
+      "name": "Zombie_v0",
+      "stats": {
+        "hp": 282,
+        "maxHp": 282,
+        "damage": 49,
+        "speed": 1.7,
+        "attackRange": 2.6,
+        "detectionRange": 9.1,
+        "defense": 30,
+        "critChance": 0.15,
+        "critMultiplier": 2.7,
+        "armorPenetration": 16
+      },
+      "behavior": {
+        "patrolSpeed": 0.85,
+        "chaseSpeed": 1.7,
+        "attackCooldown": 0.8,
+        "aggroRadius": 6.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 50
+      },
+      "rewards": {
+        "gold": 46,
+        "xp": 155,
+        "dropRate": 0.59,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 152,
+      "type": "Zombie",
+      "variantIndex": 1,
+      "name": "Zombie_v1",
+      "stats": {
+        "hp": 226,
+        "maxHp": 226,
+        "damage": 100,
+        "speed": 1.7,
+        "attackRange": 3,
+        "detectionRange": 10.5,
+        "defense": 12,
+        "critChance": 0.21,
+        "critMultiplier": 2,
+        "armorPenetration": 9
+      },
+      "behavior": {
+        "patrolSpeed": 0.85,
+        "chaseSpeed": 1.7,
+        "attackCooldown": 1.3,
+        "aggroRadius": 7.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 24
+      },
+      "rewards": {
+        "gold": 182,
+        "xp": 294,
+        "dropRate": 0.16,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 153,
+      "type": "Zombie",
+      "variantIndex": 2,
+      "name": "Zombie_v2",
+      "stats": {
+        "hp": 98,
+        "maxHp": 98,
+        "damage": 132,
+        "speed": 1.6,
+        "attackRange": 3.8,
+        "detectionRange": 13.3,
+        "defense": 25,
+        "critChance": 0.13,
+        "critMultiplier": 3,
+        "armorPenetration": 0
+      },
+      "behavior": {
+        "patrolSpeed": 0.8,
+        "chaseSpeed": 1.6,
+        "attackCooldown": 2.9,
+        "aggroRadius": 9.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 118
+      },
+      "rewards": {
+        "gold": 170,
+        "xp": 300,
+        "dropRate": 0.42,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 154,
+      "type": "Zombie",
+      "variantIndex": 3,
+      "name": "Zombie_v3",
+      "stats": {
+        "hp": 143,
+        "maxHp": 143,
+        "damage": 140,
+        "speed": 7.8,
+        "attackRange": 1.7,
+        "detectionRange": 5.95,
+        "defense": 45,
+        "critChance": 0.25,
+        "critMultiplier": 1.6,
+        "armorPenetration": 18
+      },
+      "behavior": {
+        "patrolSpeed": 3.9,
+        "chaseSpeed": 7.8,
+        "attackCooldown": 1.5,
+        "aggroRadius": 4.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 44
+      },
+      "rewards": {
+        "gold": 35,
+        "xp": 477,
+        "dropRate": 0.56,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 155,
+      "type": "Zombie",
+      "variantIndex": 4,
+      "name": "Zombie_v4",
+      "stats": {
+        "hp": 367,
+        "maxHp": 367,
+        "damage": 106,
+        "speed": 5.6,
+        "attackRange": 1.7,
+        "detectionRange": 5.95,
+        "defense": 33,
+        "critChance": 0.22,
+        "critMultiplier": 3.4,
+        "armorPenetration": 12
+      },
+      "behavior": {
+        "patrolSpeed": 2.8,
+        "chaseSpeed": 5.6,
+        "attackCooldown": 1.8,
+        "aggroRadius": 4.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 8,
+        "respawnTime": 102
+      },
+      "rewards": {
+        "gold": 15,
+        "xp": 180,
+        "dropRate": 0.12,
+        "bonusDropChance": 0.11
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 156,
+      "type": "Zombie",
+      "variantIndex": 5,
+      "name": "Zombie_v5",
+      "stats": {
+        "hp": 337,
+        "maxHp": 337,
+        "damage": 114,
+        "speed": 7.9,
+        "attackRange": 2.8,
+        "detectionRange": 9.8,
+        "defense": 7,
+        "critChance": 0.05,
+        "critMultiplier": 1.9,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 3.95,
+        "chaseSpeed": 7.9,
+        "attackCooldown": 0.9,
+        "aggroRadius": 7,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 83
+      },
+      "rewards": {
+        "gold": 168,
+        "xp": 144,
+        "dropRate": 0.24,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 157,
+      "type": "Zombie",
+      "variantIndex": 6,
+      "name": "Zombie_v6",
+      "stats": {
+        "hp": 516,
+        "maxHp": 516,
+        "damage": 119,
+        "speed": 1.8,
+        "attackRange": 1.2,
+        "detectionRange": 4.2,
+        "defense": 40,
+        "critChance": 0.14,
+        "critMultiplier": 2.2,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 0.9,
+        "chaseSpeed": 1.8,
+        "attackCooldown": 1.9,
+        "aggroRadius": 3,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 48
+      },
+      "rewards": {
+        "gold": 114,
+        "xp": 491,
+        "dropRate": 0.41,
+        "bonusDropChance": 0.02
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 158,
+      "type": "Zombie",
+      "variantIndex": 7,
+      "name": "Zombie_v7",
+      "stats": {
+        "hp": 279,
+        "maxHp": 279,
+        "damage": 34,
+        "speed": 7.8,
+        "attackRange": 1,
+        "detectionRange": 3.5,
+        "defense": 0,
+        "critChance": 0.19,
+        "critMultiplier": 1.7,
+        "armorPenetration": 6
+      },
+      "behavior": {
+        "patrolSpeed": 3.9,
+        "chaseSpeed": 7.8,
+        "attackCooldown": 1.2,
+        "aggroRadius": 2.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 6,
+        "respawnTime": 55
+      },
+      "rewards": {
+        "gold": 146,
+        "xp": 23,
+        "dropRate": 0.17,
+        "bonusDropChance": 0.1
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 159,
+      "type": "Zombie",
+      "variantIndex": 8,
+      "name": "Zombie_v8",
+      "stats": {
+        "hp": 456,
+        "maxHp": 456,
+        "damage": 106,
+        "speed": 7.6,
+        "attackRange": 1.2,
+        "detectionRange": 4.2,
+        "defense": 39,
+        "critChance": 0.29,
+        "critMultiplier": 2,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 3.8,
+        "chaseSpeed": 7.6,
+        "attackCooldown": 2.9,
+        "aggroRadius": 3,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 93
+      },
+      "rewards": {
+        "gold": 47,
+        "xp": 357,
+        "dropRate": 0.34,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 160,
+      "type": "Zombie",
+      "variantIndex": 9,
+      "name": "Zombie_v9",
+      "stats": {
+        "hp": 298,
+        "maxHp": 298,
+        "damage": 123,
+        "speed": 3.1,
+        "attackRange": 1.2,
+        "detectionRange": 4.2,
+        "defense": 19,
+        "critChance": 0.2,
+        "critMultiplier": 3.3,
+        "armorPenetration": 16
+      },
+      "behavior": {
+        "patrolSpeed": 1.55,
+        "chaseSpeed": 3.1,
+        "attackCooldown": 2.6,
+        "aggroRadius": 3,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 117
+      },
+      "rewards": {
+        "gold": 50,
+        "xp": 393,
+        "dropRate": 0.24,
+        "bonusDropChance": 0.01
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 161,
+      "type": "Zombie",
+      "variantIndex": 10,
+      "name": "Zombie_v10",
+      "stats": {
+        "hp": 83,
+        "maxHp": 83,
+        "damage": 22,
+        "speed": 6.1,
+        "attackRange": 1.2,
+        "detectionRange": 4.2,
+        "defense": 38,
+        "critChance": 0.28,
+        "critMultiplier": 1.7,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 3.05,
+        "chaseSpeed": 6.1,
+        "attackCooldown": 1.2,
+        "aggroRadius": 3,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 3,
+        "respawnTime": 66
+      },
+      "rewards": {
+        "gold": 37,
+        "xp": 290,
+        "dropRate": 0.45,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 162,
+      "type": "Zombie",
+      "variantIndex": 11,
+      "name": "Zombie_v11",
+      "stats": {
+        "hp": 89,
+        "maxHp": 89,
+        "damage": 90,
+        "speed": 2,
+        "attackRange": 2.2,
+        "detectionRange": 7.7,
+        "defense": 36,
+        "critChance": 0.21,
+        "critMultiplier": 2.5,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 1,
+        "chaseSpeed": 2,
+        "attackCooldown": 1.4,
+        "aggroRadius": 5.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 5,
+        "respawnTime": 58
+      },
+      "rewards": {
+        "gold": 179,
+        "xp": 438,
+        "dropRate": 0.46,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 163,
+      "type": "Zombie",
+      "variantIndex": 12,
+      "name": "Zombie_v12",
+      "stats": {
+        "hp": 694,
+        "maxHp": 694,
+        "damage": 62,
+        "speed": 5,
+        "attackRange": 3.5,
+        "detectionRange": 12.25,
+        "defense": 1,
+        "critChance": 0.17,
+        "critMultiplier": 2.3,
+        "armorPenetration": 16
+      },
+      "behavior": {
+        "patrolSpeed": 2.5,
+        "chaseSpeed": 5,
+        "attackCooldown": 2.9,
+        "aggroRadius": 8.75,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 55
+      },
+      "rewards": {
+        "gold": 83,
+        "xp": 37,
+        "dropRate": 0.44,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 164,
+      "type": "Zombie",
+      "variantIndex": 13,
+      "name": "Zombie_v13",
+      "stats": {
+        "hp": 456,
+        "maxHp": 456,
+        "damage": 35,
+        "speed": 7.5,
+        "attackRange": 3.2,
+        "detectionRange": 11.2,
+        "defense": 46,
+        "critChance": 0.05,
+        "critMultiplier": 1.7,
+        "armorPenetration": 18
+      },
+      "behavior": {
+        "patrolSpeed": 3.75,
+        "chaseSpeed": 7.5,
+        "attackCooldown": 2.8,
+        "aggroRadius": 8,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 64
+      },
+      "rewards": {
+        "gold": 93,
+        "xp": 209,
+        "dropRate": 0.41,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 165,
+      "type": "Zombie",
+      "variantIndex": 14,
+      "name": "Zombie_v14",
+      "stats": {
+        "hp": 269,
+        "maxHp": 269,
+        "damage": 39,
+        "speed": 3.2,
+        "attackRange": 2.9,
+        "detectionRange": 10.15,
+        "defense": 30,
+        "critChance": 0.01,
+        "critMultiplier": 2.7,
+        "armorPenetration": 12
+      },
+      "behavior": {
+        "patrolSpeed": 1.6,
+        "chaseSpeed": 3.2,
+        "attackCooldown": 2.9,
+        "aggroRadius": 7.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 85
+      },
+      "rewards": {
+        "gold": 171,
+        "xp": 107,
+        "dropRate": 0.42,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 166,
+      "type": "Zombie",
+      "variantIndex": 15,
+      "name": "Zombie_v15",
+      "stats": {
+        "hp": 699,
+        "maxHp": 699,
+        "damage": 121,
+        "speed": 2.5,
+        "attackRange": 2,
+        "detectionRange": 7,
+        "defense": 45,
+        "critChance": 0,
+        "critMultiplier": 2,
+        "armorPenetration": 8
+      },
+      "behavior": {
+        "patrolSpeed": 1.25,
+        "chaseSpeed": 2.5,
+        "attackCooldown": 0.9,
+        "aggroRadius": 5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 30
+      },
+      "rewards": {
+        "gold": 105,
+        "xp": 216,
+        "dropRate": 0.49,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 167,
+      "type": "Zombie",
+      "variantIndex": 16,
+      "name": "Zombie_v16",
+      "stats": {
+        "hp": 314,
+        "maxHp": 314,
+        "damage": 123,
+        "speed": 6.2,
+        "attackRange": 3.5,
+        "detectionRange": 12.25,
+        "defense": 18,
+        "critChance": 0.19,
+        "critMultiplier": 2.7,
+        "armorPenetration": 15
+      },
+      "behavior": {
+        "patrolSpeed": 3.1,
+        "chaseSpeed": 6.2,
+        "attackCooldown": 1.3,
+        "aggroRadius": 8.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 3,
+        "respawnTime": 12
+      },
+      "rewards": {
+        "gold": 47,
+        "xp": 407,
+        "dropRate": 0.55,
+        "bonusDropChance": 0.06
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 168,
+      "type": "Zombie",
+      "variantIndex": 17,
+      "name": "Zombie_v17",
+      "stats": {
+        "hp": 743,
+        "maxHp": 743,
+        "damage": 12,
+        "speed": 7.8,
+        "attackRange": 3.2,
+        "detectionRange": 11.2,
+        "defense": 35,
+        "critChance": 0.04,
+        "critMultiplier": 2.7,
+        "armorPenetration": 7
+      },
+      "behavior": {
+        "patrolSpeed": 3.9,
+        "chaseSpeed": 7.8,
+        "attackCooldown": 0.8,
+        "aggroRadius": 8,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 108
+      },
+      "rewards": {
+        "gold": 126,
+        "xp": 425,
+        "dropRate": 0.56,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 169,
+      "type": "Zombie",
+      "variantIndex": 18,
+      "name": "Zombie_v18",
+      "stats": {
+        "hp": 471,
+        "maxHp": 471,
+        "damage": 84,
+        "speed": 6.6,
+        "attackRange": 3.2,
+        "detectionRange": 11.2,
+        "defense": 2,
+        "critChance": 0.02,
+        "critMultiplier": 1.7,
+        "armorPenetration": 10
+      },
+      "behavior": {
+        "patrolSpeed": 3.3,
+        "chaseSpeed": 6.6,
+        "attackCooldown": 0.9,
+        "aggroRadius": 8,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 36
+      },
+      "rewards": {
+        "gold": 193,
+        "xp": 120,
+        "dropRate": 0.09,
+        "bonusDropChance": 0.13
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 170,
+      "type": "Zombie",
+      "variantIndex": 19,
+      "name": "Zombie_v19",
+      "stats": {
+        "hp": 133,
+        "maxHp": 133,
+        "damage": 146,
+        "speed": 7.6,
+        "attackRange": 3.7,
+        "detectionRange": 12.95,
+        "defense": 2,
+        "critChance": 0.02,
+        "critMultiplier": 1.5,
+        "armorPenetration": 11
+      },
+      "behavior": {
+        "patrolSpeed": 3.8,
+        "chaseSpeed": 7.6,
+        "attackCooldown": 2.3,
+        "aggroRadius": 9.25,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 7,
+        "respawnTime": 50
+      },
+      "rewards": {
+        "gold": 19,
+        "xp": 220,
+        "dropRate": 0.08,
+        "bonusDropChance": 0.02
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 171,
+      "type": "Zombie",
+      "variantIndex": 20,
+      "name": "Zombie_v20",
+      "stats": {
+        "hp": 296,
+        "maxHp": 296,
+        "damage": 104,
+        "speed": 5.7,
+        "attackRange": 1.5,
+        "detectionRange": 5.25,
+        "defense": 44,
+        "critChance": 0.29,
+        "critMultiplier": 2.9,
+        "armorPenetration": 17
+      },
+      "behavior": {
+        "patrolSpeed": 2.85,
+        "chaseSpeed": 5.7,
+        "attackCooldown": 1.1,
+        "aggroRadius": 3.75,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 3,
+        "respawnTime": 89
+      },
+      "rewards": {
+        "gold": 98,
+        "xp": 462,
+        "dropRate": 0.52,
+        "bonusDropChance": 0.03
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 172,
+      "type": "Zombie",
+      "variantIndex": 21,
+      "name": "Zombie_v21",
+      "stats": {
+        "hp": 740,
+        "maxHp": 740,
+        "damage": 52,
+        "speed": 5.3,
+        "attackRange": 2.2,
+        "detectionRange": 7.7,
+        "defense": 9,
+        "critChance": 0.29,
+        "critMultiplier": 1.6,
+        "armorPenetration": 1
+      },
+      "behavior": {
+        "patrolSpeed": 2.65,
+        "chaseSpeed": 5.3,
+        "attackCooldown": 1.9,
+        "aggroRadius": 5.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 37
+      },
+      "rewards": {
+        "gold": 77,
+        "xp": 114,
+        "dropRate": 0.52,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 173,
+      "type": "Zombie",
+      "variantIndex": 22,
+      "name": "Zombie_v22",
+      "stats": {
+        "hp": 143,
+        "maxHp": 143,
+        "damage": 14,
+        "speed": 7.9,
+        "attackRange": 2.6,
+        "detectionRange": 9.1,
+        "defense": 24,
+        "critChance": 0.21,
+        "critMultiplier": 3.2,
+        "armorPenetration": 19
+      },
+      "behavior": {
+        "patrolSpeed": 3.95,
+        "chaseSpeed": 7.9,
+        "attackCooldown": 2.1,
+        "aggroRadius": 6.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 1,
+        "respawnTime": 103
+      },
+      "rewards": {
+        "gold": 15,
+        "xp": 488,
+        "dropRate": 0.57,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 174,
+      "type": "Zombie",
+      "variantIndex": 23,
+      "name": "Zombie_v23",
+      "stats": {
+        "hp": 709,
+        "maxHp": 709,
+        "damage": 28,
+        "speed": 6.9,
+        "attackRange": 1.6,
+        "detectionRange": 5.6,
+        "defense": 19,
+        "critChance": 0.21,
+        "critMultiplier": 3.4,
+        "armorPenetration": 2
+      },
+      "behavior": {
+        "patrolSpeed": 3.45,
+        "chaseSpeed": 6.9,
+        "attackCooldown": 0.9,
+        "aggroRadius": 4,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 9,
+        "respawnTime": 21
+      },
+      "rewards": {
+        "gold": 156,
+        "xp": 124,
+        "dropRate": 0.36,
+        "bonusDropChance": 0.07
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 175,
+      "type": "Zombie",
+      "variantIndex": 24,
+      "name": "Zombie_v24",
+      "stats": {
+        "hp": 224,
+        "maxHp": 224,
+        "damage": 58,
+        "speed": 3.9,
+        "attackRange": 1.4,
+        "detectionRange": 4.9,
+        "defense": 17,
+        "critChance": 0.11,
+        "critMultiplier": 1.9,
+        "armorPenetration": 0
+      },
+      "behavior": {
+        "patrolSpeed": 1.95,
+        "chaseSpeed": 3.9,
+        "attackCooldown": 1,
+        "aggroRadius": 3.5,
+        "canFly": false,
+        "isBoss": false,
+        "spawnWeight": 3,
+        "respawnTime": 107
+      },
+      "rewards": {
+        "gold": 140,
+        "xp": 386,
+        "dropRate": 0.16,
+        "bonusDropChance": 0
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 176,
+      "type": "Zombie",
+      "variantIndex": 25,
+      "name": "Zombie_v25",
+      "stats": {
+        "hp": 451,
+        "maxHp": 451,
+        "damage": 145,
+        "speed": 2.5,
+        "attackRange": 2.2,
+        "detectionRange": 7.7,
+        "defense": 45,
+        "critChance": 0.24,
+        "critMultiplier": 1.8,
+        "armorPenetration": 5
+      },
+      "behavior": {
+        "patrolSpeed": 1.25,
+        "chaseSpeed": 2.5,
+        "attackCooldown": 1.5,
+        "aggroRadius": 5.5,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 4,
+        "respawnTime": 71
+      },
+      "rewards": {
+        "gold": 85,
+        "xp": 85,
+        "dropRate": 0.11,
+        "bonusDropChance": 0.14
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 177,
+      "type": "Zombie",
+      "variantIndex": 26,
+      "name": "Zombie_v26",
+      "stats": {
+        "hp": 779,
+        "maxHp": 779,
+        "damage": 145,
+        "speed": 7.5,
+        "attackRange": 1.6,
+        "detectionRange": 5.6,
+        "defense": 45,
+        "critChance": 0.02,
+        "critMultiplier": 2.2,
+        "armorPenetration": 18
+      },
+      "behavior": {
+        "patrolSpeed": 3.75,
+        "chaseSpeed": 7.5,
+        "attackCooldown": 1.8,
+        "aggroRadius": 4,
+        "canFly": true,
+        "isBoss": false,
+        "spawnWeight": 2,
+        "respawnTime": 100
+      },
+      "rewards": {
+        "gold": 104,
+        "xp": 52,
+        "dropRate": 0.05,
+        "bonusDropChance": 0.09
+      },
+      "animation": {
+        "idleClip": "anim_Zombie_idle",
+        "walkClip": "anim_Zombie_walk",
+        "runClip": "anim_Zombie_run",
+        "attackClip": "anim_Zombie_attack",
+        "deathClip": "anim_Zombie_death",
+        "hurtClip": "anim_Zombie_hurt",
+        "spawnClip": "anim_Zombie_spawn"
+      }
+    }
+    ,
+    {
+      "id": 178,
+      "type": "Zombie",
+      "variantIndex": 27,
+      "name": "Zombie_v27",
+      "stats": {
+        "hp": 241,
+  ]
+}
