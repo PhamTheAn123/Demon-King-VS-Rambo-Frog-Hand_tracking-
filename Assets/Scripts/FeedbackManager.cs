@@ -11,7 +11,6 @@ public class FeedbackManager : MonoBehaviour
 {
     public enum DatabaseType
     {
-        FirebaseREST,
         GoogleFormPOST,
         Supabase
     }
@@ -19,9 +18,6 @@ public class FeedbackManager : MonoBehaviour
     [Header("Database Configuration")]
     [Tooltip("Choose which database to send player feedback and installs to.")]
     public DatabaseType databaseType = DatabaseType.Supabase;
-
-    [Tooltip("Firebase Database URL. Example: https://mygame-db.firebaseio.com/")]
-    public string firebaseUrl = "https://swd-6c4c4-default-rtdb.firebaseio.com/";
 
     [Tooltip("Google Form POST URL. Example: https://docs.google.com/forms/d/e/1FAIpQLSf.../formResponse")]
     public string googleFormUrl = "https://docs.google.com/forms/d/1OX2LV8CJ76GPV_cgY68rUU0i-yddJ-rnlNRN1zImR6s/formResponse";
@@ -412,36 +408,7 @@ public class FeedbackManager : MonoBehaviour
 
     private IEnumerator SendFeedbackCoroutine(FeedbackData data)
     {
-        if (databaseType == DatabaseType.FirebaseREST)
-        {
-            string url = firebaseUrl.Trim();
-            if (!url.EndsWith("/")) url += "/";
-            url += "feedback.json"; // Firebase REST API endpoint
-
-            string json = JsonUtility.ToJson(data);
-            using (UnityWebRequest request = new UnityWebRequest(url, "POST"))
-            {
-                byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
-                request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-                request.downloadHandler = new DownloadHandlerBuffer();
-                request.SetRequestHeader("Content-Type", "application/json");
-
-                yield return request.SendWebRequest();
-
-                if (request.result == UnityWebRequest.Result.Success)
-                {
-                    statusText.text = "<color=#24D285>Success: Thank you for your feedback!</color>";
-                    nameInputField.text = "";
-                    feedbackInputField.text = "";
-                    StartCoroutine(FetchTotalStats());
-                }
-                else
-                {
-                    statusText.text = "<color=red>Error submitting: " + request.error + "</color>";
-                }
-            }
-        }
-        else if (databaseType == DatabaseType.Supabase)
+        if (databaseType == DatabaseType.Supabase)
         {
             string url = supabaseUrl.Trim();
             if (!url.EndsWith("/")) url += "/";
@@ -510,17 +477,6 @@ public class FeedbackManager : MonoBehaviour
         string prefKey = "HasRegisteredInstall_" + databaseType.ToString();
         int hasRegistered = PlayerPrefs.GetInt(prefKey, 0);
 
-        // Migration for backward compatibility
-        if (hasRegistered == 0 && databaseType == DatabaseType.FirebaseREST)
-        {
-            if (PlayerPrefs.GetInt("HasRegisteredInstall", 0) == 1)
-            {
-                PlayerPrefs.SetInt(prefKey, 1);
-                PlayerPrefs.Save();
-                hasRegistered = 1;
-            }
-        }
-
         if (hasRegistered == 0)
         {
             StartCoroutine(RegisterInstallCoroutine());
@@ -541,31 +497,7 @@ public class FeedbackManager : MonoBehaviour
 
         string prefKey = "HasRegisteredInstall_" + databaseType.ToString();
 
-        if (databaseType == DatabaseType.FirebaseREST)
-        {
-            // Register install in Firebase under /installs node
-            string url = firebaseUrl.Trim();
-            if (!url.EndsWith("/")) url += "/";
-            string installUrl = url + "installs/" + data.deviceId + ".json";
-
-            string json = JsonUtility.ToJson(data);
-            using (UnityWebRequest request = new UnityWebRequest(installUrl, "PUT")) // PUT to overwrite or set once
-            {
-                byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
-                request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-                request.downloadHandler = new DownloadHandlerBuffer();
-                request.SetRequestHeader("Content-Type", "application/json");
-
-                yield return request.SendWebRequest();
-
-                if (request.result == UnityWebRequest.Result.Success)
-                {
-                    PlayerPrefs.SetInt(prefKey, 1);
-                    PlayerPrefs.Save();
-                }
-            }
-        }
-        else if (databaseType == DatabaseType.Supabase)
+        if (databaseType == DatabaseType.Supabase)
         {
             string url = supabaseUrl.Trim();
             if (!url.EndsWith("/")) url += "/";
@@ -624,35 +556,7 @@ public class FeedbackManager : MonoBehaviour
 
     private IEnumerator FetchTotalStats()
     {
-        if (databaseType == DatabaseType.FirebaseREST)
-        {
-            // Fetch installs node count from Firebase
-            string url = firebaseUrl.Trim();
-            if (!url.EndsWith("/")) url += "/";
-            string queryUrl = url + "installs.json?shallow=true"; // shallow=true gets just keys (ideal to count keys)
-
-            using (UnityWebRequest request = UnityWebRequest.Get(queryUrl))
-            {
-                yield return request.SendWebRequest();
-
-                if (request.result == UnityWebRequest.Result.Success)
-                {
-                    string json = request.downloadHandler.text;
-                    if (!string.IsNullOrEmpty(json) && json != "null")
-                    {
-                        // Firebase return keys like {"device_id_1":true, "device_id_2":true}
-                        // We count the commas + 1 to get a simple estimation of items
-                        int count = json.Split(',').Length;
-                        totalInstalls = Mathf.Max(1, count);
-                        if (totalInstallsText != null)
-                        {
-                            totalInstallsText.text = "Downloads: " + totalInstalls;
-                        }
-                    }
-                }
-            }
-        }
-        else if (databaseType == DatabaseType.GoogleFormPOST && !string.IsNullOrEmpty(googleSheetUrl))
+        if (databaseType == DatabaseType.GoogleFormPOST && !string.IsNullOrEmpty(googleSheetUrl))
         {
             string url = googleSheetUrl.Trim();
             if (url.Contains("/d/"))
