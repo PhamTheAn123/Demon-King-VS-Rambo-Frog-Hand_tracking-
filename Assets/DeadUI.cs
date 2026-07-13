@@ -89,7 +89,7 @@ public class DeadUI : MonoBehaviour
             Time.timeScale = 0;
             
             // Giữ ẩn trỏ chuột hệ thống cho đẹp mắt, chỉ dùng tâm ngắm ảo để ngắm click
-            Cursor.visible = false;
+            Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None; // Giải phóng chuột để di chuyển tự do
             
             if (deathMessageText != null)
@@ -129,7 +129,7 @@ public class DeadUI : MonoBehaviour
             Time.timeScale = 0;
             
             // Giữ ẩn trỏ chuột hệ thống cho đẹp mắt, chỉ dùng tâm ngắm ảo để ngắm click
-            Cursor.visible = false;
+            Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None; // Giải phóng chuột để di chuyển tự do
             
             if (deathMessageText != null)
