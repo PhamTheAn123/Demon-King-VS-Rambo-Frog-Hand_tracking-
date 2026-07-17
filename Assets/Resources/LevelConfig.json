@@ -5398,5 +5398,1259 @@
           "bossWave": false,
           "spawnRadius": 5.1,
           "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 2.3,
+          "enemyCount": 5,
+          "spawnInterval": 1.1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.7,
+          "difficultyMultiplier": 1.9
+        },
+        {
+          "waveIndex": 7,
+          "spawnDelay": 2.3,
+          "enemyCount": 11,
+          "spawnInterval": 0.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 7.4,
+          "difficultyMultiplier": 2.05
+        }
+      ],
+      "rewards": {
+        "starThresholds": [30, 57, 80],
+        "completionGold": 902,
+        "completionXp": 828,
+        "firstClearBonus": 451
+      }
+    }
+    ,
+    {
+      "levelId": 66,
+      "levelName": "Level_66",
+      "sceneName": "Lever-66",
+      "difficulty": 3,
+      "timeLimit": 239,
+      "totalWaves": 8,
+      "backgroundMusic": "bgm_level_66",
+      "unlockRequirement": 65,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 1.7,
+          "enemyCount": 10,
+          "spawnInterval": 0.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7.8,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 2,
+          "enemyCount": 5,
+          "spawnInterval": 0.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.6,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 2.6,
+          "enemyCount": 6,
+          "spawnInterval": 1.2,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 6.9,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 0.6,
+          "enemyCount": 12,
+          "spawnInterval": 1.8,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7.6,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 2.1,
+          "enemyCount": 13,
+          "spawnInterval": 1.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.5,
+          "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 0.9,
+          "enemyCount": 7,
+          "spawnInterval": 1.1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.8,
+          "difficultyMultiplier": 1.9
+        },
+        {
+          "waveIndex": 7,
+          "spawnDelay": 1.4,
+          "enemyCount": 3,
+          "spawnInterval": 0.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.1,
+          "difficultyMultiplier": 2.05
+        },
+        {
+          "waveIndex": 8,
+          "spawnDelay": 1.6,
+          "enemyCount": 14,
+          "spawnInterval": 0.7,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 4.1,
+          "difficultyMultiplier": 2.2
+        }
+      ],
+      "rewards": {
+        "starThresholds": [40, 64, 88],
+        "completionGold": 200,
+        "completionXp": 1375,
+        "firstClearBonus": 100
+      }
+    }
+    ,
+    {
+      "levelId": 67,
+      "levelName": "Level_67",
+      "sceneName": "Lever-67",
+      "difficulty": 4,
+      "timeLimit": 474,
+      "totalWaves": 8,
+      "backgroundMusic": "bgm_level_67",
+      "unlockRequirement": 66,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 0.7,
+          "enemyCount": 4,
+          "spawnInterval": 1.7,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.5,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 2.8,
+          "enemyCount": 3,
+          "spawnInterval": 1.9,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5.8,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 2.6,
+          "enemyCount": 5,
+          "spawnInterval": 1.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5.1,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 2.5,
+          "enemyCount": 8,
+          "spawnInterval": 0.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.2,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 2.9,
+          "enemyCount": 11,
+          "spawnInterval": 0.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.7,
+          "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 0.6,
+          "enemyCount": 6,
+          "spawnInterval": 1.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.8,
+          "difficultyMultiplier": 1.9
+        },
+        {
+          "waveIndex": 7,
+          "spawnDelay": 1.2,
+          "enemyCount": 11,
+          "spawnInterval": 0.7,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 6,
+          "difficultyMultiplier": 2.05
+        },
+        {
+          "waveIndex": 8,
+          "spawnDelay": 0.6,
+          "enemyCount": 4,
+          "spawnInterval": 1.2,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 6.3,
+          "difficultyMultiplier": 2.2
+        }
+      ],
+      "rewards": {
+        "starThresholds": [43, 77, 84],
+        "completionGold": 848,
+        "completionXp": 1661,
+        "firstClearBonus": 424
+      }
+    }
+    ,
+    {
+      "levelId": 68,
+      "levelName": "Level_68",
+      "sceneName": "Lever-68",
+      "difficulty": 1,
+      "timeLimit": 538,
+      "totalWaves": 7,
+      "backgroundMusic": "bgm_level_68",
+      "unlockRequirement": 67,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 1.4,
+          "enemyCount": 9,
+          "spawnInterval": 1.7,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.7,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 2,
+          "enemyCount": 10,
+          "spawnInterval": 1.2,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 1.8,
+          "enemyCount": 11,
+          "spawnInterval": 0.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 2.1,
+          "enemyCount": 4,
+          "spawnInterval": 0.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.5,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 2.3,
+          "enemyCount": 9,
+          "spawnInterval": 1.1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4,
+          "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 2.2,
+          "enemyCount": 3,
+          "spawnInterval": 1.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.9,
+          "difficultyMultiplier": 1.9
+        },
+        {
+          "waveIndex": 7,
+          "spawnDelay": 1.2,
+          "enemyCount": 10,
+          "spawnInterval": 1.8,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 2.3,
+          "difficultyMultiplier": 2.05
+        }
+      ],
+      "rewards": {
+        "starThresholds": [41, 56, 94],
+        "completionGold": 53,
+        "completionXp": 822,
+        "firstClearBonus": 26
+      }
+    }
+    ,
+    {
+      "levelId": 69,
+      "levelName": "Level_69",
+      "sceneName": "Lever-69",
+      "difficulty": 4,
+      "timeLimit": 460,
+      "totalWaves": 6,
+      "backgroundMusic": "bgm_level_69",
+      "unlockRequirement": 68,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 1.3,
+          "enemyCount": 5,
+          "spawnInterval": 1.8,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.9,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 1.5,
+          "enemyCount": 13,
+          "spawnInterval": 0.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5.5,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 0.9,
+          "enemyCount": 14,
+          "spawnInterval": 0.9,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.4,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 2.2,
+          "enemyCount": 12,
+          "spawnInterval": 0.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5.1,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 1,
+          "enemyCount": 11,
+          "spawnInterval": 1.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7,
+          "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 1.2,
+          "enemyCount": 7,
+          "spawnInterval": 0.8,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 4.4,
+          "difficultyMultiplier": 1.9
+        }
+      ],
+      "rewards": {
+        "starThresholds": [50, 71, 91],
+        "completionGold": 538,
+        "completionXp": 1008,
+        "firstClearBonus": 269
+      }
+    }
+    ,
+    {
+      "levelId": 70,
+      "levelName": "Level_70",
+      "sceneName": "Lever-70",
+      "difficulty": 3,
+      "timeLimit": 435,
+      "totalWaves": 4,
+      "backgroundMusic": "bgm_level_70",
+      "unlockRequirement": 69,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 2.9,
+          "enemyCount": 14,
+          "spawnInterval": 1.7,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 6.9,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 2.7,
+          "enemyCount": 11,
+          "spawnInterval": 1.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.2,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 1.4,
+          "enemyCount": 6,
+          "spawnInterval": 1.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.1,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 0.6,
+          "enemyCount": 6,
+          "spawnInterval": 0.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 5.2,
+          "difficultyMultiplier": 1.6
+        }
+      ],
+      "rewards": {
+        "starThresholds": [46, 78, 88],
+        "completionGold": 61,
+        "completionXp": 1626,
+        "firstClearBonus": 30
+      }
+    }
+    ,
+    {
+      "levelId": 71,
+      "levelName": "Level_71",
+      "sceneName": "Lever-71",
+      "difficulty": 3,
+      "timeLimit": 348,
+      "totalWaves": 6,
+      "backgroundMusic": "bgm_level_71",
+      "unlockRequirement": 70,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 2.7,
+          "enemyCount": 5,
+          "spawnInterval": 1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.3,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 0.6,
+          "enemyCount": 14,
+          "spawnInterval": 1.8,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 6.1,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 1,
+          "enemyCount": 10,
+          "spawnInterval": 1.2,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.9,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 1.3,
+          "enemyCount": 8,
+          "spawnInterval": 1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5.2,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 0.9,
+          "enemyCount": 6,
+          "spawnInterval": 1.1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.7,
+          "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 2.5,
+          "enemyCount": 9,
+          "spawnInterval": 0.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 5.8,
+          "difficultyMultiplier": 1.9
+        }
+      ],
+      "rewards": {
+        "starThresholds": [49, 74, 83],
+        "completionGold": 736,
+        "completionXp": 1848,
+        "firstClearBonus": 368
+      }
+    }
+    ,
+    {
+      "levelId": 72,
+      "levelName": "Level_72",
+      "sceneName": "Lever-72",
+      "difficulty": 4,
+      "timeLimit": 579,
+      "totalWaves": 4,
+      "backgroundMusic": "bgm_level_72",
+      "unlockRequirement": 71,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 1,
+          "enemyCount": 12,
+          "spawnInterval": 1.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 2,
+          "enemyCount": 7,
+          "spawnInterval": 1.8,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.3,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 0.6,
+          "enemyCount": 11,
+          "spawnInterval": 0.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 6.6,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 1.8,
+          "enemyCount": 3,
+          "spawnInterval": 1.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 3.2,
+          "difficultyMultiplier": 1.6
+        }
+      ],
+      "rewards": {
+        "starThresholds": [47, 63, 86],
+        "completionGold": 393,
+        "completionXp": 104,
+        "firstClearBonus": 196
+      }
+    }
+    ,
+    {
+      "levelId": 73,
+      "levelName": "Level_73",
+      "sceneName": "Lever-73",
+      "difficulty": 2,
+      "timeLimit": 667,
+      "totalWaves": 7,
+      "backgroundMusic": "bgm_level_73",
+      "unlockRequirement": 72,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 2.8,
+          "enemyCount": 3,
+          "spawnInterval": 0.7,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.4,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 2.4,
+          "enemyCount": 13,
+          "spawnInterval": 1.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5.2,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 2.9,
+          "enemyCount": 13,
+          "spawnInterval": 0.3,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 2.5,
+          "enemyCount": 14,
+          "spawnInterval": 1.8,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7.8,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 1.6,
+          "enemyCount": 4,
+          "spawnInterval": 1.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5.3,
+          "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 1.1,
+          "enemyCount": 3,
+          "spawnInterval": 0.3,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.1,
+          "difficultyMultiplier": 1.9
+        },
+        {
+          "waveIndex": 7,
+          "spawnDelay": 1.3,
+          "enemyCount": 10,
+          "spawnInterval": 1.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 5.9,
+          "difficultyMultiplier": 2.05
+        }
+      ],
+      "rewards": {
+        "starThresholds": [32, 76, 82],
+        "completionGold": 335,
+        "completionXp": 1242,
+        "firstClearBonus": 168
+      }
+    }
+    ,
+    {
+      "levelId": 74,
+      "levelName": "Level_74",
+      "sceneName": "Lever-74",
+      "difficulty": 2,
+      "timeLimit": 569,
+      "totalWaves": 6,
+      "backgroundMusic": "bgm_level_74",
+      "unlockRequirement": 73,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 2.5,
+          "enemyCount": 8,
+          "spawnInterval": 1.7,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 2.6,
+          "enemyCount": 10,
+          "spawnInterval": 0.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.3,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 1.3,
+          "enemyCount": 9,
+          "spawnInterval": 0.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7.6,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 2.7,
+          "enemyCount": 11,
+          "spawnInterval": 1.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7.4,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 2.1,
+          "enemyCount": 3,
+          "spawnInterval": 0.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.9,
+          "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 1.7,
+          "enemyCount": 14,
+          "spawnInterval": 0.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 6.4,
+          "difficultyMultiplier": 1.9
+        }
+      ],
+      "rewards": {
+        "starThresholds": [49, 78, 95],
+        "completionGold": 309,
+        "completionXp": 539,
+        "firstClearBonus": 154
+      }
+    }
+    ,
+    {
+      "levelId": 75,
+      "levelName": "Level_75",
+      "sceneName": "Lever-75",
+      "difficulty": 2,
+      "timeLimit": 433,
+      "totalWaves": 7,
+      "backgroundMusic": "bgm_level_75",
+      "unlockRequirement": 74,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 0.8,
+          "enemyCount": 11,
+          "spawnInterval": 1.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 6.4,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 1.9,
+          "enemyCount": 4,
+          "spawnInterval": 0.7,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5.5,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 2.2,
+          "enemyCount": 4,
+          "spawnInterval": 1.1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.4,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 2.3,
+          "enemyCount": 12,
+          "spawnInterval": 1.9,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.1,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 0.7,
+          "enemyCount": 14,
+          "spawnInterval": 0.3,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5,
+          "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 2.3,
+          "enemyCount": 13,
+          "spawnInterval": 1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.1,
+          "difficultyMultiplier": 1.9
+        },
+        {
+          "waveIndex": 7,
+          "spawnDelay": 2.4,
+          "enemyCount": 6,
+          "spawnInterval": 0.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 6.7,
+          "difficultyMultiplier": 2.05
+        }
+      ],
+      "rewards": {
+        "starThresholds": [51, 77, 96],
+        "completionGold": 712,
+        "completionXp": 664,
+        "firstClearBonus": 356
+      }
+    }
+    ,
+    {
+      "levelId": 76,
+      "levelName": "Level_76",
+      "sceneName": "Lever-76",
+      "difficulty": 3,
+      "timeLimit": 604,
+      "totalWaves": 8,
+      "backgroundMusic": "bgm_level_76",
+      "unlockRequirement": 75,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 0.8,
+          "enemyCount": 13,
+          "spawnInterval": 0.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7.2,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 1.5,
+          "enemyCount": 13,
+          "spawnInterval": 1.7,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 6.6,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 2.3,
+          "enemyCount": 8,
+          "spawnInterval": 0.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.5,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 0.5,
+          "enemyCount": 6,
+          "spawnInterval": 0.9,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7.9,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 0.7,
+          "enemyCount": 10,
+          "spawnInterval": 0.3,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.6,
+          "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 1.4,
+          "enemyCount": 4,
+          "spawnInterval": 1.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7.9,
+          "difficultyMultiplier": 1.9
+        },
+        {
+          "waveIndex": 7,
+          "spawnDelay": 2.7,
+          "enemyCount": 13,
+          "spawnInterval": 1.3,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.1,
+          "difficultyMultiplier": 2.05
+        },
+        {
+          "waveIndex": 8,
+          "spawnDelay": 2.1,
+          "enemyCount": 5,
+          "spawnInterval": 1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 7,
+          "difficultyMultiplier": 2.2
+        }
+      ],
+      "rewards": {
+        "starThresholds": [44, 68, 84],
+        "completionGold": 768,
+        "completionXp": 1540,
+        "firstClearBonus": 384
+      }
+    }
+    ,
+    {
+      "levelId": 77,
+      "levelName": "Level_77",
+      "sceneName": "Lever-77",
+      "difficulty": 2,
+      "timeLimit": 424,
+      "totalWaves": 8,
+      "backgroundMusic": "bgm_level_77",
+      "unlockRequirement": 76,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 2.8,
+          "enemyCount": 14,
+          "spawnInterval": 0.9,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.3,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 0.7,
+          "enemyCount": 11,
+          "spawnInterval": 1.8,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 0.8,
+          "enemyCount": 10,
+          "spawnInterval": 1.2,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5.3,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 2.7,
+          "enemyCount": 7,
+          "spawnInterval": 1.2,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.8,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 1.6,
+          "enemyCount": 9,
+          "spawnInterval": 0.8,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7.2,
+          "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 0.6,
+          "enemyCount": 7,
+          "spawnInterval": 0.9,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 6.8,
+          "difficultyMultiplier": 1.9
+        },
+        {
+          "waveIndex": 7,
+          "spawnDelay": 1.1,
+          "enemyCount": 7,
+          "spawnInterval": 0.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7.1,
+          "difficultyMultiplier": 2.05
+        },
+        {
+          "waveIndex": 8,
+          "spawnDelay": 2.5,
+          "enemyCount": 3,
+          "spawnInterval": 1.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 6.4,
+          "difficultyMultiplier": 2.2
+        }
+      ],
+      "rewards": {
+        "starThresholds": [41, 76, 92],
+        "completionGold": 817,
+        "completionXp": 1972,
+        "firstClearBonus": 408
+      }
+    }
+    ,
+    {
+      "levelId": 78,
+      "levelName": "Level_78",
+      "sceneName": "Lever-78",
+      "difficulty": 2,
+      "timeLimit": 252,
+      "totalWaves": 6,
+      "backgroundMusic": "bgm_level_78",
+      "unlockRequirement": 77,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 2.2,
+          "enemyCount": 4,
+          "spawnInterval": 1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 6.5,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 1.3,
+          "enemyCount": 5,
+          "spawnInterval": 1.3,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 2.4,
+          "enemyCount": 10,
+          "spawnInterval": 1.8,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2.3,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 2.9,
+          "enemyCount": 6,
+          "spawnInterval": 1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 7.2,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 2,
+          "enemyCount": 9,
+          "spawnInterval": 1.2,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 2,
+          "difficultyMultiplier": 1.75
+        },
+        {
+          "waveIndex": 6,
+          "spawnDelay": 2.7,
+          "enemyCount": 4,
+          "spawnInterval": 1.5,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 7.1,
+          "difficultyMultiplier": 1.9
+        }
+      ],
+      "rewards": {
+        "starThresholds": [48, 59, 80],
+        "completionGold": 434,
+        "completionXp": 273,
+        "firstClearBonus": 217
+      }
+    }
+    ,
+    {
+      "levelId": 79,
+      "levelName": "Level_79",
+      "sceneName": "Lever-79",
+      "difficulty": 4,
+      "timeLimit": 614,
+      "totalWaves": 4,
+      "backgroundMusic": "bgm_level_79",
+      "unlockRequirement": 78,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 1.7,
+          "enemyCount": 14,
+          "spawnInterval": 1.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.6,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 1.2,
+          "enemyCount": 12,
+          "spawnInterval": 1,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5.1,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 2.3,
+          "enemyCount": 12,
+          "spawnInterval": 1.9,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.3,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 2.2,
+          "enemyCount": 6,
+          "spawnInterval": 1.6,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 6.5,
+          "difficultyMultiplier": 1.6
+        }
+      ],
+      "rewards": {
+        "starThresholds": [48, 70, 86],
+        "completionGold": 293,
+        "completionXp": 1167,
+        "firstClearBonus": 146
+      }
+    }
+    ,
+    {
+      "levelId": 80,
+      "levelName": "Level_80",
+      "sceneName": "Lever-80",
+      "difficulty": 4,
+      "timeLimit": 268,
+      "totalWaves": 5,
+      "backgroundMusic": "bgm_level_80",
+      "unlockRequirement": 79,
+      "waves": [
+        {
+          "waveIndex": 1,
+          "spawnDelay": 2.6,
+          "enemyCount": 6,
+          "spawnInterval": 0.9,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5.4,
+          "difficultyMultiplier": 1.15
+        },
+        {
+          "waveIndex": 2,
+          "spawnDelay": 2.1,
+          "enemyCount": 10,
+          "spawnInterval": 1.7,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 4.5,
+          "difficultyMultiplier": 1.3
+        },
+        {
+          "waveIndex": 3,
+          "spawnDelay": 2.4,
+          "enemyCount": 13,
+          "spawnInterval": 0.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 3.7,
+          "difficultyMultiplier": 1.45
+        },
+        {
+          "waveIndex": 4,
+          "spawnDelay": 1,
+          "enemyCount": 12,
+          "spawnInterval": 1.8,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": false,
+          "spawnRadius": 5,
+          "difficultyMultiplier": 1.6
+        },
+        {
+          "waveIndex": 5,
+          "spawnDelay": 1.7,
+          "enemyCount": 13,
+          "spawnInterval": 0.4,
+          "enemyTypes": ["GroundEnemy", "FlyEnemy"],
+          "bossWave": true,
+          "spawnRadius": 2.8,
+          "difficultyMultiplier": 1.75
+        }
+      ],
+      "rewards": {
+        "starThresholds": [46, 64, 87],
+        "completionGold": 77,
+        "completionXp": 1427,
+        "firstClearBonus": 38
+      }
+    }
   ]
 }
