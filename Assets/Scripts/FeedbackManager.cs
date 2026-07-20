@@ -355,7 +355,20 @@ public class FeedbackManager : MonoBehaviour
 
     private void CheckAndRegisterInstall()
     {
-        int hasRegistered = PlayerPrefs.GetInt("HasRegisteredInstall", 0);
+        string prefKey = "HasRegisteredInstall_" + databaseType.ToString();
+        int hasRegistered = PlayerPrefs.GetInt(prefKey, 0);
+
+        // Migration for backward compatibility
+        if (hasRegistered == 0 && databaseType == DatabaseType.FirebaseREST)
+        {
+            if (PlayerPrefs.GetInt("HasRegisteredInstall", 0) == 1)
+            {
+                PlayerPrefs.SetInt(prefKey, 1);
+                PlayerPrefs.Save();
+                hasRegistered = 1;
+            }
+        }
+
         if (hasRegistered == 0)
         {
             StartCoroutine(RegisterInstallCoroutine());
@@ -373,6 +386,8 @@ public class FeedbackManager : MonoBehaviour
             deviceId = SystemInfo.deviceUniqueIdentifier,
             installDate = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss UTC")
         };
+
+        string prefKey = "HasRegisteredInstall_" + databaseType.ToString();
 
         if (databaseType == DatabaseType.FirebaseREST)
         {
@@ -393,7 +408,7 @@ public class FeedbackManager : MonoBehaviour
 
                 if (request.result == UnityWebRequest.Result.Success)
                 {
-                    PlayerPrefs.SetInt("HasRegisteredInstall", 1);
+                    PlayerPrefs.SetInt(prefKey, 1);
                     PlayerPrefs.Save();
                 }
             }
@@ -425,7 +440,7 @@ public class FeedbackManager : MonoBehaviour
 
                 if (request.result == UnityWebRequest.Result.Success)
                 {
-                    PlayerPrefs.SetInt("HasRegisteredInstall", 1);
+                    PlayerPrefs.SetInt(prefKey, 1);
                     PlayerPrefs.Save();
                 }
             }
@@ -443,7 +458,7 @@ public class FeedbackManager : MonoBehaviour
                 yield return request.SendWebRequest();
                 if (request.result == UnityWebRequest.Result.Success)
                 {
-                    PlayerPrefs.SetInt("HasRegisteredInstall", 1);
+                    PlayerPrefs.SetInt(prefKey, 1);
                     PlayerPrefs.Save();
                 }
             }
