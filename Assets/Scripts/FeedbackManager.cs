@@ -11,18 +11,25 @@ public class FeedbackManager : MonoBehaviour
     public enum DatabaseType
     {
         FirebaseREST,
-        GoogleFormPOST
+        GoogleFormPOST,
+        Supabase
     }
 
     [Header("Database Configuration")]
     [Tooltip("Choose which database to send player feedback and installs to.")]
-    public DatabaseType databaseType = DatabaseType.FirebaseREST;
+    public DatabaseType databaseType = DatabaseType.Supabase;
 
     [Tooltip("Firebase Database URL. Example: https://mygame-db.firebaseio.com/")]
     public string firebaseUrl = "https://swd-6c4c4-default-rtdb.firebaseio.com/";
 
     [Tooltip("Google Form POST URL. Example: https://docs.google.com/forms/d/e/1FAIpQLSf.../formResponse")]
     public string googleFormUrl = "";
+
+    [Header("Supabase Configuration")]
+    [Tooltip("Supabase Project URL.")]
+    public string supabaseUrl = "https://rxmswzfljtkkthnhozov.supabase.co";
+    [Tooltip("Supabase Anon / Publishable Key")]
+    public string supabaseAnonKey = "sb_publishable_HwcBNY-TXnUC1Os5EXSrXQ_PGa50e_u";
 
     [Header("Google Form Entry IDs (Only if using Google Form)")]
     [Tooltip("Google Form Entry ID for Player Name (e.g. entry.123456789)")]
@@ -70,13 +77,16 @@ public class FeedbackManager : MonoBehaviour
     // UI Runtime References
     private Canvas targetCanvas;
     private GameObject menuButtonGo;
-    private GameObject mainPanelGo;
-    private TextMeshProUGUI totalInstallsText;
-    private TMP_InputField nameInputField;
-    private TMP_InputField feedbackInputField;
-    private Slider ratingSlider;
-    private TextMeshProUGUI statusText;
-    private TextMeshProUGUI contentText;
+    [Header("UI Physical References")]
+    [Tooltip("Reference to the scene button that opens the panel.")]
+    public Button feedbackButton;
+    public GameObject mainPanelGo;
+    public TextMeshProUGUI totalInstallsText;
+    public TMP_InputField nameInputField;
+    public TMP_InputField feedbackInputField;
+    public Slider ratingSlider;
+    public TextMeshProUGUI statusText;
+    public TextMeshProUGUI contentText;
 
     private int activeTab = 0; // 0: Update Log, 1: Asset Directory, 2: Feedback
     private int totalInstalls = 1;
@@ -99,12 +109,31 @@ public class FeedbackManager : MonoBehaviour
         public string installDate;
     }
 
+    [Serializable]
+    private class SupabaseFeedbackData
+    {
+        public string player_name;
+        public int rating;
+        public string feedback_text;
+        public string device_id;
+    }
+
+    [Serializable]
+    private class SupabaseInstallData
+    {
+        public string device_id;
+    }
+
+    [Serializable]
+    private class SupabaseCountWrapper
+    {
+        public int count;
+    }
+
 
     void Start()
     {
         FindOrCreateCanvas();
-        CreateMenuButton();
-        CreateFeedbackPanel();
         CheckAndRegisterInstall();
     }
 
@@ -127,389 +156,6 @@ public class FeedbackManager : MonoBehaviour
             eventSystem.AddComponent<UnityEngine.EventSystems.EventSystem>();
             eventSystem.AddComponent<UnityEngine.EventSystems.StandaloneInputModule>();
         }
-    }
-
-    private void CreateMenuButton()
-    {
-        menuButtonGo = new GameObject("Btn_UpdateLogFeedback");
-        menuButtonGo.transform.SetParent(targetCanvas.transform, false);
-
-        RectTransform rect = menuButtonGo.AddComponent<RectTransform>();
-        rect.anchorMin = new Vector2(0f, 0f); // Bottom-left corner
-        rect.anchorMax = new Vector2(0f, 0f);
-        rect.pivot = new Vector2(0f, 0f);
-        rect.anchoredPosition = new Vector2(25f, 25f);
-        rect.sizeDelta = new Vector2(240f, 50f);
-
-        Image img = menuButtonGo.AddComponent<Image>();
-        img.color = new Color(0.12f, 0.12f, 0.12f, 0.9f); // Dark grey
-
-        Button btn = menuButtonGo.AddComponent<Button>();
-        btn.onClick.AddListener(OpenPanel);
-
-        // Add Hover transition effect
-        ColorBlock colors = btn.colors;
-        colors.normalColor = new Color(0.12f, 0.12f, 0.12f, 0.9f);
-        colors.highlightedColor = new Color(0.18f, 0.5f, 0.35f, 1f); // Green accent on hover
-        colors.pressedColor = new Color(0.1f, 0.35f, 0.25f, 1f);
-        colors.selectedColor = new Color(0.12f, 0.12f, 0.12f, 0.9f);
-        btn.colors = colors;
-
-        // Button Text
-        GameObject txtGo = new GameObject("Text");
-        txtGo.transform.SetParent(menuButtonGo.transform, false);
-        RectTransform txtRect = txtGo.AddComponent<RectTransform>();
-        txtRect.anchorMin = Vector2.zero;
-        txtRect.anchorMax = Vector2.one;
-        txtRect.sizeDelta = Vector2.zero;
-
-        TextMeshProUGUI txt = txtGo.AddComponent<TextMeshProUGUI>();
-        txt.text = "📢 Update Log & Feedback";
-        txt.alignment = TextAlignmentOptions.Center;
-        txt.fontSize = 14;
-        txt.color = Color.white;
-    }
-
-    private void CreateFeedbackPanel()
-    {
-        // Panel Background Container
-        mainPanelGo = new GameObject("Panel_UpdateLogFeedback");
-        mainPanelGo.transform.SetParent(targetCanvas.transform, false);
-
-        RectTransform mainRect = mainPanelGo.AddComponent<RectTransform>();
-        mainRect.anchorMin = new Vector2(0.5f, 0.5f);
-        mainRect.anchorMax = new Vector2(0.5f, 0.5f);
-        mainRect.pivot = new Vector2(0.5f, 0.5f);
-        mainRect.sizeDelta = new Vector2(650f, 480f);
-
-        Image mainImg = mainPanelGo.AddComponent<Image>();
-        mainImg.color = new Color(0.08f, 0.08f, 0.08f, 0.96f); // Glassmorphism dark
-
-        // Add border outline
-        Outline outline = mainPanelGo.AddComponent<Outline>();
-        outline.effectColor = new Color(0.18f, 0.5f, 0.35f, 0.5f); // Semi-transparent green
-        outline.effectDistance = new Vector2(2f, 2f);
-
-        // Header Title
-        GameObject titleGo = new GameObject("Title");
-        titleGo.transform.SetParent(mainPanelGo.transform, false);
-        RectTransform titleRect = titleGo.AddComponent<RectTransform>();
-        titleRect.anchorMin = new Vector2(0f, 1f);
-        titleRect.anchorMax = new Vector2(1f, 1f);
-        titleRect.pivot = new Vector2(0.5f, 1f);
-        titleRect.anchoredPosition = new Vector2(0f, -10f);
-        titleRect.sizeDelta = new Vector2(-40f, 40f);
-
-        TextMeshProUGUI titleTxt = titleGo.AddComponent<TextMeshProUGUI>();
-        titleTxt.text = "🎮 Game Hub & Logs";
-        titleTxt.fontSize = 22;
-        titleTxt.fontStyle = FontStyles.Bold;
-        titleTxt.alignment = TextAlignmentOptions.Left;
-        titleTxt.color = new Color(0.24f, 0.81f, 0.53f, 1f); // Vibrant light green
-
-        // Total installs stat label
-        GameObject statGo = new GameObject("TotalInstallsText");
-        statGo.transform.SetParent(mainPanelGo.transform, false);
-        RectTransform statRect = statGo.AddComponent<RectTransform>();
-        statRect.anchorMin = new Vector2(1f, 1f);
-        statRect.anchorMax = new Vector2(1f, 1f);
-        statRect.pivot = new Vector2(1f, 1f);
-        statRect.anchoredPosition = new Vector2(-60f, -12f);
-        statRect.sizeDelta = new Vector2(200f, 30f);
-
-        totalInstallsText = statGo.AddComponent<TextMeshProUGUI>();
-        totalInstallsText.text = "Downloads: Fetching...";
-        totalInstallsText.fontSize = 13;
-        totalInstallsText.alignment = TextAlignmentOptions.Right;
-        totalInstallsText.color = new Color(0.7f, 0.7f, 0.7f, 1f);
-
-        // Close Button
-        GameObject closeGo = new GameObject("Btn_Close");
-        closeGo.transform.SetParent(mainPanelGo.transform, false);
-        RectTransform closeRect = closeGo.AddComponent<RectTransform>();
-        closeRect.anchorMin = new Vector2(1f, 1f);
-        closeRect.anchorMax = new Vector2(1f, 1f);
-        closeRect.pivot = new Vector2(1f, 1f);
-        closeRect.anchoredPosition = new Vector2(-15f, -12f);
-        closeRect.sizeDelta = new Vector2(30f, 30f);
-
-        Image closeImg = closeGo.AddComponent<Image>();
-        closeImg.color = new Color(0.25f, 0.12f, 0.12f, 0.8f);
-
-        Button closeBtn = closeGo.AddComponent<Button>();
-        closeBtn.onClick.AddListener(ClosePanel);
-        
-        GameObject closeTxtGo = new GameObject("Text");
-        closeTxtGo.transform.SetParent(closeGo.transform, false);
-        RectTransform closeTxtRect = closeTxtGo.AddComponent<RectTransform>();
-        closeTxtRect.anchorMin = Vector2.zero;
-        closeTxtRect.anchorMax = Vector2.one;
-        closeTxtRect.sizeDelta = Vector2.zero;
-        TextMeshProUGUI closeTxt = closeTxtGo.AddComponent<TextMeshProUGUI>();
-        closeTxt.text = "✖";
-        closeTxt.alignment = TextAlignmentOptions.Center;
-        closeTxt.fontSize = 14;
-        closeTxt.color = Color.white;
-
-        // Tabs Menu bar (Horizontal)
-        GameObject tabsContainer = new GameObject("Tabs_Container");
-        tabsContainer.transform.SetParent(mainPanelGo.transform, false);
-        RectTransform tabsRect = tabsContainer.AddComponent<RectTransform>();
-        tabsRect.anchorMin = new Vector2(0f, 1f);
-        tabsRect.anchorMax = new Vector2(1f, 1f);
-        tabsRect.pivot = new Vector2(0.5f, 1f);
-        tabsRect.anchoredPosition = new Vector2(0f, -60f);
-        tabsRect.sizeDelta = new Vector2(-40f, 40f);
-
-        string[] tabNames = { "📋 Update Log", "📂 Assets Directory", "💬 Give Feedback" };
-        for (int i = 0; i < tabNames.Length; i++)
-        {
-            int index = i;
-            GameObject tabBtnGo = new GameObject("Tab_" + i);
-            tabBtnGo.transform.SetParent(tabsContainer.transform, false);
-            RectTransform tabRect = tabBtnGo.AddComponent<RectTransform>();
-            tabRect.anchorMin = new Vector2(i / 3f, 0f);
-            tabRect.anchorMax = new Vector2((i + 1) / 3f, 1f);
-            tabRect.pivot = new Vector2(0.5f, 0.5f);
-            tabRect.sizeDelta = new Vector2(-5f, 0f); // 5px gap
-
-            Image tabImg = tabBtnGo.AddComponent<Image>();
-            tabImg.color = (i == 0) ? new Color(0.18f, 0.5f, 0.35f, 0.8f) : new Color(0.15f, 0.15f, 0.15f, 0.8f);
-
-            Button tabBtn = tabBtnGo.AddComponent<Button>();
-            tabBtn.onClick.AddListener(() => SwitchTab(index));
-
-            GameObject tabTxtGo = new GameObject("Text");
-            tabTxtGo.transform.SetParent(tabBtnGo.transform, false);
-            RectTransform tabTxtRect = tabTxtGo.AddComponent<RectTransform>();
-            tabTxtRect.anchorMin = Vector2.zero;
-            tabTxtRect.anchorMax = Vector2.one;
-            tabTxtRect.sizeDelta = Vector2.zero;
-            TextMeshProUGUI tabTxt = tabTxtGo.AddComponent<TextMeshProUGUI>();
-            tabTxt.text = tabNames[i];
-            tabTxt.alignment = TextAlignmentOptions.Center;
-            tabTxt.fontSize = 13;
-            tabTxt.color = Color.white;
-        }
-
-        // CONTENT SECTION (Scroll View & Feedback Form)
-        GameObject contentArea = new GameObject("Content_Area");
-        contentArea.transform.SetParent(mainPanelGo.transform, false);
-        RectTransform areaRect = contentArea.AddComponent<RectTransform>();
-        areaRect.anchorMin = Vector2.zero;
-        areaRect.anchorMax = Vector2.one;
-        areaRect.pivot = new Vector2(0.5f, 0.5f);
-        areaRect.anchoredPosition = new Vector2(0f, -40f);
-        areaRect.sizeDelta = new Vector2(-40f, -160f); // Leave room for header/footer
-
-        // 1. Text Viewer (for Logs / Directories)
-        GameObject viewerGo = new GameObject("Text_Viewer");
-        viewerGo.transform.SetParent(contentArea.transform, false);
-        RectTransform viewRect = viewerGo.AddComponent<RectTransform>();
-        viewRect.anchorMin = Vector2.zero;
-        viewRect.anchorMax = Vector2.one;
-        viewRect.sizeDelta = Vector2.zero;
-
-        ScrollRect scroll = viewerGo.AddComponent<ScrollRect>();
-        Image viewImg = viewerGo.AddComponent<Image>();
-        viewImg.color = new Color(0.04f, 0.04f, 0.04f, 0.6f);
-        Mask mask = viewerGo.AddComponent<Mask>();
-        mask.showMaskGraphic = true;
-
-        GameObject contentContainer = new GameObject("Content");
-        contentContainer.transform.SetParent(viewerGo.transform, false);
-        RectTransform contentRect = contentContainer.AddComponent<RectTransform>();
-        contentRect.anchorMin = new Vector2(0f, 1f);
-        contentRect.anchorMax = new Vector2(1f, 1f);
-        contentRect.pivot = new Vector2(0.5f, 1f);
-        contentRect.sizeDelta = new Vector2(0f, 1000f); // Large scrollable height
-
-        contentText = contentContainer.AddComponent<TextMeshProUGUI>();
-        contentText.text = GetFormattedChangelog();
-        contentText.fontSize = 14;
-        contentText.color = new Color(0.9f, 0.9f, 0.9f, 1f);
-        contentText.alignment = TextAlignmentOptions.TopLeft;
-        contentText.margin = new Vector4(15f, 15f, 15f, 15f);
-
-        scroll.content = contentRect;
-        scroll.vertical = true;
-        scroll.horizontal = false;
-
-        // 2. Feedback Form Layout (Parent GameObject)
-        GameObject formGo = new GameObject("Feedback_Form");
-        formGo.transform.SetParent(contentArea.transform, false);
-        RectTransform formRect = formGo.AddComponent<RectTransform>();
-        formRect.anchorMin = Vector2.zero;
-        formRect.anchorMax = Vector2.one;
-        formRect.sizeDelta = Vector2.zero;
-        formGo.SetActive(false);
-
-        // Player Name Input
-        CreateLabel(formGo.transform, "Player Name:", new Vector2(20f, -25f));
-        nameInputField = CreateInputField(formGo.transform, "Enter your name...", new Vector2(150f, -25f), new Vector2(250f, 30f));
-
-        // Rating Star Slider
-        CreateLabel(formGo.transform, "Rating (1 - 5 ⭐):", new Vector2(20f, -75f));
-        GameObject sliderGo = new GameObject("Rating_Slider");
-        sliderGo.transform.SetParent(formGo.transform, false);
-        RectTransform sliderRect = sliderGo.AddComponent<RectTransform>();
-        sliderRect.anchorMin = new Vector2(0f, 1f);
-        sliderRect.anchorMax = new Vector2(0f, 1f);
-        sliderRect.pivot = new Vector2(0f, 1f);
-        sliderRect.anchoredPosition = new Vector2(150f, -75f);
-        sliderRect.sizeDelta = new Vector2(250f, 30f);
-
-        ratingSlider = sliderGo.AddComponent<Slider>();
-        ratingSlider.minValue = 1;
-        ratingSlider.maxValue = 5;
-        ratingSlider.wholeNumbers = true;
-        ratingSlider.value = 5;
-
-        // Simple Background & Fill for Slider
-        Image sliderBg = sliderGo.AddComponent<Image>();
-        sliderBg.color = new Color(0.2f, 0.2f, 0.2f, 1f);
-
-        GameObject fillArea = new GameObject("Fill Area");
-        fillArea.transform.SetParent(sliderGo.transform, false);
-        RectTransform fillAreaRect = fillArea.AddComponent<RectTransform>();
-        fillAreaRect.anchorMin = Vector2.zero;
-        fillAreaRect.anchorMax = Vector2.one;
-        fillAreaRect.sizeDelta = Vector2.zero;
-
-        GameObject fill = new GameObject("Fill");
-        fill.transform.SetParent(fillArea.transform, false);
-        RectTransform fillRect = fill.AddComponent<RectTransform>();
-        fillRect.anchorMin = Vector2.zero;
-        fillRect.anchorMax = new Vector2(1f, 1f);
-        fillRect.sizeDelta = Vector2.zero;
-        Image fillImg = fill.AddComponent<Image>();
-        fillImg.color = new Color(0.24f, 0.81f, 0.53f, 1f);
-        ratingSlider.fillRect = fillRect;
-
-        // Feedback Text Input
-        CreateLabel(formGo.transform, "Your Comments:", new Vector2(20f, -125f));
-        feedbackInputField = CreateInputField(formGo.transform, "Type your feedback here...", new Vector2(150f, -125f), new Vector2(400f, 80f));
-
-        // Submit Button
-        GameObject submitBtnGo = new GameObject("Btn_Submit");
-        submitBtnGo.transform.SetParent(formGo.transform, false);
-        RectTransform subRect = submitBtnGo.AddComponent<RectTransform>();
-        subRect.anchorMin = new Vector2(0f, 1f);
-        subRect.anchorMax = new Vector2(0f, 1f);
-        subRect.pivot = new Vector2(0f, 1f);
-        subRect.anchoredPosition = new Vector2(150f, -220f);
-        subRect.sizeDelta = new Vector2(150f, 40f);
-
-        Image subImg = submitBtnGo.AddComponent<Image>();
-        subImg.color = new Color(0.18f, 0.5f, 0.35f, 1f);
-
-        Button subBtn = submitBtnGo.AddComponent<Button>();
-        subBtn.onClick.AddListener(SubmitFeedback);
-
-        GameObject subTxtGo = new GameObject("Text");
-        subTxtGo.transform.SetParent(submitBtnGo.transform, false);
-        RectTransform subTxtRect = subTxtGo.AddComponent<RectTransform>();
-        subTxtRect.anchorMin = Vector2.zero;
-        subTxtRect.anchorMax = Vector2.one;
-        subTxtRect.sizeDelta = Vector2.zero;
-        TextMeshProUGUI subTxt = subTxtGo.AddComponent<TextMeshProUGUI>();
-        subTxt.text = "Send Feedback 🚀";
-        subTxt.alignment = TextAlignmentOptions.Center;
-        subTxt.fontSize = 13;
-        subTxt.color = Color.white;
-
-        // Status Message Text
-        GameObject statusGo = new GameObject("Status_Text");
-        statusGo.transform.SetParent(formGo.transform, false);
-        RectTransform statusRect = statusGo.AddComponent<RectTransform>();
-        statusRect.anchorMin = new Vector2(0f, 1f);
-        statusRect.anchorMax = new Vector2(0f, 1f);
-        statusRect.pivot = new Vector2(0f, 1f);
-        statusRect.anchoredPosition = new Vector2(150f, -270f);
-        statusRect.sizeDelta = new Vector2(400f, 30f);
-
-        statusText = statusGo.AddComponent<TextMeshProUGUI>();
-        statusText.text = "";
-        statusText.fontSize = 12;
-        statusText.color = Color.white;
-
-        mainPanelGo.SetActive(false); // Hide panel by default
-    }
-
-    private void CreateLabel(Transform parent, string labelText, Vector2 pos)
-    {
-        GameObject labelGo = new GameObject("Label_" + labelText);
-        labelGo.transform.SetParent(parent, false);
-        RectTransform r = labelGo.AddComponent<RectTransform>();
-        r.anchorMin = new Vector2(0f, 1f);
-        r.anchorMax = new Vector2(0f, 1f);
-        r.pivot = new Vector2(0f, 1f);
-        r.anchoredPosition = pos;
-        r.sizeDelta = new Vector2(130f, 30f);
-
-        TextMeshProUGUI t = labelGo.AddComponent<TextMeshProUGUI>();
-        t.text = labelText;
-        t.fontSize = 13;
-        t.alignment = TextAlignmentOptions.Left;
-        t.color = Color.white;
-    }
-
-    private TMP_InputField CreateInputField(Transform parent, string placeholder, Vector2 pos, Vector2 size)
-    {
-        GameObject inputGo = new GameObject("InputField");
-        inputGo.transform.SetParent(parent, false);
-        RectTransform rect = inputGo.AddComponent<RectTransform>();
-        rect.anchorMin = new Vector2(0f, 1f);
-        rect.anchorMax = new Vector2(0f, 1f);
-        rect.pivot = new Vector2(0f, 1f);
-        rect.anchoredPosition = pos;
-        rect.sizeDelta = size;
-
-        Image img = inputGo.AddComponent<Image>();
-        img.color = new Color(0.15f, 0.15f, 0.15f, 1f);
-        img.type = Image.Type.Sliced;
-
-        TMP_InputField inputField = inputGo.AddComponent<TMP_InputField>();
-
-        // Text Component
-        GameObject textGo = new GameObject("TextArea");
-        textGo.transform.SetParent(inputGo.transform, false);
-        RectTransform textRect = textGo.AddComponent<RectTransform>();
-        textRect.anchorMin = Vector2.zero;
-        textRect.anchorMax = Vector2.one;
-        textRect.sizeDelta = new Vector2(-10f, -10f); // margin
-        
-        RectMask2D rMask = textGo.AddComponent<RectMask2D>();
-
-        GameObject textDisplayGo = new GameObject("Text_Display");
-        textDisplayGo.transform.SetParent(textGo.transform, false);
-        RectTransform dispRect = textDisplayGo.AddComponent<RectTransform>();
-        dispRect.anchorMin = Vector2.zero;
-        dispRect.anchorMax = Vector2.one;
-        dispRect.sizeDelta = Vector2.zero;
-
-        TextMeshProUGUI textDisplay = textDisplayGo.AddComponent<TextMeshProUGUI>();
-        textDisplay.fontSize = 13;
-        textDisplay.color = Color.white;
-
-        // Placeholder Component
-        GameObject placeholderGo = new GameObject("Placeholder");
-        placeholderGo.transform.SetParent(textGo.transform, false);
-        RectTransform placeRect = placeholderGo.AddComponent<RectTransform>();
-        placeRect.anchorMin = Vector2.zero;
-        placeRect.anchorMax = Vector2.one;
-        placeRect.sizeDelta = Vector2.zero;
-
-        TextMeshProUGUI placeDisplay = placeholderGo.AddComponent<TextMeshProUGUI>();
-        placeDisplay.text = placeholder;
-        placeDisplay.fontSize = 13;
-        placeDisplay.color = new Color(0.5f, 0.5f, 0.5f, 1f);
-
-        inputField.textComponent = textDisplay;
-        inputField.placeholder = placeDisplay;
-        inputField.textViewport = textRect;
-
-        return inputField;
     }
 
     public void OpenPanel()
@@ -560,6 +206,8 @@ public class FeedbackManager : MonoBehaviour
 
             if (index == 0) // Update Log
             {
+                if (viewer != null) viewer.gameObject.SetActive(true);
+                if (form != null) form.gameObject.SetActive(false);
                 contentText.text = GetFormattedChangelog();
             }
             else if (index == 1) // Asset Log
@@ -625,6 +273,45 @@ public class FeedbackManager : MonoBehaviour
                 request.uploadHandler = new UploadHandlerRaw(bodyRaw);
                 request.downloadHandler = new DownloadHandlerBuffer();
                 request.SetRequestHeader("Content-Type", "application/json");
+
+                yield return request.SendWebRequest();
+
+                if (request.result == UnityWebRequest.Result.Success)
+                {
+                    statusText.text = "<color=#24D285>Success: Thank you for your feedback! 💖</color>";
+                    nameInputField.text = "";
+                    feedbackInputField.text = "";
+                    StartCoroutine(FetchTotalStats());
+                }
+                else
+                {
+                    statusText.text = "<color=red>Error submitting: " + request.error + "</color>";
+                }
+            }
+        }
+        else if (databaseType == DatabaseType.Supabase)
+        {
+            string url = supabaseUrl.Trim();
+            if (!url.EndsWith("/")) url += "/";
+            url += "rest/v1/feedback";
+
+            SupabaseFeedbackData dbData = new SupabaseFeedbackData
+            {
+                player_name = data.playerName,
+                rating = data.rating,
+                feedback_text = data.feedbackText,
+                device_id = data.deviceId
+            };
+
+            string json = JsonUtility.ToJson(dbData);
+            using (UnityWebRequest request = new UnityWebRequest(url, "POST"))
+            {
+                byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
+                request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+                request.downloadHandler = new DownloadHandlerBuffer();
+                request.SetRequestHeader("Content-Type", "application/json");
+                request.SetRequestHeader("apikey", supabaseAnonKey);
+                request.SetRequestHeader("Authorization", "Bearer " + supabaseAnonKey);
 
                 yield return request.SendWebRequest();
 
@@ -711,6 +398,38 @@ public class FeedbackManager : MonoBehaviour
                 }
             }
         }
+        else if (databaseType == DatabaseType.Supabase)
+        {
+            string url = supabaseUrl.Trim();
+            if (!url.EndsWith("/")) url += "/";
+            string installUrl = url + "rest/v1/installs";
+
+            SupabaseInstallData dbData = new SupabaseInstallData
+            {
+                device_id = data.deviceId
+            };
+
+            string json = JsonUtility.ToJson(dbData);
+            using (UnityWebRequest request = new UnityWebRequest(installUrl, "POST"))
+            {
+                byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
+                request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+                request.downloadHandler = new DownloadHandlerBuffer();
+                request.SetRequestHeader("Content-Type", "application/json");
+                request.SetRequestHeader("apikey", supabaseAnonKey);
+                request.SetRequestHeader("Authorization", "Bearer " + supabaseAnonKey);
+                // UPSERT in Supabase via Postgrest
+                request.SetRequestHeader("Prefer", "resolution=merge-duplicates");
+
+                yield return request.SendWebRequest();
+
+                if (request.result == UnityWebRequest.Result.Success)
+                {
+                    PlayerPrefs.SetInt("HasRegisteredInstall", 1);
+                    PlayerPrefs.Save();
+                }
+            }
+        }
         else if (databaseType == DatabaseType.GoogleFormPOST && !string.IsNullOrEmpty(googleFormUrl))
         {
             // Google sheets install tracker via Form POST
@@ -761,6 +480,45 @@ public class FeedbackManager : MonoBehaviour
                         if (totalInstallsText != null)
                         {
                             totalInstallsText.text = "Downloads: " + totalInstalls;
+                        }
+                    }
+                }
+            }
+        }
+        else if (databaseType == DatabaseType.Supabase)
+        {
+            string url = supabaseUrl.Trim();
+            if (!url.EndsWith("/")) url += "/";
+            // Get count of rows in installs table
+            string queryUrl = url + "rest/v1/installs?select=count";
+
+            using (UnityWebRequest request = UnityWebRequest.Get(queryUrl))
+            {
+                request.SetRequestHeader("apikey", supabaseAnonKey);
+                request.SetRequestHeader("Authorization", "Bearer " + supabaseAnonKey);
+
+                yield return request.SendWebRequest();
+
+                if (request.result == UnityWebRequest.Result.Success)
+                {
+                    string json = request.downloadHandler.text;
+                    if (!string.IsNullOrEmpty(json) && json != "null" && json.Length > 2)
+                    {
+                        // Supabase REST returns e.g. [{"count":12}]
+                        // We clean up brackets to make it a parseable object {"count":12}
+                        string clean = json.Replace("[", "").Replace("]", "");
+                        try
+                        {
+                            SupabaseCountWrapper wrapper = JsonUtility.FromJson<SupabaseCountWrapper>(clean);
+                            totalInstalls = Mathf.Max(1, wrapper.count);
+                            if (totalInstallsText != null)
+                            {
+                                totalInstallsText.text = "Downloads: " + totalInstalls;
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Debug.LogError("Error parsing Supabase count response: " + ex.Message + " Raw: " + json);
                         }
                     }
                 }
