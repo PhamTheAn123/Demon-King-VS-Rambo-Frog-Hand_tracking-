@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 2e1ab9fa6e0b7f94cb2ff0b9af4ade6b
+=======
+guid: 270aa8c684528e1498f6e3c97ff56ebc
+>>>>>>> 2b7db90 (sua feedback ko popup nua)
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
