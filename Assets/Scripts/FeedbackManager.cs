@@ -192,6 +192,7 @@ public class FeedbackManager : MonoBehaviour
     IEnumerator Start()
     {
         FindOrCreateCanvas();
+        ClosePanel();
         yield return StartCoroutine(LoadSupabaseConfig());
         CheckAndRegisterInstall();
     }
