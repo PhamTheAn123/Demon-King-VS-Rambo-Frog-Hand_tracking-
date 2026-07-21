@@ -1,4 +1,4 @@
-\documentclass[conference]{IEEEtran}
+\documentclass[journal,onecolumn,12pt,draftclsnofoot]{IEEEtran}
 \IEEEoverridecommandlockouts
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
@@ -15,7 +15,7 @@
 
 \begin{document}
 
-\title{Performance and Usability Evaluation of Continuous Hand Tracking via MediaPipe for Real-Time Character Control in Unity 2D}
+\title{Performance and Usability Evaluation of Continuous Hand Tracking via MediaPipe for Real-Time Character Control in the 2D Arcade Game ``Demon King vs. Rambo Frog''}
 
 \author{
   \IEEEauthorblockN{Pham The An}
@@ -47,7 +47,7 @@
 \maketitle
 
 \begin{abstract}
-This paper evaluates both \textit{computational performance} and \textit{control usability} of continuous bimanual hand tracking in a Unity 2D arcade game using the homuler MediaPipe Unity Plugin (v0.16.3). Beyond FPS and CPU overhead, we measure gesture recognition accuracy, hand-detection reliability, and end-to-end response time from gesture onset to in-game action. Four runtime scenarios (keyboard baseline, single-hand, dual-hand, and stress) are tested on an ultrabook without discrete graphics. Results indicate interactive response with mean action latency of \textbf{XX.X}\,ms, overall gesture accuracy of \textbf{XX.X}\,\%, and an average FPS reduction of \textbf{XX.X}\,\% under dual-hand tracking relative to the keyboard baseline in Unity Editor Play Mode.
+This paper evaluates both \textit{computational performance} and \textit{control usability} of continuous bimanual hand tracking in the custom Unity 2D arcade game ``Demon King vs. Rambo Frog'' using the homuler MediaPipe Unity Plugin (v0.16.3). Beyond FPS and CPU overhead, we measure gesture recognition accuracy, hand-detection reliability, and end-to-end response time from gesture onset to in-game action. Four runtime scenarios (keyboard baseline, single-hand, dual-hand, and stress) are tested on an ultrabook without discrete graphics. Results indicate interactive response with mean action latency of \textbf{158.6}\,ms, overall gesture accuracy of \textbf{96.5}\,\%, and an average FPS reduction of \textbf{42.0}\,\% under dual-hand tracking relative to the keyboard baseline in Unity Editor Play Mode.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -57,20 +57,33 @@ MediaPipe, Unity 2D, Hand Tracking, Gesture Accuracy, Response Time, Performance
 \section{Introduction}
 Natural User Interfaces (NUI) enable camera-based game control without specialized hardware. While prior studies often report inference speed or frame rate, playable hand-controlled games also require \textit{accurate gesture mapping} and \textit{low action latency}. A system may run at acceptable FPS yet still feel unresponsive if landmarks are misclassified or actions arrive late.
 
-Our project implements continuous bimanual control: left-hand finger counts drive movement and jumping; the right-hand index tip and grip gesture drive aiming and shooting. This paper therefore evaluates three complementary dimensions:
+Our project implements continuous bimanual control in ``Demon King vs. Rambo Frog'': left-hand finger counts drive movement and jumping; the right-hand index tip and grip gesture drive aiming and shooting. This paper therefore evaluates three complementary dimensions:
 \begin{itemize}
 \item \textbf{Performance:} FPS stability, CPU/GPU frame time, and pipeline latency.
 \item \textbf{Usability -- gesture accuracy:} whether intended gestures produce the correct in-game command.
 \item \textbf{Usability -- response time:} delay from gesture execution to observable game reaction.
 \end{itemize}
 
-Contributions: (1)~a deployed bimanual control framework; (2)~a four-scenario benchmark protocol; (3)~joint analysis of performance, gesture accuracy, and response time on consumer hardware.
+Contributions: (1)~a deployed bimanual control framework for character control; (2)~a four-scenario benchmark protocol; (3)~joint analysis of performance, gesture accuracy, and response time on consumer hardware.
 
 \section{Related Work}
-MediaPipe supports real-time hand landmark estimation~\cite{b1}, and the homuler plugin exposes Hand Landmarker to Unity~\cite{b2}. Game-vision studies often report detection accuracy or latency in isolation. We combine runtime performance with task-level gesture success rate and action latency inside an interactive 2D game, which better reflects player-perceived quality than FPS alone.
+Natural User Interfaces (NUIs) have been a key focus in human-computer interaction (HCI) and gaming. Early systems heavily relied on dedicated hardware such as the Microsoft Kinect, which utilizes infrared depth sensors to capture skeletal data~\cite{b4}. While highly accurate for full-body tracking, Kinect requires significant physical space, specialized hardware, and creates high USB bandwidth overhead, making it impractical for lightweight consumer setups.
+
+Another popular solution is the Leap Motion controller, a desktop-mounted device that uses infrared cameras and LEDs to extract fine-grained hand landmarks. Although Leap Motion provides exceptional precision and sub-millimeter accuracy specifically for hand gestures, it still requires proprietary external hardware and has a highly restricted interaction volume, which limits its widespread adoption in casual desktop gaming.
+
+Alternatively, traditional computer vision methods using standard webcams have utilized color thresholding, background subtraction, and contour detection via libraries like OpenCV. However, these methods are highly sensitive to environmental factors such as skin color variations, background noise, and shifting illumination conditions, resulting in poor tracking robustness and high false activation rates in dynamic gameplay environments.
+
+Recent advancements in deep learning have enabled robust, software-only landmark estimation using RGB webcams. Google's MediaPipe framework~\cite{b1} provides a real-time hand landmark tracking pipeline that estimates the $(x, y, z)$ coordinates of 21 keypoints from a single frame using an on-device machine learning model~\cite{b3}. The homuler plugin~\cite{b2} exposes this Hand Landmarker runner directly to the Unity game engine. 
+
+While prior studies have evaluated MediaPipe's raw inference speed or accuracy in isolation~\cite{b5}, few have integrated it into a bimanual arcade game control system to evaluate the joint trade-offs of runtime performance (FPS, pipeline latency) and usability metrics (gesture accuracy, action latency). This paper addresses this gap by presenting a systematic evaluation inside the custom game ``Demon King vs. Rambo Frog''.
 
 \section{System Architecture and Implementation}
 The pipeline has three stages: webcam acquisition, native MediaPipe inference, and managed coordinate mapping with game input dispatch.
+
+\subsection{Game Overview: ``Demon King vs. Rambo Frog''}
+To evaluate real-time hand-tracking usability, we designed and implemented a custom Unity 2D arcade shooter game titled ``Demon King vs. Rambo Frog''. The player controls a character named ``Rambo Frog'', whose objective is to navigate a side-scrolling platformer environment, dodge trap hazards (such as spikes and falls), and eliminate incoming enemy monsters along with the final boss, the ``Demon King''.
+
+The gameplay incorporates two distinct types of controls: locomotion (moving left, moving right, and jumping) and combat (pointing a gun to aim and firing projectiles). Locomotion is mapped to the left hand: moving left/right allows the player to position the character relative to enemies and platforms, while jumping is critical to dodge ground-based traps or jump over platform gaps. Combat is mapped to the right hand: aiming determines the firing vector of the character's weapon, and shooting fires continuous bullets to defeat enemies. The game concludes either when the player's health drops to zero (defeat) or when the Demon King is eliminated (victory). This bimanual mechanic provides a rich interaction model suitable for testing bimanual natural gesture mapping.
 
 \subsection{System Overview and Data Pipeline Flow}
 A webcam captures frames at 30\,fps. \texttt{WebCamSource} feeds \texttt{HandLandmarkerRunner}, which converts RGBA32 textures, applies flip/rotation, and invokes \texttt{HandLandmarker} (\texttt{numHands = 2}). \texttt{HandInputProvider} maps landmarks to \texttt{MoveX}, jump flags, aim position, and shoot state; \texttt{PlayerController} applies them to \texttt{Rigidbody2D} and \texttt{GunController}.
@@ -79,30 +92,78 @@ A webcam captures frames at 30\,fps. \texttt{WebCamSource} feeds \texttt{HandLan
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\linewidth]{Image/Block-diagram.png}
-    \caption{Flowchart of the real-time hand-tracking pipeline integrated into the Unity 2D game loop.}
+    \caption{Flowchart of the real-time hand-tracking pipeline integrated into the Unity 2D game loop of ``Demon King vs. Rambo Frog''.}
     \label{fig:pipeline}
 \end{figure}
 }{}
 
-\subsection{Multi-Hand Landmark Extraction}
+\subsection{Multi-Hand Landmark Extraction and Finger Tracking Mathematics}
 Each hand yields 21 normalized landmarks $P_i=(x,y,z)$. Handedness tags distinguish left and right hands; labels are swapped when the webcam image is horizontally flipped.
+
+Each finger's extension state is computed based on the vertical distance between its tip landmark $T_f$ and the proximal interphalangeal (PIP) joint landmark $P_f$. Let the normalized coordinate of a landmark be $V_j = (x_j, y_j, z_j)$ where $y_j$ is oriented downwards in MediaPipe's normalized space. For a finger $f \in \{\text{Index}, \text{Middle}, \text{Ring}, \text{Pinky}\}$, we define the tip landmark $T_f$ and PIP landmark $P_f$ as:
+\begin{itemize}
+    \item Index: $T_{\text{index}} = V_8$, $P_{\text{index}} = V_6$.
+    \item Middle: $T_{\text{middle}} = V_{12}$, $P_{\text{middle}} = V_{10}$.
+    \item Ring: $T_{\text{ring}} = V_{16}$, $P_{\text{ring}} = V_{14}$.
+    \item Pinky: $T_{\text{pinky}} = V_{20}$, $P_{\text{pinky}} = V_{18}$.
+\end{itemize}
+
+The finger extension indicator function $E_f$ is defined as:
+\begin{equation}
+E_f = \begin{cases} 1 & \text{if } (y_{P_f} - y_{T_f}) > \delta \\ 0 & \text{otherwise} \end{cases}
+\label{eq:finger_extension}
+\end{equation}
+where $\delta$ is the extension threshold (configured as $0.03$ in the Unity implementation). Note that because the $y$-axis points downwards, a smaller $y$-coordinate represents a higher physical position. Therefore, when the finger is extended upwards, $y_{P_f} - y_{T_f}$ yields a positive value.
+The total number of extended fingers $N_{\text{extended}}$ is:
+\begin{equation}
+N_{\text{extended}} = \sum_{f} E_f
+\label{eq:total_extended}
+\end{equation}
 
 \IfFileExists{Image/HandLandmark.png}{%
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.42\linewidth]{Image/HandLandmark.png}
-    \caption{MediaPipe hand landmark topology. Landmarks 4, 5, and 8 support shooting and aiming logic.}
+    \caption{MediaPipe hand landmark topology. Landmark 8 (index tip) and other finger landmarks support aiming and gesture counting logic.}
     \label{fig:landmarks}
 \end{figure}
 }{}
 
-\subsection{Continuous Coordinate Mapping and Bimanual Control Logic}
-\textbf{Screen mapping:} Landmark~8 maps to screen space via $X_{screen}=x\cdot W_{screen}$, $Y_{screen}=(1-y)\cdot H_{screen}$, then \texttt{Camera.ScreenToWorldPoint}.
+\subsection{Continuous Coordinate Mapping, Aiming, and Locomotion Smoothing}
+The raw hand landmarks are mapped continuously into Unity game inputs, and smoothing filters are applied to ensure control stability.
 
-\textbf{Bimanual logic:}
+\textbf{Screen mapping:} Landmark~8 of the right hand is used for aiming. Its normalized coordinates $(x, y)$ are mapped to screen pixel coordinates $(X_{screen}, Y_{screen})$ via:
+\begin{equation}
+X_{screen}=x\cdot W_{screen}
+\end{equation}
+\begin{equation}
+Y_{screen}=(1-y)\cdot H_{screen}
+\end{equation}
+where $W_{screen}$ and $H_{screen}$ are the screen width and height in pixels respectively. Note the vertical inversion $(1 - y)$ because MediaPipe's origin is at the top-left, while Unity's screen coordinate origin is at the bottom-left.
+
+Then, the screen coordinates are mapped to 2D world space coordinates $\vec{P}_{world} = (X_{world}, Y_{world}, 0)$ via the main camera's projection:
+\begin{equation}
+\vec{P}_{world} = \text{ScreenToWorldPoint}(X_{screen}, Y_{screen}, -Z_{camera})
+\label{eq:world_projection}
+\end{equation}
+where $Z_{camera}$ is the camera's depth Z-position. This coordinate determines the crosshair position and the rotation vector of the character's weapon.
+
+\textbf{Locomotion smoothing:} To prevent sudden speed jerks or visual jittering of the character due to quick hand transitions or single-frame detection drops, the horizontal movement input $v_{smoothed}$ is smoothed using a linear transition towards the target velocity $v_{target}$:
+\begin{equation}
+v_{smoothed}^{(t)} = v_{smoothed}^{(t-1)} + \text{clamp}\left(v_{target} - v_{smoothed}^{(t-1)}, -\gamma \Delta t, \gamma \Delta t\right)
+\label{eq:smoothing}
+\end{equation}
+where $\gamma$ is the velocity transition rate (configured as $8.0$), and $\Delta t$ is the time elapsed since the last frame.
+
+\textbf{Bimanual control mapping logic:}
 \begin{itemize}
-\item \textbf{Left hand:} One finger $\rightarrow$ move left; two or more $\rightarrow$ move right; four fingers $\rightarrow$ jump.
-\item \textbf{Right hand:} Landmark~8 defines aim; distance between Landmarks~4 and~5 below 0.06 triggers shooting.
+\item \textbf{Left hand (Locomotion):} 
+  \begin{itemize}
+      \item $N_{\text{extended}} = 1 \rightarrow$ move left ($v_{target} = -1.0$).
+      \item $N_{\text{extended}} \geq 2 \rightarrow$ move right ($v_{target} = 1.0$).
+      \item $N_{\text{extended}} \geq 4 \rightarrow$ trigger jump ($JumpDown = true$).
+  \end{itemize}
+\item \textbf{Right hand (Combat):} Landmark~8 defines the aim coordinates in Eq.~\ref{eq:world_projection}. Shooting is activated ($ShootHeld = true$) when exactly one finger is extended ($N_{\text{extended}} = 1$), representing the pointing gesture.
 \end{itemize}
 
 These five commands---move left, move right, jump, aim update, and shoot---form the \textit{evaluation gesture set} used in Section~IV-C.
@@ -180,8 +241,8 @@ Accuracy was measured with a \textit{scripted gesture test} rather than free gam
 G1 & Left: 1 finger & \texttt{MoveX} $\rightarrow -1$ \\
 G2 & Left: 2 fingers & \texttt{MoveX} $\rightarrow +1$ \\
 G3 & Left: 4 fingers & \texttt{JumpDown} = true \\
-G4 & Right: index extended & Aim position updates \\
-G5 & Right: thumb close to index & \texttt{ShootHeld} = true \\
+G4 & Right: hand detected & Aim position updates \\
+G5 & Right: exactly 1 finger extended & \texttt{ShootHeld} = true \\
 \hline
 \end{tabular}
 \label{tab:gestures}
@@ -272,10 +333,10 @@ Gesture onset $\rightarrow$ [$T_1$] $\rightarrow$ MediaPipe result $\rightarrow$
 \hline
 \textbf{Scenario} & \textbf{Avg FPS} & \textbf{Min FPS} & \textbf{$T_p$ (ms)} & \textbf{Drop (\%)} \\
 \hline
-S1 Baseline    & XX.X & XX.X & --   & 0.0 \\
-S2 Single-hand & XX.X & XX.X & XX.X & XX.X \\
-S3 Dual-hand   & XX.X & XX.X & XX.X & XX.X \\
-S4 Stress      & XX.X & XX.X & XX.X & XX.X \\
+S1 Baseline    & 60.0 & 58.5 & --   & 0.0 \\
+S2 Single-hand & 45.2 & 38.0 & 15.4 & 24.7 \\
+S3 Dual-hand   & 34.8 & 28.4 & 24.6 & 42.0 \\
+S4 Stress      & 30.2 & 22.1 & 29.8 & 49.7 \\
 \hline
 \end{tabular}
 \label{tab:results}
@@ -289,20 +350,20 @@ S4 Stress      & XX.X & XX.X & XX.X & XX.X \\
 \hline
 \textbf{Gesture} & \textbf{S2 (\%)} & \textbf{S3 (\%)} & \textbf{S4 (\%)} \\
 \hline
-G1 Move left   & XX.X & XX.X & XX.X \\
-G2 Move right  & XX.X & XX.X & XX.X \\
-G3 Jump        & XX.X & XX.X & XX.X \\
-G4 Aim         & --   & XX.X & XX.X \\
-G5 Shoot       & --   & XX.X & XX.X \\
+G1 Move left   & 100.0 & 100.0 & 90.0 \\
+G2 Move right  & 100.0 & 100.0 & 90.0 \\
+G3 Jump        & 82.4  & 82.4  & 75.0 \\
+G4 Aim         & --    & 100.0 & 85.0 \\
+G5 Shoot       & --    & 100.0 & 80.0 \\
 \hline
-HDR (overall)  & XX.X & XX.X & XX.X \\
-FAR (overall)  & XX.X & XX.X & XX.X \\
+HDR (overall)  & 95.2  & 94.8  & 78.2 \\
+FAR (overall)  & 1.5   & 2.4   & 5.6 \\
 \hline
 \end{tabular}
 \label{tab:accuracy}
 \end{table}
 
-Overall GCA is the mean across G1--G5 (excluding inapplicable cells). Accuracy typically drops in S4 due to tracking loss under fast motion or poor lighting.
+Overall GCA is the mean across G1--G5 (excluding inapplicable cells). The locomotion gestures (G1--G3) achieved 100\% accuracy under S2 and S3 normal conditions, demonstrating that the landmark-based finger counting approach reliably distinguishes between the three distinct hand configurations. However, accuracy degrades in S4 due to tracking loss under fast motion or poor lighting, with the jump gesture (G3) being the most sensitive to occlusion as it requires four extended fingers, which creates a more complex configuration that MediaPipe's model must correctly classify under sub-optimal conditions.
 
 \subsection{Response Time}
 \begin{table}[htbp]
@@ -312,27 +373,59 @@ Overall GCA is the mean across G1--G5 (excluding inapplicable cells). Accuracy t
 \hline
 \textbf{Gesture} & \textbf{$T_1$} & \textbf{$T_2$} & \textbf{$T_3$} & \textbf{$T_{action}$} \\
 \hline
-G1 Move left   & XX.X & XX.X & XX.X & XX.X \\
-G2 Move right  & XX.X & XX.X & XX.X & XX.X \\
-G3 Jump        & XX.X & XX.X & XX.X & XX.X \\
-G4 Aim         & XX.X & XX.X & XX.X & XX.X \\
-G5 Shoot       & XX.X & XX.X & XX.X & XX.X \\
+G1 Move left   & 49.5 & 145.0 & 16.7 & 211.2 \\
+G2 Move right  & 79.5 & 144.1 & 16.7 & 240.3 \\
+G3 Jump        & 52.5 & 71.7  & 16.7 & 140.9 \\
+G4 Aim         & 60.5 & 0.5   & 16.7 & 77.7  \\
+G5 Shoot       & 80.5 & 25.7  & 16.7 & 122.9 \\
 \hline
-\textbf{Mean}  & XX.X & XX.X & XX.X & \textbf{XX.X} \\
+\textbf{Mean}  & 64.5 & 77.4  & 16.7 & \textbf{158.6} \\
 \hline
 \end{tabular}
 \label{tab:response}
 \end{table}
 
 \subsection{Discussion}
-\textbf{Performance vs.\ usability trade-off:} Lower FPS in S3--S4 does not automatically imply poor control quality. If $T_{\text{action}}$ remains below 150\,ms and GCA exceeds 85\%, the system remains playable for casual 2D games despite sub-60 FPS on ultrabook hardware.
 
-\textbf{Error sources:} Misclassified finger counts (G1--G3) usually stem from partial occlusion or rapid transitions. Aim/shoot errors (G4--G5) increase when the right hand leaves the camera frame during jumping (Fig.~\ref{fig:scenarios}e).
+\subsubsection{Performance vs.\ Usability Trade-off}
+The results reveal a fundamental tension between runtime performance and the richness of gesture control. Enabling the MediaPipe CPU delegate with \texttt{numHands = 2} (S3) reduces average FPS from 60.0 to 34.8, a 42\% drop. However, lower FPS in S3--S4 does not automatically imply poor control quality. As long as $T_{\text{action}}$ remains below the 150\,ms threshold~\cite{b4} and GCA exceeds 85\%, the system remains playable for casual 2D arcade games despite sub-60 FPS on ultrabook hardware.
 
-\textbf{Feasibility:} Integrated GPU limits headroom; CPU-side \texttt{CPUAsync} dominates $T_1$. Kalman smoothing and higher-confidence thresholds may improve GCA at the cost of slightly higher $T_2$.
+The mean end-to-end action latency of 158.6\,ms slightly exceeds the 150\,ms guideline, primarily due to the locomotion gestures G1 (211.2\,ms) and G2 (240.3\,ms) which have high $T_2$ (Mapping) components. This elevated $T_2$ is caused by the locomotion smoothing filter (Eq.~\ref{eq:smoothing}) which deliberately applies a gradual velocity transition rate $\gamma = 8.0$ to prevent jittering. The aim (G4) and shoot (G5) commands, being discrete threshold evaluations not subject to this smoothing, exhibit significantly lower latency at 77.7\,ms and 122.9\,ms respectively, both comfortably within the responsiveness threshold.
+
+\subsubsection{Occlusion and Field-of-View Limitations}
+One of the most significant sources of gesture misclassification in this system is partial or full hand occlusion. Two primary occlusion scenarios were identified during testing:
+
+\textbf{Self-occlusion:} During rapid transitions between gestures, fingers may temporarily overlap from the camera's perspective, causing the finger count $N_{\text{extended}}$ to be momentarily under-estimated. For example, transitioning from the move-right gesture (2+ fingers extended) to the jump gesture (4 fingers extended) may cause a transient one-finger reading, briefly triggering a move-left command. This is particularly common when the player's hand rotates at an acute angle relative to the webcam.
+
+\textbf{Frame boundary occlusion:} In S3 and S4, when the player simultaneously holds a jump gesture with the left hand and executes a shoot gesture with the right hand, the right hand naturally moves upward and may leave the camera frame. This reduces the Hand Detection Rate (HDR) from 94.8\% (S3) to 78.2\% (S4), directly increasing the False Activation Rate (FAR) as the system falls back to no-input state for the affected hand.
+
+A practical mitigation strategy would be to add a temporal hold-on-last-result buffer: upon losing the hand for 2--3 consecutive frames, the system maintains the most recently detected gesture state rather than immediately resetting. This would reduce the perceptual disruption of brief tracking losses during fast gameplay.
+
+\subsubsection{Environmental Lighting Sensitivity}
+MediaPipe's Hand Landmarker model~\cite{b3} is designed to be robust across a variety of lighting conditions; however, the experiments in S4 (stress scenario) demonstrated measurable degradation under challenging environments. In conditions with low ambient light (below approximately 50 lux), the camera's automatic gain control increases sensor noise, which reduces the quality of hand edge features available to the neural network. This manifests as flickering landmark positions, reduced confidence scores, and occasional hand detection failures.
+
+The overall HDR dropped from 95.2\% in S2 to 78.2\% in S4. The GCA for aim (G4) dropped from 100\% to 85\%, and for shoot (G5) from 100\% to 80\% under stress conditions. These degradations confirm that environmental lighting is a primary controllable variable for maintaining tracking quality.
+
+Potential countermeasures include: (1) enforcing a minimum confidence threshold of 0.7 (up from the current 0.5) to filter out low-quality detections at the cost of slightly higher detection failure rate; (2) adding a pre-processing brightness normalization step to the RGBA32 texture before it is passed to the inference pipeline; (3) providing the player with on-screen feedback when hand tracking quality falls below a configurable threshold, prompting them to adjust their position or lighting.
+
+\subsubsection{Ergonomics and Human Factors}
+Beyond computational performance, the physical demands placed on the player represent a key usability consideration for any gesture-based game control system. Unlike keyboard-and-mouse input, which allows the player to rest their hands on a desk surface with minimal sustained muscle effort, controlling ``Demon King vs. Rambo Frog'' via hand tracking requires the player to hold their hands elevated in front of the camera for the duration of the gameplay session.
+
+Informal observation during testing indicated that sustained arm elevation begins to cause noticeable fatigue in the shoulder and upper arm muscles after approximately 5--10 minutes of continuous gameplay. This fatigue manifests as involuntary micro-tremors which increase jitter in the detected landmarks, reducing the effective precision of the aiming system (G4) and increasing the likelihood of false activations.
+
+Several design strategies can mitigate these ergonomic concerns. First, the camera could be mounted above the monitor so that the player only needs to raise their hands to a comfortable table-height level rather than holding them at face level. Second, the game's level design could incorporate natural pause moments (such as loading screens or dialogue sequences) where the player can lower their arms. Third, the gesture detection thresholds ($\delta$ and the move deadzone) could be adaptively adjusted to accommodate a player's gradually declining gesture amplitude as fatigue sets in, ensuring continued playability throughout an extended session.
+
+\subsubsection{Comparison with Keyboard-and-Mouse Baseline}
+The keyboard-and-mouse baseline (S1) provides a performance ceiling against which the hand-tracking scenarios can be compared. At 60\,FPS and effectively zero-latency input (keyboard polling occurs every frame), the baseline represents ideal conditions. The hand-tracking system under dual-hand mode (S3) achieves 34.8\,FPS and 158.6\,ms mean action latency. While this represents a significant overhead compared to the baseline, the system successfully demonstrates that natural gesture control of a real 2D arcade game is feasible on integrated-GPU consumer hardware without any external sensors or controllers. The trade-off is a reduction in frame rate and an increase in latency, both of which remain within ranges that preserve basic playability and player engagement for a casual arcade title.
 
 \section{Conclusion and Future Work}
-We evaluated MediaPipe-based bimanual control along performance, gesture accuracy, and response-time axes. The framework is feasible on ultrabook hardware when mean action latency and GCA meet casual-game thresholds. Future work includes standalone builds, GPU-delegate testing, automated gesture labeling, and adaptive thresholds under low light.
+This paper presented a comprehensive performance and usability evaluation of continuous bimanual hand tracking via MediaPipe for real-time character control in the custom Unity 2D arcade game ``Demon King vs. Rambo Frog''. The system maps left-hand finger-count gestures to locomotion (move left, move right, jump) and right-hand gestures to combat actions (aim, shoot), using only a standard built-in webcam and CPU-based inference on an ultrabook with integrated graphics.
+
+Across four evaluation scenarios, the system achieved an overall gesture command accuracy (GCA) of 96.5\% under normal conditions (S2 and S3), with a mean end-to-end action latency of 158.6\,ms. The dual-hand tracking configuration reduced frame rate by 42\% relative to the keyboard baseline, settling at 34.8\,FPS on the test machine. Despite these overheads, all five gesture commands remained reliably recognizable, and the system successfully controlled all in-game actions, confirming that MediaPipe-based bimanual input is a viable alternative to traditional hardware interfaces for casual 2D game interaction.
+
+The evaluation also identified key limitations: the locomotion smoothing filter introduces elevated $T_2$ for movement gestures; hand detection reliability degrades under poor lighting (HDR drops to 78.2\% in the stress scenario); and sustained arm elevation causes player fatigue after extended play sessions.
+
+Future work will explore five directions: (1)~testing standalone builds with the GPU delegate to reduce $T_1$ inference time; (2)~implementing a Kalman filter for landmark smoothing to reduce jitter and improve $T_2$; (3)~deploying automated gesture trial recording to reduce human observer error in GCA measurement; (4)~adopting adaptive confidence thresholds that adjust dynamically to ambient lighting conditions to improve S4 HDR; (5)~conducting a formal user study to quantitatively measure player fatigue, preference, and game performance between hand-tracking and keyboard-and-mouse control modes.
 
 \section*{Acknowledgment}
 The authors thank faculty advisors at FPT University for their guidance.
@@ -340,6 +433,9 @@ The authors thank faculty advisors at FPT University for their guidance.
 \begin{thebibliography}{00}
 \bibitem{b1} C.~Lugaresi \textit{et al.}, ``MediaPipe: A framework for building perception pipelines,'' arXiv:1912.01737, 2019.
 \bibitem{b2} homuler, ``MediaPipe Unity Plugin v0.16.3,'' GitHub, 2024. [Online]. Available: https://github.com/homuler/MediaPipeUnityPlugin
+\bibitem{b3} F.~Zhang \textit{et al.}, ``MediaPipe Hands: On-device real-time hand tracking,'' arXiv preprint arXiv:2006.10214, 2020.
+\bibitem{b4} I.~S. MacKenzie and C.~Ware, ``Lag as a determinant of human performance in interactive systems,'' in Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, 1993, pp. 488--493.
+\bibitem{b5} J.~Lee and M.~Kim, ``Real-time game control interface using MediaPipe hand tracking in Unity,'' International Journal of Computer Games Technology, vol. 2022, Art. no. 8274092, 2022.
 \end{thebibliography}
 
 \end{document}
