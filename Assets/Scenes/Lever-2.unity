@@ -1530,6 +1530,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3504cf32e897ced4a9b86a606e3b7181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1038410769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1038410771}
+  - component: {fileID: 1038410770}
+  m_Layer: 0
+  m_Name: Calculator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1038410770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038410769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a1b96263f22c14ca4add5e5ef4701d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GestureEvaluationLogger
+  handInput: {fileID: 39781439}
+  runner: {fileID: 39781440}
+  responseWindowMs: 500
+  moveThreshold: 0.5
+  logToConsole: 1
+--- !u!4 &1038410771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038410769}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1065408539 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 59026167338635267, guid: af11e17cd3e7c364e8478edb10644cb3, type: 3}
@@ -78208,6 +78257,7 @@ SceneRoots:
   - {fileID: 1885850617}
   - {fileID: 1104055308}
   - {fileID: 1973888297}
+  - {fileID: 1038410771}
   - {fileID: 39781441}
   - {fileID: 1867213745}
   - {fileID: 1015554070}

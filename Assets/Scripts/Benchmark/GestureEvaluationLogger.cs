@@ -196,8 +196,10 @@ public class GestureEvaluationLogger : MonoBehaviour
         Debug.Log($"[GestureEval] Saved: {path}");
     }
 
+    private static readonly System.Diagnostics.Stopwatch _stopwatch = System.Diagnostics.Stopwatch.StartNew();
+
     private static double NowMs()
     {
-        return Time.realtimeSinceStartupAsDouble * 1000.0;
+        return _stopwatch.Elapsed.TotalMilliseconds;
     }
 }
