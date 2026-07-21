@@ -3310,7 +3310,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278512639
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3323,7 +3323,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 0
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -5449,11 +5449,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b><color=#00FFFF> TAY TR\xC1I (Di Chuy\u1EC3n & Nh\u1EA3y):</color></b>\n\u2022
+  m_text: "<b><color=#00FFFF>\U0001F91A TAY TR\xC1I (Di Chuy\u1EC3n & Nh\u1EA3y):</color></b>\n\u2022
     <b>Du\u1ED7i 1 ng\xF3n tr\u1ECF:</b> Di chuy\u1EC3n sang <b>TR\xC1I</b>\n\u2022
     <b>Du\u1ED7i 2 ng\xF3n tr\u1EDF l\xEAn:</b> Di chuy\u1EC3n sang <b>PH\u1EA2I</b>\n\u2022
-    <b>X\xF2e b\xE0n tay (4-5 ng\xF3n):</b> <b>NH\u1EA2Y</b>\n\n<b><color=#FF5555>TAY
-    PH\u1EA2I (Ng\u1EAFm & B\u1EAFn):</color></b>\n\u2022 <b>Di chuy\u1EC3n ng\xF3n
+    <b>X\xF2e b\xE0n tay (4-5 ng\xF3n):</b> <b>NH\u1EA2Y</b>\n\n<b><color=#FF5555>\U0001F3AF
+    TAY PH\u1EA2I (Ng\u1EAFm & B\u1EAFn):</color></b>\n\u2022 <b>Di chuy\u1EC3n ng\xF3n
     tr\u1ECF:</b> \u0110i\u1EC1u khi\u1EC3n <b>T\xE2m Ng\u1EAFm (Aim)</b>\n\u2022
     <b>Du\u1ED7i 1 ng\xF3n tr\u1ECF:</b> <b>B\u1EAEN (Shoot)</b>"
   m_isRightToLeft: 0
@@ -5477,7 +5477,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 0
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -6069,7 +6069,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 0
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
