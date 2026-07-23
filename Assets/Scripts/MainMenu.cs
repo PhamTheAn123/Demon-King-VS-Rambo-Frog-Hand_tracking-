@@ -5,6 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     [Header("UI Panels")]
     [SerializeField] private GameObject instructionsPanel;
+    [SerializeField] private GameObject settingsPanel;
 
     private void Start()
     {
@@ -13,9 +14,10 @@ public class MainMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
 
         if (instructionsPanel != null)
-        {
             instructionsPanel.SetActive(false);
-        }
+
+        if (settingsPanel != null)
+            settingsPanel.SetActive(false);
     }
 
     public void PlayGame()
@@ -26,17 +28,27 @@ public class MainMenu : MonoBehaviour
     public void OpenInstructions()
     {
         if (instructionsPanel != null)
-        {
             instructionsPanel.SetActive(true);
-        }
     }
 
     public void CloseInstructions()
     {
         if (instructionsPanel != null)
-        {
             instructionsPanel.SetActive(false);
-        }
+    }
+
+    /// <summary>Mở panel cài đặt âm thanh từ MainMenu.</summary>
+    public void OpenSettings()
+    {
+        if (settingsPanel != null)
+            settingsPanel.SetActive(true);
+    }
+
+    /// <summary>Đóng panel cài đặt âm thanh từ MainMenu.</summary>
+    public void CloseSettings()
+    {
+        if (settingsPanel != null)
+            settingsPanel.SetActive(false);
     }
 
     public void QuitGame()
@@ -44,4 +56,3 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 }
-

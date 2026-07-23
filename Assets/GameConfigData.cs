@@ -10096,6 +10096,7 @@ namespace DemonKingVSRamboFrog.Config
                     MaxStackSize = 1,
                 }
             },
+        };
 
         #endregion
     };
