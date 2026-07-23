@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject settingsPanel;
 
     public bool IsPausePanelActive => pauseMenu != null && pauseMenu.activeSelf;
 
@@ -26,6 +27,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = true; // Giữ ẩn con trỏ chuột hệ thống
         Cursor.lockState = CursorLockMode.None; // Giải phóng chuột để di chuyển tự do
     }
+
     public void Home()
     {
         Cursor.visible = true;
@@ -33,16 +35,36 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
+
     public void Exit()
     {
+        // Đóng cả settings panel nếu đang mở
+        if (settingsPanel != null)
+            settingsPanel.SetActive(false);
+
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         Cursor.visible = false;
     }
+
     public void Restart()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
         Time.timeScale = 1;
         SceneManager.LoadScene(currentSceneName);
+    }
+
+    /// <summary>Mở panel cài đặt âm thanh từ PauseMenu.</summary>
+    public void OpenSettings()
+    {
+        if (settingsPanel != null)
+            settingsPanel.SetActive(true);
+    }
+
+    /// <summary>Đóng panel cài đặt âm thanh, quay lại PauseMenu.</summary>
+    public void CloseSettings()
+    {
+        if (settingsPanel != null)
+            settingsPanel.SetActive(false);
     }
 }
