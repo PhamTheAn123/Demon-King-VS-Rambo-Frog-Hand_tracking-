@@ -9,37 +9,11 @@ using TMPro;
 
 public class FeedbackManager : MonoBehaviour
 {
-    public enum DatabaseType
-    {
-        GoogleFormPOST,
-        Supabase
-    }
-
-    [Header("Database Configuration")]
-    [Tooltip("Choose which database to send player feedback and installs to.")]
-    public DatabaseType databaseType = DatabaseType.Supabase;
-
-    [Tooltip("Google Form POST URL. Example: https://docs.google.com/forms/d/e/1FAIpQLSf.../formResponse")]
-    public string googleFormUrl = "https://docs.google.com/forms/d/1OX2LV8CJ76GPV_cgY68rUU0i-yddJ-rnlNRN1zImR6s/formResponse";
-
-    [Tooltip("Google Sheet Sharing URL (Must be set to 'Anyone with the link can view').")]
-    public string googleSheetUrl = "";
-
     [Header("Supabase Configuration")]
     [Tooltip("Supabase Project URL (Auto-loaded from StreamingAssets/supabase_config.json at runtime).")]
     public string supabaseUrl = "LOADED_FROM_CONFIG";
     [Tooltip("Supabase Anon / Publishable Key (Auto-loaded from StreamingAssets/supabase_config.json at runtime).")]
     public string supabaseAnonKey = "LOADED_FROM_CONFIG";
-
-    [Header("Google Form Entry IDs (Only if using Google Form)")]
-    [Tooltip("Google Form Entry ID for Player Name (e.g. entry.123456789)")]
-    public string nameEntryId = "entry.1283144979";
-    [Tooltip("Google Form Entry ID for Rating (e.g. entry.2000002)")]
-    public string ratingEntryId = "entry.543443759";
-    [Tooltip("Google Form Entry ID for Feedback Message (e.g. entry.3000003)")]
-    public string feedbackEntryId = "entry.2042246276";
-    [Tooltip("Google Form Entry ID for Device/Install Event (e.g. entry.4000004)")]
-    public string installEventEntryId = "entry.1000004";
 
     [System.Serializable]
     public class VersionInfo
@@ -408,73 +382,47 @@ public class FeedbackManager : MonoBehaviour
 
     private IEnumerator SendFeedbackCoroutine(FeedbackData data)
     {
-        if (databaseType == DatabaseType.Supabase)
+        string url = supabaseUrl.Trim();
+        if (!url.EndsWith("/")) url += "/";
+        url += "rest/v1/feedback";
+
+        SupabaseFeedbackData dbData = new SupabaseFeedbackData
         {
-            string url = supabaseUrl.Trim();
-            if (!url.EndsWith("/")) url += "/";
-            url += "rest/v1/feedback";
+            player_name = data.playerName,
+            rating = data.rating,
+            feedback_text = data.feedbackText,
+            device_id = data.deviceId
+        };
 
-            SupabaseFeedbackData dbData = new SupabaseFeedbackData
+        string json = JsonUtility.ToJson(dbData);
+        using (UnityWebRequest request = new UnityWebRequest(url, "POST"))
+        {
+            byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
+            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("apikey", supabaseAnonKey);
+            request.SetRequestHeader("Authorization", "Bearer " + supabaseAnonKey);
+
+            yield return request.SendWebRequest();
+
+            if (request.result == UnityWebRequest.Result.Success)
             {
-                player_name = data.playerName,
-                rating = data.rating,
-                feedback_text = data.feedbackText,
-                device_id = data.deviceId
-            };
-
-            string json = JsonUtility.ToJson(dbData);
-            using (UnityWebRequest request = new UnityWebRequest(url, "POST"))
-            {
-                byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
-                request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-                request.downloadHandler = new DownloadHandlerBuffer();
-                request.SetRequestHeader("Content-Type", "application/json");
-                request.SetRequestHeader("apikey", supabaseAnonKey);
-                request.SetRequestHeader("Authorization", "Bearer " + supabaseAnonKey);
-
-                yield return request.SendWebRequest();
-
-                if (request.result == UnityWebRequest.Result.Success)
-                {
-                    statusText.text = "<color=#24D285>Success: Thank you for your feedback!</color>";
-                    nameInputField.text = "";
-                    feedbackInputField.text = "";
-                    StartCoroutine(FetchTotalStats());
-                }
-                else
-                {
-                    statusText.text = "<color=red>Error submitting: " + request.error + "</color>";
-                }
+                statusText.text = "<color=#24D285>Success: Thank you for your feedback!</color>";
+                nameInputField.text = "";
+                feedbackInputField.text = "";
+                StartCoroutine(FetchTotalStats());
             }
-        }
-        else // Google Form POST
-        {
-            WWWForm form = new WWWForm();
-            form.AddField(nameEntryId, data.playerName);
-            form.AddField(ratingEntryId, data.rating.ToString());
-            form.AddField(feedbackEntryId, data.feedbackText);
-
-            using (UnityWebRequest request = UnityWebRequest.Post(googleFormUrl, form))
+            else
             {
-                yield return request.SendWebRequest();
-
-                if (request.result == UnityWebRequest.Result.Success)
-                {
-                    statusText.text = "<color=#24D285>Success: Feedback sent to Google Sheets! 💖</color>";
-                    nameInputField.text = "";
-                    feedbackInputField.text = "";
-                }
-                else
-                {
-                    statusText.text = "<color=red>Error submitting form: " + request.error + "</color>";
-                }
+                statusText.text = "<color=red>Error submitting: " + request.error + "</color>";
             }
         }
     }
 
     private void CheckAndRegisterInstall()
     {
-        string prefKey = "HasRegisteredInstall_" + databaseType.ToString();
+        string prefKey = "HasRegisteredInstall_Supabase";
         int hasRegistered = PlayerPrefs.GetInt(prefKey, 0);
 
         if (hasRegistered == 0)
@@ -495,143 +443,73 @@ public class FeedbackManager : MonoBehaviour
             installDate = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss UTC")
         };
 
-        string prefKey = "HasRegisteredInstall_" + databaseType.ToString();
+        string prefKey = "HasRegisteredInstall_Supabase";
 
-        if (databaseType == DatabaseType.Supabase)
+        string url = supabaseUrl.Trim();
+        if (!url.EndsWith("/")) url += "/";
+        string installUrl = url + "rest/v1/installs";
+
+        SupabaseInstallData dbData = new SupabaseInstallData
         {
-            string url = supabaseUrl.Trim();
-            if (!url.EndsWith("/")) url += "/";
-            string installUrl = url + "rest/v1/installs";
+            device_id = data.deviceId
+        };
 
-            SupabaseInstallData dbData = new SupabaseInstallData
+        string json = JsonUtility.ToJson(dbData);
+        using (UnityWebRequest request = new UnityWebRequest(installUrl, "POST"))
+        {
+            byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
+            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("apikey", supabaseAnonKey);
+            request.SetRequestHeader("Authorization", "Bearer " + supabaseAnonKey);
+            // UPSERT in Supabase via Postgrest
+            request.SetRequestHeader("Prefer", "resolution=merge-duplicates");
+
+            yield return request.SendWebRequest();
+
+            if (request.result == UnityWebRequest.Result.Success)
             {
-                device_id = data.deviceId
-            };
-
-            string json = JsonUtility.ToJson(dbData);
-            using (UnityWebRequest request = new UnityWebRequest(installUrl, "POST"))
-            {
-                byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
-                request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-                request.downloadHandler = new DownloadHandlerBuffer();
-                request.SetRequestHeader("Content-Type", "application/json");
-                request.SetRequestHeader("apikey", supabaseAnonKey);
-                request.SetRequestHeader("Authorization", "Bearer " + supabaseAnonKey);
-                // UPSERT in Supabase via Postgrest
-                request.SetRequestHeader("Prefer", "resolution=merge-duplicates");
-
-                yield return request.SendWebRequest();
-
-                if (request.result == UnityWebRequest.Result.Success)
-                {
-                    PlayerPrefs.SetInt(prefKey, 1);
-                    PlayerPrefs.Save();
-                }
+                PlayerPrefs.SetInt(prefKey, 1);
+                PlayerPrefs.Save();
             }
         }
-        else if (databaseType == DatabaseType.GoogleFormPOST && !string.IsNullOrEmpty(googleFormUrl))
-        {
-            // Google sheets install tracker via Form POST
-            WWWForm form = new WWWForm();
-            form.AddField(nameEntryId, "INSTALL_EVENT");
-            form.AddField(ratingEntryId, "0");
-            form.AddField(feedbackEntryId, "New launch registered from Device: " + data.deviceId);
-
-            using (UnityWebRequest request = WebRequestPost(googleFormUrl, form))
-            {
-                yield return request.SendWebRequest();
-                if (request.result == UnityWebRequest.Result.Success)
-                {
-                    PlayerPrefs.SetInt(prefKey, 1);
-                    PlayerPrefs.Save();
-                }
-            }
-        }
-    }
-
-    private UnityWebRequest WebRequestPost(string url, WWWForm form)
-    {
-        return UnityWebRequest.Post(url, form);
     }
 
     private IEnumerator FetchTotalStats()
     {
-        if (databaseType == DatabaseType.GoogleFormPOST && !string.IsNullOrEmpty(googleSheetUrl))
+        string url = supabaseUrl.Trim();
+        if (!url.EndsWith("/")) url += "/";
+        // Get count of rows in installs table
+        string queryUrl = url + "rest/v1/installs?select=count";
+
+        using (UnityWebRequest request = UnityWebRequest.Get(queryUrl))
         {
-            string url = googleSheetUrl.Trim();
-            if (url.Contains("/d/"))
+            request.SetRequestHeader("apikey", supabaseAnonKey);
+            request.SetRequestHeader("Authorization", "Bearer " + supabaseAnonKey);
+
+            yield return request.SendWebRequest();
+
+            if (request.result == UnityWebRequest.Result.Success)
             {
-                int startIndex = url.IndexOf("/d/") + 3;
-                int endIndex = url.IndexOf("/", startIndex);
-                if (endIndex != -1)
+                string json = request.downloadHandler.text;
+                if (!string.IsNullOrEmpty(json) && json != "null" && json.Length > 2)
                 {
-                    string sheetId = url.Substring(startIndex, endIndex - startIndex);
-                    string csvUrl = "https://docs.google.com/spreadsheets/d/" + sheetId + "/export?format=csv";
-
-                    using (UnityWebRequest request = UnityWebRequest.Get(csvUrl))
+                    // Supabase REST returns e.g. [{"count":12}]
+                    // We clean up brackets to make it a parseable object {"count":12}
+                    string clean = json.Replace("[", "").Replace("]", "");
+                    try
                     {
-                        yield return request.SendWebRequest();
-
-                        if (request.result == UnityWebRequest.Result.Success)
+                        SupabaseCountWrapper wrapper = JsonUtility.FromJson<SupabaseCountWrapper>(clean);
+                        totalInstalls = Mathf.Max(1, wrapper.count);
+                        if (totalInstallsText != null)
                         {
-                            string csvText = request.downloadHandler.text;
-                            if (!string.IsNullOrEmpty(csvText))
-                            {
-                                int count = 0;
-                                string[] lines = csvText.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-                                foreach (string line in lines)
-                                {
-                                    if (line.Contains("INSTALL_EVENT"))
-                                    {
-                                        count++;
-                                    }
-                                }
-                                totalInstalls = Mathf.Max(1, count);
-                                if (totalInstallsText != null)
-                                {
-                                    totalInstallsText.text = "Downloads: " + totalInstalls;
-                                }
-                            }
+                            totalInstallsText.text = "Downloads: " + totalInstalls;
                         }
                     }
-                }
-            }
-        }
-        else if (databaseType == DatabaseType.Supabase)
-        {
-            string url = supabaseUrl.Trim();
-            if (!url.EndsWith("/")) url += "/";
-            // Get count of rows in installs table
-            string queryUrl = url + "rest/v1/installs?select=count";
-
-            using (UnityWebRequest request = UnityWebRequest.Get(queryUrl))
-            {
-                request.SetRequestHeader("apikey", supabaseAnonKey);
-                request.SetRequestHeader("Authorization", "Bearer " + supabaseAnonKey);
-
-                yield return request.SendWebRequest();
-
-                if (request.result == UnityWebRequest.Result.Success)
-                {
-                    string json = request.downloadHandler.text;
-                    if (!string.IsNullOrEmpty(json) && json != "null" && json.Length > 2)
+                    catch (Exception ex)
                     {
-                        // Supabase REST returns e.g. [{"count":12}]
-                        // We clean up brackets to make it a parseable object {"count":12}
-                        string clean = json.Replace("[", "").Replace("]", "");
-                        try
-                        {
-                            SupabaseCountWrapper wrapper = JsonUtility.FromJson<SupabaseCountWrapper>(clean);
-                            totalInstalls = Mathf.Max(1, wrapper.count);
-                            if (totalInstallsText != null)
-                            {
-                                totalInstallsText.text = "Downloads: " + totalInstalls;
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            Debug.LogError("Error parsing Supabase count response: " + ex.Message + " Raw: " + json);
-                        }
+                        Debug.LogError("Error parsing Supabase count response: " + ex.Message + " Raw: " + json);
                     }
                 }
             }
