@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10098,7 +10098,7 @@ namespace DemonKingVSRamboFrog.Config
             },
 
         #endregion
-    }
+    };
 
     #region Data Structures
 
@@ -10165,3 +10165,5 @@ namespace DemonKingVSRamboFrog.Config
 
     #endregion
 }
+}
+
