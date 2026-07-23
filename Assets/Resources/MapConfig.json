@@ -1,0 +1,8119 @@
+﻿{
+  "version": "1.0.0",
+  "author": "Unkwonss",
+  "generatedAt": "2026-06-30",
+  "description": "Map zone, biome and spawn point configuration",
+  "maps": [
+    {
+      "mapId": 1,
+      "mapName": "Forest_Zone_0",
+      "biome": "Forest",
+      "width": 461,
+      "height": 256,
+      "ambientLight": 0.8,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Forest_0",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -100 0,
+          "y": -20 0,
+          "radius": 1.8,
+          "enemyGroupId": 5,
+          "respawnInterval": 45
+        },
+        {
+          "spawnId": 1,
+          "x": 1 0,
+          "y": -236 0,
+          "radius": 2.3,
+          "enemyGroupId": 6,
+          "respawnInterval": 199
+        },
+        {
+          "spawnId": 2,
+          "x": -233 0,
+          "y": -208 0,
+          "radius": 1.8,
+          "enemyGroupId": 11,
+          "respawnInterval": 104
+        },
+        {
+          "spawnId": 3,
+          "x": -15 0,
+          "y": -150 0,
+          "radius": 0.7,
+          "enemyGroupId": 11,
+          "respawnInterval": 63
+        },
+        {
+          "spawnId": 4,
+          "x": 223 0,
+          "y": -196 0,
+          "radius": 2.7,
+          "enemyGroupId": 2,
+          "respawnInterval": 166
+        },
+        {
+          "spawnId": 5,
+          "x": 169 0,
+          "y": 171 0,
+          "radius": 1.4,
+          "enemyGroupId": 9,
+          "respawnInterval": 280
+        }
+      ],
+      "connections": [81, 83],
+      "requiredLevel": 26,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 2,
+      "mapName": "Forest_Zone_1",
+      "biome": "Forest",
+      "width": 356,
+      "height": 324,
+      "ambientLight": 0.8,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Forest_1",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -148 0,
+          "y": -17 0,
+          "radius": 2.2,
+          "enemyGroupId": 18,
+          "respawnInterval": 174
+        },
+        {
+          "spawnId": 1,
+          "x": -191 0,
+          "y": -51 0,
+          "radius": 0.7,
+          "enemyGroupId": 19,
+          "respawnInterval": 193
+        },
+        {
+          "spawnId": 2,
+          "x": 161 0,
+          "y": -37 0,
+          "radius": 2.7,
+          "enemyGroupId": 11,
+          "respawnInterval": 284
+        },
+        {
+          "spawnId": 3,
+          "x": -195 0,
+          "y": 218 0,
+          "radius": 1.2,
+          "enemyGroupId": 18,
+          "respawnInterval": 99
+        },
+        {
+          "spawnId": 4,
+          "x": 245 0,
+          "y": -117 0,
+          "radius": 1.6,
+          "enemyGroupId": 9,
+          "respawnInterval": 63
+        },
+        {
+          "spawnId": 5,
+          "x": -153 0,
+          "y": -175 0,
+          "radius": 1.8,
+          "enemyGroupId": 4,
+          "respawnInterval": 272
+        },
+        {
+          "spawnId": 6,
+          "x": -128 0,
+          "y": -123 0,
+          "radius": 0.5,
+          "enemyGroupId": 5,
+          "respawnInterval": 187
+        }
+      ],
+      "connections": [21, 112],
+      "requiredLevel": 28,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 3,
+      "mapName": "Forest_Zone_2",
+      "biome": "Forest",
+      "width": 390,
+      "height": 296,
+      "ambientLight": 0.8,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Forest_2",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 45 0,
+          "y": -18 0,
+          "radius": 2.8,
+          "enemyGroupId": 9,
+          "respawnInterval": 266
+        },
+        {
+          "spawnId": 1,
+          "x": -183 0,
+          "y": -84 0,
+          "radius": 0.6,
+          "enemyGroupId": 7,
+          "respawnInterval": 246
+        },
+        {
+          "spawnId": 2,
+          "x": 177 0,
+          "y": -217 0,
+          "radius": 1,
+          "enemyGroupId": 4,
+          "respawnInterval": 231
+        },
+        {
+          "spawnId": 3,
+          "x": -71 0,
+          "y": -134 0,
+          "radius": 2.1,
+          "enemyGroupId": 6,
+          "respawnInterval": 154
+        },
+        {
+          "spawnId": 4,
+          "x": -45 0,
+          "y": -31 0,
+          "radius": 1,
+          "enemyGroupId": 8,
+          "respawnInterval": 199
+        },
+        {
+          "spawnId": 5,
+          "x": -42 0,
+          "y": 122 0,
+          "radius": 1.3,
+          "enemyGroupId": 19,
+          "respawnInterval": 259
+        }
+      ],
+      "connections": [31, 49],
+      "requiredLevel": 1,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 4,
+      "mapName": "Forest_Zone_3",
+      "biome": "Forest",
+      "width": 469,
+      "height": 89,
+      "ambientLight": 0.7,
+      "fogDensity": 0.3,
+      "bgmTrack": "bgm_Forest_3",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 241 0,
+          "y": 124 0,
+          "radius": 2,
+          "enemyGroupId": 7,
+          "respawnInterval": 74
+        },
+        {
+          "spawnId": 1,
+          "x": 86 0,
+          "y": 64 0,
+          "radius": 1.9,
+          "enemyGroupId": 19,
+          "respawnInterval": 125
+        },
+        {
+          "spawnId": 2,
+          "x": -122 0,
+          "y": -91 0,
+          "radius": 1.8,
+          "enemyGroupId": 19,
+          "respawnInterval": 193
+        },
+        {
+          "spawnId": 3,
+          "x": 235 0,
+          "y": 197 0,
+          "radius": 2.6,
+          "enemyGroupId": 14,
+          "respawnInterval": 75
+        },
+        {
+          "spawnId": 4,
+          "x": -173 0,
+          "y": -233 0,
+          "radius": 1.5,
+          "enemyGroupId": 16,
+          "respawnInterval": 61
+        },
+        {
+          "spawnId": 5,
+          "x": 3 0,
+          "y": 241 0,
+          "radius": 1.1,
+          "enemyGroupId": 17,
+          "respawnInterval": 30
+        }
+      ],
+      "connections": [62, 48],
+      "requiredLevel": 25,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 5,
+      "mapName": "Forest_Zone_4",
+      "biome": "Forest",
+      "width": 344,
+      "height": 334,
+      "ambientLight": 0.7,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Forest_4",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 62 0,
+          "y": -246 0,
+          "radius": 2.7,
+          "enemyGroupId": 8,
+          "respawnInterval": 283
+        },
+        {
+          "spawnId": 1,
+          "x": 99 0,
+          "y": -15 0,
+          "radius": 1.8,
+          "enemyGroupId": 12,
+          "respawnInterval": 212
+        },
+        {
+          "spawnId": 2,
+          "x": 17 0,
+          "y": 155 0,
+          "radius": 2.9,
+          "enemyGroupId": 10,
+          "respawnInterval": 32
+        },
+        {
+          "spawnId": 3,
+          "x": 156 0,
+          "y": -169 0,
+          "radius": 0.7,
+          "enemyGroupId": 11,
+          "respawnInterval": 224
+        }
+      ],
+      "connections": [12, 59],
+      "requiredLevel": 2,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 6,
+      "mapName": "Forest_Zone_5",
+      "biome": "Forest",
+      "width": 213,
+      "height": 261,
+      "ambientLight": 0.3,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Forest_5",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 1.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 159 0,
+          "y": -221 0,
+          "radius": 2.5,
+          "enemyGroupId": 6,
+          "respawnInterval": 263
+        },
+        {
+          "spawnId": 1,
+          "x": -29 0,
+          "y": 221 0,
+          "radius": 0.9,
+          "enemyGroupId": 14,
+          "respawnInterval": 115
+        },
+        {
+          "spawnId": 2,
+          "x": 90 0,
+          "y": 77 0,
+          "radius": 0.7,
+          "enemyGroupId": 12,
+          "respawnInterval": 30
+        },
+        {
+          "spawnId": 3,
+          "x": -110 0,
+          "y": -100 0,
+          "radius": 1.4,
+          "enemyGroupId": 15,
+          "respawnInterval": 287
+        },
+        {
+          "spawnId": 4,
+          "x": -152 0,
+          "y": -215 0,
+          "radius": 0.9,
+          "enemyGroupId": 2,
+          "respawnInterval": 30
+        },
+        {
+          "spawnId": 5,
+          "x": -210 0,
+          "y": -227 0,
+          "radius": 2.4,
+          "enemyGroupId": 16,
+          "respawnInterval": 280
+        },
+        {
+          "spawnId": 6,
+          "x": 155 0,
+          "y": -62 0,
+          "radius": 1.8,
+          "enemyGroupId": 2,
+          "respawnInterval": 168
+        },
+        {
+          "spawnId": 7,
+          "x": -21 0,
+          "y": -122 0,
+          "radius": 2.3,
+          "enemyGroupId": 9,
+          "respawnInterval": 256
+        }
+      ],
+      "connections": [30, 9],
+      "requiredLevel": 19,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 7,
+      "mapName": "Forest_Zone_6",
+      "biome": "Forest",
+      "width": 269,
+      "height": 66,
+      "ambientLight": 0.7,
+      "fogDensity": 0.3,
+      "bgmTrack": "bgm_Forest_6",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -249 0,
+          "y": 225 0,
+          "radius": 2.6,
+          "enemyGroupId": 6,
+          "respawnInterval": 85
+        },
+        {
+          "spawnId": 1,
+          "x": -91 0,
+          "y": -163 0,
+          "radius": 2.5,
+          "enemyGroupId": 14,
+          "respawnInterval": 288
+        },
+        {
+          "spawnId": 2,
+          "x": -72 0,
+          "y": 136 0,
+          "radius": 0.8,
+          "enemyGroupId": 4,
+          "respawnInterval": 72
+        },
+        {
+          "spawnId": 3,
+          "x": 222 0,
+          "y": 10 0,
+          "radius": 0.9,
+          "enemyGroupId": 12,
+          "respawnInterval": 34
+        },
+        {
+          "spawnId": 4,
+          "x": -33 0,
+          "y": -65 0,
+          "radius": 0.9,
+          "enemyGroupId": 14,
+          "respawnInterval": 232
+        }
+      ],
+      "connections": [26, 42],
+      "requiredLevel": 4,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 8,
+      "mapName": "Forest_Zone_7",
+      "biome": "Forest",
+      "width": 435,
+      "height": 167,
+      "ambientLight": 0.8,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_Forest_7",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 200 0,
+          "y": -196 0,
+          "radius": 2.1,
+          "enemyGroupId": 14,
+          "respawnInterval": 290
+        },
+        {
+          "spawnId": 1,
+          "x": -228 0,
+          "y": 183 0,
+          "radius": 1.2,
+          "enemyGroupId": 18,
+          "respawnInterval": 31
+        },
+        {
+          "spawnId": 2,
+          "x": 214 0,
+          "y": 222 0,
+          "radius": 0.5,
+          "enemyGroupId": 8,
+          "respawnInterval": 278
+        },
+        {
+          "spawnId": 3,
+          "x": -201 0,
+          "y": -198 0,
+          "radius": 1.1,
+          "enemyGroupId": 3,
+          "respawnInterval": 234
+        },
+        {
+          "spawnId": 4,
+          "x": 24 0,
+          "y": 227 0,
+          "radius": 2.3,
+          "enemyGroupId": 19,
+          "respawnInterval": 158
+        },
+        {
+          "spawnId": 5,
+          "x": 125 0,
+          "y": -134 0,
+          "radius": 2,
+          "enemyGroupId": 6,
+          "respawnInterval": 224
+        },
+        {
+          "spawnId": 6,
+          "x": -47 0,
+          "y": -13 0,
+          "radius": 0.8,
+          "enemyGroupId": 5,
+          "respawnInterval": 118
+        }
+      ],
+      "connections": [51, 22],
+      "requiredLevel": 19,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 9,
+      "mapName": "Forest_Zone_8",
+      "biome": "Forest",
+      "width": 176,
+      "height": 91,
+      "ambientLight": 0.3,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_Forest_8",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 0.8,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 206 0,
+          "y": 205 0,
+          "radius": 0.7,
+          "enemyGroupId": 4,
+          "respawnInterval": 276
+        },
+        {
+          "spawnId": 1,
+          "x": 222 0,
+          "y": 219 0,
+          "radius": 0.6,
+          "enemyGroupId": 4,
+          "respawnInterval": 266
+        },
+        {
+          "spawnId": 2,
+          "x": 220 0,
+          "y": 62 0,
+          "radius": 2.5,
+          "enemyGroupId": 6,
+          "respawnInterval": 237
+        },
+        {
+          "spawnId": 3,
+          "x": -2 0,
+          "y": -95 0,
+          "radius": 0.9,
+          "enemyGroupId": 1,
+          "respawnInterval": 239
+        },
+        {
+          "spawnId": 4,
+          "x": 43 0,
+          "y": 145 0,
+          "radius": 2.5,
+          "enemyGroupId": 15,
+          "respawnInterval": 157
+        },
+        {
+          "spawnId": 5,
+          "x": 113 0,
+          "y": -188 0,
+          "radius": 2.5,
+          "enemyGroupId": 8,
+          "respawnInterval": 245
+        },
+        {
+          "spawnId": 6,
+          "x": 173 0,
+          "y": 236 0,
+          "radius": 1.3,
+          "enemyGroupId": 10,
+          "respawnInterval": 55
+        }
+      ],
+      "connections": [20, 62],
+      "requiredLevel": 24,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 10,
+      "mapName": "Forest_Zone_9",
+      "biome": "Forest",
+      "width": 113,
+      "height": 169,
+      "ambientLight": 0.3,
+      "fogDensity": 0.1,
+      "bgmTrack": "bgm_Forest_9",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -74 0,
+          "y": -70 0,
+          "radius": 0.8,
+          "enemyGroupId": 10,
+          "respawnInterval": 137
+        },
+        {
+          "spawnId": 1,
+          "x": -3 0,
+          "y": -86 0,
+          "radius": 2.8,
+          "enemyGroupId": 4,
+          "respawnInterval": 279
+        },
+        {
+          "spawnId": 2,
+          "x": 44 0,
+          "y": 233 0,
+          "radius": 0.9,
+          "enemyGroupId": 5,
+          "respawnInterval": 280
+        }
+      ],
+      "connections": [80, 25],
+      "requiredLevel": 8,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 11,
+      "mapName": "Forest_Zone_10",
+      "biome": "Forest",
+      "width": 430,
+      "height": 233,
+      "ambientLight": 0.7,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Forest_10",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 0.8,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -75 0,
+          "y": 56 0,
+          "radius": 1.3,
+          "enemyGroupId": 16,
+          "respawnInterval": 110
+        },
+        {
+          "spawnId": 1,
+          "x": 220 0,
+          "y": 140 0,
+          "radius": 2.1,
+          "enemyGroupId": 19,
+          "respawnInterval": 153
+        },
+        {
+          "spawnId": 2,
+          "x": 146 0,
+          "y": 118 0,
+          "radius": 2.3,
+          "enemyGroupId": 10,
+          "respawnInterval": 255
+        },
+        {
+          "spawnId": 3,
+          "x": -134 0,
+          "y": 157 0,
+          "radius": 0.8,
+          "enemyGroupId": 18,
+          "respawnInterval": 231
+        },
+        {
+          "spawnId": 4,
+          "x": 33 0,
+          "y": -163 0,
+          "radius": 0.9,
+          "enemyGroupId": 9,
+          "respawnInterval": 172
+        },
+        {
+          "spawnId": 5,
+          "x": -221 0,
+          "y": 48 0,
+          "radius": 1.4,
+          "enemyGroupId": 12,
+          "respawnInterval": 190
+        },
+        {
+          "spawnId": 6,
+          "x": -5 0,
+          "y": 227 0,
+          "radius": 2.7,
+          "enemyGroupId": 14,
+          "respawnInterval": 208
+        },
+        {
+          "spawnId": 7,
+          "x": 169 0,
+          "y": 61 0,
+          "radius": 0.9,
+          "enemyGroupId": 14,
+          "respawnInterval": 33
+        },
+        {
+          "spawnId": 8,
+          "x": 50 0,
+          "y": -222 0,
+          "radius": 1.6,
+          "enemyGroupId": 4,
+          "respawnInterval": 291
+        }
+      ],
+      "connections": [28, 16],
+      "requiredLevel": 27,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 12,
+      "mapName": "Forest_Zone_11",
+      "biome": "Forest",
+      "width": 476,
+      "height": 432,
+      "ambientLight": 0.4,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_Forest_11",
+      "ambientSound": "amb_Forest",
+      "enemyDensity": 0.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 51 0,
+          "y": 72 0,
+          "radius": 0.5,
+          "enemyGroupId": 14,
+          "respawnInterval": 224
+        },
+        {
+          "spawnId": 1,
+          "x": -166 0,
+          "y": -164 0,
+          "radius": 1.9,
+          "enemyGroupId": 19,
+          "respawnInterval": 49
+        },
+        {
+          "spawnId": 2,
+          "x": 80 0,
+          "y": -103 0,
+          "radius": 1.8,
+          "enemyGroupId": 9,
+          "respawnInterval": 66
+        },
+        {
+          "spawnId": 3,
+          "x": -154 0,
+          "y": 95 0,
+          "radius": 2.8,
+          "enemyGroupId": 2,
+          "respawnInterval": 175
+        },
+        {
+          "spawnId": 4,
+          "x": 192 0,
+          "y": -105 0,
+          "radius": 1.8,
+          "enemyGroupId": 14,
+          "respawnInterval": 218
+        }
+      ],
+      "connections": [3, 19],
+      "requiredLevel": 27,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 13,
+      "mapName": "Desert_Zone_0",
+      "biome": "Desert",
+      "width": 447,
+      "height": 243,
+      "ambientLight": 0.3,
+      "fogDensity": 0.1,
+      "bgmTrack": "bgm_Desert_0",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 0.8,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 202 0,
+          "y": 141 0,
+          "radius": 0.6,
+          "enemyGroupId": 13,
+          "respawnInterval": 61
+        },
+        {
+          "spawnId": 1,
+          "x": 208 0,
+          "y": 176 0,
+          "radius": 2.2,
+          "enemyGroupId": 7,
+          "respawnInterval": 159
+        },
+        {
+          "spawnId": 2,
+          "x": -4 0,
+          "y": -120 0,
+          "radius": 1.8,
+          "enemyGroupId": 2,
+          "respawnInterval": 246
+        },
+        {
+          "spawnId": 3,
+          "x": 152 0,
+          "y": -242 0,
+          "radius": 0.9,
+          "enemyGroupId": 8,
+          "respawnInterval": 56
+        },
+        {
+          "spawnId": 4,
+          "x": 233 0,
+          "y": 70 0,
+          "radius": 2.2,
+          "enemyGroupId": 19,
+          "respawnInterval": 124
+        },
+        {
+          "spawnId": 5,
+          "x": -97 0,
+          "y": -246 0,
+          "radius": 2.6,
+          "enemyGroupId": 14,
+          "respawnInterval": 234
+        },
+        {
+          "spawnId": 6,
+          "x": -66 0,
+          "y": -193 0,
+          "radius": 0.6,
+          "enemyGroupId": 14,
+          "respawnInterval": 142
+        },
+        {
+          "spawnId": 7,
+          "x": 43 0,
+          "y": -8 0,
+          "radius": 2.1,
+          "enemyGroupId": 17,
+          "respawnInterval": 59
+        },
+        {
+          "spawnId": 8,
+          "x": 8 0,
+          "y": 237 0,
+          "radius": 0.8,
+          "enemyGroupId": 14,
+          "respawnInterval": 135
+        }
+      ],
+      "connections": [71, 95],
+      "requiredLevel": 7,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 14,
+      "mapName": "Desert_Zone_1",
+      "biome": "Desert",
+      "width": 204,
+      "height": 345,
+      "ambientLight": 0.3,
+      "fogDensity": 0.3,
+      "bgmTrack": "bgm_Desert_1",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 0.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 226 0,
+          "y": -122 0,
+          "radius": 2.6,
+          "enemyGroupId": 2,
+          "respawnInterval": 260
+        },
+        {
+          "spawnId": 1,
+          "x": -21 0,
+          "y": 243 0,
+          "radius": 0.6,
+          "enemyGroupId": 4,
+          "respawnInterval": 66
+        },
+        {
+          "spawnId": 2,
+          "x": 136 0,
+          "y": 96 0,
+          "radius": 1.5,
+          "enemyGroupId": 1,
+          "respawnInterval": 33
+        },
+        {
+          "spawnId": 3,
+          "x": 104 0,
+          "y": 199 0,
+          "radius": 1.4,
+          "enemyGroupId": 3,
+          "respawnInterval": 175
+        },
+        {
+          "spawnId": 4,
+          "x": -93 0,
+          "y": 173 0,
+          "radius": 1,
+          "enemyGroupId": 12,
+          "respawnInterval": 176
+        },
+        {
+          "spawnId": 5,
+          "x": 72 0,
+          "y": -90 0,
+          "radius": 1.5,
+          "enemyGroupId": 5,
+          "respawnInterval": 197
+        },
+        {
+          "spawnId": 6,
+          "x": 21 0,
+          "y": -106 0,
+          "radius": 1.5,
+          "enemyGroupId": 1,
+          "respawnInterval": 144
+        },
+        {
+          "spawnId": 7,
+          "x": 16 0,
+          "y": 230 0,
+          "radius": 1.3,
+          "enemyGroupId": 16,
+          "respawnInterval": 149
+        }
+      ],
+      "connections": [84, 106],
+      "requiredLevel": 11,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 15,
+      "mapName": "Desert_Zone_2",
+      "biome": "Desert",
+      "width": 125,
+      "height": 175,
+      "ambientLight": 0.3,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Desert_2",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 0.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -169 0,
+          "y": 137 0,
+          "radius": 1.8,
+          "enemyGroupId": 2,
+          "respawnInterval": 72
+        },
+        {
+          "spawnId": 1,
+          "x": -1 0,
+          "y": 60 0,
+          "radius": 1.8,
+          "enemyGroupId": 19,
+          "respawnInterval": 150
+        },
+        {
+          "spawnId": 2,
+          "x": 83 0,
+          "y": -30 0,
+          "radius": 1.3,
+          "enemyGroupId": 15,
+          "respawnInterval": 199
+        },
+        {
+          "spawnId": 3,
+          "x": 83 0,
+          "y": 166 0,
+          "radius": 1.4,
+          "enemyGroupId": 3,
+          "respawnInterval": 236
+        },
+        {
+          "spawnId": 4,
+          "x": -245 0,
+          "y": 43 0,
+          "radius": 2.9,
+          "enemyGroupId": 10,
+          "respawnInterval": 218
+        },
+        {
+          "spawnId": 5,
+          "x": -40 0,
+          "y": 169 0,
+          "radius": 1.6,
+          "enemyGroupId": 4,
+          "respawnInterval": 201
+        },
+        {
+          "spawnId": 6,
+          "x": 182 0,
+          "y": 230 0,
+          "radius": 2.3,
+          "enemyGroupId": 7,
+          "respawnInterval": 272
+        }
+      ],
+      "connections": [50, 58],
+      "requiredLevel": 6,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 16,
+      "mapName": "Desert_Zone_3",
+      "biome": "Desert",
+      "width": 255,
+      "height": 333,
+      "ambientLight": 0.7,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Desert_3",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 0.8,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 53 0,
+          "y": 174 0,
+          "radius": 1.5,
+          "enemyGroupId": 13,
+          "respawnInterval": 204
+        },
+        {
+          "spawnId": 1,
+          "x": -218 0,
+          "y": 185 0,
+          "radius": 2.9,
+          "enemyGroupId": 11,
+          "respawnInterval": 157
+        },
+        {
+          "spawnId": 2,
+          "x": -97 0,
+          "y": -111 0,
+          "radius": 1.7,
+          "enemyGroupId": 7,
+          "respawnInterval": 31
+        },
+        {
+          "spawnId": 3,
+          "x": -110 0,
+          "y": 37 0,
+          "radius": 0.8,
+          "enemyGroupId": 17,
+          "respawnInterval": 107
+        }
+      ],
+      "connections": [9, 18],
+      "requiredLevel": 8,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 17,
+      "mapName": "Desert_Zone_4",
+      "biome": "Desert",
+      "width": 234,
+      "height": 120,
+      "ambientLight": 0.4,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Desert_4",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 1.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -81 0,
+          "y": 220 0,
+          "radius": 2.4,
+          "enemyGroupId": 19,
+          "respawnInterval": 67
+        },
+        {
+          "spawnId": 1,
+          "x": 75 0,
+          "y": -188 0,
+          "radius": 1.4,
+          "enemyGroupId": 3,
+          "respawnInterval": 172
+        },
+        {
+          "spawnId": 2,
+          "x": 145 0,
+          "y": -11 0,
+          "radius": 1.5,
+          "enemyGroupId": 16,
+          "respawnInterval": 119
+        },
+        {
+          "spawnId": 3,
+          "x": 169 0,
+          "y": -73 0,
+          "radius": 0.9,
+          "enemyGroupId": 12,
+          "respawnInterval": 128
+        },
+        {
+          "spawnId": 4,
+          "x": -116 0,
+          "y": 67 0,
+          "radius": 0.6,
+          "enemyGroupId": 13,
+          "respawnInterval": 122
+        },
+        {
+          "spawnId": 5,
+          "x": 18 0,
+          "y": -64 0,
+          "radius": 1.5,
+          "enemyGroupId": 2,
+          "respawnInterval": 259
+        }
+      ],
+      "connections": [89, 15],
+      "requiredLevel": 7,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 18,
+      "mapName": "Desert_Zone_5",
+      "biome": "Desert",
+      "width": 377,
+      "height": 414,
+      "ambientLight": 0.6,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Desert_5",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 0.9,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -74 0,
+          "y": 248 0,
+          "radius": 1.5,
+          "enemyGroupId": 18,
+          "respawnInterval": 143
+        },
+        {
+          "spawnId": 1,
+          "x": 173 0,
+          "y": 57 0,
+          "radius": 0.9,
+          "enemyGroupId": 18,
+          "respawnInterval": 150
+        },
+        {
+          "spawnId": 2,
+          "x": -248 0,
+          "y": 131 0,
+          "radius": 0.8,
+          "enemyGroupId": 11,
+          "respawnInterval": 92
+        },
+        {
+          "spawnId": 3,
+          "x": -47 0,
+          "y": 178 0,
+          "radius": 2.5,
+          "enemyGroupId": 12,
+          "respawnInterval": 121
+        },
+        {
+          "spawnId": 4,
+          "x": 8 0,
+          "y": -206 0,
+          "radius": 1.1,
+          "enemyGroupId": 8,
+          "respawnInterval": 244
+        },
+        {
+          "spawnId": 5,
+          "x": 176 0,
+          "y": 101 0,
+          "radius": 0.8,
+          "enemyGroupId": 10,
+          "respawnInterval": 114
+        }
+      ],
+      "connections": [97, 35],
+      "requiredLevel": 22,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 19,
+      "mapName": "Desert_Zone_6",
+      "biome": "Desert",
+      "width": 487,
+      "height": 159,
+      "ambientLight": 0.4,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Desert_6",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 0.9,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -145 0,
+          "y": -64 0,
+          "radius": 1.9,
+          "enemyGroupId": 7,
+          "respawnInterval": 195
+        },
+        {
+          "spawnId": 1,
+          "x": -127 0,
+          "y": 140 0,
+          "radius": 0.5,
+          "enemyGroupId": 17,
+          "respawnInterval": 140
+        },
+        {
+          "spawnId": 2,
+          "x": -168 0,
+          "y": 12 0,
+          "radius": 2.6,
+          "enemyGroupId": 15,
+          "respawnInterval": 136
+        },
+        {
+          "spawnId": 3,
+          "x": -31 0,
+          "y": -127 0,
+          "radius": 2,
+          "enemyGroupId": 16,
+          "respawnInterval": 290
+        },
+        {
+          "spawnId": 4,
+          "x": 234 0,
+          "y": -69 0,
+          "radius": 0.7,
+          "enemyGroupId": 18,
+          "respawnInterval": 193
+        },
+        {
+          "spawnId": 5,
+          "x": 173 0,
+          "y": -114 0,
+          "radius": 2.8,
+          "enemyGroupId": 11,
+          "respawnInterval": 270
+        },
+        {
+          "spawnId": 6,
+          "x": -20 0,
+          "y": -66 0,
+          "radius": 2.1,
+          "enemyGroupId": 5,
+          "respawnInterval": 114
+        },
+        {
+          "spawnId": 7,
+          "x": 92 0,
+          "y": 233 0,
+          "radius": 2.5,
+          "enemyGroupId": 3,
+          "respawnInterval": 186
+        }
+      ],
+      "connections": [10, 5],
+      "requiredLevel": 27,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 20,
+      "mapName": "Desert_Zone_7",
+      "biome": "Desert",
+      "width": 61,
+      "height": 485,
+      "ambientLight": 0.5,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Desert_7",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -128 0,
+          "y": -120 0,
+          "radius": 2.3,
+          "enemyGroupId": 17,
+          "respawnInterval": 162
+        },
+        {
+          "spawnId": 1,
+          "x": -198 0,
+          "y": -123 0,
+          "radius": 2.1,
+          "enemyGroupId": 9,
+          "respawnInterval": 94
+        },
+        {
+          "spawnId": 2,
+          "x": -237 0,
+          "y": 227 0,
+          "radius": 2.9,
+          "enemyGroupId": 18,
+          "respawnInterval": 229
+        },
+        {
+          "spawnId": 3,
+          "x": -54 0,
+          "y": 91 0,
+          "radius": 0.9,
+          "enemyGroupId": 18,
+          "respawnInterval": 256
+        },
+        {
+          "spawnId": 4,
+          "x": 222 0,
+          "y": 6 0,
+          "radius": 1.7,
+          "enemyGroupId": 13,
+          "respawnInterval": 298
+        },
+        {
+          "spawnId": 5,
+          "x": 119 0,
+          "y": -244 0,
+          "radius": 2.9,
+          "enemyGroupId": 11,
+          "respawnInterval": 65
+        },
+        {
+          "spawnId": 6,
+          "x": -222 0,
+          "y": 63 0,
+          "radius": 1,
+          "enemyGroupId": 1,
+          "respawnInterval": 66
+        },
+        {
+          "spawnId": 7,
+          "x": 20 0,
+          "y": 4 0,
+          "radius": 0.5,
+          "enemyGroupId": 10,
+          "respawnInterval": 258
+        },
+        {
+          "spawnId": 8,
+          "x": -127 0,
+          "y": -200 0,
+          "radius": 2.8,
+          "enemyGroupId": 10,
+          "respawnInterval": 37
+        }
+      ],
+      "connections": [37, 51],
+      "requiredLevel": 26,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 21,
+      "mapName": "Desert_Zone_8",
+      "biome": "Desert",
+      "width": 202,
+      "height": 81,
+      "ambientLight": 0.3,
+      "fogDensity": 0.1,
+      "bgmTrack": "bgm_Desert_8",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 0.9,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 28 0,
+          "y": 27 0,
+          "radius": 2.6,
+          "enemyGroupId": 9,
+          "respawnInterval": 235
+        },
+        {
+          "spawnId": 1,
+          "x": 21 0,
+          "y": 82 0,
+          "radius": 2.6,
+          "enemyGroupId": 8,
+          "respawnInterval": 217
+        },
+        {
+          "spawnId": 2,
+          "x": 113 0,
+          "y": -188 0,
+          "radius": 0.6,
+          "enemyGroupId": 10,
+          "respawnInterval": 224
+        },
+        {
+          "spawnId": 3,
+          "x": 83 0,
+          "y": -184 0,
+          "radius": 0.9,
+          "enemyGroupId": 17,
+          "respawnInterval": 283
+        },
+        {
+          "spawnId": 4,
+          "x": -20 0,
+          "y": 41 0,
+          "radius": 0.8,
+          "enemyGroupId": 13,
+          "respawnInterval": 47
+        },
+        {
+          "spawnId": 5,
+          "x": 23 0,
+          "y": 49 0,
+          "radius": 1.7,
+          "enemyGroupId": 17,
+          "respawnInterval": 274
+        },
+        {
+          "spawnId": 6,
+          "x": 209 0,
+          "y": -237 0,
+          "radius": 1.9,
+          "enemyGroupId": 7,
+          "respawnInterval": 83
+        }
+      ],
+      "connections": [17, 102],
+      "requiredLevel": 21,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 22,
+      "mapName": "Desert_Zone_9",
+      "biome": "Desert",
+      "width": 203,
+      "height": 188,
+      "ambientLight": 0.5,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Desert_9",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 86 0,
+          "y": 149 0,
+          "radius": 0.5,
+          "enemyGroupId": 3,
+          "respawnInterval": 289
+        },
+        {
+          "spawnId": 1,
+          "x": 221 0,
+          "y": -241 0,
+          "radius": 2.2,
+          "enemyGroupId": 1,
+          "respawnInterval": 151
+        },
+        {
+          "spawnId": 2,
+          "x": 161 0,
+          "y": 187 0,
+          "radius": 1.6,
+          "enemyGroupId": 9,
+          "respawnInterval": 290
+        },
+        {
+          "spawnId": 3,
+          "x": -69 0,
+          "y": -54 0,
+          "radius": 2.5,
+          "enemyGroupId": 14,
+          "respawnInterval": 99
+        },
+        {
+          "spawnId": 4,
+          "x": -246 0,
+          "y": -16 0,
+          "radius": 0.5,
+          "enemyGroupId": 11,
+          "respawnInterval": 287
+        },
+        {
+          "spawnId": 5,
+          "x": 34 0,
+          "y": -50 0,
+          "radius": 1.9,
+          "enemyGroupId": 19,
+          "respawnInterval": 62
+        },
+        {
+          "spawnId": 6,
+          "x": 126 0,
+          "y": 184 0,
+          "radius": 1.4,
+          "enemyGroupId": 13,
+          "respawnInterval": 154
+        }
+      ],
+      "connections": [2, 55],
+      "requiredLevel": 12,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 23,
+      "mapName": "Desert_Zone_10",
+      "biome": "Desert",
+      "width": 248,
+      "height": 170,
+      "ambientLight": 0.6,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Desert_10",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 4 0,
+          "y": -154 0,
+          "radius": 2.5,
+          "enemyGroupId": 13,
+          "respawnInterval": 116
+        },
+        {
+          "spawnId": 1,
+          "x": -6 0,
+          "y": 186 0,
+          "radius": 1.2,
+          "enemyGroupId": 2,
+          "respawnInterval": 64
+        },
+        {
+          "spawnId": 2,
+          "x": 227 0,
+          "y": 133 0,
+          "radius": 1.3,
+          "enemyGroupId": 6,
+          "respawnInterval": 251
+        }
+      ],
+      "connections": [43, 88],
+      "requiredLevel": 16,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 24,
+      "mapName": "Desert_Zone_11",
+      "biome": "Desert",
+      "width": 321,
+      "height": 362,
+      "ambientLight": 0.4,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_Desert_11",
+      "ambientSound": "amb_Desert",
+      "enemyDensity": 0.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 165 0,
+          "y": 81 0,
+          "radius": 0.9,
+          "enemyGroupId": 4,
+          "respawnInterval": 150
+        },
+        {
+          "spawnId": 1,
+          "x": -79 0,
+          "y": -57 0,
+          "radius": 2.7,
+          "enemyGroupId": 17,
+          "respawnInterval": 149
+        },
+        {
+          "spawnId": 2,
+          "x": 214 0,
+          "y": 243 0,
+          "radius": 1.9,
+          "enemyGroupId": 16,
+          "respawnInterval": 79
+        }
+      ],
+      "connections": [37, 118],
+      "requiredLevel": 17,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 25,
+      "mapName": "Dungeon_Zone_0",
+      "biome": "Dungeon",
+      "width": 302,
+      "height": 340,
+      "ambientLight": 0.7,
+      "fogDensity": 0.1,
+      "bgmTrack": "bgm_Dungeon_0",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 0.5,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 2 0,
+          "y": -9 0,
+          "radius": 2.3,
+          "enemyGroupId": 7,
+          "respawnInterval": 104
+        },
+        {
+          "spawnId": 1,
+          "x": 233 0,
+          "y": 245 0,
+          "radius": 1.8,
+          "enemyGroupId": 14,
+          "respawnInterval": 228
+        },
+        {
+          "spawnId": 2,
+          "x": -56 0,
+          "y": 239 0,
+          "radius": 0.9,
+          "enemyGroupId": 12,
+          "respawnInterval": 109
+        },
+        {
+          "spawnId": 3,
+          "x": 18 0,
+          "y": -154 0,
+          "radius": 2.2,
+          "enemyGroupId": 8,
+          "respawnInterval": 182
+        },
+        {
+          "spawnId": 4,
+          "x": 89 0,
+          "y": 246 0,
+          "radius": 1.2,
+          "enemyGroupId": 13,
+          "respawnInterval": 276
+        },
+        {
+          "spawnId": 5,
+          "x": -212 0,
+          "y": 247 0,
+          "radius": 0.7,
+          "enemyGroupId": 16,
+          "respawnInterval": 119
+        },
+        {
+          "spawnId": 6,
+          "x": 156 0,
+          "y": 245 0,
+          "radius": 0.5,
+          "enemyGroupId": 16,
+          "respawnInterval": 66
+        },
+        {
+          "spawnId": 7,
+          "x": 15 0,
+          "y": -133 0,
+          "radius": 2.6,
+          "enemyGroupId": 5,
+          "respawnInterval": 121
+        }
+      ],
+      "connections": [116, 21],
+      "requiredLevel": 15,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 26,
+      "mapName": "Dungeon_Zone_1",
+      "biome": "Dungeon",
+      "width": 261,
+      "height": 351,
+      "ambientLight": 0.4,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_Dungeon_1",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 0.7,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -160 0,
+          "y": 102 0,
+          "radius": 2.4,
+          "enemyGroupId": 4,
+          "respawnInterval": 172
+        },
+        {
+          "spawnId": 1,
+          "x": -85 0,
+          "y": -33 0,
+          "radius": 1.1,
+          "enemyGroupId": 13,
+          "respawnInterval": 201
+        },
+        {
+          "spawnId": 2,
+          "x": 102 0,
+          "y": -160 0,
+          "radius": 0.9,
+          "enemyGroupId": 14,
+          "respawnInterval": 268
+        },
+        {
+          "spawnId": 3,
+          "x": -135 0,
+          "y": 169 0,
+          "radius": 1.1,
+          "enemyGroupId": 16,
+          "respawnInterval": 112
+        },
+        {
+          "spawnId": 4,
+          "x": 54 0,
+          "y": 52 0,
+          "radius": 2.2,
+          "enemyGroupId": 19,
+          "respawnInterval": 119
+        }
+      ],
+      "connections": [40, 83],
+      "requiredLevel": 11,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 27,
+      "mapName": "Dungeon_Zone_2",
+      "biome": "Dungeon",
+      "width": 405,
+      "height": 319,
+      "ambientLight": 0.7,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Dungeon_2",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 0.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -1 0,
+          "y": 98 0,
+          "radius": 1.2,
+          "enemyGroupId": 19,
+          "respawnInterval": 47
+        },
+        {
+          "spawnId": 1,
+          "x": 121 0,
+          "y": 187 0,
+          "radius": 1,
+          "enemyGroupId": 8,
+          "respawnInterval": 185
+        },
+        {
+          "spawnId": 2,
+          "x": 102 0,
+          "y": 189 0,
+          "radius": 1.6,
+          "enemyGroupId": 14,
+          "respawnInterval": 159
+        },
+        {
+          "spawnId": 3,
+          "x": -98 0,
+          "y": -70 0,
+          "radius": 0.5,
+          "enemyGroupId": 4,
+          "respawnInterval": 267
+        },
+        {
+          "spawnId": 4,
+          "x": -230 0,
+          "y": -35 0,
+          "radius": 1,
+          "enemyGroupId": 12,
+          "respawnInterval": 257
+        },
+        {
+          "spawnId": 5,
+          "x": 124 0,
+          "y": 81 0,
+          "radius": 2,
+          "enemyGroupId": 4,
+          "respawnInterval": 47
+        }
+      ],
+      "connections": [86, 85],
+      "requiredLevel": 29,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 28,
+      "mapName": "Dungeon_Zone_3",
+      "biome": "Dungeon",
+      "width": 95,
+      "height": 401,
+      "ambientLight": 0.6,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Dungeon_3",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 0.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 234 0,
+          "y": -109 0,
+          "radius": 0.7,
+          "enemyGroupId": 14,
+          "respawnInterval": 77
+        },
+        {
+          "spawnId": 1,
+          "x": -72 0,
+          "y": 49 0,
+          "radius": 1.1,
+          "enemyGroupId": 6,
+          "respawnInterval": 167
+        },
+        {
+          "spawnId": 2,
+          "x": 198 0,
+          "y": 60 0,
+          "radius": 0.6,
+          "enemyGroupId": 12,
+          "respawnInterval": 43
+        },
+        {
+          "spawnId": 3,
+          "x": 79 0,
+          "y": 159 0,
+          "radius": 0.7,
+          "enemyGroupId": 16,
+          "respawnInterval": 60
+        },
+        {
+          "spawnId": 4,
+          "x": 81 0,
+          "y": 236 0,
+          "radius": 2.2,
+          "enemyGroupId": 18,
+          "respawnInterval": 189
+        },
+        {
+          "spawnId": 5,
+          "x": -46 0,
+          "y": 47 0,
+          "radius": 1.5,
+          "enemyGroupId": 17,
+          "respawnInterval": 233
+        },
+        {
+          "spawnId": 6,
+          "x": -154 0,
+          "y": -69 0,
+          "radius": 1.2,
+          "enemyGroupId": 7,
+          "respawnInterval": 251
+        },
+        {
+          "spawnId": 7,
+          "x": -178 0,
+          "y": 218 0,
+          "radius": 0.5,
+          "enemyGroupId": 10,
+          "respawnInterval": 99
+        },
+        {
+          "spawnId": 8,
+          "x": -246 0,
+          "y": 148 0,
+          "radius": 0.5,
+          "enemyGroupId": 14,
+          "respawnInterval": 124
+        }
+      ],
+      "connections": [86, 25],
+      "requiredLevel": 20,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 29,
+      "mapName": "Dungeon_Zone_4",
+      "biome": "Dungeon",
+      "width": 62,
+      "height": 414,
+      "ambientLight": 0.3,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_Dungeon_4",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -133 0,
+          "y": 129 0,
+          "radius": 1,
+          "enemyGroupId": 14,
+          "respawnInterval": 48
+        },
+        {
+          "spawnId": 1,
+          "x": -17 0,
+          "y": 31 0,
+          "radius": 2.4,
+          "enemyGroupId": 10,
+          "respawnInterval": 198
+        },
+        {
+          "spawnId": 2,
+          "x": 225 0,
+          "y": 22 0,
+          "radius": 0.9,
+          "enemyGroupId": 9,
+          "respawnInterval": 74
+        },
+        {
+          "spawnId": 3,
+          "x": -113 0,
+          "y": -86 0,
+          "radius": 2,
+          "enemyGroupId": 14,
+          "respawnInterval": 82
+        }
+      ],
+      "connections": [51, 112],
+      "requiredLevel": 8,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 30,
+      "mapName": "Dungeon_Zone_5",
+      "biome": "Dungeon",
+      "width": 461,
+      "height": 305,
+      "ambientLight": 0.5,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Dungeon_5",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 3 0,
+          "y": -239 0,
+          "radius": 2.9,
+          "enemyGroupId": 7,
+          "respawnInterval": 128
+        },
+        {
+          "spawnId": 1,
+          "x": 129 0,
+          "y": -150 0,
+          "radius": 1.7,
+          "enemyGroupId": 1,
+          "respawnInterval": 79
+        },
+        {
+          "spawnId": 2,
+          "x": 32 0,
+          "y": 131 0,
+          "radius": 1.5,
+          "enemyGroupId": 16,
+          "respawnInterval": 221
+        },
+        {
+          "spawnId": 3,
+          "x": 146 0,
+          "y": 240 0,
+          "radius": 0.7,
+          "enemyGroupId": 16,
+          "respawnInterval": 102
+        },
+        {
+          "spawnId": 4,
+          "x": -8 0,
+          "y": -160 0,
+          "radius": 2.4,
+          "enemyGroupId": 5,
+          "respawnInterval": 91
+        },
+        {
+          "spawnId": 5,
+          "x": 81 0,
+          "y": 240 0,
+          "radius": 2.2,
+          "enemyGroupId": 17,
+          "respawnInterval": 35
+        },
+        {
+          "spawnId": 6,
+          "x": -150 0,
+          "y": -162 0,
+          "radius": 2.4,
+          "enemyGroupId": 15,
+          "respawnInterval": 85
+        }
+      ],
+      "connections": [96, 56],
+      "requiredLevel": 7,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 31,
+      "mapName": "Dungeon_Zone_6",
+      "biome": "Dungeon",
+      "width": 62,
+      "height": 69,
+      "ambientLight": 0.5,
+      "fogDensity": 0.3,
+      "bgmTrack": "bgm_Dungeon_6",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 1.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -132 0,
+          "y": -74 0,
+          "radius": 1,
+          "enemyGroupId": 6,
+          "respawnInterval": 295
+        },
+        {
+          "spawnId": 1,
+          "x": 214 0,
+          "y": -24 0,
+          "radius": 2.4,
+          "enemyGroupId": 3,
+          "respawnInterval": 98
+        },
+        {
+          "spawnId": 2,
+          "x": 43 0,
+          "y": 147 0,
+          "radius": 2.5,
+          "enemyGroupId": 19,
+          "respawnInterval": 164
+        },
+        {
+          "spawnId": 3,
+          "x": -182 0,
+          "y": 166 0,
+          "radius": 0.5,
+          "enemyGroupId": 4,
+          "respawnInterval": 229
+        },
+        {
+          "spawnId": 4,
+          "x": 98 0,
+          "y": -80 0,
+          "radius": 1.2,
+          "enemyGroupId": 16,
+          "respawnInterval": 180
+        },
+        {
+          "spawnId": 5,
+          "x": -166 0,
+          "y": 141 0,
+          "radius": 1.5,
+          "enemyGroupId": 18,
+          "respawnInterval": 110
+        },
+        {
+          "spawnId": 6,
+          "x": 38 0,
+          "y": -199 0,
+          "radius": 1.2,
+          "enemyGroupId": 10,
+          "respawnInterval": 238
+        }
+      ],
+      "connections": [7, 104],
+      "requiredLevel": 24,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 32,
+      "mapName": "Dungeon_Zone_7",
+      "biome": "Dungeon",
+      "width": 486,
+      "height": 305,
+      "ambientLight": 0.9,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Dungeon_7",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 1.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 31 0,
+          "y": 230 0,
+          "radius": 0.7,
+          "enemyGroupId": 18,
+          "respawnInterval": 69
+        },
+        {
+          "spawnId": 1,
+          "x": 166 0,
+          "y": 116 0,
+          "radius": 2.2,
+          "enemyGroupId": 1,
+          "respawnInterval": 204
+        },
+        {
+          "spawnId": 2,
+          "x": -37 0,
+          "y": 210 0,
+          "radius": 1.4,
+          "enemyGroupId": 4,
+          "respawnInterval": 217
+        },
+        {
+          "spawnId": 3,
+          "x": 32 0,
+          "y": -92 0,
+          "radius": 2.9,
+          "enemyGroupId": 5,
+          "respawnInterval": 184
+        }
+      ],
+      "connections": [4, 106],
+      "requiredLevel": 19,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 33,
+      "mapName": "Dungeon_Zone_8",
+      "biome": "Dungeon",
+      "width": 492,
+      "height": 304,
+      "ambientLight": 0.3,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Dungeon_8",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 1.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 217 0,
+          "y": -101 0,
+          "radius": 2.7,
+          "enemyGroupId": 9,
+          "respawnInterval": 231
+        },
+        {
+          "spawnId": 1,
+          "x": 142 0,
+          "y": -57 0,
+          "radius": 1.5,
+          "enemyGroupId": 1,
+          "respawnInterval": 105
+        },
+        {
+          "spawnId": 2,
+          "x": -172 0,
+          "y": 9 0,
+          "radius": 0.8,
+          "enemyGroupId": 8,
+          "respawnInterval": 95
+        }
+      ],
+      "connections": [95, 11],
+      "requiredLevel": 2,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 34,
+      "mapName": "Dungeon_Zone_9",
+      "biome": "Dungeon",
+      "width": 265,
+      "height": 429,
+      "ambientLight": 0.7,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_Dungeon_9",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -29 0,
+          "y": 156 0,
+          "radius": 2.9,
+          "enemyGroupId": 16,
+          "respawnInterval": 209
+        },
+        {
+          "spawnId": 1,
+          "x": 118 0,
+          "y": -27 0,
+          "radius": 1.3,
+          "enemyGroupId": 6,
+          "respawnInterval": 84
+        },
+        {
+          "spawnId": 2,
+          "x": -230 0,
+          "y": -59 0,
+          "radius": 2,
+          "enemyGroupId": 5,
+          "respawnInterval": 104
+        },
+        {
+          "spawnId": 3,
+          "x": -25 0,
+          "y": -37 0,
+          "radius": 1.8,
+          "enemyGroupId": 11,
+          "respawnInterval": 126
+        },
+        {
+          "spawnId": 4,
+          "x": -209 0,
+          "y": 8 0,
+          "radius": 1.7,
+          "enemyGroupId": 17,
+          "respawnInterval": 52
+        },
+        {
+          "spawnId": 5,
+          "x": 196 0,
+          "y": 115 0,
+          "radius": 2.1,
+          "enemyGroupId": 10,
+          "respawnInterval": 289
+        },
+        {
+          "spawnId": 6,
+          "x": 83 0,
+          "y": 176 0,
+          "radius": 1.2,
+          "enemyGroupId": 10,
+          "respawnInterval": 41
+        },
+        {
+          "spawnId": 7,
+          "x": -152 0,
+          "y": -23 0,
+          "radius": 0.7,
+          "enemyGroupId": 3,
+          "respawnInterval": 97
+        },
+        {
+          "spawnId": 8,
+          "x": -71 0,
+          "y": 168 0,
+          "radius": 2.4,
+          "enemyGroupId": 1,
+          "respawnInterval": 278
+        }
+      ],
+      "connections": [98, 63],
+      "requiredLevel": 15,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 35,
+      "mapName": "Dungeon_Zone_10",
+      "biome": "Dungeon",
+      "width": 175,
+      "height": 352,
+      "ambientLight": 0.7,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Dungeon_10",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 184 0,
+          "y": -225 0,
+          "radius": 2.6,
+          "enemyGroupId": 7,
+          "respawnInterval": 48
+        },
+        {
+          "spawnId": 1,
+          "x": 65 0,
+          "y": 153 0,
+          "radius": 0.8,
+          "enemyGroupId": 15,
+          "respawnInterval": 128
+        },
+        {
+          "spawnId": 2,
+          "x": 115 0,
+          "y": -5 0,
+          "radius": 1.3,
+          "enemyGroupId": 9,
+          "respawnInterval": 46
+        },
+        {
+          "spawnId": 3,
+          "x": 34 0,
+          "y": 102 0,
+          "radius": 2.5,
+          "enemyGroupId": 3,
+          "respawnInterval": 164
+        },
+        {
+          "spawnId": 4,
+          "x": -25 0,
+          "y": 40 0,
+          "radius": 1.8,
+          "enemyGroupId": 18,
+          "respawnInterval": 270
+        },
+        {
+          "spawnId": 5,
+          "x": 108 0,
+          "y": -195 0,
+          "radius": 1.7,
+          "enemyGroupId": 2,
+          "respawnInterval": 95
+        }
+      ],
+      "connections": [30, 118],
+      "requiredLevel": 12,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 36,
+      "mapName": "Dungeon_Zone_11",
+      "biome": "Dungeon",
+      "width": 208,
+      "height": 415,
+      "ambientLight": 0.3,
+      "fogDensity": 0.3,
+      "bgmTrack": "bgm_Dungeon_11",
+      "ambientSound": "amb_Dungeon",
+      "enemyDensity": 0.7,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 81 0,
+          "y": 29 0,
+          "radius": 1.3,
+          "enemyGroupId": 9,
+          "respawnInterval": 215
+        },
+        {
+          "spawnId": 1,
+          "x": -126 0,
+          "y": -90 0,
+          "radius": 1.2,
+          "enemyGroupId": 9,
+          "respawnInterval": 287
+        },
+        {
+          "spawnId": 2,
+          "x": 117 0,
+          "y": 244 0,
+          "radius": 2.6,
+          "enemyGroupId": 17,
+          "respawnInterval": 289
+        },
+        {
+          "spawnId": 3,
+          "x": 111 0,
+          "y": -145 0,
+          "radius": 1.3,
+          "enemyGroupId": 14,
+          "respawnInterval": 111
+        },
+        {
+          "spawnId": 4,
+          "x": 33 0,
+          "y": -138 0,
+          "radius": 2.5,
+          "enemyGroupId": 14,
+          "respawnInterval": 208
+        },
+        {
+          "spawnId": 5,
+          "x": 220 0,
+          "y": -210 0,
+          "radius": 2.9,
+          "enemyGroupId": 5,
+          "respawnInterval": 137
+        },
+        {
+          "spawnId": 6,
+          "x": 142 0,
+          "y": -131 0,
+          "radius": 0.6,
+          "enemyGroupId": 18,
+          "respawnInterval": 52
+        },
+        {
+          "spawnId": 7,
+          "x": 97 0,
+          "y": 180 0,
+          "radius": 2.1,
+          "enemyGroupId": 1,
+          "respawnInterval": 69
+        },
+        {
+          "spawnId": 8,
+          "x": -129 0,
+          "y": -162 0,
+          "radius": 0.5,
+          "enemyGroupId": 8,
+          "respawnInterval": 297
+        }
+      ],
+      "connections": [71, 43],
+      "requiredLevel": 7,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 37,
+      "mapName": "Castle_Zone_0",
+      "biome": "Castle",
+      "width": 372,
+      "height": 481,
+      "ambientLight": 0.5,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Castle_0",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 1.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 75 0,
+          "y": -239 0,
+          "radius": 1.6,
+          "enemyGroupId": 10,
+          "respawnInterval": 46
+        },
+        {
+          "spawnId": 1,
+          "x": 66 0,
+          "y": -119 0,
+          "radius": 2.8,
+          "enemyGroupId": 3,
+          "respawnInterval": 180
+        },
+        {
+          "spawnId": 2,
+          "x": -222 0,
+          "y": 121 0,
+          "radius": 1.1,
+          "enemyGroupId": 10,
+          "respawnInterval": 181
+        }
+      ],
+      "connections": [2, 73],
+      "requiredLevel": 3,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 38,
+      "mapName": "Castle_Zone_1",
+      "biome": "Castle",
+      "width": 116,
+      "height": 132,
+      "ambientLight": 0.6,
+      "fogDensity": 0.1,
+      "bgmTrack": "bgm_Castle_1",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 59 0,
+          "y": 51 0,
+          "radius": 2.3,
+          "enemyGroupId": 7,
+          "respawnInterval": 100
+        },
+        {
+          "spawnId": 1,
+          "x": 47 0,
+          "y": 52 0,
+          "radius": 2.4,
+          "enemyGroupId": 11,
+          "respawnInterval": 261
+        },
+        {
+          "spawnId": 2,
+          "x": 124 0,
+          "y": 132 0,
+          "radius": 1.4,
+          "enemyGroupId": 9,
+          "respawnInterval": 279
+        },
+        {
+          "spawnId": 3,
+          "x": 181 0,
+          "y": 141 0,
+          "radius": 1.2,
+          "enemyGroupId": 11,
+          "respawnInterval": 174
+        },
+        {
+          "spawnId": 4,
+          "x": 235 0,
+          "y": -211 0,
+          "radius": 0.5,
+          "enemyGroupId": 19,
+          "respawnInterval": 147
+        },
+        {
+          "spawnId": 5,
+          "x": -42 0,
+          "y": 118 0,
+          "radius": 1.2,
+          "enemyGroupId": 3,
+          "respawnInterval": 287
+        },
+        {
+          "spawnId": 6,
+          "x": -201 0,
+          "y": 210 0,
+          "radius": 2,
+          "enemyGroupId": 3,
+          "respawnInterval": 152
+        },
+        {
+          "spawnId": 7,
+          "x": 17 0,
+          "y": -206 0,
+          "radius": 2.9,
+          "enemyGroupId": 5,
+          "respawnInterval": 187
+        },
+        {
+          "spawnId": 8,
+          "x": 228 0,
+          "y": 167 0,
+          "radius": 1.9,
+          "enemyGroupId": 7,
+          "respawnInterval": 68
+        }
+      ],
+      "connections": [108, 40],
+      "requiredLevel": 19,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 39,
+      "mapName": "Castle_Zone_2",
+      "biome": "Castle",
+      "width": 68,
+      "height": 207,
+      "ambientLight": 0.7,
+      "fogDensity": 0.1,
+      "bgmTrack": "bgm_Castle_2",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 0.5,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -35 0,
+          "y": 82 0,
+          "radius": 2.9,
+          "enemyGroupId": 19,
+          "respawnInterval": 37
+        },
+        {
+          "spawnId": 1,
+          "x": -39 0,
+          "y": -132 0,
+          "radius": 2.6,
+          "enemyGroupId": 10,
+          "respawnInterval": 51
+        },
+        {
+          "spawnId": 2,
+          "x": -10 0,
+          "y": -30 0,
+          "radius": 1,
+          "enemyGroupId": 10,
+          "respawnInterval": 266
+        },
+        {
+          "spawnId": 3,
+          "x": -91 0,
+          "y": -174 0,
+          "radius": 2,
+          "enemyGroupId": 8,
+          "respawnInterval": 299
+        },
+        {
+          "spawnId": 4,
+          "x": -165 0,
+          "y": 171 0,
+          "radius": 1.7,
+          "enemyGroupId": 14,
+          "respawnInterval": 277
+        }
+      ],
+      "connections": [83, 59],
+      "requiredLevel": 26,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 40,
+      "mapName": "Castle_Zone_3",
+      "biome": "Castle",
+      "width": 232,
+      "height": 78,
+      "ambientLight": 0.8,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Castle_3",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 189 0,
+          "y": -138 0,
+          "radius": 1.8,
+          "enemyGroupId": 1,
+          "respawnInterval": 66
+        },
+        {
+          "spawnId": 1,
+          "x": 7 0,
+          "y": 57 0,
+          "radius": 1.7,
+          "enemyGroupId": 12,
+          "respawnInterval": 90
+        },
+        {
+          "spawnId": 2,
+          "x": -134 0,
+          "y": 59 0,
+          "radius": 2.5,
+          "enemyGroupId": 6,
+          "respawnInterval": 171
+        },
+        {
+          "spawnId": 3,
+          "x": -20 0,
+          "y": 176 0,
+          "radius": 1.2,
+          "enemyGroupId": 14,
+          "respawnInterval": 110
+        },
+        {
+          "spawnId": 4,
+          "x": 125 0,
+          "y": 34 0,
+          "radius": 1.7,
+          "enemyGroupId": 17,
+          "respawnInterval": 36
+        },
+        {
+          "spawnId": 5,
+          "x": -57 0,
+          "y": -80 0,
+          "radius": 0.9,
+          "enemyGroupId": 14,
+          "respawnInterval": 70
+        },
+        {
+          "spawnId": 6,
+          "x": 134 0,
+          "y": -234 0,
+          "radius": 2,
+          "enemyGroupId": 14,
+          "respawnInterval": 78
+        },
+        {
+          "spawnId": 7,
+          "x": 144 0,
+          "y": 237 0,
+          "radius": 1,
+          "enemyGroupId": 15,
+          "respawnInterval": 106
+        },
+        {
+          "spawnId": 8,
+          "x": -144 0,
+          "y": 139 0,
+          "radius": 1.3,
+          "enemyGroupId": 14,
+          "respawnInterval": 208
+        }
+      ],
+      "connections": [37, 107],
+      "requiredLevel": 2,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 41,
+      "mapName": "Castle_Zone_4",
+      "biome": "Castle",
+      "width": 209,
+      "height": 389,
+      "ambientLight": 0.7,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_Castle_4",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -31 0,
+          "y": 235 0,
+          "radius": 2.8,
+          "enemyGroupId": 6,
+          "respawnInterval": 217
+        },
+        {
+          "spawnId": 1,
+          "x": 9 0,
+          "y": 21 0,
+          "radius": 2.7,
+          "enemyGroupId": 3,
+          "respawnInterval": 292
+        },
+        {
+          "spawnId": 2,
+          "x": -80 0,
+          "y": -113 0,
+          "radius": 2.3,
+          "enemyGroupId": 7,
+          "respawnInterval": 44
+        },
+        {
+          "spawnId": 3,
+          "x": -107 0,
+          "y": 167 0,
+          "radius": 1.1,
+          "enemyGroupId": 2,
+          "respawnInterval": 280
+        },
+        {
+          "spawnId": 4,
+          "x": -165 0,
+          "y": 9 0,
+          "radius": 2.3,
+          "enemyGroupId": 1,
+          "respawnInterval": 118
+        }
+      ],
+      "connections": [78, 58],
+      "requiredLevel": 8,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 42,
+      "mapName": "Castle_Zone_5",
+      "biome": "Castle",
+      "width": 384,
+      "height": 283,
+      "ambientLight": 0.6,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Castle_5",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 0.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -108 0,
+          "y": 40 0,
+          "radius": 1.8,
+          "enemyGroupId": 12,
+          "respawnInterval": 54
+        },
+        {
+          "spawnId": 1,
+          "x": 92 0,
+          "y": -246 0,
+          "radius": 2.7,
+          "enemyGroupId": 8,
+          "respawnInterval": 198
+        },
+        {
+          "spawnId": 2,
+          "x": -51 0,
+          "y": 64 0,
+          "radius": 0.8,
+          "enemyGroupId": 18,
+          "respawnInterval": 152
+        },
+        {
+          "spawnId": 3,
+          "x": 89 0,
+          "y": 206 0,
+          "radius": 2.1,
+          "enemyGroupId": 14,
+          "respawnInterval": 83
+        },
+        {
+          "spawnId": 4,
+          "x": 131 0,
+          "y": -67 0,
+          "radius": 1,
+          "enemyGroupId": 18,
+          "respawnInterval": 74
+        },
+        {
+          "spawnId": 5,
+          "x": -83 0,
+          "y": -232 0,
+          "radius": 2.1,
+          "enemyGroupId": 19,
+          "respawnInterval": 295
+        }
+      ],
+      "connections": [7, 30],
+      "requiredLevel": 14,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 43,
+      "mapName": "Castle_Zone_6",
+      "biome": "Castle",
+      "width": 475,
+      "height": 200,
+      "ambientLight": 0.6,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_Castle_6",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 1.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -67 0,
+          "y": -5 0,
+          "radius": 2.3,
+          "enemyGroupId": 3,
+          "respawnInterval": 261
+        },
+        {
+          "spawnId": 1,
+          "x": -199 0,
+          "y": 226 0,
+          "radius": 1.5,
+          "enemyGroupId": 1,
+          "respawnInterval": 264
+        },
+        {
+          "spawnId": 2,
+          "x": -108 0,
+          "y": 92 0,
+          "radius": 2.2,
+          "enemyGroupId": 13,
+          "respawnInterval": 145
+        },
+        {
+          "spawnId": 3,
+          "x": 17 0,
+          "y": -198 0,
+          "radius": 0.5,
+          "enemyGroupId": 12,
+          "respawnInterval": 189
+        }
+      ],
+      "connections": [87, 91],
+      "requiredLevel": 13,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 44,
+      "mapName": "Castle_Zone_7",
+      "biome": "Castle",
+      "width": 295,
+      "height": 477,
+      "ambientLight": 0.5,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Castle_7",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 68 0,
+          "y": -63 0,
+          "radius": 2.4,
+          "enemyGroupId": 6,
+          "respawnInterval": 108
+        },
+        {
+          "spawnId": 1,
+          "x": -171 0,
+          "y": 162 0,
+          "radius": 1.9,
+          "enemyGroupId": 3,
+          "respawnInterval": 37
+        },
+        {
+          "spawnId": 2,
+          "x": -67 0,
+          "y": 71 0,
+          "radius": 1,
+          "enemyGroupId": 18,
+          "respawnInterval": 205
+        },
+        {
+          "spawnId": 3,
+          "x": -117 0,
+          "y": 14 0,
+          "radius": 2.1,
+          "enemyGroupId": 8,
+          "respawnInterval": 269
+        },
+        {
+          "spawnId": 4,
+          "x": -54 0,
+          "y": -181 0,
+          "radius": 0.5,
+          "enemyGroupId": 15,
+          "respawnInterval": 260
+        },
+        {
+          "spawnId": 5,
+          "x": 179 0,
+          "y": 69 0,
+          "radius": 1.9,
+          "enemyGroupId": 7,
+          "respawnInterval": 251
+        },
+        {
+          "spawnId": 6,
+          "x": -9 0,
+          "y": -15 0,
+          "radius": 1.7,
+          "enemyGroupId": 14,
+          "respawnInterval": 242
+        }
+      ],
+      "connections": [16, 85],
+      "requiredLevel": 28,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 45,
+      "mapName": "Castle_Zone_8",
+      "biome": "Castle",
+      "width": 314,
+      "height": 224,
+      "ambientLight": 0.6,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_Castle_8",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 0.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 156 0,
+          "y": -45 0,
+          "radius": 1.6,
+          "enemyGroupId": 11,
+          "respawnInterval": 197
+        },
+        {
+          "spawnId": 1,
+          "x": 9 0,
+          "y": 209 0,
+          "radius": 1.9,
+          "enemyGroupId": 8,
+          "respawnInterval": 34
+        },
+        {
+          "spawnId": 2,
+          "x": -186 0,
+          "y": -81 0,
+          "radius": 1.8,
+          "enemyGroupId": 16,
+          "respawnInterval": 190
+        },
+        {
+          "spawnId": 3,
+          "x": 239 0,
+          "y": 29 0,
+          "radius": 1.9,
+          "enemyGroupId": 4,
+          "respawnInterval": 217
+        },
+        {
+          "spawnId": 4,
+          "x": -62 0,
+          "y": -165 0,
+          "radius": 2.8,
+          "enemyGroupId": 7,
+          "respawnInterval": 286
+        }
+      ],
+      "connections": [39, 26],
+      "requiredLevel": 14,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 46,
+      "mapName": "Castle_Zone_9",
+      "biome": "Castle",
+      "width": 232,
+      "height": 384,
+      "ambientLight": 0.3,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_Castle_9",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 1.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 73 0,
+          "y": -245 0,
+          "radius": 1.5,
+          "enemyGroupId": 5,
+          "respawnInterval": 163
+        },
+        {
+          "spawnId": 1,
+          "x": 12 0,
+          "y": -40 0,
+          "radius": 0.6,
+          "enemyGroupId": 5,
+          "respawnInterval": 233
+        },
+        {
+          "spawnId": 2,
+          "x": -98 0,
+          "y": -117 0,
+          "radius": 2.3,
+          "enemyGroupId": 12,
+          "respawnInterval": 210
+        },
+        {
+          "spawnId": 3,
+          "x": 181 0,
+          "y": -10 0,
+          "radius": 2.6,
+          "enemyGroupId": 7,
+          "respawnInterval": 113
+        },
+        {
+          "spawnId": 4,
+          "x": -175 0,
+          "y": 194 0,
+          "radius": 1.8,
+          "enemyGroupId": 18,
+          "respawnInterval": 268
+        },
+        {
+          "spawnId": 5,
+          "x": -222 0,
+          "y": 79 0,
+          "radius": 2.2,
+          "enemyGroupId": 8,
+          "respawnInterval": 275
+        },
+        {
+          "spawnId": 6,
+          "x": -202 0,
+          "y": 23 0,
+          "radius": 1.5,
+          "enemyGroupId": 5,
+          "respawnInterval": 133
+        },
+        {
+          "spawnId": 7,
+          "x": -53 0,
+          "y": -137 0,
+          "radius": 2.5,
+          "enemyGroupId": 11,
+          "respawnInterval": 118
+        },
+        {
+          "spawnId": 8,
+          "x": 157 0,
+          "y": 18 0,
+          "radius": 0.5,
+          "enemyGroupId": 18,
+          "respawnInterval": 172
+        }
+      ],
+      "connections": [95, 85],
+      "requiredLevel": 21,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 47,
+      "mapName": "Castle_Zone_10",
+      "biome": "Castle",
+      "width": 269,
+      "height": 489,
+      "ambientLight": 0.5,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_Castle_10",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 0.7,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 243 0,
+          "y": -74 0,
+          "radius": 1,
+          "enemyGroupId": 17,
+          "respawnInterval": 283
+        },
+        {
+          "spawnId": 1,
+          "x": 200 0,
+          "y": -232 0,
+          "radius": 1.1,
+          "enemyGroupId": 8,
+          "respawnInterval": 181
+        },
+        {
+          "spawnId": 2,
+          "x": -222 0,
+          "y": -224 0,
+          "radius": 2.4,
+          "enemyGroupId": 9,
+          "respawnInterval": 112
+        },
+        {
+          "spawnId": 3,
+          "x": 141 0,
+          "y": -42 0,
+          "radius": 1,
+          "enemyGroupId": 15,
+          "respawnInterval": 190
+        },
+        {
+          "spawnId": 4,
+          "x": 36 0,
+          "y": -1 0,
+          "radius": 0.6,
+          "enemyGroupId": 19,
+          "respawnInterval": 132
+        },
+        {
+          "spawnId": 5,
+          "x": -226 0,
+          "y": -19 0,
+          "radius": 1.1,
+          "enemyGroupId": 13,
+          "respawnInterval": 170
+        },
+        {
+          "spawnId": 6,
+          "x": 150 0,
+          "y": 150 0,
+          "radius": 2.5,
+          "enemyGroupId": 18,
+          "respawnInterval": 275
+        }
+      ],
+      "connections": [9, 64],
+      "requiredLevel": 8,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 48,
+      "mapName": "Castle_Zone_11",
+      "biome": "Castle",
+      "width": 91,
+      "height": 225,
+      "ambientLight": 0.5,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Castle_11",
+      "ambientSound": "amb_Castle",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -145 0,
+          "y": 145 0,
+          "radius": 2.6,
+          "enemyGroupId": 4,
+          "respawnInterval": 269
+        },
+        {
+          "spawnId": 1,
+          "x": 143 0,
+          "y": -49 0,
+          "radius": 1.4,
+          "enemyGroupId": 12,
+          "respawnInterval": 229
+        },
+        {
+          "spawnId": 2,
+          "x": 21 0,
+          "y": 223 0,
+          "radius": 1.6,
+          "enemyGroupId": 11,
+          "respawnInterval": 214
+        },
+        {
+          "spawnId": 3,
+          "x": 19 0,
+          "y": 48 0,
+          "radius": 2.4,
+          "enemyGroupId": 1,
+          "respawnInterval": 179
+        },
+        {
+          "spawnId": 4,
+          "x": -198 0,
+          "y": 3 0,
+          "radius": 1.4,
+          "enemyGroupId": 9,
+          "respawnInterval": 78
+        },
+        {
+          "spawnId": 5,
+          "x": -45 0,
+          "y": -139 0,
+          "radius": 2.4,
+          "enemyGroupId": 16,
+          "respawnInterval": 51
+        },
+        {
+          "spawnId": 6,
+          "x": 20 0,
+          "y": -142 0,
+          "radius": 1.1,
+          "enemyGroupId": 2,
+          "respawnInterval": 31
+        },
+        {
+          "spawnId": 7,
+          "x": -168 0,
+          "y": -196 0,
+          "radius": 0.6,
+          "enemyGroupId": 18,
+          "respawnInterval": 167
+        },
+        {
+          "spawnId": 8,
+          "x": 163 0,
+          "y": 83 0,
+          "radius": 0.6,
+          "enemyGroupId": 1,
+          "respawnInterval": 261
+        }
+      ],
+      "connections": [51, 82],
+      "requiredLevel": 7,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 49,
+      "mapName": "Swamp_Zone_0",
+      "biome": "Swamp",
+      "width": 166,
+      "height": 120,
+      "ambientLight": 0.5,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Swamp_0",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 0.5,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -80 0,
+          "y": 173 0,
+          "radius": 2,
+          "enemyGroupId": 18,
+          "respawnInterval": 201
+        },
+        {
+          "spawnId": 1,
+          "x": -102 0,
+          "y": 175 0,
+          "radius": 1.3,
+          "enemyGroupId": 18,
+          "respawnInterval": 213
+        },
+        {
+          "spawnId": 2,
+          "x": -171 0,
+          "y": -213 0,
+          "radius": 1.2,
+          "enemyGroupId": 18,
+          "respawnInterval": 51
+        }
+      ],
+      "connections": [77, 105],
+      "requiredLevel": 21,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 50,
+      "mapName": "Swamp_Zone_1",
+      "biome": "Swamp",
+      "width": 143,
+      "height": 292,
+      "ambientLight": 0.6,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Swamp_1",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -136 0,
+          "y": 116 0,
+          "radius": 0.9,
+          "enemyGroupId": 8,
+          "respawnInterval": 184
+        },
+        {
+          "spawnId": 1,
+          "x": 158 0,
+          "y": 209 0,
+          "radius": 0.8,
+          "enemyGroupId": 14,
+          "respawnInterval": 124
+        },
+        {
+          "spawnId": 2,
+          "x": 33 0,
+          "y": 137 0,
+          "radius": 1.5,
+          "enemyGroupId": 13,
+          "respawnInterval": 178
+        }
+      ],
+      "connections": [51, 52],
+      "requiredLevel": 10,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 51,
+      "mapName": "Swamp_Zone_2",
+      "biome": "Swamp",
+      "width": 479,
+      "height": 401,
+      "ambientLight": 0.7,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Swamp_2",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 0.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 32 0,
+          "y": -31 0,
+          "radius": 2.6,
+          "enemyGroupId": 13,
+          "respawnInterval": 274
+        },
+        {
+          "spawnId": 1,
+          "x": -156 0,
+          "y": 141 0,
+          "radius": 2.9,
+          "enemyGroupId": 3,
+          "respawnInterval": 275
+        },
+        {
+          "spawnId": 2,
+          "x": 129 0,
+          "y": -228 0,
+          "radius": 1.2,
+          "enemyGroupId": 14,
+          "respawnInterval": 156
+        },
+        {
+          "spawnId": 3,
+          "x": 230 0,
+          "y": 60 0,
+          "radius": 1,
+          "enemyGroupId": 4,
+          "respawnInterval": 125
+        },
+        {
+          "spawnId": 4,
+          "x": 99 0,
+          "y": -50 0,
+          "radius": 1.1,
+          "enemyGroupId": 10,
+          "respawnInterval": 257
+        },
+        {
+          "spawnId": 5,
+          "x": 24 0,
+          "y": -113 0,
+          "radius": 0.9,
+          "enemyGroupId": 16,
+          "respawnInterval": 249
+        },
+        {
+          "spawnId": 6,
+          "x": -115 0,
+          "y": 88 0,
+          "radius": 2.6,
+          "enemyGroupId": 8,
+          "respawnInterval": 154
+        },
+        {
+          "spawnId": 7,
+          "x": -112 0,
+          "y": -229 0,
+          "radius": 0.9,
+          "enemyGroupId": 19,
+          "respawnInterval": 164
+        }
+      ],
+      "connections": [105, 30],
+      "requiredLevel": 26,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 52,
+      "mapName": "Swamp_Zone_3",
+      "biome": "Swamp",
+      "width": 362,
+      "height": 331,
+      "ambientLight": 0.3,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Swamp_3",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 68 0,
+          "y": 45 0,
+          "radius": 0.6,
+          "enemyGroupId": 15,
+          "respawnInterval": 196
+        },
+        {
+          "spawnId": 1,
+          "x": 170 0,
+          "y": -69 0,
+          "radius": 2,
+          "enemyGroupId": 13,
+          "respawnInterval": 184
+        },
+        {
+          "spawnId": 2,
+          "x": -48 0,
+          "y": 60 0,
+          "radius": 1.8,
+          "enemyGroupId": 5,
+          "respawnInterval": 151
+        },
+        {
+          "spawnId": 3,
+          "x": 204 0,
+          "y": -12 0,
+          "radius": 1.2,
+          "enemyGroupId": 19,
+          "respawnInterval": 248
+        },
+        {
+          "spawnId": 4,
+          "x": 171 0,
+          "y": -41 0,
+          "radius": 2.3,
+          "enemyGroupId": 15,
+          "respawnInterval": 110
+        }
+      ],
+      "connections": [47, 105],
+      "requiredLevel": 22,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 53,
+      "mapName": "Swamp_Zone_4",
+      "biome": "Swamp",
+      "width": 108,
+      "height": 410,
+      "ambientLight": 0.7,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Swamp_4",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 177 0,
+          "y": 230 0,
+          "radius": 2,
+          "enemyGroupId": 13,
+          "respawnInterval": 169
+        },
+        {
+          "spawnId": 1,
+          "x": 246 0,
+          "y": -151 0,
+          "radius": 2.8,
+          "enemyGroupId": 8,
+          "respawnInterval": 183
+        },
+        {
+          "spawnId": 2,
+          "x": 213 0,
+          "y": 76 0,
+          "radius": 1.8,
+          "enemyGroupId": 11,
+          "respawnInterval": 67
+        },
+        {
+          "spawnId": 3,
+          "x": 241 0,
+          "y": 172 0,
+          "radius": 0.5,
+          "enemyGroupId": 13,
+          "respawnInterval": 147
+        },
+        {
+          "spawnId": 4,
+          "x": -77 0,
+          "y": -163 0,
+          "radius": 2.3,
+          "enemyGroupId": 11,
+          "respawnInterval": 164
+        },
+        {
+          "spawnId": 5,
+          "x": -192 0,
+          "y": -186 0,
+          "radius": 0.5,
+          "enemyGroupId": 4,
+          "respawnInterval": 81
+        }
+      ],
+      "connections": [71, 60],
+      "requiredLevel": 6,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 54,
+      "mapName": "Swamp_Zone_5",
+      "biome": "Swamp",
+      "width": 270,
+      "height": 348,
+      "ambientLight": 0.4,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_Swamp_5",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 0.7,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -123 0,
+          "y": 121 0,
+          "radius": 0.7,
+          "enemyGroupId": 19,
+          "respawnInterval": 237
+        },
+        {
+          "spawnId": 1,
+          "x": 82 0,
+          "y": -185 0,
+          "radius": 2.7,
+          "enemyGroupId": 19,
+          "respawnInterval": 226
+        },
+        {
+          "spawnId": 2,
+          "x": 91 0,
+          "y": -202 0,
+          "radius": 1.5,
+          "enemyGroupId": 6,
+          "respawnInterval": 140
+        },
+        {
+          "spawnId": 3,
+          "x": 233 0,
+          "y": -115 0,
+          "radius": 2.2,
+          "enemyGroupId": 16,
+          "respawnInterval": 178
+        },
+        {
+          "spawnId": 4,
+          "x": -11 0,
+          "y": -71 0,
+          "radius": 2.9,
+          "enemyGroupId": 5,
+          "respawnInterval": 178
+        }
+      ],
+      "connections": [50, 81],
+      "requiredLevel": 14,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 55,
+      "mapName": "Swamp_Zone_6",
+      "biome": "Swamp",
+      "width": 282,
+      "height": 453,
+      "ambientLight": 0.3,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Swamp_6",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -208 0,
+          "y": -64 0,
+          "radius": 1,
+          "enemyGroupId": 3,
+          "respawnInterval": 156
+        },
+        {
+          "spawnId": 1,
+          "x": 128 0,
+          "y": -70 0,
+          "radius": 2.5,
+          "enemyGroupId": 8,
+          "respawnInterval": 236
+        },
+        {
+          "spawnId": 2,
+          "x": -208 0,
+          "y": -132 0,
+          "radius": 1.4,
+          "enemyGroupId": 1,
+          "respawnInterval": 198
+        },
+        {
+          "spawnId": 3,
+          "x": -60 0,
+          "y": 83 0,
+          "radius": 2.8,
+          "enemyGroupId": 15,
+          "respawnInterval": 140
+        },
+        {
+          "spawnId": 4,
+          "x": -127 0,
+          "y": -153 0,
+          "radius": 2.6,
+          "enemyGroupId": 3,
+          "respawnInterval": 50
+        },
+        {
+          "spawnId": 5,
+          "x": 236 0,
+          "y": -140 0,
+          "radius": 0.9,
+          "enemyGroupId": 3,
+          "respawnInterval": 216
+        }
+      ],
+      "connections": [87, 86],
+      "requiredLevel": 10,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 56,
+      "mapName": "Swamp_Zone_7",
+      "biome": "Swamp",
+      "width": 270,
+      "height": 138,
+      "ambientLight": 0.4,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_Swamp_7",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -203 0,
+          "y": -141 0,
+          "radius": 1,
+          "enemyGroupId": 14,
+          "respawnInterval": 180
+        },
+        {
+          "spawnId": 1,
+          "x": 17 0,
+          "y": -222 0,
+          "radius": 2,
+          "enemyGroupId": 14,
+          "respawnInterval": 96
+        },
+        {
+          "spawnId": 2,
+          "x": -152 0,
+          "y": -163 0,
+          "radius": 2.1,
+          "enemyGroupId": 16,
+          "respawnInterval": 36
+        },
+        {
+          "spawnId": 3,
+          "x": -31 0,
+          "y": -87 0,
+          "radius": 1.6,
+          "enemyGroupId": 18,
+          "respawnInterval": 202
+        },
+        {
+          "spawnId": 4,
+          "x": 103 0,
+          "y": -26 0,
+          "radius": 1.8,
+          "enemyGroupId": 11,
+          "respawnInterval": 117
+        },
+        {
+          "spawnId": 5,
+          "x": 146 0,
+          "y": 163 0,
+          "radius": 2.6,
+          "enemyGroupId": 2,
+          "respawnInterval": 66
+        },
+        {
+          "spawnId": 6,
+          "x": -120 0,
+          "y": 216 0,
+          "radius": 1.2,
+          "enemyGroupId": 3,
+          "respawnInterval": 90
+        }
+      ],
+      "connections": [54, 37],
+      "requiredLevel": 9,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 57,
+      "mapName": "Swamp_Zone_8",
+      "biome": "Swamp",
+      "width": 303,
+      "height": 57,
+      "ambientLight": 0.9,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Swamp_8",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 0.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 196 0,
+          "y": -127 0,
+          "radius": 1.4,
+          "enemyGroupId": 4,
+          "respawnInterval": 236
+        },
+        {
+          "spawnId": 1,
+          "x": 66 0,
+          "y": 47 0,
+          "radius": 1.6,
+          "enemyGroupId": 7,
+          "respawnInterval": 188
+        },
+        {
+          "spawnId": 2,
+          "x": -67 0,
+          "y": -68 0,
+          "radius": 0.6,
+          "enemyGroupId": 12,
+          "respawnInterval": 151
+        },
+        {
+          "spawnId": 3,
+          "x": 87 0,
+          "y": 61 0,
+          "radius": 1.4,
+          "enemyGroupId": 6,
+          "respawnInterval": 250
+        },
+        {
+          "spawnId": 4,
+          "x": -195 0,
+          "y": -68 0,
+          "radius": 0.9,
+          "enemyGroupId": 6,
+          "respawnInterval": 202
+        },
+        {
+          "spawnId": 5,
+          "x": -110 0,
+          "y": -244 0,
+          "radius": 2,
+          "enemyGroupId": 16,
+          "respawnInterval": 180
+        },
+        {
+          "spawnId": 6,
+          "x": -172 0,
+          "y": 20 0,
+          "radius": 2.6,
+          "enemyGroupId": 13,
+          "respawnInterval": 281
+        },
+        {
+          "spawnId": 7,
+          "x": 108 0,
+          "y": 220 0,
+          "radius": 2.7,
+          "enemyGroupId": 2,
+          "respawnInterval": 283
+        }
+      ],
+      "connections": [50, 51],
+      "requiredLevel": 12,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 58,
+      "mapName": "Swamp_Zone_9",
+      "biome": "Swamp",
+      "width": 82,
+      "height": 123,
+      "ambientLight": 0.3,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Swamp_9",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 228 0,
+          "y": -44 0,
+          "radius": 1.9,
+          "enemyGroupId": 11,
+          "respawnInterval": 251
+        },
+        {
+          "spawnId": 1,
+          "x": 37 0,
+          "y": 83 0,
+          "radius": 2.9,
+          "enemyGroupId": 3,
+          "respawnInterval": 288
+        },
+        {
+          "spawnId": 2,
+          "x": -41 0,
+          "y": 29 0,
+          "radius": 0.5,
+          "enemyGroupId": 18,
+          "respawnInterval": 206
+        },
+        {
+          "spawnId": 3,
+          "x": -166 0,
+          "y": -8 0,
+          "radius": 2.6,
+          "enemyGroupId": 9,
+          "respawnInterval": 222
+        },
+        {
+          "spawnId": 4,
+          "x": 190 0,
+          "y": -74 0,
+          "radius": 2.1,
+          "enemyGroupId": 2,
+          "respawnInterval": 288
+        },
+        {
+          "spawnId": 5,
+          "x": 183 0,
+          "y": 220 0,
+          "radius": 0.6,
+          "enemyGroupId": 2,
+          "respawnInterval": 182
+        },
+        {
+          "spawnId": 6,
+          "x": -204 0,
+          "y": 211 0,
+          "radius": 1,
+          "enemyGroupId": 2,
+          "respawnInterval": 298
+        },
+        {
+          "spawnId": 7,
+          "x": -219 0,
+          "y": -90 0,
+          "radius": 2.3,
+          "enemyGroupId": 18,
+          "respawnInterval": 70
+        },
+        {
+          "spawnId": 8,
+          "x": -23 0,
+          "y": 86 0,
+          "radius": 2.8,
+          "enemyGroupId": 7,
+          "respawnInterval": 46
+        }
+      ],
+      "connections": [96, 86],
+      "requiredLevel": 2,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 59,
+      "mapName": "Swamp_Zone_10",
+      "biome": "Swamp",
+      "width": 192,
+      "height": 329,
+      "ambientLight": 0.8,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_Swamp_10",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -45 0,
+          "y": -102 0,
+          "radius": 1.1,
+          "enemyGroupId": 13,
+          "respawnInterval": 289
+        },
+        {
+          "spawnId": 1,
+          "x": -198 0,
+          "y": -59 0,
+          "radius": 2.5,
+          "enemyGroupId": 3,
+          "respawnInterval": 213
+        },
+        {
+          "spawnId": 2,
+          "x": -49 0,
+          "y": -147 0,
+          "radius": 2.7,
+          "enemyGroupId": 5,
+          "respawnInterval": 242
+        },
+        {
+          "spawnId": 3,
+          "x": -209 0,
+          "y": 107 0,
+          "radius": 1.3,
+          "enemyGroupId": 4,
+          "respawnInterval": 188
+        },
+        {
+          "spawnId": 4,
+          "x": 55 0,
+          "y": -125 0,
+          "radius": 0.8,
+          "enemyGroupId": 17,
+          "respawnInterval": 137
+        },
+        {
+          "spawnId": 5,
+          "x": 61 0,
+          "y": 62 0,
+          "radius": 1.1,
+          "enemyGroupId": 1,
+          "respawnInterval": 296
+        },
+        {
+          "spawnId": 6,
+          "x": -78 0,
+          "y": 78 0,
+          "radius": 1.5,
+          "enemyGroupId": 6,
+          "respawnInterval": 134
+        }
+      ],
+      "connections": [53, 57],
+      "requiredLevel": 1,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 60,
+      "mapName": "Swamp_Zone_11",
+      "biome": "Swamp",
+      "width": 54,
+      "height": 241,
+      "ambientLight": 0.4,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Swamp_11",
+      "ambientSound": "amb_Swamp",
+      "enemyDensity": 0.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 175 0,
+          "y": 151 0,
+          "radius": 0.9,
+          "enemyGroupId": 6,
+          "respawnInterval": 172
+        },
+        {
+          "spawnId": 1,
+          "x": 147 0,
+          "y": -125 0,
+          "radius": 1,
+          "enemyGroupId": 4,
+          "respawnInterval": 40
+        },
+        {
+          "spawnId": 2,
+          "x": -244 0,
+          "y": -230 0,
+          "radius": 1.4,
+          "enemyGroupId": 14,
+          "respawnInterval": 107
+        },
+        {
+          "spawnId": 3,
+          "x": -70 0,
+          "y": 219 0,
+          "radius": 1.9,
+          "enemyGroupId": 13,
+          "respawnInterval": 271
+        },
+        {
+          "spawnId": 4,
+          "x": -36 0,
+          "y": -197 0,
+          "radius": 2.9,
+          "enemyGroupId": 13,
+          "respawnInterval": 131
+        },
+        {
+          "spawnId": 5,
+          "x": 147 0,
+          "y": 84 0,
+          "radius": 1.1,
+          "enemyGroupId": 10,
+          "respawnInterval": 160
+        }
+      ],
+      "connections": [56, 2],
+      "requiredLevel": 22,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 61,
+      "mapName": "Mountain_Zone_0",
+      "biome": "Mountain",
+      "width": 251,
+      "height": 162,
+      "ambientLight": 0.7,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Mountain_0",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -142 0,
+          "y": 83 0,
+          "radius": 2.4,
+          "enemyGroupId": 16,
+          "respawnInterval": 83
+        },
+        {
+          "spawnId": 1,
+          "x": -123 0,
+          "y": -227 0,
+          "radius": 1.2,
+          "enemyGroupId": 15,
+          "respawnInterval": 104
+        },
+        {
+          "spawnId": 2,
+          "x": 46 0,
+          "y": 122 0,
+          "radius": 2.5,
+          "enemyGroupId": 17,
+          "respawnInterval": 299
+        },
+        {
+          "spawnId": 3,
+          "x": -6 0,
+          "y": -154 0,
+          "radius": 1.8,
+          "enemyGroupId": 8,
+          "respawnInterval": 98
+        },
+        {
+          "spawnId": 4,
+          "x": -203 0,
+          "y": -15 0,
+          "radius": 1,
+          "enemyGroupId": 1,
+          "respawnInterval": 63
+        },
+        {
+          "spawnId": 5,
+          "x": -161 0,
+          "y": 75 0,
+          "radius": 1.2,
+          "enemyGroupId": 6,
+          "respawnInterval": 292
+        },
+        {
+          "spawnId": 6,
+          "x": -95 0,
+          "y": -7 0,
+          "radius": 2.8,
+          "enemyGroupId": 2,
+          "respawnInterval": 134
+        },
+        {
+          "spawnId": 7,
+          "x": -67 0,
+          "y": -50 0,
+          "radius": 1.9,
+          "enemyGroupId": 3,
+          "respawnInterval": 106
+        }
+      ],
+      "connections": [31, 75],
+      "requiredLevel": 29,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 62,
+      "mapName": "Mountain_Zone_1",
+      "biome": "Mountain",
+      "width": 131,
+      "height": 200,
+      "ambientLight": 0.5,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Mountain_1",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 0.8,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 154 0,
+          "y": -187 0,
+          "radius": 1.5,
+          "enemyGroupId": 12,
+          "respawnInterval": 232
+        },
+        {
+          "spawnId": 1,
+          "x": -12 0,
+          "y": -81 0,
+          "radius": 1.5,
+          "enemyGroupId": 17,
+          "respawnInterval": 115
+        },
+        {
+          "spawnId": 2,
+          "x": 116 0,
+          "y": -67 0,
+          "radius": 0.7,
+          "enemyGroupId": 6,
+          "respawnInterval": 135
+        }
+      ],
+      "connections": [112, 90],
+      "requiredLevel": 8,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 63,
+      "mapName": "Mountain_Zone_2",
+      "biome": "Mountain",
+      "width": 172,
+      "height": 354,
+      "ambientLight": 0.7,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Mountain_2",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -52 0,
+          "y": 214 0,
+          "radius": 2.6,
+          "enemyGroupId": 15,
+          "respawnInterval": 207
+        },
+        {
+          "spawnId": 1,
+          "x": -109 0,
+          "y": 203 0,
+          "radius": 0.8,
+          "enemyGroupId": 16,
+          "respawnInterval": 261
+        },
+        {
+          "spawnId": 2,
+          "x": 39 0,
+          "y": 30 0,
+          "radius": 1.6,
+          "enemyGroupId": 4,
+          "respawnInterval": 278
+        },
+        {
+          "spawnId": 3,
+          "x": 168 0,
+          "y": -142 0,
+          "radius": 2.4,
+          "enemyGroupId": 3,
+          "respawnInterval": 158
+        }
+      ],
+      "connections": [55, 114],
+      "requiredLevel": 10,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 64,
+      "mapName": "Mountain_Zone_3",
+      "biome": "Mountain",
+      "width": 335,
+      "height": 456,
+      "ambientLight": 0.8,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Mountain_3",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 0.8,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 130 0,
+          "y": 4 0,
+          "radius": 1.1,
+          "enemyGroupId": 18,
+          "respawnInterval": 140
+        },
+        {
+          "spawnId": 1,
+          "x": 130 0,
+          "y": -195 0,
+          "radius": 1.6,
+          "enemyGroupId": 12,
+          "respawnInterval": 235
+        },
+        {
+          "spawnId": 2,
+          "x": 167 0,
+          "y": -60 0,
+          "radius": 1.1,
+          "enemyGroupId": 13,
+          "respawnInterval": 216
+        },
+        {
+          "spawnId": 3,
+          "x": -163 0,
+          "y": -165 0,
+          "radius": 2.3,
+          "enemyGroupId": 5,
+          "respawnInterval": 270
+        },
+        {
+          "spawnId": 4,
+          "x": 25 0,
+          "y": -17 0,
+          "radius": 0.6,
+          "enemyGroupId": 8,
+          "respawnInterval": 63
+        },
+        {
+          "spawnId": 5,
+          "x": 165 0,
+          "y": -183 0,
+          "radius": 2.4,
+          "enemyGroupId": 17,
+          "respawnInterval": 117
+        },
+        {
+          "spawnId": 6,
+          "x": 88 0,
+          "y": -209 0,
+          "radius": 0.8,
+          "enemyGroupId": 7,
+          "respawnInterval": 245
+        }
+      ],
+      "connections": [93, 63],
+      "requiredLevel": 3,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 65,
+      "mapName": "Mountain_Zone_4",
+      "biome": "Mountain",
+      "width": 247,
+      "height": 178,
+      "ambientLight": 0.8,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_Mountain_4",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 1.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 18 0,
+          "y": 24 0,
+          "radius": 1.8,
+          "enemyGroupId": 1,
+          "respawnInterval": 290
+        },
+        {
+          "spawnId": 1,
+          "x": -219 0,
+          "y": 243 0,
+          "radius": 1.1,
+          "enemyGroupId": 17,
+          "respawnInterval": 176
+        },
+        {
+          "spawnId": 2,
+          "x": -126 0,
+          "y": 177 0,
+          "radius": 1.2,
+          "enemyGroupId": 13,
+          "respawnInterval": 177
+        },
+        {
+          "spawnId": 3,
+          "x": -27 0,
+          "y": 236 0,
+          "radius": 2,
+          "enemyGroupId": 11,
+          "respawnInterval": 104
+        },
+        {
+          "spawnId": 4,
+          "x": 137 0,
+          "y": 187 0,
+          "radius": 1.1,
+          "enemyGroupId": 15,
+          "respawnInterval": 129
+        },
+        {
+          "spawnId": 5,
+          "x": -223 0,
+          "y": -107 0,
+          "radius": 2.2,
+          "enemyGroupId": 6,
+          "respawnInterval": 211
+        },
+        {
+          "spawnId": 6,
+          "x": -182 0,
+          "y": 49 0,
+          "radius": 2.2,
+          "enemyGroupId": 13,
+          "respawnInterval": 263
+        }
+      ],
+      "connections": [89, 108],
+      "requiredLevel": 15,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 66,
+      "mapName": "Mountain_Zone_5",
+      "biome": "Mountain",
+      "width": 62,
+      "height": 383,
+      "ambientLight": 0.3,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Mountain_5",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 0.9,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 83 0,
+          "y": -27 0,
+          "radius": 0.9,
+          "enemyGroupId": 16,
+          "respawnInterval": 274
+        },
+        {
+          "spawnId": 1,
+          "x": 135 0,
+          "y": 51 0,
+          "radius": 1.8,
+          "enemyGroupId": 13,
+          "respawnInterval": 200
+        },
+        {
+          "spawnId": 2,
+          "x": 69 0,
+          "y": 188 0,
+          "radius": 2.6,
+          "enemyGroupId": 16,
+          "respawnInterval": 263
+        },
+        {
+          "spawnId": 3,
+          "x": -217 0,
+          "y": -233 0,
+          "radius": 1.2,
+          "enemyGroupId": 13,
+          "respawnInterval": 145
+        }
+      ],
+      "connections": [8, 10],
+      "requiredLevel": 20,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 67,
+      "mapName": "Mountain_Zone_6",
+      "biome": "Mountain",
+      "width": 282,
+      "height": 332,
+      "ambientLight": 0.3,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Mountain_6",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 0.8,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -90 0,
+          "y": 229 0,
+          "radius": 1.2,
+          "enemyGroupId": 8,
+          "respawnInterval": 274
+        },
+        {
+          "spawnId": 1,
+          "x": -34 0,
+          "y": 69 0,
+          "radius": 0.7,
+          "enemyGroupId": 19,
+          "respawnInterval": 275
+        },
+        {
+          "spawnId": 2,
+          "x": 234 0,
+          "y": 170 0,
+          "radius": 2.6,
+          "enemyGroupId": 19,
+          "respawnInterval": 93
+        },
+        {
+          "spawnId": 3,
+          "x": -110 0,
+          "y": -213 0,
+          "radius": 1.7,
+          "enemyGroupId": 11,
+          "respawnInterval": 265
+        },
+        {
+          "spawnId": 4,
+          "x": 116 0,
+          "y": 145 0,
+          "radius": 1,
+          "enemyGroupId": 19,
+          "respawnInterval": 294
+        },
+        {
+          "spawnId": 5,
+          "x": -206 0,
+          "y": 129 0,
+          "radius": 1.2,
+          "enemyGroupId": 5,
+          "respawnInterval": 261
+        },
+        {
+          "spawnId": 6,
+          "x": -225 0,
+          "y": 77 0,
+          "radius": 0.8,
+          "enemyGroupId": 6,
+          "respawnInterval": 258
+        },
+        {
+          "spawnId": 7,
+          "x": 50 0,
+          "y": 108 0,
+          "radius": 1.5,
+          "enemyGroupId": 7,
+          "respawnInterval": 142
+        }
+      ],
+      "connections": [41, 117],
+      "requiredLevel": 2,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 68,
+      "mapName": "Mountain_Zone_7",
+      "biome": "Mountain",
+      "width": 84,
+      "height": 305,
+      "ambientLight": 0.8,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Mountain_7",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 99 0,
+          "y": 67 0,
+          "radius": 2.3,
+          "enemyGroupId": 5,
+          "respawnInterval": 138
+        },
+        {
+          "spawnId": 1,
+          "x": 96 0,
+          "y": -68 0,
+          "radius": 0.5,
+          "enemyGroupId": 11,
+          "respawnInterval": 216
+        },
+        {
+          "spawnId": 2,
+          "x": 121 0,
+          "y": 161 0,
+          "radius": 0.7,
+          "enemyGroupId": 19,
+          "respawnInterval": 155
+        },
+        {
+          "spawnId": 3,
+          "x": -82 0,
+          "y": 3 0,
+          "radius": 0.7,
+          "enemyGroupId": 2,
+          "respawnInterval": 116
+        }
+      ],
+      "connections": [44, 100],
+      "requiredLevel": 23,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 69,
+      "mapName": "Mountain_Zone_8",
+      "biome": "Mountain",
+      "width": 104,
+      "height": 421,
+      "ambientLight": 0.6,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Mountain_8",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 0.5,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -86 0,
+          "y": -153 0,
+          "radius": 1.4,
+          "enemyGroupId": 5,
+          "respawnInterval": 124
+        },
+        {
+          "spawnId": 1,
+          "x": -213 0,
+          "y": 18 0,
+          "radius": 0.5,
+          "enemyGroupId": 2,
+          "respawnInterval": 290
+        },
+        {
+          "spawnId": 2,
+          "x": -223 0,
+          "y": -159 0,
+          "radius": 1.2,
+          "enemyGroupId": 16,
+          "respawnInterval": 145
+        },
+        {
+          "spawnId": 3,
+          "x": 79 0,
+          "y": -211 0,
+          "radius": 1.6,
+          "enemyGroupId": 3,
+          "respawnInterval": 87
+        },
+        {
+          "spawnId": 4,
+          "x": -120 0,
+          "y": -54 0,
+          "radius": 0.5,
+          "enemyGroupId": 1,
+          "respawnInterval": 167
+        },
+        {
+          "spawnId": 5,
+          "x": 132 0,
+          "y": -243 0,
+          "radius": 0.5,
+          "enemyGroupId": 11,
+          "respawnInterval": 225
+        }
+      ],
+      "connections": [15, 10],
+      "requiredLevel": 25,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 70,
+      "mapName": "Mountain_Zone_9",
+      "biome": "Mountain",
+      "width": 57,
+      "height": 460,
+      "ambientLight": 0.4,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Mountain_9",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 0.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 77 0,
+          "y": -111 0,
+          "radius": 1.3,
+          "enemyGroupId": 4,
+          "respawnInterval": 151
+        },
+        {
+          "spawnId": 1,
+          "x": 100 0,
+          "y": 31 0,
+          "radius": 1.1,
+          "enemyGroupId": 5,
+          "respawnInterval": 283
+        },
+        {
+          "spawnId": 2,
+          "x": 69 0,
+          "y": 221 0,
+          "radius": 1.1,
+          "enemyGroupId": 19,
+          "respawnInterval": 163
+        }
+      ],
+      "connections": [29, 97],
+      "requiredLevel": 16,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 71,
+      "mapName": "Mountain_Zone_10",
+      "biome": "Mountain",
+      "width": 351,
+      "height": 323,
+      "ambientLight": 0.3,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Mountain_10",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 0.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -103 0,
+          "y": 207 0,
+          "radius": 2.4,
+          "enemyGroupId": 13,
+          "respawnInterval": 205
+        },
+        {
+          "spawnId": 1,
+          "x": -173 0,
+          "y": 148 0,
+          "radius": 1.5,
+          "enemyGroupId": 15,
+          "respawnInterval": 211
+        },
+        {
+          "spawnId": 2,
+          "x": -102 0,
+          "y": -59 0,
+          "radius": 1,
+          "enemyGroupId": 10,
+          "respawnInterval": 213
+        },
+        {
+          "spawnId": 3,
+          "x": 222 0,
+          "y": -127 0,
+          "radius": 2.8,
+          "enemyGroupId": 3,
+          "respawnInterval": 288
+        },
+        {
+          "spawnId": 4,
+          "x": 218 0,
+          "y": -154 0,
+          "radius": 1.5,
+          "enemyGroupId": 1,
+          "respawnInterval": 53
+        },
+        {
+          "spawnId": 5,
+          "x": 49 0,
+          "y": -178 0,
+          "radius": 2.9,
+          "enemyGroupId": 15,
+          "respawnInterval": 66
+        },
+        {
+          "spawnId": 6,
+          "x": 104 0,
+          "y": 200 0,
+          "radius": 1,
+          "enemyGroupId": 8,
+          "respawnInterval": 56
+        },
+        {
+          "spawnId": 7,
+          "x": -107 0,
+          "y": -197 0,
+          "radius": 2,
+          "enemyGroupId": 17,
+          "respawnInterval": 201
+        },
+        {
+          "spawnId": 8,
+          "x": 154 0,
+          "y": -64 0,
+          "radius": 0.5,
+          "enemyGroupId": 2,
+          "respawnInterval": 155
+        }
+      ],
+      "connections": [28, 63],
+      "requiredLevel": 18,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 72,
+      "mapName": "Mountain_Zone_11",
+      "biome": "Mountain",
+      "width": 80,
+      "height": 412,
+      "ambientLight": 0.5,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_Mountain_11",
+      "ambientSound": "amb_Mountain",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -223 0,
+          "y": -103 0,
+          "radius": 0.5,
+          "enemyGroupId": 8,
+          "respawnInterval": 41
+        },
+        {
+          "spawnId": 1,
+          "x": 152 0,
+          "y": -139 0,
+          "radius": 1.6,
+          "enemyGroupId": 18,
+          "respawnInterval": 295
+        },
+        {
+          "spawnId": 2,
+          "x": -37 0,
+          "y": 198 0,
+          "radius": 1.8,
+          "enemyGroupId": 2,
+          "respawnInterval": 186
+        },
+        {
+          "spawnId": 3,
+          "x": 104 0,
+          "y": 67 0,
+          "radius": 2.8,
+          "enemyGroupId": 16,
+          "respawnInterval": 146
+        }
+      ],
+      "connections": [99, 102],
+      "requiredLevel": 10,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 73,
+      "mapName": "Volcano_Zone_0",
+      "biome": "Volcano",
+      "width": 144,
+      "height": 331,
+      "ambientLight": 0.7,
+      "fogDensity": 0.1,
+      "bgmTrack": "bgm_Volcano_0",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 1.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -63 0,
+          "y": 177 0,
+          "radius": 2.5,
+          "enemyGroupId": 17,
+          "respawnInterval": 182
+        },
+        {
+          "spawnId": 1,
+          "x": 127 0,
+          "y": 85 0,
+          "radius": 0.9,
+          "enemyGroupId": 1,
+          "respawnInterval": 160
+        },
+        {
+          "spawnId": 2,
+          "x": -43 0,
+          "y": 115 0,
+          "radius": 1.2,
+          "enemyGroupId": 18,
+          "respawnInterval": 75
+        }
+      ],
+      "connections": [102, 32],
+      "requiredLevel": 29,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 74,
+      "mapName": "Volcano_Zone_1",
+      "biome": "Volcano",
+      "width": 255,
+      "height": 212,
+      "ambientLight": 0.9,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Volcano_1",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 217 0,
+          "y": 87 0,
+          "radius": 2,
+          "enemyGroupId": 5,
+          "respawnInterval": 202
+        },
+        {
+          "spawnId": 1,
+          "x": -13 0,
+          "y": 104 0,
+          "radius": 1.3,
+          "enemyGroupId": 9,
+          "respawnInterval": 81
+        },
+        {
+          "spawnId": 2,
+          "x": -189 0,
+          "y": 109 0,
+          "radius": 1,
+          "enemyGroupId": 8,
+          "respawnInterval": 132
+        },
+        {
+          "spawnId": 3,
+          "x": -140 0,
+          "y": -75 0,
+          "radius": 1,
+          "enemyGroupId": 19,
+          "respawnInterval": 158
+        },
+        {
+          "spawnId": 4,
+          "x": -178 0,
+          "y": 71 0,
+          "radius": 1.9,
+          "enemyGroupId": 11,
+          "respawnInterval": 92
+        },
+        {
+          "spawnId": 5,
+          "x": -218 0,
+          "y": -193 0,
+          "radius": 2.2,
+          "enemyGroupId": 17,
+          "respawnInterval": 124
+        },
+        {
+          "spawnId": 6,
+          "x": -206 0,
+          "y": 219 0,
+          "radius": 2.3,
+          "enemyGroupId": 10,
+          "respawnInterval": 94
+        }
+      ],
+      "connections": [104, 92],
+      "requiredLevel": 26,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 75,
+      "mapName": "Volcano_Zone_2",
+      "biome": "Volcano",
+      "width": 487,
+      "height": 337,
+      "ambientLight": 0.6,
+      "fogDensity": 0.3,
+      "bgmTrack": "bgm_Volcano_2",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 0.5,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 72 0,
+          "y": -80 0,
+          "radius": 2.8,
+          "enemyGroupId": 9,
+          "respawnInterval": 172
+        },
+        {
+          "spawnId": 1,
+          "x": 29 0,
+          "y": -69 0,
+          "radius": 1.3,
+          "enemyGroupId": 15,
+          "respawnInterval": 242
+        },
+        {
+          "spawnId": 2,
+          "x": 76 0,
+          "y": 127 0,
+          "radius": 1.5,
+          "enemyGroupId": 4,
+          "respawnInterval": 289
+        },
+        {
+          "spawnId": 3,
+          "x": 233 0,
+          "y": 197 0,
+          "radius": 2,
+          "enemyGroupId": 10,
+          "respawnInterval": 207
+        },
+        {
+          "spawnId": 4,
+          "x": -35 0,
+          "y": -217 0,
+          "radius": 0.5,
+          "enemyGroupId": 1,
+          "respawnInterval": 277
+        },
+        {
+          "spawnId": 5,
+          "x": -50 0,
+          "y": -90 0,
+          "radius": 2.7,
+          "enemyGroupId": 5,
+          "respawnInterval": 243
+        },
+        {
+          "spawnId": 6,
+          "x": 193 0,
+          "y": -245 0,
+          "radius": 2.5,
+          "enemyGroupId": 16,
+          "respawnInterval": 233
+        },
+        {
+          "spawnId": 7,
+          "x": 244 0,
+          "y": -118 0,
+          "radius": 0.6,
+          "enemyGroupId": 15,
+          "respawnInterval": 290
+        },
+        {
+          "spawnId": 8,
+          "x": 57 0,
+          "y": 11 0,
+          "radius": 2.1,
+          "enemyGroupId": 6,
+          "respawnInterval": 76
+        }
+      ],
+      "connections": [98, 12],
+      "requiredLevel": 22,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 76,
+      "mapName": "Volcano_Zone_3",
+      "biome": "Volcano",
+      "width": 268,
+      "height": 467,
+      "ambientLight": 0.6,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Volcano_3",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 135 0,
+          "y": -139 0,
+          "radius": 0.6,
+          "enemyGroupId": 12,
+          "respawnInterval": 39
+        },
+        {
+          "spawnId": 1,
+          "x": -144 0,
+          "y": 233 0,
+          "radius": 0.6,
+          "enemyGroupId": 3,
+          "respawnInterval": 243
+        },
+        {
+          "spawnId": 2,
+          "x": -207 0,
+          "y": 241 0,
+          "radius": 0.7,
+          "enemyGroupId": 12,
+          "respawnInterval": 201
+        }
+      ],
+      "connections": [105, 35],
+      "requiredLevel": 2,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 77,
+      "mapName": "Volcano_Zone_4",
+      "biome": "Volcano",
+      "width": 310,
+      "height": 300,
+      "ambientLight": 0.8,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Volcano_4",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 0.7,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -43 0,
+          "y": -181 0,
+          "radius": 1.1,
+          "enemyGroupId": 9,
+          "respawnInterval": 279
+        },
+        {
+          "spawnId": 1,
+          "x": 16 0,
+          "y": 167 0,
+          "radius": 0.8,
+          "enemyGroupId": 8,
+          "respawnInterval": 227
+        },
+        {
+          "spawnId": 2,
+          "x": -205 0,
+          "y": 38 0,
+          "radius": 1.7,
+          "enemyGroupId": 6,
+          "respawnInterval": 68
+        },
+        {
+          "spawnId": 3,
+          "x": -112 0,
+          "y": -237 0,
+          "radius": 0.7,
+          "enemyGroupId": 11,
+          "respawnInterval": 299
+        },
+        {
+          "spawnId": 4,
+          "x": -230 0,
+          "y": 129 0,
+          "radius": 0.6,
+          "enemyGroupId": 7,
+          "respawnInterval": 75
+        },
+        {
+          "spawnId": 5,
+          "x": -119 0,
+          "y": -23 0,
+          "radius": 2.5,
+          "enemyGroupId": 4,
+          "respawnInterval": 57
+        }
+      ],
+      "connections": [35, 101],
+      "requiredLevel": 24,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 78,
+      "mapName": "Volcano_Zone_5",
+      "biome": "Volcano",
+      "width": 325,
+      "height": 348,
+      "ambientLight": 0.3,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_Volcano_5",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 0.5,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 49 0,
+          "y": -10 0,
+          "radius": 2.9,
+          "enemyGroupId": 18,
+          "respawnInterval": 134
+        },
+        {
+          "spawnId": 1,
+          "x": 82 0,
+          "y": 109 0,
+          "radius": 1.9,
+          "enemyGroupId": 3,
+          "respawnInterval": 243
+        },
+        {
+          "spawnId": 2,
+          "x": -113 0,
+          "y": -47 0,
+          "radius": 1.2,
+          "enemyGroupId": 13,
+          "respawnInterval": 133
+        },
+        {
+          "spawnId": 3,
+          "x": 240 0,
+          "y": -200 0,
+          "radius": 1.4,
+          "enemyGroupId": 11,
+          "respawnInterval": 158
+        },
+        {
+          "spawnId": 4,
+          "x": 175 0,
+          "y": -153 0,
+          "radius": 0.9,
+          "enemyGroupId": 5,
+          "respawnInterval": 254
+        },
+        {
+          "spawnId": 5,
+          "x": -234 0,
+          "y": 141 0,
+          "radius": 1.7,
+          "enemyGroupId": 13,
+          "respawnInterval": 173
+        },
+        {
+          "spawnId": 6,
+          "x": 176 0,
+          "y": -223 0,
+          "radius": 2,
+          "enemyGroupId": 18,
+          "respawnInterval": 230
+        },
+        {
+          "spawnId": 7,
+          "x": -184 0,
+          "y": -143 0,
+          "radius": 2.1,
+          "enemyGroupId": 6,
+          "respawnInterval": 299
+        },
+        {
+          "spawnId": 8,
+          "x": -129 0,
+          "y": -97 0,
+          "radius": 1.8,
+          "enemyGroupId": 5,
+          "respawnInterval": 168
+        }
+      ],
+      "connections": [57, 82],
+      "requiredLevel": 12,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 79,
+      "mapName": "Volcano_Zone_6",
+      "biome": "Volcano",
+      "width": 472,
+      "height": 222,
+      "ambientLight": 0.4,
+      "fogDensity": 0.3,
+      "bgmTrack": "bgm_Volcano_6",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 127 0,
+          "y": -96 0,
+          "radius": 2.5,
+          "enemyGroupId": 16,
+          "respawnInterval": 89
+        },
+        {
+          "spawnId": 1,
+          "x": -19 0,
+          "y": -212 0,
+          "radius": 0.6,
+          "enemyGroupId": 17,
+          "respawnInterval": 234
+        },
+        {
+          "spawnId": 2,
+          "x": -123 0,
+          "y": 142 0,
+          "radius": 1.4,
+          "enemyGroupId": 19,
+          "respawnInterval": 71
+        },
+        {
+          "spawnId": 3,
+          "x": -106 0,
+          "y": 49 0,
+          "radius": 2.1,
+          "enemyGroupId": 14,
+          "respawnInterval": 76
+        }
+      ],
+      "connections": [46, 11],
+      "requiredLevel": 19,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 80,
+      "mapName": "Volcano_Zone_7",
+      "biome": "Volcano",
+      "width": 186,
+      "height": 424,
+      "ambientLight": 0.8,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Volcano_7",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 0.9,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -112 0,
+          "y": -129 0,
+          "radius": 2.7,
+          "enemyGroupId": 4,
+          "respawnInterval": 274
+        },
+        {
+          "spawnId": 1,
+          "x": -92 0,
+          "y": 119 0,
+          "radius": 2.5,
+          "enemyGroupId": 9,
+          "respawnInterval": 294
+        },
+        {
+          "spawnId": 2,
+          "x": -21 0,
+          "y": 64 0,
+          "radius": 1.3,
+          "enemyGroupId": 10,
+          "respawnInterval": 103
+        },
+        {
+          "spawnId": 3,
+          "x": -115 0,
+          "y": -219 0,
+          "radius": 1,
+          "enemyGroupId": 17,
+          "respawnInterval": 168
+        },
+        {
+          "spawnId": 4,
+          "x": 100 0,
+          "y": -229 0,
+          "radius": 1.3,
+          "enemyGroupId": 13,
+          "respawnInterval": 225
+        },
+        {
+          "spawnId": 5,
+          "x": -7 0,
+          "y": 180 0,
+          "radius": 2.4,
+          "enemyGroupId": 13,
+          "respawnInterval": 253
+        },
+        {
+          "spawnId": 6,
+          "x": -33 0,
+          "y": -238 0,
+          "radius": 0.9,
+          "enemyGroupId": 11,
+          "respawnInterval": 140
+        },
+        {
+          "spawnId": 7,
+          "x": -30 0,
+          "y": -234 0,
+          "radius": 0.9,
+          "enemyGroupId": 10,
+          "respawnInterval": 83
+        },
+        {
+          "spawnId": 8,
+          "x": 13 0,
+          "y": -243 0,
+          "radius": 2.4,
+          "enemyGroupId": 4,
+          "respawnInterval": 47
+        }
+      ],
+      "connections": [17, 107],
+      "requiredLevel": 21,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 81,
+      "mapName": "Volcano_Zone_8",
+      "biome": "Volcano",
+      "width": 389,
+      "height": 354,
+      "ambientLight": 0.7,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Volcano_8",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 235 0,
+          "y": 106 0,
+          "radius": 1.8,
+          "enemyGroupId": 6,
+          "respawnInterval": 239
+        },
+        {
+          "spawnId": 1,
+          "x": -158 0,
+          "y": -159 0,
+          "radius": 2.5,
+          "enemyGroupId": 11,
+          "respawnInterval": 215
+        },
+        {
+          "spawnId": 2,
+          "x": 206 0,
+          "y": -93 0,
+          "radius": 0.9,
+          "enemyGroupId": 6,
+          "respawnInterval": 72
+        },
+        {
+          "spawnId": 3,
+          "x": -115 0,
+          "y": 5 0,
+          "radius": 1.9,
+          "enemyGroupId": 9,
+          "respawnInterval": 272
+        },
+        {
+          "spawnId": 4,
+          "x": 35 0,
+          "y": -206 0,
+          "radius": 1.2,
+          "enemyGroupId": 16,
+          "respawnInterval": 263
+        }
+      ],
+      "connections": [21, 67],
+      "requiredLevel": 11,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 82,
+      "mapName": "Volcano_Zone_9",
+      "biome": "Volcano",
+      "width": 157,
+      "height": 57,
+      "ambientLight": 0.9,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Volcano_9",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 1.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -154 0,
+          "y": 249 0,
+          "radius": 1.7,
+          "enemyGroupId": 8,
+          "respawnInterval": 109
+        },
+        {
+          "spawnId": 1,
+          "x": 197 0,
+          "y": -117 0,
+          "radius": 0.6,
+          "enemyGroupId": 10,
+          "respawnInterval": 103
+        },
+        {
+          "spawnId": 2,
+          "x": 193 0,
+          "y": -189 0,
+          "radius": 2.7,
+          "enemyGroupId": 4,
+          "respawnInterval": 140
+        },
+        {
+          "spawnId": 3,
+          "x": 178 0,
+          "y": -242 0,
+          "radius": 2.2,
+          "enemyGroupId": 3,
+          "respawnInterval": 245
+        }
+      ],
+      "connections": [103, 110],
+      "requiredLevel": 27,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 83,
+      "mapName": "Volcano_Zone_10",
+      "biome": "Volcano",
+      "width": 398,
+      "height": 158,
+      "ambientLight": 0.5,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Volcano_10",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -162 0,
+          "y": 177 0,
+          "radius": 0.6,
+          "enemyGroupId": 7,
+          "respawnInterval": 84
+        },
+        {
+          "spawnId": 1,
+          "x": 10 0,
+          "y": 212 0,
+          "radius": 1.2,
+          "enemyGroupId": 16,
+          "respawnInterval": 108
+        },
+        {
+          "spawnId": 2,
+          "x": -224 0,
+          "y": -137 0,
+          "radius": 2.1,
+          "enemyGroupId": 11,
+          "respawnInterval": 279
+        },
+        {
+          "spawnId": 3,
+          "x": 178 0,
+          "y": -115 0,
+          "radius": 2.6,
+          "enemyGroupId": 5,
+          "respawnInterval": 151
+        },
+        {
+          "spawnId": 4,
+          "x": 179 0,
+          "y": 168 0,
+          "radius": 2.8,
+          "enemyGroupId": 19,
+          "respawnInterval": 76
+        },
+        {
+          "spawnId": 5,
+          "x": -86 0,
+          "y": -174 0,
+          "radius": 1.2,
+          "enemyGroupId": 17,
+          "respawnInterval": 285
+        },
+        {
+          "spawnId": 6,
+          "x": 219 0,
+          "y": 72 0,
+          "radius": 1.9,
+          "enemyGroupId": 19,
+          "respawnInterval": 251
+        }
+      ],
+      "connections": [100, 32],
+      "requiredLevel": 24,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 84,
+      "mapName": "Volcano_Zone_11",
+      "biome": "Volcano",
+      "width": 404,
+      "height": 434,
+      "ambientLight": 0.7,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Volcano_11",
+      "ambientSound": "amb_Volcano",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -13 0,
+          "y": 236 0,
+          "radius": 2,
+          "enemyGroupId": 3,
+          "respawnInterval": 288
+        },
+        {
+          "spawnId": 1,
+          "x": -187 0,
+          "y": 24 0,
+          "radius": 2.1,
+          "enemyGroupId": 4,
+          "respawnInterval": 79
+        },
+        {
+          "spawnId": 2,
+          "x": -58 0,
+          "y": 90 0,
+          "radius": 1.2,
+          "enemyGroupId": 7,
+          "respawnInterval": 226
+        }
+      ],
+      "connections": [13, 83],
+      "requiredLevel": 7,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 85,
+      "mapName": "IceCave_Zone_0",
+      "biome": "IceCave",
+      "width": 263,
+      "height": 489,
+      "ambientLight": 0.8,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_IceCave_0",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 147 0,
+          "y": -23 0,
+          "radius": 2.3,
+          "enemyGroupId": 16,
+          "respawnInterval": 43
+        },
+        {
+          "spawnId": 1,
+          "x": -30 0,
+          "y": -23 0,
+          "radius": 2.9,
+          "enemyGroupId": 3,
+          "respawnInterval": 216
+        },
+        {
+          "spawnId": 2,
+          "x": 40 0,
+          "y": -32 0,
+          "radius": 0.7,
+          "enemyGroupId": 13,
+          "respawnInterval": 273
+        },
+        {
+          "spawnId": 3,
+          "x": -127 0,
+          "y": -41 0,
+          "radius": 2,
+          "enemyGroupId": 7,
+          "respawnInterval": 113
+        },
+        {
+          "spawnId": 4,
+          "x": 4 0,
+          "y": -17 0,
+          "radius": 2.2,
+          "enemyGroupId": 2,
+          "respawnInterval": 263
+        },
+        {
+          "spawnId": 5,
+          "x": -205 0,
+          "y": 240 0,
+          "radius": 2.7,
+          "enemyGroupId": 9,
+          "respawnInterval": 224
+        },
+        {
+          "spawnId": 6,
+          "x": -182 0,
+          "y": 112 0,
+          "radius": 0.8,
+          "enemyGroupId": 17,
+          "respawnInterval": 109
+        },
+        {
+          "spawnId": 7,
+          "x": -31 0,
+          "y": -37 0,
+          "radius": 2.2,
+          "enemyGroupId": 14,
+          "respawnInterval": 145
+        }
+      ],
+      "connections": [106, 74],
+      "requiredLevel": 14,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 86,
+      "mapName": "IceCave_Zone_1",
+      "biome": "IceCave",
+      "width": 79,
+      "height": 484,
+      "ambientLight": 0.7,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_IceCave_1",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 0.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -50 0,
+          "y": -66 0,
+          "radius": 1.9,
+          "enemyGroupId": 11,
+          "respawnInterval": 272
+        },
+        {
+          "spawnId": 1,
+          "x": 120 0,
+          "y": 98 0,
+          "radius": 1.4,
+          "enemyGroupId": 13,
+          "respawnInterval": 70
+        },
+        {
+          "spawnId": 2,
+          "x": 186 0,
+          "y": 122 0,
+          "radius": 1.6,
+          "enemyGroupId": 13,
+          "respawnInterval": 142
+        },
+        {
+          "spawnId": 3,
+          "x": -172 0,
+          "y": -246 0,
+          "radius": 1.3,
+          "enemyGroupId": 3,
+          "respawnInterval": 133
+        },
+        {
+          "spawnId": 4,
+          "x": 241 0,
+          "y": -106 0,
+          "radius": 2.4,
+          "enemyGroupId": 18,
+          "respawnInterval": 123
+        },
+        {
+          "spawnId": 5,
+          "x": 102 0,
+          "y": -77 0,
+          "radius": 0.8,
+          "enemyGroupId": 6,
+          "respawnInterval": 64
+        },
+        {
+          "spawnId": 6,
+          "x": -119 0,
+          "y": 247 0,
+          "radius": 2.6,
+          "enemyGroupId": 3,
+          "respawnInterval": 147
+        }
+      ],
+      "connections": [17, 95],
+      "requiredLevel": 18,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 87,
+      "mapName": "IceCave_Zone_2",
+      "biome": "IceCave",
+      "width": 90,
+      "height": 415,
+      "ambientLight": 0.6,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_IceCave_2",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 0.9,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 243 0,
+          "y": 229 0,
+          "radius": 1.8,
+          "enemyGroupId": 14,
+          "respawnInterval": 298
+        },
+        {
+          "spawnId": 1,
+          "x": 3 0,
+          "y": -23 0,
+          "radius": 0.6,
+          "enemyGroupId": 1,
+          "respawnInterval": 247
+        },
+        {
+          "spawnId": 2,
+          "x": 43 0,
+          "y": 54 0,
+          "radius": 2.5,
+          "enemyGroupId": 4,
+          "respawnInterval": 111
+        },
+        {
+          "spawnId": 3,
+          "x": 138 0,
+          "y": 245 0,
+          "radius": 0.6,
+          "enemyGroupId": 2,
+          "respawnInterval": 108
+        },
+        {
+          "spawnId": 4,
+          "x": 230 0,
+          "y": 243 0,
+          "radius": 1.8,
+          "enemyGroupId": 5,
+          "respawnInterval": 249
+        },
+        {
+          "spawnId": 5,
+          "x": 106 0,
+          "y": 26 0,
+          "radius": 2.2,
+          "enemyGroupId": 2,
+          "respawnInterval": 204
+        },
+        {
+          "spawnId": 6,
+          "x": 95 0,
+          "y": 170 0,
+          "radius": 1.3,
+          "enemyGroupId": 5,
+          "respawnInterval": 179
+        },
+        {
+          "spawnId": 7,
+          "x": -241 0,
+          "y": -110 0,
+          "radius": 2.2,
+          "enemyGroupId": 19,
+          "respawnInterval": 90
+        },
+        {
+          "spawnId": 8,
+          "x": -92 0,
+          "y": -29 0,
+          "radius": 1.1,
+          "enemyGroupId": 11,
+          "respawnInterval": 162
+        }
+      ],
+      "connections": [58, 119],
+      "requiredLevel": 24,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 88,
+      "mapName": "IceCave_Zone_3",
+      "biome": "IceCave",
+      "width": 300,
+      "height": 272,
+      "ambientLight": 0.6,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_IceCave_3",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -51 0,
+          "y": 136 0,
+          "radius": 1.5,
+          "enemyGroupId": 15,
+          "respawnInterval": 242
+        },
+        {
+          "spawnId": 1,
+          "x": -197 0,
+          "y": 227 0,
+          "radius": 1.2,
+          "enemyGroupId": 15,
+          "respawnInterval": 80
+        },
+        {
+          "spawnId": 2,
+          "x": 121 0,
+          "y": 34 0,
+          "radius": 0.5,
+          "enemyGroupId": 6,
+          "respawnInterval": 134
+        }
+      ],
+      "connections": [68, 25],
+      "requiredLevel": 20,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 89,
+      "mapName": "IceCave_Zone_4",
+      "biome": "IceCave",
+      "width": 121,
+      "height": 322,
+      "ambientLight": 0.8,
+      "fogDensity": 0.3,
+      "bgmTrack": "bgm_IceCave_4",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 1.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 79 0,
+          "y": 206 0,
+          "radius": 2.5,
+          "enemyGroupId": 15,
+          "respawnInterval": 113
+        },
+        {
+          "spawnId": 1,
+          "x": -105 0,
+          "y": -172 0,
+          "radius": 1.8,
+          "enemyGroupId": 19,
+          "respawnInterval": 185
+        },
+        {
+          "spawnId": 2,
+          "x": 132 0,
+          "y": -185 0,
+          "radius": 2.8,
+          "enemyGroupId": 4,
+          "respawnInterval": 82
+        },
+        {
+          "spawnId": 3,
+          "x": 161 0,
+          "y": 144 0,
+          "radius": 1.1,
+          "enemyGroupId": 18,
+          "respawnInterval": 156
+        },
+        {
+          "spawnId": 4,
+          "x": 121 0,
+          "y": -227 0,
+          "radius": 1.7,
+          "enemyGroupId": 10,
+          "respawnInterval": 127
+        },
+        {
+          "spawnId": 5,
+          "x": -156 0,
+          "y": -127 0,
+          "radius": 2.3,
+          "enemyGroupId": 14,
+          "respawnInterval": 209
+        },
+        {
+          "spawnId": 6,
+          "x": -37 0,
+          "y": 24 0,
+          "radius": 1.3,
+          "enemyGroupId": 6,
+          "respawnInterval": 37
+        }
+      ],
+      "connections": [69, 17],
+      "requiredLevel": 11,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 90,
+      "mapName": "IceCave_Zone_5",
+      "biome": "IceCave",
+      "width": 126,
+      "height": 449,
+      "ambientLight": 0.8,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_IceCave_5",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -187 0,
+          "y": -65 0,
+          "radius": 1.3,
+          "enemyGroupId": 8,
+          "respawnInterval": 246
+        },
+        {
+          "spawnId": 1,
+          "x": -30 0,
+          "y": -123 0,
+          "radius": 1.3,
+          "enemyGroupId": 8,
+          "respawnInterval": 114
+        },
+        {
+          "spawnId": 2,
+          "x": 180 0,
+          "y": 245 0,
+          "radius": 1,
+          "enemyGroupId": 7,
+          "respawnInterval": 49
+        },
+        {
+          "spawnId": 3,
+          "x": 203 0,
+          "y": -167 0,
+          "radius": 2.8,
+          "enemyGroupId": 13,
+          "respawnInterval": 182
+        },
+        {
+          "spawnId": 4,
+          "x": 233 0,
+          "y": -3 0,
+          "radius": 2,
+          "enemyGroupId": 8,
+          "respawnInterval": 117
+        },
+        {
+          "spawnId": 5,
+          "x": 14 0,
+          "y": -158 0,
+          "radius": 0.6,
+          "enemyGroupId": 12,
+          "respawnInterval": 280
+        },
+        {
+          "spawnId": 6,
+          "x": 127 0,
+          "y": 84 0,
+          "radius": 1.9,
+          "enemyGroupId": 11,
+          "respawnInterval": 31
+        }
+      ],
+      "connections": [8, 96],
+      "requiredLevel": 3,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 91,
+      "mapName": "IceCave_Zone_6",
+      "biome": "IceCave",
+      "width": 355,
+      "height": 270,
+      "ambientLight": 0.8,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_IceCave_6",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 1.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 175 0,
+          "y": 143 0,
+          "radius": 0.9,
+          "enemyGroupId": 2,
+          "respawnInterval": 268
+        },
+        {
+          "spawnId": 1,
+          "x": -150 0,
+          "y": 87 0,
+          "radius": 1.6,
+          "enemyGroupId": 1,
+          "respawnInterval": 66
+        },
+        {
+          "spawnId": 2,
+          "x": 74 0,
+          "y": -93 0,
+          "radius": 1.5,
+          "enemyGroupId": 5,
+          "respawnInterval": 89
+        },
+        {
+          "spawnId": 3,
+          "x": 246 0,
+          "y": 247 0,
+          "radius": 1.2,
+          "enemyGroupId": 12,
+          "respawnInterval": 278
+        },
+        {
+          "spawnId": 4,
+          "x": -111 0,
+          "y": -9 0,
+          "radius": 2.3,
+          "enemyGroupId": 19,
+          "respawnInterval": 135
+        },
+        {
+          "spawnId": 5,
+          "x": -36 0,
+          "y": -150 0,
+          "radius": 2.5,
+          "enemyGroupId": 8,
+          "respawnInterval": 62
+        },
+        {
+          "spawnId": 6,
+          "x": 212 0,
+          "y": -57 0,
+          "radius": 0.8,
+          "enemyGroupId": 13,
+          "respawnInterval": 279
+        },
+        {
+          "spawnId": 7,
+          "x": 104 0,
+          "y": -26 0,
+          "radius": 2,
+          "enemyGroupId": 11,
+          "respawnInterval": 94
+        }
+      ],
+      "connections": [39, 80],
+      "requiredLevel": 17,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 92,
+      "mapName": "IceCave_Zone_7",
+      "biome": "IceCave",
+      "width": 180,
+      "height": 209,
+      "ambientLight": 0.6,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_IceCave_7",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 0.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 173 0,
+          "y": 48 0,
+          "radius": 1.9,
+          "enemyGroupId": 12,
+          "respawnInterval": 67
+        },
+        {
+          "spawnId": 1,
+          "x": 86 0,
+          "y": -218 0,
+          "radius": 0.8,
+          "enemyGroupId": 8,
+          "respawnInterval": 195
+        },
+        {
+          "spawnId": 2,
+          "x": -21 0,
+          "y": 144 0,
+          "radius": 2,
+          "enemyGroupId": 19,
+          "respawnInterval": 155
+        },
+        {
+          "spawnId": 3,
+          "x": 81 0,
+          "y": -18 0,
+          "radius": 2.8,
+          "enemyGroupId": 14,
+          "respawnInterval": 279
+        }
+      ],
+      "connections": [78, 33],
+      "requiredLevel": 14,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 93,
+      "mapName": "IceCave_Zone_8",
+      "biome": "IceCave",
+      "width": 81,
+      "height": 439,
+      "ambientLight": 0.5,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_IceCave_8",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 0.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -59 0,
+          "y": 56 0,
+          "radius": 2.1,
+          "enemyGroupId": 5,
+          "respawnInterval": 45
+        },
+        {
+          "spawnId": 1,
+          "x": 231 0,
+          "y": 244 0,
+          "radius": 1.9,
+          "enemyGroupId": 2,
+          "respawnInterval": 185
+        },
+        {
+          "spawnId": 2,
+          "x": -186 0,
+          "y": 197 0,
+          "radius": 0.9,
+          "enemyGroupId": 18,
+          "respawnInterval": 155
+        },
+        {
+          "spawnId": 3,
+          "x": -189 0,
+          "y": 116 0,
+          "radius": 1.3,
+          "enemyGroupId": 4,
+          "respawnInterval": 228
+        },
+        {
+          "spawnId": 4,
+          "x": 164 0,
+          "y": 86 0,
+          "radius": 2.8,
+          "enemyGroupId": 5,
+          "respawnInterval": 124
+        },
+        {
+          "spawnId": 5,
+          "x": -88 0,
+          "y": -111 0,
+          "radius": 2.5,
+          "enemyGroupId": 6,
+          "respawnInterval": 148
+        },
+        {
+          "spawnId": 6,
+          "x": -66 0,
+          "y": -232 0,
+          "radius": 1.5,
+          "enemyGroupId": 18,
+          "respawnInterval": 283
+        },
+        {
+          "spawnId": 7,
+          "x": 7 0,
+          "y": -206 0,
+          "radius": 2.8,
+          "enemyGroupId": 3,
+          "respawnInterval": 118
+        }
+      ],
+      "connections": [29, 35],
+      "requiredLevel": 24,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 94,
+      "mapName": "IceCave_Zone_9",
+      "biome": "IceCave",
+      "width": 85,
+      "height": 436,
+      "ambientLight": 0.4,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_IceCave_9",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 1.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 198 0,
+          "y": 201 0,
+          "radius": 1.4,
+          "enemyGroupId": 4,
+          "respawnInterval": 176
+        },
+        {
+          "spawnId": 1,
+          "x": -210 0,
+          "y": 85 0,
+          "radius": 0.6,
+          "enemyGroupId": 8,
+          "respawnInterval": 75
+        },
+        {
+          "spawnId": 2,
+          "x": 56 0,
+          "y": -111 0,
+          "radius": 1.8,
+          "enemyGroupId": 17,
+          "respawnInterval": 59
+        },
+        {
+          "spawnId": 3,
+          "x": 173 0,
+          "y": -127 0,
+          "radius": 2,
+          "enemyGroupId": 12,
+          "respawnInterval": 188
+        },
+        {
+          "spawnId": 4,
+          "x": -69 0,
+          "y": -170 0,
+          "radius": 1.7,
+          "enemyGroupId": 7,
+          "respawnInterval": 257
+        },
+        {
+          "spawnId": 5,
+          "x": -154 0,
+          "y": -29 0,
+          "radius": 2.6,
+          "enemyGroupId": 18,
+          "respawnInterval": 159
+        },
+        {
+          "spawnId": 6,
+          "x": 3 0,
+          "y": -248 0,
+          "radius": 2.8,
+          "enemyGroupId": 9,
+          "respawnInterval": 290
+        }
+      ],
+      "connections": [54, 6],
+      "requiredLevel": 14,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 95,
+      "mapName": "IceCave_Zone_10",
+      "biome": "IceCave",
+      "width": 112,
+      "height": 307,
+      "ambientLight": 0.5,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_IceCave_10",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 0 0,
+          "y": -249 0,
+          "radius": 0.6,
+          "enemyGroupId": 14,
+          "respawnInterval": 103
+        },
+        {
+          "spawnId": 1,
+          "x": -222 0,
+          "y": -37 0,
+          "radius": 2.9,
+          "enemyGroupId": 9,
+          "respawnInterval": 131
+        },
+        {
+          "spawnId": 2,
+          "x": -230 0,
+          "y": -14 0,
+          "radius": 1.9,
+          "enemyGroupId": 1,
+          "respawnInterval": 259
+        },
+        {
+          "spawnId": 3,
+          "x": -4 0,
+          "y": -104 0,
+          "radius": 1.4,
+          "enemyGroupId": 13,
+          "respawnInterval": 81
+        },
+        {
+          "spawnId": 4,
+          "x": 184 0,
+          "y": -130 0,
+          "radius": 1.6,
+          "enemyGroupId": 18,
+          "respawnInterval": 225
+        },
+        {
+          "spawnId": 5,
+          "x": -172 0,
+          "y": -197 0,
+          "radius": 1.3,
+          "enemyGroupId": 2,
+          "respawnInterval": 102
+        },
+        {
+          "spawnId": 6,
+          "x": -170 0,
+          "y": 223 0,
+          "radius": 0.5,
+          "enemyGroupId": 13,
+          "respawnInterval": 296
+        }
+      ],
+      "connections": [69, 61],
+      "requiredLevel": 5,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 96,
+      "mapName": "IceCave_Zone_11",
+      "biome": "IceCave",
+      "width": 475,
+      "height": 103,
+      "ambientLight": 0.7,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_IceCave_11",
+      "ambientSound": "amb_IceCave",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -4 0,
+          "y": 115 0,
+          "radius": 0.9,
+          "enemyGroupId": 5,
+          "respawnInterval": 231
+        },
+        {
+          "spawnId": 1,
+          "x": -127 0,
+          "y": 186 0,
+          "radius": 1.2,
+          "enemyGroupId": 19,
+          "respawnInterval": 34
+        },
+        {
+          "spawnId": 2,
+          "x": -91 0,
+          "y": 72 0,
+          "radius": 1.5,
+          "enemyGroupId": 4,
+          "respawnInterval": 186
+        },
+        {
+          "spawnId": 3,
+          "x": -25 0,
+          "y": 21 0,
+          "radius": 1.5,
+          "enemyGroupId": 1,
+          "respawnInterval": 204
+        },
+        {
+          "spawnId": 4,
+          "x": 87 0,
+          "y": 93 0,
+          "radius": 2.3,
+          "enemyGroupId": 2,
+          "respawnInterval": 229
+        }
+      ],
+      "connections": [67, 7],
+      "requiredLevel": 20,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 97,
+      "mapName": "Ruins_Zone_0",
+      "biome": "Ruins",
+      "width": 79,
+      "height": 316,
+      "ambientLight": 0.3,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_Ruins_0",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 0.5,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -150 0,
+          "y": -56 0,
+          "radius": 2.6,
+          "enemyGroupId": 15,
+          "respawnInterval": 203
+        },
+        {
+          "spawnId": 1,
+          "x": 57 0,
+          "y": 16 0,
+          "radius": 0.5,
+          "enemyGroupId": 6,
+          "respawnInterval": 255
+        },
+        {
+          "spawnId": 2,
+          "x": 10 0,
+          "y": -240 0,
+          "radius": 2.1,
+          "enemyGroupId": 13,
+          "respawnInterval": 292
+        },
+        {
+          "spawnId": 3,
+          "x": -120 0,
+          "y": 15 0,
+          "radius": 1.9,
+          "enemyGroupId": 1,
+          "respawnInterval": 191
+        },
+        {
+          "spawnId": 4,
+          "x": 86 0,
+          "y": -22 0,
+          "radius": 0.5,
+          "enemyGroupId": 7,
+          "respawnInterval": 268
+        },
+        {
+          "spawnId": 5,
+          "x": 92 0,
+          "y": -139 0,
+          "radius": 2.1,
+          "enemyGroupId": 6,
+          "respawnInterval": 141
+        },
+        {
+          "spawnId": 6,
+          "x": 189 0,
+          "y": 206 0,
+          "radius": 1.5,
+          "enemyGroupId": 2,
+          "respawnInterval": 185
+        },
+        {
+          "spawnId": 7,
+          "x": 21 0,
+          "y": 147 0,
+          "radius": 2.9,
+          "enemyGroupId": 7,
+          "respawnInterval": 129
+        }
+      ],
+      "connections": [14, 65],
+      "requiredLevel": 26,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 98,
+      "mapName": "Ruins_Zone_1",
+      "biome": "Ruins",
+      "width": 367,
+      "height": 72,
+      "ambientLight": 0.6,
+      "fogDensity": 0.7,
+      "bgmTrack": "bgm_Ruins_1",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 0.8,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 29 0,
+          "y": -147 0,
+          "radius": 2.5,
+          "enemyGroupId": 8,
+          "respawnInterval": 229
+        },
+        {
+          "spawnId": 1,
+          "x": 8 0,
+          "y": -36 0,
+          "radius": 2.2,
+          "enemyGroupId": 6,
+          "respawnInterval": 251
+        },
+        {
+          "spawnId": 2,
+          "x": 68 0,
+          "y": -90 0,
+          "radius": 2.3,
+          "enemyGroupId": 1,
+          "respawnInterval": 102
+        },
+        {
+          "spawnId": 3,
+          "x": 54 0,
+          "y": -177 0,
+          "radius": 1.4,
+          "enemyGroupId": 13,
+          "respawnInterval": 228
+        },
+        {
+          "spawnId": 4,
+          "x": -189 0,
+          "y": -243 0,
+          "radius": 2.3,
+          "enemyGroupId": 19,
+          "respawnInterval": 276
+        },
+        {
+          "spawnId": 5,
+          "x": -7 0,
+          "y": 10 0,
+          "radius": 2.2,
+          "enemyGroupId": 1,
+          "respawnInterval": 149
+        },
+        {
+          "spawnId": 6,
+          "x": -187 0,
+          "y": 52 0,
+          "radius": 2.5,
+          "enemyGroupId": 12,
+          "respawnInterval": 187
+        },
+        {
+          "spawnId": 7,
+          "x": 229 0,
+          "y": 60 0,
+          "radius": 2.6,
+          "enemyGroupId": 7,
+          "respawnInterval": 90
+        },
+        {
+          "spawnId": 8,
+          "x": 245 0,
+          "y": 63 0,
+          "radius": 1.4,
+          "enemyGroupId": 7,
+          "respawnInterval": 191
+        }
+      ],
+      "connections": [39, 30],
+      "requiredLevel": 7,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 99,
+      "mapName": "Ruins_Zone_2",
+      "biome": "Ruins",
+      "width": 306,
+      "height": 310,
+      "ambientLight": 0.6,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_Ruins_2",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 0.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 179 0,
+          "y": 222 0,
+          "radius": 1.3,
+          "enemyGroupId": 15,
+          "respawnInterval": 91
+        },
+        {
+          "spawnId": 1,
+          "x": -236 0,
+          "y": 178 0,
+          "radius": 2.1,
+          "enemyGroupId": 17,
+          "respawnInterval": 141
+        },
+        {
+          "spawnId": 2,
+          "x": -55 0,
+          "y": 144 0,
+          "radius": 2.3,
+          "enemyGroupId": 5,
+          "respawnInterval": 189
+        },
+        {
+          "spawnId": 3,
+          "x": -111 0,
+          "y": -111 0,
+          "radius": 2.1,
+          "enemyGroupId": 14,
+          "respawnInterval": 145
+        }
+      ],
+      "connections": [98, 17],
+      "requiredLevel": 23,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 100,
+      "mapName": "Ruins_Zone_3",
+      "biome": "Ruins",
+      "width": 297,
+      "height": 390,
+      "ambientLight": 0.7,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_Ruins_3",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 0.8,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 214 0,
+          "y": 145 0,
+          "radius": 1.3,
+          "enemyGroupId": 14,
+          "respawnInterval": 53
+        },
+        {
+          "spawnId": 1,
+          "x": 15 0,
+          "y": 202 0,
+          "radius": 0.8,
+          "enemyGroupId": 14,
+          "respawnInterval": 262
+        },
+        {
+          "spawnId": 2,
+          "x": -221 0,
+          "y": 44 0,
+          "radius": 0.5,
+          "enemyGroupId": 7,
+          "respawnInterval": 161
+        },
+        {
+          "spawnId": 3,
+          "x": -202 0,
+          "y": -198 0,
+          "radius": 0.6,
+          "enemyGroupId": 13,
+          "respawnInterval": 264
+        },
+        {
+          "spawnId": 4,
+          "x": 217 0,
+          "y": 107 0,
+          "radius": 1,
+          "enemyGroupId": 13,
+          "respawnInterval": 298
+        },
+        {
+          "spawnId": 5,
+          "x": 139 0,
+          "y": -175 0,
+          "radius": 2.7,
+          "enemyGroupId": 9,
+          "respawnInterval": 210
+        },
+        {
+          "spawnId": 6,
+          "x": -246 0,
+          "y": 223 0,
+          "radius": 1,
+          "enemyGroupId": 14,
+          "respawnInterval": 218
+        },
+        {
+          "spawnId": 7,
+          "x": 88 0,
+          "y": 186 0,
+          "radius": 1.8,
+          "enemyGroupId": 1,
+          "respawnInterval": 65
+        }
+      ],
+      "connections": [58, 87],
+      "requiredLevel": 20,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 101,
+      "mapName": "Ruins_Zone_4",
+      "biome": "Ruins",
+      "width": 123,
+      "height": 315,
+      "ambientLight": 0.6,
+      "fogDensity": 0.3,
+      "bgmTrack": "bgm_Ruins_4",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 0.5,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -88 0,
+          "y": -248 0,
+          "radius": 1.9,
+          "enemyGroupId": 15,
+          "respawnInterval": 83
+        },
+        {
+          "spawnId": 1,
+          "x": -11 0,
+          "y": -158 0,
+          "radius": 2.7,
+          "enemyGroupId": 9,
+          "respawnInterval": 126
+        },
+        {
+          "spawnId": 2,
+          "x": -198 0,
+          "y": 112 0,
+          "radius": 1.7,
+          "enemyGroupId": 3,
+          "respawnInterval": 143
+        }
+      ],
+      "connections": [42, 75],
+      "requiredLevel": 4,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 102,
+      "mapName": "Ruins_Zone_5",
+      "biome": "Ruins",
+      "width": 74,
+      "height": 392,
+      "ambientLight": 0.3,
+      "fogDensity": 0.1,
+      "bgmTrack": "bgm_Ruins_5",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 0.3,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -27 0,
+          "y": -95 0,
+          "radius": 2.9,
+          "enemyGroupId": 9,
+          "respawnInterval": 174
+        },
+        {
+          "spawnId": 1,
+          "x": 166 0,
+          "y": 44 0,
+          "radius": 1.8,
+          "enemyGroupId": 9,
+          "respawnInterval": 107
+        },
+        {
+          "spawnId": 2,
+          "x": 230 0,
+          "y": -246 0,
+          "radius": 1,
+          "enemyGroupId": 11,
+          "respawnInterval": 84
+        },
+        {
+          "spawnId": 3,
+          "x": 238 0,
+          "y": -101 0,
+          "radius": 2.4,
+          "enemyGroupId": 3,
+          "respawnInterval": 126
+        },
+        {
+          "spawnId": 4,
+          "x": 124 0,
+          "y": 191 0,
+          "radius": 1.5,
+          "enemyGroupId": 15,
+          "respawnInterval": 217
+        },
+        {
+          "spawnId": 5,
+          "x": -124 0,
+          "y": -173 0,
+          "radius": 0.6,
+          "enemyGroupId": 15,
+          "respawnInterval": 219
+        },
+        {
+          "spawnId": 6,
+          "x": -21 0,
+          "y": 11 0,
+          "radius": 2,
+          "enemyGroupId": 13,
+          "respawnInterval": 287
+        },
+        {
+          "spawnId": 7,
+          "x": -59 0,
+          "y": -77 0,
+          "radius": 1.2,
+          "enemyGroupId": 6,
+          "respawnInterval": 160
+        }
+      ],
+      "connections": [18, 26],
+      "requiredLevel": 24,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 103,
+      "mapName": "Ruins_Zone_6",
+      "biome": "Ruins",
+      "width": 389,
+      "height": 88,
+      "ambientLight": 0.7,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_Ruins_6",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 0.9,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -224 0,
+          "y": -221 0,
+          "radius": 2.5,
+          "enemyGroupId": 1,
+          "respawnInterval": 123
+        },
+        {
+          "spawnId": 1,
+          "x": -21 0,
+          "y": -107 0,
+          "radius": 0.5,
+          "enemyGroupId": 4,
+          "respawnInterval": 139
+        },
+        {
+          "spawnId": 2,
+          "x": -180 0,
+          "y": -22 0,
+          "radius": 1.2,
+          "enemyGroupId": 1,
+          "respawnInterval": 109
+        },
+        {
+          "spawnId": 3,
+          "x": 9 0,
+          "y": -150 0,
+          "radius": 2.8,
+          "enemyGroupId": 6,
+          "respawnInterval": 90
+        }
+      ],
+      "connections": [37, 82],
+      "requiredLevel": 14,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 104,
+      "mapName": "Ruins_Zone_7",
+      "biome": "Ruins",
+      "width": 85,
+      "height": 432,
+      "ambientLight": 0.7,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Ruins_7",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 1.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 178 0,
+          "y": -29 0,
+          "radius": 2.5,
+          "enemyGroupId": 17,
+          "respawnInterval": 297
+        },
+        {
+          "spawnId": 1,
+          "x": 158 0,
+          "y": -60 0,
+          "radius": 2.9,
+          "enemyGroupId": 3,
+          "respawnInterval": 59
+        },
+        {
+          "spawnId": 2,
+          "x": -186 0,
+          "y": 167 0,
+          "radius": 1.1,
+          "enemyGroupId": 15,
+          "respawnInterval": 145
+        },
+        {
+          "spawnId": 3,
+          "x": -97 0,
+          "y": 139 0,
+          "radius": 2.1,
+          "enemyGroupId": 10,
+          "respawnInterval": 229
+        },
+        {
+          "spawnId": 4,
+          "x": 213 0,
+          "y": 22 0,
+          "radius": 1.8,
+          "enemyGroupId": 18,
+          "respawnInterval": 72
+        },
+        {
+          "spawnId": 5,
+          "x": -125 0,
+          "y": 134 0,
+          "radius": 1.9,
+          "enemyGroupId": 9,
+          "respawnInterval": 210
+        },
+        {
+          "spawnId": 6,
+          "x": 163 0,
+          "y": -226 0,
+          "radius": 2.7,
+          "enemyGroupId": 15,
+          "respawnInterval": 293
+        },
+        {
+          "spawnId": 7,
+          "x": 92 0,
+          "y": -245 0,
+          "radius": 0.8,
+          "enemyGroupId": 18,
+          "respawnInterval": 291
+        },
+        {
+          "spawnId": 8,
+          "x": -234 0,
+          "y": 227 0,
+          "radius": 1.9,
+          "enemyGroupId": 18,
+          "respawnInterval": 293
+        }
+      ],
+      "connections": [27, 37],
+      "requiredLevel": 3,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 105,
+      "mapName": "Ruins_Zone_8",
+      "biome": "Ruins",
+      "width": 59,
+      "height": 117,
+      "ambientLight": 0.3,
+      "fogDensity": 0,
+      "bgmTrack": "bgm_Ruins_8",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 0.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 117 0,
+          "y": 41 0,
+          "radius": 1.1,
+          "enemyGroupId": 18,
+          "respawnInterval": 75
+        },
+        {
+          "spawnId": 1,
+          "x": 243 0,
+          "y": -162 0,
+          "radius": 2.6,
+          "enemyGroupId": 11,
+          "respawnInterval": 87
+        },
+        {
+          "spawnId": 2,
+          "x": 124 0,
+          "y": 178 0,
+          "radius": 1.7,
+          "enemyGroupId": 13,
+          "respawnInterval": 229
+        }
+      ],
+      "connections": [22, 98],
+      "requiredLevel": 23,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 106,
+      "mapName": "Ruins_Zone_9",
+      "biome": "Ruins",
+      "width": 273,
+      "height": 247,
+      "ambientLight": 0.4,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_Ruins_9",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 7 0,
+          "y": 249 0,
+          "radius": 0.6,
+          "enemyGroupId": 8,
+          "respawnInterval": 133
+        },
+        {
+          "spawnId": 1,
+          "x": -17 0,
+          "y": 61 0,
+          "radius": 2,
+          "enemyGroupId": 18,
+          "respawnInterval": 77
+        },
+        {
+          "spawnId": 2,
+          "x": -117 0,
+          "y": -90 0,
+          "radius": 2.8,
+          "enemyGroupId": 9,
+          "respawnInterval": 38
+        },
+        {
+          "spawnId": 3,
+          "x": 64 0,
+          "y": -91 0,
+          "radius": 2,
+          "enemyGroupId": 2,
+          "respawnInterval": 50
+        },
+        {
+          "spawnId": 4,
+          "x": 79 0,
+          "y": 23 0,
+          "radius": 1.3,
+          "enemyGroupId": 17,
+          "respawnInterval": 46
+        }
+      ],
+      "connections": [24, 4],
+      "requiredLevel": 12,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 107,
+      "mapName": "Ruins_Zone_10",
+      "biome": "Ruins",
+      "width": 93,
+      "height": 144,
+      "ambientLight": 0.5,
+      "fogDensity": 0.3,
+      "bgmTrack": "bgm_Ruins_10",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 0.8,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 221 0,
+          "y": 237 0,
+          "radius": 2,
+          "enemyGroupId": 8,
+          "respawnInterval": 92
+        },
+        {
+          "spawnId": 1,
+          "x": -116 0,
+          "y": 187 0,
+          "radius": 1.9,
+          "enemyGroupId": 15,
+          "respawnInterval": 119
+        },
+        {
+          "spawnId": 2,
+          "x": -194 0,
+          "y": 61 0,
+          "radius": 0.7,
+          "enemyGroupId": 9,
+          "respawnInterval": 251
+        },
+        {
+          "spawnId": 3,
+          "x": -90 0,
+          "y": -53 0,
+          "radius": 0.9,
+          "enemyGroupId": 7,
+          "respawnInterval": 294
+        }
+      ],
+      "connections": [38, 58],
+      "requiredLevel": 25,
+      "isBossZone": true
+    }
+    ,
+    {
+      "mapId": 108,
+      "mapName": "Ruins_Zone_11",
+      "biome": "Ruins",
+      "width": 219,
+      "height": 415,
+      "ambientLight": 0.7,
+      "fogDensity": 0.1,
+      "bgmTrack": "bgm_Ruins_11",
+      "ambientSound": "amb_Ruins",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 194 0,
+          "y": -153 0,
+          "radius": 2.9,
+          "enemyGroupId": 19,
+          "respawnInterval": 147
+        },
+        {
+          "spawnId": 1,
+          "x": -110 0,
+          "y": 33 0,
+          "radius": 1.3,
+          "enemyGroupId": 14,
+          "respawnInterval": 42
+        },
+        {
+          "spawnId": 2,
+          "x": 196 0,
+          "y": 232 0,
+          "radius": 0.8,
+          "enemyGroupId": 14,
+          "respawnInterval": 135
+        },
+        {
+          "spawnId": 3,
+          "x": 210 0,
+          "y": -72 0,
+          "radius": 0.9,
+          "enemyGroupId": 19,
+          "respawnInterval": 207
+        },
+        {
+          "spawnId": 4,
+          "x": 177 0,
+          "y": -212 0,
+          "radius": 2.4,
+          "enemyGroupId": 17,
+          "respawnInterval": 137
+        },
+        {
+          "spawnId": 5,
+          "x": 62 0,
+          "y": 74 0,
+          "radius": 2.6,
+          "enemyGroupId": 11,
+          "respawnInterval": 288
+        },
+        {
+          "spawnId": 6,
+          "x": -230 0,
+          "y": 131 0,
+          "radius": 1.4,
+          "enemyGroupId": 6,
+          "respawnInterval": 224
+        },
+        {
+          "spawnId": 7,
+          "x": -213 0,
+          "y": 185 0,
+          "radius": 1.8,
+          "enemyGroupId": 16,
+          "respawnInterval": 129
+        },
+        {
+          "spawnId": 8,
+          "x": 119 0,
+          "y": -199 0,
+          "radius": 2.3,
+          "enemyGroupId": 12,
+          "respawnInterval": 72
+        }
+      ],
+      "connections": [20, 5],
+      "requiredLevel": 12,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 109,
+      "mapName": "SeaShore_Zone_0",
+      "biome": "SeaShore",
+      "width": 315,
+      "height": 88,
+      "ambientLight": 0.6,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_SeaShore_0",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 0.5,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 39 0,
+          "y": 17 0,
+          "radius": 1.9,
+          "enemyGroupId": 18,
+          "respawnInterval": 227
+        },
+        {
+          "spawnId": 1,
+          "x": 93 0,
+          "y": 205 0,
+          "radius": 1.1,
+          "enemyGroupId": 15,
+          "respawnInterval": 45
+        },
+        {
+          "spawnId": 2,
+          "x": 123 0,
+          "y": -49 0,
+          "radius": 1.8,
+          "enemyGroupId": 9,
+          "respawnInterval": 236
+        },
+        {
+          "spawnId": 3,
+          "x": 120 0,
+          "y": 79 0,
+          "radius": 1,
+          "enemyGroupId": 12,
+          "respawnInterval": 31
+        },
+        {
+          "spawnId": 4,
+          "x": -43 0,
+          "y": -56 0,
+          "radius": 1.5,
+          "enemyGroupId": 18,
+          "respawnInterval": 109
+        },
+        {
+          "spawnId": 5,
+          "x": -61 0,
+          "y": 152 0,
+          "radius": 1.8,
+          "enemyGroupId": 15,
+          "respawnInterval": 231
+        },
+        {
+          "spawnId": 6,
+          "x": -45 0,
+          "y": -168 0,
+          "radius": 0.5,
+          "enemyGroupId": 13,
+          "respawnInterval": 234
+        },
+        {
+          "spawnId": 7,
+          "x": 14 0,
+          "y": -13 0,
+          "radius": 0.8,
+          "enemyGroupId": 2,
+          "respawnInterval": 35
+        }
+      ],
+      "connections": [24, 1],
+      "requiredLevel": 1,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 110,
+      "mapName": "SeaShore_Zone_1",
+      "biome": "SeaShore",
+      "width": 243,
+      "height": 424,
+      "ambientLight": 0.7,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_SeaShore_1",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 0.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 177 0,
+          "y": -102 0,
+          "radius": 0.9,
+          "enemyGroupId": 4,
+          "respawnInterval": 157
+        },
+        {
+          "spawnId": 1,
+          "x": -186 0,
+          "y": 58 0,
+          "radius": 2.2,
+          "enemyGroupId": 8,
+          "respawnInterval": 144
+        },
+        {
+          "spawnId": 2,
+          "x": -120 0,
+          "y": -69 0,
+          "radius": 0.8,
+          "enemyGroupId": 13,
+          "respawnInterval": 255
+        },
+        {
+          "spawnId": 3,
+          "x": -78 0,
+          "y": 232 0,
+          "radius": 2.4,
+          "enemyGroupId": 15,
+          "respawnInterval": 256
+        },
+        {
+          "spawnId": 4,
+          "x": 3 0,
+          "y": -189 0,
+          "radius": 2.4,
+          "enemyGroupId": 14,
+          "respawnInterval": 211
+        },
+        {
+          "spawnId": 5,
+          "x": 192 0,
+          "y": -65 0,
+          "radius": 1.8,
+          "enemyGroupId": 14,
+          "respawnInterval": 129
+        },
+        {
+          "spawnId": 6,
+          "x": 242 0,
+          "y": -24 0,
+          "radius": 1.4,
+          "enemyGroupId": 19,
+          "respawnInterval": 69
+        }
+      ],
+      "connections": [29, 57],
+      "requiredLevel": 27,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 111,
+      "mapName": "SeaShore_Zone_2",
+      "biome": "SeaShore",
+      "width": 413,
+      "height": 313,
+      "ambientLight": 0.7,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_SeaShore_2",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 1.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -55 0,
+          "y": 139 0,
+          "radius": 2,
+          "enemyGroupId": 2,
+          "respawnInterval": 245
+        },
+        {
+          "spawnId": 1,
+          "x": 153 0,
+          "y": -154 0,
+          "radius": 2.6,
+          "enemyGroupId": 9,
+          "respawnInterval": 35
+        },
+        {
+          "spawnId": 2,
+          "x": -97 0,
+          "y": 92 0,
+          "radius": 2.1,
+          "enemyGroupId": 14,
+          "respawnInterval": 170
+        },
+        {
+          "spawnId": 3,
+          "x": 77 0,
+          "y": 115 0,
+          "radius": 0.6,
+          "enemyGroupId": 1,
+          "respawnInterval": 269
+        },
+        {
+          "spawnId": 4,
+          "x": 77 0,
+          "y": -159 0,
+          "radius": 0.8,
+          "enemyGroupId": 13,
+          "respawnInterval": 84
+        },
+        {
+          "spawnId": 5,
+          "x": -197 0,
+          "y": 238 0,
+          "radius": 1,
+          "enemyGroupId": 3,
+          "respawnInterval": 161
+        },
+        {
+          "spawnId": 6,
+          "x": 61 0,
+          "y": -172 0,
+          "radius": 2.7,
+          "enemyGroupId": 12,
+          "respawnInterval": 238
+        }
+      ],
+      "connections": [54, 92],
+      "requiredLevel": 20,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 112,
+      "mapName": "SeaShore_Zone_3",
+      "biome": "SeaShore",
+      "width": 442,
+      "height": 264,
+      "ambientLight": 0.8,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_SeaShore_3",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 157 0,
+          "y": -246 0,
+          "radius": 0.8,
+          "enemyGroupId": 17,
+          "respawnInterval": 181
+        },
+        {
+          "spawnId": 1,
+          "x": -59 0,
+          "y": 221 0,
+          "radius": 0.9,
+          "enemyGroupId": 6,
+          "respawnInterval": 178
+        },
+        {
+          "spawnId": 2,
+          "x": 181 0,
+          "y": 9 0,
+          "radius": 0.7,
+          "enemyGroupId": 1,
+          "respawnInterval": 91
+        },
+        {
+          "spawnId": 3,
+          "x": 45 0,
+          "y": -25 0,
+          "radius": 2,
+          "enemyGroupId": 4,
+          "respawnInterval": 50
+        }
+      ],
+      "connections": [9, 88],
+      "requiredLevel": 18,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 113,
+      "mapName": "SeaShore_Zone_4",
+      "biome": "SeaShore",
+      "width": 484,
+      "height": 193,
+      "ambientLight": 0.4,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_SeaShore_4",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -218 0,
+          "y": 145 0,
+          "radius": 2.6,
+          "enemyGroupId": 8,
+          "respawnInterval": 244
+        },
+        {
+          "spawnId": 1,
+          "x": -233 0,
+          "y": 117 0,
+          "radius": 2.1,
+          "enemyGroupId": 7,
+          "respawnInterval": 93
+        },
+        {
+          "spawnId": 2,
+          "x": 133 0,
+          "y": -34 0,
+          "radius": 1.5,
+          "enemyGroupId": 7,
+          "respawnInterval": 110
+        }
+      ],
+      "connections": [63, 102],
+      "requiredLevel": 21,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 114,
+      "mapName": "SeaShore_Zone_5",
+      "biome": "SeaShore",
+      "width": 131,
+      "height": 98,
+      "ambientLight": 0.6,
+      "fogDensity": 0.5,
+      "bgmTrack": "bgm_SeaShore_5",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -77 0,
+          "y": 63 0,
+          "radius": 2.2,
+          "enemyGroupId": 16,
+          "respawnInterval": 45
+        },
+        {
+          "spawnId": 1,
+          "x": -2 0,
+          "y": -163 0,
+          "radius": 0.9,
+          "enemyGroupId": 18,
+          "respawnInterval": 161
+        },
+        {
+          "spawnId": 2,
+          "x": 202 0,
+          "y": 5 0,
+          "radius": 1,
+          "enemyGroupId": 18,
+          "respawnInterval": 161
+        },
+        {
+          "spawnId": 3,
+          "x": 87 0,
+          "y": 115 0,
+          "radius": 1.3,
+          "enemyGroupId": 12,
+          "respawnInterval": 167
+        },
+        {
+          "spawnId": 4,
+          "x": 98 0,
+          "y": -240 0,
+          "radius": 2.1,
+          "enemyGroupId": 4,
+          "respawnInterval": 242
+        }
+      ],
+      "connections": [36, 48],
+      "requiredLevel": 26,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 115,
+      "mapName": "SeaShore_Zone_6",
+      "biome": "SeaShore",
+      "width": 362,
+      "height": 96,
+      "ambientLight": 0.8,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_SeaShore_6",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 0.2,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -15 0,
+          "y": -116 0,
+          "radius": 2.2,
+          "enemyGroupId": 9,
+          "respawnInterval": 123
+        },
+        {
+          "spawnId": 1,
+          "x": -101 0,
+          "y": 154 0,
+          "radius": 2.2,
+          "enemyGroupId": 7,
+          "respawnInterval": 206
+        },
+        {
+          "spawnId": 2,
+          "x": 130 0,
+          "y": -179 0,
+          "radius": 2.9,
+          "enemyGroupId": 2,
+          "respawnInterval": 64
+        },
+        {
+          "spawnId": 3,
+          "x": -246 0,
+          "y": -63 0,
+          "radius": 1.2,
+          "enemyGroupId": 6,
+          "respawnInterval": 298
+        },
+        {
+          "spawnId": 4,
+          "x": -169 0,
+          "y": -22 0,
+          "radius": 2.7,
+          "enemyGroupId": 18,
+          "respawnInterval": 166
+        }
+      ],
+      "connections": [53, 61],
+      "requiredLevel": 6,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 116,
+      "mapName": "SeaShore_Zone_7",
+      "biome": "SeaShore",
+      "width": 117,
+      "height": 333,
+      "ambientLight": 0.6,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_SeaShore_7",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -219 0,
+          "y": -71 0,
+          "radius": 2.4,
+          "enemyGroupId": 9,
+          "respawnInterval": 159
+        },
+        {
+          "spawnId": 1,
+          "x": 54 0,
+          "y": -145 0,
+          "radius": 1.9,
+          "enemyGroupId": 12,
+          "respawnInterval": 272
+        },
+        {
+          "spawnId": 2,
+          "x": 112 0,
+          "y": 115 0,
+          "radius": 1.4,
+          "enemyGroupId": 10,
+          "respawnInterval": 213
+        },
+        {
+          "spawnId": 3,
+          "x": 60 0,
+          "y": -111 0,
+          "radius": 2.1,
+          "enemyGroupId": 12,
+          "respawnInterval": 145
+        },
+        {
+          "spawnId": 4,
+          "x": -89 0,
+          "y": -211 0,
+          "radius": 0.8,
+          "enemyGroupId": 2,
+          "respawnInterval": 63
+        },
+        {
+          "spawnId": 5,
+          "x": -207 0,
+          "y": -200 0,
+          "radius": 1.2,
+          "enemyGroupId": 13,
+          "respawnInterval": 48
+        },
+        {
+          "spawnId": 6,
+          "x": -249 0,
+          "y": -75 0,
+          "radius": 1.5,
+          "enemyGroupId": 13,
+          "respawnInterval": 211
+        },
+        {
+          "spawnId": 7,
+          "x": -1 0,
+          "y": -172 0,
+          "radius": 2.6,
+          "enemyGroupId": 4,
+          "respawnInterval": 68
+        },
+        {
+          "spawnId": 8,
+          "x": 169 0,
+          "y": 105 0,
+          "radius": 1.6,
+          "enemyGroupId": 6,
+          "respawnInterval": 88
+        }
+      ],
+      "connections": [62, 22],
+      "requiredLevel": 22,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 117,
+      "mapName": "SeaShore_Zone_8",
+      "biome": "SeaShore",
+      "width": 384,
+      "height": 323,
+      "ambientLight": 0.9,
+      "fogDensity": 0.3,
+      "bgmTrack": "bgm_SeaShore_8",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 0.7,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -59 0,
+          "y": -216 0,
+          "radius": 1.9,
+          "enemyGroupId": 16,
+          "respawnInterval": 295
+        },
+        {
+          "spawnId": 1,
+          "x": 41 0,
+          "y": -83 0,
+          "radius": 1.5,
+          "enemyGroupId": 7,
+          "respawnInterval": 243
+        },
+        {
+          "spawnId": 2,
+          "x": 6 0,
+          "y": 17 0,
+          "radius": 1.4,
+          "enemyGroupId": 3,
+          "respawnInterval": 247
+        }
+      ],
+      "connections": [66, 39],
+      "requiredLevel": 12,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 118,
+      "mapName": "SeaShore_Zone_9",
+      "biome": "SeaShore",
+      "width": 166,
+      "height": 143,
+      "ambientLight": 0.9,
+      "fogDensity": 0.2,
+      "bgmTrack": "bgm_SeaShore_9",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 0.6,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 229 0,
+          "y": -218 0,
+          "radius": 1.8,
+          "enemyGroupId": 14,
+          "respawnInterval": 88
+        },
+        {
+          "spawnId": 1,
+          "x": -23 0,
+          "y": 150 0,
+          "radius": 1.2,
+          "enemyGroupId": 1,
+          "respawnInterval": 113
+        },
+        {
+          "spawnId": 2,
+          "x": -109 0,
+          "y": -1 0,
+          "radius": 2.5,
+          "enemyGroupId": 17,
+          "respawnInterval": 292
+        },
+        {
+          "spawnId": 3,
+          "x": -245 0,
+          "y": 94 0,
+          "radius": 0.6,
+          "enemyGroupId": 14,
+          "respawnInterval": 120
+        },
+        {
+          "spawnId": 4,
+          "x": 227 0,
+          "y": 206 0,
+          "radius": 1.8,
+          "enemyGroupId": 4,
+          "respawnInterval": 181
+        },
+        {
+          "spawnId": 5,
+          "x": 121 0,
+          "y": 115 0,
+          "radius": 2.3,
+          "enemyGroupId": 6,
+          "respawnInterval": 34
+        },
+        {
+          "spawnId": 6,
+          "x": 19 0,
+          "y": 189 0,
+          "radius": 1.4,
+          "enemyGroupId": 2,
+          "respawnInterval": 48
+        },
+        {
+          "spawnId": 7,
+          "x": -29 0,
+          "y": -139 0,
+          "radius": 2,
+          "enemyGroupId": 10,
+          "respawnInterval": 45
+        }
+      ],
+      "connections": [95, 118],
+      "requiredLevel": 12,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 119,
+      "mapName": "SeaShore_Zone_10",
+      "biome": "SeaShore",
+      "width": 189,
+      "height": 329,
+      "ambientLight": 0.7,
+      "fogDensity": 0.6,
+      "bgmTrack": "bgm_SeaShore_10",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 1.4,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": -148 0,
+          "y": 38 0,
+          "radius": 1.4,
+          "enemyGroupId": 4,
+          "respawnInterval": 247
+        },
+        {
+          "spawnId": 1,
+          "x": -173 0,
+          "y": 215 0,
+          "radius": 1.4,
+          "enemyGroupId": 5,
+          "respawnInterval": 110
+        },
+        {
+          "spawnId": 2,
+          "x": -180 0,
+          "y": 72 0,
+          "radius": 1.6,
+          "enemyGroupId": 2,
+          "respawnInterval": 242
+        },
+        {
+          "spawnId": 3,
+          "x": 223 0,
+          "y": 234 0,
+          "radius": 1.9,
+          "enemyGroupId": 7,
+          "respawnInterval": 128
+        },
+        {
+          "spawnId": 4,
+          "x": -192 0,
+          "y": -139 0,
+          "radius": 2.2,
+          "enemyGroupId": 8,
+          "respawnInterval": 184
+        },
+        {
+          "spawnId": 5,
+          "x": 16 0,
+          "y": -79 0,
+          "radius": 0.8,
+          "enemyGroupId": 16,
+          "respawnInterval": 181
+        },
+        {
+          "spawnId": 6,
+          "x": 33 0,
+          "y": 16 0,
+          "radius": 0.9,
+          "enemyGroupId": 18,
+          "respawnInterval": 244
+        },
+        {
+          "spawnId": 7,
+          "x": -154 0,
+          "y": -150 0,
+          "radius": 1.2,
+          "enemyGroupId": 11,
+          "respawnInterval": 173
+        },
+        {
+          "spawnId": 8,
+          "x": 97 0,
+          "y": -125 0,
+          "radius": 1.3,
+          "enemyGroupId": 15,
+          "respawnInterval": 81
+        }
+      ],
+      "connections": [32, 45],
+      "requiredLevel": 27,
+      "isBossZone": false
+    }
+    ,
+    {
+      "mapId": 120,
+      "mapName": "SeaShore_Zone_11",
+      "biome": "SeaShore",
+      "width": 479,
+      "height": 472,
+      "ambientLight": 0.8,
+      "fogDensity": 0.4,
+      "bgmTrack": "bgm_SeaShore_11",
+      "ambientSound": "amb_SeaShore",
+      "enemyDensity": 1.1,
+      "spawnPoints": [
+        {
+          "spawnId": 0,
+          "x": 207 0,
+          "y": -68 0,
+          "radius": 1.3,
+          "enemyGroupId": 16,
+          "respawnInterval": 197
+        },
+        {
+          "spawnId": 1,
+          "x": -30 0,
+          "y": -75 0,
+          "radius": 1.2,
+          "enemyGroupId": 12,
+          "respawnInterval": 253
+        },
+        {
+          "spawnId": 2,
+          "x": 128 0,
+          "y": -44 0,
+          "radius": 0.8,
+          "enemyGroupId": 1,
+          "respawnInterval": 115
+        },
+        {
+          "spawnId": 3,
+          "x": -186 0,
+          "y": -27 0,
+          "radius": 2.7,
+          "enemyGroupId": 5,
+          "respawnInterval": 43
+        },
+        {
+          "spawnId": 4,
+          "x": -184 0,
+          "y": -217 0,
+          "radius": 2.9,
+          "enemyGroupId": 1,
+          "respawnInterval": 272
+        },
+        {
+          "spawnId": 5,
+          "x": -143 0,
+          "y": 175 0,
+          "radius": 2.9,
+          "enemyGroupId": 17,
+          "respawnInterval": 124
+        },
+        {
+          "spawnId": 6,
+          "x": 46 0,
+          "y": 12 0,
+          "radius": 2.8,
+          "enemyGroupId": 9,
+          "respawnInterval": 74
+        },
+        {
+          "spawnId": 7,
+          "x": 28 0,
+          "y": -93 0,
+          "radius": 1.3,
+          "enemyGroupId": 11,
+          "respawnInterval": 227
+        }
+      ],
+      "connections": [91, 54],
+      "requiredLevel": 16,
+      "isBossZone": false
+    }
+  ]
+}

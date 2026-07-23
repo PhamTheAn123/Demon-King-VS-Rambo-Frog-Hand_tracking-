@@ -2695,11 +2695,8 @@ RectTransform:
   - {fileID: 216341205}
   - {fileID: 1058196827}
   - {fileID: 1379511161}
-<<<<<<< HEAD
-=======
   - {fileID: 1176892104}
   - {fileID: 1958910252}
->>>>>>> 78fbee07822c56e82918b70ae9801ada72a925e5
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2719,10 +2716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d5f9f413a078247a75ca6be01e3333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-=======
   instructionsPanel: {fileID: 1958910249}
->>>>>>> 78fbee07822c56e82918b70ae9801ada72a925e5
 --- !u!1 &797985591
 GameObject:
   m_ObjectHideFlags: 0
@@ -3250,8 +3244,6 @@ MonoBehaviour:
   isAlert: 0
   m_InputValidator: {fileID: 0}
   m_ShouldActivateOnSelect: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &1022378407
 GameObject:
   m_ObjectHideFlags: 0
@@ -3318,7 +3310,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278512639
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3331,7 +3323,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 0
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -3389,7 +3381,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022378407}
   m_CullTransparentMesh: 1
->>>>>>> 78fbee07822c56e82918b70ae9801ada72a925e5
 --- !u!1 &1032152056
 GameObject:
   m_ObjectHideFlags: 0
@@ -3536,10 +3527,7 @@ MonoBehaviour:
   databaseType: 2
   firebaseUrl: https://swd-6c4c4-default-rtdb.firebaseio.com/
   googleFormUrl: 
-<<<<<<< HEAD
-=======
   googleSheetUrl: 
->>>>>>> 78fbee07822c56e82918b70ae9801ada72a925e5
   supabaseUrl: https://rxmswzfljtkkthnhozov.supabase.co
   supabaseAnonKey: sb_publishable_HwcBNY-TXnUC1Os5EXSrXQ_PGa50e_u
   nameEntryId: entry.1000001
@@ -3597,8 +3585,6 @@ Transform:
   - {fileID: 790986481}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1176892103
 GameObject:
   m_ObjectHideFlags: 0
@@ -3732,7 +3718,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176892103}
   m_CullTransparentMesh: 1
->>>>>>> 78fbee07822c56e82918b70ae9801ada72a925e5
 --- !u!1 &1204222487
 GameObject:
   m_ObjectHideFlags: 0
@@ -5407,8 +5392,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &1545306332
 GameObject:
   m_ObjectHideFlags: 0
@@ -5466,11 +5449,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b><color=#00FFFF> TAY TR\xC1I (Di Chuy\u1EC3n & Nh\u1EA3y):</color></b>\n\u2022
+  m_text: "<b><color=#00FFFF>\U0001F91A TAY TR\xC1I (Di Chuy\u1EC3n & Nh\u1EA3y):</color></b>\n\u2022
     <b>Du\u1ED7i 1 ng\xF3n tr\u1ECF:</b> Di chuy\u1EC3n sang <b>TR\xC1I</b>\n\u2022
     <b>Du\u1ED7i 2 ng\xF3n tr\u1EDF l\xEAn:</b> Di chuy\u1EC3n sang <b>PH\u1EA2I</b>\n\u2022
-    <b>X\xF2e b\xE0n tay (4-5 ng\xF3n):</b> <b>NH\u1EA2Y</b>\n\n<b><color=#FF5555>TAY
-    PH\u1EA2I (Ng\u1EAFm & B\u1EAFn):</color></b>\n\u2022 <b>Di chuy\u1EC3n ng\xF3n
+    <b>X\xF2e b\xE0n tay (4-5 ng\xF3n):</b> <b>NH\u1EA2Y</b>\n\n<b><color=#FF5555>\U0001F3AF
+    TAY PH\u1EA2I (Ng\u1EAFm & B\u1EAFn):</color></b>\n\u2022 <b>Di chuy\u1EC3n ng\xF3n
     tr\u1ECF:</b> \u0110i\u1EC1u khi\u1EC3n <b>T\xE2m Ng\u1EAFm (Aim)</b>\n\u2022
     <b>Du\u1ED7i 1 ng\xF3n tr\u1ECF:</b> <b>B\u1EAEN (Shoot)</b>"
   m_isRightToLeft: 0
@@ -5494,7 +5477,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 0
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -5552,7 +5535,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545306332}
   m_CullTransparentMesh: 1
->>>>>>> 78fbee07822c56e82918b70ae9801ada72a925e5
 --- !u!1 &1550035558
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,8 +5990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6366ee97f6b541449155028b9487355a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_SpriteAnimator
-<<<<<<< HEAD
-=======
 --- !u!1 &1633817544
 GameObject:
   m_ObjectHideFlags: 0
@@ -6089,7 +6069,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 0
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -6147,7 +6127,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633817544}
   m_CullTransparentMesh: 1
->>>>>>> 78fbee07822c56e82918b70ae9801ada72a925e5
 --- !u!1 &1701900794
 GameObject:
   m_ObjectHideFlags: 0
@@ -6846,8 +6825,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933348938}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
-=======
 --- !u!1 &1958910249
 GameObject:
   m_ObjectHideFlags: 0
@@ -6926,7 +6903,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
->>>>>>> 78fbee07822c56e82918b70ae9801ada72a925e5
 --- !u!1 &1974250070
 GameObject:
   m_ObjectHideFlags: 0

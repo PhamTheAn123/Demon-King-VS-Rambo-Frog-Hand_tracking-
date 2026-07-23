@@ -1,0 +1,4097 @@
+﻿{
+  "version": "1.0.0",
+  "generatedAt": "2026-06-30",
+  "description": "Quest and mission configuration for the main campaign and side content",
+  "quests": [
+    {
+      "questId": 1,
+      "questName": "KillQuest_0",
+      "type": "KillQuest",
+      "difficulty": 2,
+      "repeatable": false,
+      "timeLimit": 428,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_0",
+          "targetCount": 47,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        }
+      ],
+      "rewards": {
+        "gold": 1201,
+        "xp": 2555,
+        "itemRewardIds": [92, 61],
+        "reputationGain": 181
+      },
+      "requirements": {
+        "minLevel": 12,
+        "prerequisiteQuestId": 0
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_0_start",
+        "completeDialogueId": "dlg_KillQuest_0_end",
+        "failDialogueId": "dlg_KillQuest_0_fail"
+      }
+    }
+    ,
+    {
+      "questId": 2,
+      "questName": "KillQuest_1",
+      "type": "KillQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_1",
+          "targetCount": 10,
+          "targetType": "Enemy",
+          "requiredLevel": 4
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of KillQuest_1",
+          "targetCount": 2,
+          "targetType": "Enemy",
+          "requiredLevel": 3
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of KillQuest_1",
+          "targetCount": 14,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        }
+      ],
+      "rewards": {
+        "gold": 1028,
+        "xp": 568,
+        "itemRewardIds": [12, 85],
+        "reputationGain": 101
+      },
+      "requirements": {
+        "minLevel": 6,
+        "prerequisiteQuestId": 1
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_1_start",
+        "completeDialogueId": "dlg_KillQuest_1_end",
+        "failDialogueId": "dlg_KillQuest_1_fail"
+      }
+    }
+    ,
+    {
+      "questId": 3,
+      "questName": "KillQuest_2",
+      "type": "KillQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_2",
+          "targetCount": 33,
+          "targetType": "Enemy",
+          "requiredLevel": 13
+        }
+      ],
+      "rewards": {
+        "gold": 1513,
+        "xp": 645,
+        "itemRewardIds": [89, 30],
+        "reputationGain": 148
+      },
+      "requirements": {
+        "minLevel": 3,
+        "prerequisiteQuestId": 2
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_2_start",
+        "completeDialogueId": "dlg_KillQuest_2_end",
+        "failDialogueId": "dlg_KillQuest_2_fail"
+      }
+    }
+    ,
+    {
+      "questId": 4,
+      "questName": "KillQuest_3",
+      "type": "KillQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_3",
+          "targetCount": 48,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        }
+      ],
+      "rewards": {
+        "gold": 532,
+        "xp": 2438,
+        "itemRewardIds": [6, 63],
+        "reputationGain": 398
+      },
+      "requirements": {
+        "minLevel": 3,
+        "prerequisiteQuestId": 3
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_3_start",
+        "completeDialogueId": "dlg_KillQuest_3_end",
+        "failDialogueId": "dlg_KillQuest_3_fail"
+      }
+    }
+    ,
+    {
+      "questId": 5,
+      "questName": "KillQuest_4",
+      "type": "KillQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 505,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_4",
+          "targetCount": 43,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        }
+      ],
+      "rewards": {
+        "gold": 1732,
+        "xp": 2621,
+        "itemRewardIds": [12, 46],
+        "reputationGain": 419
+      },
+      "requirements": {
+        "minLevel": 9,
+        "prerequisiteQuestId": 4
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_4_start",
+        "completeDialogueId": "dlg_KillQuest_4_end",
+        "failDialogueId": "dlg_KillQuest_4_fail"
+      }
+    }
+    ,
+    {
+      "questId": 6,
+      "questName": "KillQuest_5",
+      "type": "KillQuest",
+      "difficulty": 2,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_5",
+          "targetCount": 2,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of KillQuest_5",
+          "targetCount": 13,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        }
+      ],
+      "rewards": {
+        "gold": 863,
+        "xp": 4680,
+        "itemRewardIds": [73, 94],
+        "reputationGain": 487
+      },
+      "requirements": {
+        "minLevel": 14,
+        "prerequisiteQuestId": 5
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_5_start",
+        "completeDialogueId": "dlg_KillQuest_5_end",
+        "failDialogueId": "dlg_KillQuest_5_fail"
+      }
+    }
+    ,
+    {
+      "questId": 7,
+      "questName": "KillQuest_6",
+      "type": "KillQuest",
+      "difficulty": 2,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_6",
+          "targetCount": 44,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of KillQuest_6",
+          "targetCount": 17,
+          "targetType": "Enemy",
+          "requiredLevel": 16
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of KillQuest_6",
+          "targetCount": 49,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of KillQuest_6",
+          "targetCount": 13,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        }
+      ],
+      "rewards": {
+        "gold": 78,
+        "xp": 2250,
+        "itemRewardIds": [66, 71],
+        "reputationGain": 338
+      },
+      "requirements": {
+        "minLevel": 7,
+        "prerequisiteQuestId": 6
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_6_start",
+        "completeDialogueId": "dlg_KillQuest_6_end",
+        "failDialogueId": "dlg_KillQuest_6_fail"
+      }
+    }
+    ,
+    {
+      "questId": 8,
+      "questName": "KillQuest_7",
+      "type": "KillQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 291,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_7",
+          "targetCount": 21,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        }
+      ],
+      "rewards": {
+        "gold": 1503,
+        "xp": 952,
+        "itemRewardIds": [34, 60],
+        "reputationGain": 372
+      },
+      "requirements": {
+        "minLevel": 12,
+        "prerequisiteQuestId": 7
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_7_start",
+        "completeDialogueId": "dlg_KillQuest_7_end",
+        "failDialogueId": "dlg_KillQuest_7_fail"
+      }
+    }
+    ,
+    {
+      "questId": 9,
+      "questName": "KillQuest_8",
+      "type": "KillQuest",
+      "difficulty": 2,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_8",
+          "targetCount": 49,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of KillQuest_8",
+          "targetCount": 32,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of KillQuest_8",
+          "targetCount": 32,
+          "targetType": "Enemy",
+          "requiredLevel": 5
+        }
+      ],
+      "rewards": {
+        "gold": 201,
+        "xp": 4214,
+        "itemRewardIds": [43, 5],
+        "reputationGain": 139
+      },
+      "requirements": {
+        "minLevel": 7,
+        "prerequisiteQuestId": 8
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_8_start",
+        "completeDialogueId": "dlg_KillQuest_8_end",
+        "failDialogueId": "dlg_KillQuest_8_fail"
+      }
+    }
+    ,
+    {
+      "questId": 10,
+      "questName": "KillQuest_9",
+      "type": "KillQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 295,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_9",
+          "targetCount": 13,
+          "targetType": "Enemy",
+          "requiredLevel": 4
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of KillQuest_9",
+          "targetCount": 48,
+          "targetType": "Enemy",
+          "requiredLevel": 11
+        }
+      ],
+      "rewards": {
+        "gold": 224,
+        "xp": 2408,
+        "itemRewardIds": [82, 76],
+        "reputationGain": 179
+      },
+      "requirements": {
+        "minLevel": 11,
+        "prerequisiteQuestId": 9
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_9_start",
+        "completeDialogueId": "dlg_KillQuest_9_end",
+        "failDialogueId": "dlg_KillQuest_9_fail"
+      }
+    }
+    ,
+    {
+      "questId": 11,
+      "questName": "KillQuest_10",
+      "type": "KillQuest",
+      "difficulty": 2,
+      "repeatable": false,
+      "timeLimit": 548,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_10",
+          "targetCount": 30,
+          "targetType": "Enemy",
+          "requiredLevel": 4
+        }
+      ],
+      "rewards": {
+        "gold": 1182,
+        "xp": 3754,
+        "itemRewardIds": [7, 80],
+        "reputationGain": 245
+      },
+      "requirements": {
+        "minLevel": 3,
+        "prerequisiteQuestId": 10
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_10_start",
+        "completeDialogueId": "dlg_KillQuest_10_end",
+        "failDialogueId": "dlg_KillQuest_10_fail"
+      }
+    }
+    ,
+    {
+      "questId": 12,
+      "questName": "KillQuest_11",
+      "type": "KillQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 590,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_11",
+          "targetCount": 7,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        }
+      ],
+      "rewards": {
+        "gold": 646,
+        "xp": 2739,
+        "itemRewardIds": [70, 6],
+        "reputationGain": 437
+      },
+      "requirements": {
+        "minLevel": 7,
+        "prerequisiteQuestId": 11
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_11_start",
+        "completeDialogueId": "dlg_KillQuest_11_end",
+        "failDialogueId": "dlg_KillQuest_11_fail"
+      }
+    }
+    ,
+    {
+      "questId": 13,
+      "questName": "KillQuest_12",
+      "type": "KillQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_12",
+          "targetCount": 4,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of KillQuest_12",
+          "targetCount": 47,
+          "targetType": "Enemy",
+          "requiredLevel": 16
+        }
+      ],
+      "rewards": {
+        "gold": 764,
+        "xp": 589,
+        "itemRewardIds": [2, 80],
+        "reputationGain": 15
+      },
+      "requirements": {
+        "minLevel": 6,
+        "prerequisiteQuestId": 12
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_12_start",
+        "completeDialogueId": "dlg_KillQuest_12_end",
+        "failDialogueId": "dlg_KillQuest_12_fail"
+      }
+    }
+    ,
+    {
+      "questId": 14,
+      "questName": "KillQuest_13",
+      "type": "KillQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 338,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_13",
+          "targetCount": 2,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of KillQuest_13",
+          "targetCount": 32,
+          "targetType": "Enemy",
+          "requiredLevel": 2
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of KillQuest_13",
+          "targetCount": 18,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of KillQuest_13",
+          "targetCount": 21,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        }
+      ],
+      "rewards": {
+        "gold": 1867,
+        "xp": 1700,
+        "itemRewardIds": [61, 66],
+        "reputationGain": 92
+      },
+      "requirements": {
+        "minLevel": 7,
+        "prerequisiteQuestId": 13
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_13_start",
+        "completeDialogueId": "dlg_KillQuest_13_end",
+        "failDialogueId": "dlg_KillQuest_13_fail"
+      }
+    }
+    ,
+    {
+      "questId": 15,
+      "questName": "KillQuest_14",
+      "type": "KillQuest",
+      "difficulty": 2,
+      "repeatable": true,
+      "timeLimit": 219,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of KillQuest_14",
+          "targetCount": 4,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of KillQuest_14",
+          "targetCount": 6,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of KillQuest_14",
+          "targetCount": 4,
+          "targetType": "Enemy",
+          "requiredLevel": 14
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of KillQuest_14",
+          "targetCount": 16,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        }
+      ],
+      "rewards": {
+        "gold": 1484,
+        "xp": 1343,
+        "itemRewardIds": [66, 68],
+        "reputationGain": 174
+      },
+      "requirements": {
+        "minLevel": 8,
+        "prerequisiteQuestId": 14
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_KillQuest_14_start",
+        "completeDialogueId": "dlg_KillQuest_14_end",
+        "failDialogueId": "dlg_KillQuest_14_fail"
+      }
+    }
+    ,
+    {
+      "questId": 16,
+      "questName": "CollectQuest_0",
+      "type": "CollectQuest",
+      "difficulty": 2,
+      "repeatable": false,
+      "timeLimit": 91,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_0",
+          "targetCount": 14,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of CollectQuest_0",
+          "targetCount": 13,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of CollectQuest_0",
+          "targetCount": 9,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        }
+      ],
+      "rewards": {
+        "gold": 890,
+        "xp": 1670,
+        "itemRewardIds": [98, 31],
+        "reputationGain": 305
+      },
+      "requirements": {
+        "minLevel": 9,
+        "prerequisiteQuestId": 0
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_0_start",
+        "completeDialogueId": "dlg_CollectQuest_0_end",
+        "failDialogueId": "dlg_CollectQuest_0_fail"
+      }
+    }
+    ,
+    {
+      "questId": 17,
+      "questName": "CollectQuest_1",
+      "type": "CollectQuest",
+      "difficulty": 2,
+      "repeatable": true,
+      "timeLimit": 254,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_1",
+          "targetCount": 25,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of CollectQuest_1",
+          "targetCount": 7,
+          "targetType": "Enemy",
+          "requiredLevel": 14
+        }
+      ],
+      "rewards": {
+        "gold": 696,
+        "xp": 3601,
+        "itemRewardIds": [67, 67],
+        "reputationGain": 66
+      },
+      "requirements": {
+        "minLevel": 4,
+        "prerequisiteQuestId": 16
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_1_start",
+        "completeDialogueId": "dlg_CollectQuest_1_end",
+        "failDialogueId": "dlg_CollectQuest_1_fail"
+      }
+    }
+    ,
+    {
+      "questId": 18,
+      "questName": "CollectQuest_2",
+      "type": "CollectQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 242,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_2",
+          "targetCount": 49,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of CollectQuest_2",
+          "targetCount": 38,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of CollectQuest_2",
+          "targetCount": 32,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of CollectQuest_2",
+          "targetCount": 33,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        }
+      ],
+      "rewards": {
+        "gold": 1011,
+        "xp": 425,
+        "itemRewardIds": [48, 6],
+        "reputationGain": 147
+      },
+      "requirements": {
+        "minLevel": 12,
+        "prerequisiteQuestId": 17
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_2_start",
+        "completeDialogueId": "dlg_CollectQuest_2_end",
+        "failDialogueId": "dlg_CollectQuest_2_fail"
+      }
+    }
+    ,
+    {
+      "questId": 19,
+      "questName": "CollectQuest_3",
+      "type": "CollectQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_3",
+          "targetCount": 29,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        }
+      ],
+      "rewards": {
+        "gold": 73,
+        "xp": 1779,
+        "itemRewardIds": [87, 63],
+        "reputationGain": 326
+      },
+      "requirements": {
+        "minLevel": 6,
+        "prerequisiteQuestId": 18
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_3_start",
+        "completeDialogueId": "dlg_CollectQuest_3_end",
+        "failDialogueId": "dlg_CollectQuest_3_fail"
+      }
+    }
+    ,
+    {
+      "questId": 20,
+      "questName": "CollectQuest_4",
+      "type": "CollectQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_4",
+          "targetCount": 37,
+          "targetType": "Enemy",
+          "requiredLevel": 5
+        }
+      ],
+      "rewards": {
+        "gold": 358,
+        "xp": 4852,
+        "itemRewardIds": [8, 66],
+        "reputationGain": 446
+      },
+      "requirements": {
+        "minLevel": 7,
+        "prerequisiteQuestId": 19
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_4_start",
+        "completeDialogueId": "dlg_CollectQuest_4_end",
+        "failDialogueId": "dlg_CollectQuest_4_fail"
+      }
+    }
+    ,
+    {
+      "questId": 21,
+      "questName": "CollectQuest_5",
+      "type": "CollectQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_5",
+          "targetCount": 46,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of CollectQuest_5",
+          "targetCount": 39,
+          "targetType": "Enemy",
+          "requiredLevel": 16
+        }
+      ],
+      "rewards": {
+        "gold": 1779,
+        "xp": 1083,
+        "itemRewardIds": [20, 88],
+        "reputationGain": 405
+      },
+      "requirements": {
+        "minLevel": 11,
+        "prerequisiteQuestId": 20
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_5_start",
+        "completeDialogueId": "dlg_CollectQuest_5_end",
+        "failDialogueId": "dlg_CollectQuest_5_fail"
+      }
+    }
+    ,
+    {
+      "questId": 22,
+      "questName": "CollectQuest_6",
+      "type": "CollectQuest",
+      "difficulty": 1,
+      "repeatable": false,
+      "timeLimit": 201,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_6",
+          "targetCount": 5,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of CollectQuest_6",
+          "targetCount": 37,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of CollectQuest_6",
+          "targetCount": 32,
+          "targetType": "Enemy",
+          "requiredLevel": 3
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of CollectQuest_6",
+          "targetCount": 45,
+          "targetType": "Enemy",
+          "requiredLevel": 11
+        }
+      ],
+      "rewards": {
+        "gold": 1458,
+        "xp": 383,
+        "itemRewardIds": [1, 74],
+        "reputationGain": 113
+      },
+      "requirements": {
+        "minLevel": 9,
+        "prerequisiteQuestId": 21
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_6_start",
+        "completeDialogueId": "dlg_CollectQuest_6_end",
+        "failDialogueId": "dlg_CollectQuest_6_fail"
+      }
+    }
+    ,
+    {
+      "questId": 23,
+      "questName": "CollectQuest_7",
+      "type": "CollectQuest",
+      "difficulty": 1,
+      "repeatable": false,
+      "timeLimit": 73,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_7",
+          "targetCount": 46,
+          "targetType": "Enemy",
+          "requiredLevel": 16
+        }
+      ],
+      "rewards": {
+        "gold": 501,
+        "xp": 3044,
+        "itemRewardIds": [78, 20],
+        "reputationGain": 108
+      },
+      "requirements": {
+        "minLevel": 14,
+        "prerequisiteQuestId": 22
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_7_start",
+        "completeDialogueId": "dlg_CollectQuest_7_end",
+        "failDialogueId": "dlg_CollectQuest_7_fail"
+      }
+    }
+    ,
+    {
+      "questId": 24,
+      "questName": "CollectQuest_8",
+      "type": "CollectQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_8",
+          "targetCount": 17,
+          "targetType": "Enemy",
+          "requiredLevel": 4
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of CollectQuest_8",
+          "targetCount": 8,
+          "targetType": "Enemy",
+          "requiredLevel": 2
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of CollectQuest_8",
+          "targetCount": 24,
+          "targetType": "Enemy",
+          "requiredLevel": 14
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of CollectQuest_8",
+          "targetCount": 48,
+          "targetType": "Enemy",
+          "requiredLevel": 14
+        }
+      ],
+      "rewards": {
+        "gold": 236,
+        "xp": 2333,
+        "itemRewardIds": [76, 94],
+        "reputationGain": 137
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 23
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_8_start",
+        "completeDialogueId": "dlg_CollectQuest_8_end",
+        "failDialogueId": "dlg_CollectQuest_8_fail"
+      }
+    }
+    ,
+    {
+      "questId": 25,
+      "questName": "CollectQuest_9",
+      "type": "CollectQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 576,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_9",
+          "targetCount": 1,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        }
+      ],
+      "rewards": {
+        "gold": 1709,
+        "xp": 4528,
+        "itemRewardIds": [49, 61],
+        "reputationGain": 120
+      },
+      "requirements": {
+        "minLevel": 10,
+        "prerequisiteQuestId": 24
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_9_start",
+        "completeDialogueId": "dlg_CollectQuest_9_end",
+        "failDialogueId": "dlg_CollectQuest_9_fail"
+      }
+    }
+    ,
+    {
+      "questId": 26,
+      "questName": "CollectQuest_10",
+      "type": "CollectQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_10",
+          "targetCount": 39,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of CollectQuest_10",
+          "targetCount": 35,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of CollectQuest_10",
+          "targetCount": 42,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        }
+      ],
+      "rewards": {
+        "gold": 1183,
+        "xp": 4092,
+        "itemRewardIds": [64, 73],
+        "reputationGain": 310
+      },
+      "requirements": {
+        "minLevel": 8,
+        "prerequisiteQuestId": 25
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_10_start",
+        "completeDialogueId": "dlg_CollectQuest_10_end",
+        "failDialogueId": "dlg_CollectQuest_10_fail"
+      }
+    }
+    ,
+    {
+      "questId": 27,
+      "questName": "CollectQuest_11",
+      "type": "CollectQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 553,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_11",
+          "targetCount": 30,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of CollectQuest_11",
+          "targetCount": 32,
+          "targetType": "Enemy",
+          "requiredLevel": 11
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of CollectQuest_11",
+          "targetCount": 19,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of CollectQuest_11",
+          "targetCount": 13,
+          "targetType": "Enemy",
+          "requiredLevel": 1
+        }
+      ],
+      "rewards": {
+        "gold": 1873,
+        "xp": 1490,
+        "itemRewardIds": [38, 97],
+        "reputationGain": 50
+      },
+      "requirements": {
+        "minLevel": 2,
+        "prerequisiteQuestId": 26
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_11_start",
+        "completeDialogueId": "dlg_CollectQuest_11_end",
+        "failDialogueId": "dlg_CollectQuest_11_fail"
+      }
+    }
+    ,
+    {
+      "questId": 28,
+      "questName": "CollectQuest_12",
+      "type": "CollectQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_12",
+          "targetCount": 19,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of CollectQuest_12",
+          "targetCount": 33,
+          "targetType": "Enemy",
+          "requiredLevel": 3
+        }
+      ],
+      "rewards": {
+        "gold": 1856,
+        "xp": 229,
+        "itemRewardIds": [53, 29],
+        "reputationGain": 252
+      },
+      "requirements": {
+        "minLevel": 3,
+        "prerequisiteQuestId": 27
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_12_start",
+        "completeDialogueId": "dlg_CollectQuest_12_end",
+        "failDialogueId": "dlg_CollectQuest_12_fail"
+      }
+    }
+    ,
+    {
+      "questId": 29,
+      "questName": "CollectQuest_13",
+      "type": "CollectQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 406,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_13",
+          "targetCount": 47,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of CollectQuest_13",
+          "targetCount": 47,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        }
+      ],
+      "rewards": {
+        "gold": 1133,
+        "xp": 4673,
+        "itemRewardIds": [86, 45],
+        "reputationGain": 458
+      },
+      "requirements": {
+        "minLevel": 11,
+        "prerequisiteQuestId": 28
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_13_start",
+        "completeDialogueId": "dlg_CollectQuest_13_end",
+        "failDialogueId": "dlg_CollectQuest_13_fail"
+      }
+    }
+    ,
+    {
+      "questId": 30,
+      "questName": "CollectQuest_14",
+      "type": "CollectQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of CollectQuest_14",
+          "targetCount": 33,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of CollectQuest_14",
+          "targetCount": 37,
+          "targetType": "Enemy",
+          "requiredLevel": 1
+        }
+      ],
+      "rewards": {
+        "gold": 361,
+        "xp": 3326,
+        "itemRewardIds": [27, 77],
+        "reputationGain": 245
+      },
+      "requirements": {
+        "minLevel": 7,
+        "prerequisiteQuestId": 29
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_CollectQuest_14_start",
+        "completeDialogueId": "dlg_CollectQuest_14_end",
+        "failDialogueId": "dlg_CollectQuest_14_fail"
+      }
+    }
+    ,
+    {
+      "questId": 31,
+      "questName": "ExploreQuest_0",
+      "type": "ExploreQuest",
+      "difficulty": 2,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_0",
+          "targetCount": 17,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        }
+      ],
+      "rewards": {
+        "gold": 1976,
+        "xp": 3436,
+        "itemRewardIds": [58, 43],
+        "reputationGain": 101
+      },
+      "requirements": {
+        "minLevel": 4,
+        "prerequisiteQuestId": 0
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_0_start",
+        "completeDialogueId": "dlg_ExploreQuest_0_end",
+        "failDialogueId": "dlg_ExploreQuest_0_fail"
+      }
+    }
+    ,
+    {
+      "questId": 32,
+      "questName": "ExploreQuest_1",
+      "type": "ExploreQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_1",
+          "targetCount": 16,
+          "targetType": "Enemy",
+          "requiredLevel": 11
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of ExploreQuest_1",
+          "targetCount": 2,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of ExploreQuest_1",
+          "targetCount": 40,
+          "targetType": "Enemy",
+          "requiredLevel": 3
+        }
+      ],
+      "rewards": {
+        "gold": 1605,
+        "xp": 826,
+        "itemRewardIds": [23, 54],
+        "reputationGain": 94
+      },
+      "requirements": {
+        "minLevel": 6,
+        "prerequisiteQuestId": 31
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_1_start",
+        "completeDialogueId": "dlg_ExploreQuest_1_end",
+        "failDialogueId": "dlg_ExploreQuest_1_fail"
+      }
+    }
+    ,
+    {
+      "questId": 33,
+      "questName": "ExploreQuest_2",
+      "type": "ExploreQuest",
+      "difficulty": 2,
+      "repeatable": true,
+      "timeLimit": 493,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_2",
+          "targetCount": 31,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of ExploreQuest_2",
+          "targetCount": 13,
+          "targetType": "Enemy",
+          "requiredLevel": 14
+        }
+      ],
+      "rewards": {
+        "gold": 1101,
+        "xp": 1836,
+        "itemRewardIds": [62, 88],
+        "reputationGain": 453
+      },
+      "requirements": {
+        "minLevel": 10,
+        "prerequisiteQuestId": 32
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_2_start",
+        "completeDialogueId": "dlg_ExploreQuest_2_end",
+        "failDialogueId": "dlg_ExploreQuest_2_fail"
+      }
+    }
+    ,
+    {
+      "questId": 34,
+      "questName": "ExploreQuest_3",
+      "type": "ExploreQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_3",
+          "targetCount": 27,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        }
+      ],
+      "rewards": {
+        "gold": 707,
+        "xp": 2395,
+        "itemRewardIds": [68, 29],
+        "reputationGain": 274
+      },
+      "requirements": {
+        "minLevel": 13,
+        "prerequisiteQuestId": 33
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_3_start",
+        "completeDialogueId": "dlg_ExploreQuest_3_end",
+        "failDialogueId": "dlg_ExploreQuest_3_fail"
+      }
+    }
+    ,
+    {
+      "questId": 35,
+      "questName": "ExploreQuest_4",
+      "type": "ExploreQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 375,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_4",
+          "targetCount": 9,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        }
+      ],
+      "rewards": {
+        "gold": 811,
+        "xp": 668,
+        "itemRewardIds": [88, 36],
+        "reputationGain": 284
+      },
+      "requirements": {
+        "minLevel": 7,
+        "prerequisiteQuestId": 34
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_4_start",
+        "completeDialogueId": "dlg_ExploreQuest_4_end",
+        "failDialogueId": "dlg_ExploreQuest_4_fail"
+      }
+    }
+    ,
+    {
+      "questId": 36,
+      "questName": "ExploreQuest_5",
+      "type": "ExploreQuest",
+      "difficulty": 1,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_5",
+          "targetCount": 38,
+          "targetType": "Enemy",
+          "requiredLevel": 13
+        }
+      ],
+      "rewards": {
+        "gold": 1083,
+        "xp": 1500,
+        "itemRewardIds": [62, 65],
+        "reputationGain": 0
+      },
+      "requirements": {
+        "minLevel": 11,
+        "prerequisiteQuestId": 35
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_5_start",
+        "completeDialogueId": "dlg_ExploreQuest_5_end",
+        "failDialogueId": "dlg_ExploreQuest_5_fail"
+      }
+    }
+    ,
+    {
+      "questId": 37,
+      "questName": "ExploreQuest_6",
+      "type": "ExploreQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 404,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_6",
+          "targetCount": 30,
+          "targetType": "Enemy",
+          "requiredLevel": 5
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of ExploreQuest_6",
+          "targetCount": 44,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of ExploreQuest_6",
+          "targetCount": 30,
+          "targetType": "Enemy",
+          "requiredLevel": 13
+        }
+      ],
+      "rewards": {
+        "gold": 1360,
+        "xp": 1399,
+        "itemRewardIds": [84, 50],
+        "reputationGain": 201
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 36
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_6_start",
+        "completeDialogueId": "dlg_ExploreQuest_6_end",
+        "failDialogueId": "dlg_ExploreQuest_6_fail"
+      }
+    }
+    ,
+    {
+      "questId": 38,
+      "questName": "ExploreQuest_7",
+      "type": "ExploreQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 106,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_7",
+          "targetCount": 23,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        }
+      ],
+      "rewards": {
+        "gold": 1614,
+        "xp": 536,
+        "itemRewardIds": [85, 8],
+        "reputationGain": 10
+      },
+      "requirements": {
+        "minLevel": 11,
+        "prerequisiteQuestId": 37
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_7_start",
+        "completeDialogueId": "dlg_ExploreQuest_7_end",
+        "failDialogueId": "dlg_ExploreQuest_7_fail"
+      }
+    }
+    ,
+    {
+      "questId": 39,
+      "questName": "ExploreQuest_8",
+      "type": "ExploreQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_8",
+          "targetCount": 8,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        }
+      ],
+      "rewards": {
+        "gold": 1985,
+        "xp": 1809,
+        "itemRewardIds": [33, 14],
+        "reputationGain": 203
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 38
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_8_start",
+        "completeDialogueId": "dlg_ExploreQuest_8_end",
+        "failDialogueId": "dlg_ExploreQuest_8_fail"
+      }
+    }
+    ,
+    {
+      "questId": 40,
+      "questName": "ExploreQuest_9",
+      "type": "ExploreQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_9",
+          "targetCount": 31,
+          "targetType": "Enemy",
+          "requiredLevel": 13
+        }
+      ],
+      "rewards": {
+        "gold": 732,
+        "xp": 3090,
+        "itemRewardIds": [21, 6],
+        "reputationGain": 136
+      },
+      "requirements": {
+        "minLevel": 8,
+        "prerequisiteQuestId": 39
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_9_start",
+        "completeDialogueId": "dlg_ExploreQuest_9_end",
+        "failDialogueId": "dlg_ExploreQuest_9_fail"
+      }
+    }
+    ,
+    {
+      "questId": 41,
+      "questName": "ExploreQuest_10",
+      "type": "ExploreQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_10",
+          "targetCount": 16,
+          "targetType": "Enemy",
+          "requiredLevel": 4
+        }
+      ],
+      "rewards": {
+        "gold": 1698,
+        "xp": 1585,
+        "itemRewardIds": [52, 74],
+        "reputationGain": 272
+      },
+      "requirements": {
+        "minLevel": 13,
+        "prerequisiteQuestId": 40
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_10_start",
+        "completeDialogueId": "dlg_ExploreQuest_10_end",
+        "failDialogueId": "dlg_ExploreQuest_10_fail"
+      }
+    }
+    ,
+    {
+      "questId": 42,
+      "questName": "ExploreQuest_11",
+      "type": "ExploreQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 66,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_11",
+          "targetCount": 48,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of ExploreQuest_11",
+          "targetCount": 30,
+          "targetType": "Enemy",
+          "requiredLevel": 5
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of ExploreQuest_11",
+          "targetCount": 25,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of ExploreQuest_11",
+          "targetCount": 3,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        }
+      ],
+      "rewards": {
+        "gold": 87,
+        "xp": 4883,
+        "itemRewardIds": [12, 97],
+        "reputationGain": 498
+      },
+      "requirements": {
+        "minLevel": 8,
+        "prerequisiteQuestId": 41
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_11_start",
+        "completeDialogueId": "dlg_ExploreQuest_11_end",
+        "failDialogueId": "dlg_ExploreQuest_11_fail"
+      }
+    }
+    ,
+    {
+      "questId": 43,
+      "questName": "ExploreQuest_12",
+      "type": "ExploreQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 312,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_12",
+          "targetCount": 15,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of ExploreQuest_12",
+          "targetCount": 18,
+          "targetType": "Enemy",
+          "requiredLevel": 4
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of ExploreQuest_12",
+          "targetCount": 25,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of ExploreQuest_12",
+          "targetCount": 23,
+          "targetType": "Enemy",
+          "requiredLevel": 14
+        }
+      ],
+      "rewards": {
+        "gold": 140,
+        "xp": 1440,
+        "itemRewardIds": [77, 55],
+        "reputationGain": 11
+      },
+      "requirements": {
+        "minLevel": 4,
+        "prerequisiteQuestId": 42
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_12_start",
+        "completeDialogueId": "dlg_ExploreQuest_12_end",
+        "failDialogueId": "dlg_ExploreQuest_12_fail"
+      }
+    }
+    ,
+    {
+      "questId": 44,
+      "questName": "ExploreQuest_13",
+      "type": "ExploreQuest",
+      "difficulty": 2,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_13",
+          "targetCount": 6,
+          "targetType": "Enemy",
+          "requiredLevel": 4
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of ExploreQuest_13",
+          "targetCount": 3,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of ExploreQuest_13",
+          "targetCount": 35,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        }
+      ],
+      "rewards": {
+        "gold": 1896,
+        "xp": 3908,
+        "itemRewardIds": [20, 69],
+        "reputationGain": 336
+      },
+      "requirements": {
+        "minLevel": 13,
+        "prerequisiteQuestId": 43
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_13_start",
+        "completeDialogueId": "dlg_ExploreQuest_13_end",
+        "failDialogueId": "dlg_ExploreQuest_13_fail"
+      }
+    }
+    ,
+    {
+      "questId": 45,
+      "questName": "ExploreQuest_14",
+      "type": "ExploreQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of ExploreQuest_14",
+          "targetCount": 36,
+          "targetType": "Enemy",
+          "requiredLevel": 16
+        }
+      ],
+      "rewards": {
+        "gold": 1547,
+        "xp": 2243,
+        "itemRewardIds": [88, 6],
+        "reputationGain": 430
+      },
+      "requirements": {
+        "minLevel": 14,
+        "prerequisiteQuestId": 44
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_ExploreQuest_14_start",
+        "completeDialogueId": "dlg_ExploreQuest_14_end",
+        "failDialogueId": "dlg_ExploreQuest_14_fail"
+      }
+    }
+    ,
+    {
+      "questId": 46,
+      "questName": "BossQuest_0",
+      "type": "BossQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 499,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_0",
+          "targetCount": 8,
+          "targetType": "Enemy",
+          "requiredLevel": 2
+        }
+      ],
+      "rewards": {
+        "gold": 1659,
+        "xp": 3845,
+        "itemRewardIds": [20, 35],
+        "reputationGain": 359
+      },
+      "requirements": {
+        "minLevel": 9,
+        "prerequisiteQuestId": 0
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_0_start",
+        "completeDialogueId": "dlg_BossQuest_0_end",
+        "failDialogueId": "dlg_BossQuest_0_fail"
+      }
+    }
+    ,
+    {
+      "questId": 47,
+      "questName": "BossQuest_1",
+      "type": "BossQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 451,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_1",
+          "targetCount": 12,
+          "targetType": "Enemy",
+          "requiredLevel": 13
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of BossQuest_1",
+          "targetCount": 13,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        }
+      ],
+      "rewards": {
+        "gold": 848,
+        "xp": 818,
+        "itemRewardIds": [6, 41],
+        "reputationGain": 425
+      },
+      "requirements": {
+        "minLevel": 9,
+        "prerequisiteQuestId": 46
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_1_start",
+        "completeDialogueId": "dlg_BossQuest_1_end",
+        "failDialogueId": "dlg_BossQuest_1_fail"
+      }
+    }
+    ,
+    {
+      "questId": 48,
+      "questName": "BossQuest_2",
+      "type": "BossQuest",
+      "difficulty": 1,
+      "repeatable": false,
+      "timeLimit": 543,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_2",
+          "targetCount": 6,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of BossQuest_2",
+          "targetCount": 45,
+          "targetType": "Enemy",
+          "requiredLevel": 16
+        }
+      ],
+      "rewards": {
+        "gold": 835,
+        "xp": 590,
+        "itemRewardIds": [20, 68],
+        "reputationGain": 430
+      },
+      "requirements": {
+        "minLevel": 2,
+        "prerequisiteQuestId": 47
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_2_start",
+        "completeDialogueId": "dlg_BossQuest_2_end",
+        "failDialogueId": "dlg_BossQuest_2_fail"
+      }
+    }
+    ,
+    {
+      "questId": 49,
+      "questName": "BossQuest_3",
+      "type": "BossQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_3",
+          "targetCount": 15,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of BossQuest_3",
+          "targetCount": 33,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        }
+      ],
+      "rewards": {
+        "gold": 1398,
+        "xp": 778,
+        "itemRewardIds": [24, 33],
+        "reputationGain": 129
+      },
+      "requirements": {
+        "minLevel": 9,
+        "prerequisiteQuestId": 48
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_3_start",
+        "completeDialogueId": "dlg_BossQuest_3_end",
+        "failDialogueId": "dlg_BossQuest_3_fail"
+      }
+    }
+    ,
+    {
+      "questId": 50,
+      "questName": "BossQuest_4",
+      "type": "BossQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_4",
+          "targetCount": 36,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        }
+      ],
+      "rewards": {
+        "gold": 687,
+        "xp": 2144,
+        "itemRewardIds": [39, 67],
+        "reputationGain": 266
+      },
+      "requirements": {
+        "minLevel": 6,
+        "prerequisiteQuestId": 49
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_4_start",
+        "completeDialogueId": "dlg_BossQuest_4_end",
+        "failDialogueId": "dlg_BossQuest_4_fail"
+      }
+    }
+    ,
+    {
+      "questId": 51,
+      "questName": "BossQuest_5",
+      "type": "BossQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 344,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_5",
+          "targetCount": 14,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        }
+      ],
+      "rewards": {
+        "gold": 1275,
+        "xp": 1824,
+        "itemRewardIds": [16, 36],
+        "reputationGain": 143
+      },
+      "requirements": {
+        "minLevel": 12,
+        "prerequisiteQuestId": 50
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_5_start",
+        "completeDialogueId": "dlg_BossQuest_5_end",
+        "failDialogueId": "dlg_BossQuest_5_fail"
+      }
+    }
+    ,
+    {
+      "questId": 52,
+      "questName": "BossQuest_6",
+      "type": "BossQuest",
+      "difficulty": 2,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_6",
+          "targetCount": 28,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        }
+      ],
+      "rewards": {
+        "gold": 1172,
+        "xp": 1577,
+        "itemRewardIds": [51, 47],
+        "reputationGain": 266
+      },
+      "requirements": {
+        "minLevel": 4,
+        "prerequisiteQuestId": 51
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_6_start",
+        "completeDialogueId": "dlg_BossQuest_6_end",
+        "failDialogueId": "dlg_BossQuest_6_fail"
+      }
+    }
+    ,
+    {
+      "questId": 53,
+      "questName": "BossQuest_7",
+      "type": "BossQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_7",
+          "targetCount": 30,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of BossQuest_7",
+          "targetCount": 10,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of BossQuest_7",
+          "targetCount": 25,
+          "targetType": "Enemy",
+          "requiredLevel": 14
+        }
+      ],
+      "rewards": {
+        "gold": 1245,
+        "xp": 4185,
+        "itemRewardIds": [2, 51],
+        "reputationGain": 355
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 52
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_7_start",
+        "completeDialogueId": "dlg_BossQuest_7_end",
+        "failDialogueId": "dlg_BossQuest_7_fail"
+      }
+    }
+    ,
+    {
+      "questId": 54,
+      "questName": "BossQuest_8",
+      "type": "BossQuest",
+      "difficulty": 2,
+      "repeatable": true,
+      "timeLimit": 382,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_8",
+          "targetCount": 45,
+          "targetType": "Enemy",
+          "requiredLevel": 3
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of BossQuest_8",
+          "targetCount": 21,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        }
+      ],
+      "rewards": {
+        "gold": 1086,
+        "xp": 3419,
+        "itemRewardIds": [78, 94],
+        "reputationGain": 321
+      },
+      "requirements": {
+        "minLevel": 6,
+        "prerequisiteQuestId": 53
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_8_start",
+        "completeDialogueId": "dlg_BossQuest_8_end",
+        "failDialogueId": "dlg_BossQuest_8_fail"
+      }
+    }
+    ,
+    {
+      "questId": 55,
+      "questName": "BossQuest_9",
+      "type": "BossQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_9",
+          "targetCount": 46,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of BossQuest_9",
+          "targetCount": 46,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of BossQuest_9",
+          "targetCount": 9,
+          "targetType": "Enemy",
+          "requiredLevel": 4
+        }
+      ],
+      "rewards": {
+        "gold": 548,
+        "xp": 3037,
+        "itemRewardIds": [29, 31],
+        "reputationGain": 42
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 54
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_9_start",
+        "completeDialogueId": "dlg_BossQuest_9_end",
+        "failDialogueId": "dlg_BossQuest_9_fail"
+      }
+    }
+    ,
+    {
+      "questId": 56,
+      "questName": "BossQuest_10",
+      "type": "BossQuest",
+      "difficulty": 1,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_10",
+          "targetCount": 22,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of BossQuest_10",
+          "targetCount": 22,
+          "targetType": "Enemy",
+          "requiredLevel": 5
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of BossQuest_10",
+          "targetCount": 31,
+          "targetType": "Enemy",
+          "requiredLevel": 16
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of BossQuest_10",
+          "targetCount": 21,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        }
+      ],
+      "rewards": {
+        "gold": 868,
+        "xp": 510,
+        "itemRewardIds": [17, 87],
+        "reputationGain": 414
+      },
+      "requirements": {
+        "minLevel": 3,
+        "prerequisiteQuestId": 55
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_10_start",
+        "completeDialogueId": "dlg_BossQuest_10_end",
+        "failDialogueId": "dlg_BossQuest_10_fail"
+      }
+    }
+    ,
+    {
+      "questId": 57,
+      "questName": "BossQuest_11",
+      "type": "BossQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_11",
+          "targetCount": 22,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        }
+      ],
+      "rewards": {
+        "gold": 1105,
+        "xp": 2962,
+        "itemRewardIds": [93, 61],
+        "reputationGain": 254
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 56
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_11_start",
+        "completeDialogueId": "dlg_BossQuest_11_end",
+        "failDialogueId": "dlg_BossQuest_11_fail"
+      }
+    }
+    ,
+    {
+      "questId": 58,
+      "questName": "BossQuest_12",
+      "type": "BossQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 167,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_12",
+          "targetCount": 30,
+          "targetType": "Enemy",
+          "requiredLevel": 14
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of BossQuest_12",
+          "targetCount": 19,
+          "targetType": "Enemy",
+          "requiredLevel": 2
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of BossQuest_12",
+          "targetCount": 45,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        }
+      ],
+      "rewards": {
+        "gold": 1762,
+        "xp": 3417,
+        "itemRewardIds": [18, 26],
+        "reputationGain": 412
+      },
+      "requirements": {
+        "minLevel": 7,
+        "prerequisiteQuestId": 57
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_12_start",
+        "completeDialogueId": "dlg_BossQuest_12_end",
+        "failDialogueId": "dlg_BossQuest_12_fail"
+      }
+    }
+    ,
+    {
+      "questId": 59,
+      "questName": "BossQuest_13",
+      "type": "BossQuest",
+      "difficulty": 2,
+      "repeatable": false,
+      "timeLimit": 366,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_13",
+          "targetCount": 19,
+          "targetType": "Enemy",
+          "requiredLevel": 11
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of BossQuest_13",
+          "targetCount": 13,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of BossQuest_13",
+          "targetCount": 7,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of BossQuest_13",
+          "targetCount": 49,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        }
+      ],
+      "rewards": {
+        "gold": 607,
+        "xp": 3720,
+        "itemRewardIds": [33, 60],
+        "reputationGain": 245
+      },
+      "requirements": {
+        "minLevel": 12,
+        "prerequisiteQuestId": 58
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_13_start",
+        "completeDialogueId": "dlg_BossQuest_13_end",
+        "failDialogueId": "dlg_BossQuest_13_fail"
+      }
+    }
+    ,
+    {
+      "questId": 60,
+      "questName": "BossQuest_14",
+      "type": "BossQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 592,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of BossQuest_14",
+          "targetCount": 10,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of BossQuest_14",
+          "targetCount": 11,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of BossQuest_14",
+          "targetCount": 48,
+          "targetType": "Enemy",
+          "requiredLevel": 16
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of BossQuest_14",
+          "targetCount": 8,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        }
+      ],
+      "rewards": {
+        "gold": 1563,
+        "xp": 4774,
+        "itemRewardIds": [98, 38],
+        "reputationGain": 233
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 59
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_BossQuest_14_start",
+        "completeDialogueId": "dlg_BossQuest_14_end",
+        "failDialogueId": "dlg_BossQuest_14_fail"
+      }
+    }
+    ,
+    {
+      "questId": 61,
+      "questName": "EscortQuest_0",
+      "type": "EscortQuest",
+      "difficulty": 1,
+      "repeatable": false,
+      "timeLimit": 272,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_0",
+          "targetCount": 31,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_0",
+          "targetCount": 23,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of EscortQuest_0",
+          "targetCount": 48,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of EscortQuest_0",
+          "targetCount": 23,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        }
+      ],
+      "rewards": {
+        "gold": 1207,
+        "xp": 1636,
+        "itemRewardIds": [84, 39],
+        "reputationGain": 168
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 0
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_0_start",
+        "completeDialogueId": "dlg_EscortQuest_0_end",
+        "failDialogueId": "dlg_EscortQuest_0_fail"
+      }
+    }
+    ,
+    {
+      "questId": 62,
+      "questName": "EscortQuest_1",
+      "type": "EscortQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_1",
+          "targetCount": 9,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_1",
+          "targetCount": 38,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of EscortQuest_1",
+          "targetCount": 2,
+          "targetType": "Enemy",
+          "requiredLevel": 2
+        }
+      ],
+      "rewards": {
+        "gold": 252,
+        "xp": 1092,
+        "itemRewardIds": [59, 53],
+        "reputationGain": 317
+      },
+      "requirements": {
+        "minLevel": 12,
+        "prerequisiteQuestId": 61
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_1_start",
+        "completeDialogueId": "dlg_EscortQuest_1_end",
+        "failDialogueId": "dlg_EscortQuest_1_fail"
+      }
+    }
+    ,
+    {
+      "questId": 63,
+      "questName": "EscortQuest_2",
+      "type": "EscortQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_2",
+          "targetCount": 24,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_2",
+          "targetCount": 26,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        }
+      ],
+      "rewards": {
+        "gold": 885,
+        "xp": 3977,
+        "itemRewardIds": [67, 4],
+        "reputationGain": 107
+      },
+      "requirements": {
+        "minLevel": 8,
+        "prerequisiteQuestId": 62
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_2_start",
+        "completeDialogueId": "dlg_EscortQuest_2_end",
+        "failDialogueId": "dlg_EscortQuest_2_fail"
+      }
+    }
+    ,
+    {
+      "questId": 64,
+      "questName": "EscortQuest_3",
+      "type": "EscortQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 420,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_3",
+          "targetCount": 42,
+          "targetType": "Enemy",
+          "requiredLevel": 1
+        }
+      ],
+      "rewards": {
+        "gold": 665,
+        "xp": 690,
+        "itemRewardIds": [43, 75],
+        "reputationGain": 418
+      },
+      "requirements": {
+        "minLevel": 7,
+        "prerequisiteQuestId": 63
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_3_start",
+        "completeDialogueId": "dlg_EscortQuest_3_end",
+        "failDialogueId": "dlg_EscortQuest_3_fail"
+      }
+    }
+    ,
+    {
+      "questId": 65,
+      "questName": "EscortQuest_4",
+      "type": "EscortQuest",
+      "difficulty": 1,
+      "repeatable": false,
+      "timeLimit": 500,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_4",
+          "targetCount": 40,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_4",
+          "targetCount": 24,
+          "targetType": "Enemy",
+          "requiredLevel": 13
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of EscortQuest_4",
+          "targetCount": 48,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of EscortQuest_4",
+          "targetCount": 2,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        }
+      ],
+      "rewards": {
+        "gold": 253,
+        "xp": 160,
+        "itemRewardIds": [21, 26],
+        "reputationGain": 473
+      },
+      "requirements": {
+        "minLevel": 3,
+        "prerequisiteQuestId": 64
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_4_start",
+        "completeDialogueId": "dlg_EscortQuest_4_end",
+        "failDialogueId": "dlg_EscortQuest_4_fail"
+      }
+    }
+    ,
+    {
+      "questId": 66,
+      "questName": "EscortQuest_5",
+      "type": "EscortQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_5",
+          "targetCount": 6,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_5",
+          "targetCount": 36,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of EscortQuest_5",
+          "targetCount": 30,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of EscortQuest_5",
+          "targetCount": 45,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        }
+      ],
+      "rewards": {
+        "gold": 1922,
+        "xp": 672,
+        "itemRewardIds": [69, 20],
+        "reputationGain": 190
+      },
+      "requirements": {
+        "minLevel": 9,
+        "prerequisiteQuestId": 65
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_5_start",
+        "completeDialogueId": "dlg_EscortQuest_5_end",
+        "failDialogueId": "dlg_EscortQuest_5_fail"
+      }
+    }
+    ,
+    {
+      "questId": 67,
+      "questName": "EscortQuest_6",
+      "type": "EscortQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 506,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_6",
+          "targetCount": 23,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        }
+      ],
+      "rewards": {
+        "gold": 1901,
+        "xp": 4777,
+        "itemRewardIds": [54, 6],
+        "reputationGain": 384
+      },
+      "requirements": {
+        "minLevel": 13,
+        "prerequisiteQuestId": 66
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_6_start",
+        "completeDialogueId": "dlg_EscortQuest_6_end",
+        "failDialogueId": "dlg_EscortQuest_6_fail"
+      }
+    }
+    ,
+    {
+      "questId": 68,
+      "questName": "EscortQuest_7",
+      "type": "EscortQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_7",
+          "targetCount": 43,
+          "targetType": "Enemy",
+          "requiredLevel": 1
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_7",
+          "targetCount": 43,
+          "targetType": "Enemy",
+          "requiredLevel": 13
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of EscortQuest_7",
+          "targetCount": 37,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        }
+      ],
+      "rewards": {
+        "gold": 1746,
+        "xp": 2737,
+        "itemRewardIds": [58, 35],
+        "reputationGain": 470
+      },
+      "requirements": {
+        "minLevel": 13,
+        "prerequisiteQuestId": 67
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_7_start",
+        "completeDialogueId": "dlg_EscortQuest_7_end",
+        "failDialogueId": "dlg_EscortQuest_7_fail"
+      }
+    }
+    ,
+    {
+      "questId": 69,
+      "questName": "EscortQuest_8",
+      "type": "EscortQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_8",
+          "targetCount": 37,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_8",
+          "targetCount": 33,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        }
+      ],
+      "rewards": {
+        "gold": 293,
+        "xp": 3335,
+        "itemRewardIds": [38, 64],
+        "reputationGain": 18
+      },
+      "requirements": {
+        "minLevel": 2,
+        "prerequisiteQuestId": 68
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_8_start",
+        "completeDialogueId": "dlg_EscortQuest_8_end",
+        "failDialogueId": "dlg_EscortQuest_8_fail"
+      }
+    }
+    ,
+    {
+      "questId": 70,
+      "questName": "EscortQuest_9",
+      "type": "EscortQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 502,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_9",
+          "targetCount": 38,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_9",
+          "targetCount": 45,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of EscortQuest_9",
+          "targetCount": 36,
+          "targetType": "Enemy",
+          "requiredLevel": 1
+        }
+      ],
+      "rewards": {
+        "gold": 1568,
+        "xp": 2983,
+        "itemRewardIds": [5, 1],
+        "reputationGain": 87
+      },
+      "requirements": {
+        "minLevel": 10,
+        "prerequisiteQuestId": 69
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_9_start",
+        "completeDialogueId": "dlg_EscortQuest_9_end",
+        "failDialogueId": "dlg_EscortQuest_9_fail"
+      }
+    }
+    ,
+    {
+      "questId": 71,
+      "questName": "EscortQuest_10",
+      "type": "EscortQuest",
+      "difficulty": 2,
+      "repeatable": false,
+      "timeLimit": 283,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_10",
+          "targetCount": 6,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_10",
+          "targetCount": 21,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of EscortQuest_10",
+          "targetCount": 13,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        }
+      ],
+      "rewards": {
+        "gold": 542,
+        "xp": 1351,
+        "itemRewardIds": [47, 4],
+        "reputationGain": 445
+      },
+      "requirements": {
+        "minLevel": 1,
+        "prerequisiteQuestId": 70
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_10_start",
+        "completeDialogueId": "dlg_EscortQuest_10_end",
+        "failDialogueId": "dlg_EscortQuest_10_fail"
+      }
+    }
+    ,
+    {
+      "questId": 72,
+      "questName": "EscortQuest_11",
+      "type": "EscortQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_11",
+          "targetCount": 36,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_11",
+          "targetCount": 22,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of EscortQuest_11",
+          "targetCount": 48,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of EscortQuest_11",
+          "targetCount": 17,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        }
+      ],
+      "rewards": {
+        "gold": 1961,
+        "xp": 836,
+        "itemRewardIds": [41, 85],
+        "reputationGain": 477
+      },
+      "requirements": {
+        "minLevel": 13,
+        "prerequisiteQuestId": 71
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_11_start",
+        "completeDialogueId": "dlg_EscortQuest_11_end",
+        "failDialogueId": "dlg_EscortQuest_11_fail"
+      }
+    }
+    ,
+    {
+      "questId": 73,
+      "questName": "EscortQuest_12",
+      "type": "EscortQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_12",
+          "targetCount": 21,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_12",
+          "targetCount": 37,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        }
+      ],
+      "rewards": {
+        "gold": 1967,
+        "xp": 1675,
+        "itemRewardIds": [86, 9],
+        "reputationGain": 390
+      },
+      "requirements": {
+        "minLevel": 12,
+        "prerequisiteQuestId": 72
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_12_start",
+        "completeDialogueId": "dlg_EscortQuest_12_end",
+        "failDialogueId": "dlg_EscortQuest_12_fail"
+      }
+    }
+    ,
+    {
+      "questId": 74,
+      "questName": "EscortQuest_13",
+      "type": "EscortQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_13",
+          "targetCount": 48,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        }
+      ],
+      "rewards": {
+        "gold": 593,
+        "xp": 1544,
+        "itemRewardIds": [71, 86],
+        "reputationGain": 147
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 73
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_13_start",
+        "completeDialogueId": "dlg_EscortQuest_13_end",
+        "failDialogueId": "dlg_EscortQuest_13_fail"
+      }
+    }
+    ,
+    {
+      "questId": 75,
+      "questName": "EscortQuest_14",
+      "type": "EscortQuest",
+      "difficulty": 2,
+      "repeatable": true,
+      "timeLimit": 113,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of EscortQuest_14",
+          "targetCount": 13,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of EscortQuest_14",
+          "targetCount": 4,
+          "targetType": "Enemy",
+          "requiredLevel": 14
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of EscortQuest_14",
+          "targetCount": 44,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        }
+      ],
+      "rewards": {
+        "gold": 106,
+        "xp": 2777,
+        "itemRewardIds": [39, 28],
+        "reputationGain": 261
+      },
+      "requirements": {
+        "minLevel": 7,
+        "prerequisiteQuestId": 74
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_EscortQuest_14_start",
+        "completeDialogueId": "dlg_EscortQuest_14_end",
+        "failDialogueId": "dlg_EscortQuest_14_fail"
+      }
+    }
+    ,
+    {
+      "questId": 76,
+      "questName": "SurvivalQuest_0",
+      "type": "SurvivalQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 589,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_0",
+          "targetCount": 24,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_0",
+          "targetCount": 10,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        }
+      ],
+      "rewards": {
+        "gold": 277,
+        "xp": 3269,
+        "itemRewardIds": [29, 75],
+        "reputationGain": 432
+      },
+      "requirements": {
+        "minLevel": 8,
+        "prerequisiteQuestId": 0
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_0_start",
+        "completeDialogueId": "dlg_SurvivalQuest_0_end",
+        "failDialogueId": "dlg_SurvivalQuest_0_fail"
+      }
+    }
+    ,
+    {
+      "questId": 77,
+      "questName": "SurvivalQuest_1",
+      "type": "SurvivalQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 138,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_1",
+          "targetCount": 25,
+          "targetType": "Enemy",
+          "requiredLevel": 5
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_1",
+          "targetCount": 4,
+          "targetType": "Enemy",
+          "requiredLevel": 2
+        }
+      ],
+      "rewards": {
+        "gold": 1194,
+        "xp": 2880,
+        "itemRewardIds": [45, 60],
+        "reputationGain": 9
+      },
+      "requirements": {
+        "minLevel": 1,
+        "prerequisiteQuestId": 76
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_1_start",
+        "completeDialogueId": "dlg_SurvivalQuest_1_end",
+        "failDialogueId": "dlg_SurvivalQuest_1_fail"
+      }
+    }
+    ,
+    {
+      "questId": 78,
+      "questName": "SurvivalQuest_2",
+      "type": "SurvivalQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_2",
+          "targetCount": 42,
+          "targetType": "Enemy",
+          "requiredLevel": 3
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_2",
+          "targetCount": 26,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of SurvivalQuest_2",
+          "targetCount": 21,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        }
+      ],
+      "rewards": {
+        "gold": 111,
+        "xp": 2698,
+        "itemRewardIds": [3, 32],
+        "reputationGain": 352
+      },
+      "requirements": {
+        "minLevel": 4,
+        "prerequisiteQuestId": 77
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_2_start",
+        "completeDialogueId": "dlg_SurvivalQuest_2_end",
+        "failDialogueId": "dlg_SurvivalQuest_2_fail"
+      }
+    }
+    ,
+    {
+      "questId": 79,
+      "questName": "SurvivalQuest_3",
+      "type": "SurvivalQuest",
+      "difficulty": 2,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_3",
+          "targetCount": 5,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_3",
+          "targetCount": 16,
+          "targetType": "Enemy",
+          "requiredLevel": 10
+        }
+      ],
+      "rewards": {
+        "gold": 430,
+        "xp": 1348,
+        "itemRewardIds": [82, 17],
+        "reputationGain": 355
+      },
+      "requirements": {
+        "minLevel": 9,
+        "prerequisiteQuestId": 78
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_3_start",
+        "completeDialogueId": "dlg_SurvivalQuest_3_end",
+        "failDialogueId": "dlg_SurvivalQuest_3_fail"
+      }
+    }
+    ,
+    {
+      "questId": 80,
+      "questName": "SurvivalQuest_4",
+      "type": "SurvivalQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_4",
+          "targetCount": 22,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_4",
+          "targetCount": 28,
+          "targetType": "Enemy",
+          "requiredLevel": 5
+        }
+      ],
+      "rewards": {
+        "gold": 1917,
+        "xp": 4073,
+        "itemRewardIds": [94, 16],
+        "reputationGain": 379
+      },
+      "requirements": {
+        "minLevel": 8,
+        "prerequisiteQuestId": 79
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_4_start",
+        "completeDialogueId": "dlg_SurvivalQuest_4_end",
+        "failDialogueId": "dlg_SurvivalQuest_4_fail"
+      }
+    }
+    ,
+    {
+      "questId": 81,
+      "questName": "SurvivalQuest_5",
+      "type": "SurvivalQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 462,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_5",
+          "targetCount": 17,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_5",
+          "targetCount": 6,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        }
+      ],
+      "rewards": {
+        "gold": 1047,
+        "xp": 4054,
+        "itemRewardIds": [64, 27],
+        "reputationGain": 453
+      },
+      "requirements": {
+        "minLevel": 4,
+        "prerequisiteQuestId": 80
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_5_start",
+        "completeDialogueId": "dlg_SurvivalQuest_5_end",
+        "failDialogueId": "dlg_SurvivalQuest_5_fail"
+      }
+    }
+    ,
+    {
+      "questId": 82,
+      "questName": "SurvivalQuest_6",
+      "type": "SurvivalQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 446,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_6",
+          "targetCount": 28,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        }
+      ],
+      "rewards": {
+        "gold": 1115,
+        "xp": 1352,
+        "itemRewardIds": [75, 98],
+        "reputationGain": 234
+      },
+      "requirements": {
+        "minLevel": 10,
+        "prerequisiteQuestId": 81
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_6_start",
+        "completeDialogueId": "dlg_SurvivalQuest_6_end",
+        "failDialogueId": "dlg_SurvivalQuest_6_fail"
+      }
+    }
+    ,
+    {
+      "questId": 83,
+      "questName": "SurvivalQuest_7",
+      "type": "SurvivalQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 503,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_7",
+          "targetCount": 22,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_7",
+          "targetCount": 48,
+          "targetType": "Enemy",
+          "requiredLevel": 7
+        }
+      ],
+      "rewards": {
+        "gold": 544,
+        "xp": 646,
+        "itemRewardIds": [17, 29],
+        "reputationGain": 428
+      },
+      "requirements": {
+        "minLevel": 11,
+        "prerequisiteQuestId": 82
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_7_start",
+        "completeDialogueId": "dlg_SurvivalQuest_7_end",
+        "failDialogueId": "dlg_SurvivalQuest_7_fail"
+      }
+    }
+    ,
+    {
+      "questId": 84,
+      "questName": "SurvivalQuest_8",
+      "type": "SurvivalQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 403,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_8",
+          "targetCount": 21,
+          "targetType": "Enemy",
+          "requiredLevel": 4
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_8",
+          "targetCount": 11,
+          "targetType": "Enemy",
+          "requiredLevel": 2
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of SurvivalQuest_8",
+          "targetCount": 7,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        }
+      ],
+      "rewards": {
+        "gold": 1318,
+        "xp": 3965,
+        "itemRewardIds": [36, 28],
+        "reputationGain": 320
+      },
+      "requirements": {
+        "minLevel": 9,
+        "prerequisiteQuestId": 83
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_8_start",
+        "completeDialogueId": "dlg_SurvivalQuest_8_end",
+        "failDialogueId": "dlg_SurvivalQuest_8_fail"
+      }
+    }
+    ,
+    {
+      "questId": 85,
+      "questName": "SurvivalQuest_9",
+      "type": "SurvivalQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 458,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_9",
+          "targetCount": 37,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        }
+      ],
+      "rewards": {
+        "gold": 193,
+        "xp": 1389,
+        "itemRewardIds": [36, 65],
+        "reputationGain": 205
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 84
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_9_start",
+        "completeDialogueId": "dlg_SurvivalQuest_9_end",
+        "failDialogueId": "dlg_SurvivalQuest_9_fail"
+      }
+    }
+    ,
+    {
+      "questId": 86,
+      "questName": "SurvivalQuest_10",
+      "type": "SurvivalQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 413,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_10",
+          "targetCount": 17,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_10",
+          "targetCount": 23,
+          "targetType": "Enemy",
+          "requiredLevel": 16
+        }
+      ],
+      "rewards": {
+        "gold": 688,
+        "xp": 645,
+        "itemRewardIds": [29, 11],
+        "reputationGain": 451
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 85
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_10_start",
+        "completeDialogueId": "dlg_SurvivalQuest_10_end",
+        "failDialogueId": "dlg_SurvivalQuest_10_fail"
+      }
+    }
+    ,
+    {
+      "questId": 87,
+      "questName": "SurvivalQuest_11",
+      "type": "SurvivalQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_11",
+          "targetCount": 14,
+          "targetType": "Enemy",
+          "requiredLevel": 11
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_11",
+          "targetCount": 35,
+          "targetType": "Enemy",
+          "requiredLevel": 11
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of SurvivalQuest_11",
+          "targetCount": 7,
+          "targetType": "Enemy",
+          "requiredLevel": 12
+        }
+      ],
+      "rewards": {
+        "gold": 307,
+        "xp": 2399,
+        "itemRewardIds": [45, 7],
+        "reputationGain": 154
+      },
+      "requirements": {
+        "minLevel": 1,
+        "prerequisiteQuestId": 86
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_11_start",
+        "completeDialogueId": "dlg_SurvivalQuest_11_end",
+        "failDialogueId": "dlg_SurvivalQuest_11_fail"
+      }
+    }
+    ,
+    {
+      "questId": 88,
+      "questName": "SurvivalQuest_12",
+      "type": "SurvivalQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 242,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_12",
+          "targetCount": 28,
+          "targetType": "Enemy",
+          "requiredLevel": 1
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_12",
+          "targetCount": 45,
+          "targetType": "Enemy",
+          "requiredLevel": 11
+        }
+      ],
+      "rewards": {
+        "gold": 961,
+        "xp": 3456,
+        "itemRewardIds": [34, 9],
+        "reputationGain": 19
+      },
+      "requirements": {
+        "minLevel": 2,
+        "prerequisiteQuestId": 87
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_12_start",
+        "completeDialogueId": "dlg_SurvivalQuest_12_end",
+        "failDialogueId": "dlg_SurvivalQuest_12_fail"
+      }
+    }
+    ,
+    {
+      "questId": 89,
+      "questName": "SurvivalQuest_13",
+      "type": "SurvivalQuest",
+      "difficulty": 4,
+      "repeatable": false,
+      "timeLimit": 211,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_13",
+          "targetCount": 4,
+          "targetType": "Enemy",
+          "requiredLevel": 6
+        }
+      ],
+      "rewards": {
+        "gold": 1330,
+        "xp": 3998,
+        "itemRewardIds": [4, 80],
+        "reputationGain": 199
+      },
+      "requirements": {
+        "minLevel": 11,
+        "prerequisiteQuestId": 88
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_13_start",
+        "completeDialogueId": "dlg_SurvivalQuest_13_end",
+        "failDialogueId": "dlg_SurvivalQuest_13_fail"
+      }
+    }
+    ,
+    {
+      "questId": 90,
+      "questName": "SurvivalQuest_14",
+      "type": "SurvivalQuest",
+      "difficulty": 3,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of SurvivalQuest_14",
+          "targetCount": 18,
+          "targetType": "Enemy",
+          "requiredLevel": 5
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of SurvivalQuest_14",
+          "targetCount": 31,
+          "targetType": "Enemy",
+          "requiredLevel": 15
+        }
+      ],
+      "rewards": {
+        "gold": 360,
+        "xp": 3506,
+        "itemRewardIds": [52, 20],
+        "reputationGain": 86
+      },
+      "requirements": {
+        "minLevel": 9,
+        "prerequisiteQuestId": 89
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_SurvivalQuest_14_start",
+        "completeDialogueId": "dlg_SurvivalQuest_14_end",
+        "failDialogueId": "dlg_SurvivalQuest_14_fail"
+      }
+    }
+    ,
+    {
+      "questId": 91,
+      "questName": "TimedQuest_0",
+      "type": "TimedQuest",
+      "difficulty": 1,
+      "repeatable": false,
+      "timeLimit": 184,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of TimedQuest_0",
+          "targetCount": 18,
+          "targetType": "Enemy",
+          "requiredLevel": 2
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of TimedQuest_0",
+          "targetCount": 21,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        }
+      ],
+      "rewards": {
+        "gold": 933,
+        "xp": 234,
+        "itemRewardIds": [98, 10],
+        "reputationGain": 270
+      },
+      "requirements": {
+        "minLevel": 11,
+        "prerequisiteQuestId": 0
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_TimedQuest_0_start",
+        "completeDialogueId": "dlg_TimedQuest_0_end",
+        "failDialogueId": "dlg_TimedQuest_0_fail"
+      }
+    }
+    ,
+    {
+      "questId": 92,
+      "questName": "TimedQuest_1",
+      "type": "TimedQuest",
+      "difficulty": 1,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 4,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of TimedQuest_1",
+          "targetCount": 23,
+          "targetType": "Enemy",
+          "requiredLevel": 1
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of TimedQuest_1",
+          "targetCount": 49,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of TimedQuest_1",
+          "targetCount": 40,
+          "targetType": "Enemy",
+          "requiredLevel": 18
+        },
+        {
+          "stageIndex": 4,
+          "objective": "Complete stage 4 of TimedQuest_1",
+          "targetCount": 42,
+          "targetType": "Enemy",
+          "requiredLevel": 1
+        }
+      ],
+      "rewards": {
+        "gold": 128,
+        "xp": 213,
+        "itemRewardIds": [66, 4],
+        "reputationGain": 288
+      },
+      "requirements": {
+        "minLevel": 12,
+        "prerequisiteQuestId": 91
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_TimedQuest_1_start",
+        "completeDialogueId": "dlg_TimedQuest_1_end",
+        "failDialogueId": "dlg_TimedQuest_1_fail"
+      }
+    }
+    ,
+    {
+      "questId": 93,
+      "questName": "TimedQuest_2",
+      "type": "TimedQuest",
+      "difficulty": 1,
+      "repeatable": false,
+      "timeLimit": 0,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of TimedQuest_2",
+          "targetCount": 2,
+          "targetType": "Enemy",
+          "requiredLevel": 13
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of TimedQuest_2",
+          "targetCount": 18,
+          "targetType": "Enemy",
+          "requiredLevel": 11
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of TimedQuest_2",
+          "targetCount": 21,
+          "targetType": "Enemy",
+          "requiredLevel": 5
+        }
+      ],
+      "rewards": {
+        "gold": 1899,
+        "xp": 4838,
+        "itemRewardIds": [16, 50],
+        "reputationGain": 495
+      },
+      "requirements": {
+        "minLevel": 3,
+        "prerequisiteQuestId": 92
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_TimedQuest_2_start",
+        "completeDialogueId": "dlg_TimedQuest_2_end",
+        "failDialogueId": "dlg_TimedQuest_2_fail"
+      }
+    }
+    ,
+    {
+      "questId": 94,
+      "questName": "TimedQuest_3",
+      "type": "TimedQuest",
+      "difficulty": 2,
+      "repeatable": true,
+      "timeLimit": 0,
+      "totalStages": 1,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of TimedQuest_3",
+          "targetCount": 34,
+          "targetType": "Enemy",
+          "requiredLevel": 9
+        }
+      ],
+      "rewards": {
+        "gold": 1666,
+        "xp": 4442,
+        "itemRewardIds": [73, 99],
+        "reputationGain": 319
+      },
+      "requirements": {
+        "minLevel": 8,
+        "prerequisiteQuestId": 93
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_TimedQuest_3_start",
+        "completeDialogueId": "dlg_TimedQuest_3_end",
+        "failDialogueId": "dlg_TimedQuest_3_fail"
+      }
+    }
+    ,
+    {
+      "questId": 95,
+      "questName": "TimedQuest_4",
+      "type": "TimedQuest",
+      "difficulty": 4,
+      "repeatable": true,
+      "timeLimit": 269,
+      "totalStages": 2,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of TimedQuest_4",
+          "targetCount": 24,
+          "targetType": "Enemy",
+          "requiredLevel": 8
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of TimedQuest_4",
+          "targetCount": 36,
+          "targetType": "Enemy",
+          "requiredLevel": 19
+        }
+      ],
+      "rewards": {
+        "gold": 699,
+        "xp": 349,
+        "itemRewardIds": [95, 96],
+        "reputationGain": 288
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 94
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_TimedQuest_4_start",
+        "completeDialogueId": "dlg_TimedQuest_4_end",
+        "failDialogueId": "dlg_TimedQuest_4_fail"
+      }
+    }
+    ,
+    {
+      "questId": 96,
+      "questName": "TimedQuest_5",
+      "type": "TimedQuest",
+      "difficulty": 3,
+      "repeatable": false,
+      "timeLimit": 82,
+      "totalStages": 3,
+      "stages": [
+        {
+          "stageIndex": 1,
+          "objective": "Complete stage 1 of TimedQuest_5",
+          "targetCount": 32,
+          "targetType": "Enemy",
+          "requiredLevel": 17
+        },
+        {
+          "stageIndex": 2,
+          "objective": "Complete stage 2 of TimedQuest_5",
+          "targetCount": 23,
+          "targetType": "Enemy",
+          "requiredLevel": 1
+        },
+        {
+          "stageIndex": 3,
+          "objective": "Complete stage 3 of TimedQuest_5",
+          "targetCount": 21,
+          "targetType": "Enemy",
+          "requiredLevel": 5
+        }
+      ],
+      "rewards": {
+        "gold": 1068,
+        "xp": 101,
+        "itemRewardIds": [52, 38],
+        "reputationGain": 265
+      },
+      "requirements": {
+        "minLevel": 5,
+        "prerequisiteQuestId": 95
+      },
+      "dialogue": {
+        "startDialogueId": "dlg_TimedQuest_5_start",
+        "completeDialogueId": "dlg_TimedQuest_5_end",
+        "failDialogueId": "dlg_TimedQuest_5_fail"
+      }
+    }
+    ,
+  ]
+}

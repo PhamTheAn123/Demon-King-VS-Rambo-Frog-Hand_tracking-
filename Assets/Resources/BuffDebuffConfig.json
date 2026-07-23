@@ -1,0 +1,2407 @@
+﻿{
+  "version": "1.0.0",
+  "author": "Unkwonss",
+  "generatedAt": "2026-07-09",
+  "description": "Buff and debuff status effect configuration with stacking rules",
+  "statusEffects": [
+    {
+      "effectId": 1,
+      "name": "Haste_Tier1",
+      "baseEffect": "Haste",
+      "tier": 1,
+      "isBuff": true,
+      "potency": 0.07,
+      "duration": 9,
+      "tickInterval": 2.5,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.29,
+        "damageMod": -0.23,
+        "speedMod": -0.19,
+        "defenseMod": 0.04
+      },
+      "vfxPrefab": "VFX/StatusEffects/Haste_Tier1",
+      "iconPath": "Icons/StatusEffects/Haste_Tier1",
+      "soundOnApply": "sfx_Haste_apply",
+      "soundOnExpire": "sfx_Haste_expire"
+    }
+    ,
+    {
+      "effectId": 2,
+      "name": "Haste_Tier2",
+      "baseEffect": "Haste",
+      "tier": 2,
+      "isBuff": true,
+      "potency": 0.51,
+      "duration": 2.2,
+      "tickInterval": 2.4,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.18,
+        "damageMod": 0.05,
+        "speedMod": 0.14,
+        "defenseMod": 0.1
+      },
+      "vfxPrefab": "VFX/StatusEffects/Haste_Tier2",
+      "iconPath": "Icons/StatusEffects/Haste_Tier2",
+      "soundOnApply": "sfx_Haste_apply",
+      "soundOnExpire": "sfx_Haste_expire"
+    }
+    ,
+    {
+      "effectId": 3,
+      "name": "Haste_Tier3",
+      "baseEffect": "Haste",
+      "tier": 3,
+      "isBuff": true,
+      "potency": 0.62,
+      "duration": 2.4,
+      "tickInterval": 0.8,
+      "maxStacks": 3,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.02,
+        "damageMod": 0.02,
+        "speedMod": 0.14,
+        "defenseMod": -0.16
+      },
+      "vfxPrefab": "VFX/StatusEffects/Haste_Tier3",
+      "iconPath": "Icons/StatusEffects/Haste_Tier3",
+      "soundOnApply": "sfx_Haste_apply",
+      "soundOnExpire": "sfx_Haste_expire"
+    }
+    ,
+    {
+      "effectId": 4,
+      "name": "Haste_Tier4",
+      "baseEffect": "Haste",
+      "tier": 4,
+      "isBuff": true,
+      "potency": 0.43,
+      "duration": 14,
+      "tickInterval": 2.8,
+      "maxStacks": 3,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.1,
+        "damageMod": 0.17,
+        "speedMod": 0.05,
+        "defenseMod": 0.13
+      },
+      "vfxPrefab": "VFX/StatusEffects/Haste_Tier4",
+      "iconPath": "Icons/StatusEffects/Haste_Tier4",
+      "soundOnApply": "sfx_Haste_apply",
+      "soundOnExpire": "sfx_Haste_expire"
+    }
+    ,
+    {
+      "effectId": 5,
+      "name": "Haste_Tier5",
+      "baseEffect": "Haste",
+      "tier": 5,
+      "isBuff": true,
+      "potency": 0.22,
+      "duration": 9.6,
+      "tickInterval": 2.9,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.03,
+        "damageMod": 0.18,
+        "speedMod": 0.19,
+        "defenseMod": 0.19
+      },
+      "vfxPrefab": "VFX/StatusEffects/Haste_Tier5",
+      "iconPath": "Icons/StatusEffects/Haste_Tier5",
+      "soundOnApply": "sfx_Haste_apply",
+      "soundOnExpire": "sfx_Haste_expire"
+    }
+    ,
+    {
+      "effectId": 6,
+      "name": "Regen_Tier1",
+      "baseEffect": "Regen",
+      "tier": 1,
+      "isBuff": true,
+      "potency": 0.32,
+      "duration": 14.2,
+      "tickInterval": 0.5,
+      "maxStacks": 3,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.23,
+        "damageMod": 0.21,
+        "speedMod": 0.11,
+        "defenseMod": -0.29
+      },
+      "vfxPrefab": "VFX/StatusEffects/Regen_Tier1",
+      "iconPath": "Icons/StatusEffects/Regen_Tier1",
+      "soundOnApply": "sfx_Regen_apply",
+      "soundOnExpire": "sfx_Regen_expire"
+    }
+    ,
+    {
+      "effectId": 7,
+      "name": "Regen_Tier2",
+      "baseEffect": "Regen",
+      "tier": 2,
+      "isBuff": true,
+      "potency": 0.52,
+      "duration": 8.4,
+      "tickInterval": 0.9,
+      "maxStacks": 3,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.26,
+        "damageMod": 0.02,
+        "speedMod": -0.15,
+        "defenseMod": 0.14
+      },
+      "vfxPrefab": "VFX/StatusEffects/Regen_Tier2",
+      "iconPath": "Icons/StatusEffects/Regen_Tier2",
+      "soundOnApply": "sfx_Regen_apply",
+      "soundOnExpire": "sfx_Regen_expire"
+    }
+    ,
+    {
+      "effectId": 8,
+      "name": "Regen_Tier3",
+      "baseEffect": "Regen",
+      "tier": 3,
+      "isBuff": true,
+      "potency": 0.69,
+      "duration": 3.9,
+      "tickInterval": 1.9,
+      "maxStacks": 3,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.18,
+        "damageMod": -0.05,
+        "speedMod": 0.04,
+        "defenseMod": 0.25
+      },
+      "vfxPrefab": "VFX/StatusEffects/Regen_Tier3",
+      "iconPath": "Icons/StatusEffects/Regen_Tier3",
+      "soundOnApply": "sfx_Regen_apply",
+      "soundOnExpire": "sfx_Regen_expire"
+    }
+    ,
+    {
+      "effectId": 9,
+      "name": "Regen_Tier4",
+      "baseEffect": "Regen",
+      "tier": 4,
+      "isBuff": true,
+      "potency": 0.4,
+      "duration": 1.1,
+      "tickInterval": 1.2,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.08,
+        "damageMod": 0.17,
+        "speedMod": 0.13,
+        "defenseMod": -0.01
+      },
+      "vfxPrefab": "VFX/StatusEffects/Regen_Tier4",
+      "iconPath": "Icons/StatusEffects/Regen_Tier4",
+      "soundOnApply": "sfx_Regen_apply",
+      "soundOnExpire": "sfx_Regen_expire"
+    }
+    ,
+    {
+      "effectId": 10,
+      "name": "Regen_Tier5",
+      "baseEffect": "Regen",
+      "tier": 5,
+      "isBuff": true,
+      "potency": 0.27,
+      "duration": 8.5,
+      "tickInterval": 1,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.05,
+        "damageMod": 0.29,
+        "speedMod": -0.01,
+        "defenseMod": 0.1
+      },
+      "vfxPrefab": "VFX/StatusEffects/Regen_Tier5",
+      "iconPath": "Icons/StatusEffects/Regen_Tier5",
+      "soundOnApply": "sfx_Regen_apply",
+      "soundOnExpire": "sfx_Regen_expire"
+    }
+    ,
+    {
+      "effectId": 11,
+      "name": "Shield_Tier1",
+      "baseEffect": "Shield",
+      "tier": 1,
+      "isBuff": true,
+      "potency": 0.53,
+      "duration": 2.3,
+      "tickInterval": 2.7,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.21,
+        "damageMod": 0.21,
+        "speedMod": -0.14,
+        "defenseMod": -0.07
+      },
+      "vfxPrefab": "VFX/StatusEffects/Shield_Tier1",
+      "iconPath": "Icons/StatusEffects/Shield_Tier1",
+      "soundOnApply": "sfx_Shield_apply",
+      "soundOnExpire": "sfx_Shield_expire"
+    }
+    ,
+    {
+      "effectId": 12,
+      "name": "Shield_Tier2",
+      "baseEffect": "Shield",
+      "tier": 2,
+      "isBuff": true,
+      "potency": 0.58,
+      "duration": 2.4,
+      "tickInterval": 1.3,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.14,
+        "damageMod": -0.05,
+        "speedMod": 0.15,
+        "defenseMod": -0.07
+      },
+      "vfxPrefab": "VFX/StatusEffects/Shield_Tier2",
+      "iconPath": "Icons/StatusEffects/Shield_Tier2",
+      "soundOnApply": "sfx_Shield_apply",
+      "soundOnExpire": "sfx_Shield_expire"
+    }
+    ,
+    {
+      "effectId": 13,
+      "name": "Shield_Tier3",
+      "baseEffect": "Shield",
+      "tier": 3,
+      "isBuff": true,
+      "potency": 0.06,
+      "duration": 12.4,
+      "tickInterval": 1.8,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.09,
+        "damageMod": 0.05,
+        "speedMod": 0.24,
+        "defenseMod": -0.25
+      },
+      "vfxPrefab": "VFX/StatusEffects/Shield_Tier3",
+      "iconPath": "Icons/StatusEffects/Shield_Tier3",
+      "soundOnApply": "sfx_Shield_apply",
+      "soundOnExpire": "sfx_Shield_expire"
+    }
+    ,
+    {
+      "effectId": 14,
+      "name": "Shield_Tier4",
+      "baseEffect": "Shield",
+      "tier": 4,
+      "isBuff": true,
+      "potency": 0.63,
+      "duration": 1.8,
+      "tickInterval": 1.9,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.24,
+        "damageMod": -0.08,
+        "speedMod": -0.15,
+        "defenseMod": -0.11
+      },
+      "vfxPrefab": "VFX/StatusEffects/Shield_Tier4",
+      "iconPath": "Icons/StatusEffects/Shield_Tier4",
+      "soundOnApply": "sfx_Shield_apply",
+      "soundOnExpire": "sfx_Shield_expire"
+    }
+    ,
+    {
+      "effectId": 15,
+      "name": "Shield_Tier5",
+      "baseEffect": "Shield",
+      "tier": 5,
+      "isBuff": true,
+      "potency": 0.31,
+      "duration": 1.9,
+      "tickInterval": 1.1,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.18,
+        "damageMod": 0.03,
+        "speedMod": 0,
+        "defenseMod": -0.18
+      },
+      "vfxPrefab": "VFX/StatusEffects/Shield_Tier5",
+      "iconPath": "Icons/StatusEffects/Shield_Tier5",
+      "soundOnApply": "sfx_Shield_apply",
+      "soundOnExpire": "sfx_Shield_expire"
+    }
+    ,
+    {
+      "effectId": 16,
+      "name": "Berserk_Tier1",
+      "baseEffect": "Berserk",
+      "tier": 1,
+      "isBuff": true,
+      "potency": 0.43,
+      "duration": 8.2,
+      "tickInterval": 0.7,
+      "maxStacks": 3,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.07,
+        "damageMod": 0.02,
+        "speedMod": 0.15,
+        "defenseMod": -0.03
+      },
+      "vfxPrefab": "VFX/StatusEffects/Berserk_Tier1",
+      "iconPath": "Icons/StatusEffects/Berserk_Tier1",
+      "soundOnApply": "sfx_Berserk_apply",
+      "soundOnExpire": "sfx_Berserk_expire"
+    }
+    ,
+    {
+      "effectId": 17,
+      "name": "Berserk_Tier2",
+      "baseEffect": "Berserk",
+      "tier": 2,
+      "isBuff": true,
+      "potency": 0.72,
+      "duration": 3.9,
+      "tickInterval": 2.4,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0,
+        "damageMod": -0.11,
+        "speedMod": -0.03,
+        "defenseMod": 0.13
+      },
+      "vfxPrefab": "VFX/StatusEffects/Berserk_Tier2",
+      "iconPath": "Icons/StatusEffects/Berserk_Tier2",
+      "soundOnApply": "sfx_Berserk_apply",
+      "soundOnExpire": "sfx_Berserk_expire"
+    }
+    ,
+    {
+      "effectId": 18,
+      "name": "Berserk_Tier3",
+      "baseEffect": "Berserk",
+      "tier": 3,
+      "isBuff": true,
+      "potency": 0.42,
+      "duration": 8.8,
+      "tickInterval": 1.2,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.03,
+        "damageMod": -0.12,
+        "speedMod": 0.11,
+        "defenseMod": 0.21
+      },
+      "vfxPrefab": "VFX/StatusEffects/Berserk_Tier3",
+      "iconPath": "Icons/StatusEffects/Berserk_Tier3",
+      "soundOnApply": "sfx_Berserk_apply",
+      "soundOnExpire": "sfx_Berserk_expire"
+    }
+    ,
+    {
+      "effectId": 19,
+      "name": "Berserk_Tier4",
+      "baseEffect": "Berserk",
+      "tier": 4,
+      "isBuff": true,
+      "potency": 0.21,
+      "duration": 6.9,
+      "tickInterval": 0.7,
+      "maxStacks": 3,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.1,
+        "damageMod": -0.13,
+        "speedMod": 0.05,
+        "defenseMod": 0.1
+      },
+      "vfxPrefab": "VFX/StatusEffects/Berserk_Tier4",
+      "iconPath": "Icons/StatusEffects/Berserk_Tier4",
+      "soundOnApply": "sfx_Berserk_apply",
+      "soundOnExpire": "sfx_Berserk_expire"
+    }
+    ,
+    {
+      "effectId": 20,
+      "name": "Berserk_Tier5",
+      "baseEffect": "Berserk",
+      "tier": 5,
+      "isBuff": true,
+      "potency": 0.54,
+      "duration": 9.8,
+      "tickInterval": 0.9,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.2,
+        "damageMod": -0.11,
+        "speedMod": -0.26,
+        "defenseMod": -0.15
+      },
+      "vfxPrefab": "VFX/StatusEffects/Berserk_Tier5",
+      "iconPath": "Icons/StatusEffects/Berserk_Tier5",
+      "soundOnApply": "sfx_Berserk_apply",
+      "soundOnExpire": "sfx_Berserk_expire"
+    }
+    ,
+    {
+      "effectId": 21,
+      "name": "Invisible_Tier1",
+      "baseEffect": "Invisible",
+      "tier": 1,
+      "isBuff": true,
+      "potency": 0.1,
+      "duration": 11.2,
+      "tickInterval": 0.7,
+      "maxStacks": 4,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.25,
+        "damageMod": -0.26,
+        "speedMod": -0.25,
+        "defenseMod": 0.05
+      },
+      "vfxPrefab": "VFX/StatusEffects/Invisible_Tier1",
+      "iconPath": "Icons/StatusEffects/Invisible_Tier1",
+      "soundOnApply": "sfx_Invisible_apply",
+      "soundOnExpire": "sfx_Invisible_expire"
+    }
+    ,
+    {
+      "effectId": 22,
+      "name": "Invisible_Tier2",
+      "baseEffect": "Invisible",
+      "tier": 2,
+      "isBuff": true,
+      "potency": 0.05,
+      "duration": 3,
+      "tickInterval": 2.4,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.08,
+        "damageMod": 0.28,
+        "speedMod": -0.24,
+        "defenseMod": 0.14
+      },
+      "vfxPrefab": "VFX/StatusEffects/Invisible_Tier2",
+      "iconPath": "Icons/StatusEffects/Invisible_Tier2",
+      "soundOnApply": "sfx_Invisible_apply",
+      "soundOnExpire": "sfx_Invisible_expire"
+    }
+    ,
+    {
+      "effectId": 23,
+      "name": "Invisible_Tier3",
+      "baseEffect": "Invisible",
+      "tier": 3,
+      "isBuff": true,
+      "potency": 0.09,
+      "duration": 4.9,
+      "tickInterval": 2.4,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0,
+        "damageMod": -0.12,
+        "speedMod": 0.17,
+        "defenseMod": -0.29
+      },
+      "vfxPrefab": "VFX/StatusEffects/Invisible_Tier3",
+      "iconPath": "Icons/StatusEffects/Invisible_Tier3",
+      "soundOnApply": "sfx_Invisible_apply",
+      "soundOnExpire": "sfx_Invisible_expire"
+    }
+    ,
+    {
+      "effectId": 24,
+      "name": "Invisible_Tier4",
+      "baseEffect": "Invisible",
+      "tier": 4,
+      "isBuff": true,
+      "potency": 0.73,
+      "duration": 2.1,
+      "tickInterval": 2,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0,
+        "damageMod": -0.11,
+        "speedMod": 0.05,
+        "defenseMod": -0.3
+      },
+      "vfxPrefab": "VFX/StatusEffects/Invisible_Tier4",
+      "iconPath": "Icons/StatusEffects/Invisible_Tier4",
+      "soundOnApply": "sfx_Invisible_apply",
+      "soundOnExpire": "sfx_Invisible_expire"
+    }
+    ,
+    {
+      "effectId": 25,
+      "name": "Invisible_Tier5",
+      "baseEffect": "Invisible",
+      "tier": 5,
+      "isBuff": true,
+      "potency": 0.68,
+      "duration": 11.2,
+      "tickInterval": 1.6,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.08,
+        "damageMod": -0.12,
+        "speedMod": -0.2,
+        "defenseMod": 0.13
+      },
+      "vfxPrefab": "VFX/StatusEffects/Invisible_Tier5",
+      "iconPath": "Icons/StatusEffects/Invisible_Tier5",
+      "soundOnApply": "sfx_Invisible_apply",
+      "soundOnExpire": "sfx_Invisible_expire"
+    }
+    ,
+    {
+      "effectId": 26,
+      "name": "Fortify_Tier1",
+      "baseEffect": "Fortify",
+      "tier": 1,
+      "isBuff": true,
+      "potency": 0.7,
+      "duration": 1.4,
+      "tickInterval": 2.1,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.28,
+        "damageMod": -0.01,
+        "speedMod": -0.27,
+        "defenseMod": 0.09
+      },
+      "vfxPrefab": "VFX/StatusEffects/Fortify_Tier1",
+      "iconPath": "Icons/StatusEffects/Fortify_Tier1",
+      "soundOnApply": "sfx_Fortify_apply",
+      "soundOnExpire": "sfx_Fortify_expire"
+    }
+    ,
+    {
+      "effectId": 27,
+      "name": "Fortify_Tier2",
+      "baseEffect": "Fortify",
+      "tier": 2,
+      "isBuff": true,
+      "potency": 0.79,
+      "duration": 7.3,
+      "tickInterval": 2.6,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.28,
+        "damageMod": -0.17,
+        "speedMod": -0.22,
+        "defenseMod": 0.04
+      },
+      "vfxPrefab": "VFX/StatusEffects/Fortify_Tier2",
+      "iconPath": "Icons/StatusEffects/Fortify_Tier2",
+      "soundOnApply": "sfx_Fortify_apply",
+      "soundOnExpire": "sfx_Fortify_expire"
+    }
+    ,
+    {
+      "effectId": 28,
+      "name": "Fortify_Tier3",
+      "baseEffect": "Fortify",
+      "tier": 3,
+      "isBuff": true,
+      "potency": 0.37,
+      "duration": 7.3,
+      "tickInterval": 1.6,
+      "maxStacks": 2,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.2,
+        "damageMod": -0.21,
+        "speedMod": 0.03,
+        "defenseMod": 0.2
+      },
+      "vfxPrefab": "VFX/StatusEffects/Fortify_Tier3",
+      "iconPath": "Icons/StatusEffects/Fortify_Tier3",
+      "soundOnApply": "sfx_Fortify_apply",
+      "soundOnExpire": "sfx_Fortify_expire"
+    }
+    ,
+    {
+      "effectId": 29,
+      "name": "Fortify_Tier4",
+      "baseEffect": "Fortify",
+      "tier": 4,
+      "isBuff": true,
+      "potency": 0.54,
+      "duration": 3.1,
+      "tickInterval": 2.6,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0,
+        "damageMod": 0.15,
+        "speedMod": -0.1,
+        "defenseMod": -0.1
+      },
+      "vfxPrefab": "VFX/StatusEffects/Fortify_Tier4",
+      "iconPath": "Icons/StatusEffects/Fortify_Tier4",
+      "soundOnApply": "sfx_Fortify_apply",
+      "soundOnExpire": "sfx_Fortify_expire"
+    }
+    ,
+    {
+      "effectId": 30,
+      "name": "Fortify_Tier5",
+      "baseEffect": "Fortify",
+      "tier": 5,
+      "isBuff": true,
+      "potency": 0.58,
+      "duration": 12.7,
+      "tickInterval": 2.6,
+      "maxStacks": 2,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.29,
+        "damageMod": 0.08,
+        "speedMod": -0.07,
+        "defenseMod": 0.19
+      },
+      "vfxPrefab": "VFX/StatusEffects/Fortify_Tier5",
+      "iconPath": "Icons/StatusEffects/Fortify_Tier5",
+      "soundOnApply": "sfx_Fortify_apply",
+      "soundOnExpire": "sfx_Fortify_expire"
+    }
+    ,
+    {
+      "effectId": 31,
+      "name": "Empower_Tier1",
+      "baseEffect": "Empower",
+      "tier": 1,
+      "isBuff": true,
+      "potency": 0.16,
+      "duration": 12.7,
+      "tickInterval": 0.7,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.18,
+        "damageMod": -0.07,
+        "speedMod": -0.16,
+        "defenseMod": -0.15
+      },
+      "vfxPrefab": "VFX/StatusEffects/Empower_Tier1",
+      "iconPath": "Icons/StatusEffects/Empower_Tier1",
+      "soundOnApply": "sfx_Empower_apply",
+      "soundOnExpire": "sfx_Empower_expire"
+    }
+    ,
+    {
+      "effectId": 32,
+      "name": "Empower_Tier2",
+      "baseEffect": "Empower",
+      "tier": 2,
+      "isBuff": true,
+      "potency": 0.47,
+      "duration": 6,
+      "tickInterval": 2.7,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.03,
+        "damageMod": -0.29,
+        "speedMod": 0.1,
+        "defenseMod": 0.13
+      },
+      "vfxPrefab": "VFX/StatusEffects/Empower_Tier2",
+      "iconPath": "Icons/StatusEffects/Empower_Tier2",
+      "soundOnApply": "sfx_Empower_apply",
+      "soundOnExpire": "sfx_Empower_expire"
+    }
+    ,
+    {
+      "effectId": 33,
+      "name": "Empower_Tier3",
+      "baseEffect": "Empower",
+      "tier": 3,
+      "isBuff": true,
+      "potency": 0.68,
+      "duration": 2.8,
+      "tickInterval": 1.6,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.04,
+        "damageMod": 0.05,
+        "speedMod": 0.05,
+        "defenseMod": 0
+      },
+      "vfxPrefab": "VFX/StatusEffects/Empower_Tier3",
+      "iconPath": "Icons/StatusEffects/Empower_Tier3",
+      "soundOnApply": "sfx_Empower_apply",
+      "soundOnExpire": "sfx_Empower_expire"
+    }
+    ,
+    {
+      "effectId": 34,
+      "name": "Empower_Tier4",
+      "baseEffect": "Empower",
+      "tier": 4,
+      "isBuff": true,
+      "potency": 0.75,
+      "duration": 7,
+      "tickInterval": 0.7,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.29,
+        "damageMod": 0.27,
+        "speedMod": -0.14,
+        "defenseMod": -0.28
+      },
+      "vfxPrefab": "VFX/StatusEffects/Empower_Tier4",
+      "iconPath": "Icons/StatusEffects/Empower_Tier4",
+      "soundOnApply": "sfx_Empower_apply",
+      "soundOnExpire": "sfx_Empower_expire"
+    }
+    ,
+    {
+      "effectId": 35,
+      "name": "Empower_Tier5",
+      "baseEffect": "Empower",
+      "tier": 5,
+      "isBuff": true,
+      "potency": 0.62,
+      "duration": 11,
+      "tickInterval": 1.9,
+      "maxStacks": 2,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.18,
+        "damageMod": -0.2,
+        "speedMod": 0.26,
+        "defenseMod": 0.07
+      },
+      "vfxPrefab": "VFX/StatusEffects/Empower_Tier5",
+      "iconPath": "Icons/StatusEffects/Empower_Tier5",
+      "soundOnApply": "sfx_Empower_apply",
+      "soundOnExpire": "sfx_Empower_expire"
+    }
+    ,
+    {
+      "effectId": 36,
+      "name": "Reflect_Tier1",
+      "baseEffect": "Reflect",
+      "tier": 1,
+      "isBuff": true,
+      "potency": 0.29,
+      "duration": 4,
+      "tickInterval": 1.2,
+      "maxStacks": 3,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.23,
+        "damageMod": 0.01,
+        "speedMod": 0.17,
+        "defenseMod": -0.25
+      },
+      "vfxPrefab": "VFX/StatusEffects/Reflect_Tier1",
+      "iconPath": "Icons/StatusEffects/Reflect_Tier1",
+      "soundOnApply": "sfx_Reflect_apply",
+      "soundOnExpire": "sfx_Reflect_expire"
+    }
+    ,
+    {
+      "effectId": 37,
+      "name": "Reflect_Tier2",
+      "baseEffect": "Reflect",
+      "tier": 2,
+      "isBuff": true,
+      "potency": 0.1,
+      "duration": 14.6,
+      "tickInterval": 2.8,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.17,
+        "damageMod": 0.15,
+        "speedMod": -0.26,
+        "defenseMod": -0.05
+      },
+      "vfxPrefab": "VFX/StatusEffects/Reflect_Tier2",
+      "iconPath": "Icons/StatusEffects/Reflect_Tier2",
+      "soundOnApply": "sfx_Reflect_apply",
+      "soundOnExpire": "sfx_Reflect_expire"
+    }
+    ,
+    {
+      "effectId": 38,
+      "name": "Reflect_Tier3",
+      "baseEffect": "Reflect",
+      "tier": 3,
+      "isBuff": true,
+      "potency": 0.61,
+      "duration": 12.6,
+      "tickInterval": 1.5,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.24,
+        "damageMod": -0.08,
+        "speedMod": 0.1,
+        "defenseMod": -0.05
+      },
+      "vfxPrefab": "VFX/StatusEffects/Reflect_Tier3",
+      "iconPath": "Icons/StatusEffects/Reflect_Tier3",
+      "soundOnApply": "sfx_Reflect_apply",
+      "soundOnExpire": "sfx_Reflect_expire"
+    }
+    ,
+    {
+      "effectId": 39,
+      "name": "Reflect_Tier4",
+      "baseEffect": "Reflect",
+      "tier": 4,
+      "isBuff": true,
+      "potency": 0.2,
+      "duration": 6.5,
+      "tickInterval": 2.7,
+      "maxStacks": 4,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.22,
+        "damageMod": 0.24,
+        "speedMod": -0.24,
+        "defenseMod": 0.06
+      },
+      "vfxPrefab": "VFX/StatusEffects/Reflect_Tier4",
+      "iconPath": "Icons/StatusEffects/Reflect_Tier4",
+      "soundOnApply": "sfx_Reflect_apply",
+      "soundOnExpire": "sfx_Reflect_expire"
+    }
+    ,
+    {
+      "effectId": 40,
+      "name": "Reflect_Tier5",
+      "baseEffect": "Reflect",
+      "tier": 5,
+      "isBuff": true,
+      "potency": 0.42,
+      "duration": 7,
+      "tickInterval": 2.7,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.02,
+        "damageMod": 0.05,
+        "speedMod": 0.25,
+        "defenseMod": -0.28
+      },
+      "vfxPrefab": "VFX/StatusEffects/Reflect_Tier5",
+      "iconPath": "Icons/StatusEffects/Reflect_Tier5",
+      "soundOnApply": "sfx_Reflect_apply",
+      "soundOnExpire": "sfx_Reflect_expire"
+    }
+    ,
+    {
+      "effectId": 41,
+      "name": "Thorns_Tier1",
+      "baseEffect": "Thorns",
+      "tier": 1,
+      "isBuff": true,
+      "potency": 0.7,
+      "duration": 12.9,
+      "tickInterval": 0.7,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.17,
+        "damageMod": -0.04,
+        "speedMod": 0.04,
+        "defenseMod": 0.2
+      },
+      "vfxPrefab": "VFX/StatusEffects/Thorns_Tier1",
+      "iconPath": "Icons/StatusEffects/Thorns_Tier1",
+      "soundOnApply": "sfx_Thorns_apply",
+      "soundOnExpire": "sfx_Thorns_expire"
+    }
+    ,
+    {
+      "effectId": 42,
+      "name": "Thorns_Tier2",
+      "baseEffect": "Thorns",
+      "tier": 2,
+      "isBuff": true,
+      "potency": 0.5,
+      "duration": 5,
+      "tickInterval": 0.9,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.22,
+        "damageMod": -0.28,
+        "speedMod": 0.2,
+        "defenseMod": 0.24
+      },
+      "vfxPrefab": "VFX/StatusEffects/Thorns_Tier2",
+      "iconPath": "Icons/StatusEffects/Thorns_Tier2",
+      "soundOnApply": "sfx_Thorns_apply",
+      "soundOnExpire": "sfx_Thorns_expire"
+    }
+    ,
+    {
+      "effectId": 43,
+      "name": "Thorns_Tier3",
+      "baseEffect": "Thorns",
+      "tier": 3,
+      "isBuff": true,
+      "potency": 0.31,
+      "duration": 6.3,
+      "tickInterval": 2.3,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.2,
+        "damageMod": 0.25,
+        "speedMod": 0.09,
+        "defenseMod": 0.15
+      },
+      "vfxPrefab": "VFX/StatusEffects/Thorns_Tier3",
+      "iconPath": "Icons/StatusEffects/Thorns_Tier3",
+      "soundOnApply": "sfx_Thorns_apply",
+      "soundOnExpire": "sfx_Thorns_expire"
+    }
+    ,
+    {
+      "effectId": 44,
+      "name": "Thorns_Tier4",
+      "baseEffect": "Thorns",
+      "tier": 4,
+      "isBuff": true,
+      "potency": 0.26,
+      "duration": 14.7,
+      "tickInterval": 2.9,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.16,
+        "damageMod": -0.18,
+        "speedMod": 0.21,
+        "defenseMod": -0.16
+      },
+      "vfxPrefab": "VFX/StatusEffects/Thorns_Tier4",
+      "iconPath": "Icons/StatusEffects/Thorns_Tier4",
+      "soundOnApply": "sfx_Thorns_apply",
+      "soundOnExpire": "sfx_Thorns_expire"
+    }
+    ,
+    {
+      "effectId": 45,
+      "name": "Thorns_Tier5",
+      "baseEffect": "Thorns",
+      "tier": 5,
+      "isBuff": true,
+      "potency": 0.22,
+      "duration": 14.9,
+      "tickInterval": 1.3,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.02,
+        "damageMod": 0.11,
+        "speedMod": -0.27,
+        "defenseMod": -0.29
+      },
+      "vfxPrefab": "VFX/StatusEffects/Thorns_Tier5",
+      "iconPath": "Icons/StatusEffects/Thorns_Tier5",
+      "soundOnApply": "sfx_Thorns_apply",
+      "soundOnExpire": "sfx_Thorns_expire"
+    }
+    ,
+    {
+      "effectId": 46,
+      "name": "Lifesteal_Tier1",
+      "baseEffect": "Lifesteal",
+      "tier": 1,
+      "isBuff": true,
+      "potency": 0.32,
+      "duration": 10.1,
+      "tickInterval": 0.7,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.3,
+        "damageMod": 0.26,
+        "speedMod": 0.16,
+        "defenseMod": -0.1
+      },
+      "vfxPrefab": "VFX/StatusEffects/Lifesteal_Tier1",
+      "iconPath": "Icons/StatusEffects/Lifesteal_Tier1",
+      "soundOnApply": "sfx_Lifesteal_apply",
+      "soundOnExpire": "sfx_Lifesteal_expire"
+    }
+    ,
+    {
+      "effectId": 47,
+      "name": "Lifesteal_Tier2",
+      "baseEffect": "Lifesteal",
+      "tier": 2,
+      "isBuff": true,
+      "potency": 0.59,
+      "duration": 2.5,
+      "tickInterval": 2.6,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.01,
+        "damageMod": 0.17,
+        "speedMod": 0.18,
+        "defenseMod": 0.1
+      },
+      "vfxPrefab": "VFX/StatusEffects/Lifesteal_Tier2",
+      "iconPath": "Icons/StatusEffects/Lifesteal_Tier2",
+      "soundOnApply": "sfx_Lifesteal_apply",
+      "soundOnExpire": "sfx_Lifesteal_expire"
+    }
+    ,
+    {
+      "effectId": 48,
+      "name": "Lifesteal_Tier3",
+      "baseEffect": "Lifesteal",
+      "tier": 3,
+      "isBuff": true,
+      "potency": 0.4,
+      "duration": 8.8,
+      "tickInterval": 2,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.09,
+        "damageMod": -0.14,
+        "speedMod": 0.2,
+        "defenseMod": 0.17
+      },
+      "vfxPrefab": "VFX/StatusEffects/Lifesteal_Tier3",
+      "iconPath": "Icons/StatusEffects/Lifesteal_Tier3",
+      "soundOnApply": "sfx_Lifesteal_apply",
+      "soundOnExpire": "sfx_Lifesteal_expire"
+    }
+    ,
+    {
+      "effectId": 49,
+      "name": "Lifesteal_Tier4",
+      "baseEffect": "Lifesteal",
+      "tier": 4,
+      "isBuff": true,
+      "potency": 0.49,
+      "duration": 14.9,
+      "tickInterval": 2.6,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.05,
+        "damageMod": 0.19,
+        "speedMod": 0.29,
+        "defenseMod": 0.11
+      },
+      "vfxPrefab": "VFX/StatusEffects/Lifesteal_Tier4",
+      "iconPath": "Icons/StatusEffects/Lifesteal_Tier4",
+      "soundOnApply": "sfx_Lifesteal_apply",
+      "soundOnExpire": "sfx_Lifesteal_expire"
+    }
+    ,
+    {
+      "effectId": 50,
+      "name": "Lifesteal_Tier5",
+      "baseEffect": "Lifesteal",
+      "tier": 5,
+      "isBuff": true,
+      "potency": 0.53,
+      "duration": 14.1,
+      "tickInterval": 1.2,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.18,
+        "damageMod": 0.1,
+        "speedMod": 0.1,
+        "defenseMod": -0.02
+      },
+      "vfxPrefab": "VFX/StatusEffects/Lifesteal_Tier5",
+      "iconPath": "Icons/StatusEffects/Lifesteal_Tier5",
+      "soundOnApply": "sfx_Lifesteal_apply",
+      "soundOnExpire": "sfx_Lifesteal_expire"
+    }
+    ,
+    {
+      "effectId": 51,
+      "name": "Slow_Tier1",
+      "baseEffect": "Slow",
+      "tier": 1,
+      "isBuff": false,
+      "potency": 0.3,
+      "duration": 12.6,
+      "tickInterval": 0.9,
+      "maxStacks": 3,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.3,
+        "damageMod": -0.11,
+        "speedMod": -0.06,
+        "defenseMod": 0.09
+      },
+      "vfxPrefab": "VFX/StatusEffects/Slow_Tier1",
+      "iconPath": "Icons/StatusEffects/Slow_Tier1",
+      "soundOnApply": "sfx_Slow_apply",
+      "soundOnExpire": "sfx_Slow_expire"
+    }
+    ,
+    {
+      "effectId": 52,
+      "name": "Slow_Tier2",
+      "baseEffect": "Slow",
+      "tier": 2,
+      "isBuff": false,
+      "potency": 0.08,
+      "duration": 3.1,
+      "tickInterval": 2.9,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.2,
+        "damageMod": 0.01,
+        "speedMod": 0.24,
+        "defenseMod": -0.11
+      },
+      "vfxPrefab": "VFX/StatusEffects/Slow_Tier2",
+      "iconPath": "Icons/StatusEffects/Slow_Tier2",
+      "soundOnApply": "sfx_Slow_apply",
+      "soundOnExpire": "sfx_Slow_expire"
+    }
+    ,
+    {
+      "effectId": 53,
+      "name": "Slow_Tier3",
+      "baseEffect": "Slow",
+      "tier": 3,
+      "isBuff": false,
+      "potency": 0.29,
+      "duration": 14.8,
+      "tickInterval": 2.1,
+      "maxStacks": 3,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.28,
+        "damageMod": 0.17,
+        "speedMod": -0.11,
+        "defenseMod": -0.09
+      },
+      "vfxPrefab": "VFX/StatusEffects/Slow_Tier3",
+      "iconPath": "Icons/StatusEffects/Slow_Tier3",
+      "soundOnApply": "sfx_Slow_apply",
+      "soundOnExpire": "sfx_Slow_expire"
+    }
+    ,
+    {
+      "effectId": 54,
+      "name": "Slow_Tier4",
+      "baseEffect": "Slow",
+      "tier": 4,
+      "isBuff": false,
+      "potency": 0.62,
+      "duration": 11.7,
+      "tickInterval": 1.3,
+      "maxStacks": 2,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.17,
+        "damageMod": 0.06,
+        "speedMod": 0.19,
+        "defenseMod": 0.21
+      },
+      "vfxPrefab": "VFX/StatusEffects/Slow_Tier4",
+      "iconPath": "Icons/StatusEffects/Slow_Tier4",
+      "soundOnApply": "sfx_Slow_apply",
+      "soundOnExpire": "sfx_Slow_expire"
+    }
+    ,
+    {
+      "effectId": 55,
+      "name": "Slow_Tier5",
+      "baseEffect": "Slow",
+      "tier": 5,
+      "isBuff": false,
+      "potency": 0.23,
+      "duration": 5.3,
+      "tickInterval": 2.2,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.02,
+        "damageMod": -0.11,
+        "speedMod": -0.08,
+        "defenseMod": 0.1
+      },
+      "vfxPrefab": "VFX/StatusEffects/Slow_Tier5",
+      "iconPath": "Icons/StatusEffects/Slow_Tier5",
+      "soundOnApply": "sfx_Slow_apply",
+      "soundOnExpire": "sfx_Slow_expire"
+    }
+    ,
+    {
+      "effectId": 56,
+      "name": "Poison_Tier1",
+      "baseEffect": "Poison",
+      "tier": 1,
+      "isBuff": false,
+      "potency": 0.44,
+      "duration": 10.5,
+      "tickInterval": 2.7,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.19,
+        "damageMod": -0.11,
+        "speedMod": -0.21,
+        "defenseMod": -0.09
+      },
+      "vfxPrefab": "VFX/StatusEffects/Poison_Tier1",
+      "iconPath": "Icons/StatusEffects/Poison_Tier1",
+      "soundOnApply": "sfx_Poison_apply",
+      "soundOnExpire": "sfx_Poison_expire"
+    }
+    ,
+    {
+      "effectId": 57,
+      "name": "Poison_Tier2",
+      "baseEffect": "Poison",
+      "tier": 2,
+      "isBuff": false,
+      "potency": 0.05,
+      "duration": 10.9,
+      "tickInterval": 1,
+      "maxStacks": 4,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.01,
+        "damageMod": 0.2,
+        "speedMod": 0.17,
+        "defenseMod": 0.14
+      },
+      "vfxPrefab": "VFX/StatusEffects/Poison_Tier2",
+      "iconPath": "Icons/StatusEffects/Poison_Tier2",
+      "soundOnApply": "sfx_Poison_apply",
+      "soundOnExpire": "sfx_Poison_expire"
+    }
+    ,
+    {
+      "effectId": 58,
+      "name": "Poison_Tier3",
+      "baseEffect": "Poison",
+      "tier": 3,
+      "isBuff": false,
+      "potency": 0.08,
+      "duration": 14.1,
+      "tickInterval": 2.9,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.1,
+        "damageMod": -0.2,
+        "speedMod": 0.22,
+        "defenseMod": 0.01
+      },
+      "vfxPrefab": "VFX/StatusEffects/Poison_Tier3",
+      "iconPath": "Icons/StatusEffects/Poison_Tier3",
+      "soundOnApply": "sfx_Poison_apply",
+      "soundOnExpire": "sfx_Poison_expire"
+    }
+    ,
+    {
+      "effectId": 59,
+      "name": "Poison_Tier4",
+      "baseEffect": "Poison",
+      "tier": 4,
+      "isBuff": false,
+      "potency": 0.7,
+      "duration": 1.9,
+      "tickInterval": 0.8,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.29,
+        "damageMod": -0.21,
+        "speedMod": 0.2,
+        "defenseMod": 0.29
+      },
+      "vfxPrefab": "VFX/StatusEffects/Poison_Tier4",
+      "iconPath": "Icons/StatusEffects/Poison_Tier4",
+      "soundOnApply": "sfx_Poison_apply",
+      "soundOnExpire": "sfx_Poison_expire"
+    }
+    ,
+    {
+      "effectId": 60,
+      "name": "Poison_Tier5",
+      "baseEffect": "Poison",
+      "tier": 5,
+      "isBuff": false,
+      "potency": 0.72,
+      "duration": 9.8,
+      "tickInterval": 1.9,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.08,
+        "damageMod": 0.18,
+        "speedMod": -0.28,
+        "defenseMod": 0.15
+      },
+      "vfxPrefab": "VFX/StatusEffects/Poison_Tier5",
+      "iconPath": "Icons/StatusEffects/Poison_Tier5",
+      "soundOnApply": "sfx_Poison_apply",
+      "soundOnExpire": "sfx_Poison_expire"
+    }
+    ,
+    {
+      "effectId": 61,
+      "name": "Burn_Tier1",
+      "baseEffect": "Burn",
+      "tier": 1,
+      "isBuff": false,
+      "potency": 0.78,
+      "duration": 7.1,
+      "tickInterval": 2.3,
+      "maxStacks": 3,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.05,
+        "damageMod": 0.2,
+        "speedMod": -0.17,
+        "defenseMod": 0.23
+      },
+      "vfxPrefab": "VFX/StatusEffects/Burn_Tier1",
+      "iconPath": "Icons/StatusEffects/Burn_Tier1",
+      "soundOnApply": "sfx_Burn_apply",
+      "soundOnExpire": "sfx_Burn_expire"
+    }
+    ,
+    {
+      "effectId": 62,
+      "name": "Burn_Tier2",
+      "baseEffect": "Burn",
+      "tier": 2,
+      "isBuff": false,
+      "potency": 0.31,
+      "duration": 1.5,
+      "tickInterval": 2.6,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.01,
+        "damageMod": 0.19,
+        "speedMod": -0.06,
+        "defenseMod": 0.29
+      },
+      "vfxPrefab": "VFX/StatusEffects/Burn_Tier2",
+      "iconPath": "Icons/StatusEffects/Burn_Tier2",
+      "soundOnApply": "sfx_Burn_apply",
+      "soundOnExpire": "sfx_Burn_expire"
+    }
+    ,
+    {
+      "effectId": 63,
+      "name": "Burn_Tier3",
+      "baseEffect": "Burn",
+      "tier": 3,
+      "isBuff": false,
+      "potency": 0.51,
+      "duration": 8.9,
+      "tickInterval": 1.4,
+      "maxStacks": 3,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.11,
+        "damageMod": 0.01,
+        "speedMod": -0.05,
+        "defenseMod": -0.25
+      },
+      "vfxPrefab": "VFX/StatusEffects/Burn_Tier3",
+      "iconPath": "Icons/StatusEffects/Burn_Tier3",
+      "soundOnApply": "sfx_Burn_apply",
+      "soundOnExpire": "sfx_Burn_expire"
+    }
+    ,
+    {
+      "effectId": 64,
+      "name": "Burn_Tier4",
+      "baseEffect": "Burn",
+      "tier": 4,
+      "isBuff": false,
+      "potency": 0.77,
+      "duration": 9,
+      "tickInterval": 0.7,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.17,
+        "damageMod": -0.23,
+        "speedMod": 0.01,
+        "defenseMod": 0.11
+      },
+      "vfxPrefab": "VFX/StatusEffects/Burn_Tier4",
+      "iconPath": "Icons/StatusEffects/Burn_Tier4",
+      "soundOnApply": "sfx_Burn_apply",
+      "soundOnExpire": "sfx_Burn_expire"
+    }
+    ,
+    {
+      "effectId": 65,
+      "name": "Burn_Tier5",
+      "baseEffect": "Burn",
+      "tier": 5,
+      "isBuff": false,
+      "potency": 0.75,
+      "duration": 2.2,
+      "tickInterval": 1.9,
+      "maxStacks": 2,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.28,
+        "damageMod": -0.22,
+        "speedMod": -0.09,
+        "defenseMod": 0.09
+      },
+      "vfxPrefab": "VFX/StatusEffects/Burn_Tier5",
+      "iconPath": "Icons/StatusEffects/Burn_Tier5",
+      "soundOnApply": "sfx_Burn_apply",
+      "soundOnExpire": "sfx_Burn_expire"
+    }
+    ,
+    {
+      "effectId": 66,
+      "name": "Freeze_Tier1",
+      "baseEffect": "Freeze",
+      "tier": 1,
+      "isBuff": false,
+      "potency": 0.11,
+      "duration": 6.9,
+      "tickInterval": 1.7,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.28,
+        "damageMod": 0.01,
+        "speedMod": -0.17,
+        "defenseMod": -0.19
+      },
+      "vfxPrefab": "VFX/StatusEffects/Freeze_Tier1",
+      "iconPath": "Icons/StatusEffects/Freeze_Tier1",
+      "soundOnApply": "sfx_Freeze_apply",
+      "soundOnExpire": "sfx_Freeze_expire"
+    }
+    ,
+    {
+      "effectId": 67,
+      "name": "Freeze_Tier2",
+      "baseEffect": "Freeze",
+      "tier": 2,
+      "isBuff": false,
+      "potency": 0.62,
+      "duration": 7.9,
+      "tickInterval": 1,
+      "maxStacks": 2,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.21,
+        "damageMod": 0.16,
+        "speedMod": 0.04,
+        "defenseMod": 0.11
+      },
+      "vfxPrefab": "VFX/StatusEffects/Freeze_Tier2",
+      "iconPath": "Icons/StatusEffects/Freeze_Tier2",
+      "soundOnApply": "sfx_Freeze_apply",
+      "soundOnExpire": "sfx_Freeze_expire"
+    }
+    ,
+    {
+      "effectId": 68,
+      "name": "Freeze_Tier3",
+      "baseEffect": "Freeze",
+      "tier": 3,
+      "isBuff": false,
+      "potency": 0.05,
+      "duration": 14.2,
+      "tickInterval": 2.9,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.02,
+        "damageMod": -0.22,
+        "speedMod": 0.16,
+        "defenseMod": 0.08
+      },
+      "vfxPrefab": "VFX/StatusEffects/Freeze_Tier3",
+      "iconPath": "Icons/StatusEffects/Freeze_Tier3",
+      "soundOnApply": "sfx_Freeze_apply",
+      "soundOnExpire": "sfx_Freeze_expire"
+    }
+    ,
+    {
+      "effectId": 69,
+      "name": "Freeze_Tier4",
+      "baseEffect": "Freeze",
+      "tier": 4,
+      "isBuff": false,
+      "potency": 0.74,
+      "duration": 3.3,
+      "tickInterval": 1.2,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.1,
+        "damageMod": -0.24,
+        "speedMod": -0.11,
+        "defenseMod": -0.04
+      },
+      "vfxPrefab": "VFX/StatusEffects/Freeze_Tier4",
+      "iconPath": "Icons/StatusEffects/Freeze_Tier4",
+      "soundOnApply": "sfx_Freeze_apply",
+      "soundOnExpire": "sfx_Freeze_expire"
+    }
+    ,
+    {
+      "effectId": 70,
+      "name": "Freeze_Tier5",
+      "baseEffect": "Freeze",
+      "tier": 5,
+      "isBuff": false,
+      "potency": 0.73,
+      "duration": 5.2,
+      "tickInterval": 1.3,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.17,
+        "damageMod": -0.24,
+        "speedMod": 0.05,
+        "defenseMod": 0.2
+      },
+      "vfxPrefab": "VFX/StatusEffects/Freeze_Tier5",
+      "iconPath": "Icons/StatusEffects/Freeze_Tier5",
+      "soundOnApply": "sfx_Freeze_apply",
+      "soundOnExpire": "sfx_Freeze_expire"
+    }
+    ,
+    {
+      "effectId": 71,
+      "name": "Stun_Tier1",
+      "baseEffect": "Stun",
+      "tier": 1,
+      "isBuff": false,
+      "potency": 0.16,
+      "duration": 3.2,
+      "tickInterval": 2.2,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.2,
+        "damageMod": -0.11,
+        "speedMod": 0.18,
+        "defenseMod": -0.03
+      },
+      "vfxPrefab": "VFX/StatusEffects/Stun_Tier1",
+      "iconPath": "Icons/StatusEffects/Stun_Tier1",
+      "soundOnApply": "sfx_Stun_apply",
+      "soundOnExpire": "sfx_Stun_expire"
+    }
+    ,
+    {
+      "effectId": 72,
+      "name": "Stun_Tier2",
+      "baseEffect": "Stun",
+      "tier": 2,
+      "isBuff": false,
+      "potency": 0.5,
+      "duration": 5.1,
+      "tickInterval": 2.7,
+      "maxStacks": 3,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.01,
+        "damageMod": -0.01,
+        "speedMod": 0.21,
+        "defenseMod": -0.15
+      },
+      "vfxPrefab": "VFX/StatusEffects/Stun_Tier2",
+      "iconPath": "Icons/StatusEffects/Stun_Tier2",
+      "soundOnApply": "sfx_Stun_apply",
+      "soundOnExpire": "sfx_Stun_expire"
+    }
+    ,
+    {
+      "effectId": 73,
+      "name": "Stun_Tier3",
+      "baseEffect": "Stun",
+      "tier": 3,
+      "isBuff": false,
+      "potency": 0.1,
+      "duration": 9.4,
+      "tickInterval": 1.3,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.07,
+        "damageMod": -0.17,
+        "speedMod": -0.19,
+        "defenseMod": 0.12
+      },
+      "vfxPrefab": "VFX/StatusEffects/Stun_Tier3",
+      "iconPath": "Icons/StatusEffects/Stun_Tier3",
+      "soundOnApply": "sfx_Stun_apply",
+      "soundOnExpire": "sfx_Stun_expire"
+    }
+    ,
+    {
+      "effectId": 74,
+      "name": "Stun_Tier4",
+      "baseEffect": "Stun",
+      "tier": 4,
+      "isBuff": false,
+      "potency": 0.75,
+      "duration": 12.7,
+      "tickInterval": 1.2,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.13,
+        "damageMod": -0.14,
+        "speedMod": -0.08,
+        "defenseMod": -0.06
+      },
+      "vfxPrefab": "VFX/StatusEffects/Stun_Tier4",
+      "iconPath": "Icons/StatusEffects/Stun_Tier4",
+      "soundOnApply": "sfx_Stun_apply",
+      "soundOnExpire": "sfx_Stun_expire"
+    }
+    ,
+    {
+      "effectId": 75,
+      "name": "Stun_Tier5",
+      "baseEffect": "Stun",
+      "tier": 5,
+      "isBuff": false,
+      "potency": 0.1,
+      "duration": 7.9,
+      "tickInterval": 2.3,
+      "maxStacks": 4,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.01,
+        "damageMod": 0.25,
+        "speedMod": -0.21,
+        "defenseMod": -0.12
+      },
+      "vfxPrefab": "VFX/StatusEffects/Stun_Tier5",
+      "iconPath": "Icons/StatusEffects/Stun_Tier5",
+      "soundOnApply": "sfx_Stun_apply",
+      "soundOnExpire": "sfx_Stun_expire"
+    }
+    ,
+    {
+      "effectId": 76,
+      "name": "Blind_Tier1",
+      "baseEffect": "Blind",
+      "tier": 1,
+      "isBuff": false,
+      "potency": 0.73,
+      "duration": 9.1,
+      "tickInterval": 1.7,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.09,
+        "damageMod": -0.14,
+        "speedMod": -0.17,
+        "defenseMod": 0.19
+      },
+      "vfxPrefab": "VFX/StatusEffects/Blind_Tier1",
+      "iconPath": "Icons/StatusEffects/Blind_Tier1",
+      "soundOnApply": "sfx_Blind_apply",
+      "soundOnExpire": "sfx_Blind_expire"
+    }
+    ,
+    {
+      "effectId": 77,
+      "name": "Blind_Tier2",
+      "baseEffect": "Blind",
+      "tier": 2,
+      "isBuff": false,
+      "potency": 0.2,
+      "duration": 8.3,
+      "tickInterval": 2.7,
+      "maxStacks": 3,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.08,
+        "damageMod": -0.08,
+        "speedMod": 0.07,
+        "defenseMod": -0.2
+      },
+      "vfxPrefab": "VFX/StatusEffects/Blind_Tier2",
+      "iconPath": "Icons/StatusEffects/Blind_Tier2",
+      "soundOnApply": "sfx_Blind_apply",
+      "soundOnExpire": "sfx_Blind_expire"
+    }
+    ,
+    {
+      "effectId": 78,
+      "name": "Blind_Tier3",
+      "baseEffect": "Blind",
+      "tier": 3,
+      "isBuff": false,
+      "potency": 0.53,
+      "duration": 10.1,
+      "tickInterval": 1.7,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.01,
+        "damageMod": 0,
+        "speedMod": -0.22,
+        "defenseMod": -0.16
+      },
+      "vfxPrefab": "VFX/StatusEffects/Blind_Tier3",
+      "iconPath": "Icons/StatusEffects/Blind_Tier3",
+      "soundOnApply": "sfx_Blind_apply",
+      "soundOnExpire": "sfx_Blind_expire"
+    }
+    ,
+    {
+      "effectId": 79,
+      "name": "Blind_Tier4",
+      "baseEffect": "Blind",
+      "tier": 4,
+      "isBuff": false,
+      "potency": 0.54,
+      "duration": 13,
+      "tickInterval": 2.3,
+      "maxStacks": 2,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.2,
+        "damageMod": -0.3,
+        "speedMod": -0.1,
+        "defenseMod": -0.28
+      },
+      "vfxPrefab": "VFX/StatusEffects/Blind_Tier4",
+      "iconPath": "Icons/StatusEffects/Blind_Tier4",
+      "soundOnApply": "sfx_Blind_apply",
+      "soundOnExpire": "sfx_Blind_expire"
+    }
+    ,
+    {
+      "effectId": 80,
+      "name": "Blind_Tier5",
+      "baseEffect": "Blind",
+      "tier": 5,
+      "isBuff": false,
+      "potency": 0.65,
+      "duration": 4.9,
+      "tickInterval": 0.7,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.09,
+        "damageMod": 0.15,
+        "speedMod": 0.07,
+        "defenseMod": 0.2
+      },
+      "vfxPrefab": "VFX/StatusEffects/Blind_Tier5",
+      "iconPath": "Icons/StatusEffects/Blind_Tier5",
+      "soundOnApply": "sfx_Blind_apply",
+      "soundOnExpire": "sfx_Blind_expire"
+    }
+    ,
+    {
+      "effectId": 81,
+      "name": "Silence_Tier1",
+      "baseEffect": "Silence",
+      "tier": 1,
+      "isBuff": false,
+      "potency": 0.74,
+      "duration": 8.8,
+      "tickInterval": 1.5,
+      "maxStacks": 4,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.16,
+        "damageMod": -0.01,
+        "speedMod": 0.04,
+        "defenseMod": 0.11
+      },
+      "vfxPrefab": "VFX/StatusEffects/Silence_Tier1",
+      "iconPath": "Icons/StatusEffects/Silence_Tier1",
+      "soundOnApply": "sfx_Silence_apply",
+      "soundOnExpire": "sfx_Silence_expire"
+    }
+    ,
+    {
+      "effectId": 82,
+      "name": "Silence_Tier2",
+      "baseEffect": "Silence",
+      "tier": 2,
+      "isBuff": false,
+      "potency": 0.17,
+      "duration": 4.4,
+      "tickInterval": 1.2,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.2,
+        "damageMod": -0.24,
+        "speedMod": -0.16,
+        "defenseMod": -0.06
+      },
+      "vfxPrefab": "VFX/StatusEffects/Silence_Tier2",
+      "iconPath": "Icons/StatusEffects/Silence_Tier2",
+      "soundOnApply": "sfx_Silence_apply",
+      "soundOnExpire": "sfx_Silence_expire"
+    }
+    ,
+    {
+      "effectId": 83,
+      "name": "Silence_Tier3",
+      "baseEffect": "Silence",
+      "tier": 3,
+      "isBuff": false,
+      "potency": 0.11,
+      "duration": 11.4,
+      "tickInterval": 1.1,
+      "maxStacks": 3,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.03,
+        "damageMod": -0.1,
+        "speedMod": 0.12,
+        "defenseMod": -0.16
+      },
+      "vfxPrefab": "VFX/StatusEffects/Silence_Tier3",
+      "iconPath": "Icons/StatusEffects/Silence_Tier3",
+      "soundOnApply": "sfx_Silence_apply",
+      "soundOnExpire": "sfx_Silence_expire"
+    }
+    ,
+    {
+      "effectId": 84,
+      "name": "Silence_Tier4",
+      "baseEffect": "Silence",
+      "tier": 4,
+      "isBuff": false,
+      "potency": 0.05,
+      "duration": 12,
+      "tickInterval": 1.1,
+      "maxStacks": 2,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.18,
+        "damageMod": 0.05,
+        "speedMod": 0.04,
+        "defenseMod": 0.12
+      },
+      "vfxPrefab": "VFX/StatusEffects/Silence_Tier4",
+      "iconPath": "Icons/StatusEffects/Silence_Tier4",
+      "soundOnApply": "sfx_Silence_apply",
+      "soundOnExpire": "sfx_Silence_expire"
+    }
+    ,
+    {
+      "effectId": 85,
+      "name": "Silence_Tier5",
+      "baseEffect": "Silence",
+      "tier": 5,
+      "isBuff": false,
+      "potency": 0.16,
+      "duration": 7.2,
+      "tickInterval": 1.9,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.29,
+        "damageMod": 0.26,
+        "speedMod": 0.06,
+        "defenseMod": -0.23
+      },
+      "vfxPrefab": "VFX/StatusEffects/Silence_Tier5",
+      "iconPath": "Icons/StatusEffects/Silence_Tier5",
+      "soundOnApply": "sfx_Silence_apply",
+      "soundOnExpire": "sfx_Silence_expire"
+    }
+    ,
+    {
+      "effectId": 86,
+      "name": "Weaken_Tier1",
+      "baseEffect": "Weaken",
+      "tier": 1,
+      "isBuff": false,
+      "potency": 0.39,
+      "duration": 3.8,
+      "tickInterval": 2.2,
+      "maxStacks": 4,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.23,
+        "damageMod": -0.17,
+        "speedMod": 0.15,
+        "defenseMod": -0.05
+      },
+      "vfxPrefab": "VFX/StatusEffects/Weaken_Tier1",
+      "iconPath": "Icons/StatusEffects/Weaken_Tier1",
+      "soundOnApply": "sfx_Weaken_apply",
+      "soundOnExpire": "sfx_Weaken_expire"
+    }
+    ,
+    {
+      "effectId": 87,
+      "name": "Weaken_Tier2",
+      "baseEffect": "Weaken",
+      "tier": 2,
+      "isBuff": false,
+      "potency": 0.27,
+      "duration": 11.5,
+      "tickInterval": 2.3,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0,
+        "damageMod": 0.29,
+        "speedMod": -0.01,
+        "defenseMod": 0.14
+      },
+      "vfxPrefab": "VFX/StatusEffects/Weaken_Tier2",
+      "iconPath": "Icons/StatusEffects/Weaken_Tier2",
+      "soundOnApply": "sfx_Weaken_apply",
+      "soundOnExpire": "sfx_Weaken_expire"
+    }
+    ,
+    {
+      "effectId": 88,
+      "name": "Weaken_Tier3",
+      "baseEffect": "Weaken",
+      "tier": 3,
+      "isBuff": false,
+      "potency": 0.11,
+      "duration": 6.2,
+      "tickInterval": 2.3,
+      "maxStacks": 3,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.23,
+        "damageMod": -0.11,
+        "speedMod": 0.03,
+        "defenseMod": -0.12
+      },
+      "vfxPrefab": "VFX/StatusEffects/Weaken_Tier3",
+      "iconPath": "Icons/StatusEffects/Weaken_Tier3",
+      "soundOnApply": "sfx_Weaken_apply",
+      "soundOnExpire": "sfx_Weaken_expire"
+    }
+    ,
+    {
+      "effectId": 89,
+      "name": "Weaken_Tier4",
+      "baseEffect": "Weaken",
+      "tier": 4,
+      "isBuff": false,
+      "potency": 0.41,
+      "duration": 5.8,
+      "tickInterval": 2.5,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.19,
+        "damageMod": 0.14,
+        "speedMod": -0.28,
+        "defenseMod": -0.13
+      },
+      "vfxPrefab": "VFX/StatusEffects/Weaken_Tier4",
+      "iconPath": "Icons/StatusEffects/Weaken_Tier4",
+      "soundOnApply": "sfx_Weaken_apply",
+      "soundOnExpire": "sfx_Weaken_expire"
+    }
+    ,
+    {
+      "effectId": 90,
+      "name": "Weaken_Tier5",
+      "baseEffect": "Weaken",
+      "tier": 5,
+      "isBuff": false,
+      "potency": 0.48,
+      "duration": 9.9,
+      "tickInterval": 1.5,
+      "maxStacks": 1,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.04,
+        "damageMod": -0.18,
+        "speedMod": 0.28,
+        "defenseMod": 0.11
+      },
+      "vfxPrefab": "VFX/StatusEffects/Weaken_Tier5",
+      "iconPath": "Icons/StatusEffects/Weaken_Tier5",
+      "soundOnApply": "sfx_Weaken_apply",
+      "soundOnExpire": "sfx_Weaken_expire"
+    }
+    ,
+    {
+      "effectId": 91,
+      "name": "Curse_Tier1",
+      "baseEffect": "Curse",
+      "tier": 1,
+      "isBuff": false,
+      "potency": 0.14,
+      "duration": 5.1,
+      "tickInterval": 0.6,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.04,
+        "damageMod": 0.12,
+        "speedMod": 0.27,
+        "defenseMod": -0.05
+      },
+      "vfxPrefab": "VFX/StatusEffects/Curse_Tier1",
+      "iconPath": "Icons/StatusEffects/Curse_Tier1",
+      "soundOnApply": "sfx_Curse_apply",
+      "soundOnExpire": "sfx_Curse_expire"
+    }
+    ,
+    {
+      "effectId": 92,
+      "name": "Curse_Tier2",
+      "baseEffect": "Curse",
+      "tier": 2,
+      "isBuff": false,
+      "potency": 0.13,
+      "duration": 14.7,
+      "tickInterval": 1.4,
+      "maxStacks": 4,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": -0.27,
+        "damageMod": -0.03,
+        "speedMod": 0.03,
+        "defenseMod": -0.08
+      },
+      "vfxPrefab": "VFX/StatusEffects/Curse_Tier2",
+      "iconPath": "Icons/StatusEffects/Curse_Tier2",
+      "soundOnApply": "sfx_Curse_apply",
+      "soundOnExpire": "sfx_Curse_expire"
+    }
+    ,
+    {
+      "effectId": 93,
+      "name": "Curse_Tier3",
+      "baseEffect": "Curse",
+      "tier": 3,
+      "isBuff": false,
+      "potency": 0.07,
+      "duration": 14.7,
+      "tickInterval": 1.8,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.21,
+        "damageMod": 0.14,
+        "speedMod": 0.11,
+        "defenseMod": 0.08
+      },
+      "vfxPrefab": "VFX/StatusEffects/Curse_Tier3",
+      "iconPath": "Icons/StatusEffects/Curse_Tier3",
+      "soundOnApply": "sfx_Curse_apply",
+      "soundOnExpire": "sfx_Curse_expire"
+    }
+    ,
+    {
+      "effectId": 94,
+      "name": "Curse_Tier4",
+      "baseEffect": "Curse",
+      "tier": 4,
+      "isBuff": false,
+      "potency": 0.56,
+      "duration": 12.4,
+      "tickInterval": 1.4,
+      "maxStacks": 4,
+      "stackable": true,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.29,
+        "damageMod": -0.27,
+        "speedMod": -0.08,
+        "defenseMod": -0.29
+      },
+      "vfxPrefab": "VFX/StatusEffects/Curse_Tier4",
+      "iconPath": "Icons/StatusEffects/Curse_Tier4",
+      "soundOnApply": "sfx_Curse_apply",
+      "soundOnExpire": "sfx_Curse_expire"
+    }
+    ,
+    {
+      "effectId": 95,
+      "name": "Curse_Tier5",
+      "baseEffect": "Curse",
+      "tier": 5,
+      "isBuff": false,
+      "potency": 0.45,
+      "duration": 10.9,
+      "tickInterval": 1.1,
+      "maxStacks": 4,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.05,
+        "damageMod": 0.09,
+        "speedMod": -0.1,
+        "defenseMod": -0.02
+      },
+      "vfxPrefab": "VFX/StatusEffects/Curse_Tier5",
+      "iconPath": "Icons/StatusEffects/Curse_Tier5",
+      "soundOnApply": "sfx_Curse_apply",
+      "soundOnExpire": "sfx_Curse_expire"
+    }
+    ,
+    {
+      "effectId": 96,
+      "name": "Charm_Tier1",
+      "baseEffect": "Charm",
+      "tier": 1,
+      "isBuff": false,
+      "potency": 0.24,
+      "duration": 11.2,
+      "tickInterval": 2.5,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.22,
+        "damageMod": -0.18,
+        "speedMod": 0.1,
+        "defenseMod": 0.15
+      },
+      "vfxPrefab": "VFX/StatusEffects/Charm_Tier1",
+      "iconPath": "Icons/StatusEffects/Charm_Tier1",
+      "soundOnApply": "sfx_Charm_apply",
+      "soundOnExpire": "sfx_Charm_expire"
+    }
+    ,
+    {
+      "effectId": 97,
+      "name": "Charm_Tier2",
+      "baseEffect": "Charm",
+      "tier": 2,
+      "isBuff": false,
+      "potency": 0.12,
+      "duration": 6.2,
+      "tickInterval": 0.6,
+      "maxStacks": 2,
+      "stackable": true,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.12,
+        "damageMod": -0.02,
+        "speedMod": 0.03,
+        "defenseMod": 0.21
+      },
+      "vfxPrefab": "VFX/StatusEffects/Charm_Tier2",
+      "iconPath": "Icons/StatusEffects/Charm_Tier2",
+      "soundOnApply": "sfx_Charm_apply",
+      "soundOnExpire": "sfx_Charm_expire"
+    }
+    ,
+    {
+      "effectId": 98,
+      "name": "Charm_Tier3",
+      "baseEffect": "Charm",
+      "tier": 3,
+      "isBuff": false,
+      "potency": 0.69,
+      "duration": 6.7,
+      "tickInterval": 0.6,
+      "maxStacks": 1,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": -0.25,
+        "damageMod": -0.29,
+        "speedMod": 0.14,
+        "defenseMod": 0.04
+      },
+      "vfxPrefab": "VFX/StatusEffects/Charm_Tier3",
+      "iconPath": "Icons/StatusEffects/Charm_Tier3",
+      "soundOnApply": "sfx_Charm_apply",
+      "soundOnExpire": "sfx_Charm_expire"
+    }
+    ,
+    {
+      "effectId": 99,
+      "name": "Charm_Tier4",
+      "baseEffect": "Charm",
+      "tier": 4,
+      "isBuff": false,
+      "potency": 0.47,
+      "duration": 2.4,
+      "tickInterval": 1.2,
+      "maxStacks": 4,
+      "stackable": false,
+      "dispellable": false,
+      "statModifiers": {
+        "hpMod": 0.06,
+        "damageMod": 0.02,
+        "speedMod": 0.05,
+        "defenseMod": 0.21
+      },
+      "vfxPrefab": "VFX/StatusEffects/Charm_Tier4",
+      "iconPath": "Icons/StatusEffects/Charm_Tier4",
+      "soundOnApply": "sfx_Charm_apply",
+      "soundOnExpire": "sfx_Charm_expire"
+    }
+    ,
+    {
+      "effectId": 100,
+      "name": "Charm_Tier5",
+      "baseEffect": "Charm",
+      "tier": 5,
+      "isBuff": false,
+      "potency": 0.71,
+      "duration": 4.8,
+      "tickInterval": 0.7,
+      "maxStacks": 2,
+      "stackable": false,
+      "dispellable": true,
+      "statModifiers": {
+        "hpMod": 0.17,
+        "damageMod": 0.02,
+        "speedMod": -0.2,
+        "defenseMod": 0.05
+      },
+      "vfxPrefab": "VFX/StatusEffects/Charm_Tier5",
+      "iconPath": "Icons/StatusEffects/Charm_Tier5",
+      "soundOnApply": "sfx_Charm_apply",
+      "soundOnExpire": "sfx_Charm_expire"
+    }
+  ]
+}
